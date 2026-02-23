@@ -238,8 +238,22 @@ def main():
             format_func=lambda x: x if x == "All" else CATEGORY_META.get(x, ("📦", _slug_to_name(x), ""))[1] + f" ({sum(1 for a in agents.values() if a['category'] == x)})"
         )
 
+        # Clear agent selection when category changes
+        if "prev_cat" not in st.session_state:
+            st.session_state.prev_cat = selected_cat
+        if selected_cat != st.session_state.prev_cat:
+            st.session_state.prev_cat = selected_cat
+            if "agent" in st.query_params:
+                del st.query_params["agent"]
+                st.rerun()
+
         # Search
         search = st.text_input("🔍 Search agents", placeholder="e.g. hallucination, code, PDF...")
+
+        # Clear agent selection when search changes
+        if search and "agent" in st.query_params:
+            del st.query_params["agent"]
+            st.rerun()
 
         st.divider()
         st.markdown(
