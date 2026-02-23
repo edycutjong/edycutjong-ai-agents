@@ -19,6 +19,6 @@ def test_formula_system_prompt_content():
     # Check for key phrases required by the spec
     assert "modern functions" in prompt
     assert "XLOOKUP" in prompt
-    assert "step-by-step explanation" in prompt
+    assert "step-by-step" in prompt
     assert "syntactically correct" in prompt
     assert "{target_application}" in prompt

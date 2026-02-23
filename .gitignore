@@ -17,3 +17,6 @@ logs/
 reports/
 exports/
 workspace/
+*.log
+*.db
+.coverage

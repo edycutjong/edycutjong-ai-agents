@@ -1,4 +1,4 @@
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
 CLAIM_EXTRACTION_TEMPLATE = """
 You are an expert fact-checker. Your task is to extract factual claims from the following text.

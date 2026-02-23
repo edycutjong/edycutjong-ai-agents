@@ -1,7 +1,7 @@
 # AGENTS.md — AI Agents & Pipelines
 
 ## Overview
-AI-powered agents and automation pipelines — **131 agents** across **21 categories**.
+AI-powered agents and automation pipelines — **164 agents** across **16 categories**.
 
 ---
 

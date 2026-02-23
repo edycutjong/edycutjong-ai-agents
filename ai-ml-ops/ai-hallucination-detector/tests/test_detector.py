@@ -24,15 +24,20 @@ class TestHallucinationDetector(unittest.TestCase):
         self.detector = HallucinationDetector(api_key="test-key")
 
     def test_extract_claims(self):
-        # Mock LLM response
-        self.mock_llm.predict.return_value = "1. Claim one.\n2. Claim two."
-        # Or if using LLMChain.run (which calls llm)
-        # We need to mock LLMChain behavior or the llm call inside it.
-        # Since extract_claims uses LLMChain, let's mock LLMChain.run
+        # Patch extract_claims at the instance level to test claim parsing logic
+        # We test the regex parsing by directly calling extract_claims with a mocked llm
+        # The easiest approach: mock self.detector.llm as a callable that returns
+        # an object with .content
+        mock_response = MagicMock()
+        mock_response.content = "1. Claim one.\n2. Claim two."
 
-        with patch('agent.detector.LLMChain') as MockLLMChain:
-            mock_chain = MockLLMChain.return_value
-            mock_chain.run.return_value = "1. Claim one.\n2. Claim two."
+        # Create a mock chain that returns mock_response when invoked
+        mock_chain = MagicMock()
+        mock_chain.invoke.return_value = mock_response
+
+        # Patch the prompt's __or__ to return our mock chain
+        with patch('agent.detector.claim_extraction_prompt') as mock_prompt:
+            mock_prompt.__or__ = MagicMock(return_value=mock_chain)
 
             claims = self.detector.extract_claims("Some text")
 
@@ -46,12 +51,15 @@ class TestHallucinationDetector(unittest.TestCase):
         mock_doc.page_content = "Source text snippet."
         self.mock_vectorstore.similarity_search.return_value = [mock_doc]
 
-        # Mock LLM verification result
-        mock_json_response = '{"status": "VERIFIED", "confidence": 0.95, "explanation": "Found it."}'
+        # Mock LLM response for verification
+        mock_response = MagicMock()
+        mock_response.content = '{"status": "VERIFIED", "confidence": 0.95, "explanation": "Found it."}'
 
-        with patch('agent.detector.LLMChain') as MockLLMChain:
-            mock_chain = MockLLMChain.return_value
-            mock_chain.run.return_value = mock_json_response
+        mock_chain = MagicMock()
+        mock_chain.invoke.return_value = mock_response
+
+        with patch('agent.detector.verification_prompt') as mock_prompt:
+            mock_prompt.__or__ = MagicMock(return_value=mock_chain)
 
             result = self.detector.verify_claim("Claim one.", self.mock_vectorstore)
 

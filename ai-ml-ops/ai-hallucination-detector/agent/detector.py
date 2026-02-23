@@ -5,21 +5,18 @@ from typing import List, Dict, Any
 
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_community.vectorstores import FAISS
-from langchain.chains import LLMChain
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
-# Assuming the script is run from the project root (ai-hallucination-detector/)
-try:
-    from prompts.claim_extraction import claim_extraction_prompt
-    from prompts.verification import verification_prompt
-    from agent.document_loader import load_document, split_documents
-    from config import OPENAI_API_KEY
-except ImportError:
-    # Fallback for relative imports if run as a module
-    from ..prompts.claim_extraction import claim_extraction_prompt
-    from ..prompts.verification import verification_prompt
-    from .document_loader import load_document, split_documents
-    from ..config import OPENAI_API_KEY
+# Add project root to sys.path for consistent imports from pytest and CLI
+import sys as _sys
+_project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if _project_root not in _sys.path:
+    _sys.path.insert(0, _project_root)
+
+from prompts.claim_extraction import claim_extraction_prompt
+from prompts.verification import verification_prompt
+from agent.document_loader import load_document, split_documents
+from config import OPENAI_API_KEY
 
 
 class HallucinationDetector:
@@ -36,8 +33,9 @@ class HallucinationDetector:
         """
         Extracts factual claims from the given text using the LLM.
         """
-        chain = LLMChain(llm=self.llm, prompt=claim_extraction_prompt)
-        result = chain.run(text=text)
+        chain = claim_extraction_prompt | self.llm
+        response = chain.invoke({"text": text})
+        result = response.content
 
         # Parse the numbered list
         claims = []
@@ -65,8 +63,9 @@ class HallucinationDetector:
         context_text = "\n\n".join([doc.page_content for doc in docs])
 
         # Verify
-        chain = LLMChain(llm=self.llm, prompt=verification_prompt)
-        result_json_str = chain.run(claim=claim, source_text=context_text)
+        chain = verification_prompt | self.llm
+        response = chain.invoke({"claim": claim, "source_text": context_text})
+        result_json_str = response.content
 
         # Parse JSON
         try:

@@ -23,7 +23,7 @@ SECRET_PATTERNS = [
     {"name": "JWT Token", "pattern": r"eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}", "severity": "high"},
     {"name": "Private Key", "pattern": r"-----BEGIN (RSA |EC |DSA )?PRIVATE KEY-----", "severity": "critical"},
     {"name": "Slack Token", "pattern": r"xox[bpors]-[0-9]{10,}-[A-Za-z0-9-]+", "severity": "critical"},
-    {"name": "Stripe Key", "pattern": r"sk_live_[A-Za-z0-9]{24,}", "severity": "critical"},
+    {"name": "Stripe Key", "pattern": r"sk_(live|test)_[A-Za-z0-9_]{24,}", "severity": "critical"},
     {"name": "Database URL", "pattern": r"(?i)(postgres|mysql|mongodb)://[^\s'\"]{10,}", "severity": "high"},
     {"name": "Bearer Token", "pattern": r"(?i)bearer\s+[A-Za-z0-9._~+/=-]{20,}", "severity": "medium"},
     {"name": "Hex Token 32+", "pattern": r"(?i)(token|key|secret)\s*[:=]\s*['\"][0-9a-f]{32,}['\"]", "severity": "medium"},

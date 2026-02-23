@@ -1,4 +1,4 @@
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
 VERIFICATION_TEMPLATE = """
 You are an impartial and strict fact-checker. You are provided with a claim and a source text.

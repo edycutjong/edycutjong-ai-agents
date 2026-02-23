@@ -1,5 +1,5 @@
 """
-🧠 AI Agents Hub — Browse & Run 130+ AI Automation Agents
+🧠 AI Agents Hub — Browse & Run 160+ AI Automation Agents
 Built by Jules AI • Powered by Streamlit
 """
 
