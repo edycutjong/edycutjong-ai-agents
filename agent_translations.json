@@ -43,6 +43,9 @@
     "hi": {
       "name": "एआई मतिभ्रम डिटेक्टर",
       "description": "स्रोत दस्तावेजों के विरुद्ध एआई आउटपुट को क्रॉस-रेफरेंस करता है और मनगढ़ंत दावों को चिह्नित करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Cross-references AI outputs against source documents and flags fabricated claims. Designed as an AI agents project."
     }
   },
   "ai-ml-ops/embedding-explorer": {
@@ -89,6 +92,9 @@
     "hi": {
       "name": "एंबेडिंग एक्सप्लोरर",
       "description": "वेक्टर एम्बेडिंग को विज़ुअलाइज़ करता है और खोजता है, क्लस्टर, आउटलेयर और निकटतम पड़ोसियों को ढूंढता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Visualizes and searches vector embeddings, finds clusters, outliers, and nearest neighbors. Designed as an AI agents project."
     }
   },
   "ai-ml-ops/fine-tune-dataset-curator": {
@@ -135,6 +141,9 @@
     "hi": {
       "name": "फाइन ट्यून डेटासेट क्यूरेटर",
       "description": "जेएसओएनएल और चैट प्रारूपों में एलएलएम फाइन-ट्यूनिंग के लिए डेटासेट को क्यूरेट और प्रारूपित करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Curates and formats datasets for LLM fine-tuning in JSONL and chat formats. Designed as an AI agents project."
     }
   },
   "ai-ml-ops/llm-cost-calculator": {
@@ -181,6 +190,9 @@
     "hi": {
       "name": "एलएलएम लागत कैलकुलेटर",
       "description": "एआई प्रदाताओं में टोकन उपयोग को ट्रैक करता है, लागत का पूर्वानुमान लगाता है और अनुकूलन का सुझाव देता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Tracks token usage across AI providers, forecasts costs, and suggests optimizations. Designed as an AI agents project."
     }
   },
   "ai-ml-ops/model-benchmark-runner": {
@@ -227,6 +239,9 @@
     "hi": {
       "name": "मॉडल बेंचमार्क धावक",
       "description": "लागत, गुणवत्ता और गति की तुलना करते हुए परीक्षण सूट के मुकाबले एलएलएम मॉडल को बेंचमार्क करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Benchmarks LLM models against test suites, comparing cost, quality, and speed. Designed as an AI agents project."
     }
   },
   "ai-ml-ops/prompt-optimizer": {
@@ -273,6 +288,9 @@
     "hi": {
       "name": "शीघ्र अनुकूलक",
       "description": "एआई संकेत लेता है, ए/बी वेरिएंट चलाता है, आउटपुट गुणवत्ता मापता है और सुधार का सुझाव देता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Takes AI prompts, runs A/B variants, measures output quality, and suggests improvements. Designed as an AI agents project."
     }
   },
   "ai-ml-ops/rag-evaluator": {
@@ -319,6 +337,9 @@
     "hi": {
       "name": "आरएजी मूल्यांकनकर्ता",
       "description": "पुनर्प्राप्ति सटीकता और उत्तर प्रासंगिकता को मापकर आरएजी पाइपलाइन गुणवत्ता का परीक्षण करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Tests RAG pipeline quality by measuring retrieval accuracy and answer relevance. Designed as an AI agents project."
     }
   },
   "ai-ml-ops/training-data-generator": {
@@ -365,6 +386,9 @@
     "hi": {
       "name": "प्रशिक्षण डेटा जेनरेटर",
       "description": "विशिष्टताओं और बीज उदाहरणों से सिंथेटिक प्रशिक्षण डेटा उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Generates synthetic training data from specifications and seed examples. Designed as an AI agents project."
     }
   },
   "api-integration/api-changelog-differ": {
@@ -411,6 +435,9 @@
     "hi": {
       "name": "एपीआई चेंजलॉग भिन्न",
       "description": "एपीआई संस्करणों (ओपनएपीआई स्पेक्स) की तुलना करता है, विस्तृत माइग्रेशन गाइड तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Compares API versions (OpenAPI specs), generates detailed migration guides. Designed as an AI agents project."
     }
   },
   "api-integration/api-doc-generator": {
@@ -457,6 +484,9 @@
     "hi": {
       "name": "एपीआई डॉक जेनरेटर",
       "description": "एपीआई रूट हैंडलर को पढ़ता है और इंटरैक्टिव दस्तावेज़ीकरण के साथ ओपनएपीआई विनिर्देश तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads API route handlers and generates OpenAPI specs with interactive documentation. Designed as an AI agents project."
     }
   },
   "api-integration/api-rate-limit-tester": {
@@ -503,6 +533,9 @@
     "hi": {
       "name": "एपीआई दर सीमा परीक्षक",
       "description": "दर सीमाओं को मैप करने के लिए तनाव-परीक्षण एपीआई और उपयोग दस्तावेज़ तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Stress-tests APIs to map rate limits and generates usage documentation. Designed as an AI agents project."
     }
   },
   "api-integration/graphql-schema-analyzer": {
@@ -549,6 +582,9 @@
     "hi": {
       "name": "ग्राफ़िकल स्कीमा विश्लेषक",
       "description": "ग्राफक्यूएल स्कीमा का विश्लेषण करता है, अनुकूलन का सुझाव देता है, और एन+1 क्वेरी समस्याओं का पता लगाता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Analyzes GraphQL schemas, suggests optimizations, and detects N+1 query problems. Designed as an AI agents project."
     }
   },
   "api-integration/oauth-flow-debugger": {
@@ -595,6 +631,9 @@
     "hi": {
       "name": "ओउथ फ्लो डिबगर",
       "description": "OAuth 2.0 चरण-दर-चरण प्रवाह का पता लगाता है, गलत कॉन्फ़िगरेशन की पहचान करता है, और समाधान सुझाता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Traces OAuth 2.0 flows step-by-step, identifies misconfigurations, and suggests fixes. Designed as an AI agents project."
     }
   },
   "api-integration/postman-to-code-converter": {
@@ -641,6 +680,9 @@
     "hi": {
       "name": "डाकिया से कोड परिवर्तक",
       "description": "पोस्टमैन/अनिद्रा संग्रहों को किसी भी भाषा में निष्पादन योग्य कोड स्निपेट में परिवर्तित करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Converts Postman/Insomnia collections to executable code snippets in any language. Designed as an AI agents project."
     }
   },
   "api-integration/rest-to-graphql-converter": {
@@ -687,6 +729,9 @@
     "hi": {
       "name": "रेस्ट टू ग्राफ़िकल कन्वर्टर",
       "description": "REST API एंडपॉइंट परिभाषाएँ पढ़ता है और समतुल्य ग्राफक्यूएल स्कीमा और रिज़ॉल्वर उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads REST API endpoint definitions and generates equivalent GraphQL schema and resolvers. Designed as an AI agents project."
     }
   },
   "api-integration/webhook-tester": {
@@ -733,6 +778,9 @@
     "hi": {
       "name": "वेबहुक परीक्षक",
       "description": "अस्थायी वेबहुक एंडपॉइंट बनाता है, आने वाले पेलोड को लॉग करता है, और अनुरोध रीप्ले का समर्थन करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Creates temporary webhook endpoints, logs incoming payloads, and supports request replay. Designed as an AI agents project."
     }
   },
   "business-productivity/competitive-analysis-agent": {
@@ -779,6 +827,9 @@
     "hi": {
       "name": "प्रतिस्पर्धी विश्लेषण एजेंट",
       "description": "प्रतिस्पर्धियों पर शोध करता है, सुविधाओं और कीमतों की तुलना करता है, विश्लेषण रिपोर्ट तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Researches competitors, compares features and pricing, generates analysis reports. Designed as an AI agents project."
     }
   },
   "business-productivity/contract-analyzer": {
@@ -825,6 +876,9 @@
     "hi": {
       "name": "अनुबंध विश्लेषक",
       "description": "कानूनी अनुबंध पढ़ता है, जोखिम भरे खंडों पर प्रकाश डालता है और संशोधन का सुझाव देता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads legal contracts, highlights risky clauses, and suggests amendments. Designed as an AI agents project."
     }
   },
   "business-productivity/expense-categorizer": {
@@ -871,6 +925,9 @@
     "hi": {
       "name": "व्यय श्रेणीकारक",
       "description": "बैंक विवरण और रसीदें पढ़ता है, बहीखाता पद्धति के लिए खर्चों को स्वचालित रूप से वर्गीकृत करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads bank statements and receipts, auto-categorizes expenses for bookkeeping. Designed as an AI agents project."
     }
   },
   "business-productivity/invoice-generator-agent": {
@@ -917,6 +974,9 @@
     "hi": {
       "name": "चालान जेनरेटर एजेंट",
       "description": "प्रोजेक्ट और समय ट्रैकिंग डेटा पढ़ता है, पेशेवर पीडीएफ चालान तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads project and time tracking data, generates professional PDF invoices. Designed as an AI agents project."
     }
   },
   "business-productivity/kpi-dashboard-generator": {
@@ -963,6 +1023,9 @@
     "hi": {
       "name": "केपीआई डैशबोर्ड जेनरेटर",
       "description": "डेटा स्रोतों को पढ़ता है और कॉन्फ़िगर करने योग्य अलर्ट के साथ KPI डैशबोर्ड उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads data sources and generates KPI dashboards with configurable alerts. Designed as an AI agents project."
     }
   },
   "business-productivity/meeting-scheduler-agent": {
@@ -1009,6 +1072,9 @@
     "hi": {
       "name": "शेड्यूलर एजेंट से मिलना",
       "description": "एआई का उपयोग करके कैलेंडर और समय क्षेत्रों में इष्टतम बैठक समय ढूँढता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Finds optimal meeting times across calendars and time zones using AI. Designed as an AI agents project."
     }
   },
   "business-productivity/okr-tracker": {
@@ -1055,6 +1121,9 @@
     "hi": {
       "name": "ओकेआर ट्रैकर",
       "description": "उद्देश्यों और मुख्य परिणामों को प्रबंधित करता है, प्रगति को ट्रैक करता है और स्थिति रिपोर्ट तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Manages Objectives and Key Results, tracks progress, and generates status reports. Designed as an AI agents project."
     }
   },
   "business-productivity/sla-monitor": {
@@ -1101,6 +1170,9 @@
     "hi": {
       "name": "एसएलए मॉनिटर",
       "description": "SLA अनुपालन को ट्रैक करता है, अपटाइम प्रतिशत की गणना करता है, और उल्लंघनों पर अलर्ट करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Tracks SLA compliance, calculates uptime percentages, and alerts on breaches. Designed as an AI agents project."
     }
   },
   "business-productivity/standup-report-generator": {
@@ -1147,6 +1219,9 @@
     "hi": {
       "name": "स्टैंडअप रिपोर्ट जेनरेटर",
       "description": "गिट कमिट पढ़ता है और ट्रैकर्स जारी करता है, दैनिक स्टैंडअप रिपोर्ट स्वतः उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads git commits and issue trackers, auto-generates daily standup reports. Designed as an AI agents project."
     }
   },
   "business-productivity/timesheet-analyzer": {
@@ -1193,6 +1268,9 @@
     "hi": {
       "name": "टाइमशीट विश्लेषक",
       "description": "समय ट्रैकिंग डेटा का विश्लेषण करता है, उत्पादकता पैटर्न की पहचान करता है और सुधार का सुझाव देता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Analyzes time tracking data, identifies productivity patterns, and suggests improvements. Designed as an AI agents project."
     }
   },
   "code-generation/boilerplate-generator": {
@@ -1239,6 +1317,9 @@
     "hi": {
       "name": "बॉयलरप्लेट जेनरेटर",
       "description": "फीचर विशिष्टताओं से संपूर्ण प्रोजेक्ट स्कैफोल्ड (नेक्स्ट.जेएस, फ्लास्क, एक्सप्रेस) तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Generates complete project scaffolds (Next.js, Flask, Express) from feature specifications. Designed as an AI agents project."
     }
   },
   "code-generation/config-file-generator": {
@@ -1285,6 +1366,9 @@
     "hi": {
       "name": "कॉन्फ़िग फ़ाइल जेनरेटर",
       "description": "प्रोजेक्ट कन्वेंशन से ESLint, Prettier, TSConfig और अन्य कॉन्फ़िग फ़ाइलें जेनरेट करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Generates ESLint, Prettier, TSConfig, and other config files from project conventions. Designed as an AI agents project."
     }
   },
   "code-generation/crud-api-generator": {
@@ -1331,6 +1415,9 @@
     "hi": {
       "name": "क्रूड एपीआई जेनरेटर",
       "description": "डेटाबेस स्कीमा पढ़ता है और सत्यापन और दस्तावेज़ीकरण के साथ पूर्ण सीआरयूडी एपीआई उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads database schemas and generates full CRUD API with validation and documentation. Designed as an AI agents project."
     }
   },
   "code-generation/dockerfile-optimizer": {
@@ -1377,6 +1464,9 @@
     "hi": {
       "name": "डॉकरफ़ाइल ऑप्टिमाइज़र",
       "description": "मौजूदा Dockerfiles का विश्लेषण करता है, छवि का आकार कम करता है, और लेयर कैशिंग में सुधार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Analyzes existing Dockerfiles, reduces image size, and improves layer caching. Designed as an AI agents project."
     }
   },
   "code-generation/github-actions-writer": {
@@ -1423,6 +1513,9 @@
     "hi": {
       "name": "जीथब एक्शन राइटर",
       "description": "प्रोजेक्ट संरचना को पढ़ता है और अनुकूलित GitHub क्रियाएँ CI/CD वर्कफ़्लो उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads project structure and generates optimized GitHub Actions CI/CD workflows. Designed as an AI agents project."
     }
   },
   "code-generation/migration-file-writer": {
@@ -1469,6 +1562,9 @@
     "hi": {
       "name": "माइग्रेशन फ़ाइल लेखक",
       "description": "पुराने और नए डेटाबेस स्कीमा की तुलना करता है, लोकप्रिय ORM के लिए माइग्रेशन फ़ाइलें बनाता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Compares old and new database schemas, generates migration files for popular ORMs. Designed as an AI agents project."
     }
   },
   "code-generation/monorepo-setup-agent": {
@@ -1515,6 +1611,9 @@
     "hi": {
       "name": "मोनोरेपो सेटअप एजेंट",
       "description": "कार्यस्थानों, साझा पैकेजों और सीआई पाइपलाइनों के साथ मोनोरेपो संरचनाओं को तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Scaffolds monorepo structures with workspaces, shared packages, and CI pipelines. Designed as an AI agents project."
     }
   },
   "code-generation/type-generator": {
@@ -1561,6 +1660,9 @@
     "hi": {
       "name": "जेनरेटर टाइप करें",
       "description": "JSON प्रतिक्रियाओं और एपीआई डेटा से टाइपस्क्रिप्ट और पायथन प्रकार की परिभाषाओं का अनुमान लगाता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Infers TypeScript and Python type definitions from JSON responses and API data. Designed as an AI agents project."
     }
   },
   "code-quality/bug-triager": {
@@ -1607,6 +1709,9 @@
     "hi": {
       "name": "बग ट्राइएजर",
       "description": "समस्या प्रबंधन एजेंट - नए GitHub मुद्दे पढ़ें। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Issue management agent — Read new GitHub issues. Designed as a agents project."
     }
   },
   "code-quality/bug-triager-auto": {
@@ -1653,6 +1758,9 @@
     "hi": {
       "name": "बग ट्राइजर ऑटो",
       "description": "एजेंट जो आने वाली बग रिपोर्ट का विश्लेषण करता है, डुप्लिकेट बनाता है और गंभीरता बताता है।"
+    },
+    "en": {
+      "description": "Agent that analyzes incoming bug reports, duplicates, and assigns severity."
     }
   },
   "code-quality/code-review-automator": {
@@ -1699,6 +1807,9 @@
     "hi": {
       "name": "कोड समीक्षा स्वचालक",
       "description": "एआई एजेंट जो गिटहब पीआर से जुड़ता है और फर्स्ट-पास कोड समीक्षा प्रदान करता है।"
+    },
+    "en": {
+      "description": "AI agent that connects to GitHub PRs and provides first-pass code review."
     }
   },
   "code-quality/code-reviewer": {
@@ -1745,52 +1856,58 @@
     "hi": {
       "name": "कोड समीक्षक",
       "description": "पीआर समीक्षा एजेंट - फ़ेच पीआर GitHub से भिन्न है। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "PR review agent — Fetch PR diff from GitHub. Designed as a agents project."
     }
   },
   "code-quality/regex-tester": {
     "id": {
       "name": "Penguji Regex",
-      "description": ""
+      "description": "Menguji dan memvalidasi pola regex dengan pencocokan waktu nyata."
     },
     "zh": {
       "name": "正则表达式测试器",
-      "description": ""
+      "description": "测试和验证正则表达式模式，实时匹配。"
     },
     "es": {
       "name": "Probador de expresiones regulares",
-      "description": ""
+      "description": "Extract matches using a common pattern name."
     },
     "pt": {
       "name": "Testador Regex",
-      "description": ""
+      "description": "Extract matches using a common pattern name."
     },
     "ja": {
       "name": "正規表現テスター",
-      "description": ""
+      "description": "Extract matches using a common pattern name."
     },
     "ko": {
       "name": "정규식 테스터",
-      "description": ""
+      "description": "Extract matches using a common pattern name."
     },
     "de": {
       "name": "Regex-Tester",
-      "description": ""
+      "description": "Extract matches using a common pattern name."
     },
     "fr": {
       "name": "Testeur d'expressions régulières",
-      "description": ""
+      "description": "Extract matches using a common pattern name."
     },
     "ru": {
       "name": "Тестер регулярных выражений",
-      "description": ""
+      "description": "Extract matches using a common pattern name."
     },
     "ar": {
       "name": "اختبار ريجكس",
-      "description": ""
+      "description": "Extract matches using a common pattern name."
     },
     "hi": {
       "name": "रेगेक्स परीक्षक",
-      "description": ""
+      "description": "Extract matches using a common pattern name."
+    },
+    "en": {
+      "description": "Extract matches using a common pattern name."
     }
   },
   "content-writing/blog-post-writer": {
@@ -1837,6 +1954,9 @@
     "hi": {
       "name": "ब्लॉग पोस्ट लेखक",
       "description": "विषयों पर शोध करता है, रूपरेखा बनाता है और स्रोतों के साथ एसईओ-अनुकूलित ब्लॉग पोस्ट लिखता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Researches topics, creates outlines, and writes SEO-optimized blog posts with sources. Designed as an AI agents project."
     }
   },
   "content-writing/copy-editor-agent": {
@@ -1883,16 +2003,19 @@
     "hi": {
       "name": "प्रतिलिपि संपादक एजेंट",
       "description": "व्याकरण, शैली, स्वर संगति और पठनीयता स्कोर के लिए पाठ को प्रूफरीड करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Proofreads text for grammar, style, tone consistency, and readability score. Designed as an AI agents project."
     }
   },
   "content-writing/html-to-markdown": {
     "id": {
       "name": "HTML Ke Penurunan Harga",
-      "description": "HTML to Markdown Converter — Mengonversi konten HTML ke format Markdown yang bersih. Dirancang sebagai proyek agen AI."
+      "description": "Mengonversi HTML menjadi Markdown yang bersih."
     },
     "zh": {
       "name": "HTML 转 Markdown",
-      "description": "HTML 到 Markdown 转换器 — 将 HTML 内容转换为干净的 Markdown 格式。设计为人工智能代理项目。"
+      "description": "将 HTML 转换为干净的 Markdown。"
     },
     "es": {
       "name": "HTML para rebajas",
@@ -1929,6 +2052,9 @@
     "hi": {
       "name": "एचटीएमएल से मार्कडाउन",
       "description": "HTML से मार्कडाउन कन्वर्टर - HTML सामग्री को क्लीन मार्कडाउन फॉर्मेट में बदलें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "HTML to Markdown Converter — Convert HTML content to clean Markdown format. Designed as an AI agent project."
     }
   },
   "content-writing/lorem-ipsum-generator": {
@@ -1975,52 +2101,58 @@
     "hi": {
       "name": "लोरेम इप्सम जेनरेटर",
       "description": "लोरेम इप्सम जेनरेटर - मॉकअप और लेआउट के लिए प्लेसहोल्डर लोरेम इप्सम टेक्स्ट जेनरेट करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Lorem Ipsum Generator — Generate placeholder Lorem Ipsum text for mockups and layouts. Designed as an AI agent project."
     }
   },
   "content-writing/markdown-linter": {
     "id": {
       "name": "Linter Penurunan Harga",
-      "description": ""
+      "description": "Menganalisis dan memformat dokumen Markdown untuk konsistensi."
     },
     "zh": {
       "name": "Markdown 短绒",
-      "description": ""
+      "description": "分析和格式化 Markdown 文档以保持一致性。"
     },
     "es": {
       "name": "Linter de rebajas",
-      "description": ""
+      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Linter de redução",
-      "description": ""
+      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "マークダウンリンター",
-      "description": ""
+      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "마크다운 린터",
-      "description": ""
+      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Markdown-Linter",
-      "description": ""
+      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Linter de démarque",
-      "description": ""
+      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Маркдаун Линтер",
-      "description": ""
+      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "ماركدوون لينتر",
-      "description": ""
+      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "मार्कडाउन लिंटर",
-      "description": ""
+      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
     }
   },
   "content-writing/newsletter-curator": {
@@ -2067,6 +2199,9 @@
     "hi": {
       "name": "न्यूज़लैटर क्यूरेटर",
       "description": "कई स्रोतों से तकनीकी समाचारों को न्यूज़लेटर-तैयार प्रारूप में एकत्रित और सारांशित करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Aggregates and summarizes tech news from multiple sources into newsletter-ready format. Designed as an AI agents project."
     }
   },
   "content-writing/press-release-writer": {
@@ -2113,6 +2248,9 @@
     "hi": {
       "name": "प्रेस विज्ञप्ति लेखक",
       "description": "उत्पाद की जानकारी लेता है और मानक प्रारूप में स्वरूपित प्रेस विज्ञप्तियाँ तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Takes product information and generates formatted press releases in standard format. Designed as an AI agents project."
     }
   },
   "content-writing/proposal-writer": {
@@ -2159,6 +2297,9 @@
     "hi": {
       "name": "प्रस्ताव लेखक",
       "description": "समयसीमा, बजट अनुमान और डिलिवरेबल्स के साथ आवश्यकताओं से परियोजना प्रस्ताव तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Generates project proposals from requirements with timeline, budget estimates, and deliverables. Designed as an AI agents project."
     }
   },
   "content-writing/readme-generator": {
@@ -2205,52 +2346,58 @@
     "hi": {
       "name": "रीडमी जेनरेटर",
       "description": "प्रोजेक्ट फ़ाइलों को स्कैन करता है और बैज, सेटअप गाइड और उपयोग उदाहरणों के साथ व्यापक रीडमी उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Scans project files and generates comprehensive READMEs with badges, setup guides, and usage examples. Designed as an AI agents project."
     }
   },
   "content-writing/slug-generator": {
     "id": {
       "name": "Pembuat Siput",
-      "description": ""
+      "description": "Menghasilkan slug URL ramah SEO dari teks input."
     },
     "zh": {
       "name": "弹头发生器",
-      "description": ""
+      "description": "从输入文本生成 SEO 友好的 URL slug。"
     },
     "es": {
       "name": "Generador de babosas",
-      "description": ""
+      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Gerador de Lesmas",
-      "description": ""
+      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "スラグジェネレーター",
-      "description": ""
+      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "슬러그 생성기",
-      "description": ""
+      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Schneckengenerator",
-      "description": ""
+      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Générateur de limaces",
-      "description": ""
+      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Генератор слизней",
-      "description": ""
+      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "مولد سبيكة",
-      "description": ""
+      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "स्लग जनरेटर",
-      "description": ""
+      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
     }
   },
   "content-writing/sop-generator": {
@@ -2297,6 +2444,9 @@
     "hi": {
       "name": "एसओपी जेनरेटर",
       "description": "प्रक्रियाओं और वर्कफ़्लो को पढ़ता है, चरण-दर-चरण निर्देशों के साथ मानक संचालन प्रक्रियाएँ तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads processes and workflows, generates Standard Operating Procedures with step-by-step instructions. Designed as an AI agents project."
     }
   },
   "content-writing/string-similarity": {
@@ -2343,6 +2493,9 @@
     "hi": {
       "name": "स्ट्रिंग समानता",
       "description": "स्ट्रिंग समानता विश्लेषक - दो स्ट्रिंग की तुलना करें और उनके समानता स्कोर की गणना करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "String Similarity Analyzer — Compare two strings and calculate their similarity score. Designed as an AI agent project."
     }
   },
   "content-writing/technical-blog-reviewer": {
@@ -2389,6 +2542,9 @@
     "hi": {
       "name": "तकनीकी ब्लॉग समीक्षक",
       "description": "सटीकता, स्पष्टता, कोड शुद्धता और पूर्णता के लिए तकनीकी लेखों की समीक्षा करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reviews technical articles for accuracy, clarity, code correctness, and completeness. Designed as an AI agents project."
     }
   },
   "content-writing/text-case-converter": {
@@ -2435,6 +2591,9 @@
     "hi": {
       "name": "टेक्स्ट केस कन्वर्टर",
       "description": "टेक्स्ट केस कन्वर्टर - टेक्स्ट को विभिन्न केस प्रारूपों (कैमलकेस, स्नेक_केस, आदि) के बीच परिवर्तित करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Text Case Converter — Convert text between different case formats (camelCase, snake_case, etc.). Designed as an AI agent project."
     }
   },
   "content-writing/text-diff": {
@@ -2481,52 +2640,58 @@
     "hi": {
       "name": "पाठ अंतर",
       "description": "टेक्स्ट डिफ टूल - दो टेक्स्ट की तुलना करें और लाइन दर लाइन उनके अंतर दिखाएं। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Text Diff Tool — Compare two texts and show their differences line by line. Designed as an AI agent project."
     }
   },
   "content-writing/text-summarizer": {
     "id": {
       "name": "Peringkas Teks",
-      "description": ""
+      "description": "Meringkas teks panjang menjadi poin-poin utama."
     },
     "zh": {
       "name": "文本摘要器",
-      "description": ""
+      "description": "将长文本概括为关键要点。"
     },
     "es": {
       "name": "Resumidor de texto",
-      "description": ""
+      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Resumidor de texto",
-      "description": ""
+      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "テキストサマライザー",
-      "description": ""
+      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "텍스트 요약기",
-      "description": ""
+      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Textzusammenfassung",
-      "description": ""
+      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Récapitulateur de texte",
-      "description": ""
+      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Сумматор текста",
-      "description": ""
+      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "ملخص النص",
-      "description": ""
+      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "पाठ सारांश",
-      "description": ""
+      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
     }
   },
   "content-writing/tutorial-generator": {
@@ -2573,6 +2738,9 @@
     "hi": {
       "name": "ट्यूटोरियल जेनरेटर",
       "description": "कोड लाइब्रेरीज़ को पढ़ता है और चलाने योग्य उदाहरणों के साथ चरण-दर-चरण ट्यूटोरियल तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads code libraries and generates step-by-step tutorials with runnable examples. Designed as an AI agents project."
     }
   },
   "content-writing/tweet-thread-writer": {
@@ -2619,52 +2787,58 @@
     "hi": {
       "name": "ट्वीट थ्रेड लेखक",
       "description": "हुक और सीटीए के साथ लंबे प्रारूप वाली सामग्री को अनुकूलित ट्विटर/एक्स थ्रेड में परिवर्तित करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Converts long-form content into optimized Twitter/X threads with hooks and CTAs. Designed as an AI agents project."
     }
   },
   "content-writing/word-counter": {
     "id": {
       "name": "Penghitung Kata",
-      "description": ""
+      "description": "Menghitung kata, karakter, kalimat, dan paragraf dalam teks."
     },
     "zh": {
       "name": "字数统计器",
-      "description": ""
+      "description": "统计文本中的单词、字符、句子和段落。"
     },
     "es": {
       "name": "Contador de palabras",
-      "description": ""
+      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Contador de palavras",
-      "description": ""
+      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "ワードカウンター",
-      "description": ""
+      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "단어 카운터",
-      "description": ""
+      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Wortzähler",
-      "description": ""
+      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Compteur de mots",
-      "description": ""
+      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Счетчик слов",
-      "description": ""
+      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "عداد الكلمات",
-      "description": ""
+      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "शब्द काउंटर",
-      "description": ""
+      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
     }
   },
   "data-analytics/api-response-mocker": {
@@ -2711,98 +2885,107 @@
     "hi": {
       "name": "एपीआई रिस्पांस मॉकर",
       "description": "एपीआई स्पेक्स (ओपनएपीआई/स्वैगर) पढ़ता है और यथार्थवादी परीक्षण डेटा के साथ नकली सर्वर उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads API specs (OpenAPI/Swagger) and generates mock servers with realistic test data. Designed as an AI agents project."
     }
   },
   "data-analytics/api-response-validator": {
     "id": {
       "name": "Validator Respons API",
-      "description": ""
+      "description": "Memvalidasi respons API terhadap skema dan format yang diharapkan."
     },
     "zh": {
       "name": "API 响应验证器",
-      "description": ""
+      "description": "根据预期的模式和格式验证 API 响应。"
     },
     "es": {
       "name": "Validador de respuesta API",
-      "description": ""
+      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Validador de resposta da API",
-      "description": ""
+      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "API レスポンスバリデータ",
-      "description": ""
+      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "API 응답 유효성 검사기",
-      "description": ""
+      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "API-Antwortvalidator",
-      "description": ""
+      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Validateur de réponse API",
-      "description": ""
+      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Валидатор ответа API",
-      "description": ""
+      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "مدقق استجابة API",
-      "description": ""
+      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "एपीआई प्रतिक्रिया सत्यापनकर्ता",
-      "description": ""
+      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
     }
   },
   "data-analytics/base64-encoder": {
     "id": {
       "name": "Pembuat Enkode Base64",
-      "description": ""
+      "description": "Mengenkode dan mendekode string Base64."
     },
     "zh": {
       "name": "Base64编码器",
-      "description": ""
+      "description": "编码和解码 Base64 字符串。"
     },
     "es": {
       "name": "Codificador Base64",
-      "description": ""
+      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Codificador Base64",
-      "description": ""
+      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "Base64 エンコーダ",
-      "description": ""
+      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "Base64 인코더",
-      "description": ""
+      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Base64-Encoder",
-      "description": ""
+      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Encodeur Base64",
-      "description": ""
+      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Кодировщик Base64",
-      "description": ""
+      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "التشفير Base64",
-      "description": ""
+      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "बेस64 एनकोडर",
-      "description": ""
+      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
     }
   },
   "data-analytics/chart-generator-agent": {
@@ -2849,6 +3032,9 @@
     "hi": {
       "name": "चार्ट जेनरेटर एजेंट",
       "description": "डेटा और प्राकृतिक भाषा के प्रश्न लेता है, चार्ट कोड (चार्ट.जेएस, डी3, मैटप्लोटलिब) उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Takes data and natural language queries, generates chart code (Chart.js, D3, Matplotlib). Designed as an AI agents project."
     }
   },
   "data-analytics/code-complexity-analyzer": {
@@ -2895,52 +3081,58 @@
     "hi": {
       "name": "कोड जटिलता विश्लेषक",
       "description": "कोड जटिलता विश्लेषक - कोड जटिलता मेट्रिक्स (साइक्लोमैटिक जटिलता, एलओसी, आदि) का विश्लेषण करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Code Complexity Analyzer — Analyze code complexity metrics (cyclomatic complexity, LOC, etc.). Designed as an AI agent project."
     }
   },
   "data-analytics/csv-analyzer": {
     "id": {
       "name": "Penganalisis CSV",
-      "description": ""
+      "description": "Menganalisis file CSV dengan statistik dan wawasan data."
     },
     "zh": {
       "name": "CSV 分析器",
-      "description": ""
+      "description": "使用统计数据和洞察分析 CSV 文件。"
     },
     "es": {
       "name": "Analizador CSV",
-      "description": ""
+      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Analisador CSV",
-      "description": ""
+      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "CSVアナライザー",
-      "description": ""
+      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "CSV 분석기",
-      "description": ""
+      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "CSV-Analysator",
-      "description": ""
+      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Analyseur CSV",
-      "description": ""
+      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "CSV-анализатор",
-      "description": ""
+      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "محلل CSV",
-      "description": ""
+      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "सीएसवी विश्लेषक",
-      "description": ""
+      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
     }
   },
   "data-analytics/csv-cleaner": {
@@ -2987,52 +3179,58 @@
     "hi": {
       "name": "सीएसवी क्लीनर",
       "description": "अस्त-व्यस्त CSV फ़ाइलों को समाहित करता है, एन्कोडिंग समस्याओं, डुप्लिकेट, गुम मानों और प्रकार के बेमेल का पता लगाता है और उन्हें ठीक करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Ingests messy CSV files, detects and fixes encoding issues, duplicates, missing values, and type mismatches. Designed as an AI agents project."
     }
   },
   "data-analytics/csv-deduplicator": {
     "id": {
       "name": "Penghilang duplikat CSV",
-      "description": ""
+      "description": "Mendeteksi dan menghapus baris duplikat dari file CSV."
     },
     "zh": {
       "name": "CSV 重复数据删除器",
-      "description": ""
+      "description": "检测并从 CSV 文件中删除重复行。"
     },
     "es": {
       "name": "Desduplicador CSV",
-      "description": ""
+      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Desduplicador CSV",
-      "description": ""
+      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "CSV デデュプリケーター",
-      "description": ""
+      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "CSV 중복 제거기",
-      "description": ""
+      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "CSV-Deduplikator",
-      "description": ""
+      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Déduplicateur CSV",
-      "description": ""
+      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Дедупликатор CSV",
-      "description": ""
+      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "أداة إلغاء تكرار ملف CSV",
-      "description": ""
+      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "सीएसवी डिडुप्लिकेटर",
-      "description": ""
+      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
     }
   },
   "data-analytics/data-faker-agent": {
@@ -3079,6 +3277,9 @@
     "hi": {
       "name": "डेटा फ़ेकर एजेंट",
       "description": "परीक्षण के लिए स्कीमा परिभाषाओं से मेल खाने वाले यथार्थवादी नकली बीज डेटा उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Generates realistic fake seed data matching schema definitions for testing. Designed as an AI agents project."
     }
   },
   "data-analytics/data-pipeline-validator": {
@@ -3125,6 +3326,9 @@
     "hi": {
       "name": "डेटा पाइपलाइन सत्यापनकर्ता",
       "description": "ईटीएल पाइपलाइनों को सत्यापित करता है, स्रोत और गंतव्य प्रणालियों के बीच डेटा अखंडता की जांच करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Validates ETL pipelines, checks data integrity between source and destination systems. Designed as an AI agents project."
     }
   },
   "data-analytics/database-diagram-generator": {
@@ -3171,98 +3375,107 @@
     "hi": {
       "name": "डेटाबेस आरेख जेनरेटर",
       "description": "डेटाबेस स्कीमा (एसक्यूएल/ओआरएम) पढ़ता है और मरमेड या प्लांटयूएमएल में ईआरडी आरेख तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads database schemas (SQL/ORM) and generates ERD diagrams in Mermaid or PlantUML. Designed as an AI agents project."
     }
   },
   "data-analytics/ip-geolocation-lookup": {
     "id": {
       "name": "Pencarian Geolokasi IP",
-      "description": ""
+      "description": "Mencari lokasi geografis alamat IP."
     },
     "zh": {
       "name": "IP 地理位置查找",
-      "description": ""
+      "description": "查找 IP 地址的地理位置。"
     },
     "es": {
       "name": "Búsqueda de geolocalización de IP",
-      "description": ""
+      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Pesquisa de geolocalização IP",
-      "description": ""
+      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "IP地理位置情報ルックアップ",
-      "description": ""
+      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "IP 지리적 위치 조회",
-      "description": ""
+      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "IP-Geolokalisierungssuche",
-      "description": ""
+      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Recherche de géolocalisation IP",
-      "description": ""
+      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Поиск IP-геолокации",
-      "description": ""
+      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "بحث تحديد الموقع الجغرافي IP",
-      "description": ""
+      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "आईपी ​​जियोलोकेशन लुकअप",
-      "description": ""
+      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
     }
   },
   "data-analytics/json-formatter": {
     "id": {
       "name": "Pemformat JSON",
-      "description": ""
+      "description": "Memformat dan memvalidasi data JSON dengan pretty-print."
     },
     "zh": {
       "name": "JSON 格式化程序",
-      "description": ""
+      "description": "格式化和验证 JSON 数据，美化输出。"
     },
     "es": {
       "name": "Formateador JSON",
-      "description": ""
+      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Formatador JSON",
-      "description": ""
+      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "JSON フォーマッタ",
-      "description": ""
+      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "JSON 포맷터",
-      "description": ""
+      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "JSON-Formatierer",
-      "description": ""
+      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Formateur JSON",
-      "description": ""
+      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Форматер JSON",
-      "description": ""
+      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "تنسيق JSON",
-      "description": ""
+      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "JSON फ़ॉर्मेटर",
-      "description": ""
+      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
     }
   },
   "data-analytics/json-schema-generator": {
@@ -3309,6 +3522,9 @@
     "hi": {
       "name": "JSON स्कीमा जेनरेटर",
       "description": "JSON डेटा नमूनों का विश्लेषण करता है और व्यापक JSON स्कीमा परिभाषाएँ तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Analyzes JSON data samples and generates comprehensive JSON Schema definitions. Designed as an AI agents project."
     }
   },
   "data-analytics/log-to-metrics-converter": {
@@ -3355,6 +3571,9 @@
     "hi": {
       "name": "मेट्रिक्स कनवर्टर पर लॉग इन करें",
       "description": "संरचित मेट्रिक्स और डैशबोर्ड कॉन्फ़िगरेशन में असंरचित एप्लिकेशन लॉग को पार्स करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Parses unstructured application logs into structured metrics and dashboard configurations. Designed as an AI agents project."
     }
   },
   "data-analytics/math-expression-parser": {
@@ -3401,6 +3620,9 @@
     "hi": {
       "name": "गणित अभिव्यक्ति पार्सर",
       "description": "गणित अभिव्यक्ति पार्सर - गणितीय अभिव्यक्तियों को सुरक्षित रूप से पार्स और मूल्यांकन करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Math Expression Parser — Parse and evaluate mathematical expressions safely. Designed as an AI agent project."
     }
   },
   "data-analytics/regex-builder": {
@@ -3447,52 +3669,58 @@
     "hi": {
       "name": "रेगेक्स बिल्डर",
       "description": "प्राकृतिक भाषा विवरण लेता है और रेगेक्स पैटर्न उत्पन्न करता है, समझाता है और परीक्षण करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Takes natural language descriptions and generates, explains, and tests regex patterns. Designed as an AI agents project."
     }
   },
   "data-analytics/regex-tester": {
     "id": {
       "name": "Penguji Regex",
-      "description": ""
+      "description": "Menguji dan memvalidasi pola regex dengan pencocokan waktu nyata."
     },
     "zh": {
       "name": "正则表达式测试器",
-      "description": ""
+      "description": "测试和验证正则表达式模式，实时匹配。"
     },
     "es": {
       "name": "Probador de expresiones regulares",
-      "description": ""
+      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Testador Regex",
-      "description": ""
+      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "正規表現テスター",
-      "description": ""
+      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "정규식 테스터",
-      "description": ""
+      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Regex-Tester",
-      "description": ""
+      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Testeur d'expressions régulières",
-      "description": ""
+      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Тестер регулярных выражений",
-      "description": ""
+      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "اختبار ريجكس",
-      "description": ""
+      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "रेगेक्स परीक्षक",
-      "description": ""
+      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
     }
   },
   "data-analytics/spreadsheet-formula-writer": {
@@ -3539,6 +3767,9 @@
     "hi": {
       "name": "स्प्रेडशीट फ़ॉर्मूला लेखक",
       "description": "प्राकृतिक भाषा के प्रश्नों को स्पष्टीकरण के साथ एक्सेल/गूगल शीट्स फॉर्मूलों में परिवर्तित करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Converts natural language questions to Excel/Google Sheets formulas with explanations. Designed as an AI agents project."
     }
   },
   "data-analytics/sql-formatter": {
@@ -3585,144 +3816,156 @@
     "hi": {
       "name": "एसक्यूएल फ़ॉर्मेटर",
       "description": "एसक्यूएल फ़ॉर्मेटर - पठनीयता के लिए एसक्यूएल प्रश्नों को प्रारूपित और सुशोभित करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "SQL Formatter — Format and beautify SQL queries for readability. Designed as an AI agent project."
     }
   },
   "data-analytics/sql-query-optimizer": {
     "id": {
       "name": "Pengoptimal Kueri SQL",
-      "description": ""
+      "description": "Menganalisis dan mengoptimalkan kueri SQL untuk performa."
     },
     "zh": {
       "name": "SQL查询优化器",
-      "description": ""
+      "description": "分析和优化 SQL 查询以提升性能。"
     },
     "es": {
       "name": "Optimizador de consultas SQL",
-      "description": ""
+      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Otimizador de consulta SQL",
-      "description": ""
+      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "SQLクエリオプティマイザー",
-      "description": ""
+      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "SQL 쿼리 최적화 프로그램",
-      "description": ""
+      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "SQL-Abfrageoptimierer",
-      "description": ""
+      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Optimiseur de requêtes SQL",
-      "description": ""
+      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Оптимизатор SQL-запросов",
-      "description": ""
+      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "محسن استعلام SQL",
-      "description": ""
+      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "एसक्यूएल क्वेरी ऑप्टिमाइज़र",
-      "description": ""
+      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
     }
   },
   "data-analytics/timestamp-converter": {
     "id": {
       "name": "Konverter Stempel Waktu",
-      "description": ""
+      "description": "Mengonversi antara format timestamp dan zona waktu."
     },
     "zh": {
       "name": "时间戳转换器",
-      "description": ""
+      "description": "在时间戳格式和时区之间转换。"
     },
     "es": {
       "name": "Convertidor de marca de tiempo",
-      "description": ""
+      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Conversor de carimbo de data/hora",
-      "description": ""
+      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "タイムスタンプコンバータ",
-      "description": ""
+      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "타임스탬프 변환기",
-      "description": ""
+      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Zeitstempelkonverter",
-      "description": ""
+      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Convertisseur d'horodatage",
-      "description": ""
+      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Конвертер временных меток",
-      "description": ""
+      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "محول الطابع الزمني",
-      "description": ""
+      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "टाइमस्टैम्प कनवर्टर",
-      "description": ""
+      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
     }
   },
   "data-analytics/unit-converter": {
     "id": {
       "name": "Pengonversi Satuan",
-      "description": ""
+      "description": "Mengonversi antara berbagai satuan pengukuran."
     },
     "zh": {
       "name": "单位换算",
-      "description": ""
+      "description": "在各种测量单位之间转换。"
     },
     "es": {
       "name": "Convertidor de unidades",
-      "description": ""
+      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Conversor de unidades",
-      "description": ""
+      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "単位換算器",
-      "description": ""
+      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "단위 변환기",
-      "description": ""
+      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Einheitenumrechner",
-      "description": ""
+      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Convertisseur d'unités",
-      "description": ""
+      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Конвертер единиц измерения",
-      "description": ""
+      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "محول الوحدات",
-      "description": ""
+      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "इकाई परिवर्तक",
-      "description": ""
+      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
     }
   },
   "data-analytics/url-shortener": {
@@ -3769,6 +4012,9 @@
     "hi": {
       "name": "यूआरएल शॉर्टनर",
       "description": "यूआरएल शॉर्टनर - छोटे यूआरएल जेनरेट करें और लिंक रीडायरेक्ट प्रबंधित करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "URL Shortener — Generate shortened URLs and manage link redirects. Designed as an AI agent project."
     }
   },
   "data-analytics/uuid-generator": {
@@ -3815,6 +4061,9 @@
     "hi": {
       "name": "यूयूआईडी जेनरेटर",
       "description": "यूयूआईडी जनरेटर - यूयूआईडी (v1, v4, v5) उत्पन्न और मान्य करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "UUID Generator — Generate and validate UUIDs (v1, v4, v5). Designed as an AI agent project."
     }
   },
   "data-analytics/yaml-validator": {
@@ -3861,6 +4110,9 @@
     "hi": {
       "name": "वाईएएमएल सत्यापनकर्ता",
       "description": "YAML सत्यापनकर्ता - YAML फ़ाइलों को मान्य करें और सिंटैक्स त्रुटियों की रिपोर्ट करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "YAML Validator — Validate YAML files and report syntax errors. Designed as an AI agent project."
     }
   },
   "design-frontend/accessibility-auditor": {
@@ -3907,6 +4159,9 @@
     "hi": {
       "name": "अभिगम्यता लेखा परीक्षक",
       "description": "WCAG 2.1 उल्लंघनों के लिए HTML पृष्ठों को स्कैन करता है और प्राथमिकता वाले सुधार सुझाव तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Scans HTML pages for WCAG 2.1 violations and generates prioritized fix suggestions. Designed as an AI agents project."
     }
   },
   "design-frontend/ascii-art-generator": {
@@ -3953,6 +4208,9 @@
     "hi": {
       "name": "अस्की आर्ट जेनरेटर",
       "description": "ASCII आर्ट जेनरेटर - टेक्स्ट इनपुट से ASCII आर्ट जेनरेट करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "ASCII Art Generator — Generate ASCII art from text input. Designed as an AI agent project."
     }
   },
   "design-frontend/color-converter": {
@@ -3999,6 +4257,9 @@
     "hi": {
       "name": "रंग परिवर्तक",
       "description": "रंग कनवर्टर - रंग प्रारूपों (HEX, RGB, HSL) के बीच कनवर्ट करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Color Converter — Convert between color formats (HEX, RGB, HSL). Designed as an AI agent project."
     }
   },
   "design-frontend/color-palette-generator": {
@@ -4045,6 +4306,9 @@
     "hi": {
       "name": "रंग पैलेट जेनरेटर",
       "description": "छवियों, ब्रांड विवरण या मूड कीवर्ड से सामंजस्यपूर्ण रंग पैलेट उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Generates harmonious color palettes from images, brand descriptions, or mood keywords. Designed as an AI agents project."
     }
   },
   "design-frontend/component-documenter": {
@@ -4091,6 +4355,9 @@
     "hi": {
       "name": "घटक दस्तावेज़कार",
       "description": "React/Vue/Svelte घटकों को पढ़ता है और स्टोरीबुक-शैली दस्तावेज़ तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads React/Vue/Svelte components and generates Storybook-style documentation. Designed as an AI agents project."
     }
   },
   "design-frontend/design-token-extractor": {
@@ -4137,6 +4404,9 @@
     "hi": {
       "name": "डिज़ाइन टोकन एक्सट्रैक्टर",
       "description": "फिग्मा फ़ाइलें या डिज़ाइन विवरण पढ़ता है और CSS/SCSS डिज़ाइन टोकन वेरिएबल उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads Figma files or design specs and generates CSS/SCSS design token variables. Designed as an AI agents project."
     }
   },
   "design-frontend/icon-set-generator": {
@@ -4183,6 +4453,9 @@
     "hi": {
       "name": "चिह्न सेट जेनरेटर",
       "description": "एआई का उपयोग करके पाठ विवरण से सुसंगत आइकन सेट उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Generates consistent icon sets from text descriptions using AI. Designed as an AI agents project."
     }
   },
   "design-frontend/image-alt-text-writer": {
@@ -4229,6 +4502,9 @@
     "hi": {
       "name": "इमेज ऑल्ट टेक्स्ट राइटर",
       "description": "उन छवियों के लिए HTML को स्कैन करता है जिनमें वैकल्पिक टेक्स्ट नहीं है और AI का उपयोग करके वर्णनात्मक विकल्प उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Scans HTML for images missing alt text and generates descriptive alternatives using AI. Designed as an AI agents project."
     }
   },
   "design-frontend/responsive-design-tester": {
@@ -4275,6 +4551,9 @@
     "hi": {
       "name": "उत्तरदायी डिज़ाइन परीक्षक",
       "description": "एकाधिक व्यूपोर्ट पर स्क्रीनशॉट वेब पेज और फ़्लैग लेआउट समस्याएँ स्वचालित रूप से। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Screenshots web pages at multiple viewports and flags layout issues automatically. Designed as an AI agents project."
     }
   },
   "design-frontend/ui-copy-reviewer": {
@@ -4321,52 +4600,58 @@
     "hi": {
       "name": "यूआई कॉपी समीक्षक",
       "description": "स्पष्टता, स्थिरता, समावेशिता और स्थानीयकरण के लिए यूआई टेक्स्ट की समीक्षा करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reviews UI text for clarity, consistency, inclusivity, and localizability. Designed as an AI agents project."
     }
   },
   "devops-infra/changelog-generator": {
     "id": {
       "name": "Pembuat Log Perubahan",
-      "description": ""
+      "description": "Menghasilkan changelog dari riwayat commit Git."
     },
     "zh": {
       "name": "变更日志生成器",
-      "description": ""
+      "description": "从 Git 提交历史生成变更日志。"
     },
     "es": {
       "name": "Generador de registros de cambios",
-      "description": ""
+      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Gerador de log de alterações",
-      "description": ""
+      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "変更ログジェネレーター",
-      "description": ""
+      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "변경 로그 생성기",
-      "description": ""
+      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Changelog-Generator",
-      "description": ""
+      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Générateur de journal des modifications",
-      "description": ""
+      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Генератор журнала изменений",
-      "description": ""
+      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "مولد التغيير",
-      "description": ""
+      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "चेंजलॉग जेनरेटर",
-      "description": ""
+      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
     }
   },
   "devops-infra/ci-pipeline-optimizer": {
@@ -4413,98 +4698,107 @@
     "hi": {
       "name": "सीआई पाइपलाइन अनुकूलक",
       "description": "सीआई/सीडी कॉन्फ़िगरेशन का विश्लेषण करता है, बाधाओं की पहचान करता है, और समानांतरीकरण और कैशिंग रणनीतियों का सुझाव देता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Analyzes CI/CD configurations, identifies bottlenecks, and suggests parallelization and caching strategies. Designed as an AI agents project."
     }
   },
   "devops-infra/config-file-merger": {
     "id": {
       "name": "Konfigurasi Penggabungan File",
-      "description": ""
+      "description": "Menggabungkan file konfigurasi dari berbagai sumber."
     },
     "zh": {
       "name": "配置文件合并",
-      "description": ""
+      "description": "合并来自多个来源的配置文件。"
     },
     "es": {
       "name": "Fusión de archivos de configuración",
-      "description": ""
+      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Fusão de arquivos de configuração",
-      "description": ""
+      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "構成ファイルのマージ",
-      "description": ""
+      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "구성 파일 병합",
-      "description": ""
+      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Konfigurationsdateizusammenführung",
-      "description": ""
+      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Fusion de fichiers de configuration",
-      "description": ""
+      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Объединение файлов конфигурации",
-      "description": ""
+      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "دمج ملف التكوين",
-      "description": ""
+      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "कॉन्फ़िग फ़ाइल मर्जर",
-      "description": ""
+      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
     }
   },
   "devops-infra/cron-expression-parser": {
     "id": {
       "name": "Pengurai Ekspresi Cron",
-      "description": ""
+      "description": "Mengurai dan menjelaskan ekspresi cron."
     },
     "zh": {
       "name": "Cron 表达式解析器",
-      "description": ""
+      "description": "解析和解释 cron 表达式。"
     },
     "es": {
       "name": "Analizador de expresiones cron",
-      "description": ""
+      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Analisador de expressão Cron",
-      "description": ""
+      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "Cron 式パーサー",
-      "description": ""
+      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "크론 표현식 파서",
-      "description": ""
+      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Cron-Ausdrucksparser",
-      "description": ""
+      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Analyseur d'expressions Cron",
-      "description": ""
+      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Анализатор выражений Cron",
-      "description": ""
+      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "محلل التعبير كرون",
-      "description": ""
+      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "क्रोन एक्सप्रेशन पार्सर",
-      "description": ""
+      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
     }
   },
   "devops-infra/cron-parser": {
@@ -4551,6 +4845,9 @@
     "hi": {
       "name": "क्रोन पार्सर",
       "description": "क्रॉन पार्सर - मानव-पठनीय प्रारूप में क्रॉन अभिव्यक्तियों को पार्स करें और समझाएं। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Cron Parser — Parse and explain cron expressions in human-readable format. Designed as an AI agent project."
     }
   },
   "devops-infra/dependency-checker": {
@@ -4597,52 +4894,58 @@
     "hi": {
       "name": "निर्भरता परीक्षक",
       "description": "निर्भरता परीक्षक - पुराने या कमजोर पैकेजों के लिए परियोजना निर्भरता की जाँच करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Dependency Checker — Check project dependencies for outdated or vulnerable packages. Designed as an AI agent project."
     }
   },
   "devops-infra/dependency-updater": {
     "id": {
       "name": "Pembaruan Ketergantungan",
-      "description": ""
+      "description": "Memeriksa dan memperbarui dependensi proyek."
     },
     "zh": {
       "name": "依赖更新器",
-      "description": ""
+      "description": "检查和更新项目依赖。"
     },
     "es": {
       "name": "Actualizador de dependencias",
-      "description": ""
+      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Atualizador de Dependência",
-      "description": ""
+      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "依存関係アップデーター",
-      "description": ""
+      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "종속성 업데이트 프로그램",
-      "description": ""
+      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Abhängigkeits-Updater",
-      "description": ""
+      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Programme de mise à jour des dépendances",
-      "description": ""
+      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Средство обновления зависимостей",
-      "description": ""
+      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "محدث التبعية",
-      "description": ""
+      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "निर्भरता अद्यतनकर्ता",
-      "description": ""
+      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
     }
   },
   "devops-infra/docker-compose-generator": {
@@ -4689,52 +4992,58 @@
     "hi": {
       "name": "डॉकर कंपोज़ जेनरेटर",
       "description": "प्रोजेक्ट संरचना को पढ़ता है और अनुकूलित डॉकर और डॉकर कंपोज़ कॉन्फ़िगरेशन उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads project structure and generates optimized Docker and Docker Compose configurations. Designed as an AI agents project."
     }
   },
   "devops-infra/dockerfile-generator": {
     "id": {
       "name": "Pembuat File Docker",
-      "description": ""
+      "description": "Menghasilkan Dockerfile yang dioptimalkan untuk proyek."
     },
     "zh": {
       "name": "Dockerfile 生成器",
-      "description": ""
+      "description": "为项目生成优化的 Dockerfile。"
     },
     "es": {
       "name": "Generador de archivos Docker",
-      "description": ""
+      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Gerador Dockerfile",
-      "description": ""
+      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "Dockerfile ジェネレーター",
-      "description": ""
+      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "Dockerfile 생성기",
-      "description": ""
+      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Dockerfile-Generator",
-      "description": ""
+      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Générateur de fichiers Docker",
-      "description": ""
+      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Генератор Docker-файлов",
-      "description": ""
+      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "مولد ملف دوكر",
-      "description": ""
+      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "डॉकरफ़ाइल जेनरेटर",
-      "description": ""
+      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
     }
   },
   "devops-infra/env-file-auditor": {
@@ -4781,144 +5090,156 @@
     "hi": {
       "name": "एनवी फ़ाइल ऑडिटर",
       "description": "रिपॉजिटरी में .env फ़ाइलों को स्कैन करता है, लीक हुए रहस्यों, डुप्लिकेट और गायब वेरिएबल्स का पता लगाता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Scans .env files across repositories, detects leaked secrets, duplicates, and missing variables. Designed as an AI agents project."
     }
   },
   "devops-infra/env-validator": {
     "id": {
       "name": "Validator Lingkungan",
-      "description": ""
+      "description": "Memvalidasi variabel lingkungan terhadap skema."
     },
     "zh": {
       "name": "环境验证器",
-      "description": ""
+      "description": "根据模式验证环境变量。"
     },
     "es": {
       "name": "Validador de entorno",
-      "description": ""
+      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Validador de ambiente",
-      "description": ""
+      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "環境バリデーター",
-      "description": ""
+      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "환경 유효성 검사기",
-      "description": ""
+      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Env-Validator",
-      "description": ""
+      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Validateur d'environnement",
-      "description": ""
+      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Валидатор конвертов",
-      "description": ""
+      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "مدقق البيئة",
-      "description": ""
+      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "एनवी सत्यापनकर्ता",
-      "description": ""
+      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
     }
   },
   "devops-infra/git-commit-analyzer": {
     "id": {
       "name": "Penganalisis Komit Git",
-      "description": ""
+      "description": "Menganalisis riwayat commit Git untuk wawasan."
     },
     "zh": {
       "name": "Git 提交分析器",
-      "description": ""
+      "description": "分析 Git 提交历史以获取洞察。"
     },
     "es": {
       "name": "Analizador de confirmación de Git",
-      "description": ""
+      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Analisador de commits Git",
-      "description": ""
+      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "Git コミット アナライザー",
-      "description": ""
+      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "Git 커밋 분석기",
-      "description": ""
+      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Git-Commit-Analysator",
-      "description": ""
+      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Analyseur de validation Git",
-      "description": ""
+      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Анализатор коммитов Git",
-      "description": ""
+      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "محلل التزام جيت",
-      "description": ""
+      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "गिट कमिट विश्लेषक",
-      "description": ""
+      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
     }
   },
   "devops-infra/gitignore-generator": {
     "id": {
       "name": "Generator Gitignore",
-      "description": ""
+      "description": "Menghasilkan file .gitignore untuk berbagai bahasa."
     },
     "zh": {
       "name": "Gitignore 生成器",
-      "description": ""
+      "description": "为各种语言生成 .gitignore 文件。"
     },
     "es": {
       "name": "Generador de Gitignore",
-      "description": ""
+      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Gerador Gitignore",
-      "description": ""
+      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "Gitignore ジェネレーター",
-      "description": ""
+      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "Gitignore 생성기",
-      "description": ""
+      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Gitignore-Generator",
-      "description": ""
+      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Générateur Gitignore",
-      "description": ""
+      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Генератор Gitignore",
-      "description": ""
+      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "مولد جيتينيور",
-      "description": ""
+      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "गिटिग्नोर जेनरेटर",
-      "description": ""
+      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
     }
   },
   "devops-infra/incident-responder": {
@@ -4965,6 +5286,9 @@
     "hi": {
       "name": "घटना प्रत्युत्तरकर्ता",
       "description": "लॉग पर नज़र रखता है, विसंगतियों का पता लगाता है, और मूल कारण विश्लेषण के साथ घटना रिपोर्ट स्वतः उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Monitors logs, detects anomalies, and auto-generates incident reports with root cause analysis. Designed as an AI agents project."
     }
   },
   "devops-infra/infra-cost-analyzer": {
@@ -5011,6 +5335,9 @@
     "hi": {
       "name": "इन्फ्रा लागत विश्लेषक",
       "description": "क्लाउड बिलिंग डेटा (AWS/GCP/Azure) को पार्स करता है, अपशिष्ट की पहचान करता है, और सही आकार का सुझाव देता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Parses cloud billing data (AWS/GCP/Azure), identifies waste, and suggests right-sizing. Designed as an AI agents project."
     }
   },
   "devops-infra/log-analyzer": {
@@ -5057,6 +5384,9 @@
     "hi": {
       "name": "लॉग विश्लेषक",
       "description": "एप्लिकेशन लॉग को समाहित करता है, पैटर्न की पहचान करता है, और संदर्भ के साथ त्रुटियों को सामने लाता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Ingests application logs, identifies patterns, and surfaces errors with context. Designed as an AI agents project."
     }
   },
   "devops-infra/migration-planner": {
@@ -5103,6 +5433,9 @@
     "hi": {
       "name": "प्रवास योजनाकार",
       "description": "डेटाबेस स्कीमा का विश्लेषण करता है और रोलबैक रणनीतियों के साथ माइग्रेशन योजनाएं तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Analyzes database schemas and generates migration plans with rollback strategies. Designed as an AI agents project."
     }
   },
   "devops-infra/release-notes-generator": {
@@ -5149,52 +5482,58 @@
     "hi": {
       "name": "रिलीज़ नोट्स जेनरेटर",
       "description": "टैग के बीच गिट इतिहास पढ़ता है और परिष्कृत, वर्गीकृत रिलीज़ नोट्स तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads git history between tags and generates polished, categorized release notes. Designed as an AI agents project."
     }
   },
   "devops-infra/semver-parser": {
     "id": {
       "name": "Pengurai Semver",
-      "description": ""
+      "description": "Mengurai dan membandingkan versi semantik."
     },
     "zh": {
       "name": "语义分析器",
-      "description": ""
+      "description": "解析和比较语义化版本。"
     },
     "es": {
       "name": "Analizador Semver",
-      "description": ""
+      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Analisador Semver",
-      "description": ""
+      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "センバーパーサー",
-      "description": ""
+      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "셈버 파서",
-      "description": ""
+      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Semver-Parser",
-      "description": ""
+      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Analyseur Semver",
-      "description": ""
+      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Семвер Парсер",
-      "description": ""
+      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "محلل سيمفر",
-      "description": ""
+      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "सेम्वर पार्सर",
-      "description": ""
+      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
     }
   },
   "devops-infra/terraform-reviewer": {
@@ -5241,6 +5580,9 @@
     "hi": {
       "name": "टेराफॉर्म समीक्षक",
       "description": "टेराफॉर्म और आईएसी योजनाओं की समीक्षा करता है, सुरक्षा जोखिमों और लागत निहितार्थों पर प्रकाश डालता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reviews Terraform and IaC plans, flags security risks and cost implications. Designed as an AI agents project."
     }
   },
   "devops-infra/uptime-monitor-agent": {
@@ -5287,6 +5629,9 @@
     "hi": {
       "name": "अपटाइम मॉनिटर एजेंट",
       "description": "HTTP एंडपॉइंट्स को पोल करता है, डाउनटाइम का पता लगाता है, और डायग्नोस्टिक संदर्भ के साथ अलर्ट भेजता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Polls HTTP endpoints, detects downtime, and sends alerts with diagnostic context. Designed as an AI agents project."
     }
   },
   "documentation/changelog-writer": {
@@ -5333,6 +5678,9 @@
     "hi": {
       "name": "चेंजलॉग लेखक",
       "description": "रिलीज़ नोट एजेंट - गिट कमिट रेंज का विश्लेषण करें। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Release note agent — Analyze git commit range. Designed as a agents project."
     }
   },
   "documentation/doc-writer": {
@@ -5379,6 +5727,9 @@
     "hi": {
       "name": "डॉक्टर लेखक",
       "description": "दस्तावेज़ीकरण जनरेटर - पार्स कोडबेस एएसटी। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Documentation generator — Parse codebase AST. Designed as a agents project."
     }
   },
   "documentation/documentation-writer-bot": {
@@ -5425,6 +5776,9 @@
     "hi": {
       "name": "दस्तावेज़ीकरण लेखक बॉट",
       "description": "एजेंट जो कोडबेस पढ़ता है और दस्तावेज़ फ़ोल्डर जेनरेट/अपडेट करता है।"
+    },
+    "en": {
+      "description": "Agent that reads codebases and generates/updates documentation folders."
     }
   },
   "documentation/license-generator": {
@@ -5471,6 +5825,9 @@
     "hi": {
       "name": "लाइसेंस जेनरेटर",
       "description": "लाइसेंस जेनरेटर - ओपन-सोर्स लाइसेंस फ़ाइलें (एमआईटी, अपाचे, जीपीएल, आदि) जेनरेट करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "License Generator — Generate open-source license files (MIT, Apache, GPL, etc.). Designed as an AI agent project."
     }
   },
   "documentation/readme-generator": {
@@ -5517,6 +5874,9 @@
     "hi": {
       "name": "रीडमी जेनरेटर",
       "description": "README जेनरेटर - प्रोजेक्ट संरचना और मेटाडेटा से README फ़ाइलें जेनरेट करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "README Generator — Generate README files from project structure and metadata. Designed as an AI agent project."
     }
   },
   "file-conversion/csv-to-api-agent": {
@@ -5563,6 +5923,9 @@
     "hi": {
       "name": "एपीआई एजेंट के लिए सीएसवी",
       "description": "CSV फ़ाइलें लेता है और CRUD संचालन के साथ स्वचालित रूप से REST API सर्वर उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Takes CSV files and generates REST API servers with CRUD operations automatically. Designed as an AI agents project."
     }
   },
   "file-conversion/figma-to-css-agent": {
@@ -5609,98 +5972,107 @@
     "hi": {
       "name": "फिग्मा टू सीएसएस एजेंट",
       "description": "फिग्मा निर्यात फ़ाइलों से डिज़ाइन गुण निकालता है और उत्पादन सीएसएस उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Extracts design properties from Figma export files and generates production CSS. Designed as an AI agents project."
     }
   },
   "file-conversion/file-organizer": {
     "id": {
       "name": "Pengatur File",
-      "description": ""
+      "description": "Mengorganisir file ke dalam folder berdasarkan tipe dan pola."
     },
     "zh": {
       "name": "文件管理器",
-      "description": ""
+      "description": "根据类型和模式将文件组织到文件夹中。"
     },
     "es": {
       "name": "Organizador de archivos",
-      "description": ""
+      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Organizador de arquivos",
-      "description": ""
+      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "ファイルオーガナイザー",
-      "description": ""
+      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "파일 정리",
-      "description": ""
+      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Datei-Organizer",
-      "description": ""
+      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Organisateur de fichiers",
-      "description": ""
+      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Организатор файлов",
-      "description": ""
+      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "منظم الملفات",
-      "description": ""
+      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "फ़ाइल आयोजक",
-      "description": ""
+      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
     }
   },
   "file-conversion/html-to-markdown": {
     "id": {
       "name": "HTML Ke Penurunan Harga",
-      "description": ""
+      "description": "Mengonversi HTML menjadi Markdown yang bersih."
     },
     "zh": {
       "name": "HTML 转 Markdown",
-      "description": ""
+      "description": "将 HTML 转换为干净的 Markdown。"
     },
     "es": {
       "name": "HTML para rebajas",
-      "description": ""
+      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "HTML para redução",
-      "description": ""
+      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "HTMLからマークダウンへ",
-      "description": ""
+      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "HTML을 마크다운으로",
-      "description": ""
+      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "HTML zu Markdown",
-      "description": ""
+      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "HTML en démarque",
-      "description": ""
+      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "HTML в Markdown",
-      "description": ""
+      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "HTML إلى تخفيض السعر",
-      "description": ""
+      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "एचटीएमएल से मार्कडाउन",
-      "description": ""
+      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
     }
   },
   "file-conversion/html-to-markdown-converter": {
@@ -5747,52 +6119,58 @@
     "hi": {
       "name": "एचटीएमएल से मार्कडाउन कनवर्टर",
       "description": "HTML पृष्ठों को स्क्रैप और साफ़, अच्छी तरह से स्वरूपित मार्कडाउन दस्तावेज़ में परिवर्तित करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Scrapes and converts HTML pages to clean, well-formatted Markdown documentation. Designed as an AI agents project."
     }
   },
   "file-conversion/json-yaml-converter": {
     "id": {
       "name": "Konverter JSON YAML",
-      "description": ""
+      "description": "Mengonversi antara format JSON dan YAML."
     },
     "zh": {
       "name": "JSON YAML 转换器",
-      "description": ""
+      "description": "在 JSON 和 YAML 格式之间转换。"
     },
     "es": {
       "name": "Convertidor JSON YAML",
-      "description": ""
+      "description": "CLI for JSON/YAML/TOML Converter."
     },
     "pt": {
       "name": "Conversor JSON-YAML",
-      "description": ""
+      "description": "CLI for JSON/YAML/TOML Converter."
     },
     "ja": {
       "name": "JSON YAMLコンバータ",
-      "description": ""
+      "description": "CLI for JSON/YAML/TOML Converter."
     },
     "ko": {
       "name": "JSON YAML 변환기",
-      "description": ""
+      "description": "CLI for JSON/YAML/TOML Converter."
     },
     "de": {
       "name": "JSON YAML-Konverter",
-      "description": ""
+      "description": "CLI for JSON/YAML/TOML Converter."
     },
     "fr": {
       "name": "Convertisseur JSON YAML",
-      "description": ""
+      "description": "CLI for JSON/YAML/TOML Converter."
     },
     "ru": {
       "name": "JSON-YAML-конвертер",
-      "description": ""
+      "description": "CLI for JSON/YAML/TOML Converter."
     },
     "ar": {
       "name": "محول JSON YAML",
-      "description": ""
+      "description": "CLI for JSON/YAML/TOML Converter."
     },
     "hi": {
       "name": "JSON YAML कन्वर्टर",
-      "description": ""
+      "description": "CLI for JSON/YAML/TOML Converter."
+    },
+    "en": {
+      "description": "CLI for JSON/YAML/TOML Converter."
     }
   },
   "file-conversion/markdown-to-pdf-agent": {
@@ -5839,6 +6217,9 @@
     "hi": {
       "name": "पीडीएफ एजेंट के लिए मार्कडाउन",
       "description": "स्टाइल वाले मार्कडाउन दस्तावेज़ों को हेडर, फ़ूटर और थीम के साथ सुंदर पीडीएफ़ में परिवर्तित करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Converts styled Markdown documents to beautiful PDFs with headers, footers, and themes. Designed as an AI agents project."
     }
   },
   "file-conversion/sql-to-nosql-migrator": {
@@ -5885,6 +6266,9 @@
     "hi": {
       "name": "एसक्यूएल से नोएसक्यूएल माइग्रेटर",
       "description": "माइग्रेशन स्क्रिप्ट के साथ SQL डेटाबेस स्कीमा को MongoDB/DynamoDB समकक्षों में परिवर्तित करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Converts SQL database schemas to MongoDB/DynamoDB equivalents with migration scripts. Designed as an AI agents project."
     }
   },
   "file-conversion/swagger-to-typescript": {
@@ -5931,6 +6315,9 @@
     "hi": {
       "name": "टाइपस्क्रिप्ट के लिए स्वैगर",
       "description": "ओपनएपीआई/स्वैगर विनिर्देशों से टाइपस्क्रिप्ट इंटरफेस और एपीआई क्लाइंट कोड उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Generates TypeScript interfaces and API client code from OpenAPI/Swagger specifications. Designed as an AI agents project."
     }
   },
   "file-conversion/video-to-transcript": {
@@ -5977,6 +6364,9 @@
     "hi": {
       "name": "प्रतिलेख के लिए वीडियो",
       "description": "वीडियो और ऑडियो फ़ाइलों को ट्रांसक्रिप्ट करता है, टाइमस्टैम्प्ड मार्कडाउन ट्रांसक्रिप्ट तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Transcribes video and audio files, generating timestamped Markdown transcripts. Designed as an AI agents project."
     }
   },
   "file-conversion/yaml-json-converter": {
@@ -6023,6 +6413,9 @@
     "hi": {
       "name": "YAML JSON कन्वर्टर",
       "description": "सत्यापन, टिप्पणियाँ संरक्षण और स्वरूपण के साथ द्वि-दिशात्मक YAML-से-JSON रूपांतरण। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Bi-directional YAML-to-JSON conversion with validation, comments preservation, and formatting. Designed as an AI agents project."
     }
   },
   "fixers/api-breaking-change-detect": {
@@ -6069,6 +6462,9 @@
     "hi": {
       "name": "एपीआई ब्रेकिंग चेंज डिटेक्ट",
       "description": "विलय से पहले ब्रेकिंग एपीआई परिवर्तनों का पता लगाएं।"
+    },
+    "en": {
+      "description": "Detect breaking API changes before merge."
     }
   },
   "fixers/code-style-enforcer-bot": {
@@ -6115,6 +6511,9 @@
     "hi": {
       "name": "कोड स्टाइल एनफोर्सर बॉट",
       "description": "शैली को लागू करने और ठीक करने के लिए अनुकूल बॉट।"
+    },
+    "en": {
+      "description": "Friendly bot to enforce and fix style."
     }
   },
   "fixers/css-dead-code-remover": {
@@ -6161,6 +6560,9 @@
     "hi": {
       "name": "सीएसएस डेड कोड रिमूवर",
       "description": "अप्रयुक्त सीएसएस चयनकर्ताओं की पहचान करें।"
+    },
+    "en": {
+      "description": "Identify unused CSS selectors."
     }
   },
   "fixers/dependency-bloat-reducer": {
@@ -6207,6 +6609,9 @@
     "hi": {
       "name": "निर्भरता ब्लोट रिड्यूसर",
       "description": "भारी/अप्रयुक्त निर्भरताएँ खोजें।"
+    },
+    "en": {
+      "description": "Find heavy/unused dependencies."
     }
   },
   "fixers/deprecation-hunter": {
@@ -6253,6 +6658,9 @@
     "hi": {
       "name": "निंदा शिकारी",
       "description": "अप्रचलित उपयोग को ढूँढता है और उसे ठीक करने का इरादा रखता है।"
+    },
+    "en": {
+      "description": "Finds and intends to fix deprecated usage."
     }
   },
   "fixers/doc-drift-fixer": {
@@ -6299,6 +6707,9 @@
     "hi": {
       "name": "डॉक्टर ड्रिफ्ट फिक्सर",
       "description": "कोड परिवर्तन के साथ दस्तावेज़ीकरण को संरेखित करता है।"
+    },
+    "en": {
+      "description": "Aligns documentation with code changes."
     }
   },
   "fixers/i18n-missing-key-finder": {
@@ -6345,6 +6756,9 @@
     "hi": {
       "name": "I18n गुम कुंजी खोजक",
       "description": "गुम अनुवाद कुंजियाँ ढूँढ़ें।"
+    },
+    "en": {
+      "description": "Find missing translation keys."
     }
   },
   "fixers/log-noise-reducer": {
@@ -6391,6 +6805,9 @@
     "hi": {
       "name": "लॉग शोर कम करने वाला",
       "description": "सफ़ाई के लिए स्पैमयुक्त लॉग की पहचान करें।"
+    },
+    "en": {
+      "description": "Identify spammy logs to cleanup."
     }
   },
   "fixers/unused-asset-cleaner": {
@@ -6437,6 +6854,9 @@
     "hi": {
       "name": "अप्रयुक्त एसेट क्लीनर",
       "description": "अप्रयुक्त छवियों/फ़ाइलों को ढूंढें और हटाएं।"
+    },
+    "en": {
+      "description": "Find and remove unused images/files."
     }
   },
   "fixers/vuln-auto-patcher": {
@@ -6483,6 +6903,9 @@
     "hi": {
       "name": "वुलन ऑटो पैचर",
       "description": "ज्ञात सुरक्षा कमजोरियों को ऑटो-पैच करें।"
+    },
+    "en": {
+      "description": "Auto-patch known security vulnerabilities."
     }
   },
   "learning-education/code-explainer": {
@@ -6529,6 +6952,9 @@
     "hi": {
       "name": "कोड व्याख्याकार",
       "description": "जटिल कोड स्निपेट लेता है और सीखने के लिए पंक्ति-दर-पंक्ति स्पष्टीकरण उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Takes complex code snippets and generates line-by-line explanations for learning. Designed as an AI agents project."
     }
   },
   "learning-education/flashcard-generator": {
@@ -6575,6 +7001,9 @@
     "hi": {
       "name": "फ़्लैशकार्ड जेनरेटर",
       "description": "तकनीकी दस्तावेज या नोट्स पढ़ता है और अंकी-संगत फ़्लैशकार्ड बनाता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads technical documentation or notes and generates Anki-compatible flashcards. Designed as an AI agents project."
     }
   },
   "learning-education/interview-prep-agent": {
@@ -6621,6 +7050,9 @@
     "hi": {
       "name": "साक्षात्कार तैयारी एजेंट",
       "description": "नौकरी विवरण और तकनीकी ढेर के आधार पर तकनीकी साक्षात्कार प्रश्न उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Generates technical interview questions based on job descriptions and tech stacks. Designed as an AI agents project."
     }
   },
   "learning-education/learning-path-planner": {
@@ -6667,6 +7099,9 @@
     "hi": {
       "name": "लर्निंग पाथ प्लानर",
       "description": "कौशल अंतराल का विश्लेषण करता है और संसाधनों के साथ व्यक्तिगत शिक्षण रोडमैप तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Analyzes skill gaps and generates personalized learning roadmaps with resources. Designed as an AI agents project."
     }
   },
   "learning-education/paper-summarizer": {
@@ -6713,6 +7148,9 @@
     "hi": {
       "name": "पेपर सारांश",
       "description": "अकादमिक पेपर (arXiv, आदि) पढ़ता है और सरल भाषा में सारांश और मुख्य निष्कर्ष तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads academic papers (arXiv, etc.) and generates plain-language summaries and key takeaways. Designed as an AI agents project."
     }
   },
   "learning-education/quiz-generator": {
@@ -6759,6 +7197,9 @@
     "hi": {
       "name": "प्रश्नोत्तरी जेनरेटर",
       "description": "शैक्षिक सामग्री पढ़ता है और बहुविकल्पीय और ओपन-एंडेड क्विज़ तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads educational content and generates multiple-choice and open-ended quizzes. Designed as an AI agents project."
     }
   },
   "misc/ai-frameworks/autogen-agent": {
@@ -6805,6 +7246,9 @@
     "hi": {
       "name": "ऑटोजेन एजेंट",
       "description": "कई एजेंटों के साथ एक संवादी एआई प्रणाली जो कोड लिख सकती है, डीबग कर सकती है और सहयोगात्मक रूप से कार्यों को निष्पादित कर सकती है। माइक्रोसॉफ्ट ऑटोजेन के साथ निर्मित।"
+    },
+    "en": {
+      "description": "A conversational AI system with multiple agents that can write code, debug, and execute tasks collaboratively. Built with Microsoft AutoGen."
     }
   },
   "misc/ai-frameworks/crewai-agent": {
@@ -6851,6 +7295,9 @@
     "hi": {
       "name": "क्रेवई एजेंट",
       "description": "एक बहु-एजेंट दल जो विषयों पर शोध करने, रिपोर्ट लिखने और अंतर्दृष्टि उत्पन्न करने में सहयोग करता है। एजेंट ऑर्केस्ट्रेशन के लिए CrewAI का उपयोग करता है।"
+    },
+    "en": {
+      "description": "A multi-agent crew that collaborates to research topics, write reports, and generate insights. Uses CrewAI for agent orchestration."
     }
   },
   "misc/ai-frameworks/langchain-agent": {
@@ -6897,6 +7344,9 @@
     "hi": {
       "name": "लैंगचैन एजेंट",
       "description": "एक एआई अनुसंधान एजेंट जो लैंगचेन और ओपनएआई का उपयोग करके वेब पर खोज कर सकता है, दस्तावेज़ों का सारांश दे सकता है और जटिल प्रश्नों का उत्तर दे सकता है। सीएलआई उपकरण के रूप में चलता है।"
+    },
+    "en": {
+      "description": "An AI research agent that can search the web, summarize documents, and answer complex questions using LangChain and OpenAI. Runs as a CLI tool."
     }
   },
   "misc/communication/email-drafter": {
@@ -6943,6 +7393,9 @@
     "hi": {
       "name": "ईमेल ड्राफ्टर",
       "description": "संदर्भ-जागरूक प्रतिक्रिया बॉट - आने वाली ईमेल थ्रेड पढ़ें। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Context-aware response bot — Read incoming email thread. Designed as a agents project."
     }
   },
   "misc/communication/email-triage-assistant": {
@@ -6989,6 +7442,9 @@
     "hi": {
       "name": "ईमेल ट्राइएज सहायक",
       "description": "स्थानीय एआई एजेंट ईमेल के उत्तरों को वर्गीकृत, सारांशित और प्रारूपित करने के लिए।"
+    },
+    "en": {
+      "description": "Local AI agent to categorize, summarize, and draft replies to emails."
     }
   },
   "misc/content-marketing/resume-tailor-agent": {
@@ -7035,6 +7491,9 @@
     "hi": {
       "name": "दर्जी एजेंट फिर से शुरू करें",
       "description": "एजेंट जो आपके बायोडाटा/सीवी को विशिष्ट नौकरी विवरण के लिए तैयार करता है।"
+    },
+    "en": {
+      "description": "Agent that tailors your resume/CV for specific job descriptions."
     }
   },
   "misc/content-marketing/social-media-manager-agent": {
@@ -7081,6 +7540,9 @@
     "hi": {
       "name": "सोशल मीडिया मैनेजर एजेंट",
       "description": "ब्रांड की आवाज के आधार पर सामाजिक सामग्री का मसौदा तैयार करने, शेड्यूल करने और उसमें संलग्न होने के लिए एआई एजेंट।"
+    },
+    "en": {
+      "description": "AI agent to draft, schedule, and engage with social content based on brand voice."
     }
   },
   "misc/meetings/meeting-notes-organizer": {
@@ -7127,6 +7589,9 @@
     "hi": {
       "name": "मीटिंग नोट्स आयोजक",
       "description": "एजेंट जो ट्रांस्क्रिप्ट लेता है, कार्य निकालता है और प्रोजेक्ट प्रबंधन टूल को अपडेट करता है।"
+    },
+    "en": {
+      "description": "Agent that takes transcripts, extracts tasks, and updates project management tools."
     }
   },
   "misc/meetings/meeting-summarizer": {
@@ -7173,6 +7638,9 @@
     "hi": {
       "name": "सारांश बैठक",
       "description": "ट्रांसक्रिप्ट प्रोसेसर - वीटीटी/टेक्स्ट ट्रांसक्रिप्ट पढ़ें। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Transcript processor — Read VTT/Text transcript. Designed as a agents project."
     }
   },
   "misc/research-data/data-analyst": {
@@ -7219,6 +7687,9 @@
     "hi": {
       "name": "डेटा विश्लेषक",
       "description": "सीएसवी अंतर्दृष्टि जनरेटर - सीएसवी/एक्सेल डेटा लोड करें। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "CSV insight generator — Load CSV/Excel data. Designed as a agents project."
     }
   },
   "misc/research-data/research-summarizer-agent": {
@@ -7265,6 +7736,9 @@
     "hi": {
       "name": "अनुसंधान सारांश एजेंट",
       "description": "गहन अनुसंधान एजेंट. एक विषय दें, यह एक रिपोर्ट को ब्राउज़ करता है, पढ़ता है और संश्लेषित करता है।"
+    },
+    "en": {
+      "description": "Deep research agent. Give a topic, it browses, reads, and synthesizes a report."
     }
   },
   "misc/research-data/sql-query-builder-agent": {
@@ -7311,6 +7785,9 @@
     "hi": {
       "name": "SQL क्वेरी बिल्डर एजेंट",
       "description": "SQL एजेंट के लिए प्राकृतिक भाषा। स्कीमा से जुड़ता है, सुरक्षित क्वेरी लिखता है।"
+    },
+    "en": {
+      "description": "Natural language to SQL agent. Connects to schema, writes safe queries."
     }
   },
   "misc/testing-qa/qa-test-generator": {
@@ -7357,6 +7834,9 @@
     "hi": {
       "name": "क्यूए टेस्ट जेनरेटर",
       "description": "एजेंट जो सुविधाओं/कोड को पढ़ता है और साइप्रस/नाटककार परीक्षण उत्पन्न करता है।"
+    },
+    "en": {
+      "description": "Agent that reads features/code and generates Cypress/Playwright tests."
     }
   },
   "misc/testing-qa/test-generator": {
@@ -7403,6 +7883,9 @@
     "hi": {
       "name": "परीक्षण जेनरेटर",
       "description": "यूनिट परीक्षण लेखक - फ़ंक्शन हस्ताक्षर का विश्लेषण करें। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Unit test writer — Analyze function signature. Designed as a agents project."
     }
   },
   "personal-lifestyle/gift-recommendation-agent": {
@@ -7449,6 +7932,9 @@
     "hi": {
       "name": "उपहार अनुशंसा एजेंट",
       "description": "प्राप्तकर्ता प्रोफ़ाइल, अवसर और बजट के आधार पर वैयक्तिकृत उपहार विचार सुझाता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Suggests personalized gift ideas based on recipient profile, occasion, and budget. Designed as an AI agents project."
     }
   },
   "personal-lifestyle/habit-coach": {
@@ -7495,6 +7981,9 @@
     "hi": {
       "name": "आदत कोच",
       "description": "दैनिक आदतों को ट्रैक करता है, पैटर्न का विश्लेषण करता है, प्रेरक संकेत और स्ट्रीक ट्रैकिंग प्रदान करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Tracks daily habits, analyzes patterns, provides motivational nudges and streak tracking. Designed as an AI agents project."
     }
   },
   "personal-lifestyle/journaling-prompt-agent": {
@@ -7541,6 +8030,9 @@
     "hi": {
       "name": "जर्नलिंग प्रॉम्प्ट एजेंट",
       "description": "मनोदशा, लक्ष्य और संदर्भ के आधार पर वैयक्तिकृत दैनिक जर्नलिंग संकेत उत्पन्न करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Generates personalized daily journaling prompts based on mood, goals, and context. Designed as an AI agents project."
     }
   },
   "personal-lifestyle/recipe-planner": {
@@ -7587,6 +8079,9 @@
     "hi": {
       "name": "रेसिपी प्लानर",
       "description": "आहार संबंधी प्राथमिकताओं, एलर्जी और बजट के आधार पर व्यंजनों के साथ साप्ताहिक भोजन योजनाएँ तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Generates weekly meal plans with recipes based on dietary preferences, allergies, and budget. Designed as an AI agents project."
     }
   },
   "personal-lifestyle/travel-itinerary-agent": {
@@ -7633,6 +8128,9 @@
     "hi": {
       "name": "यात्रा कार्यक्रम एजेंट",
       "description": "लागत, मार्ग, आवास और गतिविधियों के साथ विस्तृत यात्रा कार्यक्रम की योजना बनाएं। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Plans detailed travel itineraries with costs, routes, accommodations, and activities. Designed as an AI agents project."
     }
   },
   "personal-lifestyle/workout-planner": {
@@ -7679,6 +8177,9 @@
     "hi": {
       "name": "वर्कआउट प्लानर",
       "description": "फिटनेस लक्ष्य, उपकरण और शेड्यूल के आधार पर वैयक्तिकृत वर्कआउट योजनाएँ बनाता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Creates personalized workout plans based on fitness goals, equipment, and schedule. Designed as an AI agents project."
     }
   },
   "security-privacy/cors-config-validator": {
@@ -7725,6 +8226,9 @@
     "hi": {
       "name": "CORS कॉन्फ़िग सत्यापनकर्ता",
       "description": "एपीआई में सीओआरएस कॉन्फ़िगरेशन का विश्लेषण करता है, अत्यधिक अनुमेय या टूटे हुए सेटअप को चिह्नित करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Analyzes CORS configurations across APIs, flags overly permissive or broken setups. Designed as an AI agents project."
     }
   },
   "security-privacy/dependency-vulnerability-monitor": {
@@ -7771,6 +8275,9 @@
     "hi": {
       "name": "निर्भरता भेद्यता मॉनिटर",
       "description": "नए सीवीई के लिए प्रोजेक्ट निर्भरता की लगातार निगरानी करता है और फिक्स पीआर को स्वतः बनाता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Continuously monitors project dependencies for new CVEs and auto-creates fix PRs. Designed as an AI agents project."
     }
   },
   "security-privacy/file-hash-generator": {
@@ -7817,98 +8324,107 @@
     "hi": {
       "name": "फ़ाइल हैश जेनरेटर",
       "description": "फ़ाइल हैश जेनरेटर - अखंडता जांच के लिए फ़ाइल हैश (MD5, SHA-256, SHA-512) उत्पन्न करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "File Hash Generator — Generate file hashes (MD5, SHA-256, SHA-512) for integrity checks. Designed as an AI agent project."
     }
   },
   "security-privacy/hash-generator": {
     "id": {
       "name": "Pembuat Hash",
-      "description": ""
+      "description": "Menghasilkan hash kriptografi (MD5, SHA-256, dll.)."
     },
     "zh": {
       "name": "哈希生成器",
-      "description": ""
+      "description": "生成加密哈希（MD5、SHA-256 等）。"
     },
     "es": {
       "name": "Generador de hash",
-      "description": ""
+      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Gerador de hash",
-      "description": ""
+      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "ハッシュジェネレーター",
-      "description": ""
+      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "해시 생성기",
-      "description": ""
+      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Hash-Generator",
-      "description": ""
+      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Générateur de hachage",
-      "description": ""
+      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Хэш-генератор",
-      "description": ""
+      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "مولد التجزئة",
-      "description": ""
+      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "हैश जेनरेटर",
-      "description": ""
+      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
     }
   },
   "security-privacy/http-header-analyzer": {
     "id": {
       "name": "Penganalisis Header HTTP",
-      "description": ""
+      "description": "Menganalisis header HTTP untuk masalah keamanan."
     },
     "zh": {
       "name": "HTTP 标头分析器",
-      "description": ""
+      "description": "分析 HTTP 标头以检查安全问题。"
     },
     "es": {
       "name": "Analizador de encabezados HTTP",
-      "description": ""
+      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Analisador de cabeçalho HTTP",
-      "description": ""
+      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "HTTPヘッダーアナライザー",
-      "description": ""
+      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "HTTP 헤더 분석기",
-      "description": ""
+      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "HTTP-Header-Analysator",
-      "description": ""
+      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Analyseur d'en-tête HTTP",
-      "description": ""
+      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Анализатор HTTP-заголовков",
-      "description": ""
+      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "محلل رأس HTTP",
-      "description": ""
+      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "HTTP हेडर विश्लेषक",
-      "description": ""
+      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
     }
   },
   "security-privacy/ip-lookup": {
@@ -7955,52 +8471,58 @@
     "hi": {
       "name": "आईपी ​​लुकअप",
       "description": "आईपी ​​लुकअप - आईपी एड्रेस जियोलोकेशन और नेटवर्क जानकारी देखें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "IP Lookup — Look up IP address geolocation and network information. Designed as an AI agent project."
     }
   },
   "security-privacy/jwt-decoder": {
     "id": {
       "name": "Dekoder JWT",
-      "description": ""
+      "description": "Mendekode dan memvalidasi token JWT."
     },
     "zh": {
       "name": "智威汤逊解码器",
-      "description": ""
+      "description": "解码和验证 JWT 令牌。"
     },
     "es": {
       "name": "Decodificador JWT",
-      "description": ""
+      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Decodificador JWT",
-      "description": ""
+      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "JWT デコーダ",
-      "description": ""
+      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "JWT 디코더",
-      "description": ""
+      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "JWT-Decoder",
-      "description": ""
+      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Décodeur JWT",
-      "description": ""
+      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "JWT-декодер",
-      "description": ""
+      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "وحدة فك ترميز JWT",
-      "description": ""
+      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "जेडब्ल्यूटी डिकोडर",
-      "description": ""
+      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
     }
   },
   "security-privacy/license-compliance-checker": {
@@ -8047,6 +8569,9 @@
     "hi": {
       "name": "लाइसेंस अनुपालन जांचकर्ता",
       "description": "लाइसेंस विवादों (जीपीएल बनाम एमआईटी बनाम मालिकाना) के लिए परियोजना निर्भरता का ऑडिट करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Audits project dependencies for license conflicts (GPL vs MIT vs proprietary). Designed as an AI agents project."
     }
   },
   "security-privacy/password-strength-analyzer": {
@@ -8093,52 +8618,58 @@
     "hi": {
       "name": "पासवर्ड शक्ति विश्लेषक",
       "description": "कोडबेस में पासवर्ड नीतियों और प्रमाणीकरण कार्यान्वयन का मूल्यांकन करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Evaluates password policies and authentication implementations in codebases. Designed as an AI agents project."
     }
   },
   "security-privacy/password-strength-checker": {
     "id": {
       "name": "Pemeriksa Kekuatan Kata Sandi",
-      "description": ""
+      "description": "Mengevaluasi kekuatan dan keamanan kata sandi."
     },
     "zh": {
       "name": "密码强度检查器",
-      "description": ""
+      "description": "评估密码强度和安全性。"
     },
     "es": {
       "name": "Comprobador de seguridad de contraseña",
-      "description": ""
+      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Verificador de força de senha",
-      "description": ""
+      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "パスワード強度チェッカー",
-      "description": ""
+      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "비밀번호 강도 검사기",
-      "description": ""
+      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Passwortstärke-Prüfer",
-      "description": ""
+      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Vérificateur de force de mot de passe",
-      "description": ""
+      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Проверка надежности пароля",
-      "description": ""
+      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "مدقق قوة كلمة المرور",
-      "description": ""
+      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "पासवर्ड स्ट्रेंथ चेकर",
-      "description": ""
+      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
     }
   },
   "security-privacy/permission-auditor": {
@@ -8185,6 +8716,9 @@
     "hi": {
       "name": "अनुमति लेखा परीक्षक",
       "description": "अत्यधिक अनुमतियों के लिए ऐप मेनिफ़ेस्ट और कॉन्फ़िगरेशन को स्कैन करता है और हटाने का सुझाव देता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Scans app manifests and configurations for excessive permissions and suggests removals. Designed as an AI agents project."
     }
   },
   "security-privacy/phishing-email-detector": {
@@ -8231,52 +8765,58 @@
     "hi": {
       "name": "फ़िशिंग ईमेल डिटेक्टर",
       "description": "कॉन्फिडेंस स्कोर के साथ फ़िशिंग प्रयासों को फ़्लैग करने के लिए ईमेल हेडर और सामग्री का विश्लेषण करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Analyzes email headers and content to flag phishing attempts with confidence scores. Designed as an AI agents project."
     }
   },
   "security-privacy/port-scanner": {
     "id": {
       "name": "Pemindai Pelabuhan",
-      "description": ""
+      "description": "Menganalisis konfigurasi port dengan deteksi layanan."
     },
     "zh": {
       "name": "端口扫描器",
-      "description": ""
+      "description": "分析端口配置，检测常见服务并提供安全建议。"
     },
     "es": {
       "name": "Escáner de puertos",
-      "description": ""
+      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
     },
     "pt": {
       "name": "Scanner de porta",
-      "description": ""
+      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
     },
     "ja": {
       "name": "ポートスキャナー",
-      "description": ""
+      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
     },
     "ko": {
       "name": "포트 스캐너",
-      "description": ""
+      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
     },
     "de": {
       "name": "Port-Scanner",
-      "description": ""
+      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
     },
     "fr": {
       "name": "Scanner de ports",
-      "description": ""
+      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
     },
     "ru": {
       "name": "Сканер портов",
-      "description": ""
+      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
     },
     "ar": {
       "name": "ماسح المنفذ",
-      "description": ""
+      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
     },
     "hi": {
       "name": "पोर्ट स्कैनर",
-      "description": ""
+      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
+    },
+    "en": {
+      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
     }
   },
   "security-privacy/privacy-policy-generator": {
@@ -8323,6 +8863,9 @@
     "hi": {
       "name": "गोपनीयता नीति जेनरेटर",
       "description": "एप्लिकेशन कोड पढ़ता है, डेटा संग्रह पैटर्न की पहचान करता है, और जीडीपीआर/सीसीपीए-अनुपालक गोपनीयता नीतियां तैयार करता है। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Reads application code, identifies data collection patterns, and generates GDPR/CCPA-compliant privacy policies. Designed as an AI agents project."
     }
   },
   "security-privacy/secret-scanner": {
@@ -8369,6 +8912,9 @@
     "hi": {
       "name": "गुप्त स्कैनर",
       "description": "लीक हुई एपीआई कुंजी, पासवर्ड, टोकन और प्रमाणपत्रों के लिए रिपॉजिटरी को डीप-स्कैन करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
+    },
+    "en": {
+      "description": "Deep-scans repositories for leaked API keys, passwords, tokens, and certificates. Designed as an AI agents project."
     }
   }
 }

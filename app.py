@@ -79,18 +79,64 @@ st.markdown("""
         color: #a855f7;
     }
 
-    /* Agent card */
+    /* Agent card — with micro-animation */
     .agent-card {
         border: 1px solid var(--card-border);
         border-radius: 12px;
         padding: 20px;
         margin: 8px 0;
         background: var(--card-bg);
-        transition: all 0.2s;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
     .agent-card:hover {
         border-color: var(--card-hover-border);
         background: var(--card-hover-bg);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(168, 85, 247, 0.15);
+    }
+
+    /* Card container hover — lift + glow */
+    [data-testid="stVerticalBlock"] > div[data-testid="stVerticalBlockBorderWrapper"] {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    [data-testid="stVerticalBlock"] > div[data-testid="stVerticalBlockBorderWrapper"]:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 30px rgba(168, 85, 247, 0.12);
+    }
+
+    /* Button micro-animation */
+    .stButton > button {
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+    .stButton > button:hover {
+        transform: translateY(-1px) !important;
+        box-shadow: 0 4px 12px rgba(168, 85, 247, 0.25) !important;
+    }
+    .stButton > button:active {
+        transform: translateY(0px) scale(0.98) !important;
+    }
+
+    /* Fade-in animation for content */
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    section.main .block-container {
+        animation: fadeInUp 0.4s ease-out;
+    }
+
+    /* Stat box pulse on hover */
+    .stat-box {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .stat-box:hover {
+        transform: scale(1.02);
+        border-color: rgba(168, 85, 247, 0.4);
+    }
+
+    /* Smooth sidebar transitions */
+    [data-testid="stSidebar"] * {
+        transition: background-color 0.2s ease, color 0.2s ease;
     }
     .agent-name {
         font-size: 1.1rem;
@@ -111,6 +157,7 @@ st.markdown("""
         border-radius: 12px;
         background: var(--stat-bg);
         border: 1px solid var(--stat-border);
+        /* transition already defined above */
     }
     .stat-num {
         font-size: 2rem;
@@ -454,9 +501,9 @@ def main():
                     else:
                         rel = tr.get('time_hr_ago', '{n}h ago').format(n=elapsed // 3600)
                     with st.expander(f"`{rel}` **{run['agent']}**", expanded=False):
-                        st.caption(f"Input: {preview}")
+                        st.caption(f"{tr.get('input_label', 'Input')}: {preview}")
                         st.markdown(run["output"])
-                        st.caption(f"Tokens: `{run['tokens']}`")
+                        st.caption(f"{tr.get('tokens_label', 'Tokens')}: `{run['tokens']}`")
 
         locale = st.session_state.get("locale", "en")
         locale_prefix = f"/{locale}" if locale != "en" else ""
@@ -558,7 +605,8 @@ def _render_hub(filtered, all_agents):
                     if a_desc:
                         st.caption(a_desc[:120] + ("..." if len(a_desc) > 120 else ""))
                     else:
-                        st.caption(f"{tr['category_label']}: {agent['category_display']}")
+                        _cat_tr = tr.get('category_names', {}).get(agent['category'], agent['category_display'])
+                        st.caption(f"{tr['category_label']}: {_cat_tr}")
 
                     c1, c2 = st.columns([1, 1])
                     with c1:
@@ -796,7 +844,7 @@ def _render_agent_detail(agent, agent_key):
                 st.divider()
                 st.markdown(f"#### {tr['result']}")
                 st.markdown(cached["output"])
-                st.caption(f"Model: `{cached['model']}` · Tokens: `{cached['tokens']}`")
+                st.caption(f"{tr.get('model_label', 'Model')}: `{cached['model']}` · {tr.get('tokens_label', 'Tokens')}: `{cached['tokens']}`")
                 _render_copy_btn(cached["output"], f"copy_cached_{agent_key}")
 
                 # Auto-scroll so "Result" heading is at top of viewport
@@ -840,14 +888,14 @@ def _render_agent_detail(agent, agent_key):
         py_files = sorted(agent_path.rglob("*.py"))
         other_files = [f for f in py_files if f.name != "main.py" and "__pycache__" not in str(f)]
         if other_files:
-            with st.expander(f"📂 {len(other_files)} more Python files"):
+            with st.expander(f"📂 {len(other_files)} {tr.get('more_files', 'more Python files')}"):
                 for f in other_files:
                     rel = f.relative_to(agent_path)
                     st.markdown(f'<div class="code-header">{rel}</div>', unsafe_allow_html=True)
                     try:
                         st.code(f.read_text(encoding="utf-8"), language="python", line_numbers=True)
                     except Exception:
-                        st.warning(f"Could not read {rel}")
+                        st.warning(f"{tr.get('could_not_read', 'Could not read')} {rel}")
 
     # ─── Tab 3: Setup ─────────────────────────────────
     if agent["has_main"] and len(tab_objects) > 3:
