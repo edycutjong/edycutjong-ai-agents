@@ -5,6 +5,7 @@ Built by Jules AI • Powered by Streamlit
 
 import streamlit as st
 import os
+import json
 import random
 from datetime import datetime
 from pathlib import Path
@@ -163,6 +164,15 @@ CATEGORY_META = {
 
 BASE_DIR = Path(__file__).parent
 
+# ─── Agent Translations ────────────────────────────────────────
+_agent_tr_file = BASE_DIR / "agent_translations.json"
+_agent_translations = json.loads(_agent_tr_file.read_text(encoding="utf-8")) if _agent_tr_file.exists() else {}
+
+
+def _tr_agent(agent_key: str, field: str, locale: str, fallback: str) -> str:
+    """Get translated agent name or description, falling back to English."""
+    return _agent_translations.get(agent_key, {}).get(locale, {}).get(field, fallback)
+
 
 # ─── Discovery ──────────────────────────────────────────────────
 @st.cache_data
@@ -294,7 +304,7 @@ def main():
         selected_cat = st.selectbox(
             f"📂 {tr['categories']}",
             ["All"] + categories,
-            format_func=lambda x: tr['all_categories'] if x == "All" else CATEGORY_META.get(x, ("📦", _slug_to_name(x), ""))[1] + f" ({sum(1 for a in agents.values() if a['category'] == x)})"
+            format_func=lambda x: tr['all_categories'] if x == "All" else (tr.get('category_names', {}).get(x, CATEGORY_META.get(x, ("📦", _slug_to_name(x), ""))[1]) + f" ({sum(1 for a in agents.values() if a['category'] == x)})")
         )
 
         # Clear agent selection when category changes
@@ -407,9 +417,12 @@ def _render_hub(filtered, all_agents):
                 status = "✅" if agent["has_main"] else "📋"
 
                 with st.container(border=True):
-                    st.markdown(f"**{icon} {agent['name']}**")
-                    if agent["description"]:
-                        st.caption(agent["description"][:120] + ("..." if len(agent["description"]) > 120 else ""))
+                    locale = st.session_state.get("locale", "en")
+                    a_name = _tr_agent(key, "name", locale, agent["name"]) if locale != "en" else agent["name"]
+                    a_desc = _tr_agent(key, "description", locale, agent["description"]) if locale != "en" else agent["description"]
+                    st.markdown(f"**{icon} {a_name}**")
+                    if a_desc:
+                        st.caption(a_desc[:120] + ("..." if len(a_desc) > 120 else ""))
                     else:
                         st.caption(f"{tr['category_label']}: {agent['category_display']}")
 
@@ -435,12 +448,19 @@ def _render_agent_detail(agent, agent_key):
         st.rerun()
 
     icon = CATEGORY_META.get(agent["category"], ("📦",))[0]
-    st.markdown(f"# {icon} {agent['name']}")
+    locale = st.session_state.get("locale", "en")
+    a_name = _tr_agent(agent_key, "name", locale, agent["name"]) if locale != "en" else agent["name"]
+    a_desc = _tr_agent(agent_key, "description", locale, agent["description"]) if locale != "en" else agent["description"]
+    st.markdown(f"# {icon} {a_name}")
 
-    if agent["description"]:
-        st.markdown(f"> {agent['description']}")
+    if a_desc:
+        st.markdown(f"> {a_desc}")
 
-    st.markdown(f"**{tr['category_label']}:** {agent['category_display']}")
+    # Translate category display
+    cat_key = agent["category"]
+    cat_icon = CATEGORY_META.get(cat_key, ("📦",))[0]
+    cat_display = tr.get('category_names', {}).get(cat_key, agent['category_display'])
+    st.markdown(f"**{tr['category_label']}:** {cat_icon} {cat_display}")
     st.divider()
 
     agent_path = Path(agent["path"])
@@ -448,7 +468,7 @@ def _render_agent_detail(agent, agent_key):
     # Tabs: Try It (first/default), README, Code, Setup
     tabs = [tr['run_tab'], tr['docs_tab'], tr['code_tab']]
     if agent["has_main"]:
-        tabs.append("⚙️ Setup")
+        tabs.append(tr.get('setup_tab', '⚙️ Setup'))
 
     tab_objects = st.tabs(tabs)
 
@@ -506,8 +526,8 @@ def _render_agent_detail(agent, agent_key):
                 st.rerun()
 
             user_input = st.text_area(
-                label,
-                placeholder=placeholder,
+                tr.get('default_input_label', label) if label == "📝 Your Input" else label,
+                placeholder=tr.get('default_input_placeholder', placeholder) if placeholder == "Describe what you need or paste your text..." else placeholder,
                 height=150,
                 key=ta_key,
             )
@@ -613,7 +633,7 @@ def _render_agent_detail(agent, agent_key):
         elif readme.exists():
             st.markdown(readme.read_text(encoding="utf-8"))
         else:
-            st.info("No README available for this agent.")
+            st.info(tr.get('no_readme', 'No README available for this agent.'))
 
     # ─── Tab 2: Code ───────────────────────────────────
     with tab_objects[2]:
