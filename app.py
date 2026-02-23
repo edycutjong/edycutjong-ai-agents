@@ -278,6 +278,7 @@ def main():
             st.rerun()
 
         # Surprise Me button
+        st.caption("Not sure where to start? Try a random agent:")
         if st.button("🎲 Surprise Me", use_container_width=True):
             pick = random.choice(list(agents.keys()))
             st.query_params["agent"] = pick
