@@ -507,43 +507,43 @@
   },
   "api-integration/graphql-schema-analyzer": {
     "id": {
-      "name": "Penganalisis Skema Graphql",
+      "name": "Penganalisis Skema GraphQL",
       "description": "Menganalisis skema GraphQL, menyarankan pengoptimalan, dan mendeteksi masalah kueri N+1. Dirancang sebagai proyek agen AI."
     },
     "zh": {
-      "name": "Graphql 模式分析器",
+      "name": "GraphQL 模式分析器",
       "description": "分析 GraphQL 架构、提出优化建议并检测 N+1 查询问题。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Analizador de esquemas Graphql",
+      "name": "Analizador de esquemas GraphQL",
       "description": "Analiza esquemas GraphQL, sugiere optimizaciones y detecta problemas de consulta N+1. Diseñado como un proyecto de agentes de IA."
     },
     "pt": {
-      "name": "Analisador de esquema Graphql",
+      "name": "Analisador de esquema GraphQL",
       "description": "Analisa esquemas GraphQL, sugere otimizações e detecta problemas de consulta N+1. Projetado como um projeto de agentes de IA."
     },
     "ja": {
-      "name": "Graphql スキーマ アナライザー",
+      "name": "GraphQL スキーマ アナライザー",
       "description": "GraphQL スキーマを分析し、最適化を提案し、N+1 クエリの問題を検出します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
-      "name": "Graphql 스키마 분석기",
+      "name": "GraphQL 스키마 분석기",
       "description": "GraphQL 스키마를 분석하고, 최적화를 제안하고, N+1 쿼리 문제를 감지합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
-      "name": "Graphql-Schemaanalysator",
+      "name": "GraphQL-Schemaanalysator",
       "description": "Analysiert GraphQL-Schemas, schlägt Optimierungen vor und erkennt N+1-Abfrageprobleme. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
-      "name": "Analyseur de schéma Graphql",
+      "name": "Analyseur de schéma GraphQL",
       "description": "Analyse les schémas GraphQL, suggère des optimisations et détecte les problèmes de requête N+1. Conçu comme un projet d'agents IA."
     },
     "ru": {
-      "name": "Анализатор схемы Graphql",
+      "name": "Анализатор схемы GraphQL",
       "description": "Анализирует схемы GraphQL, предлагает варианты оптимизации и обнаруживает проблемы с запросами N+1. Разработан как проект агентов искусственного интеллекта."
     },
     "ar": {
-      "name": "محلل مخطط Graphql",
+      "name": "محلل مخطط GraphQL",
       "description": "يحلل مخططات GraphQL، ويقترح التحسينات، ويكتشف مشاكل استعلام N+1. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
     },
     "hi": {
@@ -553,27 +553,27 @@
   },
   "api-integration/oauth-flow-debugger": {
     "id": {
-      "name": "Debugger Aliran Oauth",
+      "name": "Debugger Aliran OAuth",
       "description": "Melacak alur OAuth 2.0 langkah demi langkah, mengidentifikasi kesalahan konfigurasi, dan menyarankan perbaikan. Dirancang sebagai proyek agen AI."
     },
     "zh": {
-      "name": "Oauth 流程调试器",
+      "name": "OAuth 流程调试器",
       "description": "逐步跟踪 OAuth 2.0 流程、识别错误配置并提出修复建议。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Depurador de flujo de Oauth",
+      "name": "Depurador de flujo de OAuth",
       "description": "Sigue los flujos de OAuth 2.0 paso a paso, identifica errores de configuración y sugiere soluciones. Diseñado como un proyecto de agentes de IA."
     },
     "pt": {
-      "name": "Depurador de fluxo Oauth",
+      "name": "Depurador de fluxo OAuth",
       "description": "Rastreia os fluxos do OAuth 2.0 passo a passo, identifica configurações incorretas e sugere correções. Projetado como um projeto de agentes de IA."
     },
     "ja": {
-      "name": "Oauth フロー デバッガー",
+      "name": "OAuth フロー デバッガー",
       "description": "OAuth 2.0 フローを段階的にトレースし、構成ミスを特定し、修正を提案します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
-      "name": "Oauth 흐름 디버거",
+      "name": "OAuth 흐름 디버거",
       "description": "OAuth 2.0 흐름을 단계별로 추적하고 잘못된 구성을 식별하며 수정 사항을 제안합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
@@ -581,7 +581,7 @@
       "description": "Verfolgt OAuth 2.0-Abläufe Schritt für Schritt, identifiziert Fehlkonfigurationen und schlägt Korrekturen vor. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
-      "name": "Débogueur de flux Oauth",
+      "name": "Débogueur de flux OAuth",
       "description": "Suit les flux OAuth 2.0 étape par étape, identifie les erreurs de configuration et suggère des correctifs. Conçu comme un projet d'agents IA."
     },
     "ru": {
@@ -589,7 +589,7 @@
       "description": "Шаг за шагом отслеживает потоки OAuth 2.0, выявляет неправильные конфигурации и предлагает исправления. Разработан как проект агентов искусственного интеллекта."
     },
     "ar": {
-      "name": "مصحح أخطاء تدفق Oauth",
+      "name": "مصحح أخطاء تدفق OAuth",
       "description": "يتدفق تتبع OAuth 2.0 خطوة بخطوة، ويحدد التكوينات الخاطئة، ويقترح الإصلاحات. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
     },
     "hi": {
@@ -645,43 +645,43 @@
   },
   "api-integration/rest-to-graphql-converter": {
     "id": {
-      "name": "Konverter Istirahat Ke Graphql",
+      "name": "Konverter Istirahat Ke GraphQL",
       "description": "Membaca definisi titik akhir REST API dan menghasilkan skema dan penyelesai GraphQL yang setara. Dirancang sebagai proyek agen AI."
     },
     "zh": {
-      "name": "休息到 Graphql 转换器",
+      "name": "休息到 GraphQL 转换器",
       "description": "读取 REST API 端点定义并生成等效的 GraphQL 架构和解析器。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Convertidor de resto a Graphql",
+      "name": "Convertidor de resto a GraphQL",
       "description": "Lee definiciones de puntos finales de API REST y genera solucionadores y esquemas GraphQL equivalentes. Diseñado como un proyecto de agentes de IA."
     },
     "pt": {
-      "name": "Conversor Rest para Graphql",
+      "name": "Conversor REST para GraphQL",
       "description": "Lê definições de endpoint da API REST e gera esquemas e resolvedores GraphQL equivalentes. Projetado como um projeto de agentes de IA."
     },
     "ja": {
-      "name": "残りからGraphqlへのコンバーター",
+      "name": "残りからGraphQLへのコンバーター",
       "description": "REST API エンドポイント定義を読み取り、同等の GraphQL スキーマとリゾルバーを生成します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
-      "name": "Graphql 변환기로 나머지",
+      "name": "GraphQL 변환기로 나머지",
       "description": "REST API 엔드포인트 정의를 읽고 동등한 GraphQL 스키마 및 해석기를 생성합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
-      "name": "Rest zu Graphql-Konverter",
+      "name": "REST zu GraphQL-Konverter",
       "description": "Liest REST-API-Endpunktdefinitionen und generiert entsprechende GraphQL-Schemas und Resolver. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
-      "name": "Convertisseur Rest en Graphql",
+      "name": "Convertisseur REST en GraphQL",
       "description": "Lit les définitions de point de terminaison de l'API REST et génère un schéma et des résolveurs GraphQL équivalents. Conçu comme un projet d'agents IA."
     },
     "ru": {
-      "name": "Конвертер Rest в Graphql",
+      "name": "Конвертер REST в GraphQL",
       "description": "Считывает определения конечных точек REST API и генерирует эквивалентную схему и преобразователи GraphQL. Разработан как проект агентов искусственного интеллекта."
     },
     "ar": {
-      "name": "الباقي لتحويل Graphql",
+      "name": "الباقي لتحويل GraphQL",
       "description": "يقرأ تعريفات نقطة نهاية REST API وينشئ مخطط GraphQL ومحللات مكافئة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
     },
     "hi": {
@@ -921,19 +921,19 @@
   },
   "business-productivity/kpi-dashboard-generator": {
     "id": {
-      "name": "Generator Dasbor Kpi",
+      "name": "Generator Dasbor KPI",
       "description": "Membaca sumber data dan menghasilkan dasbor KPI dengan peringatan yang dapat dikonfigurasi. Dirancang sebagai proyek agen AI."
     },
     "zh": {
-      "name": "Kpi 仪表板生成器",
+      "name": "KPI 仪表板生成器",
       "description": "读取数据源并生成带有可配置警报的 KPI 仪表板。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Generador de paneles de Kpi",
+      "name": "Generador de paneles de KPI",
       "description": "Lee fuentes de datos y genera paneles de KPI con alertas configurables. Diseñado como un proyecto de agentes de IA."
     },
     "pt": {
-      "name": "Gerador de painel de Kpi",
+      "name": "Gerador de painel de KPI",
       "description": "Lê fontes de dados e gera painéis de KPI com alertas configuráveis. Projetado como um projeto de agentes de IA."
     },
     "ja": {
@@ -941,7 +941,7 @@
       "description": "データ ソースを読み取り、構成可能なアラートを含む KPI ダッシュボードを生成します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
-      "name": "Kpi 대시보드 생성기",
+      "name": "KPI 대시보드 생성기",
       "description": "데이터 소스를 읽고 구성 가능한 경고가 포함된 KPI 대시보드를 생성합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
@@ -949,7 +949,7 @@
       "description": "Liest Datenquellen und generiert KPI-Dashboards mit konfigurierbaren Warnungen. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
-      "name": "Générateur de tableau de bord Kpi",
+      "name": "Générateur de tableau de bord KPI",
       "description": "Lit les sources de données et génère des tableaux de bord KPI avec des alertes configurables. Conçu comme un projet d'agents IA."
     },
     "ru": {
@@ -957,7 +957,7 @@
       "description": "Считывает источники данных и создает информационные панели KPI с настраиваемыми оповещениями. Разработан как проект агентов искусственного интеллекта."
     },
     "ar": {
-      "name": "مولد لوحة تحكم Kpi",
+      "name": "مولد لوحة تحكم KPI",
       "description": "يقرأ مصادر البيانات وينشئ لوحات معلومات مؤشرات الأداء الرئيسية مع تنبيهات قابلة للتكوين. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
     },
     "hi": {
@@ -1017,15 +1017,15 @@
       "description": "Mengelola Tujuan dan Hasil Utama, melacak kemajuan, dan menghasilkan laporan status. Dirancang sebagai proyek agen AI."
     },
     "zh": {
-      "name": "Okr 追踪器",
+      "name": "OKR 追踪器",
       "description": "管理目标和关键结果、跟踪进度并生成状态报告。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Rastreador de Okr",
+      "name": "Rastreador de OKR",
       "description": "Gestiona objetivos y resultados clave, realiza un seguimiento del progreso y genera informes de estado. Diseñado como un proyecto de agentes de IA."
     },
     "pt": {
-      "name": "Okr Rastreador",
+      "name": "OKR Rastreador",
       "description": "Gerencia objetivos e resultados-chave, acompanha o progresso e gera relatórios de status. Projetado como um projeto de agentes de IA."
     },
     "ja": {
@@ -1037,11 +1037,11 @@
       "description": "목표와 주요 결과를 관리하고 진행 상황을 추적하며 상태 보고서를 생성합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
-      "name": "Okr-Tracker",
+      "name": "OKR-Tracker",
       "description": "Verwaltet Ziele und Schlüsselergebnisse, verfolgt den Fortschritt und generiert Statusberichte. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
-      "name": "Okr Tracker",
+      "name": "OKR Tracker",
       "description": "Gère les objectifs et les résultats clés, suit les progrès et génère des rapports de statut. Conçu comme un projet d'agents IA."
     },
     "ru": {
@@ -1059,7 +1059,7 @@
   },
   "business-productivity/sla-monitor": {
     "id": {
-      "name": "Pemantau Sla",
+      "name": "Pemantau SLA",
       "description": "Melacak kepatuhan SLA, menghitung persentase waktu aktif, dan memperingatkan pelanggaran. Dirancang sebagai proyek agen AI."
     },
     "zh": {
@@ -1067,11 +1067,11 @@
       "description": "跟踪 SLA 合规性、计算正常运行时间百分比并针对违规发出警报。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Monitor Sla",
+      "name": "Monitor SLA",
       "description": "Realiza un seguimiento del cumplimiento de SLA, calcula porcentajes de tiempo de actividad y alertas sobre infracciones. Diseñado como un proyecto de agentes de IA."
     },
     "pt": {
-      "name": "Monitor de Sla",
+      "name": "Monitor de SLA",
       "description": "Rastreia a conformidade com SLA, calcula porcentagens de tempo de atividade e alerta sobre violações. Projetado como um projeto de agentes de IA."
     },
     "ja": {
@@ -1079,11 +1079,11 @@
       "description": "SLA 準拠を追跡し、稼働時間の割合を計算し、違反があった場合にアラートを送信します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
-      "name": "Sla 모니터",
+      "name": "SLA 모니터",
       "description": "SLA 규정 준수를 추적하고 가동 시간 비율을 계산하며 위반에 대한 경고를 보냅니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
-      "name": "Sla-Monitor",
+      "name": "SLA-Monitor",
       "description": "Verfolgt die SLA-Einhaltung, berechnet die Verfügbarkeitsprozentsätze und warnt bei Verstößen. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
@@ -1381,39 +1381,39 @@
   },
   "code-generation/github-actions-writer": {
     "id": {
-      "name": "Penulis Tindakan Github",
+      "name": "Penulis Tindakan GitHub",
       "description": "Membaca struktur proyek dan menghasilkan alur kerja CI/CD GitHub Actions yang dioptimalkan. Dirancang sebagai proyek agen AI."
     },
     "zh": {
-      "name": "Github Actions 编写器",
+      "name": "GitHub Actions 编写器",
       "description": "读取项目结构并生成优化的 GitHub Actions CI/CD 工作流程。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Escritor de acciones de Github",
+      "name": "Escritor de acciones de GitHub",
       "description": "Lee la estructura del proyecto y genera flujos de trabajo de CI/CD de GitHub Actions optimizados. Diseñado como un proyecto de agentes de IA."
     },
     "pt": {
-      "name": "Escritor de ações do Github",
+      "name": "Escritor de ações do GitHub",
       "description": "Lê a estrutura do projeto e gera fluxos de trabalho otimizados de CI/CD do GitHub Actions. Projetado como um projeto de agentes de IA."
     },
     "ja": {
-      "name": "Githubアクションライター",
+      "name": "GitHubアクションライター",
       "description": "プロジェクト構造を読み取り、最適化された GitHub Actions CI/CD ワークフローを生成します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
-      "name": "Github 액션 작성자",
+      "name": "GitHub 액션 작성자",
       "description": "프로젝트 구조를 읽고 최적화된 GitHub Actions CI/CD 워크플로를 생성합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
-      "name": "Autor von Github-Aktionen",
+      "name": "Autor von GitHub-Aktionen",
       "description": "Liest die Projektstruktur und generiert optimierte GitHub Actions CI/CD-Workflows. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
-      "name": "Rédacteur d'actions Github",
+      "name": "Rédacteur d'actions GitHub",
       "description": "Lit la structure du projet et génère des workflows CI/CD GitHub Actions optimisés. Conçu comme un projet d'agents IA."
     },
     "ru": {
-      "name": "Писатель действий на Github",
+      "name": "Писатель действий на GitHub",
       "description": "Считывает структуру проекта и генерирует оптимизированные рабочие процессы CI/CD GitHub Actions. Разработан как проект агентов искусственного интеллекта."
     },
     "ar": {
@@ -3773,7 +3773,7 @@
   },
   "data-analytics/uuid-generator": {
     "id": {
-      "name": "Generator Uuid",
+      "name": "Generator UUID",
       "description": ""
     },
     "zh": {
@@ -3785,7 +3785,7 @@
       "description": ""
     },
     "pt": {
-      "name": "Gerador Uuid",
+      "name": "Gerador UUID",
       "description": ""
     },
     "ja": {
@@ -3809,7 +3809,7 @@
       "description": ""
     },
     "ar": {
-      "name": "مولد Uuid",
+      "name": "مولد UUID",
       "description": ""
     },
     "hi": {
@@ -3911,19 +3911,19 @@
   },
   "design-frontend/ascii-art-generator": {
     "id": {
-      "name": "Generator Seni Ascii",
+      "name": "Generator Seni ASCII",
       "description": ""
     },
     "zh": {
-      "name": "Ascii 艺术生成器",
+      "name": "ASCII 艺术生成器",
       "description": ""
     },
     "es": {
-      "name": "Generador de arte Ascii",
+      "name": "Generador de arte ASCII",
       "description": ""
     },
     "pt": {
-      "name": "Gerador de arte Ascii",
+      "name": "Gerador de arte ASCII",
       "description": ""
     },
     "ja": {
@@ -3939,11 +3939,11 @@
       "description": ""
     },
     "fr": {
-      "name": "Générateur d'art Ascii",
+      "name": "Générateur d'art ASCII",
       "description": ""
     },
     "ru": {
-      "name": "Генератор изображений Ascii",
+      "name": "Генератор изображений ASCII",
       "description": ""
     },
     "ar": {
@@ -5914,7 +5914,7 @@
     },
     "de": {
       "name": "Prahlerei zum Typoskript",
-      "description": "Generiert TypeScript-Schnittstellen und API-Client-Code aus OpenAPI/Swagger-Spezifikationen. Konzipiert als KI-Agenten-Projekt."
+      "description": "Generiert TypeScript-Schnittstellen und API-CLIent-Code aus OpenAPI/Swagger-Spezifikationen. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
       "name": "Swagger pour dactylographier",
@@ -6763,11 +6763,11 @@
   },
   "misc/ai-frameworks/autogen-agent": {
     "id": {
-      "name": "Agen Autogen",
+      "name": "Agen AutoGen",
       "description": "Sistem AI percakapan dengan banyak agen yang dapat menulis kode, melakukan debug, dan menjalankan tugas secara kolaboratif. Dibangun dengan Microsoft AutoGen."
     },
     "zh": {
-      "name": "Autogen代理",
+      "name": "AutoGen代理",
       "description": "具有多个代理的对话式人工智能系统，可以协作编写代码、调试和执行任务。使用 Microsoft AutoGen 构建。"
     },
     "es": {
@@ -6775,7 +6775,7 @@
       "description": "Un sistema de IA conversacional con múltiples agentes que pueden escribir código, depurar y ejecutar tareas de forma colaborativa. Construido con Microsoft AutoGen."
     },
     "pt": {
-      "name": "Agente Autogen",
+      "name": "Agente AutoGen",
       "description": "Um sistema de IA conversacional com vários agentes que podem escrever código, depurar e executar tarefas de forma colaborativa. Construído com Microsoft AutoGen."
     },
     "ja": {
@@ -6787,7 +6787,7 @@
       "description": "공동으로 코드를 작성하고, 디버그하고, 작업을 실행할 수 있는 여러 에이전트가 포함된 대화형 AI 시스템입니다. Microsoft AutoGen으로 구축되었습니다."
     },
     "de": {
-      "name": "Autogen-Agent",
+      "name": "AutoGen-Agent",
       "description": "Ein Konversations-KI-System mit mehreren Agenten, die gemeinsam Code schreiben, debuggen und Aufgaben ausführen können. Gebaut mit Microsoft AutoGen."
     },
     "fr": {
@@ -6817,11 +6817,11 @@
       "description": "多代理团队协作研究主题、撰写报告并生成见解。使用 CrewAI 进行代理编排。"
     },
     "es": {
-      "name": "Agente Crewai",
+      "name": "Agente CrewAI",
       "description": "Un equipo de múltiples agentes que colabora para investigar temas, redactar informes y generar conocimientos. Utiliza CrewAI para la orquestación de agentes."
     },
     "pt": {
-      "name": "Agente Crewai",
+      "name": "Agente CrewAI",
       "description": "Uma equipe multiagente que colabora para pesquisar tópicos, escrever relatórios e gerar insights. Usa CrewAI para orquestração de agentes."
     },
     "ja": {
@@ -6833,7 +6833,7 @@
       "description": "연구 주제에 대해 협력하고, 보고서를 작성하고, 통찰력을 생성하는 다중 에이전트 팀입니다. 에이전트 조정을 위해 CrewAI를 사용합니다."
     },
     "de": {
-      "name": "Crewai-Agent",
+      "name": "CrewAI-Agent",
       "description": "Ein Team aus mehreren Agenten, das zusammenarbeitet, um Themen zu recherchieren, Berichte zu schreiben und Erkenntnisse zu generieren. Verwendet CrewAI für die Agenten-Orchestrierung."
     },
     "fr": {
@@ -6855,7 +6855,7 @@
   },
   "misc/ai-frameworks/langchain-agent": {
     "id": {
-      "name": "Agen Langchain",
+      "name": "Agen LangChain",
       "description": "Agen riset AI yang dapat menelusuri web, merangkum dokumen, dan menjawab pertanyaan kompleks menggunakan LangChain dan OpenAI. Berjalan sebagai alat CLI."
     },
     "zh": {
@@ -6863,11 +6863,11 @@
       "description": "一个人工智能研究代理，可以使用 LangChain 和 OpenAI 搜索网络、总结文档并回答复杂问题。作为 CLI 工具运行。"
     },
     "es": {
-      "name": "Agente de Langchain",
+      "name": "Agente de LangChain",
       "description": "Un agente de investigación de IA que puede buscar en la web, resumir documentos y responder preguntas complejas utilizando LangChain y OpenAI. Se ejecuta como una herramienta CLI."
     },
     "pt": {
-      "name": "Agente Langchain",
+      "name": "Agente LangChain",
       "description": "Um agente de pesquisa de IA que pode pesquisar na web, resumir documentos e responder perguntas complexas usando LangChain e OpenAI. Funciona como uma ferramenta CLI."
     },
     "ja": {
@@ -6879,11 +6879,11 @@
       "description": "LangChain과 OpenAI를 활용하여 웹 검색, 문서 요약, 복잡한 질문에 대한 답변이 가능한 AI 연구 에이전트입니다. CLI 도구로 실행됩니다."
     },
     "de": {
-      "name": "Langchain-Agent",
+      "name": "LangChain-Agent",
       "description": "Ein KI-Forschungsagent, der mithilfe von LangChain und OpenAI das Internet durchsuchen, Dokumente zusammenfassen und komplexe Fragen beantworten kann. Läuft als CLI-Tool."
     },
     "fr": {
-      "name": "Agent Langchain",
+      "name": "Agent LangChain",
       "description": "Un agent de recherche IA capable de rechercher sur le Web, de résumer des documents et de répondre à des questions complexes à l'aide de LangChain et OpenAI. Fonctionne comme un outil CLI."
     },
     "ru": {

@@ -335,9 +335,18 @@ def main():
         if st.session_state.get("run_history"):
             st.divider()
             with st.expander(f"📜 {tr['recent_runs']} ({len(st.session_state['run_history'])})", expanded=False):
+                import time as _time
                 for i, run in enumerate(st.session_state["run_history"]):
                     preview = run["input"][:60].replace("\n", " ") + ("…" if len(run["input"]) > 60 else "")
-                    with st.expander(f"`{run['time']}` **{run['agent']}**", expanded=False):
+                    # Relative time display
+                    elapsed = int(_time.time() - run.get('ts', _time.time()))
+                    if elapsed < 60:
+                        rel = tr.get('time_just_now', 'just now')
+                    elif elapsed < 3600:
+                        rel = tr.get('time_min_ago', '{n} min ago').format(n=elapsed // 60)
+                    else:
+                        rel = tr.get('time_hr_ago', '{n}h ago').format(n=elapsed // 3600)
+                    with st.expander(f"`{rel}` **{run['agent']}**", expanded=False):
                         st.caption(f"Input: {preview}")
                         st.markdown(run["output"])
                         st.caption(f"Tokens: `{run['tokens']}`")
@@ -402,7 +411,7 @@ def _render_hub(filtered, all_agents):
 
     # Results count
     if len(filtered) < len(all_agents):
-        st.info(f"Showing **{len(filtered)}** of {len(all_agents)} agents")
+        st.info(tr.get('showing_agents', 'Showing **{count}** of {total} agents').format(count=len(filtered), total=len(all_agents)))
 
     # Agent grid
     items = list(filtered.items())
@@ -532,7 +541,9 @@ def _render_agent_detail(agent, agent_key):
                 key=ta_key,
             )
 
-            if st.button(tr['run_btn'], key=f"run_{agent_key}", use_container_width=True):
+            running_key = f"running_{agent_key}"
+            is_running = st.session_state.get(running_key, False)
+            if st.button(tr['run_btn'], key=f"run_{agent_key}", use_container_width=True, disabled=is_running):
                 if not user_input:
                     st.warning(tr['enter_text'])
                 else:
@@ -546,6 +557,7 @@ def _render_agent_detail(agent, agent_key):
                         st.caption(f"Model: `{cached['model']}` · Tokens: `{cached['tokens']}` · ⚡ {tr['cached']}")
                         _render_copy_btn(cached["output"], f"copy_cached_{agent_key}")
                     else:
+                        st.session_state[running_key] = True
                         with st.spinner(tr['running']):
                             try:
                                 import json as _json
@@ -593,7 +605,7 @@ def _render_agent_detail(agent, agent_key):
                                     "input": user_input,
                                     "output": reply,
                                     "tokens": tokens,
-                                    "time": datetime.now().strftime("%H:%M"),
+                                    "ts": __import__('time').time(),
                                 })
                                 st.session_state["run_history"] = st.session_state["run_history"][:10]
 
@@ -605,6 +617,8 @@ def _render_agent_detail(agent, agent_key):
 
                             except Exception as e:
                                 st.error(f"{tr['error']}: {str(e)}")
+                            finally:
+                                st.session_state[running_key] = False
 
                     # Auto-scroll so "Result" heading is at top of viewport
                     st.components.v1.html("""
