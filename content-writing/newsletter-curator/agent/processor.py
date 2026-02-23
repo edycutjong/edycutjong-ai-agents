@@ -33,7 +33,7 @@ def get_llm(api_key: str, provider: str = "openai"):
     if provider == "openai":
         return ChatOpenAI(model=MODEL_NAME_OPENAI, api_key=api_key, temperature=0)
     elif provider == "google":
-        return ChatGoogleGenerativeAI(model=MODEL_NAME_GEMINI, google_api_key=api_key, temperature=0)
+        return ChatGoogleGenerativeAI(model=MODEL_NAME_GEMINI, api_key=api_key, temperature=0)
     else:
         raise ValueError(f"Unknown provider: {provider}")
 

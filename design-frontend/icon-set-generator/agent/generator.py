@@ -54,7 +54,7 @@ class IconGenerator:
                     logger.warning("Google API Key not found.")
                     return None
                 return ChatGoogleGenerativeAI(
-                    google_api_key=api_key,
+                    api_key=api_key,
                     model="gemini-1.5-pro",
                     temperature=0.2
                 )

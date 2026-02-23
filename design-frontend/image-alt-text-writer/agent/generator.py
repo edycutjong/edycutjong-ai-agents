@@ -34,7 +34,7 @@ class AltTextGenerator:
                 model=self.model,
                 temperature=0.2,
                 max_output_tokens=100,
-                google_api_key=config.GEMINI_API_KEY
+                api_key=config.GEMINI_API_KEY
             )
         else:
             raise ValueError(f"Unsupported provider: {self.provider}")

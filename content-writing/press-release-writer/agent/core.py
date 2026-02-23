@@ -48,7 +48,7 @@ class PressReleaseGenerator:
             return ChatGoogleGenerativeAI(
                 model=model_name or Config.DEFAULT_GOOGLE_MODEL,
                 temperature=0.7,
-                google_api_key=api_key
+                api_key=api_key
             )
         else:
             raise ValueError(f"Unsupported model provider: {self.model_provider}")
