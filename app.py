@@ -410,7 +410,7 @@ def _render_agent_detail(agent, agent_key):
                 main_content = (agent_path / "main.py").read_text(encoding="utf-8")
             except Exception:
                 pass
-            run_cmd = "streamlit run main.py" if "streamlit" in main_content.lower() else "python main.py"
+            is_streamlit = "streamlit" in main_content.lower()
 
             # Detect required environment variables from .env.example
             env_file = agent_path / ".env.example"
@@ -426,32 +426,86 @@ def _render_agent_detail(agent, agent_key):
                 except Exception:
                     pass
 
-            # Show run instructions
-            install_cmd = ""
-            req_file = agent_path / "requirements.txt"
-            if req_file.exists():
-                install_cmd = "pip install -r requirements.txt\n"
-
-            st.markdown(
-                "**To run this agent locally:**\n"
-                "```bash\n"
-                f"cd {agent_key}\n"
-                f"{install_cmd}"
-                f"{run_cmd}\n"
-                "```"
-            )
-
             # Show env var info
             if env_vars:
                 st.warning(
-                    "⚠️ **This agent requires the following environment variables:**\n\n"
-                    + "\n".join(f"- `{v}`" for v in env_vars)
-                    + "\n\nCopy `.env.example` to `.env` and fill in your keys."
+                    "⚠️ **This agent requires environment variables:**  "
+                    + ", ".join(f"`{v}`" for v in env_vars)
+                    + "  \nCopy `.env.example` → `.env` and fill in your keys before running."
                 )
             else:
                 st.success("✅ **No API keys required** — this agent runs standalone.")
 
+            if is_streamlit:
+                st.info(
+                    "This is a **Streamlit app** — run it separately:\n"
+                    "```bash\n"
+                    f"cd {agent_key}\n"
+                    "pip install -r requirements.txt\n"
+                    "streamlit run main.py\n"
+                    "```"
+                )
+            else:
+                # Show --help output
+                import subprocess
+                with st.expander("📖 Usage & Options (`--help`)", expanded=False):
+                    try:
+                        help_result = subprocess.run(
+                            [sys.executable, "main.py", "--help"],
+                            cwd=str(agent_path),
+                            capture_output=True, text=True, timeout=5,
+                        )
+                        st.code(help_result.stdout or help_result.stderr or "No help available", language="text")
+                    except Exception as e:
+                        st.code(f"Could not get help: {e}", language="text")
+
+                # Interactive runner
+                st.markdown("#### ▶️ Run Agent")
+                args_input = st.text_input(
+                    "CLI arguments",
+                    placeholder="e.g. --help, validate input.json, --query 'test'",
+                    key=f"args_{agent_key}",
+                )
+
+                col_run, col_clear = st.columns([1, 4])
+                with col_run:
+                    run_clicked = st.button("▶️ Run", key=f"run_{agent_key}", type="primary", use_container_width=True)
+
+                if run_clicked:
+                    import shlex
+                    cmd = [sys.executable, "main.py"]
+                    if args_input.strip():
+                        try:
+                            cmd += shlex.split(args_input)
+                        except ValueError:
+                            cmd += args_input.split()
+
+                    with st.spinner("Running agent..."):
+                        try:
+                            result = subprocess.run(
+                                cmd,
+                                cwd=str(agent_path),
+                                capture_output=True, text=True,
+                                timeout=30,
+                                env={**os.environ},
+                            )
+                            if result.stdout:
+                                st.markdown("**Output:**")
+                                st.code(result.stdout, language="text")
+                            if result.stderr:
+                                st.markdown("**Errors:**")
+                                st.code(result.stderr, language="text")
+                            if result.returncode == 0:
+                                st.success(f"✅ Exited with code {result.returncode}")
+                            else:
+                                st.error(f"❌ Exited with code {result.returncode}")
+                        except subprocess.TimeoutExpired:
+                            st.error("⏱️ Agent timed out after 30 seconds")
+                        except Exception as e:
+                            st.error(f"❌ Error: {e}")
+
             # Show requirements
+            req_file = agent_path / "requirements.txt"
             if req_file.exists():
                 with st.expander("📦 Dependencies"):
                     st.code(req_file.read_text(encoding="utf-8"), language="text")
