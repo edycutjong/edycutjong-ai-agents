@@ -290,9 +290,10 @@ def main():
 def _render_hub(filtered, all_agents):
     """Render the main hub/catalog view."""
     # Hero
+    total_count = len(all_agents)
     st.markdown('<h1 class="hero-title">AI Agents Hub</h1>', unsafe_allow_html=True)
     st.markdown(
-        '<p class="hero-subtitle">Browse & explore 130+ AI automation agents — '
+        f'<p class="hero-subtitle">Browse & explore {total_count}+ AI automation agents — '
         'code review, data analysis, content generation, DevOps, and more</p>',
         unsafe_allow_html=True
     )
@@ -412,26 +413,52 @@ def _render_agent_detail(agent, agent_key):
                 pass
             is_streamlit = "streamlit" in main_content.lower()
 
-            # Detect required environment variables from .env.example
-            env_file = agent_path / ".env.example"
+            # Detect required API keys from code and .env.example
             env_vars = []
+
+            # Scan main.py source for common API key patterns
+            api_key_patterns = [
+                "OPENAI_API_KEY", "ANTHROPIC_API_KEY", "GOOGLE_API_KEY",
+                "GEMINI_API_KEY", "HUGGINGFACE_TOKEN", "HF_TOKEN",
+                "COHERE_API_KEY", "PINECONE_API_KEY", "SERPAPI_KEY",
+                "SERP_API_KEY", "TAVILY_API_KEY", "LANGCHAIN_API_KEY",
+            ]
+            for pat in api_key_patterns:
+                if pat in main_content:
+                    env_vars.append(pat)
+
+            # Also check .env.example if it exists
+            env_file = agent_path / ".env.example"
             if env_file.exists():
                 try:
                     for line in env_file.read_text(encoding="utf-8").splitlines():
                         line = line.strip()
                         if line and not line.startswith("#") and "=" in line:
                             key = line.split("=", 1)[0].strip()
-                            if key:
+                            if key and key not in env_vars:
                                 env_vars.append(key)
                 except Exception:
                     pass
 
+            # Also scan all Python files in the agent directory for API key patterns
+            if not env_vars:
+                for py_file in agent_path.rglob("*.py"):
+                    if "__pycache__" in str(py_file):
+                        continue
+                    try:
+                        py_content = py_file.read_text(encoding="utf-8")
+                        for pat in api_key_patterns:
+                            if pat in py_content and pat not in env_vars:
+                                env_vars.append(pat)
+                    except Exception:
+                        continue
+
             # Show env var info
             if env_vars:
                 st.warning(
-                    "⚠️ **This agent requires environment variables:**  "
+                    "⚠️ **This agent requires API keys:**  "
                     + ", ".join(f"`{v}`" for v in env_vars)
-                    + "  \nCopy `.env.example` → `.env` and fill in your keys before running."
+                    + "  \nSet these as environment variables before running."
                 )
             else:
                 st.success("✅ **No API keys required** — this agent runs standalone.")
