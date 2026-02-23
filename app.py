@@ -197,8 +197,13 @@ def discover_agents():
                         continue
                     main_py = agent_dir / "main.py"
                     agents_md = agent_dir / "AGENTS.md"
+                    readme_md = agent_dir / "README.md"
                     if main_py.exists() or agents_md.exists():
                         desc = _extract_desc(agents_md) if agents_md.exists() else ""
+                        if not desc and readme_md.exists():
+                            desc = _extract_desc(readme_md)
+                        if not desc and main_py.exists():
+                            desc = _extract_desc_from_main(main_py)
                         agents[f"misc/{sub_cat.name}/{agent_dir.name}"] = {
                             "name": _slug_to_name(agent_dir.name),
                             "category": f"misc/{sub_cat.name}",
@@ -217,8 +222,13 @@ def discover_agents():
                 continue
             main_py = agent_dir / "main.py"
             agents_md = agent_dir / "AGENTS.md"
+            readme_md = agent_dir / "README.md"
             if main_py.exists() or agents_md.exists():
                 desc = _extract_desc(agents_md) if agents_md.exists() else ""
+                if not desc and readme_md.exists():
+                    desc = _extract_desc(readme_md)
+                if not desc and main_py.exists():
+                    desc = _extract_desc_from_main(main_py)
                 agents[f"{cat_name}/{agent_dir.name}"] = {
                     "name": _slug_to_name(agent_dir.name),
                     "category": cat_name,
@@ -246,14 +256,34 @@ def _render_copy_btn(text: str, key: str):
         st.code(text, language=None)
 
 
-def _extract_desc(agents_md: Path) -> str:
+def _extract_desc(md_file: Path) -> str:
     try:
-        content = agents_md.read_text(encoding="utf-8")
+        content = md_file.read_text(encoding="utf-8")
         for line in content.split("\n"):
             line = line.strip()
             if line and not line.startswith("#") and not line.startswith("---") and len(line) > 20:
                 clean = line.lstrip("- *>").strip()
                 return clean[:200]
+    except Exception:
+        pass
+    return ""
+
+
+def _extract_desc_from_main(main_py: Path) -> str:
+    """Extract description from main.py argparse or docstring."""
+    try:
+        content = main_py.read_text(encoding="utf-8")
+        # Try argparse description
+        import re
+        m = re.search(r'description=["\']([^"\']+)["\']', content)
+        if m:
+            return m.group(1)[:200]
+        # Try module docstring
+        m = re.search(r'^"""\s*\n?(.+?)(?:\n|""")', content)
+        if m:
+            desc = m.group(1).strip().rstrip(' —-')
+            if len(desc) > 10:
+                return desc[:200]
     except Exception:
         pass
     return ""
@@ -361,13 +391,24 @@ def main():
 
     # Filter agents
     if search:
-        # Search across ALL agents regardless of category
+        # Search across ALL agents regardless of category (including translated names)
         search_lower = search.lower()
-        filtered = {k: v for k, v in agents.items()
-                    if search_lower in v["name"].lower()
-                    or search_lower in v["description"].lower()
-                    or search_lower in v["category_display"].lower()
-                    or search_lower in k.lower()}
+        locale = st.session_state.get("locale", "en")
+        def _matches(k, v):
+            if search_lower in v["name"].lower() or search_lower in k.lower():
+                return True
+            if search_lower in v["description"].lower():
+                return True
+            if search_lower in v["category_display"].lower():
+                return True
+            # Also search translated name/description
+            if locale != "en":
+                tr_name = _tr_agent(k, "name", locale, "").lower()
+                tr_desc = _tr_agent(k, "description", locale, "").lower()
+                if search_lower in tr_name or search_lower in tr_desc:
+                    return True
+            return False
+        filtered = {k: v for k, v in agents.items() if _matches(k, v)}
     elif selected_cat != "All":
         filtered = {k: v for k, v in agents.items() if v["category"] == selected_cat}
     else:
@@ -534,104 +575,124 @@ def _render_agent_detail(agent, agent_key):
                 st.session_state[ta_key] = examples[pick]
                 st.rerun()
 
+            running_key = f"running_{agent_key}"
+            is_running = st.session_state.get(running_key, False)
+            cache_key = f"cache_{agent_key}"
+
             user_input = st.text_area(
                 tr.get('default_input_label', label) if label == "📝 Your Input" else label,
                 placeholder=tr.get('default_input_placeholder', placeholder) if placeholder == "Describe what you need or paste your text..." else placeholder,
                 height=150,
                 key=ta_key,
+                disabled=is_running,
             )
 
-            running_key = f"running_{agent_key}"
-            is_running = st.session_state.get(running_key, False)
-            if st.button(tr['run_btn'], key=f"run_{agent_key}", use_container_width=True, disabled=is_running):
-                if not user_input:
-                    st.warning(tr['enter_text'])
-                else:
-                    # Check cache — skip API call if same input
-                    cache_key = f"cache_{agent_key}"
-                    cached = st.session_state.get(cache_key)
-                    if cached and cached["input"] == user_input:
-                        st.divider()
-                        st.markdown(f"#### {tr['result']}")
-                        st.markdown(cached["output"])
-                        st.caption(f"Model: `{cached['model']}` · Tokens: `{cached['tokens']}` · ⚡ {tr['cached']}")
-                        _render_copy_btn(cached["output"], f"copy_cached_{agent_key}")
-                    else:
-                        st.session_state[running_key] = True
-                        with st.spinner(tr['running']):
-                            try:
-                                import json as _json
-                                from urllib.request import Request, urlopen
+            def _on_run_click():
+                if st.session_state[ta_key]:
+                    st.session_state[running_key] = True
 
-                                req_data = _json.dumps({
-                                    "model": "gpt-4o-mini",
-                                    "messages": [
-                                        {"role": "system", "content": system_prompt},
-                                        {"role": "user", "content": user_input},
-                                    ],
-                                    "max_tokens": 1024,
-                                    "temperature": 0.3,
-                                }).encode()
+            st.button(
+                tr['run_btn'], 
+                key=f"run_{agent_key}", 
+                use_container_width=True, 
+                disabled=is_running,
+                on_click=_on_run_click
+            )
 
-                                req = Request(
-                                    "https://api.openai.com/v1/chat/completions",
-                                    data=req_data,
-                                    headers={
-                                        "Authorization": f"Bearer {_has_openai}",
-                                        "Content-Type": "application/json",
-                                    },
-                                )
+            # Warning if trying to run with empty input
+            if st.session_state.get(running_key) and not user_input:
+                st.session_state[running_key] = False
+                st.warning(tr['enter_text'])
+                
+            # If running, do the API call
+            if st.session_state.get(running_key) and user_input:
+                cached = st.session_state.get(cache_key)
+                # If exact same input is already cached, no need to run API again
+                if cached and cached["input"] == user_input:
+                    st.session_state[running_key] = False
+                    st.rerun()
+                    
+                with st.spinner(tr['running']):
+                    try:
+                        import json as _json
+                        from urllib.request import Request, urlopen
 
-                                with urlopen(req, timeout=30) as resp:
-                                    result = _json.loads(resp.read())
+                        req_data = _json.dumps({
+                            "model": "gpt-4o-mini",
+                            "messages": [
+                                {"role": "system", "content": system_prompt},
+                                {"role": "user", "content": user_input},
+                            ],
+                            "max_tokens": 1024,
+                            "temperature": 0.3,
+                        }).encode()
 
-                                reply = result["choices"][0]["message"]["content"]
-                                model = result.get("model", "gpt-4o-mini")
-                                tokens = result.get("usage", {}).get("total_tokens", "?")
+                        req = Request(
+                            "https://api.openai.com/v1/chat/completions",
+                            data=req_data,
+                            headers={
+                                "Authorization": f"Bearer {_has_openai}",
+                                "Content-Type": "application/json",
+                            },
+                        )
 
-                                # Cache result for this agent
-                                st.session_state[cache_key] = {
-                                    "input": user_input,
-                                    "output": reply,
-                                    "model": model,
-                                    "tokens": tokens,
-                                }
+                        with urlopen(req, timeout=30) as resp:
+                            result = _json.loads(resp.read())
 
-                                # Save to run history
-                                if "run_history" not in st.session_state:
-                                    st.session_state["run_history"] = []
-                                st.session_state["run_history"].insert(0, {
-                                    "agent": agent.get("name", "Unknown"),
-                                    "input": user_input,
-                                    "output": reply,
-                                    "tokens": tokens,
-                                    "ts": __import__('time').time(),
-                                })
-                                st.session_state["run_history"] = st.session_state["run_history"][:10]
+                        reply = result["choices"][0]["message"]["content"]
+                        model = result.get("model", "gpt-4o-mini")
+                        tokens = result.get("usage", {}).get("total_tokens", "?")
 
-                                st.divider()
-                                st.markdown(f"#### {tr['result']}")
-                                st.markdown(reply)
-                                st.caption(f"Model: `{model}` · Tokens: `{tokens}`")
-                                _render_copy_btn(reply, f"copy_fresh_{agent_key}")
-
-                            except Exception as e:
-                                st.error(f"{tr['error']}: {str(e)}")
-                            finally:
-                                st.session_state[running_key] = False
-
-                    # Auto-scroll so "Result" heading is at top of viewport
-                    st.components.v1.html("""
-                    <script>
-                    const headers = window.parent.document.querySelectorAll('section.main h4');
-                    for (const h of headers) {
-                        if (h.textContent.includes('Result')) {
-                            h.scrollIntoView({behavior: 'smooth', block: 'start'});
-                            break;
+                        # Cache result for this agent
+                        st.session_state[cache_key] = {
+                            "input": user_input,
+                            "output": reply,
+                            "model": model,
+                            "tokens": tokens,
                         }
+
+                        # Save to run history
+                        if "run_history" not in st.session_state:
+                            st.session_state["run_history"] = []
+                        st.session_state["run_history"].insert(0, {
+                            "agent": agent.get("name", "Unknown"),
+                            "input": user_input,
+                            "output": reply,
+                            "tokens": tokens,
+                            "ts": __import__('time').time(),
+                        })
+                        st.session_state["run_history"] = st.session_state["run_history"][:10]
+
+                    except Exception as e:
+                        st.error(f"{tr['error']}: {str(e)}")
+                    finally:
+                        st.session_state[running_key] = False
+                        
+                st.rerun()
+
+            # Render cached result (will show after run finishes and reruns)
+            cached = st.session_state.get(cache_key)
+            if cached and cached["input"] == user_input and not is_running:
+                st.divider()
+                st.markdown(f"#### {tr['result']}")
+                st.markdown(cached["output"])
+                st.caption(f"Model: `{cached['model']}` · Tokens: `{cached['tokens']}`")
+                _render_copy_btn(cached["output"], f"copy_cached_{agent_key}")
+
+                # Auto-scroll so "Result" heading is at top of viewport
+                st.components.v1.html("""
+                <script>
+                const headers = window.parent.document.querySelectorAll('section.main h4');
+                for (const h of headers) {
+                    if (h.textContent.includes('Result')) {
+                        h.scrollIntoView({behavior: 'smooth', block: 'start'});
+                        break;
                     }
-                    </script>
-                    """, height=0)
+                }
+                </script>
+                """, height=0)
+
+
         else:
             st.warning(
                 "⚠️ **OpenAI API key required**  \n"
@@ -736,14 +797,14 @@ def _render_agent_detail(agent, agent_key):
 
                 if missing:
                     st.warning(
-                        "⚠️ **Missing API keys:**  "
+                        tr.get('missing_api_keys', '⚠️ **Missing API keys:**') + "  "
                         + ", ".join(f"`{v}`" for v in missing)
-                        + "  \nSet these in Streamlit Secrets or environment variables."
+                        + "  \n" + tr.get('set_api_keys_hint', 'Set these in Streamlit Secrets or environment variables.')
                     )
 
             if is_streamlit:
                 st.info(
-                    "This is a **Streamlit app** — run it separately:\n"
+                    tr.get('streamlit_app_info', 'This is a **Streamlit app** — run it separately:') + "\n"
                     "```bash\n"
                     f"cd {agent_key}\n"
                     "pip install -r requirements.txt\n"
@@ -770,7 +831,7 @@ def _render_agent_detail(agent, agent_key):
             # Show requirements
             req_file = agent_path / "requirements.txt"
             if req_file.exists():
-                with st.expander("📦 Dependencies"):
+                with st.expander(tr.get('dependencies', '📦 Dependencies')):
                     st.code(req_file.read_text(encoding="utf-8"), language="text")
 
 

@@ -507,43 +507,43 @@
   },
   "api-integration/graphql-schema-analyzer": {
     "id": {
-      "name": "Penganalisis Skema GraphQL",
+      "name": "Penganalisis Skema Graphql",
       "description": "Menganalisis skema GraphQL, menyarankan pengoptimalan, dan mendeteksi masalah kueri N+1. Dirancang sebagai proyek agen AI."
     },
     "zh": {
-      "name": "GraphQL 模式分析器",
+      "name": "Graphql 模式分析器",
       "description": "分析 GraphQL 架构、提出优化建议并检测 N+1 查询问题。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Analizador de esquemas GraphQL",
+      "name": "Analizador de esquemas Graphql",
       "description": "Analiza esquemas GraphQL, sugiere optimizaciones y detecta problemas de consulta N+1. Diseñado como un proyecto de agentes de IA."
     },
     "pt": {
-      "name": "Analisador de esquema GraphQL",
+      "name": "Analisador de esquema Graphql",
       "description": "Analisa esquemas GraphQL, sugere otimizações e detecta problemas de consulta N+1. Projetado como um projeto de agentes de IA."
     },
     "ja": {
-      "name": "GraphQL スキーマ アナライザー",
+      "name": "Graphql スキーマ アナライザー",
       "description": "GraphQL スキーマを分析し、最適化を提案し、N+1 クエリの問題を検出します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
-      "name": "GraphQL 스키마 분석기",
+      "name": "Graphql 스키마 분석기",
       "description": "GraphQL 스키마를 분석하고, 최적화를 제안하고, N+1 쿼리 문제를 감지합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
-      "name": "GraphQL-Schemaanalysator",
+      "name": "Graphql-Schemaanalysator",
       "description": "Analysiert GraphQL-Schemas, schlägt Optimierungen vor und erkennt N+1-Abfrageprobleme. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
-      "name": "Analyseur de schéma GraphQL",
+      "name": "Analyseur de schéma Graphql",
       "description": "Analyse les schémas GraphQL, suggère des optimisations et détecte les problèmes de requête N+1. Conçu comme un projet d'agents IA."
     },
     "ru": {
-      "name": "Анализатор схемы GraphQL",
+      "name": "Анализатор схемы Graphql",
       "description": "Анализирует схемы GraphQL, предлагает варианты оптимизации и обнаруживает проблемы с запросами N+1. Разработан как проект агентов искусственного интеллекта."
     },
     "ar": {
-      "name": "محلل مخطط GraphQL",
+      "name": "محلل مخطط Graphql",
       "description": "يحلل مخططات GraphQL، ويقترح التحسينات، ويكتشف مشاكل استعلام N+1. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
     },
     "hi": {
@@ -553,27 +553,27 @@
   },
   "api-integration/oauth-flow-debugger": {
     "id": {
-      "name": "Debugger Aliran OAuth",
+      "name": "Debugger Aliran Oauth",
       "description": "Melacak alur OAuth 2.0 langkah demi langkah, mengidentifikasi kesalahan konfigurasi, dan menyarankan perbaikan. Dirancang sebagai proyek agen AI."
     },
     "zh": {
-      "name": "OAuth 流程调试器",
+      "name": "Oauth 流程调试器",
       "description": "逐步跟踪 OAuth 2.0 流程、识别错误配置并提出修复建议。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Depurador de flujo de OAuth",
+      "name": "Depurador de flujo de Oauth",
       "description": "Sigue los flujos de OAuth 2.0 paso a paso, identifica errores de configuración y sugiere soluciones. Diseñado como un proyecto de agentes de IA."
     },
     "pt": {
-      "name": "Depurador de fluxo OAuth",
+      "name": "Depurador de fluxo Oauth",
       "description": "Rastreia os fluxos do OAuth 2.0 passo a passo, identifica configurações incorretas e sugere correções. Projetado como um projeto de agentes de IA."
     },
     "ja": {
-      "name": "OAuth フロー デバッガー",
+      "name": "Oauth フロー デバッガー",
       "description": "OAuth 2.0 フローを段階的にトレースし、構成ミスを特定し、修正を提案します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
-      "name": "OAuth 흐름 디버거",
+      "name": "Oauth 흐름 디버거",
       "description": "OAuth 2.0 흐름을 단계별로 추적하고 잘못된 구성을 식별하며 수정 사항을 제안합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
@@ -581,7 +581,7 @@
       "description": "Verfolgt OAuth 2.0-Abläufe Schritt für Schritt, identifiziert Fehlkonfigurationen und schlägt Korrekturen vor. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
-      "name": "Débogueur de flux OAuth",
+      "name": "Débogueur de flux Oauth",
       "description": "Suit les flux OAuth 2.0 étape par étape, identifie les erreurs de configuration et suggère des correctifs. Conçu comme un projet d'agents IA."
     },
     "ru": {
@@ -589,7 +589,7 @@
       "description": "Шаг за шагом отслеживает потоки OAuth 2.0, выявляет неправильные конфигурации и предлагает исправления. Разработан как проект агентов искусственного интеллекта."
     },
     "ar": {
-      "name": "مصحح أخطاء تدفق OAuth",
+      "name": "مصحح أخطاء تدفق Oauth",
       "description": "يتدفق تتبع OAuth 2.0 خطوة بخطوة، ويحدد التكوينات الخاطئة، ويقترح الإصلاحات. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
     },
     "hi": {
@@ -645,43 +645,43 @@
   },
   "api-integration/rest-to-graphql-converter": {
     "id": {
-      "name": "Konverter Istirahat Ke GraphQL",
+      "name": "Konverter Istirahat Ke Graphql",
       "description": "Membaca definisi titik akhir REST API dan menghasilkan skema dan penyelesai GraphQL yang setara. Dirancang sebagai proyek agen AI."
     },
     "zh": {
-      "name": "休息到 GraphQL 转换器",
+      "name": "休息到 Graphql 转换器",
       "description": "读取 REST API 端点定义并生成等效的 GraphQL 架构和解析器。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Convertidor de resto a GraphQL",
+      "name": "Convertidor de resto a Graphql",
       "description": "Lee definiciones de puntos finales de API REST y genera solucionadores y esquemas GraphQL equivalentes. Diseñado como un proyecto de agentes de IA."
     },
     "pt": {
-      "name": "Conversor REST para GraphQL",
+      "name": "Conversor Rest para Graphql",
       "description": "Lê definições de endpoint da API REST e gera esquemas e resolvedores GraphQL equivalentes. Projetado como um projeto de agentes de IA."
     },
     "ja": {
-      "name": "残りからGraphQLへのコンバーター",
+      "name": "残りからGraphqlへのコンバーター",
       "description": "REST API エンドポイント定義を読み取り、同等の GraphQL スキーマとリゾルバーを生成します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
-      "name": "GraphQL 변환기로 나머지",
+      "name": "Graphql 변환기로 나머지",
       "description": "REST API 엔드포인트 정의를 읽고 동등한 GraphQL 스키마 및 해석기를 생성합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
-      "name": "REST zu GraphQL-Konverter",
+      "name": "Rest zu Graphql-Konverter",
       "description": "Liest REST-API-Endpunktdefinitionen und generiert entsprechende GraphQL-Schemas und Resolver. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
-      "name": "Convertisseur REST en GraphQL",
+      "name": "Convertisseur Rest en Graphql",
       "description": "Lit les définitions de point de terminaison de l'API REST et génère un schéma et des résolveurs GraphQL équivalents. Conçu comme un projet d'agents IA."
     },
     "ru": {
-      "name": "Конвертер REST в GraphQL",
+      "name": "Конвертер Rest в Graphql",
       "description": "Считывает определения конечных точек REST API и генерирует эквивалентную схему и преобразователи GraphQL. Разработан как проект агентов искусственного интеллекта."
     },
     "ar": {
-      "name": "الباقي لتحويل GraphQL",
+      "name": "الباقي لتحويل Graphql",
       "description": "يقرأ تعريفات نقطة نهاية REST API وينشئ مخطط GraphQL ومحللات مكافئة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
     },
     "hi": {
@@ -921,19 +921,19 @@
   },
   "business-productivity/kpi-dashboard-generator": {
     "id": {
-      "name": "Generator Dasbor KPI",
+      "name": "Generator Dasbor Kpi",
       "description": "Membaca sumber data dan menghasilkan dasbor KPI dengan peringatan yang dapat dikonfigurasi. Dirancang sebagai proyek agen AI."
     },
     "zh": {
-      "name": "KPI 仪表板生成器",
+      "name": "Kpi 仪表板生成器",
       "description": "读取数据源并生成带有可配置警报的 KPI 仪表板。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Generador de paneles de KPI",
+      "name": "Generador de paneles de Kpi",
       "description": "Lee fuentes de datos y genera paneles de KPI con alertas configurables. Diseñado como un proyecto de agentes de IA."
     },
     "pt": {
-      "name": "Gerador de painel de KPI",
+      "name": "Gerador de painel de Kpi",
       "description": "Lê fontes de dados e gera painéis de KPI com alertas configuráveis. Projetado como um projeto de agentes de IA."
     },
     "ja": {
@@ -941,7 +941,7 @@
       "description": "データ ソースを読み取り、構成可能なアラートを含む KPI ダッシュボードを生成します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
-      "name": "KPI 대시보드 생성기",
+      "name": "Kpi 대시보드 생성기",
       "description": "데이터 소스를 읽고 구성 가능한 경고가 포함된 KPI 대시보드를 생성합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
@@ -949,7 +949,7 @@
       "description": "Liest Datenquellen und generiert KPI-Dashboards mit konfigurierbaren Warnungen. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
-      "name": "Générateur de tableau de bord KPI",
+      "name": "Générateur de tableau de bord Kpi",
       "description": "Lit les sources de données et génère des tableaux de bord KPI avec des alertes configurables. Conçu comme un projet d'agents IA."
     },
     "ru": {
@@ -957,7 +957,7 @@
       "description": "Считывает источники данных и создает информационные панели KPI с настраиваемыми оповещениями. Разработан как проект агентов искусственного интеллекта."
     },
     "ar": {
-      "name": "مولد لوحة تحكم KPI",
+      "name": "مولد لوحة تحكم Kpi",
       "description": "يقرأ مصادر البيانات وينشئ لوحات معلومات مؤشرات الأداء الرئيسية مع تنبيهات قابلة للتكوين. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
     },
     "hi": {
@@ -1017,15 +1017,15 @@
       "description": "Mengelola Tujuan dan Hasil Utama, melacak kemajuan, dan menghasilkan laporan status. Dirancang sebagai proyek agen AI."
     },
     "zh": {
-      "name": "OKR 追踪器",
+      "name": "Okr 追踪器",
       "description": "管理目标和关键结果、跟踪进度并生成状态报告。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Rastreador de OKR",
+      "name": "Rastreador de Okr",
       "description": "Gestiona objetivos y resultados clave, realiza un seguimiento del progreso y genera informes de estado. Diseñado como un proyecto de agentes de IA."
     },
     "pt": {
-      "name": "OKR Rastreador",
+      "name": "Okr Rastreador",
       "description": "Gerencia objetivos e resultados-chave, acompanha o progresso e gera relatórios de status. Projetado como um projeto de agentes de IA."
     },
     "ja": {
@@ -1037,11 +1037,11 @@
       "description": "목표와 주요 결과를 관리하고 진행 상황을 추적하며 상태 보고서를 생성합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
-      "name": "OKR-Tracker",
+      "name": "Okr-Tracker",
       "description": "Verwaltet Ziele und Schlüsselergebnisse, verfolgt den Fortschritt und generiert Statusberichte. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
-      "name": "OKR Tracker",
+      "name": "Okr Tracker",
       "description": "Gère les objectifs et les résultats clés, suit les progrès et génère des rapports de statut. Conçu comme un projet d'agents IA."
     },
     "ru": {
@@ -1059,7 +1059,7 @@
   },
   "business-productivity/sla-monitor": {
     "id": {
-      "name": "Pemantau SLA",
+      "name": "Pemantau Sla",
       "description": "Melacak kepatuhan SLA, menghitung persentase waktu aktif, dan memperingatkan pelanggaran. Dirancang sebagai proyek agen AI."
     },
     "zh": {
@@ -1067,11 +1067,11 @@
       "description": "跟踪 SLA 合规性、计算正常运行时间百分比并针对违规发出警报。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Monitor SLA",
+      "name": "Monitor Sla",
       "description": "Realiza un seguimiento del cumplimiento de SLA, calcula porcentajes de tiempo de actividad y alertas sobre infracciones. Diseñado como un proyecto de agentes de IA."
     },
     "pt": {
-      "name": "Monitor de SLA",
+      "name": "Monitor de Sla",
       "description": "Rastreia a conformidade com SLA, calcula porcentagens de tempo de atividade e alerta sobre violações. Projetado como um projeto de agentes de IA."
     },
     "ja": {
@@ -1079,11 +1079,11 @@
       "description": "SLA 準拠を追跡し、稼働時間の割合を計算し、違反があった場合にアラートを送信します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
-      "name": "SLA 모니터",
+      "name": "Sla 모니터",
       "description": "SLA 규정 준수를 추적하고 가동 시간 비율을 계산하며 위반에 대한 경고를 보냅니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
-      "name": "SLA-Monitor",
+      "name": "Sla-Monitor",
       "description": "Verfolgt die SLA-Einhaltung, berechnet die Verfügbarkeitsprozentsätze und warnt bei Verstößen. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
@@ -1381,39 +1381,39 @@
   },
   "code-generation/github-actions-writer": {
     "id": {
-      "name": "Penulis Tindakan GitHub",
+      "name": "Penulis Tindakan Github",
       "description": "Membaca struktur proyek dan menghasilkan alur kerja CI/CD GitHub Actions yang dioptimalkan. Dirancang sebagai proyek agen AI."
     },
     "zh": {
-      "name": "GitHub Actions 编写器",
+      "name": "Github Actions 编写器",
       "description": "读取项目结构并生成优化的 GitHub Actions CI/CD 工作流程。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Escritor de acciones de GitHub",
+      "name": "Escritor de acciones de Github",
       "description": "Lee la estructura del proyecto y genera flujos de trabajo de CI/CD de GitHub Actions optimizados. Diseñado como un proyecto de agentes de IA."
     },
     "pt": {
-      "name": "Escritor de ações do GitHub",
+      "name": "Escritor de ações do Github",
       "description": "Lê a estrutura do projeto e gera fluxos de trabalho otimizados de CI/CD do GitHub Actions. Projetado como um projeto de agentes de IA."
     },
     "ja": {
-      "name": "GitHubアクションライター",
+      "name": "Githubアクションライター",
       "description": "プロジェクト構造を読み取り、最適化された GitHub Actions CI/CD ワークフローを生成します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
-      "name": "GitHub 액션 작성자",
+      "name": "Github 액션 작성자",
       "description": "프로젝트 구조를 읽고 최적화된 GitHub Actions CI/CD 워크플로를 생성합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
-      "name": "Autor von GitHub-Aktionen",
+      "name": "Autor von Github-Aktionen",
       "description": "Liest die Projektstruktur und generiert optimierte GitHub Actions CI/CD-Workflows. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
-      "name": "Rédacteur d'actions GitHub",
+      "name": "Rédacteur d'actions Github",
       "description": "Lit la structure du projet et génère des workflows CI/CD GitHub Actions optimisés. Conçu comme un projet d'agents IA."
     },
     "ru": {
-      "name": "Писатель действий на GitHub",
+      "name": "Писатель действий на Github",
       "description": "Считывает структуру проекта и генерирует оптимизированные рабочие процессы CI/CD GitHub Actions. Разработан как проект агентов искусственного интеллекта."
     },
     "ar": {
@@ -1888,93 +1888,93 @@
   "content-writing/html-to-markdown": {
     "id": {
       "name": "HTML Ke Penurunan Harga",
-      "description": ""
+      "description": "HTML to Markdown Converter — Mengonversi konten HTML ke format Markdown yang bersih. Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "HTML 转 Markdown",
-      "description": ""
+      "description": "HTML 到 Markdown 转换器 — 将 HTML 内容转换为干净的 Markdown 格式。设计为人工智能代理项目。"
     },
     "es": {
       "name": "HTML para rebajas",
-      "description": ""
+      "description": "Convertidor de HTML a Markdown: convierte contenido HTML a un formato Markdown limpio. Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "HTML para redução",
-      "description": ""
+      "description": "Conversor de HTML para Markdown — Converta conteúdo HTML para um formato Markdown limpo. Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "HTMLからマークダウンへ",
-      "description": ""
+      "description": "HTML から Markdown コンバーター — HTML コンテンツをクリーンな Markdown 形式に変換します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "HTML을 마크다운으로",
-      "description": ""
+      "description": "HTML을 마크다운 변환기로 — HTML 콘텐츠를 깨끗한 마크다운 형식으로 변환합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "HTML zu Markdown",
-      "description": ""
+      "description": "HTML-zu-Markdown-Konverter – Konvertieren Sie HTML-Inhalte in das saubere Markdown-Format. Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "HTML en démarque",
-      "description": ""
+      "description": "Convertisseur HTML en Markdown — Convertissez le contenu HTML au format Markdown propre. Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "HTML в Markdown",
-      "description": ""
+      "description": "Конвертер HTML в Markdown — конвертируйте содержимое HTML в чистый формат Markdown. Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "HTML إلى تخفيض السعر",
-      "description": ""
+      "description": "HTML to Markdown Converter - تحويل محتوى HTML إلى تنسيق Markdown النظيف. تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "एचटीएमएल से मार्कडाउन",
-      "description": ""
+      "description": "HTML से मार्कडाउन कन्वर्टर - HTML सामग्री को क्लीन मार्कडाउन फॉर्मेट में बदलें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "content-writing/lorem-ipsum-generator": {
     "id": {
       "name": "Generator Lorem Ipsum",
-      "description": ""
+      "description": "Lorem Ipsum Generator — Menghasilkan teks Lorem Ipsum placeholder untuk maket dan tata letak. Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "Lorem Ipsum 生成器",
-      "description": ""
+      "description": "Lorem Ipsum Generator — 为模型和布局生成占位符 Lorem Ipsum 文本。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Generador Lorem Ipsum",
-      "description": ""
+      "description": "Generador Lorem Ipsum: genera texto de marcador de posición de Lorem Ipsum para maquetas y diseños. Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Gerador Lorem Ipsum",
-      "description": ""
+      "description": "Lorem Ipsum Generator – Gere texto de espaço reservado Lorem Ipsum para maquetes e layouts. Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "ローレム・イプサムジェネレーター",
-      "description": ""
+      "description": "Lorem Ipsum Generator — モックアップとレイアウト用のプレースホルダー Lorem Ipsum テキストを生成します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "Lorem Ipsum 생성기",
-      "description": ""
+      "description": "Lorem Ipsum 생성기 — 모형 및 레이아웃을 위한 자리 표시자 Lorem Ipsum 텍스트를 생성합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "Lorem-Ipsum-Generator",
-      "description": ""
+      "description": "Lorem-Ipsum-Generator – Generieren Sie Platzhalter-Lorem-Ipsum-Text für Modelle und Layouts. Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Générateur Lorem Ipsum",
-      "description": ""
+      "description": "Générateur Lorem Ipsum — Générez du texte Lorem Ipsum réservé pour les maquettes et les mises en page. Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "Генератор Лорем Ипсум",
-      "description": ""
+      "description": "Lorem Ipsum Generator — генерирует текст-заполнитель Lorem Ipsum для макетов и макетов. Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "مولد لوريم إيبسوم",
-      "description": ""
+      "description": "Lorem Ipsum Generator — قم بإنشاء عنصر نائب لنص Lorem Ipsum للنماذج والتخطيطات. تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "लोरेम इप्सम जेनरेटर",
-      "description": ""
+      "description": "लोरेम इप्सम जेनरेटर - मॉकअप और लेआउट के लिए प्लेसहोल्डर लोरेम इप्सम टेक्स्ट जेनरेट करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "content-writing/markdown-linter": {
@@ -2302,47 +2302,47 @@
   "content-writing/string-similarity": {
     "id": {
       "name": "Kesamaan String",
-      "description": ""
+      "description": "Penganalisis Kesamaan String — Bandingkan dua string dan hitung skor kemiripannya. Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "字符串相似度",
-      "description": ""
+      "description": "字符串相似度分析器 — 比较两个字符串并计算它们的相似度分数。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Similitud de cadenas",
-      "description": ""
+      "description": "Analizador de similitud de cadenas: compare dos cadenas y calcule su puntuación de similitud. Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Semelhança de cordas",
-      "description": ""
+      "description": "Analisador de similaridade de strings — Compare duas strings e calcule sua pontuação de similaridade. Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "文字列の類似性",
-      "description": ""
+      "description": "文字列類似性アナライザー — 2 つの文字列を比較し、それらの類似性スコアを計算します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "문자열 유사성",
-      "description": ""
+      "description": "문자열 유사성 분석기 — 두 문자열을 비교하고 유사성 점수를 계산합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "String-Ähnlichkeit",
-      "description": ""
+      "description": "String-Ähnlichkeitsanalysator – Vergleichen Sie zwei Strings und berechnen Sie ihren Ähnlichkeitswert. Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Similarité des chaînes",
-      "description": ""
+      "description": "Analyseur de similarité de chaînes — Comparez deux chaînes et calculez leur score de similarité. Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "Сходство строк",
-      "description": ""
+      "description": "Анализатор сходства строк. Сравните две строки и вычислите их показатель сходства. Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "تشابه السلسلة",
-      "description": ""
+      "description": "محلل تشابه السلسلة - قارن بين سلسلتين واحسب درجة التشابه بينهما. تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "स्ट्रिंग समानता",
-      "description": ""
+      "description": "स्ट्रिंग समानता विश्लेषक - दो स्ट्रिंग की तुलना करें और उनके समानता स्कोर की गणना करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "content-writing/technical-blog-reviewer": {
@@ -2394,93 +2394,93 @@
   "content-writing/text-case-converter": {
     "id": {
       "name": "Konverter Kasus Teks",
-      "description": ""
+      "description": "Text Case Converter — Mengonversi teks antara format case yang berbeda (camelCase, Snake_case, dll.). Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "文本大小写转换器",
-      "description": ""
+      "description": "文本大小写转换器 — 在不同大小写格式之间转换文本（camelCase、snake_case 等）。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Convertidor de casos de texto",
-      "description": ""
+      "description": "Convertidor de mayúsculas y minúsculas: convierte texto entre diferentes formatos de mayúsculas y minúsculas (camelCase, Snake_case, etc.). Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Conversor de maiúsculas e minúsculas de texto",
-      "description": ""
+      "description": "Text Case Converter — Converta texto entre diferentes formatos de case (camelCase, snake_case, etc.). Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "テキストケースコンバーター",
-      "description": ""
+      "description": "Text Case Converter — テキストを異なる大文字と小文字の形式 (camelCase、snake_case など) 間で変換します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "텍스트 대소문자 변환기",
-      "description": ""
+      "description": "텍스트 대소문자 변환기 — 다양한 대소문자 형식(camelCase, snake_case 등) 간에 텍스트를 변환합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "Text-Groß-/Kleinschreibung-Konverter",
-      "description": ""
+      "description": "Text Case Converter – Konvertieren Sie Text zwischen verschiedenen Groß-/Kleinschreibungsformaten (camelCase, Snake_case usw.). Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Convertisseur de casse de texte",
-      "description": ""
+      "description": "Text Case Converter — Convertissez le texte entre différents formats de casse (camelCase, Snake_case, etc.). Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "Конвертер регистра текста",
-      "description": ""
+      "description": "Конвертер регистра текста — конвертируйте текст в различные форматы регистра (camelCase, Snake_case и т. д.). Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "محول حالة النص",
-      "description": ""
+      "description": "Text Case Converter — تحويل النص بين تنسيقات الحالات المختلفة (camelCase، وsnake_case، وما إلى ذلك). تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "टेक्स्ट केस कन्वर्टर",
-      "description": ""
+      "description": "टेक्स्ट केस कन्वर्टर - टेक्स्ट को विभिन्न केस प्रारूपों (कैमलकेस, स्नेक_केस, आदि) के बीच परिवर्तित करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "content-writing/text-diff": {
     "id": {
       "name": "Perbedaan Teks",
-      "description": ""
+      "description": "Alat Pembeda Teks — Membandingkan dua teks dan menunjukkan perbedaannya baris demi baris. Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "文本差异",
-      "description": ""
+      "description": "文本比较工具 — 比较两个文本并逐行显示它们的差异。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Diferencia de texto",
-      "description": ""
+      "description": "Herramienta de diferenciación de texto: compara dos textos y muestra sus diferencias línea por línea. Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Diferença de texto",
-      "description": ""
+      "description": "Ferramenta de comparação de texto — Compare dois textos e mostre suas diferenças linha por linha. Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "テキストの差分",
-      "description": ""
+      "description": "テキスト差分ツール — 2 つのテキストを比較し、その違いを 1 行ずつ表示します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "텍스트 차이",
-      "description": ""
+      "description": "텍스트 비교 도구 — 두 텍스트를 비교하고 차이점을 한 줄씩 표시합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "Textdiff",
-      "description": ""
+      "description": "Text-Diff-Tool – Vergleichen Sie zwei Texte und zeigen Sie ihre Unterschiede Zeile für Zeile an. Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Différence de texte",
-      "description": ""
+      "description": "Outil de comparaison de texte — Comparez deux textes et affichez leurs différences ligne par ligne. Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "Текстовая разница",
-      "description": ""
+      "description": "Инструмент «Различие текста» — сравните два текста и покажите их различия построчно. Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "فرق النص",
-      "description": ""
+      "description": "أداة تمييز النص - قارن بين نصين وأظهر الاختلافات بينهما سطرًا تلو الآخر. تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "पाठ अंतर",
-      "description": ""
+      "description": "टेक्स्ट डिफ टूल - दो टेक्स्ट की तुलना करें और लाइन दर लाइन उनके अंतर दिखाएं। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "content-writing/text-summarizer": {
@@ -2854,47 +2854,47 @@
   "data-analytics/code-complexity-analyzer": {
     "id": {
       "name": "Penganalisis Kompleksitas Kode",
-      "description": ""
+      "description": "Penganalisis Kompleksitas Kode — Menganalisis metrik kompleksitas kode (kompleksitas siklomatik, LOC, dll.). Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "代码复杂度分析器",
-      "description": ""
+      "description": "代码复杂性分析器 — 分析代码复杂性指标（圈复杂度、LOC 等）。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Analizador de complejidad de código",
-      "description": ""
+      "description": "Analizador de complejidad de código: analiza métricas de complejidad de código (complejidad ciclomática, LOC, etc.). Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Analisador de complexidade de código",
-      "description": ""
+      "description": "Code Complexity Analyzer – Analise métricas de complexidade de código (complexidade ciclomática, LOC, etc.). Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "コード複雑さアナライザー",
-      "description": ""
+      "description": "コード複雑さアナライザー — コード複雑さのメトリクス (循環的複雑さ、LOC など) を分析します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "코드 복잡도 분석기",
-      "description": ""
+      "description": "코드 복잡성 분석기 — 코드 복잡성 측정항목(순환적 복잡성, LOC 등)을 분석합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "Code-Komplexitätsanalysator",
-      "description": ""
+      "description": "Code-Komplexitätsanalysator – Analysieren Sie Code-Komplexitätsmetriken (zyklomatische Komplexität, LOC usw.). Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Analyseur de complexité de code",
-      "description": ""
+      "description": "Analyseur de complexité de code — Analysez les métriques de complexité du code (complexité cyclomatique, LOC, etc.). Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "Анализатор сложности кода",
-      "description": ""
+      "description": "Анализатор сложности кода — анализируйте показатели сложности кода (цикломатическая сложность, LOC и т. д.). Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "محلل تعقيد الكود",
-      "description": ""
+      "description": "محلل تعقيد التعليمات البرمجية — تحليل مقاييس تعقيد التعليمات البرمجية (التعقيد الدوري، LOC، وما إلى ذلك). تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "कोड जटिलता विश्लेषक",
-      "description": ""
+      "description": "कोड जटिलता विश्लेषक - कोड जटिलता मेट्रिक्स (साइक्लोमैटिक जटिलता, एलओसी, आदि) का विश्लेषण करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "data-analytics/csv-analyzer": {
@@ -3360,47 +3360,47 @@
   "data-analytics/math-expression-parser": {
     "id": {
       "name": "Parser Ekspresi Matematika",
-      "description": ""
+      "description": "Parser Ekspresi Matematika - Mengurai dan mengevaluasi ekspresi matematika dengan aman. Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "数学表达式解析器",
-      "description": ""
+      "description": "数学表达式解析器 — 安全地解析和评估数学表达式。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Analizador de expresiones matemáticas",
-      "description": ""
+      "description": "Analizador de expresiones matemáticas: analiza y evalúa expresiones matemáticas de forma segura. Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Analisador de expressões matemáticas",
-      "description": ""
+      "description": "Analisador de Expressões Matemáticas — Analise e avalie expressões matemáticas com segurança. Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "数式パーサー",
-      "description": ""
+      "description": "数式パーサー — 数式を安全に解析して評価します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "수학 표현식 파서",
-      "description": ""
+      "description": "수학 표현식 파서 — 수학 표현식을 안전하게 구문 분석하고 평가합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "Parser für mathematische Ausdrücke",
-      "description": ""
+      "description": "Math Expression Parser – Mathematische Ausdrücke sicher analysieren und auswerten. Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Analyseur d'expressions mathématiques",
-      "description": ""
+      "description": "Analyseur d'expressions mathématiques — Analysez et évaluez les expressions mathématiques en toute sécurité. Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "Анализатор математических выражений",
-      "description": ""
+      "description": "Анализатор математических выражений — безопасно анализируйте и оценивайте математические выражения. Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "محلل التعبير الرياضي",
-      "description": ""
+      "description": "Math Expression Parser - تحليل وتقييم التعبيرات الرياضية بأمان. تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "गणित अभिव्यक्ति पार्सर",
-      "description": ""
+      "description": "गणित अभिव्यक्ति पार्सर - गणितीय अभिव्यक्तियों को सुरक्षित रूप से पार्स और मूल्यांकन करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "data-analytics/regex-builder": {
@@ -3544,47 +3544,47 @@
   "data-analytics/sql-formatter": {
     "id": {
       "name": "Pemformat SQL",
-      "description": ""
+      "description": "SQL Formatter — Memformat dan mempercantik kueri SQL agar mudah dibaca. Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "SQL格式化程序",
-      "description": ""
+      "description": "SQL Formatter — 格式化和美化 SQL 查询以提高可读性。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Formateador SQL",
-      "description": ""
+      "description": "Formateador de SQL: formatee y embellezca las consultas SQL para facilitar su lectura. Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Formatador SQL",
-      "description": ""
+      "description": "Formatador SQL — Formate e embeleze consultas SQL para facilitar a leitura. Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "SQLフォーマッタ",
-      "description": ""
+      "description": "SQL Formatter — SQL クエリをフォーマットして整形し、読みやすくします。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "SQL 포맷터",
-      "description": ""
+      "description": "SQL 포맷터 — 가독성을 위해 SQL 쿼리의 형식을 지정하고 아름답게 만듭니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "SQL-Formatierer",
-      "description": ""
+      "description": "SQL Formatter – SQL-Abfragen für bessere Lesbarkeit formatieren und verschönern. Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Formateur SQL",
-      "description": ""
+      "description": "Formateur SQL — Formatez et embellissez les requêtes SQL pour plus de lisibilité. Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "SQL-форматер",
-      "description": ""
+      "description": "SQL Formatter — форматируйте и улучшайте SQL-запросы для удобства чтения. Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "منسق SQL",
-      "description": ""
+      "description": "SQL Formatter - تنسيق وتجميل استعلامات SQL لسهولة القراءة. تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "एसक्यूएल फ़ॉर्मेटर",
-      "description": ""
+      "description": "एसक्यूएल फ़ॉर्मेटर - पठनीयता के लिए एसक्यूएल प्रश्नों को प्रारूपित और सुशोभित करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "data-analytics/sql-query-optimizer": {
@@ -3728,139 +3728,139 @@
   "data-analytics/url-shortener": {
     "id": {
       "name": "Penyingkat URL",
-      "description": ""
+      "description": "Penyingkat URL — Menghasilkan URL yang dipersingkat dan mengelola pengalihan tautan. Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "网址缩短器",
-      "description": ""
+      "description": "URL 缩短器 — 生成缩短的 URL 并管理链接重定向。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Acortador de URL",
-      "description": ""
+      "description": "Acortador de URL: genere URL acortadas y administre redirecciones de enlaces. Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Encurtador de URL",
-      "description": ""
+      "description": "Encurtador de URL – Gere URLs encurtados e gerencie redirecionamentos de links. Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "URL短縮者",
-      "description": ""
+      "description": "URL 短縮 — 短縮 URL を生成し、リンクのリダイレクトを管理します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "URL 단축기",
-      "description": ""
+      "description": "URL 단축기 — 단축 URL을 생성하고 링크 리디렉션을 관리합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "URL-Shortener",
-      "description": ""
+      "description": "URL-Shortener – Generieren Sie verkürzte URLs und verwalten Sie Link-Weiterleitungen. Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Raccourcisseur d'URL",
-      "description": ""
+      "description": "URL Shortener — Générez des URL raccourcies et gérez les redirections de liens. Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "Сокращатель URL-адресов",
-      "description": ""
+      "description": "URL Shortener — создавайте сокращенные URL-адреса и управляйте перенаправлением ссылок. Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "اختصار URL",
-      "description": ""
+      "description": "URL Shortener - إنشاء عناوين URL مختصرة وإدارة عمليات إعادة توجيه الروابط. تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "यूआरएल शॉर्टनर",
-      "description": ""
+      "description": "यूआरएल शॉर्टनर - छोटे यूआरएल जेनरेट करें और लिंक रीडायरेक्ट प्रबंधित करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "data-analytics/uuid-generator": {
     "id": {
-      "name": "Generator UUID",
-      "description": ""
+      "name": "Generator Uuid",
+      "description": "UUID Generator — Menghasilkan dan memvalidasi UUID (v1, v4, v5). Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "液体发生器",
-      "description": ""
+      "description": "UUID 生成器 — 生成并验证 UUID（v1、v4、v5）。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Generador de fluidos",
-      "description": ""
+      "description": "Generador de UUID: genere y valide UUID (v1, v4, v5). Diseñado como un proyecto de agente de IA."
     },
     "pt": {
-      "name": "Gerador UUID",
-      "description": ""
+      "name": "Gerador Uuid",
+      "description": "Gerador UUID — Gere e valide UUIDs (v1, v4, v5). Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "UUID ジェネレーター",
-      "description": ""
+      "description": "UUID ジェネレーター — UUID (v1、v4、v5) を生成および検証します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "UUID 생성기",
-      "description": ""
+      "description": "UUID 생성기 — UUID(v1, v4, v5)를 생성하고 검증합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "UUID-Generator",
-      "description": ""
+      "description": "UUID-Generator – Generieren und validieren Sie UUIDs (v1, v4, v5). Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Générateur d'UID",
-      "description": ""
+      "description": "Générateur d'UUID — Générez et validez les UUID (v1, v4, v5). Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "Генератор UUID",
-      "description": ""
+      "description": "Генератор UUID — генерирует и проверяет UUID (v1, v4, v5). Разработан как проект агента ИИ."
     },
     "ar": {
-      "name": "مولد UUID",
-      "description": ""
+      "name": "مولد Uuid",
+      "description": "UUID Generator - إنشاء UUIDs والتحقق من صحتها (الإصدار 1، الإصدار 4، الإصدار 5). تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "यूयूआईडी जेनरेटर",
-      "description": ""
+      "description": "यूयूआईडी जनरेटर - यूयूआईडी (v1, v4, v5) उत्पन्न और मान्य करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "data-analytics/yaml-validator": {
     "id": {
       "name": "Validator YAML",
-      "description": ""
+      "description": "Validator YAML — Validasi file YAML dan laporkan kesalahan sintaksis. Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "YAML 验证器",
-      "description": ""
+      "description": "YAML 验证器 — 验证 YAML 文件并报告语法错误。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Validador YAML",
-      "description": ""
+      "description": "Validador YAML: valida archivos YAML e informa errores de sintaxis. Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Validador YAML",
-      "description": ""
+      "description": "Validador YAML — Valide arquivos YAML e relate erros de sintaxe. Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "YAMLバリデーター",
-      "description": ""
+      "description": "YAML Validator — YAML ファイルを検証し、構文エラーを報告します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "YAML 유효성 검사기",
-      "description": ""
+      "description": "YAML 유효성 검사기 — YAML 파일의 유효성을 검사하고 구문 오류를 보고합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "YAML-Validator",
-      "description": ""
+      "description": "YAML-Validator – Validieren Sie YAML-Dateien und melden Sie Syntaxfehler. Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Validateur YAML",
-      "description": ""
+      "description": "YAML Validator — Validez les fichiers YAML et signalez les erreurs de syntaxe. Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "YAML-валидатор",
-      "description": ""
+      "description": "YAML Validator — проверяет файлы YAML и сообщает о синтаксических ошибках. Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "مدقق YAML",
-      "description": ""
+      "description": "YAML Validator — التحقق من صحة ملفات YAML والإبلاغ عن الأخطاء النحوية. تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "वाईएएमएल सत्यापनकर्ता",
-      "description": ""
+      "description": "YAML सत्यापनकर्ता - YAML फ़ाइलों को मान्य करें और सिंटैक्स त्रुटियों की रिपोर्ट करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "design-frontend/accessibility-auditor": {
@@ -3911,94 +3911,94 @@
   },
   "design-frontend/ascii-art-generator": {
     "id": {
-      "name": "Generator Seni ASCII",
-      "description": ""
+      "name": "Generator Seni Ascii",
+      "description": "ASCII Art Generator — Menghasilkan seni ASCII dari input teks. Dirancang sebagai proyek agen AI."
     },
     "zh": {
-      "name": "ASCII 艺术生成器",
-      "description": ""
+      "name": "Ascii 艺术生成器",
+      "description": "ASCII 艺术生成器 — 从文本输入生成 ASCII 艺术。设计为人工智能代理项目。"
     },
     "es": {
-      "name": "Generador de arte ASCII",
-      "description": ""
+      "name": "Generador de arte Ascii",
+      "description": "Generador de arte ASCII: genera arte ASCII a partir de entrada de texto. Diseñado como un proyecto de agente de IA."
     },
     "pt": {
-      "name": "Gerador de arte ASCII",
-      "description": ""
+      "name": "Gerador de arte Ascii",
+      "description": "ASCII Art Generator — Gere arte ASCII a partir da entrada de texto. Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "アスキーアートジェネレーター",
-      "description": ""
+      "description": "ASCII アート ジェネレーター — テキスト入力から ASCII アートを生成します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "아스키 아트 생성기",
-      "description": ""
+      "description": "ASCII 아트 생성기 — 텍스트 입력에서 ASCII 아트를 생성합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "ASCII-Kunstgenerator",
-      "description": ""
+      "description": "ASCII-Kunstgenerator – Generieren Sie ASCII-Kunst aus Texteingaben. Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
-      "name": "Générateur d'art ASCII",
-      "description": ""
+      "name": "Générateur d'art Ascii",
+      "description": "Générateur d'art ASCII — Générez de l'art ASCII à partir de la saisie de texte. Conçu comme un projet d'agent IA."
     },
     "ru": {
-      "name": "Генератор изображений ASCII",
-      "description": ""
+      "name": "Генератор изображений Ascii",
+      "description": "ASCII Art Generator — Генерация изображений ASCII из текстового ввода. Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "مولد الفن أسكي",
-      "description": ""
+      "description": "ASCII Art Generator - إنشاء فن ASCII من إدخال النص. تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "अस्की आर्ट जेनरेटर",
-      "description": ""
+      "description": "ASCII आर्ट जेनरेटर - टेक्स्ट इनपुट से ASCII आर्ट जेनरेट करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "design-frontend/color-converter": {
     "id": {
       "name": "Konverter Warna",
-      "description": ""
+      "description": "Konverter Warna — Konversi antar format warna (HEX, RGB, HSL). Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "颜色转换器",
-      "description": ""
+      "description": "颜色转换器 — 在颜色格式（HEX、RGB、HSL）之间进行转换。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Convertidor de colores",
-      "description": ""
+      "description": "Convertidor de color: convierte entre formatos de color (HEX, RGB, HSL). Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Conversor de cores",
-      "description": ""
+      "description": "Conversor de cores — Converta entre formatos de cores (HEX, RGB, HSL). Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "カラーコンバーター",
-      "description": ""
+      "description": "カラー コンバータ — カラー形式 (HEX、RGB、HSL) 間で変換します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "색상 변환기",
-      "description": ""
+      "description": "색상 변환기 — 색상 형식(HEX, RGB, HSL) 간을 변환합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "Farbkonverter",
-      "description": ""
+      "description": "Farbkonverter – Konvertieren zwischen Farbformaten (HEX, RGB, HSL). Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Convertisseur de couleurs",
-      "description": ""
+      "description": "Convertisseur de couleurs — Convertissez entre les formats de couleurs (HEX, RVB, HSL). Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "Конвертер цветов",
-      "description": ""
+      "description": "Конвертер цветов — преобразование между цветовыми форматами (HEX, RGB, HSL). Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "محول الألوان",
-      "description": ""
+      "description": "محول الألوان - التحويل بين تنسيقات الألوان (HEX، RGB، HSL). تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "रंग परिवर्तक",
-      "description": ""
+      "description": "रंग कनवर्टर - रंग प्रारूपों (HEX, RGB, HSL) के बीच कनवर्ट करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "design-frontend/color-palette-generator": {
@@ -4510,93 +4510,93 @@
   "devops-infra/cron-parser": {
     "id": {
       "name": "Pengurai Cron",
-      "description": ""
+      "description": "Cron Parser — Mengurai dan menjelaskan ekspresi cron dalam format yang dapat dibaca manusia. Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "计划任务解析器",
-      "description": ""
+      "description": "Cron Parser — 以人类可读的格式解析和解释 cron 表达式。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Analizador cron",
-      "description": ""
+      "description": "Cron Parser: analiza y explica expresiones cron en formato legible por humanos. Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Analisador Cron",
-      "description": ""
+      "description": "Cron Parser — analisa e explica expressões cron em formato legível por humanos. Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "クロンパーサー",
-      "description": ""
+      "description": "Cron パーサー — cron 式を解析し、人間が読める形式で説明します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "크론 파서",
-      "description": ""
+      "description": "Cron Parser — 사람이 읽을 수 있는 형식으로 cron 표현식을 구문 분석하고 설명합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "Cron-Parser",
-      "description": ""
+      "description": "Cron-Parser – Cron-Ausdrücke in einem für Menschen lesbaren Format analysieren und erklären. Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Analyseur Cron",
-      "description": ""
+      "description": "Cron Parser — Analysez et expliquez les expressions cron dans un format lisible par l'homme. Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "Крон-парсер",
-      "description": ""
+      "description": "Cron Parser — анализирует и объясняет выражения cron в удобочитаемом формате. Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "محلل كرون",
-      "description": ""
+      "description": "Cron Parser - تحليل وشرح تعبيرات cron بتنسيق يمكن قراءته بواسطة الإنسان. تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "क्रोन पार्सर",
-      "description": ""
+      "description": "क्रॉन पार्सर - मानव-पठनीय प्रारूप में क्रॉन अभिव्यक्तियों को पार्स करें और समझाएं। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "devops-infra/dependency-checker": {
     "id": {
       "name": "Pemeriksa Ketergantungan",
-      "description": ""
+      "description": "Pemeriksa Ketergantungan — Periksa ketergantungan proyek untuk paket-paket yang ketinggalan jaman atau rentan. Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "依赖检查器",
-      "description": ""
+      "description": "依赖项检查器 — 检查项目依赖项是否有过时或易受攻击的包。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Comprobador de dependencia",
-      "description": ""
+      "description": "Comprobador de dependencias: verifique las dependencias del proyecto en busca de paquetes obsoletos o vulnerables. Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Verificador de dependência",
-      "description": ""
+      "description": "Verificador de Dependências — Verifique as dependências do projeto em busca de pacotes desatualizados ou vulneráveis. Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "依存関係チェッカー",
-      "description": ""
+      "description": "依存関係チェッカー — プロジェクトの依存関係をチェックして、古いパッケージや脆弱なパッケージがないか確認します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "종속성 검사기",
-      "description": ""
+      "description": "종속성 검사기 — 오래되었거나 취약한 패키지에 대한 프로젝트 종속성을 확인합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "Abhängigkeitsprüfer",
-      "description": ""
+      "description": "Abhängigkeitsprüfung – Überprüfen Sie Projektabhängigkeiten auf veraltete oder anfällige Pakete. Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Vérificateur de dépendances",
-      "description": ""
+      "description": "Vérificateur de dépendances – Vérifiez les dépendances du projet pour les packages obsolètes ou vulnérables. Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "Проверка зависимостей",
-      "description": ""
+      "description": "Средство проверки зависимостей — проверьте зависимости проекта на наличие устаревших или уязвимых пакетов. Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "مدقق التبعية",
-      "description": ""
+      "description": "مدقق التبعية — التحقق من تبعيات المشروع بحثًا عن الحزم القديمة أو الضعيفة. تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "निर्भरता परीक्षक",
-      "description": ""
+      "description": "निर्भरता परीक्षक - पुराने या कमजोर पैकेजों के लिए परियोजना निर्भरता की जाँच करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "devops-infra/dependency-updater": {
@@ -5430,93 +5430,93 @@
   "documentation/license-generator": {
     "id": {
       "name": "Pembuat Lisensi",
-      "description": ""
+      "description": "License Generator — Menghasilkan file lisensi sumber terbuka (MIT, Apache, GPL, dll.). Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "许可证生成器",
-      "description": ""
+      "description": "许可证生成器 — 生成开源许可证文件（MIT、Apache、GPL 等）。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Generador de licencias",
-      "description": ""
+      "description": "Generador de licencias: genere archivos de licencia de código abierto (MIT, Apache, GPL, etc.). Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Gerador de licença",
-      "description": ""
+      "description": "Gerador de licença — Gere arquivos de licença de código aberto (MIT, Apache, GPL, etc.). Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "ライセンスジェネレーター",
-      "description": ""
+      "description": "License Generator — オープンソースのライセンス ファイル (MIT、Apache、GPL など) を生成します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "라이센스 생성기",
-      "description": ""
+      "description": "라이센스 생성기 — 오픈 소스 라이센스 파일(MIT, Apache, GPL 등)을 생성합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "Lizenzgenerator",
-      "description": ""
+      "description": "Lizenzgenerator – Generieren Sie Open-Source-Lizenzdateien (MIT, Apache, GPL usw.). Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Générateur de licence",
-      "description": ""
+      "description": "Générateur de licences — Générez des fichiers de licence open source (MIT, Apache, GPL, etc.). Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "Генератор лицензий",
-      "description": ""
+      "description": "Генератор лицензий — генерирует файлы лицензий с открытым исходным кодом (MIT, Apache, GPL и т. д.). Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "مولد الترخيص",
-      "description": ""
+      "description": "منشئ الترخيص — إنشاء ملفات ترخيص مفتوحة المصدر (MIT، وApache، وGPL، وما إلى ذلك). تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "लाइसेंस जेनरेटर",
-      "description": ""
+      "description": "लाइसेंस जेनरेटर - ओपन-सोर्स लाइसेंस फ़ाइलें (एमआईटी, अपाचे, जीपीएल, आदि) जेनरेट करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "documentation/readme-generator": {
     "id": {
       "name": "Pembuat README",
-      "description": ""
+      "description": "README Generator — Menghasilkan file README dari struktur proyek dan metadata. Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "自述文件生成器",
-      "description": ""
+      "description": "自述文件生成器 — 从项目结构和元数据生成自述文件。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Léame Generador",
-      "description": ""
+      "description": "Generador README: genere archivos README a partir de la estructura y los metadatos del proyecto. Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Gerador LEIA-ME",
-      "description": ""
+      "description": "Gerador README — Gere arquivos README a partir da estrutura e metadados do projeto. Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "README ジェネレーター",
-      "description": ""
+      "description": "README ジェネレーター — プロジェクト構造とメタデータから README ファイルを生成します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "읽어보기 생성기",
-      "description": ""
+      "description": "README 생성기 — 프로젝트 구조 및 메타데이터에서 README 파일을 생성합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "README-Generator",
-      "description": ""
+      "description": "README-Generator – Generieren Sie README-Dateien aus Projektstruktur und Metadaten. Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Générateur README",
-      "description": ""
+      "description": "Générateur README — Générez des fichiers README à partir de la structure et des métadonnées du projet. Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "Генератор README",
-      "description": ""
+      "description": "Генератор README — генерирует файлы README на основе структуры и метаданных проекта. Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "التمهيدي مولد",
-      "description": ""
+      "description": "README Generator — إنشاء ملفات README من بنية المشروع والبيانات الوصفية. تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "रीडमी जेनरेटर",
-      "description": ""
+      "description": "README जेनरेटर - प्रोजेक्ट संरचना और मेटाडेटा से README फ़ाइलें जेनरेट करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "file-conversion/csv-to-api-agent": {
@@ -5914,7 +5914,7 @@
     },
     "de": {
       "name": "Prahlerei zum Typoskript",
-      "description": "Generiert TypeScript-Schnittstellen und API-CLIent-Code aus OpenAPI/Swagger-Spezifikationen. Konzipiert als KI-Agenten-Projekt."
+      "description": "Generiert TypeScript-Schnittstellen und API-Client-Code aus OpenAPI/Swagger-Spezifikationen. Konzipiert als KI-Agenten-Projekt."
     },
     "fr": {
       "name": "Swagger pour dactylographier",
@@ -6763,11 +6763,11 @@
   },
   "misc/ai-frameworks/autogen-agent": {
     "id": {
-      "name": "Agen AutoGen",
+      "name": "Agen Autogen",
       "description": "Sistem AI percakapan dengan banyak agen yang dapat menulis kode, melakukan debug, dan menjalankan tugas secara kolaboratif. Dibangun dengan Microsoft AutoGen."
     },
     "zh": {
-      "name": "AutoGen代理",
+      "name": "Autogen代理",
       "description": "具有多个代理的对话式人工智能系统，可以协作编写代码、调试和执行任务。使用 Microsoft AutoGen 构建。"
     },
     "es": {
@@ -6775,7 +6775,7 @@
       "description": "Un sistema de IA conversacional con múltiples agentes que pueden escribir código, depurar y ejecutar tareas de forma colaborativa. Construido con Microsoft AutoGen."
     },
     "pt": {
-      "name": "Agente AutoGen",
+      "name": "Agente Autogen",
       "description": "Um sistema de IA conversacional com vários agentes que podem escrever código, depurar e executar tarefas de forma colaborativa. Construído com Microsoft AutoGen."
     },
     "ja": {
@@ -6787,7 +6787,7 @@
       "description": "공동으로 코드를 작성하고, 디버그하고, 작업을 실행할 수 있는 여러 에이전트가 포함된 대화형 AI 시스템입니다. Microsoft AutoGen으로 구축되었습니다."
     },
     "de": {
-      "name": "AutoGen-Agent",
+      "name": "Autogen-Agent",
       "description": "Ein Konversations-KI-System mit mehreren Agenten, die gemeinsam Code schreiben, debuggen und Aufgaben ausführen können. Gebaut mit Microsoft AutoGen."
     },
     "fr": {
@@ -6817,11 +6817,11 @@
       "description": "多代理团队协作研究主题、撰写报告并生成见解。使用 CrewAI 进行代理编排。"
     },
     "es": {
-      "name": "Agente CrewAI",
+      "name": "Agente Crewai",
       "description": "Un equipo de múltiples agentes que colabora para investigar temas, redactar informes y generar conocimientos. Utiliza CrewAI para la orquestación de agentes."
     },
     "pt": {
-      "name": "Agente CrewAI",
+      "name": "Agente Crewai",
       "description": "Uma equipe multiagente que colabora para pesquisar tópicos, escrever relatórios e gerar insights. Usa CrewAI para orquestração de agentes."
     },
     "ja": {
@@ -6833,7 +6833,7 @@
       "description": "연구 주제에 대해 협력하고, 보고서를 작성하고, 통찰력을 생성하는 다중 에이전트 팀입니다. 에이전트 조정을 위해 CrewAI를 사용합니다."
     },
     "de": {
-      "name": "CrewAI-Agent",
+      "name": "Crewai-Agent",
       "description": "Ein Team aus mehreren Agenten, das zusammenarbeitet, um Themen zu recherchieren, Berichte zu schreiben und Erkenntnisse zu generieren. Verwendet CrewAI für die Agenten-Orchestrierung."
     },
     "fr": {
@@ -6855,7 +6855,7 @@
   },
   "misc/ai-frameworks/langchain-agent": {
     "id": {
-      "name": "Agen LangChain",
+      "name": "Agen Langchain",
       "description": "Agen riset AI yang dapat menelusuri web, merangkum dokumen, dan menjawab pertanyaan kompleks menggunakan LangChain dan OpenAI. Berjalan sebagai alat CLI."
     },
     "zh": {
@@ -6863,11 +6863,11 @@
       "description": "一个人工智能研究代理，可以使用 LangChain 和 OpenAI 搜索网络、总结文档并回答复杂问题。作为 CLI 工具运行。"
     },
     "es": {
-      "name": "Agente de LangChain",
+      "name": "Agente de Langchain",
       "description": "Un agente de investigación de IA que puede buscar en la web, resumir documentos y responder preguntas complejas utilizando LangChain y OpenAI. Se ejecuta como una herramienta CLI."
     },
     "pt": {
-      "name": "Agente LangChain",
+      "name": "Agente Langchain",
       "description": "Um agente de pesquisa de IA que pode pesquisar na web, resumir documentos e responder perguntas complexas usando LangChain e OpenAI. Funciona como uma ferramenta CLI."
     },
     "ja": {
@@ -6879,11 +6879,11 @@
       "description": "LangChain과 OpenAI를 활용하여 웹 검색, 문서 요약, 복잡한 질문에 대한 답변이 가능한 AI 연구 에이전트입니다. CLI 도구로 실행됩니다."
     },
     "de": {
-      "name": "LangChain-Agent",
+      "name": "Langchain-Agent",
       "description": "Ein KI-Forschungsagent, der mithilfe von LangChain und OpenAI das Internet durchsuchen, Dokumente zusammenfassen und komplexe Fragen beantworten kann. Läuft als CLI-Tool."
     },
     "fr": {
-      "name": "Agent LangChain",
+      "name": "Agent Langchain",
       "description": "Un agent de recherche IA capable de rechercher sur le Web, de résumer des documents et de répondre à des questions complexes à l'aide de LangChain et OpenAI. Fonctionne comme un outil CLI."
     },
     "ru": {
@@ -7776,47 +7776,47 @@
   "security-privacy/file-hash-generator": {
     "id": {
       "name": "Pembuat Hash File",
-      "description": ""
+      "description": "File Hash Generator — Menghasilkan hash file (MD5, SHA-256, SHA-512) untuk pemeriksaan integritas. Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "文件哈希生成器",
-      "description": ""
+      "description": "文件哈希生成器 — 生成文件哈希（MD5、SHA-256、SHA-512）以进行完整性检查。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Generador de hash de archivos",
-      "description": ""
+      "description": "Generador de hash de archivos: genere hashes de archivos (MD5, SHA-256, SHA-512) para realizar comprobaciones de integridad. Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Gerador de hash de arquivo",
-      "description": ""
+      "description": "Gerador de hash de arquivo — Gere hashes de arquivo (MD5, SHA-256, SHA-512) para verificações de integridade. Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "ファイル ハッシュ ジェネレーター",
-      "description": ""
+      "description": "ファイル ハッシュ ジェネレーター — 整合性チェック用のファイル ハッシュ (MD5、SHA-256、SHA-512) を生成します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "파일 해시 생성기",
-      "description": ""
+      "description": "파일 해시 생성기 - 무결성 검사를 위해 파일 해시(MD5, SHA-256, SHA-512)를 생성합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "Datei-Hash-Generator",
-      "description": ""
+      "description": "Datei-Hash-Generator – Generieren Sie Datei-Hashes (MD5, SHA-256, SHA-512) für Integritätsprüfungen. Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Générateur de hachage de fichiers",
-      "description": ""
+      "description": "Générateur de hachage de fichiers — Générez des hachages de fichiers (MD5, SHA-256, SHA-512) pour les contrôles d'intégrité. Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "Генератор хэшей файлов",
-      "description": ""
+      "description": "Генератор хэшей файлов — генерирует хэши файлов (MD5, SHA-256, SHA-512) для проверки целостности. Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "مولد تجزئة الملف",
-      "description": ""
+      "description": "File Hash Generator - قم بإنشاء تجزئات الملف (MD5، SHA-256، SHA-512) للتحقق من تكاملها. تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "फ़ाइल हैश जेनरेटर",
-      "description": ""
+      "description": "फ़ाइल हैश जेनरेटर - अखंडता जांच के लिए फ़ाइल हैश (MD5, SHA-256, SHA-512) उत्पन्न करें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "security-privacy/hash-generator": {
@@ -7914,47 +7914,47 @@
   "security-privacy/ip-lookup": {
     "id": {
       "name": "Pencarian IP",
-      "description": ""
+      "description": "Pencarian IP — Cari geolokasi alamat IP dan informasi jaringan. Dirancang sebagai proyek agen AI."
     },
     "zh": {
       "name": "IP查询",
-      "description": ""
+      "description": "IP 查找 — 查找 IP 地址地理位置和网络信息。设计为人工智能代理项目。"
     },
     "es": {
       "name": "Búsqueda de IP",
-      "description": ""
+      "description": "Búsqueda de IP: busque geolocalización de direcciones IP e información de red. Diseñado como un proyecto de agente de IA."
     },
     "pt": {
       "name": "Pesquisa de IP",
-      "description": ""
+      "description": "Pesquisa de IP — Pesquise geolocalização de endereços IP e informações de rede. Projetado como um projeto de agente de IA."
     },
     "ja": {
       "name": "IP ルックアップ",
-      "description": ""
+      "description": "IP ルックアップ — IP アドレスの地理位置情報とネットワーク情報を検索します。 AI エージェント プロジェクトとして設計されました。"
     },
     "ko": {
       "name": "IP 조회",
-      "description": ""
+      "description": "IP 조회 — IP 주소 지리적 위치 및 네트워크 정보를 조회합니다. AI 에이전트 프로젝트로 설계되었습니다."
     },
     "de": {
       "name": "IP-Suche",
-      "description": ""
+      "description": "IP-Suche – Suchen Sie nach der Geolokalisierung von IP-Adressen und Netzwerkinformationen. Konzipiert als KI-Agent-Projekt."
     },
     "fr": {
       "name": "Recherche IP",
-      "description": ""
+      "description": "Recherche IP — Recherchez la géolocalisation de l’adresse IP et les informations sur le réseau. Conçu comme un projet d'agent IA."
     },
     "ru": {
       "name": "IP-поиск",
-      "description": ""
+      "description": "Поиск IP — поиск геолокации IP-адреса и информации о сети. Разработан как проект агента ИИ."
     },
     "ar": {
       "name": "بحث IP",
-      "description": ""
+      "description": "بحث IP - ابحث عن الموقع الجغرافي لعنوان IP ومعلومات الشبكة. تم تصميمه كمشروع وكيل AI."
     },
     "hi": {
       "name": "आईपी ​​लुकअप",
-      "description": ""
+      "description": "आईपी ​​लुकअप - आईपी एड्रेस जियोलोकेशन और नेटवर्क जानकारी देखें। एआई एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     }
   },
   "security-privacy/jwt-decoder": {
