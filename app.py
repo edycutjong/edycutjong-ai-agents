@@ -268,17 +268,18 @@ def main():
 
     # Sidebar
     with st.sidebar:
-        # Language selector
+        # Language selector (horizontal: 🌐 + dropdown)
         locale_options = list(LOCALE_NAMES.keys())
         locale_labels = list(LOCALE_NAMES.values())
         current_locale = st.session_state.get("locale", "en")
         locale_idx = locale_options.index(current_locale) if current_locale in locale_options else 0
         selected_locale = st.selectbox(
-            "🌐",
+            "Language",
             locale_options,
             index=locale_idx,
-            format_func=lambda x: LOCALE_NAMES[x],
+            format_func=lambda x: f"{x.upper()} · {LOCALE_NAMES[x]}",
             key="lang_select",
+            label_visibility="collapsed",
         )
         if selected_locale != st.session_state.get("locale"):
             st.session_state["locale"] = selected_locale
@@ -414,7 +415,7 @@ def _render_hub(filtered, all_agents):
 
                     c1, c2 = st.columns([1, 1])
                     with c1:
-                        st.markdown(f"<div style='display:flex;align-items:center;height:100%;min-height:38px'>{status} {tr['built'] if agent['has_main'] else tr['spec']}</div>", unsafe_allow_html=True)
+                        st.markdown(f"<div style='display:flex;align-items:center;min-height:38px;padding:0.25rem 0;font-size:0.85rem;opacity:0.7'>{status} {tr['built'] if agent['has_main'] else tr['spec']}</div>", unsafe_allow_html=True)
                     with c2:
                         if agent["has_main"]:
                             if st.button(tr['view'], key=f"view_{key}", use_container_width=True):

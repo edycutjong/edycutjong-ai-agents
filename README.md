@@ -7,13 +7,14 @@
 | Key | Agents | Get It |
 |-----|--------|--------|
 | ⭐ `OPENAI_API_KEY` | 79 agents | [platform.openai.com](https://platform.openai.com/api-keys) |
-| `GOOGLE_API_KEY` | 7 agents | [aistudio.google.com](https://aistudio.google.com/apikey) |
-| `GEMINI_API_KEY` | 6 agents | [aistudio.google.com](https://aistudio.google.com/apikey) |
+| `GEMINI_API_KEY` / `GOOGLE_API_KEY` | 13 agents | [aistudio.google.com](https://aistudio.google.com/apikey) |
 | `GITHUB_TOKEN` | 6 agents | [github.com/settings/tokens](https://github.com/settings/tokens) |
 | `ANTHROPIC_API_KEY` | 1 agent | [console.anthropic.com](https://console.anthropic.com/) |
 | `FIGMA_ACCESS_TOKEN` | 1 agent | [figma.com/developers](https://www.figma.com/developers/api#access-tokens) |
 | `SERPAPI_API_KEY` | 1 agent | [serpapi.com](https://serpapi.com/manage-api-key) |
 | `PAGERDUTY_API_KEY` | 1 agent | [pagerduty.com](https://support.pagerduty.com/main/docs/api-access-keys) |
+
+> **Same key, two names:** `GEMINI_API_KEY` and `GOOGLE_API_KEY` are the same Gemini API key from Google AI Studio. Set **both** env vars to the same value — some agents use one name, some use the other.
 
 > **103 agents require no API key** — they work offline with pure logic.
 
