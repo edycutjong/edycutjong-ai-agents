@@ -264,15 +264,18 @@ def main():
         )
 
     # Filter agents
-    filtered = agents
-    if selected_cat != "All":
-        filtered = {k: v for k, v in filtered.items() if v["category"] == selected_cat}
     if search:
+        # Search across ALL agents regardless of category
         search_lower = search.lower()
-        filtered = {k: v for k, v in filtered.items()
+        filtered = {k: v for k, v in agents.items()
                     if search_lower in v["name"].lower()
                     or search_lower in v["description"].lower()
+                    or search_lower in v["category_display"].lower()
                     or search_lower in k.lower()}
+    elif selected_cat != "All":
+        filtered = {k: v for k, v in agents.items() if v["category"] == selected_cat}
+    else:
+        filtered = agents
 
     # Check if an agent is selected
     query_params = st.query_params
