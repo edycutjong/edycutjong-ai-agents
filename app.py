@@ -426,7 +426,8 @@ def _render_agent_detail(agent, agent_key):
             if seen_key not in st.session_state:
                 st.session_state[seen_key] = []
 
-            if st.button("💡 Load Example", key=f"load_{agent_key}"):
+            btn_label = "🔄 Load Another Example" if st.session_state[seen_key] else "💡 Load Example"
+            if st.button(btn_label, key=f"load_{agent_key}"):
                 seen = st.session_state[seen_key]
                 remaining = [i for i in range(len(examples)) if i not in seen]
                 if not remaining:  # all shown, reset
