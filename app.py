@@ -500,11 +500,18 @@ def _render_agent_detail(agent, agent_key):
                             st.markdown("#### 📊 Result")
                             st.markdown(reply)
                             st.caption(f"Model: `{model}` · Tokens: `{tokens}`")
-                            # Auto-scroll to result
-                            st.components.v1.html(
-                                "<script>window.parent.document.querySelector('section.main').scrollTo({top: 999999, behavior: 'smooth'});</script>",
-                                height=0,
-                            )
+                            # Auto-scroll so "Result" heading is at top of viewport
+                            st.components.v1.html("""
+                            <script>
+                            const headers = window.parent.document.querySelectorAll('section.main h4');
+                            for (const h of headers) {
+                                if (h.textContent.includes('Result')) {
+                                    h.scrollIntoView({behavior: 'smooth', block: 'start'});
+                                    break;
+                                }
+                            }
+                            </script>
+                            """, height=0)
 
                         except Exception as e:
                             st.error(f"Error: {str(e)}")
