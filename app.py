@@ -478,69 +478,86 @@ def _render_agent_detail(agent, agent_key):
                 if not user_input:
                     st.warning("Please enter some text.")
                 else:
-                    with st.spinner("🔄 Running agent..."):
-                        try:
-                            import json as _json
-                            from urllib.request import Request, urlopen
+                    # Check cache — skip API call if same input
+                    cache_key = f"cache_{agent_key}"
+                    cached = st.session_state.get(cache_key)
+                    if cached and cached["input"] == user_input:
+                        st.divider()
+                        st.markdown("#### 📊 Result")
+                        st.markdown(cached["output"])
+                        st.caption(f"Model: `{cached['model']}` · Tokens: `{cached['tokens']}` · ⚡ cached")
+                    else:
+                        with st.spinner("🔄 Running agent..."):
+                            try:
+                                import json as _json
+                                from urllib.request import Request, urlopen
 
-                            req_data = _json.dumps({
-                                "model": "gpt-4o-mini",
-                                "messages": [
-                                    {"role": "system", "content": system_prompt},
-                                    {"role": "user", "content": user_input},
-                                ],
-                                "max_tokens": 1024,
-                                "temperature": 0.3,
-                            }).encode()
+                                req_data = _json.dumps({
+                                    "model": "gpt-4o-mini",
+                                    "messages": [
+                                        {"role": "system", "content": system_prompt},
+                                        {"role": "user", "content": user_input},
+                                    ],
+                                    "max_tokens": 1024,
+                                    "temperature": 0.3,
+                                }).encode()
 
-                            req = Request(
-                                "https://api.openai.com/v1/chat/completions",
-                                data=req_data,
-                                headers={
-                                    "Authorization": f"Bearer {_has_openai}",
-                                    "Content-Type": "application/json",
-                                },
-                            )
+                                req = Request(
+                                    "https://api.openai.com/v1/chat/completions",
+                                    data=req_data,
+                                    headers={
+                                        "Authorization": f"Bearer {_has_openai}",
+                                        "Content-Type": "application/json",
+                                    },
+                                )
 
-                            with urlopen(req, timeout=30) as resp:
-                                result = _json.loads(resp.read())
+                                with urlopen(req, timeout=30) as resp:
+                                    result = _json.loads(resp.read())
 
-                            reply = result["choices"][0]["message"]["content"]
-                            model = result.get("model", "gpt-4o-mini")
-                            tokens = result.get("usage", {}).get("total_tokens", "?")
+                                reply = result["choices"][0]["message"]["content"]
+                                model = result.get("model", "gpt-4o-mini")
+                                tokens = result.get("usage", {}).get("total_tokens", "?")
 
-                            # Save to run history
-                            if "run_history" not in st.session_state:
-                                st.session_state["run_history"] = []
-                            st.session_state["run_history"].insert(0, {
-                                "agent": agent.get("name", "Unknown"),
-                                "input": user_input,
-                                "output": reply,
-                                "tokens": tokens,
-                                "time": datetime.now().strftime("%H:%M"),
-                            })
-                            # Keep only last 10
-                            st.session_state["run_history"] = st.session_state["run_history"][:10]
-
-                            st.divider()
-                            st.markdown("#### 📊 Result")
-                            st.markdown(reply)
-                            st.caption(f"Model: `{model}` · Tokens: `{tokens}`")
-                            # Auto-scroll so "Result" heading is at top of viewport
-                            st.components.v1.html("""
-                            <script>
-                            const headers = window.parent.document.querySelectorAll('section.main h4');
-                            for (const h of headers) {
-                                if (h.textContent.includes('Result')) {
-                                    h.scrollIntoView({behavior: 'smooth', block: 'start'});
-                                    break;
+                                # Cache result for this agent
+                                st.session_state[cache_key] = {
+                                    "input": user_input,
+                                    "output": reply,
+                                    "model": model,
+                                    "tokens": tokens,
                                 }
-                            }
-                            </script>
-                            """, height=0)
 
-                        except Exception as e:
-                            st.error(f"Error: {str(e)}")
+                                # Save to run history
+                                if "run_history" not in st.session_state:
+                                    st.session_state["run_history"] = []
+                                st.session_state["run_history"].insert(0, {
+                                    "agent": agent.get("name", "Unknown"),
+                                    "input": user_input,
+                                    "output": reply,
+                                    "tokens": tokens,
+                                    "time": datetime.now().strftime("%H:%M"),
+                                })
+                                st.session_state["run_history"] = st.session_state["run_history"][:10]
+
+                                st.divider()
+                                st.markdown("#### 📊 Result")
+                                st.markdown(reply)
+                                st.caption(f"Model: `{model}` · Tokens: `{tokens}`")
+
+                            except Exception as e:
+                                st.error(f"Error: {str(e)}")
+
+                    # Auto-scroll so "Result" heading is at top of viewport
+                    st.components.v1.html("""
+                    <script>
+                    const headers = window.parent.document.querySelectorAll('section.main h4');
+                    for (const h of headers) {
+                        if (h.textContent.includes('Result')) {
+                            h.scrollIntoView({behavior: 'smooth', block: 'start'});
+                            break;
+                        }
+                    }
+                    </script>
+                    """, height=0)
         else:
             st.warning(
                 "⚠️ **OpenAI API key required**  \n"
