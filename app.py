@@ -32,32 +32,16 @@ st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-    /* Theme variables */
+    /* Theme-agnostic variables — visible on both light and dark */
     :root {
-        --card-border: rgba(0,0,0,0.12);
-        --card-bg: rgba(0,0,0,0.02);
-        --card-hover-border: rgba(168,85,247,0.4);
-        --card-hover-bg: rgba(168,85,247,0.06);
-        --text-primary: #1f2937;
-        --text-secondary: #6b7280;
-        --badge-bg: rgba(168,85,247,0.1);
-        --sidebar-bg: rgba(0,0,0,0.03);
-        --stat-border: rgba(0,0,0,0.1);
-        --stat-bg: rgba(0,0,0,0.02);
-    }
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --card-border: rgba(255,255,255,0.1);
-            --card-bg: rgba(255,255,255,0.03);
-            --card-hover-border: rgba(168,85,247,0.4);
-            --card-hover-bg: rgba(168,85,247,0.05);
-            --text-primary: #f3f4f6;
-            --text-secondary: #9ca3af;
-            --badge-bg: rgba(168,85,247,0.15);
-            --sidebar-bg: rgba(0,0,0,0.3);
-            --stat-border: rgba(255,255,255,0.08);
-            --stat-bg: rgba(255,255,255,0.03);
-        }
+        --card-border: rgba(128,128,128,0.25);
+        --card-bg: rgba(128,128,128,0.04);
+        --card-hover-border: rgba(168,85,247,0.5);
+        --card-hover-bg: rgba(168,85,247,0.08);
+        --badge-bg: rgba(168,85,247,0.12);
+        --sidebar-bg: rgba(128,128,128,0.06);
+        --stat-border: rgba(128,128,128,0.2);
+        --stat-bg: rgba(128,128,128,0.04);
     }
 
     /* Global */
@@ -75,7 +59,7 @@ st.markdown("""
     }
     .hero-subtitle {
         text-align: center;
-        color: var(--text-secondary);
+        color: inherit; opacity: 0.6;
         font-size: 1.1rem;
         margin-top: 0.5rem;
     }
@@ -108,12 +92,12 @@ st.markdown("""
     .agent-name {
         font-size: 1.1rem;
         font-weight: 700;
-        color: var(--text-primary);
+        color: inherit;
         margin-bottom: 4px;
     }
     .agent-desc {
         font-size: 0.85rem;
-        color: var(--text-secondary);
+        color: inherit; opacity: 0.6;
         line-height: 1.4;
     }
 
@@ -134,7 +118,7 @@ st.markdown("""
     }
     .stat-label {
         font-size: 0.8rem;
-        color: var(--text-secondary);
+        color: inherit; opacity: 0.6;
         text-transform: uppercase;
         letter-spacing: 1px;
     }
@@ -246,16 +230,9 @@ def _slug_to_name(slug: str) -> str:
 
 
 def _render_copy_btn(text: str, key: str):
-    """Render a small copy-to-clipboard button using JS."""
-    import html as _html
-    escaped = _html.escape(text).replace("`", "\\`").replace("\n", "\\n")
-    st.components.v1.html(f"""
-    <button onclick="navigator.clipboard.writeText(`{escaped}`).then(()=>this.textContent='Copied!')"
-            style="background:none;border:1px solid #aaa;border-radius:6px;padding:4px 14px;
-                   cursor:pointer;font-size:0.8rem;color:inherit;margin-top:4px;">
-        📋 Copy
-    </button>
-    """, height=40)
+    """Render the result in a copyable code block using Streamlit's built-in copy."""
+    with st.expander("📋 Copy result", expanded=False):
+        st.code(text, language=None)
 
 
 def _extract_desc(agents_md: Path) -> str:
