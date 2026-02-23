@@ -7,6 +7,15 @@ import streamlit as st
 import os
 from pathlib import Path
 
+# Load .env file locally (on Streamlit Cloud, st.secrets handles this)
+_env_file = Path(__file__).parent / ".env"
+if _env_file.exists():
+    for _line in _env_file.read_text().splitlines():
+        _line = _line.strip()
+        if _line and not _line.startswith("#") and "=" in _line:
+            _k, _v = _line.split("=", 1)
+            os.environ.setdefault(_k.strip(), _v.strip())
+
 # ─── Page Config ────────────────────────────────────────────────
 st.set_page_config(
     page_title="AI Agents Hub",
@@ -451,13 +460,36 @@ def _render_agent_detail(agent, agent_key):
                     except Exception:
                         continue
 
-            # Show env var info
+            # Show env var info — check which are actually configured
             if env_vars:
-                st.warning(
-                    "⚠️ **This agent requires API keys:**  "
-                    + ", ".join(f"`{v}`" for v in env_vars)
-                    + "  \nSet these as environment variables before running."
-                )
+                configured = []
+                missing = []
+                for v in env_vars:
+                    # Check os.environ and st.secrets
+                    val = os.environ.get(v)
+                    if not val:
+                        try:
+                            val = st.secrets.get(v, None)
+                        except Exception:
+                            val = None
+                    if val and not val.startswith("sk-your") and not val.startswith("your-") and not val.startswith("ghp_your"):
+                        configured.append(v)
+                    else:
+                        missing.append(v)
+
+                if missing:
+                    st.warning(
+                        "⚠️ **Missing API keys:**  "
+                        + ", ".join(f"`{v}`" for v in missing)
+                        + "  \nSet these in Streamlit Secrets or environment variables."
+                    )
+                if configured:
+                    st.success(
+                        "✅ **API keys configured:**  "
+                        + ", ".join(f"`{v}`" for v in configured)
+                    )
+                if not missing and not configured:
+                    st.success("✅ **No API keys required** — this agent runs standalone.")
             else:
                 st.success("✅ **No API keys required** — this agent runs standalone.")
 

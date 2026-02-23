@@ -1,0 +1,41 @@
+# ============================================
+# 🧠 AI Agents Hub — Configuration
+# ============================================
+# TOML v1.1.0 — https://toml.io/en/v1.1.0
+#
+# Get your keys:
+#   OpenAI:    https://platform.openai.com/api-keys
+#   Google:    https://aistudio.google.com/apikey
+#   Anthropic: https://console.anthropic.com
+#   GitHub:    https://github.com/settings/tokens
+#   Figma:     https://www.figma.com/developers/api#access-tokens
+#   SerpAPI:   https://serpapi.com/manage-api-key
+#   PagerDuty: https://support.pagerduty.com/main/docs/api-access-keys
+# ============================================
+
+[keys.required]
+# ⭐ Powers ~144 agents (GPT-based)
+OPENAI_API_KEY = "sk-your-openai-key-here"
+
+# ⭐ Powers ~16 agents (Gemini-based)
+GOOGLE_API_KEY = "your-google-api-key-here"
+
+[keys.optional]
+# Anthropic Claude — 2 agents
+ANTHROPIC_API_KEY = "sk-ant-your-anthropic-key-here"
+
+# GitHub Personal Access Token — repo/code agents
+GITHUB_TOKEN = "ghp_your-github-token-here"
+
+# Figma — design/frontend agents
+FIGMA_ACCESS_TOKEN = "your-figma-token-here"
+
+# SerpAPI — search/research agents
+SERPAPI_API_KEY = "your-serpapi-key-here"
+
+# PagerDuty — uptime monitor agent
+PAGERDUTY_API_KEY = "your-pagerduty-key-here"
+
+[settings]
+# Use mock LLM (no API calls, for testing)
+USE_MOCK_LLM = false
