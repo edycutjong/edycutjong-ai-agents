@@ -6,6 +6,7 @@ Built by Jules AI • Powered by Streamlit
 import streamlit as st
 import os
 import random
+from datetime import datetime
 from pathlib import Path
 from examples import get_agent_hint
 
@@ -282,6 +283,17 @@ def main():
             st.query_params["agent"] = pick
             st.rerun()
 
+        # ─── Run History ────────────────────────────
+        if st.session_state.get("run_history"):
+            st.divider()
+            with st.expander(f"📜 History ({len(st.session_state['run_history'])})", expanded=False):
+                for i, run in enumerate(st.session_state["run_history"]):
+                    preview = run["input"][:60].replace("\n", " ") + ("…" if len(run["input"]) > 60 else "")
+                    with st.expander(f"`{run['time']}` **{run['agent']}**", expanded=False):
+                        st.caption(f"Input: {preview}")
+                        st.markdown(run["output"])
+                        st.caption(f"Tokens: `{run['tokens']}`")
+
         st.divider()
         st.markdown(
             "<div style='text-align:center;color:#6b7280;font-size:0.8rem'>"
@@ -496,6 +508,19 @@ def _render_agent_detail(agent, agent_key):
                             model = result.get("model", "gpt-4o-mini")
                             tokens = result.get("usage", {}).get("total_tokens", "?")
 
+                            # Save to run history
+                            if "run_history" not in st.session_state:
+                                st.session_state["run_history"] = []
+                            st.session_state["run_history"].insert(0, {
+                                "agent": agent.get("name", "Unknown"),
+                                "input": user_input,
+                                "output": reply,
+                                "tokens": tokens,
+                                "time": datetime.now().strftime("%H:%M"),
+                            })
+                            # Keep only last 10
+                            st.session_state["run_history"] = st.session_state["run_history"][:10]
+
                             st.divider()
                             st.markdown("#### 📊 Result")
                             st.markdown(reply)
@@ -584,7 +609,9 @@ def _render_agent_detail(agent, agent_key):
                         line = line.strip()
                         if line and not line.startswith("#") and "=" in line:
                             key = line.split("=", 1)[0].strip()
-                            if key and key not in env_vars:
+                            # Only include actual API keys/tokens, skip config vars
+                            is_api_key = any(s in key for s in ("KEY", "TOKEN", "SECRET", "API"))
+                            if key and is_api_key and key not in env_vars:
                                 env_vars.append(key)
                 except Exception:
                     pass
