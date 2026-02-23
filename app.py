@@ -458,9 +458,16 @@ def main():
                         st.markdown(run["output"])
                         st.caption(f"Tokens: `{run['tokens']}`")
 
-        st.divider()
+        locale = st.session_state.get("locale", "en")
+        locale_prefix = f"/{locale}" if locale != "en" else ""
+        footer_links = (
+            f"<a href='https://apps.edycu.dev{locale_prefix}/privacy' style='color:#6b7280;text-decoration:none'>{tr.get('footer_privacy', 'Privacy Policy')}</a>"
+            f" · <a href='https://apps.edycu.dev{locale_prefix}/terms' style='color:#6b7280;text-decoration:none'>{tr.get('footer_terms', 'Terms of Service')}</a>"
+            f" · <a href='https://apps.edycu.dev{locale_prefix}/support' style='color:#6b7280;text-decoration:none'>{tr.get('footer_support', 'Support')}</a>"
+        )
         st.markdown(
             f"<div style='text-align:center;color:#6b7280;font-size:0.8rem'>"
+            f"{footer_links}<br>"
             f"{tr['footer']} <a href='https://edycu.dev' style='color:#a855f7'>edycu.dev</a>"
             f"</div>",
             unsafe_allow_html=True
