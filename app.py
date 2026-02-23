@@ -412,21 +412,49 @@ def _render_agent_detail(agent, agent_key):
                 pass
             run_cmd = "streamlit run main.py" if "streamlit" in main_content.lower() else "python main.py"
 
-            st.warning(
-                "⚠️ **Running agents requires dependencies and API keys.**\n\n"
-                "To run this agent locally:\n"
+            # Detect required environment variables from .env.example
+            env_file = agent_path / ".env.example"
+            env_vars = []
+            if env_file.exists():
+                try:
+                    for line in env_file.read_text(encoding="utf-8").splitlines():
+                        line = line.strip()
+                        if line and not line.startswith("#") and "=" in line:
+                            key = line.split("=", 1)[0].strip()
+                            if key:
+                                env_vars.append(key)
+                except Exception:
+                    pass
+
+            # Show run instructions
+            install_cmd = ""
+            req_file = agent_path / "requirements.txt"
+            if req_file.exists():
+                install_cmd = "pip install -r requirements.txt\n"
+
+            st.markdown(
+                "**To run this agent locally:**\n"
                 "```bash\n"
                 f"cd {agent_key}\n"
-                "pip install -r requirements.txt\n"
+                f"{install_cmd}"
                 f"{run_cmd}\n"
                 "```"
             )
 
+            # Show env var info
+            if env_vars:
+                st.warning(
+                    "⚠️ **This agent requires the following environment variables:**\n\n"
+                    + "\n".join(f"- `{v}`" for v in env_vars)
+                    + "\n\nCopy `.env.example` to `.env` and fill in your keys."
+                )
+            else:
+                st.success("✅ **No API keys required** — this agent runs standalone.")
+
             # Show requirements
-            req_file = agent_path / "requirements.txt"
             if req_file.exists():
-                st.markdown("**Dependencies:**")
-                st.code(req_file.read_text(encoding="utf-8"), language="text")
+                with st.expander("📦 Dependencies"):
+                    st.code(req_file.read_text(encoding="utf-8"), language="text")
 
 
 if __name__ == "__main__":
