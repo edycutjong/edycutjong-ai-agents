@@ -231,6 +231,18 @@ def _extract_desc(agents_md: Path) -> str:
 
 # ─── Main App ──────────────────────────────────────────────────
 def main():
+    # Fix browser back/forward: force reload when URL changes via popstate
+    st.components.v1.html("""
+    <script>
+    if (!window._popstateListenerAdded) {
+        window._popstateListenerAdded = true;
+        window.addEventListener('popstate', function() {
+            window.parent.location.reload();
+        });
+    }
+    </script>
+    """, height=0)
+
     agents = discover_agents()
     categories = sorted(set(a["category"] for a in agents.values()))
 
