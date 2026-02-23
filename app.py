@@ -245,6 +245,19 @@ def _slug_to_name(slug: str) -> str:
     return " ".join(w.upper() if w.lower() in acronyms else w.capitalize() for w in words)
 
 
+def _render_copy_btn(text: str, key: str):
+    """Render a small copy-to-clipboard button using JS."""
+    import html as _html
+    escaped = _html.escape(text).replace("`", "\\`").replace("\n", "\\n")
+    st.components.v1.html(f"""
+    <button onclick="navigator.clipboard.writeText(`{escaped}`).then(()=>this.textContent='Copied!')"
+            style="background:none;border:1px solid #aaa;border-radius:6px;padding:4px 14px;
+                   cursor:pointer;font-size:0.8rem;color:inherit;margin-top:4px;">
+        📋 Copy
+    </button>
+    """, height=40)
+
+
 def _extract_desc(agents_md: Path) -> str:
     try:
         content = agents_md.read_text(encoding="utf-8")
@@ -514,6 +527,7 @@ def _render_agent_detail(agent, agent_key):
                         st.markdown("#### 📊 Result")
                         st.markdown(cached["output"])
                         st.caption(f"Model: `{cached['model']}` · Tokens: `{cached['tokens']}` · ⚡ cached")
+                        _render_copy_btn(cached["output"], f"copy_cached_{agent_key}")
                     else:
                         with st.spinner("🔄 Running agent..."):
                             try:
@@ -570,6 +584,7 @@ def _render_agent_detail(agent, agent_key):
                                 st.markdown("#### 📊 Result")
                                 st.markdown(reply)
                                 st.caption(f"Model: `{model}` · Tokens: `{tokens}`")
+                                _render_copy_btn(reply, f"copy_fresh_{agent_key}")
 
                             except Exception as e:
                                 st.error(f"Error: {str(e)}")
