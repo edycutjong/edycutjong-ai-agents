@@ -404,13 +404,21 @@ def _render_agent_detail(agent, agent_key):
     # Run tab
     if agent["has_main"] and len(tab_objects) > 2:
         with tab_objects[2]:
+            # Detect if it's a Streamlit app or a plain CLI script
+            main_content = ""
+            try:
+                main_content = (agent_path / "main.py").read_text(encoding="utf-8")
+            except Exception:
+                pass
+            run_cmd = "streamlit run main.py" if "streamlit" in main_content.lower() else "python main.py"
+
             st.warning(
                 "⚠️ **Running agents requires dependencies and API keys.**\n\n"
                 "To run this agent locally:\n"
                 "```bash\n"
                 f"cd {agent_key}\n"
                 "pip install -r requirements.txt\n"
-                "streamlit run main.py\n"
+                f"{run_cmd}\n"
                 "```"
             )
 
