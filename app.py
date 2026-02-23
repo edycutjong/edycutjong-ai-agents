@@ -141,6 +141,15 @@ st.markdown("""
 
     div[data-testid="stVerticalBlock"] > div { gap: 0.5rem; }
 
+    /* Search input: reduce gap to button and match sidebar background */
+    [data-testid="stSidebar"] iframe[title="st_keyup.st_keyup"] {
+        margin-bottom: -0.75rem;
+    }
+    [data-testid="stSidebar"] .stTextInput input,
+    [data-testid="stSidebar"] iframe[title="st_keyup.st_keyup"] {
+        background-color: var(--sidebar-bg, transparent) !important;
+    }
+
     /* Loading Skeleton Styling */
     .stSpinner > div {
         background: var(--card-bg) !important;
@@ -562,7 +571,11 @@ def _render_agent_detail(agent, agent_key):
     tr = get_translations(st.session_state.get("locale", "en"))
     # Back button
     if st.button(tr['back']):
+        # Preserve lang param when going back
+        lang = st.query_params.get("lang", None)
         st.query_params.clear()
+        if lang:
+            st.query_params["lang"] = lang
         st.rerun()
 
     icon = CATEGORY_META.get(agent["category"], ("📦",))[0]
