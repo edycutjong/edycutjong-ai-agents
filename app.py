@@ -5,8 +5,6 @@ Built by Jules AI • Powered by Streamlit
 
 import streamlit as st
 import os
-import importlib.util
-import sys
 from pathlib import Path
 
 # ─── Page Config ────────────────────────────────────────────────
@@ -473,63 +471,21 @@ def _render_agent_detail(agent, agent_key):
                     "```"
                 )
             else:
-                # Show --help output
-                import subprocess
-                with st.expander("📖 Usage & Options (`--help`)", expanded=False):
-                    try:
-                        help_result = subprocess.run(
-                            [sys.executable, "main.py", "--help"],
-                            cwd=str(agent_path),
-                            capture_output=True, text=True, timeout=5,
-                        )
-                        st.code(help_result.stdout or help_result.stderr or "No help available", language="text")
-                    except Exception as e:
-                        st.code(f"Could not get help: {e}", language="text")
-
-                # Interactive runner
-                st.markdown("#### ▶️ Run Agent")
-                args_input = st.text_input(
-                    "CLI arguments",
-                    placeholder="e.g. --help, validate input.json, --query 'test'",
-                    key=f"args_{agent_key}",
-                )
-
-                col_run, col_clear = st.columns([1, 4])
-                with col_run:
-                    run_clicked = st.button("▶️ Run", key=f"run_{agent_key}", type="primary", use_container_width=True)
-
-                if run_clicked:
-                    import shlex
-                    cmd = [sys.executable, "main.py"]
-                    if args_input.strip():
-                        try:
-                            cmd += shlex.split(args_input)
-                        except ValueError:
-                            cmd += args_input.split()
-
-                    with st.spinner("Running agent..."):
-                        try:
-                            result = subprocess.run(
-                                cmd,
-                                cwd=str(agent_path),
-                                capture_output=True, text=True,
-                                timeout=30,
-                                env={**os.environ},
-                            )
-                            if result.stdout:
-                                st.markdown("**Output:**")
-                                st.code(result.stdout, language="text")
-                            if result.stderr:
-                                st.markdown("**Errors:**")
-                                st.code(result.stderr, language="text")
-                            if result.returncode == 0:
-                                st.success(f"✅ Exited with code {result.returncode}")
-                            else:
-                                st.error(f"❌ Exited with code {result.returncode}")
-                        except subprocess.TimeoutExpired:
-                            st.error("⏱️ Agent timed out after 30 seconds")
-                        except Exception as e:
-                            st.error(f"❌ Error: {e}")
+                st.markdown("**To run this agent locally:**")
+                req_file = agent_path / "requirements.txt"
+                if req_file.exists():
+                    st.code(
+                        f"cd {agent_key}\n"
+                        "pip install -r requirements.txt\n"
+                        "python main.py --help",
+                        language="bash",
+                    )
+                else:
+                    st.code(
+                        f"cd {agent_key}\n"
+                        "python main.py --help",
+                        language="bash",
+                    )
 
             # Show requirements
             req_file = agent_path / "requirements.txt"
