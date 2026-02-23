@@ -5,7 +5,9 @@ Built by Jules AI • Powered by Streamlit
 
 import streamlit as st
 import os
+import random
 from pathlib import Path
+from examples import get_agent_hint
 
 # Load .env file locally (on Streamlit Cloud, st.secrets handles this)
 _env_file = Path(__file__).parent / ".env"
@@ -355,80 +357,7 @@ def _render_hub(filtered, all_agents):
                                 st.rerun()
 
 
-def _get_agent_hint(agent):
-    """Return (placeholder, label, example) based on agent name keywords."""
-    name = agent.get("name", "").lower()
-    text = name
-
-    hints = [
-        (["email", "triage", "inbox", "newsletter"],
-         "Paste email text here...", "📧 Paste Email",
-         "Subject: Q3 Budget Review Meeting\n\nHi Team,\n\nPlease review the attached Q3 budget proposal before Friday. We need to finalize the marketing spend and decide on the new hire allocation. The board meeting is next Tuesday.\n\nAlso, can someone follow up on the vendor contract renewal? It expires end of month.\n\nThanks,\nSarah"),
-        (["sql", "database", "query", "schema", "migration"],
-         "Paste SQL or describe your query...", "🗄️ SQL / Query",
-         "SELECT u.name, COUNT(o.id) as order_count, SUM(o.total) as revenue\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nWHERE o.created_at > '2024-01-01'\nGROUP BY u.name\nHAVING COUNT(o.id) > 5\nORDER BY revenue DESC\nLIMIT 20;"),
-        (["contract", "legal", "compliance"],
-         "Paste contract or legal text...", "⚖️ Legal Text",
-         "Section 5.2 - Limitation of Liability: The Provider shall not be liable for any indirect, incidental, consequential, or punitive damages arising from this Agreement, regardless of whether such damages were foreseeable. The Provider's total aggregate liability shall not exceed the fees paid by Client in the twelve (12) months preceding the claim. This limitation applies to the fullest extent permitted by applicable law."),
-        (["resume", "interview", "job", "career"],
-         "Paste resume or job description...", "💼 Career Content",
-         "Senior Full-Stack Developer | 5 years experience\n\nSkills: React, Node.js, Python, PostgreSQL, AWS, Docker\n\nExperience:\n- Led migration from monolith to microservices (40% latency reduction)\n- Built real-time analytics dashboard serving 10K daily users\n- Mentored 3 junior developers\n\nLooking for: Technical lead role at a growth-stage startup"),
-        (["security", "vulnerability", "password", "hash", "encrypt"],
-         "Paste code, config, or text to audit...", "🔒 Security Input",
-         'app.use(cors({ origin: "*" }));\n\nconst db = mysql.createConnection({\n  host: "prod-db.example.com",\n  user: "root",\n  password: "admin123"\n});\n\napp.get("/users", (req, res) => {\n  const query = `SELECT * FROM users WHERE id = ${req.params.id}`;\n  db.query(query, (err, results) => res.json(results));\n});'),
-        (["docker", "k8s", "kubernetes", "ci-pipeline", "deploy"],
-         "Paste config (Dockerfile, YAML, CI)...", "🐳 DevOps Config",
-         "FROM node:18\nWORKDIR /app\nCOPY package*.json ./\nRUN npm install\nCOPY . .\nEXPOSE 3000\nCMD [\"node\", \"server.js\"]"),
-        (["git ", "changelog", "commit", "diff", "version bump"],
-         "Paste commit messages, diff, or branch info...", "🗂️ Git Content",
-         "feat: add user authentication with JWT tokens\nfix: resolve memory leak in WebSocket handler\nrefactor: extract payment logic into service layer\nfeat: add rate limiting middleware (100 req/min)\nfix: handle edge case in CSV export with unicode\nchore: upgrade dependencies (React 19, Node 22)\ndocs: update API reference for v2 endpoints"),
-        (["cors", "rate-limit", "uptime", "url", "link check", "endpoint"],
-         "Enter a URL or API endpoint...", "🔗 Enter URL",
-         "https://api.github.com/repos/vercel/next.js"),
-        (["blog", "seo", "article", "copy editor", "content writ", "post writer"],
-         "Enter a topic or paste your draft...", "✍️ Topic or Draft",
-         "Write a blog post about: How AI coding assistants are changing software development in 2025. Cover the productivity gains, potential risks, and best practices for developers."),
-        (["csv", "json", "log analyz", "log pars", "data analys", "parse"],
-         "Paste your data (CSV, JSON, logs)...", "📊 Paste Data",
-         'name,age,city,score\nAlice,28,New York,92\nBob,35,London,87\nCharlie,22,Tokyo,95\nDiana,31,Paris,78\nEve,27,Berlin,91'),
-        (["regex", "pattern", "match", "validator"],
-         "Enter text or pattern to test...", "🔍 Text or Pattern",
-         "Pattern: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$\n\nTest strings:\nuser@example.com\ninvalid-email@\nhello.world@company.co.uk\n@missing-local.com\ntest+tag@gmail.com"),
-        (["markdown", "html-to", "convert", "format"],
-         "Paste content to convert...", "🔄 Content to Convert",
-         '<div class="container">\n  <h1>Welcome</h1>\n  <p>This is a <strong>sample</strong> HTML page with <a href="https://example.com">a link</a>.</p>\n  <ul>\n    <li>Item 1</li>\n    <li>Item 2</li>\n  </ul>\n</div>'),
-        (["translate", "i18n", "localize"],
-         "Paste text to translate...", "🌐 Text to Translate",
-         "Welcome to our platform! Your account has been created successfully. Please verify your email address to get started. If you need help, contact our support team."),
-        (["color", "css", "svg", "figma", "accessibility", "ascii art"],
-         "Paste CSS, HTML, or describe design...", "🎨 Design Input",
-         ".card {\n  background: #1a1a2e;\n  color: #eee;\n  border-radius: 12px;\n  padding: 24px;\n  box-shadow: 0 4px 20px rgba(0,0,0,0.3);\n}\n\n.btn-primary {\n  background: linear-gradient(135deg, #667eea, #764ba2);\n  color: white;\n  font-size: 14px;\n  padding: 8px 16px;\n}"),
-        (["recipe", "meal", "food", "nutrition"],
-         "Enter ingredients or dietary preferences...", "🍽️ Food / Ingredients",
-         "I have: chicken breast, broccoli, garlic, soy sauce, rice, sesame oil, ginger. Looking for a healthy dinner recipe, preferably Asian-inspired, under 500 calories."),
-        (["habit", "mood", "journal", "wellness"],
-         "Describe your goal or current situation...", "🧘 Your Situation",
-         "I want to build a morning routine. Currently I wake up at 8am, check my phone for 30 minutes, then rush to work. I'd like to wake at 6:30am, exercise, and read before starting work."),
-        (["gift", "recommend"],
-         "Describe the person and occasion...", "🎁 Context",
-         "My friend is turning 30. She loves hiking, photography, and cooking. Budget is $50-100. She already has a good camera and hiking boots."),
-        (["test gen", "unit test", "spec gen", "mock"],
-         "Paste code to generate tests for...", "🧪 Code to Test",
-         "def calculate_discount(price, quantity, is_member):\n    if quantity >= 10:\n        discount = 0.15\n    elif quantity >= 5:\n        discount = 0.10\n    else:\n        discount = 0\n    if is_member:\n        discount += 0.05\n    return round(price * quantity * (1 - discount), 2)"),
-        (["readme", "doc writer", "documentation"],
-         "Paste code or describe what to document...", "📖 Code / Description",
-         "class RateLimiter:\n    def __init__(self, max_requests, window_seconds):\n        self.max_requests = max_requests\n        self.window = window_seconds\n        self.requests = {}\n\n    def is_allowed(self, client_id):\n        now = time.time()\n        self._cleanup(client_id, now)\n        if len(self.requests.get(client_id, [])) >= self.max_requests:\n            return False\n        self.requests.setdefault(client_id, []).append(now)\n        return True"),
-        (["code", "review", "bug", "lint", "style", "refactor", "dead code", "complexity", "api"],
-         "Paste your code here...", "📝 Paste Code",
-         "def process_data(data):\n    result = []\n    for i in range(len(data)):\n        if data[i] != None:\n            temp = data[i]\n            if type(temp) == str:\n                temp = temp.strip()\n                if temp != '':\n                    result.append(temp)\n            elif type(temp) == int:\n                if temp > 0:\n                    result.append(temp)\n    return result"),
-    ]
-
-    for keywords, placeholder, label, example in hints:
-        if any(kw in text for kw in keywords):
-            return placeholder, label, example
-
-    return ("Describe what you need or paste your text...", "📝 Your Input",
-            "Analyze the following: Our web app has 1,200 daily active users with an average session of 4.5 minutes. Bounce rate is 45% and conversion rate is 2.3%. What improvements would you suggest?")
+# _get_agent_hint is now imported from examples.py as get_agent_hint
 
 
 def _render_agent_detail(agent, agent_key):
@@ -489,12 +418,23 @@ def _render_agent_detail(agent, agent_key):
                 "Format your response with clear sections and use markdown."
             )
 
-            placeholder, label, example = _get_agent_hint(agent)
+            placeholder, label, examples = get_agent_hint(agent)
 
-            # Load Example button — sets the text area key directly
+            # Random no-repeat example cycling
             ta_key = f"try_{agent_key}"
+            seen_key = f"seen_{agent_key}"
+            if seen_key not in st.session_state:
+                st.session_state[seen_key] = []
+
             if st.button("💡 Load Example", key=f"load_{agent_key}"):
-                st.session_state[ta_key] = example
+                seen = st.session_state[seen_key]
+                remaining = [i for i in range(len(examples)) if i not in seen]
+                if not remaining:  # all shown, reset
+                    seen.clear()
+                    remaining = list(range(len(examples)))
+                pick = random.choice(remaining)
+                seen.append(pick)
+                st.session_state[ta_key] = examples[pick]
                 st.rerun()
 
             user_input = st.text_area(
