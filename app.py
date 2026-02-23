@@ -9,6 +9,7 @@ import random
 from datetime import datetime
 from pathlib import Path
 from examples import get_agent_hint
+from i18n import LOCALES, LOCALE_NAMES, get_translations
 
 # Load .env file locally (on Streamlit Cloud, st.secrets handles this)
 _env_file = Path(__file__).parent / ".env"
@@ -267,15 +268,32 @@ def main():
 
     # Sidebar
     with st.sidebar:
-        st.markdown("### 🧠 AI Agents Hub")
-        st.markdown(f"**{len(agents)}** agents · **{len(categories)}** categories")
+        # Language selector
+        locale_options = list(LOCALE_NAMES.keys())
+        locale_labels = list(LOCALE_NAMES.values())
+        current_locale = st.session_state.get("locale", "en")
+        locale_idx = locale_options.index(current_locale) if current_locale in locale_options else 0
+        selected_locale = st.selectbox(
+            "🌐",
+            locale_options,
+            index=locale_idx,
+            format_func=lambda x: LOCALE_NAMES[x],
+            key="lang_select",
+        )
+        if selected_locale != st.session_state.get("locale"):
+            st.session_state["locale"] = selected_locale
+            st.rerun()
+        tr = get_translations(st.session_state.get("locale", "en"))
+
+        st.markdown(f"### 🧠 {tr['title']}")
+        st.markdown(f"**{len(agents)}** {tr['sidebar_agents']} · **{len(categories)}** {tr['sidebar_categories']}")
         st.divider()
 
         # Category filter
         selected_cat = st.selectbox(
-            "📂 Category",
+            f"📂 {tr['categories']}",
             ["All"] + categories,
-            format_func=lambda x: x if x == "All" else CATEGORY_META.get(x, ("📦", _slug_to_name(x), ""))[1] + f" ({sum(1 for a in agents.values() if a['category'] == x)})"
+            format_func=lambda x: tr['all_categories'] if x == "All" else CATEGORY_META.get(x, ("📦", _slug_to_name(x), ""))[1] + f" ({sum(1 for a in agents.values() if a['category'] == x)})"
         )
 
         # Clear agent selection when category changes
@@ -288,7 +306,7 @@ def main():
                 st.rerun()
 
         # Search
-        search = st.text_input("🔍 Search agents", placeholder="e.g. hallucination, code, PDF...")
+        search = st.text_input(f"🔍 {tr['search']}", placeholder=tr['search'])
 
         # Clear agent selection when search changes
         if search and "agent" in st.query_params:
@@ -296,8 +314,8 @@ def main():
             st.rerun()
 
         # Surprise Me button
-        st.markdown("<small>&#10024; Not sure where to start?</small>", unsafe_allow_html=True)
-        if st.button("Surprise Me", key="surprise_me", use_container_width=True):
+        st.markdown(f"<small>{tr['surprise_hint']}</small>", unsafe_allow_html=True)
+        if st.button(tr['surprise_btn'], key="surprise_me", use_container_width=True):
             pick = random.choice(list(agents.keys()))
             st.query_params["agent"] = pick
             st.rerun()
@@ -305,7 +323,7 @@ def main():
         # ─── Run History ────────────────────────────
         if st.session_state.get("run_history"):
             st.divider()
-            with st.expander(f"📜 History ({len(st.session_state['run_history'])})", expanded=False):
+            with st.expander(f"📜 {tr['recent_runs']} ({len(st.session_state['run_history'])})", expanded=False):
                 for i, run in enumerate(st.session_state["run_history"]):
                     preview = run["input"][:60].replace("\n", " ") + ("…" if len(run["input"]) > 60 else "")
                     with st.expander(f"`{run['time']}` **{run['agent']}**", expanded=False):
@@ -315,9 +333,9 @@ def main():
 
         st.divider()
         st.markdown(
-            "<div style='text-align:center;color:#6b7280;font-size:0.8rem'>"
-            "Built with ♥ by <a href='https://edycu.dev' style='color:#a855f7'>edycu.dev</a>"
-            "</div>",
+            f"<div style='text-align:center;color:#6b7280;font-size:0.8rem'>"
+            f"{tr['footer']} <a href='https://edycu.dev' style='color:#a855f7'>edycu.dev</a>"
+            f"</div>",
             unsafe_allow_html=True
         )
 
@@ -347,12 +365,12 @@ def main():
 
 def _render_hub(filtered, all_agents):
     """Render the main hub/catalog view."""
+    tr = get_translations(st.session_state.get("locale", "en"))
     # Hero
     total_count = len(all_agents)
-    st.markdown('<h1 class="hero-title">AI Agents Hub</h1>', unsafe_allow_html=True)
+    st.markdown(f'<h1 class="hero-title">{tr["title"]}</h1>', unsafe_allow_html=True)
     st.markdown(
-        f'<p class="hero-subtitle">Browse & explore {total_count}+ AI automation agents — '
-        'code review, data analysis, content generation, DevOps, and more</p>',
+        f'<p class="hero-subtitle">{tr["subtitle"].format(count=total_count)}</p>',
         unsafe_allow_html=True
     )
 
@@ -363,11 +381,11 @@ def _render_hub(filtered, all_agents):
 
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.markdown(f'<div class="stat-box"><div class="stat-num">{total}</div><div class="stat-label">Total Agents</div></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="stat-box"><div class="stat-num">{total}</div><div class="stat-label">{tr["total_agents"]}</div></div>', unsafe_allow_html=True)
     with col2:
-        st.markdown(f'<div class="stat-box"><div class="stat-num">{built}</div><div class="stat-label">Ready to Run</div></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="stat-box"><div class="stat-num">{built}</div><div class="stat-label">{tr["ready_to_run"]}</div></div>', unsafe_allow_html=True)
     with col3:
-        st.markdown(f'<div class="stat-box"><div class="stat-num">{cats}</div><div class="stat-label">Categories</div></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="stat-box"><div class="stat-num">{cats}</div><div class="stat-label">{tr["categories"]}</div></div>', unsafe_allow_html=True)
 
     st.markdown("")
 
@@ -392,14 +410,14 @@ def _render_hub(filtered, all_agents):
                     if agent["description"]:
                         st.caption(agent["description"][:120] + ("..." if len(agent["description"]) > 120 else ""))
                     else:
-                        st.caption(f"Category: {agent['category_display']}")
+                        st.caption(f"{tr['category_label']}: {agent['category_display']}")
 
                     c1, c2 = st.columns([1, 1])
                     with c1:
-                        st.markdown(f"<div style='display:flex;align-items:center;height:100%;min-height:38px'>{status} {'Built' if agent['has_main'] else 'Spec'}</div>", unsafe_allow_html=True)
+                        st.markdown(f"<div style='display:flex;align-items:center;height:100%;min-height:38px'>{status} {tr['built'] if agent['has_main'] else tr['spec']}</div>", unsafe_allow_html=True)
                     with c2:
                         if agent["has_main"]:
-                            if st.button("View →", key=f"view_{key}", use_container_width=True):
+                            if st.button(tr['view'], key=f"view_{key}", use_container_width=True):
                                 st.query_params["agent"] = key
                                 st.rerun()
 
@@ -409,8 +427,9 @@ def _render_hub(filtered, all_agents):
 
 def _render_agent_detail(agent, agent_key):
     """Render detailed view for a single agent."""
+    tr = get_translations(st.session_state.get("locale", "en"))
     # Back button
-    if st.button("← Back to Hub"):
+    if st.button(tr['back']):
         st.query_params.clear()
         st.rerun()
 
@@ -420,13 +439,13 @@ def _render_agent_detail(agent, agent_key):
     if agent["description"]:
         st.markdown(f"> {agent['description']}")
 
-    st.markdown(f"**Category:** {agent['category_display']}")
+    st.markdown(f"**{tr['category_label']}:** {agent['category_display']}")
     st.divider()
 
     agent_path = Path(agent["path"])
 
     # Tabs: Try It (first/default), README, Code, Setup
-    tabs = ["🚀 Try It", "📖 README", "📄 Code"]
+    tabs = [tr['run_tab'], tr['docs_tab'], tr['code_tab']]
     if agent["has_main"]:
         tabs.append("⚙️ Setup")
 
@@ -443,7 +462,7 @@ def _render_agent_detail(agent, agent_key):
                 _has_openai = None
 
         if _has_openai and not _has_openai.startswith("sk-your"):
-            st.caption("Test this agent directly — powered by OpenAI")
+            st.caption(tr['test_caption'])
 
             agent_purpose = agent.get("description", agent.get("name", "AI Agent"))
 
@@ -473,7 +492,7 @@ def _render_agent_detail(agent, agent_key):
             if seen_key not in st.session_state:
                 st.session_state[seen_key] = []
 
-            btn_label = "🔄 Load Another Example" if st.session_state[seen_key] else "💡 Load Example"
+            btn_label = f"🔄 {tr['load_example']}" if st.session_state[seen_key] else f"💡 {tr['load_example']}"
             if st.button(btn_label, key=f"load_{agent_key}"):
                 seen = st.session_state[seen_key]
                 remaining = [i for i in range(len(examples)) if i not in seen]
@@ -492,21 +511,21 @@ def _render_agent_detail(agent, agent_key):
                 key=ta_key,
             )
 
-            if st.button("🚀 Run", key=f"run_{agent_key}", use_container_width=True):
+            if st.button(tr['run_btn'], key=f"run_{agent_key}", use_container_width=True):
                 if not user_input:
-                    st.warning("Please enter some text.")
+                    st.warning(tr['enter_text'])
                 else:
                     # Check cache — skip API call if same input
                     cache_key = f"cache_{agent_key}"
                     cached = st.session_state.get(cache_key)
                     if cached and cached["input"] == user_input:
                         st.divider()
-                        st.markdown("#### 📊 Result")
+                        st.markdown(f"#### {tr['result']}")
                         st.markdown(cached["output"])
-                        st.caption(f"Model: `{cached['model']}` · Tokens: `{cached['tokens']}` · ⚡ cached")
+                        st.caption(f"Model: `{cached['model']}` · Tokens: `{cached['tokens']}` · ⚡ {tr['cached']}")
                         _render_copy_btn(cached["output"], f"copy_cached_{agent_key}")
                     else:
-                        with st.spinner("🔄 Running agent..."):
+                        with st.spinner(tr['running']):
                             try:
                                 import json as _json
                                 from urllib.request import Request, urlopen
@@ -558,13 +577,13 @@ def _render_agent_detail(agent, agent_key):
                                 st.session_state["run_history"] = st.session_state["run_history"][:10]
 
                                 st.divider()
-                                st.markdown("#### 📊 Result")
+                                st.markdown(f"#### {tr['result']}")
                                 st.markdown(reply)
                                 st.caption(f"Model: `{model}` · Tokens: `{tokens}`")
                                 _render_copy_btn(reply, f"copy_fresh_{agent_key}")
 
                             except Exception as e:
-                                st.error(f"Error: {str(e)}")
+                                st.error(f"{tr['error']}: {str(e)}")
 
                     # Auto-scroll so "Result" heading is at top of viewport
                     st.components.v1.html("""
@@ -697,7 +716,7 @@ def _render_agent_detail(agent, agent_key):
                     "```"
                 )
             else:
-                st.markdown("**To run this agent locally:**")
+                st.markdown(f"**{tr['run_locally']}**")
                 req_file = agent_path / "requirements.txt"
                 if req_file.exists():
                     st.code(
