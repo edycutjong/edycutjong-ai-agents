@@ -250,18 +250,6 @@ def main():
     with st.sidebar:
         st.markdown("### 🧠 AI Agents Hub")
         st.markdown(f"**{len(agents)}** agents · **{len(categories)}** categories")
-
-        col1, col2 = st.columns(2)
-        with col1:
-            if st.button("🏠 Home", use_container_width=True):
-                st.query_params.clear()
-                st.rerun()
-        with col2:
-            if st.button("🎲 Surprise Me", use_container_width=True):
-                pick = random.choice(list(agents.keys()))
-                st.query_params["agent"] = pick
-                st.rerun()
-
         st.divider()
 
         # Category filter
@@ -286,6 +274,12 @@ def main():
         # Clear agent selection when search changes
         if search and "agent" in st.query_params:
             del st.query_params["agent"]
+            st.rerun()
+
+        # Surprise Me button
+        if st.button("🎲 Surprise Me", use_container_width=True):
+            pick = random.choice(list(agents.keys()))
+            st.query_params["agent"] = pick
             st.rerun()
 
         st.divider()
