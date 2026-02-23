@@ -15,21 +15,15 @@ Code Complexity Analyzer — Analyze code complexity metrics (cyclomatic complex
 - Generate complexity reports
 - Support multiple languages
 
-
-## Files
+## File Structure
 - main.py
 - config.py
 - requirements.txt
 - agent/
 - tests/
 
-## Usage
+## Commands
 ```bash
 python main.py <input>
 python main.py --help-agent
 ```
-
-## Design
-- CLI-first interaction
-- Modular agent definitions
-- Import from `agent.analyzer` for programmatic use

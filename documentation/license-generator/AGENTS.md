@@ -15,19 +15,13 @@ License Generator — Generate open-source license files (MIT, Apache, GPL, etc.
 - Preview license text
 - Output ready-to-use LICENSE file
 
-
-## Files
+## File Structure
 - main.py
 - agent/
 - tests/
 
-## Usage
+## Commands
 ```bash
 python main.py <input>
 python main.py --help-agent
 ```
-
-## Design
-- CLI-first interaction
-- Modular agent definitions
-- Import from `agent.generator` for programmatic use

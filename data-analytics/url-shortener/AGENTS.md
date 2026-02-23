@@ -15,19 +15,13 @@ URL Shortener — Generate shortened URLs and manage link redirects. Designed as
 - Validate input URLs
 - Bulk URL shortening
 
-
-## Files
+## File Structure
 - main.py
 - agent/
 - tests/
 
-## Usage
+## Commands
 ```bash
 python main.py <input>
 python main.py --help-agent
 ```
-
-## Design
-- CLI-first interaction
-- Modular agent definitions
-- Import from `agent.shortener` for programmatic use

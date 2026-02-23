@@ -3,7 +3,7 @@
 ## Overview
 Find heavy/unused dependencies.
 
-## Tech Stack
+## Tech
 - **Runtime:** Python 3.11+
 - **AI:** LangChain / OpenAI / AST Parsing
 - **Git:** GitPython / PyGithub
@@ -15,9 +15,6 @@ Find heavy/unused dependencies.
 - `agent.py`: Logic
 - `tools/`: Fixer tools
 - `tests/`: Verification
-
-## Design Notes
-Treemap visualization.
 
 ## Commands
 python3 agent.py

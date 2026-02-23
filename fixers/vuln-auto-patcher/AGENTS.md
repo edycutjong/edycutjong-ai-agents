@@ -3,7 +3,7 @@
 ## Overview
 Auto-patch known security vulnerabilities.
 
-## Tech Stack
+## Tech
 - **Runtime:** Python 3.11+
 - **AI:** LangChain / OpenAI / AST Parsing
 - **Git:** GitPython / PyGithub
@@ -15,9 +15,6 @@ Auto-patch known security vulnerabilities.
 - `agent.py`: Logic
 - `tools/`: Fixer tools
 - `tests/`: Verification
-
-## Design Notes
-Automated pipeline.
 
 ## Commands
 python3 agent.py

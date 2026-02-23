@@ -3,7 +3,7 @@
 ## Overview
 Identify spammy logs to cleanup.
 
-## Tech Stack
+## Tech
 - **Runtime:** Python 3.11+
 - **AI:** LangChain / OpenAI / AST Parsing
 - **Git:** GitPython / PyGithub
@@ -15,9 +15,6 @@ Identify spammy logs to cleanup.
 - `agent.py`: Logic
 - `tools/`: Fixer tools
 - `tests/`: Verification
-
-## Design Notes
-Log frequency chart.
 
 ## Commands
 python3 agent.py

@@ -15,7 +15,7 @@ PR review agent — Fetch PR diff from GitHub. Designed as a agents project.
 - Check style guide
 - Security scan
 
-## Files
+## File Structure
 - requirements.txt
 - main.py
 - agent_config.py
@@ -23,8 +23,7 @@ PR review agent — Fetch PR diff from GitHub. Designed as a agents project.
 code-reviewer/
 └── AGENTS.md
 
-## Design
-- CLI-first interaction
-- Verbose logging
-- Modular agent definitions
-
+## Commands
+- `pip install -r requirements.txt` — Install deps
+- `python main.py` — Run agent
+- `pytest tests/` — Run tests

@@ -3,7 +3,7 @@
 ## Overview
 Aligns documentation with code changes.
 
-## Tech Stack
+## Tech
 - **Runtime:** Python 3.11+
 - **AI:** LangChain / OpenAI / AST Parsing
 - **Git:** GitPython / PyGithub
@@ -15,9 +15,6 @@ Aligns documentation with code changes.
 - `agent.py`: Logic
 - `tools/`: Fixer tools
 - `tests/`: Verification
-
-## Design Notes
-CLI / PR bot.
 
 ## Commands
 python3 agent.py

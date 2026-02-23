@@ -3,7 +3,7 @@
 ## Overview
 Friendly bot to enforce and fix style.
 
-## Tech Stack
+## Tech
 - **Runtime:** Python 3.11+
 - **AI:** LangChain / OpenAI / AST Parsing
 - **Git:** GitPython / PyGithub
@@ -15,9 +15,6 @@ Friendly bot to enforce and fix style.
 - `agent.py`: Logic
 - `tools/`: Fixer tools
 - `tests/`: Verification
-
-## Design Notes
-Chat bot interface.
 
 ## Commands
 python3 agent.py

@@ -15,19 +15,13 @@ Cron Parser — Parse and explain cron expressions in human-readable format. Des
 - Validate cron syntax
 - Support extended cron format
 
-
-## Files
+## File Structure
 - main.py
 - agent/
 - tests/
 
-## Usage
+## Commands
 ```bash
 python main.py <input>
 python main.py --help-agent
 ```
-
-## Design
-- CLI-first interaction
-- Modular agent definitions
-- Import from `agent.parser` for programmatic use

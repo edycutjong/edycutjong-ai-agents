@@ -15,19 +15,13 @@ Dependency Checker — Check project dependencies for outdated or vulnerable pac
 - Generate dependency reports
 - Suggest version updates
 
-
-## Files
+## File Structure
 - main.py
 - agent/
 - tests/
 
-## Usage
+## Commands
 ```bash
 python main.py <input>
 python main.py --help-agent
 ```
-
-## Design
-- CLI-first interaction
-- Modular agent definitions
-- Import from `agent.checker` for programmatic use

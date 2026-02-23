@@ -15,7 +15,7 @@ Issue management agent — Read new GitHub issues. Designed as a agents project.
 - Check for duplicates
 - Reply with template
 
-## Files
+## File Structure
 - requirements.txt
 - main.py
 - agent_config.py
@@ -23,8 +23,7 @@ Issue management agent — Read new GitHub issues. Designed as a agents project.
 bug-triager/
 └── AGENTS.md
 
-## Design
-- CLI-first interaction
-- Verbose logging
-- Modular agent definitions
-
+## Commands
+- `pip install -r requirements.txt` — Install deps
+- `python main.py` — Run agent
+- `pytest tests/` — Run tests

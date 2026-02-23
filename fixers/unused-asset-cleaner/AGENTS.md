@@ -3,7 +3,7 @@
 ## Overview
 Find and remove unused images/files.
 
-## Tech Stack
+## Tech
 - **Runtime:** Python 3.11+
 - **AI:** LangChain / OpenAI / AST Parsing
 - **Git:** GitPython / PyGithub
@@ -15,9 +15,6 @@ Find and remove unused images/files.
 - `agent.py`: Logic
 - `tools/`: Fixer tools
 - `tests/`: Verification
-
-## Design Notes
-File list UI.
 
 ## Commands
 python3 agent.py

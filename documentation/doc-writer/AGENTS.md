@@ -15,7 +15,7 @@ Documentation generator — Parse codebase AST. Designed as a agents project.
 - Update outdated docs
 - Follow style guide
 
-## Files
+## File Structure
 - requirements.txt
 - main.py
 - agent_config.py
@@ -23,8 +23,7 @@ Documentation generator — Parse codebase AST. Designed as a agents project.
 doc-writer/
 └── AGENTS.md
 
-## Design
-- CLI-first interaction
-- Verbose logging
-- Modular agent definitions
-
+## Commands
+- `pip install -r requirements.txt` — Install deps
+- `python main.py` — Run agent
+- `pytest tests/` — Run tests

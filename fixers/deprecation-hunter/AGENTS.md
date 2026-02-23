@@ -3,7 +3,7 @@
 ## Overview
 Finds and intends to fix deprecated usage.
 
-## Tech Stack
+## Tech
 - **Runtime:** Python 3.11+
 - **AI:** LangChain / OpenAI / AST Parsing
 - **Git:** GitPython / PyGithub
@@ -15,9 +15,6 @@ Finds and intends to fix deprecated usage.
 - `agent.py`: Logic
 - `tools/`: Fixer tools
 - `tests/`: Verification
-
-## Design Notes
-Dashboard status.
 
 ## Commands
 python3 agent.py

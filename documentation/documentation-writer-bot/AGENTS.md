@@ -3,7 +3,7 @@
 ## Overview
 Agent that reads codebases and generates/updates documentation folders.
 
-## Tech Stack
+## Tech
 - **Runtime:** Python 3.11+ or Node.js
 - **AI:** OpenAI API / Anthropic API / Gemini
 - **Framework:** LangChain or custom loop
@@ -17,9 +17,6 @@ Agent that reads codebases and generates/updates documentation folders.
 - `agent/`: Core tool definitions
 - `prompts/`: System prompts
 - `config.py`: Settings
-
-## Design Notes
-Interactive CLI. Progress bars.
 
 ## Commands
 python3 main.py

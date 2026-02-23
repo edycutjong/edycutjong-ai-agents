@@ -15,19 +15,13 @@ ASCII Art Generator — Generate ASCII art from text input. Designed as an AI ag
 - Support special characters
 - Figlet-compatible output
 
-
-## Files
+## File Structure
 - main.py
 - agent/
 - tests/
 
-## Usage
+## Commands
 ```bash
 python main.py <input>
 python main.py --help-agent
 ```
-
-## Design
-- CLI-first interaction
-- Modular agent definitions
-- Import from `agent.generator` for programmatic use

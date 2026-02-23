@@ -15,19 +15,13 @@ HTML to Markdown Converter — Convert HTML content to clean Markdown format. De
 - Clean up whitespace and structure
 - Support inline and block elements
 
-
-## Files
+## File Structure
 - main.py
 - agent/
 - tests/
 
-## Usage
+## Commands
 ```bash
 python main.py <input>
 python main.py --help-agent
 ```
-
-## Design
-- CLI-first interaction
-- Modular agent definitions
-- Import from `agent.converter` for programmatic use

@@ -3,7 +3,7 @@
 ## Overview
 Agent that analyzes incoming bug reports, duplicates, and assigns severity.
 
-## Tech Stack
+## Tech
 - **Runtime:** Python 3.11+ or Node.js
 - **AI:** OpenAI API / Anthropic API / Gemini
 - **Framework:** LangChain or custom loop
@@ -17,9 +17,6 @@ Agent that analyzes incoming bug reports, duplicates, and assigns severity.
 - `agent/`: Core tool definitions
 - `prompts/`: System prompts
 - `config.py`: Settings
-
-## Design Notes
-Issue tracker dashboard.
 
 ## Commands
 python3 main.py

@@ -3,7 +3,7 @@
 ## Overview
 AI agent that connects to GitHub PRs and provides first-pass code review.
 
-## Tech Stack
+## Tech
 - **Runtime:** Python 3.11+ or Node.js
 - **AI:** OpenAI API / Anthropic API / Gemini
 - **Framework:** LangChain or custom loop
@@ -17,9 +17,6 @@ AI agent that connects to GitHub PRs and provides first-pass code review.
 - `agent/`: Core tool definitions
 - `prompts/`: System prompts
 - `config.py`: Settings
-
-## Design Notes
-CLI / Web Dashboard. structured review output.
 
 ## Commands
 python3 main.py

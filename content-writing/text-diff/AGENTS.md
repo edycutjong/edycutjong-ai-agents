@@ -15,21 +15,15 @@ Text Diff Tool — Compare two texts and show their differences line by line. De
 - Side-by-side comparison
 - Ignore whitespace option
 
-
-## Files
+## File Structure
 - main.py
 - config.py
 - requirements.txt
 - agent/
 - tests/
 
-## Usage
+## Commands
 ```bash
 python main.py <input>
 python main.py --help-agent
 ```
-
-## Design
-- CLI-first interaction
-- Modular agent definitions
-- Import from `agent.differ` for programmatic use

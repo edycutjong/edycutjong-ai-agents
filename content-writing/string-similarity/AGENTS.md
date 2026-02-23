@@ -15,19 +15,13 @@ String Similarity Analyzer — Compare two strings and calculate their similarit
 - Handle Unicode and special characters
 - Batch comparison support
 
-
-## Files
+## File Structure
 - main.py
 - agent/
 - tests/
 
-## Usage
+## Commands
 ```bash
 python main.py <input>
 python main.py --help-agent
 ```
-
-## Design
-- CLI-first interaction
-- Modular agent definitions
-- Import from `agent.analyzer` for programmatic use

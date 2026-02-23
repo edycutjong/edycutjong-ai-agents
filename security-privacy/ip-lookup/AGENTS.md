@@ -15,19 +15,13 @@ IP Lookup — Look up IP address geolocation and network information. Designed a
 - IPv4 and IPv6 support
 - Batch IP lookups
 
-
-## Files
+## File Structure
 - main.py
 - agent/
 - tests/
 
-## Usage
+## Commands
 ```bash
 python main.py <input>
 python main.py --help-agent
 ```
-
-## Design
-- CLI-first interaction
-- Modular agent definitions
-- Import from `agent.lookup` for programmatic use

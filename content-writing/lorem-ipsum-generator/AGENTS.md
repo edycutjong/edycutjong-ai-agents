@@ -15,19 +15,13 @@ Lorem Ipsum Generator — Generate placeholder Lorem Ipsum text for mockups and 
 - Clean formatted output
 - Clipboard-ready results
 
-
-## Files
+## File Structure
 - main.py
 - agent/
 - tests/
 
-## Usage
+## Commands
 ```bash
 python main.py <input>
 python main.py --help-agent
 ```
-
-## Design
-- CLI-first interaction
-- Modular agent definitions
-- Import from `agent.generator` for programmatic use

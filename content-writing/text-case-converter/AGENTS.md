@@ -15,19 +15,13 @@ Text Case Converter — Convert text between different case formats (camelCase, 
 - Preserve acronyms and numbers
 - Batch convert multiple strings
 
-
-## Files
+## File Structure
 - main.py
 - agent/
 - tests/
 
-## Usage
+## Commands
 ```bash
 python main.py <input>
 python main.py --help-agent
 ```
-
-## Design
-- CLI-first interaction
-- Modular agent definitions
-- Import from `agent.converter` for programmatic use

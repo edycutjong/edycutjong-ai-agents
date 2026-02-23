@@ -15,7 +15,7 @@ Release note agent — Analyze git commit range. Designed as a agents project.
 - Generate markdown output
 - Publish to release
 
-## Files
+## File Structure
 - requirements.txt
 - main.py
 - agent_config.py
@@ -23,8 +23,7 @@ Release note agent — Analyze git commit range. Designed as a agents project.
 changelog-writer/
 └── AGENTS.md
 
-## Design
-- CLI-first interaction
-- Verbose logging
-- Modular agent definitions
-
+## Commands
+- `pip install -r requirements.txt` — Install deps
+- `python main.py` — Run agent
+- `pytest tests/` — Run tests

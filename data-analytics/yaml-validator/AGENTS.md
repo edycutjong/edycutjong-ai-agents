@@ -15,19 +15,13 @@ YAML Validator — Validate YAML files and report syntax errors. Designed as an 
 - Support multi-document YAML
 - Pretty-print parsed output
 
-
-## Files
+## File Structure
 - main.py
 - agent/
 - tests/
 
-## Usage
+## Commands
 ```bash
 python main.py <input>
 python main.py --help-agent
 ```
-
-## Design
-- CLI-first interaction
-- Modular agent definitions
-- Import from `agent.validator` for programmatic use

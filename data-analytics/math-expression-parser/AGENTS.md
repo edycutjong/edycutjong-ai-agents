@@ -15,21 +15,15 @@ Math Expression Parser — Parse and evaluate mathematical expressions safely. D
 - Variable substitution
 - Step-by-step evaluation
 
-
-## Files
+## File Structure
 - main.py
 - config.py
 - requirements.txt
 - agent/
 - tests/
 
-## Usage
+## Commands
 ```bash
 python main.py <input>
 python main.py --help-agent
 ```
-
-## Design
-- CLI-first interaction
-- Modular agent definitions
-- Import from `agent.parser` for programmatic use
