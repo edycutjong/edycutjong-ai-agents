@@ -32,6 +32,34 @@ st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+    /* Theme variables */
+    :root {
+        --card-border: rgba(0,0,0,0.12);
+        --card-bg: rgba(0,0,0,0.02);
+        --card-hover-border: rgba(168,85,247,0.4);
+        --card-hover-bg: rgba(168,85,247,0.06);
+        --text-primary: #1f2937;
+        --text-secondary: #6b7280;
+        --badge-bg: rgba(168,85,247,0.1);
+        --sidebar-bg: rgba(0,0,0,0.03);
+        --stat-border: rgba(0,0,0,0.1);
+        --stat-bg: rgba(0,0,0,0.02);
+    }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --card-border: rgba(255,255,255,0.1);
+            --card-bg: rgba(255,255,255,0.03);
+            --card-hover-border: rgba(168,85,247,0.4);
+            --card-hover-bg: rgba(168,85,247,0.05);
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --badge-bg: rgba(168,85,247,0.15);
+            --sidebar-bg: rgba(0,0,0,0.3);
+            --stat-border: rgba(255,255,255,0.08);
+            --stat-bg: rgba(255,255,255,0.03);
+        }
+    }
+
     /* Global */
     .stApp { font-family: 'Inter', sans-serif; }
 
@@ -47,7 +75,7 @@ st.markdown("""
     }
     .hero-subtitle {
         text-align: center;
-        color: #9ca3af;
+        color: var(--text-secondary);
         font-size: 1.1rem;
         margin-top: 0.5rem;
     }
@@ -60,32 +88,32 @@ st.markdown("""
         font-size: 0.75rem;
         font-weight: 600;
         margin: 2px 4px;
-        background: rgba(168, 85, 247, 0.15);
+        background: var(--badge-bg);
         color: #a855f7;
     }
 
     /* Agent card */
     .agent-card {
-        border: 1px solid rgba(255,255,255,0.1);
+        border: 1px solid var(--card-border);
         border-radius: 12px;
         padding: 20px;
         margin: 8px 0;
-        background: rgba(255,255,255,0.03);
+        background: var(--card-bg);
         transition: all 0.2s;
     }
     .agent-card:hover {
-        border-color: rgba(168,85,247,0.4);
-        background: rgba(168,85,247,0.05);
+        border-color: var(--card-hover-border);
+        background: var(--card-hover-bg);
     }
     .agent-name {
         font-size: 1.1rem;
         font-weight: 700;
-        color: #f3f4f6;
+        color: var(--text-primary);
         margin-bottom: 4px;
     }
     .agent-desc {
         font-size: 0.85rem;
-        color: #9ca3af;
+        color: var(--text-secondary);
         line-height: 1.4;
     }
 
@@ -94,8 +122,8 @@ st.markdown("""
         text-align: center;
         padding: 16px;
         border-radius: 12px;
-        background: rgba(255,255,255,0.03);
-        border: 1px solid rgba(255,255,255,0.08);
+        background: var(--stat-bg);
+        border: 1px solid var(--stat-border);
     }
     .stat-num {
         font-size: 2rem;
@@ -106,14 +134,14 @@ st.markdown("""
     }
     .stat-label {
         font-size: 0.8rem;
-        color: #9ca3af;
+        color: var(--text-secondary);
         text-transform: uppercase;
         letter-spacing: 1px;
     }
 
     /* Sidebar */
     [data-testid="stSidebar"] {
-        background: rgba(0,0,0,0.3);
+        background: var(--sidebar-bg);
     }
 
     /* Code viewer */
