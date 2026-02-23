@@ -519,6 +519,88 @@ def _render_agent_detail(agent, agent_key):
                         language="bash",
                     )
 
+            # ─── Try It Section ─────────────────────────────────
+            # Show for ALL agents if OpenAI key is available globally
+            _has_openai = os.environ.get("OPENAI_API_KEY")
+            if not _has_openai:
+                try:
+                    _has_openai = st.secrets.get("OPENAI_API_KEY", None)
+                except Exception:
+                    _has_openai = None
+            if _has_openai and not _has_openai.startswith("sk-your"):
+                st.divider()
+                st.markdown("### 🚀 Try It Now")
+                st.caption("Test this agent directly — powered by your configured OpenAI API key.")
+
+                # Build a system prompt from agent description
+                agent_purpose = agent.get("description", agent.get("name", "AI Agent"))
+                system_prompt = (
+                    f"You are an AI agent called '{agent['name']}'. "
+                    f"Your purpose: {agent_purpose}. "
+                    "Respond helpfully and concisely to the user's input. "
+                    "Format your response with clear sections and use markdown."
+                )
+
+                user_input = st.text_area(
+                    "📝 Input",
+                    placeholder="Paste your text here to test this agent...",
+                    height=150,
+                    key=f"try_{agent_key}",
+                )
+
+                if st.button("🚀 Run Agent", key=f"run_{agent_key}", use_container_width=True):
+                    if not user_input:
+                        st.warning("Please enter some text to analyze.")
+                    else:
+                        api_key = os.environ.get("OPENAI_API_KEY")
+                        if not api_key:
+                            try:
+                                api_key = st.secrets.get("OPENAI_API_KEY", None)
+                            except Exception:
+                                api_key = None
+
+                        if not api_key:
+                            st.error("OpenAI API key not found.")
+                        else:
+                            with st.spinner("🔄 Running agent..."):
+                                try:
+                                    import json as _json
+                                    from urllib.request import Request, urlopen
+
+                                    req_data = _json.dumps({
+                                        "model": "gpt-4o-mini",
+                                        "messages": [
+                                            {"role": "system", "content": system_prompt},
+                                            {"role": "user", "content": user_input},
+                                        ],
+                                        "max_tokens": 1024,
+                                        "temperature": 0.3,
+                                    }).encode()
+
+                                    req = Request(
+                                        "https://api.openai.com/v1/chat/completions",
+                                        data=req_data,
+                                        headers={
+                                            "Authorization": f"Bearer {api_key}",
+                                            "Content-Type": "application/json",
+                                        },
+                                    )
+
+                                    with urlopen(req, timeout=30) as resp:
+                                        result = _json.loads(resp.read())
+
+                                    reply = result["choices"][0]["message"]["content"]
+                                    model = result.get("model", "gpt-4o-mini")
+                                    tokens = result.get("usage", {}).get("total_tokens", "?")
+
+                                    st.markdown("---")
+                                    st.markdown("#### 📊 Result")
+                                    st.markdown(reply)
+                                    st.caption(f"Model: `{model}` · Tokens: `{tokens}`")
+
+                                except Exception as e:
+                                    st.error(f"Error: {str(e)}")
+
             # Show requirements
             req_file = agent_path / "requirements.txt"
             if req_file.exists():
