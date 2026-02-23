@@ -1,0 +1,11 @@
+{
+    "h1": {"font": "Times", "size": 20, "style": "", "color": [0, 0, 0], "margin_top": 12},
+    "h2": {"font": "Times", "size": 16, "style": "", "color": [0, 0, 0], "margin_top": 10},
+    "h3": {"font": "Times", "size": 14, "style": "", "color": [0, 0, 0], "margin_top": 8},
+    "p": {"font": "Times", "size": 12, "style": "", "color": [0, 0, 0], "line_height": 7},
+    "code": {"font": "Courier", "size": 10, "style": "", "color": [0, 0, 0], "bg": [255, 255, 255], "line_height": 5},
+    "quote": {"font": "Times", "size": 12, "style": "I", "color": [100, 100, 100], "bg": [255, 255, 255]},
+    "table_header": {"font": "Times", "size": 12, "style": "U", "color": [0, 0, 0], "bg": [255, 255, 255]},
+    "table_cell": {"font": "Times", "size": 12, "style": "", "color": [0, 0, 0], "bg": [255, 255, 255]},
+    "page": {"bg": [255, 255, 255], "margins": 25}
+}

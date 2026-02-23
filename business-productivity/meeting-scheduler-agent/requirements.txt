@@ -1,0 +1,12 @@
+langchain
+langchain-community
+langchain-openai
+langgraph
+python-dotenv
+pydantic
+python-dateutil
+pytz
+rich
+icalendar
+pytest
+pytest-cov

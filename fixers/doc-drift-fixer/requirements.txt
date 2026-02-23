@@ -1,0 +1,8 @@
+langchain
+langchain-openai
+gitpython
+pygithub
+rich
+pytest
+python-dotenv
+requests

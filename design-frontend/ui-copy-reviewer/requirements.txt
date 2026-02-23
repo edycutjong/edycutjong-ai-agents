@@ -1,0 +1,7 @@
+langchain
+langchain-community
+langchain-openai
+pytest
+pytest-cov
+beautifulsoup4
+python-dotenv

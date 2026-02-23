@@ -1,0 +1,15 @@
+langchain
+openai
+requests
+apscheduler
+streamlit
+pandas
+python-dotenv
+sqlalchemy
+pytest
+pytest-cov
+pytest-mock
+schedule
+colorama
+langchain-openai
+langchain-community

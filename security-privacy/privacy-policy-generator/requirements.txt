@@ -1,0 +1,12 @@
+langchain
+langchain-community
+langchain-openai
+streamlit
+rich
+pytest
+pytest-cov
+python-dotenv
+markdown
+beautifulsoup4
+watchdog
+openai

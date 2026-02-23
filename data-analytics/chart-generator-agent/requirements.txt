@@ -1,0 +1,10 @@
+langchain
+langchain-openai
+langchain-google-genai
+pandas
+matplotlib
+seaborn
+jinja2
+python-dotenv
+pytest
+pytest-mock

@@ -1,0 +1,14 @@
+streamlit
+langchain
+langchain-community
+langchain-openai
+langchain-google-genai
+feedparser
+beautifulsoup4
+requests
+python-dotenv
+pytest
+pytest-cov
+tiktoken
+lxml
+regex

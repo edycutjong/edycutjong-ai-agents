@@ -1,0 +1,10 @@
+streamlit
+langchain
+langchain-community
+langchain-openai
+pyyaml
+httpx
+pydantic
+pytest
+pytest-mock
+rich

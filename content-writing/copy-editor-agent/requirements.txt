@@ -1,0 +1,9 @@
+langchain
+langchain-community
+langchain-openai
+streamlit
+textstat
+python-dotenv
+pytest
+pytest-mock
+watchdog

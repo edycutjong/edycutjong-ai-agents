@@ -1,0 +1,14 @@
+langchain
+langchain-community
+langchain-openai
+langchain-google-genai
+streamlit
+beautifulsoup4
+markdownify
+requests
+pytest
+pytest-cov
+python-dotenv
+rich
+lxml
+tiktoken

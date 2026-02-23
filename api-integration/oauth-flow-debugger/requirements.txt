@@ -1,0 +1,10 @@
+streamlit
+langchain
+langchain-openai
+python-dotenv
+requests
+pyjwt
+cryptography
+pytest
+pytest-cov
+pytest-mock

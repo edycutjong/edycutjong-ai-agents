@@ -1,0 +1,11 @@
+langchain
+langchain-openai
+streamlit
+openai
+reportlab
+python-dotenv
+pandas
+pytest
+pytest-mock
+rich
+markdown

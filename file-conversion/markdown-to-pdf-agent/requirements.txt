@@ -1,0 +1,9 @@
+markdown-it-py
+fpdf2
+python-frontmatter
+rich
+questionary
+langchain
+langchain-openai
+python-dotenv
+pytest

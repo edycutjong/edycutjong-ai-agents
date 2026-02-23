@@ -1,0 +1,13 @@
+langchain
+langchain-openai
+typer
+rich
+python-dotenv
+pydantic
+pytest
+pytest-mock
+pytest-cov
+requests
+requests-mock
+tenacity
+streamlit

@@ -1,0 +1,16 @@
+Meeting Date: 2023-10-27
+Attendees: Alice, Bob, Charlie
+
+Alice: Okay, let's get started. The main goal today is to decide on the database for the new project.
+Bob: I think we should go with PostgreSQL. It's robust and open source.
+Charlie: I agree. We already have experience with it.
+Alice: Sounds good. Decision made: PostgreSQL.
+Bob: Also, we need to update the API documentation by next Friday.
+Alice: Charlie, can you take that?
+Charlie: Sure, I'll update the API docs.
+Alice: Great. I'll draft the project timeline.
+Bob: I'm feeling really optimistic about this project.
+Charlie: Me too!
+Alice: Anything else?
+Bob: No.
+Alice: Meeting adjourned.

@@ -1,0 +1,5 @@
+You are a creative writing coach.
+Generate a journaling prompt based on the following theme: "{theme}".
+The prompt should be inspiring and suitable for a journal entry.
+
+Output ONLY the prompt text.

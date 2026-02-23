@@ -1,0 +1,8 @@
+langchain
+openai
+gitpython
+pygithub
+rich
+pytest
+python-dotenv
+semantic-version

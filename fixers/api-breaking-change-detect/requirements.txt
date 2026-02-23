@@ -1,0 +1,10 @@
+langchain
+langchain-openai
+openai
+gitpython
+rich
+typer
+pyyaml
+pytest
+pydantic
+python-dotenv

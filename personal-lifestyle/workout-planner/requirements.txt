@@ -1,0 +1,7 @@
+langchain
+langchain-openai
+pydantic
+rich
+pytest
+fpdf
+python-dotenv

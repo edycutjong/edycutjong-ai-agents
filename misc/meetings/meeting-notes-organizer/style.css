@@ -1,0 +1,86 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Gradient Background */
+.stApp {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    color: #f8fafc;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Headers */
+h1, h2, h3 {
+    color: #f8fafc !important;
+}
+
+h1 {
+    background: linear-gradient(to right, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* Buttons */
+div.stButton > button:first-child {
+    background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+div.stButton > button:first-child:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.5);
+}
+
+/* Text Area */
+.stTextArea textarea {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #f8fafc;
+    border-radius: 8px;
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 8px !important;
+    color: #f8fafc !important;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 20px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: transparent;
+    border-radius: 4px;
+    color: #94a3b8;
+    padding: 10px 20px;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: rgba(99, 102, 241, 0.2);
+    color: #818cf8;
+}
+
+/* Info box */
+.stAlert {
+    background-color: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    color: #c7d2fe;
+}

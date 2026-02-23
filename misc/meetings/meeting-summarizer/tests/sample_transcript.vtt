@@ -1,0 +1,40 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.000
+Alice: Okay, let's get started. The main goal today is to decide on the database for the new project.
+
+00:00:05.000 --> 00:00:10.000
+Bob: I think we should go with PostgreSQL. It's robust and open source.
+
+00:00:10.000 --> 00:00:15.000
+Charlie: I agree. We already have experience with it.
+
+00:00:15.000 --> 00:00:20.000
+Alice: Sounds good. Decision made: PostgreSQL.
+
+00:00:20.000 --> 00:00:25.000
+Bob: Also, we need to update the API documentation by next Friday.
+
+00:00:25.000 --> 00:00:30.000
+Alice: Charlie, can you take that?
+
+00:00:30.000 --> 00:00:35.000
+Charlie: Sure, I'll update the API docs.
+
+00:00:35.000 --> 00:00:40.000
+Alice: Great. I'll draft the project timeline.
+
+00:00:40.000 --> 00:00:45.000
+Bob: I'm feeling really optimistic about this project.
+
+00:00:45.000 --> 00:00:50.000
+Charlie: Me too!
+
+00:00:50.000 --> 00:00:55.000
+Alice: Anything else?
+
+00:00:55.000 --> 00:01:00.000
+Bob: No.
+
+00:01:00.000 --> 00:01:05.000
+Alice: Meeting adjourned.

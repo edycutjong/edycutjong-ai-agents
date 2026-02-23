@@ -1,0 +1,14 @@
+streamlit
+fastapi
+uvicorn
+langchain
+langchain-openai
+faker
+prance
+openapi-spec-validator
+pytest
+pytest-cov
+httpx
+watchdog
+PyYAML
+requests

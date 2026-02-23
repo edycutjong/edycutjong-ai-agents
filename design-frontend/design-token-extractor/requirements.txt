@@ -1,0 +1,9 @@
+langchain
+langchain-openai
+streamlit
+openai
+pydantic
+rich
+pytest
+pyyaml
+python-dotenv

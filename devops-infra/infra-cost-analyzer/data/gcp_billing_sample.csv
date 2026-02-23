@@ -1,0 +1,5 @@
+service.description,sku.id,cost,currency,usage.amount,usage.unit,usage_start_time,location.location,CPUUtilization
+Compute Engine,instance-gcp-1,2.5,USD,24.0,hour,2023-10-01,us-central1,90.0
+Compute Engine,instance-gcp-1,2.5,USD,24.0,hour,2023-10-02,us-central1,88.0
+Compute Engine,instance-gcp-2,1.0,USD,24.0,hour,2023-10-01,us-central1,5.0
+Compute Engine,instance-gcp-2,1.0,USD,24.0,hour,2023-10-02,us-central1,4.0

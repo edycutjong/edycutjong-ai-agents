@@ -1,0 +1,7 @@
+pandas
+flask
+flask-sqlalchemy
+flasgger
+streamlit
+jinja2
+python-dotenv

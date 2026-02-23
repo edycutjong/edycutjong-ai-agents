@@ -1,0 +1,12 @@
+langchain>=0.1.0
+langchain-openai>=0.1.0
+langchain-experimental>=0.0.50
+pandas
+openpyxl
+rich
+python-dotenv
+matplotlib
+seaborn
+pytest
+pytest-mock
+tabulate

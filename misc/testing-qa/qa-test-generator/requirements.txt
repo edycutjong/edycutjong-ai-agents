@@ -1,0 +1,12 @@
+streamlit
+langchain
+langchain-openai
+openai
+beautifulsoup4
+playwright
+pytest
+pytest-playwright
+pandas
+lxml
+rich
+python-dotenv

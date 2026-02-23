@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dead Code Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+        }
+    </style>
+</head>
+<body class="p-8">
+    <div class="max-w-6xl mx-auto">
+        <header class="mb-8 flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-bold gradient-text">CSS Dead Code Report</h1>
+                <p class="text-slate-400 mt-2">Generated on {{ timestamp }}</p>
+            </div>
+            <div class="text-right">
+                <div class="text-sm text-slate-400">Total Rules</div>
+                <div class="text-2xl font-bold text-white">{{ total_rules }}</div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="card rounded-xl p-6">
+                <h3 class="text-slate-400 text-sm font-medium mb-2">Efficiency Score</h3>
+                <div class="text-4xl font-bold text-emerald-400">{{ efficiency_score }}%</div>
+                <div class="w-full bg-slate-700 h-2 rounded-full mt-4">
+                    <div class="bg-emerald-400 h-2 rounded-full" style="width: {{ efficiency_score }}%"></div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl p-6">
+                <h3 class="text-slate-400 text-sm font-medium mb-2">Unused Rules</h3>
+                <div class="text-4xl font-bold text-rose-400">{{ unused_count }}</div>
+                <p class="text-sm text-slate-400 mt-2">out of {{ total_rules }} rules</p>
+            </div>
+
+            <div class="card rounded-xl p-6">
+                <h3 class="text-slate-400 text-sm font-medium mb-2">Potential Savings</h3>
+                <div class="text-4xl font-bold text-blue-400">{{ savings_kb }} KB</div>
+                <p class="text-sm text-slate-400 mt-2">estimated size reduction</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <div class="card rounded-xl p-6">
+                <h3 class="text-xl font-bold text-white mb-4">Media Query Usage</h3>
+                <div class="relative h-64">
+                    <canvas id="mediaChart"></canvas>
+                </div>
+            </div>
+
+            <div class="card rounded-xl p-6">
+                <h3 class="text-xl font-bold text-white mb-4">Top Unused Selectors</h3>
+                <div class="overflow-y-auto h-64">
+                    <table class="w-full text-left text-sm">
+                        <thead class="text-slate-400 border-b border-slate-700">
+                            <tr>
+                                <th class="pb-2">Selector</th>
+                                <th class="pb-2">Source</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-slate-300">
+                            {% for rule in top_unused %}
+                            <tr class="border-b border-slate-800 last:border-0">
+                                <td class="py-2 font-mono text-rose-300">{{ rule.selector }}</td>
+                                <td class="py-2 text-slate-500">{{ rule.source }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card rounded-xl p-6">
+            <h3 class="text-xl font-bold text-white mb-4">Detailed Audit</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-slate-800 text-slate-400">
+                        <tr>
+                            <th class="p-3 rounded-l-lg">Selector</th>
+                            <th class="p-3">Status</th>
+                            <th class="p-3 rounded-r-lg">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-700">
+                        {% for item in detailed_audit %}
+                        <tr class="hover:bg-slate-800/50 transition-colors">
+                            <td class="p-3 font-mono text-slate-300">{{ item.selector }}</td>
+                            <td class="p-3">
+                                {% if item.status == 'Unused' %}
+                                <span class="bg-rose-500/20 text-rose-300 px-2 py-1 rounded text-xs">Unused</span>
+                                {% else %}
+                                <span class="bg-emerald-500/20 text-emerald-300 px-2 py-1 rounded text-xs">Used</span>
+                                {% endif %}
+                            </td>
+                            <td class="p-3 text-slate-500">{{ item.details }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('mediaChart').getContext('2d');
+        const mediaData = {{ media_chart_data | tojson }};
+
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: Object.keys(mediaData),
+                datasets: [{
+                    data: Object.values(mediaData),
+                    backgroundColor: [
+                        '#818cf8', '#34d399', '#f472b6', '#fbbf24', '#60a5fa'
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: { color: '#94a3b8' }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

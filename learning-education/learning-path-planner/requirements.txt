@@ -1,0 +1,7 @@
+rich
+pydantic
+langchain
+langchain-community
+langchain-openai
+python-dotenv
+pytest

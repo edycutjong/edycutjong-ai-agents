@@ -1,0 +1,13 @@
+langchain
+langchain-openai
+gitpython
+pygithub
+beautifulsoup4
+cssutils
+rich
+pytest
+jinja2
+playwright
+typer
+python-dotenv
+Pillow

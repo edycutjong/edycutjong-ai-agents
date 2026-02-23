@@ -1,0 +1,9 @@
+langchain
+langchain-openai
+openai
+gitpython
+pygithub
+rich
+typer
+pytest
+ast-grep-py

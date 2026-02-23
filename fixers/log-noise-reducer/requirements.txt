@@ -1,0 +1,6 @@
+rich
+langchain
+openai
+gitpython
+pygithub
+pytest

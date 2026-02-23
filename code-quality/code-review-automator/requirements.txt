@@ -1,0 +1,9 @@
+streamlit
+langchain
+langchain-openai
+PyGithub
+python-dotenv
+rich
+unidiff
+tenacity
+tiktoken

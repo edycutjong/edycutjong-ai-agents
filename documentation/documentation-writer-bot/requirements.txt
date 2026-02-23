@@ -1,0 +1,10 @@
+langchain
+langchain-openai
+rich
+typer
+gitpython
+pathspec
+python-dotenv
+pytest
+pytest-cov
+requests

@@ -1,0 +1,7 @@
+langchain
+langchain-community
+langchain-openai
+pandas
+pytest
+python-dotenv
+tiktoken

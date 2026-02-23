@@ -1,0 +1,11 @@
+{
+    "h1": {"font": "Helvetica", "size": 24, "style": "B", "color": [231, 76, 60], "margin_top": 10},
+    "h2": {"font": "Helvetica", "size": 18, "style": "B", "color": [236, 240, 241], "margin_top": 8},
+    "h3": {"font": "Helvetica", "size": 14, "style": "B", "color": [236, 240, 241], "margin_top": 6},
+    "p": {"font": "Helvetica", "size": 11, "style": "", "color": [236, 240, 241], "line_height": 6},
+    "code": {"font": "Courier", "size": 10, "style": "", "color": [255, 255, 255], "bg": [52, 73, 94], "line_height": 5},
+    "quote": {"font": "Helvetica", "size": 11, "style": "I", "color": [189, 195, 199], "bg": [52, 73, 94]},
+    "table_header": {"font": "Helvetica", "size": 11, "style": "B", "color": [231, 76, 60], "bg": [52, 73, 94]},
+    "table_cell": {"font": "Helvetica", "size": 11, "style": "", "color": [236, 240, 241], "bg": [44, 62, 80]},
+    "page": {"bg": [44, 62, 80], "margins": 20}
+}

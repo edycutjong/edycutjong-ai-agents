@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ISSUE-101",
+    "title": "Login page crashes on submit",
+    "description": "When I click the submit button on the login page, the application crashes with a 500 error. I am using Chrome on Windows.",
+    "status": "open",
+    "severity": "high",
+    "team": "Frontend",
+    "created_at": "2023-10-25T10:00:00",
+    "labels": ["bug", "login"],
+    "analysis": "This seems to be a critical frontend issue affecting user access.",
+    "sentiment": "negative"
+  },
+  {
+    "id": "ISSUE-102",
+    "title": "Add dark mode support",
+    "description": "It would be great to have a dark mode for the dashboard. The white background is too bright at night.",
+    "status": "open",
+    "severity": "low",
+    "team": "Frontend",
+    "created_at": "2023-10-26T14:30:00",
+    "labels": ["feature-request", "ui"],
+    "analysis": "Feature request for UI enhancement.",
+    "sentiment": "positive"
+  },
+  {
+    "id": "ISSUE-103",
+    "title": "Database connection timeout",
+    "description": "The API is returning 504 Gateway Timeout errors intermittently. Logs show database connection pool exhaustion.",
+    "status": "open",
+    "severity": "critical",
+    "team": "Backend",
+    "created_at": "2023-10-27T09:15:00",
+    "labels": ["bug", "database", "performance"],
+    "analysis": "Critical backend infrastructure issue.",
+    "sentiment": "negative"
+  },
+  {
+    "id": "ISSUE-104",
+    "title": "Login button not working",
+    "description": "Clicking login does nothing. Same behavior as reported by others.",
+    "status": "open",
+    "severity": "high",
+    "team": "Frontend",
+    "created_at": "2023-10-27T11:00:00",
+    "labels": ["bug", "login"],
+    "analysis": "Potential duplicate of ISSUE-101.",
+    "sentiment": "neutral"
+  },
+  {
+    "id": "ISSUE-105",
+    "title": "Typo in welcome email",
+    "description": "The welcome email says 'Welcom' instead of 'Welcome'.",
+    "status": "closed",
+    "severity": "low",
+    "team": "Marketing",
+    "created_at": "2023-09-01T08:00:00",
+    "labels": ["bug", "content"],
+    "analysis": "Minor content issue.",
+    "sentiment": "neutral"
+  },
+  {
+    "id": "ISSUE-106",
+    "title": "Old stale issue about deprecated API",
+    "description": "We need to update the v1 API endpoint documentation.",
+    "status": "open",
+    "severity": "medium",
+    "team": "Backend",
+    "created_at": "2023-01-15T10:00:00",
+    "labels": ["documentation"],
+    "analysis": "Documentation update task.",
+    "sentiment": "neutral"
+  }
+]

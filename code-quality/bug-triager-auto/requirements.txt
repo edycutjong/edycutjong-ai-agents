@@ -1,0 +1,11 @@
+streamlit
+langchain
+langchain-community
+langchain-openai
+python-dotenv
+pandas
+altair
+pytest
+pytest-mock
+faker
+watchdog

@@ -1,0 +1,16 @@
+langchain
+langchain-community
+langchain-openai
+streamlit
+python-dotenv
+pytest
+pytest-cov
+sqlparse
+pandas
+faker
+pymongo
+boto3
+sqlalchemy
+black
+isort
+mypy
