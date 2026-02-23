@@ -1,11 +1,26 @@
 # AGENTS.md — AI Agents & Pipelines
 
 ## Overview
-AI-powered agents and automation pipelines — **183 agents** across **16 categories**.
+AI-powered agents and automation pipelines — **182 agents** across **21 categories**.
+
+### API Keys
+
+| Key | Agents | Required For |
+|-----|--------|-------------|
+| ⭐ `OPENAI_API_KEY` | 79 | Most LLM-powered agents |
+| `GOOGLE_API_KEY` | 7 | Gemini-based agents |
+| `GEMINI_API_KEY` | 6 | Gemini-based agents |
+| `GITHUB_TOKEN` | 6 | Code review, bug triage, fixers |
+| `ANTHROPIC_API_KEY` | 1 | Email triage |
+| `FIGMA_ACCESS_TOKEN` | 1 | Figma-to-CSS |
+| `SERPAPI_API_KEY` | 1 | Travel itinerary |
+| `PAGERDUTY_API_KEY` | 1 | Incident responder |
+
+> 103 agents work offline — no API key needed.
 
 ---
 
-## 🧠 AI Agent Frameworks (`ai-frameworks/`)
+## 🧠 AI Agent Frameworks (`ai-frameworks/`) — `OPENAI_API_KEY`
 | Directory | Framework | Tech |
 |-----------|-----------|------|
 | `autogen-agent/` | AutoGen | Python |
@@ -14,7 +29,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 🔍 Code Quality & Review (`code-quality/`)
+## 🔍 Code Quality & Review (`code-quality/`) — `OPENAI_API_KEY` `GITHUB_TOKEN`
 | Directory | Description |
 |-----------|-------------|
 | `code-reviewer/` | AI code review agent |
@@ -24,7 +39,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 🧪 Testing & QA (`testing-qa/`)
+## 🧪 Testing & QA (`testing-qa/`) — `OPENAI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `test-generator/` | Unit test writer |
@@ -32,7 +47,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 📝 Documentation (`documentation/`)
+## 📝 Documentation (`documentation/`) — `OPENAI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `doc-writer/` | Parse AST, generate docstrings & READMEs |
@@ -41,7 +56,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## ✉️ Communication & Email (`communication/`)
+## ✉️ Communication & Email (`communication/`) — `OPENAI_API_KEY` `ANTHROPIC_API_KEY` `GEMINI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `email-drafter/` | Context-aware email response bot |
@@ -49,7 +64,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 🎙️ Meetings & Notes (`meetings/`)
+## 🎙️ Meetings & Notes (`meetings/`) — `OPENAI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `meeting-summarizer/` | Transcript processor |
@@ -57,7 +72,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 🔬 Research & Data (`research-data/`)
+## 🔬 Research & Data (`research-data/`) — `OPENAI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `research-summarizer-agent/` | Deep research agent |
@@ -66,7 +81,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 📣 Content & Marketing (`content-marketing/`)
+## 📣 Content & Marketing (`content-marketing/`) — `OPENAI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `social-media-manager-agent/` | Social content management |
@@ -74,7 +89,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 🔧 Codebase Fixers (`fixers/`)
+## 🔧 Codebase Fixers (`fixers/`) — `OPENAI_API_KEY` `GITHUB_TOKEN`
 | Directory | Description |
 |-----------|-------------|
 | `api-breaking-change-detect/` | Detect breaking API changes |
@@ -90,7 +105,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 🏗️ DevOps & Infrastructure (`devops-infra/`) — NEW
+## 🏗️ DevOps & Infrastructure (`devops-infra/`) — `OPENAI_API_KEY` `GOOGLE_API_KEY` `PAGERDUTY_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `incident-responder/` | Log monitoring & incident reports |
@@ -106,7 +121,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 🔒 Security & Privacy (`security-privacy/`) — NEW
+## 🔒 Security & Privacy (`security-privacy/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `secret-scanner/` | Leaked API key detector |
@@ -120,7 +135,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 📊 Data & Analytics (`data-analytics/`) — NEW
+## 📊 Data & Analytics (`data-analytics/`) — `OPENAI_API_KEY` `GOOGLE_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `csv-cleaner/` | Messy CSV fixer |
@@ -136,7 +151,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 🤖 AI & ML Ops (`ai-ml-ops/`) — NEW
+## 🤖 AI & ML Ops (`ai-ml-ops/`) — `OPENAI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `prompt-optimizer/` | Prompt A/B testing |
@@ -150,7 +165,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 🌐 API & Integration (`api-integration/`) — NEW
+## 🌐 API & Integration (`api-integration/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `api-doc-generator/` | OpenAPI spec generator |
@@ -164,7 +179,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## ✍️ Content & Writing (`content-writing/`) — NEW
+## ✍️ Content & Writing (`content-writing/`) — `OPENAI_API_KEY` `GOOGLE_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `blog-post-writer/` | SEO blog writer |
@@ -180,7 +195,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 💼 Business & Productivity (`business-productivity/`) — NEW
+## 💼 Business & Productivity (`business-productivity/`) — `OPENAI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `invoice-generator-agent/` | PDF invoice creator |
@@ -196,7 +211,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 🎨 Design & Frontend (`design-frontend/`) — NEW
+## 🎨 Design & Frontend (`design-frontend/`) — `OPENAI_API_KEY` `GOOGLE_API_KEY` `GEMINI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `color-palette-generator/` | Color scheme creator |
@@ -210,7 +225,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 🎓 Learning & Education (`learning-education/`) — NEW
+## 🎓 Learning & Education (`learning-education/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `flashcard-generator/` | Anki flashcard creator |
@@ -222,7 +237,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 🔄 File & Format Conversion (`file-conversion/`) — NEW
+## 🔄 File & Format Conversion (`file-conversion/`) — `OPENAI_API_KEY` `GEMINI_API_KEY` `FIGMA_ACCESS_TOKEN`
 | Directory | Description |
 |-----------|-------------|
 | `markdown-to-pdf-agent/` | MD to styled PDF |
@@ -236,7 +251,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 🏠 Personal & Lifestyle (`personal-lifestyle/`) — NEW
+## 🏠 Personal & Lifestyle (`personal-lifestyle/`) — `OPENAI_API_KEY` `GOOGLE_API_KEY` `SERPAPI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `recipe-planner/` | Meal plan generator |
@@ -248,7 +263,7 @@ AI-powered agents and automation pipelines — **183 agents** across **16 catego
 
 ---
 
-## 🛠️ Code Generation & Scaffolding (`code-generation/`) — NEW
+## 🛠️ Code Generation & Scaffolding (`code-generation/`) — `OPENAI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `boilerplate-generator/` | Project scaffold creator |
