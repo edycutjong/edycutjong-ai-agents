@@ -234,7 +234,9 @@ def main():
 
     # Sidebar
     with st.sidebar:
-        st.markdown("## 🧠 AI Agents Hub")
+        if st.button("🧠 AI Agents Hub", type="tertiary"):
+            st.query_params.clear()
+            st.rerun()
         st.markdown(f"**{len(agents)}** agents · **{len(categories)}** categories")
         st.divider()
 
