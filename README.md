@@ -44,3 +44,27 @@
 pip install streamlit
 streamlit run app.py
 ```
+
+## Why Streamlit?
+
+> **Right tool for the right job.** The Agents Hub runs Python agents — Streamlit is purpose-built for that. The portfolio site needs SEO and custom design — Next.js on Vercel is purpose-built for that.
+
+### Why Agents Hub uses Streamlit (not Vercel)
+
+| Reason | Streamlit | Next.js on Vercel |
+|--------|-----------|-------------------|
+| **Python-native** | Agents are Python scripts — runs them natively | Needs separate Python backend for every agent |
+| **Interactive REPL** | `st.text_area` → run Python → display result, 1 file | Custom API layer + React frontend needed |
+| **Rapid prototyping** | 1 file (`app.py`) = full app with sidebar, tabs, state | Multiple files: components, API routes, state |
+| **Free hosting** | Streamlit Community Cloud — free, auto-deploy | Vercel free tier limits serverless execution |
+| **Data science** | Direct access to pandas, numpy, matplotlib | Requires API bridge to Python |
+
+### Why the Portfolio Site uses Next.js (not Streamlit)
+
+| Reason | Next.js | Streamlit |
+|--------|---------|-----------|
+| **SEO** | SSR, meta tags, sitemaps — Google indexes it | SPA with no SSR, invisible to search engines |
+| **Custom design** | Full CSS, animations, layout control | Limited to Streamlit's widget system |
+| **Performance** | Static pages load in milliseconds | WebSocket connection overhead |
+| **Routing** | Clean URLs (`/en/web`, `/id/mobile`) | Only query params (`?agent=xyz`) |
+| **i18n** | Proper `[locale]/` routing with middleware | Sidebar dropdown |
