@@ -306,7 +306,7 @@ def main():
             st.rerun()
 
         # Surprise Me button
-        st.markdown("<small>� Not sure where to start?</small>", unsafe_allow_html=True)
+        st.markdown("<small>&#10024; Not sure where to start?</small>", unsafe_allow_html=True)
         if st.button("Surprise Me", key="surprise_me", use_container_width=True):
             pick = random.choice(list(agents.keys()))
             st.query_params["agent"] = pick
