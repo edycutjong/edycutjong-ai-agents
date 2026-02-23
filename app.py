@@ -371,21 +371,107 @@ def _render_agent_detail(agent, agent_key):
 
     agent_path = Path(agent["path"])
 
-    # Tabs: Code, README, Run
-    tabs = ["📄 Code", "📖 README"]
+    # Tabs: Try It (first/default), README, Code, Setup
+    tabs = ["🚀 Try It", "📖 README", "📄 Code"]
     if agent["has_main"]:
-        tabs.append("▶️ Run Agent")
+        tabs.append("⚙️ Setup")
 
     tab_objects = st.tabs(tabs)
 
-    # Code tab
+    # ─── Tab 0: Try It ─────────────────────────────────
     with tab_objects[0]:
+        # Check if OpenAI key is available globally
+        _has_openai = os.environ.get("OPENAI_API_KEY")
+        if not _has_openai:
+            try:
+                _has_openai = st.secrets.get("OPENAI_API_KEY", None)
+            except Exception:
+                _has_openai = None
+
+        if _has_openai and not _has_openai.startswith("sk-your"):
+            st.caption("Test this agent directly — powered by OpenAI")
+
+            agent_purpose = agent.get("description", agent.get("name", "AI Agent"))
+            system_prompt = (
+                f"You are an AI agent called '{agent['name']}'. "
+                f"Your purpose: {agent_purpose}. "
+                "Respond helpfully and concisely to the user's input. "
+                "Format your response with clear sections and use markdown."
+            )
+
+            user_input = st.text_area(
+                "📝 Input",
+                placeholder="Type or paste your text here...",
+                height=150,
+                key=f"try_{agent_key}",
+            )
+
+            if st.button("🚀 Run", key=f"run_{agent_key}", use_container_width=True):
+                if not user_input:
+                    st.warning("Please enter some text.")
+                else:
+                    with st.spinner("🔄 Running agent..."):
+                        try:
+                            import json as _json
+                            from urllib.request import Request, urlopen
+
+                            req_data = _json.dumps({
+                                "model": "gpt-4o-mini",
+                                "messages": [
+                                    {"role": "system", "content": system_prompt},
+                                    {"role": "user", "content": user_input},
+                                ],
+                                "max_tokens": 1024,
+                                "temperature": 0.3,
+                            }).encode()
+
+                            req = Request(
+                                "https://api.openai.com/v1/chat/completions",
+                                data=req_data,
+                                headers={
+                                    "Authorization": f"Bearer {_has_openai}",
+                                    "Content-Type": "application/json",
+                                },
+                            )
+
+                            with urlopen(req, timeout=30) as resp:
+                                result = _json.loads(resp.read())
+
+                            reply = result["choices"][0]["message"]["content"]
+                            model = result.get("model", "gpt-4o-mini")
+                            tokens = result.get("usage", {}).get("total_tokens", "?")
+
+                            st.divider()
+                            st.markdown("#### 📊 Result")
+                            st.markdown(reply)
+                            st.caption(f"Model: `{model}` · Tokens: `{tokens}`")
+
+                        except Exception as e:
+                            st.error(f"Error: {str(e)}")
+        else:
+            st.warning(
+                "⚠️ **OpenAI API key required**  \n"
+                "Set `OPENAI_API_KEY` in Streamlit Secrets or your environment to enable live testing."
+            )
+
+    # ─── Tab 1: README ─────────────────────────────────
+    with tab_objects[1]:
+        agents_md = agent_path / "AGENTS.md"
+        readme = agent_path / "README.md"
+        if agents_md.exists():
+            st.markdown(agents_md.read_text(encoding="utf-8"))
+        elif readme.exists():
+            st.markdown(readme.read_text(encoding="utf-8"))
+        else:
+            st.info("No README available for this agent.")
+
+    # ─── Tab 2: Code ───────────────────────────────────
+    with tab_objects[2]:
         main_py = agent_path / "main.py"
         if main_py.exists():
             st.markdown('<div class="code-header">main.py</div>', unsafe_allow_html=True)
             st.code(main_py.read_text(encoding="utf-8"), language="python", line_numbers=True)
 
-        # Show other Python files
         py_files = sorted(agent_path.rglob("*.py"))
         other_files = [f for f in py_files if f.name != "main.py" and "__pycache__" not in str(f)]
         if other_files:
@@ -398,20 +484,9 @@ def _render_agent_detail(agent, agent_key):
                     except Exception:
                         st.warning(f"Could not read {rel}")
 
-    # README tab
-    with tab_objects[1]:
-        agents_md = agent_path / "AGENTS.md"
-        readme = agent_path / "README.md"
-        if agents_md.exists():
-            st.markdown(agents_md.read_text(encoding="utf-8"))
-        elif readme.exists():
-            st.markdown(readme.read_text(encoding="utf-8"))
-        else:
-            st.info("No README available for this agent.")
-
-    # Run tab
-    if agent["has_main"] and len(tab_objects) > 2:
-        with tab_objects[2]:
+    # ─── Tab 3: Setup ─────────────────────────────────
+    if agent["has_main"] and len(tab_objects) > 3:
+        with tab_objects[3]:
             # Detect if it's a Streamlit app or a plain CLI script
             main_content = ""
             try:
@@ -460,21 +535,17 @@ def _render_agent_detail(agent, agent_key):
                     except Exception:
                         continue
 
-            # Show env var info — check which are actually configured
+            # Only show warnings for missing keys — hide when all configured
             if env_vars:
-                configured = []
                 missing = []
                 for v in env_vars:
-                    # Check os.environ and st.secrets
                     val = os.environ.get(v)
                     if not val:
                         try:
                             val = st.secrets.get(v, None)
                         except Exception:
                             val = None
-                    if val and not val.startswith("sk-your") and not val.startswith("your-") and not val.startswith("ghp_your"):
-                        configured.append(v)
-                    else:
+                    if not val or val.startswith("sk-your") or val.startswith("your-") or val.startswith("ghp_your"):
                         missing.append(v)
 
                 if missing:
@@ -483,15 +554,6 @@ def _render_agent_detail(agent, agent_key):
                         + ", ".join(f"`{v}`" for v in missing)
                         + "  \nSet these in Streamlit Secrets or environment variables."
                     )
-                if configured:
-                    st.success(
-                        "✅ **API keys configured:**  "
-                        + ", ".join(f"`{v}`" for v in configured)
-                    )
-                if not missing and not configured:
-                    st.success("✅ **No API keys required** — this agent runs standalone.")
-            else:
-                st.success("✅ **No API keys required** — this agent runs standalone.")
 
             if is_streamlit:
                 st.info(
@@ -518,88 +580,6 @@ def _render_agent_detail(agent, agent_key):
                         "python main.py --help",
                         language="bash",
                     )
-
-            # ─── Try It Section ─────────────────────────────────
-            # Show for ALL agents if OpenAI key is available globally
-            _has_openai = os.environ.get("OPENAI_API_KEY")
-            if not _has_openai:
-                try:
-                    _has_openai = st.secrets.get("OPENAI_API_KEY", None)
-                except Exception:
-                    _has_openai = None
-            if _has_openai and not _has_openai.startswith("sk-your"):
-                st.divider()
-                st.markdown("### 🚀 Try It Now")
-                st.caption("Test this agent directly — powered by your configured OpenAI API key.")
-
-                # Build a system prompt from agent description
-                agent_purpose = agent.get("description", agent.get("name", "AI Agent"))
-                system_prompt = (
-                    f"You are an AI agent called '{agent['name']}'. "
-                    f"Your purpose: {agent_purpose}. "
-                    "Respond helpfully and concisely to the user's input. "
-                    "Format your response with clear sections and use markdown."
-                )
-
-                user_input = st.text_area(
-                    "📝 Input",
-                    placeholder="Paste your text here to test this agent...",
-                    height=150,
-                    key=f"try_{agent_key}",
-                )
-
-                if st.button("🚀 Run Agent", key=f"run_{agent_key}", use_container_width=True):
-                    if not user_input:
-                        st.warning("Please enter some text to analyze.")
-                    else:
-                        api_key = os.environ.get("OPENAI_API_KEY")
-                        if not api_key:
-                            try:
-                                api_key = st.secrets.get("OPENAI_API_KEY", None)
-                            except Exception:
-                                api_key = None
-
-                        if not api_key:
-                            st.error("OpenAI API key not found.")
-                        else:
-                            with st.spinner("🔄 Running agent..."):
-                                try:
-                                    import json as _json
-                                    from urllib.request import Request, urlopen
-
-                                    req_data = _json.dumps({
-                                        "model": "gpt-4o-mini",
-                                        "messages": [
-                                            {"role": "system", "content": system_prompt},
-                                            {"role": "user", "content": user_input},
-                                        ],
-                                        "max_tokens": 1024,
-                                        "temperature": 0.3,
-                                    }).encode()
-
-                                    req = Request(
-                                        "https://api.openai.com/v1/chat/completions",
-                                        data=req_data,
-                                        headers={
-                                            "Authorization": f"Bearer {api_key}",
-                                            "Content-Type": "application/json",
-                                        },
-                                    )
-
-                                    with urlopen(req, timeout=30) as resp:
-                                        result = _json.loads(resp.read())
-
-                                    reply = result["choices"][0]["message"]["content"]
-                                    model = result.get("model", "gpt-4o-mini")
-                                    tokens = result.get("usage", {}).get("total_tokens", "?")
-
-                                    st.markdown("---")
-                                    st.markdown("#### 📊 Result")
-                                    st.markdown(reply)
-                                    st.caption(f"Model: `{model}` · Tokens: `{tokens}`")
-
-                                except Exception as e:
-                                    st.error(f"Error: {str(e)}")
 
             # Show requirements
             req_file = agent_path / "requirements.txt"
