@@ -747,7 +747,7 @@ def _render_agent_detail(agent, agent_key):
                 st.markdown(f"**{base_label}**")
 
             user_input = st.text_area(
-                "hidden_label",
+                base_label,
                 label_visibility="collapsed",
                 placeholder=tr.get('default_input_placeholder', placeholder) if placeholder == "Describe what you need or paste your text..." else placeholder,
                 height=150,
