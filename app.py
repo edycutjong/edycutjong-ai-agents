@@ -11,6 +11,7 @@ from datetime import datetime
 from pathlib import Path
 from examples import get_agent_hint
 from i18n import LOCALES, LOCALE_NAMES, get_translations
+from st_keyup import st_keyup
 
 # Load .env file locally (on Streamlit Cloud, st.secrets handles this)
 _env_file = Path(__file__).parent / ".env"
@@ -139,6 +140,27 @@ st.markdown("""
     }
 
     div[data-testid="stVerticalBlock"] > div { gap: 0.5rem; }
+
+    /* Loading Skeleton Styling */
+    .stSpinner > div {
+        background: var(--card-bg) !important;
+        border: 1px solid var(--card-border) !important;
+        border-radius: 12px !important;
+        padding: 1.5rem 2rem !important;
+        margin: 1rem 0 !important;
+    }
+    .stSpinner > div > div {
+        font-family: 'Inter', sans-serif !important;
+        font-size: 1rem !important;
+        font-weight: 500 !important;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    .stSpinner > div > div > img {
+        width: 22px !important;
+        height: 22px !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -303,6 +325,12 @@ def main():
     </script>
     """, height=0)
 
+    # Sync locale with query params on initial load or change
+    if "lang" in st.query_params:
+        url_lang = st.query_params["lang"]
+        if url_lang in LOCALE_NAMES and st.session_state.get("locale") != url_lang:
+            st.session_state["locale"] = url_lang
+
     agents = discover_agents()
     categories = sorted(set(a["category"] for a in agents.values()))
 
@@ -323,8 +351,26 @@ def main():
         )
         if selected_locale != st.session_state.get("locale"):
             st.session_state["locale"] = selected_locale
+            st.query_params["lang"] = selected_locale
             st.rerun()
         tr = get_translations(st.session_state.get("locale", "en"))
+        
+        # Inject dynamic CSS to localize the native Streamlit InputInstructions
+        st.markdown(f"""
+        <style>
+        div[data-testid="InputInstructions"] > span {{
+            font-size: 0 !important;
+        }}
+        .stTextInput div[data-testid="InputInstructions"] > span::after {{
+            content: "↵ {tr.get('press_enter', 'Press Enter to apply')}";
+            font-size: 0.75rem;
+        }}
+        .stTextArea div[data-testid="InputInstructions"] > span::after {{
+            content: "⌘ ↵ {tr.get('press_enter', 'Press Enter to apply')}";
+            font-size: 0.75rem;
+        }}
+        </style>
+        """, unsafe_allow_html=True)
 
         st.markdown(f"### 🧠 {tr['title']}")
         st.markdown(f"**{len(agents)}** {tr['sidebar_agents']} · **{len(categories)}** {tr['sidebar_categories']}")
@@ -346,13 +392,35 @@ def main():
                 del st.query_params["agent"]
                 st.rerun()
 
-        # Search
-        search = st.text_input(f"🔍 {tr['search']}", placeholder=tr['search'])
-
-        # Clear agent selection when search changes
-        if search and "agent" in st.query_params:
-            del st.query_params["agent"]
+        # Search Input (real-time keyup to allow button disabled state to toggle on typing)
+        search_val = st_keyup(f"🔍 {tr['search']}", placeholder=tr['search'], key="keyup_search_val", debounce=100)
+        if search_val is None:
+            search_val = ""
+        
+        # Track last applied search term
+        if "last_search" not in st.session_state:
+            st.session_state.last_search = ""
+            
+        # Automatically clear search filters if the user deletes all text and presses enter
+        if len(search_val) == 0 and st.session_state.last_search != "":
+            st.session_state.last_search = ""
+            if "agent" in st.query_params:
+                del st.query_params["agent"]
+                
+        # Only enable if >= 1 char AND it has changed from the currently applied search
+        disable_btn = len(search_val) < 1 or search_val == st.session_state.last_search
+        
+        # Change button text exactly to something like 'Search'
+        btn_label = tr.get("search_btn", "Search")
+        
+        if st.button(btn_label, key="search_button", use_container_width=True, disabled=disable_btn):
+            st.session_state.last_search = search_val
+            if search_val and "agent" in st.query_params:
+                del st.query_params["agent"]
             st.rerun()
+
+        # The actual filter variable used for agents is now the committed search
+        search = st.session_state.last_search
 
         # Surprise Me button
         st.markdown(f"<small>{tr['surprise_hint']}</small>", unsafe_allow_html=True)
@@ -548,6 +616,9 @@ def _render_agent_detail(agent, agent_key):
             except Exception:
                 pass
 
+            # Check current app language
+            current_locale = st.session_state.get("locale", "en")
+            
             system_prompt = (
                 f"You are an AI agent called '{agent['name']}'. "
                 f"Your purpose: {agent_purpose}.{_cli_help} "
@@ -563,8 +634,12 @@ def _render_agent_detail(agent, agent_key):
             if seen_key not in st.session_state:
                 st.session_state[seen_key] = []
 
+            running_key = f"running_{agent_key}"
+            is_running = st.session_state.get(running_key, False)
+            cache_key = f"cache_{agent_key}"
+
             btn_label = f"🔄 {tr['load_example']}" if st.session_state[seen_key] else f"💡 {tr['load_example']}"
-            if st.button(btn_label, key=f"load_{agent_key}"):
+            if st.button(btn_label, key=f"load_{agent_key}", disabled=is_running):
                 seen = st.session_state[seen_key]
                 remaining = [i for i in range(len(examples)) if i not in seen]
                 if not remaining:  # all shown, reset
@@ -575,12 +650,37 @@ def _render_agent_detail(agent, agent_key):
                 st.session_state[ta_key] = examples[pick]
                 st.rerun()
 
-            running_key = f"running_{agent_key}"
-            is_running = st.session_state.get(running_key, False)
-            cache_key = f"cache_{agent_key}"
+            force_translate = False
+            base_label = tr.get('default_input_label', label) if label == "📝 Your Input" else label
+            
+            if current_locale != "en":
+                col_label, col_toggle = st.columns([1, 1])
+                with col_label:
+                    st.markdown(f"**{base_label}**")
+                
+                lang_names = {
+                    "id": "Indonesian", "zh": "Chinese", "hi": "Hindi", 
+                    "es": "Spanish", "fr": "French", "ar": "Arabic", 
+                    "bn": "Bengali", "pt": "Portuguese", "ru": "Russian", "ja": "Japanese"
+                }
+                target_lang = lang_names.get(current_locale, current_locale)
+                toggle_str = tr.get("translate_toggle", f"🌐 Translate response to {{lang}}").replace("{lang}", target_lang)
+                
+                with col_toggle:
+                    force_translate = st.toggle(
+                        toggle_str, 
+                        value=st.session_state.get(f"translate_{agent_key}", True),
+                        key=f"translate_{agent_key}",
+                        disabled=is_running
+                    )
+                if force_translate:
+                    system_prompt += f"\nIMPORTANT: You MUST write your entire response in {target_lang}."
+            else:
+                st.markdown(f"**{base_label}**")
 
             user_input = st.text_area(
-                tr.get('default_input_label', label) if label == "📝 Your Input" else label,
+                "hidden_label",
+                label_visibility="collapsed",
                 placeholder=tr.get('default_input_placeholder', placeholder) if placeholder == "Describe what you need or paste your text..." else placeholder,
                 height=150,
                 key=ta_key,

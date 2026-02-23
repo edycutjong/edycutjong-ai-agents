@@ -93,6 +93,8 @@ _translations = {
         "missing_api_keys": "⚠️ **Missing API keys:**",
         "set_api_keys_hint": "Set these in Streamlit Secrets or environment variables.",
         "streamlit_app_info": "This is a **Streamlit app** — run it separately:",
+        "translate_toggle": "🌐 Translate response to {lang}",
+        "press_enter": "Press Enter to apply",
     },
     "id": {
         "title": "Pusat Agen AI",
@@ -166,6 +168,8 @@ _translations = {
         "missing_api_keys": "⚠️ **Kunci API tidak ada:**",
         "set_api_keys_hint": "Atur di Streamlit Secrets atau variabel lingkungan.",
         "streamlit_app_info": "Ini adalah **aplikasi Streamlit** — jalankan secara terpisah:",
+        "translate_toggle": "🌐 Terjemahkan respons ke {lang}",
+        "press_enter": "Tekan Enter untuk menerapkan",
     },
     "zh": {
         "title": "AI 智能体中心",
@@ -239,6 +243,8 @@ _translations = {
         "missing_api_keys": "⚠️ **缺少 API 密钥：**",
         "set_api_keys_hint": "在 Streamlit Secrets 或环境变量中设置。",
         "streamlit_app_info": "这是一个 **Streamlit 应用** — 请单独运行：",
+        "translate_toggle": "🌐 将回复翻译为 {lang}",
+        "press_enter": "按 Enter 键应用",
     },
     "es": {
         "title": "Centro de Agentes IA",
@@ -312,6 +318,8 @@ _translations = {
         "missing_api_keys": "⚠️ **Faltan claves API:**",
         "set_api_keys_hint": "Configúrelas en Streamlit Secrets o variables de entorno.",
         "streamlit_app_info": "Es una **app Streamlit** — ejecútela por separado:",
+        "translate_toggle": "🌐 Traducir respuesta a {lang}",
+        "press_enter": "Presiona Enter para aplicar",
     },
     "pt": {
         "title": "Hub de Agentes IA",
@@ -385,6 +393,8 @@ _translations = {
         "missing_api_keys": "⚠️ **Chaves API ausentes:**",
         "set_api_keys_hint": "Configure no Streamlit Secrets ou variáveis de ambiente.",
         "streamlit_app_info": "Este é um **app Streamlit** — execute separadamente:",
+        "translate_toggle": "🌐 Traduzir resposta para {lang}",
+        "press_enter": "Pressione Enter para aplicar",
     },
     "ja": {
         "title": "AI エージェントハブ",
@@ -458,6 +468,8 @@ _translations = {
         "missing_api_keys": "⚠️ **APIキーが不足しています：**",
         "set_api_keys_hint": "Streamlit Secretsまたは環境変数で設定してください。",
         "streamlit_app_info": "これは **Streamlitアプリ** です — 別途実行してください：",
+        "translate_toggle": "🌐 {lang} に翻訳する",
+        "press_enter": "Enter を押して適用",
     },
     "ko": {
         "title": "AI 에이전트 허브",
@@ -531,6 +543,8 @@ _translations = {
         "missing_api_keys": "⚠️ **API 키 누락:**",
         "set_api_keys_hint": "Streamlit Secrets 또는 환경 변수에서 설정하세요.",
         "streamlit_app_info": "이것은 **Streamlit 앱** 입니다 — 별도로 실행하세요:",
+        "translate_toggle": "🌐 {lang}로 번역",
+        "press_enter": "Enter를 눌러 적용",
     },
     "de": {
         "title": "KI-Agenten Hub",
@@ -604,6 +618,8 @@ _translations = {
         "missing_api_keys": "⚠️ **Fehlende API-Schlüssel:**",
         "set_api_keys_hint": "Setzen Sie diese in Streamlit Secrets oder Umgebungsvariablen.",
         "streamlit_app_info": "Dies ist eine **Streamlit-App** — führen Sie sie separat aus:",
+        "translate_toggle": "🌐 Antwort auf {lang} übersetzen",
+        "press_enter": "Drücke Enter zum Anwenden",
     },
     "fr": {
         "title": "Hub Agents IA",
@@ -677,6 +693,8 @@ _translations = {
         "missing_api_keys": "⚠️ **Clés API manquantes :**",
         "set_api_keys_hint": "Configurez-les dans Streamlit Secrets ou les variables d'environnement.",
         "streamlit_app_info": "C'est une **application Streamlit** — exécutez-la séparément :",
+        "translate_toggle": "🌐 Traduire la réponse en {lang}",
+        "press_enter": "Appuyez sur Entrée pour appliquer",
     },
     "ru": {
         "title": "Хаб ИИ-Агентов",
@@ -750,6 +768,8 @@ _translations = {
         "missing_api_keys": "⚠️ **Отсутствуют API-ключи:**",
         "set_api_keys_hint": "Установите в Streamlit Secrets или переменных окружения.",
         "streamlit_app_info": "Это **приложение Streamlit** — запустите его отдельно:",
+        "translate_toggle": "🌐 Перевести ответ на {lang}",
+        "press_enter": "Нажмите Enter для применения",
     },
     "ar": {
         "title": "مركز وكلاء الذكاء الاصطناعي",
@@ -823,6 +843,8 @@ _translations = {
         "missing_api_keys": "⚠️ **مفاتيح API مفقودة:**",
         "set_api_keys_hint": "قم بتعيينها في Streamlit Secrets أو متغيرات البيئة.",
         "streamlit_app_info": "هذا **تطبيق Streamlit** — قم بتشغيله بشكل منفصل:",
+        "translate_toggle": "🌐 ترجمة الرد إلى {lang}",
+        "press_enter": "اضغط Enter للتطبيق",
     },
     "hi": {
         "title": "AI एजेंट हब",
@@ -896,6 +918,8 @@ _translations = {
         "missing_api_keys": "⚠️ **API कुंजियां गायब हैं:**",
         "set_api_keys_hint": "Streamlit Secrets या पर्यावरण चरों में सेट करें।",
         "streamlit_app_info": "यह एक **Streamlit ऐप** है — इसे अलग से चलाएं:",
+        "translate_toggle": "🌐 प्रतिक्रिया का {lang} में अनुवाद करें",
+        "press_enter": "लागू करने के लिए Enter दबाएं",
     },
 }
 
