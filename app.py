@@ -355,6 +355,62 @@ def _render_hub(filtered, all_agents):
                                 st.rerun()
 
 
+def _get_agent_hint(agent):
+    """Return (placeholder, label) based on agent name keywords."""
+    name = agent.get("name", "").lower()
+    # Only use name for matching — descriptions often contain "Designed as..."
+    text = name
+
+    hints = [
+        (["email", "triage", "inbox", "newsletter"],
+         "Paste email text here...", "📧 Paste Email"),
+        (["sql", "database", "query", "schema", "migration"],
+         "Paste SQL or describe your query...", "🗄️ SQL / Query"),
+        (["contract", "legal", "compliance"],
+         "Paste contract or legal text...", "⚖️ Legal Text"),
+        (["resume", "interview", "job", "career"],
+         "Paste resume or job description...", "💼 Career Content"),
+        (["security", "vulnerability", "password", "hash", "encrypt"],
+         "Paste code, config, or text to audit...", "🔒 Security Input"),
+        (["docker", "k8s", "kubernetes", "ci-pipeline", "deploy"],
+         "Paste config (Dockerfile, YAML, CI)...", "🐳 DevOps Config"),
+        (["git ", "changelog", "commit", "diff", "version bump"],
+         "Paste commit messages, diff, or branch info...", "🗂️ Git Content"),
+        (["cors", "rate-limit", "uptime", "url", "link check", "endpoint"],
+         "Enter a URL or API endpoint...", "🔗 Enter URL"),
+        (["blog", "seo", "article", "copy editor", "content writ", "post writer"],
+         "Enter a topic or paste your draft...", "✍️ Topic or Draft"),
+        (["csv", "json", "log analyz", "log pars", "data analys", "parse"],
+         "Paste your data (CSV, JSON, logs)...", "📊 Paste Data"),
+        (["regex", "pattern", "match", "validator"],
+         "Enter text or pattern to test...", "🔍 Text or Pattern"),
+        (["markdown", "html-to", "convert", "format"],
+         "Paste content to convert...", "🔄 Content to Convert"),
+        (["translate", "i18n", "localize"],
+         "Paste text to translate...", "🌐 Text to Translate"),
+        (["color", "css", "svg", "figma", "accessibility", "ascii art"],
+         "Paste CSS, HTML, or describe design...", "🎨 Design Input"),
+        (["recipe", "meal", "food", "nutrition"],
+         "Enter ingredients or dietary preferences...", "🍽️ Food / Ingredients"),
+        (["habit", "mood", "journal", "wellness"],
+         "Describe your goal or current situation...", "🧘 Your Situation"),
+        (["gift", "recommend"],
+         "Describe the person and occasion...", "🎁 Context"),
+        (["test gen", "unit test", "spec gen", "mock"],
+         "Paste code to generate tests for...", "🧪 Code to Test"),
+        (["readme", "doc writer", "documentation"],
+         "Paste code or describe what to document...", "📖 Code / Description"),
+        (["code", "review", "bug", "lint", "style", "refactor", "dead code", "complexity", "api"],
+         "Paste your code here...", "📝 Paste Code"),
+    ]
+
+    for keywords, placeholder, label in hints:
+        if any(kw in text for kw in keywords):
+            return placeholder, label
+
+    return "Describe what you need or paste your text...", "📝 Your Input"
+
+
 def _render_agent_detail(agent, agent_key):
     """Render detailed view for a single agent."""
     # Back button
@@ -394,16 +450,29 @@ def _render_agent_detail(agent, agent_key):
             st.caption("Test this agent directly — powered by OpenAI")
 
             agent_purpose = agent.get("description", agent.get("name", "AI Agent"))
+
+            # Read argparse/click help from main.py for richer context
+            _cli_help = ""
+            try:
+                _main_src = (Path(agent["path"]) / "main.py").read_text(encoding="utf-8")
+                import re as _re
+                _help_matches = _re.findall(r'help=["\']([^"\']+)["\']', _main_src)
+                if _help_matches:
+                    _cli_help = " CLI options: " + "; ".join(_help_matches[:5]) + "."
+            except Exception:
+                pass
+
             system_prompt = (
                 f"You are an AI agent called '{agent['name']}'. "
-                f"Your purpose: {agent_purpose}. "
+                f"Your purpose: {agent_purpose}.{_cli_help} "
                 "Respond helpfully and concisely to the user's input. "
                 "Format your response with clear sections and use markdown."
             )
 
+            placeholder, label = _get_agent_hint(agent)
             user_input = st.text_area(
-                "📝 Input",
-                placeholder="Type or paste your text here...",
+                label,
+                placeholder=placeholder,
                 height=150,
                 key=f"try_{agent_key}",
             )
