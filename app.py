@@ -650,7 +650,7 @@ def _render_agent_detail(agent, agent_key):
 
             # Scan main.py source for common API key patterns
             api_key_patterns = [
-                "OPENAI_API_KEY", "ANTHROPIC_API_KEY", "GOOGLE_API_KEY",
+                "OPENAI_API_KEY", "ANTHROPIC_API_KEY", "GEMINI_API_KEY",
                 "GEMINI_API_KEY", "HUGGINGFACE_TOKEN", "HF_TOKEN",
                 "COHERE_API_KEY", "PINECONE_API_KEY", "SERPAPI_KEY",
                 "SERP_API_KEY", "TAVILY_API_KEY", "LANGCHAIN_API_KEY",

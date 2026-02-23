@@ -65,7 +65,7 @@ with st.sidebar:
     model_provider = st.selectbox("Model Provider", ["openai", "google"], index=0)
 
     # Check for env var first
-    default_api_key = Config.OPENAI_API_KEY if model_provider == "openai" else Config.GOOGLE_API_KEY
+    default_api_key = Config.OPENAI_API_KEY if model_provider == "openai" else Config.GEMINI_API_KEY
 
     api_key = st.text_input(
         f"{model_provider.capitalize()} API Key",

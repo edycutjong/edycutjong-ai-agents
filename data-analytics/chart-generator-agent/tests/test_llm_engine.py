@@ -4,7 +4,7 @@ from agent.llm_engine import LLMEngine
 from config import Config
 
 @patch('agent.llm_engine.Config.OPENAI_API_KEY', None)
-@patch('agent.llm_engine.Config.GOOGLE_API_KEY', None)
+@patch('agent.llm_engine.Config.GEMINI_API_KEY', None)
 def test_llm_engine_mock(sample_df):
     engine = LLMEngine()
     columns = {col: str(sample_df[col].dtype) for col in sample_df.columns}

@@ -5,7 +5,7 @@ load_dotenv()
 
 class Config:
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-    GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
     # Default provider: 'openai' or 'google'
     DEFAULT_PROVIDER = os.getenv("LLM_PROVIDER", "openai")
@@ -25,7 +25,7 @@ class Config:
     def validate(cls):
         if cls.DEFAULT_PROVIDER == "openai" and not cls.OPENAI_API_KEY:
             raise ValueError("OPENAI_API_KEY is not set.")
-        if cls.DEFAULT_PROVIDER == "google" and not cls.GOOGLE_API_KEY:
-            raise ValueError("GOOGLE_API_KEY is not set.")
+        if cls.DEFAULT_PROVIDER == "google" and not cls.GEMINI_API_KEY:
+            raise ValueError("GEMINI_API_KEY is not set.")
 
 config = Config()

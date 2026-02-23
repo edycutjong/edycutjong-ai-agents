@@ -33,7 +33,7 @@ def test_generate_alt_text_openai(mock_llm_openai):
         mock_llm_openai.return_value.invoke.assert_called_once()
 
 def test_generate_alt_text_google(mock_llm_google):
-    with patch('config.config.GOOGLE_API_KEY', 'test_key'):
+    with patch('config.config.GEMINI_API_KEY', 'test_key'):
         generator = AltTextGenerator(provider='google')
         result = generator.generate_alt_text("base64data", "context")
         assert result == "A Google descriptive alt text."

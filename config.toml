@@ -18,7 +18,7 @@
 OPENAI_API_KEY = "sk-your-openai-key-here"
 
 # ⭐ Powers ~16 agents (Gemini-based)
-GOOGLE_API_KEY = "your-google-api-key-here"
+GEMINI_API_KEY = "your-gemini-api-key-here"
 
 [keys.optional]
 # Anthropic Claude — 2 agents

@@ -43,11 +43,11 @@ def main():
                  console.print("[bold yellow]Warning:[/bold yellow] OPENAI_API_KEY not set. AI generation might fail.")
              else:
                  print("Warning: OPENAI_API_KEY not set. AI generation might fail.")
-        if args.provider == "google" and not config.GOOGLE_API_KEY:
+        if args.provider == "google" and not config.GEMINI_API_KEY:
              if RICH_AVAILABLE:
-                 console.print("[bold yellow]Warning:[/bold yellow] GOOGLE_API_KEY not set. AI generation might fail.")
+                 console.print("[bold yellow]Warning:[/bold yellow] GEMINI_API_KEY not set. AI generation might fail.")
              else:
-                 print("Warning: GOOGLE_API_KEY not set. AI generation might fail.")
+                 print("Warning: GEMINI_API_KEY not set. AI generation might fail.")
     except Exception:
         pass
 

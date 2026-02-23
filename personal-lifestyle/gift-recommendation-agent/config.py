@@ -5,7 +5,7 @@ load_dotenv()
 
 class Config:
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-    GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
     GIFT_HISTORY_FILE = os.path.join(os.path.dirname(__file__), "data", "history.json")
 
     # Defaults
@@ -14,6 +14,6 @@ class Config:
 
     @classmethod
     def validate(cls):
-        if not cls.OPENAI_API_KEY and not cls.GOOGLE_API_KEY:
+        if not cls.OPENAI_API_KEY and not cls.GEMINI_API_KEY:
             # We don't raise here to allow UI to ask for keys
             pass

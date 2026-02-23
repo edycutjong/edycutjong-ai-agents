@@ -18,7 +18,7 @@ class MigrationPlanner:
             self.llm = ChatGoogleGenerativeAI(
                 model=config.MODEL_NAME,
                 temperature=config.TEMPERATURE,
-                google_api_key=config.GOOGLE_API_KEY
+                google_api_key=config.GEMINI_API_KEY
             )
         else:
             self.llm = ChatOpenAI(

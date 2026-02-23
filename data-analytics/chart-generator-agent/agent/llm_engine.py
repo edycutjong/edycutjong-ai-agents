@@ -15,8 +15,8 @@ class LLMEngine:
     def _initialize_llm(self):
         if Config.OPENAI_API_KEY:
             return ChatOpenAI(api_key=Config.OPENAI_API_KEY, model=Config.MODEL_NAME)
-        elif Config.GOOGLE_API_KEY:
-            return ChatGoogleGenerativeAI(google_api_key=Config.GOOGLE_API_KEY, model="gemini-pro")
+        elif Config.GEMINI_API_KEY:
+            return ChatGoogleGenerativeAI(google_api_key=Config.GEMINI_API_KEY, model="gemini-pro")
         else:
             print("Warning: No API key found. Using mock LLM.")
             return None

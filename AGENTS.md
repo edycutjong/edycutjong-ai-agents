@@ -8,7 +8,7 @@ AI-powered agents and automation pipelines — **182 agents** across **21 catego
 | Key | Agents | Required For |
 |-----|--------|-------------|
 | ⭐ `OPENAI_API_KEY` | 79 | Most LLM-powered agents |
-| `GEMINI_API_KEY` / `GOOGLE_API_KEY` | 13 | Gemini-based agents (same key, set both) |
+| `GEMINI_API_KEY` | 13 | Gemini-based agents (same key, set both) |
 | `GITHUB_TOKEN` | 6 | Code review, bug triage, fixers |
 | `ANTHROPIC_API_KEY` | 1 | Email triage |
 | `FIGMA_ACCESS_TOKEN` | 1 | Figma-to-CSS |
@@ -16,7 +16,6 @@ AI-powered agents and automation pipelines — **182 agents** across **21 catego
 | `PAGERDUTY_API_KEY` | 1 | Incident responder |
 
 > 103 agents work offline — no API key needed.
-> **Note:** `GEMINI_API_KEY` and `GOOGLE_API_KEY` are the same Gemini API key from [aistudio.google.com](https://aistudio.google.com/apikey). Set both env vars to the same value.
 
 ---
 
@@ -56,7 +55,7 @@ AI-powered agents and automation pipelines — **182 agents** across **21 catego
 
 ---
 
-## ✉️ Communication & Email (`communication/`) — `OPENAI_API_KEY` `ANTHROPIC_API_KEY` `GEMINI_API_KEY`/`GOOGLE_API_KEY`
+## ✉️ Communication & Email (`communication/`) — `OPENAI_API_KEY` `ANTHROPIC_API_KEY` `GEMINI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `email-drafter/` | Context-aware email response bot |
@@ -105,7 +104,7 @@ AI-powered agents and automation pipelines — **182 agents** across **21 catego
 
 ---
 
-## 🏗️ DevOps & Infrastructure (`devops-infra/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`/`GOOGLE_API_KEY` `PAGERDUTY_API_KEY`
+## 🏗️ DevOps & Infrastructure (`devops-infra/`) — `OPENAI_API_KEY` `GEMINI_API_KEY` `PAGERDUTY_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `incident-responder/` | Log monitoring & incident reports |
@@ -121,7 +120,7 @@ AI-powered agents and automation pipelines — **182 agents** across **21 catego
 
 ---
 
-## 🔒 Security & Privacy (`security-privacy/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`/`GOOGLE_API_KEY`
+## 🔒 Security & Privacy (`security-privacy/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `secret-scanner/` | Leaked API key detector |
@@ -135,7 +134,7 @@ AI-powered agents and automation pipelines — **182 agents** across **21 catego
 
 ---
 
-## 📊 Data & Analytics (`data-analytics/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`/`GOOGLE_API_KEY`
+## 📊 Data & Analytics (`data-analytics/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `csv-cleaner/` | Messy CSV fixer |
@@ -165,7 +164,7 @@ AI-powered agents and automation pipelines — **182 agents** across **21 catego
 
 ---
 
-## 🌐 API & Integration (`api-integration/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`/`GOOGLE_API_KEY`
+## 🌐 API & Integration (`api-integration/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `api-doc-generator/` | OpenAPI spec generator |
@@ -179,7 +178,7 @@ AI-powered agents and automation pipelines — **182 agents** across **21 catego
 
 ---
 
-## ✍️ Content & Writing (`content-writing/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`/`GOOGLE_API_KEY`
+## ✍️ Content & Writing (`content-writing/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `blog-post-writer/` | SEO blog writer |
@@ -211,7 +210,7 @@ AI-powered agents and automation pipelines — **182 agents** across **21 catego
 
 ---
 
-## 🎨 Design & Frontend (`design-frontend/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`/`GOOGLE_API_KEY`
+## 🎨 Design & Frontend (`design-frontend/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `color-palette-generator/` | Color scheme creator |
@@ -225,7 +224,7 @@ AI-powered agents and automation pipelines — **182 agents** across **21 catego
 
 ---
 
-## 🎓 Learning & Education (`learning-education/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`/`GOOGLE_API_KEY`
+## 🎓 Learning & Education (`learning-education/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `flashcard-generator/` | Anki flashcard creator |
@@ -237,7 +236,7 @@ AI-powered agents and automation pipelines — **182 agents** across **21 catego
 
 ---
 
-## 🔄 File & Format Conversion (`file-conversion/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`/`GOOGLE_API_KEY` `FIGMA_ACCESS_TOKEN`
+## 🔄 File & Format Conversion (`file-conversion/`) — `OPENAI_API_KEY` `GEMINI_API_KEY` `FIGMA_ACCESS_TOKEN`
 | Directory | Description |
 |-----------|-------------|
 | `markdown-to-pdf-agent/` | MD to styled PDF |
@@ -251,7 +250,7 @@ AI-powered agents and automation pipelines — **182 agents** across **21 catego
 
 ---
 
-## 🏠 Personal & Lifestyle (`personal-lifestyle/`) — `OPENAI_API_KEY` `GEMINI_API_KEY`/`GOOGLE_API_KEY` `SERPAPI_API_KEY`
+## 🏠 Personal & Lifestyle (`personal-lifestyle/`) — `OPENAI_API_KEY` `GEMINI_API_KEY` `SERPAPI_API_KEY`
 | Directory | Description |
 |-----------|-------------|
 | `recipe-planner/` | Meal plan generator |

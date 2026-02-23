@@ -42,9 +42,9 @@ class PressReleaseGenerator:
                 api_key=api_key
             )
         elif self.model_provider == "google":
-            api_key = Config.GOOGLE_API_KEY
+            api_key = Config.GEMINI_API_KEY
             if not api_key:
-                print("Warning: GOOGLE_API_KEY not found in environment.")
+                print("Warning: GEMINI_API_KEY not found in environment.")
             return ChatGoogleGenerativeAI(
                 model=model_name or Config.DEFAULT_GOOGLE_MODEL,
                 temperature=0.7,

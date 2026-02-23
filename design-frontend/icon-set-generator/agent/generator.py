@@ -49,7 +49,7 @@ class IconGenerator:
                     temperature=0.2
                 )
             elif self.provider == "google":
-                api_key = self.api_key or config.GOOGLE_API_KEY
+                api_key = self.api_key or config.GEMINI_API_KEY
                 if not api_key:
                     logger.warning("Google API Key not found.")
                     return None

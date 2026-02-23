@@ -28,13 +28,13 @@ class AltTextGenerator:
                 api_key=config.OPENAI_API_KEY
             )
         elif self.provider == "google":
-            if not config.GOOGLE_API_KEY:
+            if not config.GEMINI_API_KEY:
                  pass
             self.llm = ChatGoogleGenerativeAI(
                 model=self.model,
                 temperature=0.2,
                 max_output_tokens=100,
-                google_api_key=config.GOOGLE_API_KEY
+                google_api_key=config.GEMINI_API_KEY
             )
         else:
             raise ValueError(f"Unsupported provider: {self.provider}")

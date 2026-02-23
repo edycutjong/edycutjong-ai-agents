@@ -21,7 +21,7 @@ An AI-powered agent that scans HTML files for images missing alt text and genera
    ```
    OPENAI_API_KEY=your_key
    # or
-   GOOGLE_API_KEY=your_key
+   GEMINI_API_KEY=your_key
    ```
 
 3. Run the scanner:
