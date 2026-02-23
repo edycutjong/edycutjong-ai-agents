@@ -396,7 +396,7 @@ def _render_hub(filtered, all_agents):
 
                     c1, c2 = st.columns([1, 1])
                     with c1:
-                        st.markdown(f"{status} {'Built' if agent['has_main'] else 'Spec'}")
+                        st.markdown(f"<div style='display:flex;align-items:center;height:100%;min-height:38px'>{status} {'Built' if agent['has_main'] else 'Spec'}</div>", unsafe_allow_html=True)
                     with c2:
                         if agent["has_main"]:
                             if st.button("View →", key=f"view_{key}", use_container_width=True):
