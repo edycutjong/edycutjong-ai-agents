@@ -2,6 +2,8 @@
 
 192 AI automation agents built with Python & Streamlit.
 
+🌐 **[Live Demo →](https://aiagents-edycu-dev.streamlit.app/)**
+
 ## API Keys Required
 
 | Key | Agents | Get It |
