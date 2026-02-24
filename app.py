@@ -7,6 +7,7 @@ import streamlit as st
 import os
 import json
 import random
+import html
 from datetime import datetime
 from pathlib import Path
 from examples import get_agent_hint
@@ -582,7 +583,33 @@ def _render_hub(filtered, all_agents):
     st.markdown("")
 
     # Results count
-    if len(filtered) < len(all_agents):
+    if len(filtered) == 0:
+        safe_search = html.escape(st.session_state.last_search)
+        no_res_desc = tr.get('no_results_desc', "No agents matched your search for **'{search}'**.").format(search=safe_search)
+        if not st.session_state.last_search:
+            no_res_desc = tr.get('try_adjusting', 'Try adjusting your search or category filter.')
+
+        st.markdown(f"""
+        <div style="text-align: center; padding: 4rem 2rem; color: #6b7280;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🔍</div>
+            <h3 style="color: inherit;">{tr.get('no_results_title', 'No agents found')}</h3>
+            <p>{no_res_desc}</p>
+            <p style="font-size: 0.9rem; opacity: 0.8;">{tr.get('try_adjusting', 'Try adjusting your search or category filter.') if st.session_state.last_search else ''}</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        if st.session_state.last_search:
+            c1, c2, c3 = st.columns([3, 2, 3])
+            with c2:
+                if st.button(tr.get('clear_search', 'Clear search'), use_container_width=True):
+                    st.session_state.last_search = ""
+                    if "keyup_search_val" in st.session_state:
+                        st.session_state["keyup_search_val"] = ""
+                    if "agent" in st.query_params:
+                        del st.query_params["agent"]
+                    st.rerun()
+
+    elif len(filtered) < len(all_agents):
         st.info(tr.get('showing_agents', 'Showing **{count}** of {total} agents').format(count=len(filtered), total=len(all_agents)))
 
     # Agent grid

@@ -98,6 +98,10 @@ _translations = {
         "streamlit_app_info": "This is a **Streamlit app** — run it separately:",
         "translate_toggle": "🌐 Translate response to {lang}",
         "press_enter": "Press Enter to apply",
+        "no_results_title": "No agents found",
+        "no_results_desc": "No agents matched your search for **'{search}'**.",
+        "try_adjusting": "Try adjusting your search or category filter.",
+        "clear_search": "Clear search",
     },
     "id": {
         "title": "Pusat Agen AI",
