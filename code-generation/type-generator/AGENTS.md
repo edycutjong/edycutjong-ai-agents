@@ -1,12 +1,14 @@
-# AGENTS.md — Type Generator
+# Type Generator
 
 ## Overview
-Infers TypeScript and Python type definitions from JSON responses and API data. Designed as an AI agents project.
+Infers TypeScript and Python type definitions from JSON responses and API data.
 
 ## Tech
 - Python 3.10+
-- AutoGen / CrewAI / LangChain
-- OpenAI API / Gemini API
+- CrewAI
+- LangChain
+- AutoGen
+- Gemini API
 
 ## Features
 - Accept JSON sample data
@@ -19,12 +21,20 @@ Infers TypeScript and Python type definitions from JSON responses and API data. 
 - Export as importable modules
 
 ## File Structure
-- `main.py`: Entry loop
-- `agent/`: Core tool definitions
-- `prompts/`: System prompts
-- `config.py`: Settings
-- `requirements.txt`: Dependencies
-- `tests/`: Test files
+- `README.md` — Documentation
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## API Keys
+- `GEMINI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

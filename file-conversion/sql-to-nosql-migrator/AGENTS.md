@@ -1,12 +1,14 @@
-# AGENTS.md — SQL to NoSQL Migrator
+# SQL To NOSQL Migrator
 
 ## Overview
-Converts SQL database schemas to MongoDB/DynamoDB equivalents with migration scripts. Designed as an AI agents project.
+Converts SQL database schemas to MongoDB/DynamoDB equivalents with migration scripts.
 
 ## Tech
 - Python 3.10+
-- AutoGen / CrewAI / LangChain
-- OpenAI API / Gemini API
+- CrewAI
+- LangChain
+- AutoGen
+- Gemini API
 
 ## Features
 - Parse SQL CREATE TABLE statements
@@ -19,12 +21,23 @@ Converts SQL database schemas to MongoDB/DynamoDB equivalents with migration scr
 - Generate migration documentation
 
 ## File Structure
-- `main.py`: Entry loop
-- `agent/`: Core tool definitions
-- `prompts/`: System prompts
-- `config.py`: Settings
-- `requirements.txt`: Dependencies
-- `tests/`: Test files
+- `README.md` — Documentation
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `prompts/` — Prompts module
+- `pytest.ini` — Pytest configuration
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+- `ui/` — Ui module
+
+## API Keys
+- `GEMINI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

@@ -1028,6 +1028,52 @@
       "description": "Reads data sources and generates KPI dashboards with configurable alerts. Designed as an AI agents project."
     }
   },
+  "business-productivity/meeting-notes-summarizer": {
+    "id": {
+      "name": "Meeting Notes Summarizer",
+      "description": "Summarize meeting transcripts into action items"
+    },
+    "zh": {
+      "name": "Meeting Notes Summarizer",
+      "description": "Summarize meeting transcripts into action items"
+    },
+    "es": {
+      "name": "Meeting Notes Summarizer",
+      "description": "Summarize meeting transcripts into action items"
+    },
+    "pt": {
+      "name": "Meeting Notes Summarizer",
+      "description": "Summarize meeting transcripts into action items"
+    },
+    "ja": {
+      "name": "Meeting Notes Summarizer",
+      "description": "Summarize meeting transcripts into action items"
+    },
+    "ko": {
+      "name": "Meeting Notes Summarizer",
+      "description": "Summarize meeting transcripts into action items"
+    },
+    "de": {
+      "name": "Meeting Notes Summarizer",
+      "description": "Summarize meeting transcripts into action items"
+    },
+    "fr": {
+      "name": "Meeting Notes Summarizer",
+      "description": "Summarize meeting transcripts into action items"
+    },
+    "ru": {
+      "name": "Meeting Notes Summarizer",
+      "description": "Summarize meeting transcripts into action items"
+    },
+    "ar": {
+      "name": "Meeting Notes Summarizer",
+      "description": "Summarize meeting transcripts into action items"
+    },
+    "hi": {
+      "name": "Meeting Notes Summarizer",
+      "description": "Summarize meeting transcripts into action items"
+    }
+  },
   "business-productivity/meeting-scheduler-agent": {
     "id": {
       "name": "Agen Penjadwal Rapat",
@@ -1124,6 +1170,98 @@
     },
     "en": {
       "description": "Manages Objectives and Key Results, tracks progress, and generates status reports. Designed as an AI agents project."
+    }
+  },
+  "business-productivity/receipt-categorizer-agent": {
+    "id": {
+      "name": "Receipt Categorizer Agent",
+      "description": "OCR receipts and auto-categorize expenses"
+    },
+    "zh": {
+      "name": "Receipt Categorizer Agent",
+      "description": "OCR receipts and auto-categorize expenses"
+    },
+    "es": {
+      "name": "Receipt Categorizer Agent",
+      "description": "OCR receipts and auto-categorize expenses"
+    },
+    "pt": {
+      "name": "Receipt Categorizer Agent",
+      "description": "OCR receipts and auto-categorize expenses"
+    },
+    "ja": {
+      "name": "Receipt Categorizer Agent",
+      "description": "OCR receipts and auto-categorize expenses"
+    },
+    "ko": {
+      "name": "Receipt Categorizer Agent",
+      "description": "OCR receipts and auto-categorize expenses"
+    },
+    "de": {
+      "name": "Receipt Categorizer Agent",
+      "description": "OCR receipts and auto-categorize expenses"
+    },
+    "fr": {
+      "name": "Receipt Categorizer Agent",
+      "description": "OCR receipts and auto-categorize expenses"
+    },
+    "ru": {
+      "name": "Receipt Categorizer Agent",
+      "description": "OCR receipts and auto-categorize expenses"
+    },
+    "ar": {
+      "name": "Receipt Categorizer Agent",
+      "description": "OCR receipts and auto-categorize expenses"
+    },
+    "hi": {
+      "name": "Receipt Categorizer Agent",
+      "description": "OCR receipts and auto-categorize expenses"
+    }
+  },
+  "business-productivity/resume-tailor-agent": {
+    "id": {
+      "name": "Resume Tailor Agent",
+      "description": "Tailor resume to match job descriptions"
+    },
+    "zh": {
+      "name": "Resume Tailor Agent",
+      "description": "Tailor resume to match job descriptions"
+    },
+    "es": {
+      "name": "Resume Tailor Agent",
+      "description": "Tailor resume to match job descriptions"
+    },
+    "pt": {
+      "name": "Resume Tailor Agent",
+      "description": "Tailor resume to match job descriptions"
+    },
+    "ja": {
+      "name": "Resume Tailor Agent",
+      "description": "Tailor resume to match job descriptions"
+    },
+    "ko": {
+      "name": "Resume Tailor Agent",
+      "description": "Tailor resume to match job descriptions"
+    },
+    "de": {
+      "name": "Resume Tailor Agent",
+      "description": "Tailor resume to match job descriptions"
+    },
+    "fr": {
+      "name": "Resume Tailor Agent",
+      "description": "Tailor resume to match job descriptions"
+    },
+    "ru": {
+      "name": "Resume Tailor Agent",
+      "description": "Tailor resume to match job descriptions"
+    },
+    "ar": {
+      "name": "Resume Tailor Agent",
+      "description": "Tailor resume to match job descriptions"
+    },
+    "hi": {
+      "name": "Resume Tailor Agent",
+      "description": "Tailor resume to match job descriptions"
     }
   },
   "business-productivity/sla-monitor": {
@@ -1665,6 +1803,52 @@
       "description": "Infers TypeScript and Python type definitions from JSON responses and API data. Designed as an AI agents project."
     }
   },
+  "code-quality/bug-report-triage-agent": {
+    "id": {
+      "name": "Bug Report Triage Agent",
+      "description": "Auto-triage bug reports by severity"
+    },
+    "zh": {
+      "name": "Bug Report Triage Agent",
+      "description": "Auto-triage bug reports by severity"
+    },
+    "es": {
+      "name": "Bug Report Triage Agent",
+      "description": "Auto-triage bug reports by severity"
+    },
+    "pt": {
+      "name": "Bug Report Triage Agent",
+      "description": "Auto-triage bug reports by severity"
+    },
+    "ja": {
+      "name": "Bug Report Triage Agent",
+      "description": "Auto-triage bug reports by severity"
+    },
+    "ko": {
+      "name": "Bug Report Triage Agent",
+      "description": "Auto-triage bug reports by severity"
+    },
+    "de": {
+      "name": "Bug Report Triage Agent",
+      "description": "Auto-triage bug reports by severity"
+    },
+    "fr": {
+      "name": "Bug Report Triage Agent",
+      "description": "Auto-triage bug reports by severity"
+    },
+    "ru": {
+      "name": "Bug Report Triage Agent",
+      "description": "Auto-triage bug reports by severity"
+    },
+    "ar": {
+      "name": "Bug Report Triage Agent",
+      "description": "Auto-triage bug reports by severity"
+    },
+    "hi": {
+      "name": "Bug Report Triage Agent",
+      "description": "Auto-triage bug reports by severity"
+    }
+  },
   "code-quality/bug-triager": {
     "id": {
       "name": "Triager Bug",
@@ -1763,6 +1947,52 @@
       "description": "Agent that analyzes incoming bug reports, duplicates, and assigns severity."
     }
   },
+  "code-quality/code-review-agent": {
+    "id": {
+      "name": "Code Review Agent",
+      "description": "Automated code review with style and bug suggestions"
+    },
+    "zh": {
+      "name": "Code Review Agent",
+      "description": "Automated code review with style and bug suggestions"
+    },
+    "es": {
+      "name": "Code Review Agent",
+      "description": "Automated code review with style and bug suggestions"
+    },
+    "pt": {
+      "name": "Code Review Agent",
+      "description": "Automated code review with style and bug suggestions"
+    },
+    "ja": {
+      "name": "Code Review Agent",
+      "description": "Automated code review with style and bug suggestions"
+    },
+    "ko": {
+      "name": "Code Review Agent",
+      "description": "Automated code review with style and bug suggestions"
+    },
+    "de": {
+      "name": "Code Review Agent",
+      "description": "Automated code review with style and bug suggestions"
+    },
+    "fr": {
+      "name": "Code Review Agent",
+      "description": "Automated code review with style and bug suggestions"
+    },
+    "ru": {
+      "name": "Code Review Agent",
+      "description": "Automated code review with style and bug suggestions"
+    },
+    "ar": {
+      "name": "Code Review Agent",
+      "description": "Automated code review with style and bug suggestions"
+    },
+    "hi": {
+      "name": "Code Review Agent",
+      "description": "Automated code review with style and bug suggestions"
+    }
+  },
   "code-quality/code-review-automator": {
     "id": {
       "name": "Pengotomasi Tinjauan Kode",
@@ -1859,6 +2089,52 @@
     },
     "en": {
       "description": "PR review agent — Fetch PR diff from GitHub. Designed as a agents project."
+    }
+  },
+  "code-quality/dependency-update-agent": {
+    "id": {
+      "name": "Dependency Update Agent",
+      "description": "Check and suggest safe dependency updates"
+    },
+    "zh": {
+      "name": "Dependency Update Agent",
+      "description": "Check and suggest safe dependency updates"
+    },
+    "es": {
+      "name": "Dependency Update Agent",
+      "description": "Check and suggest safe dependency updates"
+    },
+    "pt": {
+      "name": "Dependency Update Agent",
+      "description": "Check and suggest safe dependency updates"
+    },
+    "ja": {
+      "name": "Dependency Update Agent",
+      "description": "Check and suggest safe dependency updates"
+    },
+    "ko": {
+      "name": "Dependency Update Agent",
+      "description": "Check and suggest safe dependency updates"
+    },
+    "de": {
+      "name": "Dependency Update Agent",
+      "description": "Check and suggest safe dependency updates"
+    },
+    "fr": {
+      "name": "Dependency Update Agent",
+      "description": "Check and suggest safe dependency updates"
+    },
+    "ru": {
+      "name": "Dependency Update Agent",
+      "description": "Check and suggest safe dependency updates"
+    },
+    "ar": {
+      "name": "Dependency Update Agent",
+      "description": "Check and suggest safe dependency updates"
+    },
+    "hi": {
+      "name": "Dependency Update Agent",
+      "description": "Check and suggest safe dependency updates"
     }
   },
   "code-quality/regex-tester": {
@@ -2008,6 +2284,52 @@
       "description": "Proofreads text for grammar, style, tone consistency, and readability score. Designed as an AI agents project."
     }
   },
+  "content-writing/email-draft-agent": {
+    "id": {
+      "name": "Email Draft Agent",
+      "description": "Draft professional email replies from bullet points"
+    },
+    "zh": {
+      "name": "Email Draft Agent",
+      "description": "Draft professional email replies from bullet points"
+    },
+    "es": {
+      "name": "Email Draft Agent",
+      "description": "Draft professional email replies from bullet points"
+    },
+    "pt": {
+      "name": "Email Draft Agent",
+      "description": "Draft professional email replies from bullet points"
+    },
+    "ja": {
+      "name": "Email Draft Agent",
+      "description": "Draft professional email replies from bullet points"
+    },
+    "ko": {
+      "name": "Email Draft Agent",
+      "description": "Draft professional email replies from bullet points"
+    },
+    "de": {
+      "name": "Email Draft Agent",
+      "description": "Draft professional email replies from bullet points"
+    },
+    "fr": {
+      "name": "Email Draft Agent",
+      "description": "Draft professional email replies from bullet points"
+    },
+    "ru": {
+      "name": "Email Draft Agent",
+      "description": "Draft professional email replies from bullet points"
+    },
+    "ar": {
+      "name": "Email Draft Agent",
+      "description": "Draft professional email replies from bullet points"
+    },
+    "hi": {
+      "name": "Email Draft Agent",
+      "description": "Draft professional email replies from bullet points"
+    }
+  },
   "content-writing/html-to-markdown": {
     "id": {
       "name": "HTML Ke Penurunan Harga",
@@ -2055,6 +2377,52 @@
     },
     "en": {
       "description": "HTML to Markdown Converter — Convert HTML content to clean Markdown format. Designed as an AI agent project."
+    }
+  },
+  "content-writing/i18n-translator-agent": {
+    "id": {
+      "name": "I18N Translator Agent",
+      "description": "Translate i18n JSON files preserving context"
+    },
+    "zh": {
+      "name": "I18N Translator Agent",
+      "description": "Translate i18n JSON files preserving context"
+    },
+    "es": {
+      "name": "I18N Translator Agent",
+      "description": "Translate i18n JSON files preserving context"
+    },
+    "pt": {
+      "name": "I18N Translator Agent",
+      "description": "Translate i18n JSON files preserving context"
+    },
+    "ja": {
+      "name": "I18N Translator Agent",
+      "description": "Translate i18n JSON files preserving context"
+    },
+    "ko": {
+      "name": "I18N Translator Agent",
+      "description": "Translate i18n JSON files preserving context"
+    },
+    "de": {
+      "name": "I18N Translator Agent",
+      "description": "Translate i18n JSON files preserving context"
+    },
+    "fr": {
+      "name": "I18N Translator Agent",
+      "description": "Translate i18n JSON files preserving context"
+    },
+    "ru": {
+      "name": "I18N Translator Agent",
+      "description": "Translate i18n JSON files preserving context"
+    },
+    "ar": {
+      "name": "I18N Translator Agent",
+      "description": "Translate i18n JSON files preserving context"
+    },
+    "hi": {
+      "name": "I18N Translator Agent",
+      "description": "Translate i18n JSON files preserving context"
     }
   },
   "content-writing/lorem-ipsum-generator": {
@@ -5683,6 +6051,52 @@
       "description": "Release note agent — Analyze git commit range. Designed as a agents project."
     }
   },
+  "documentation/changelog-writer-agent": {
+    "id": {
+      "name": "Changelog Writer Agent",
+      "description": "Generate changelogs from git commit history"
+    },
+    "zh": {
+      "name": "Changelog Writer Agent",
+      "description": "Generate changelogs from git commit history"
+    },
+    "es": {
+      "name": "Changelog Writer Agent",
+      "description": "Generate changelogs from git commit history"
+    },
+    "pt": {
+      "name": "Changelog Writer Agent",
+      "description": "Generate changelogs from git commit history"
+    },
+    "ja": {
+      "name": "Changelog Writer Agent",
+      "description": "Generate changelogs from git commit history"
+    },
+    "ko": {
+      "name": "Changelog Writer Agent",
+      "description": "Generate changelogs from git commit history"
+    },
+    "de": {
+      "name": "Changelog Writer Agent",
+      "description": "Generate changelogs from git commit history"
+    },
+    "fr": {
+      "name": "Changelog Writer Agent",
+      "description": "Generate changelogs from git commit history"
+    },
+    "ru": {
+      "name": "Changelog Writer Agent",
+      "description": "Generate changelogs from git commit history"
+    },
+    "ar": {
+      "name": "Changelog Writer Agent",
+      "description": "Generate changelogs from git commit history"
+    },
+    "hi": {
+      "name": "Changelog Writer Agent",
+      "description": "Generate changelogs from git commit history"
+    }
+  },
   "documentation/doc-writer": {
     "id": {
       "name": "Penulis Dok",
@@ -5730,6 +6144,52 @@
     },
     "en": {
       "description": "Documentation generator — Parse codebase AST. Designed as a agents project."
+    }
+  },
+  "documentation/docs-qa-agent": {
+    "id": {
+      "name": "Docs QA Agent",
+      "description": "Answer questions about project documentation"
+    },
+    "zh": {
+      "name": "Docs QA Agent",
+      "description": "Answer questions about project documentation"
+    },
+    "es": {
+      "name": "Docs QA Agent",
+      "description": "Answer questions about project documentation"
+    },
+    "pt": {
+      "name": "Docs QA Agent",
+      "description": "Answer questions about project documentation"
+    },
+    "ja": {
+      "name": "Docs QA Agent",
+      "description": "Answer questions about project documentation"
+    },
+    "ko": {
+      "name": "Docs QA Agent",
+      "description": "Answer questions about project documentation"
+    },
+    "de": {
+      "name": "Docs QA Agent",
+      "description": "Answer questions about project documentation"
+    },
+    "fr": {
+      "name": "Docs QA Agent",
+      "description": "Answer questions about project documentation"
+    },
+    "ru": {
+      "name": "Docs QA Agent",
+      "description": "Answer questions about project documentation"
+    },
+    "ar": {
+      "name": "Docs QA Agent",
+      "description": "Answer questions about project documentation"
+    },
+    "hi": {
+      "name": "Docs QA Agent",
+      "description": "Answer questions about project documentation"
     }
   },
   "documentation/documentation-writer-bot": {

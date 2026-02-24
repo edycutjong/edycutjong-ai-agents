@@ -1,0 +1,10 @@
+{
+  "agent_name": "Pembuat Draf Email",
+  "description": "Buat draf email profesional dari poin-poin.",
+  "input_label": "Input Anda",
+  "input_placeholder": "Masukkan poin-poin untuk email Anda...",
+  "run_button": "Jalankan Agen",
+  "result_title": "Hasil",
+  "error_message": "Terjadi kesalahan. Silakan coba lagi.",
+  "loading": "Memproses..."
+}

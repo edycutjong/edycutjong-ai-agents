@@ -1,0 +1,10 @@
+{
+  "agent_name": "Pengkategorisasi Kwitansi",
+  "description": "OCR kwitansi dan kategorisasi pengeluaran secara otomatis.",
+  "input_label": "Input Anda",
+  "input_placeholder": "Unggah gambar kwitansi atau tempel teks...",
+  "run_button": "Jalankan Agen",
+  "result_title": "Hasil",
+  "error_message": "Terjadi kesalahan. Silakan coba lagi.",
+  "loading": "Memproses..."
+}

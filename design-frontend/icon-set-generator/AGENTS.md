@@ -1,12 +1,14 @@
-# AGENTS.md — Icon Set Generator
+# Icon Set Generator
 
 ## Overview
-Generates consistent icon sets from text descriptions using AI. Designed as an AI agents project.
+Generates consistent icon sets from text descriptions using AI.
 
 ## Tech
 - Python 3.10+
-- AutoGen / CrewAI / LangChain
-- OpenAI API / Gemini API
+- CrewAI
+- LangChain
+- AutoGen
+- Gemini API
 
 ## Features
 - Accept icon descriptions
@@ -19,12 +21,20 @@ Generates consistent icon sets from text descriptions using AI. Designed as an A
 - Export in multiple sizes
 
 ## File Structure
-- `main.py`: Entry loop
-- `agent/`: Core tool definitions
-- `prompts/`: System prompts
-- `config.py`: Settings
-- `requirements.txt`: Dependencies
-- `tests/`: Test files
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `prompts/` — Prompts module
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## API Keys
+- `GEMINI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

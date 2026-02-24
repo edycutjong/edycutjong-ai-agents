@@ -1,12 +1,14 @@
-# AGENTS.md — Interview Prep Agent
+# Interview Prep Agent
 
 ## Overview
-Generates technical interview questions based on job descriptions and tech stacks. Designed as an AI agents project.
+Generates technical interview questions based on job descriptions and tech stacks.
 
 ## Tech
 - Python 3.10+
-- AutoGen / CrewAI / LangChain
-- OpenAI API / Gemini API
+- CrewAI
+- LangChain
+- AutoGen
+- Gemini API
 
 ## Features
 - Parse job description
@@ -19,12 +21,22 @@ Generates technical interview questions based on job descriptions and tech stack
 - Track preparation progress
 
 ## File Structure
-- `main.py`: Entry loop
-- `agent/`: Core tool definitions
-- `prompts/`: System prompts
-- `config.py`: Settings
-- `requirements.txt`: Dependencies
-- `tests/`: Test files
+- `README.md` — Documentation
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `prompts/` — Prompts module
+- `pytest.ini` — Pytest configuration
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## API Keys
+- `GEMINI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

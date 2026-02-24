@@ -1,12 +1,14 @@
-# AGENTS.md — Model Benchmark Runner
+# Model Benchmark Runner
 
 ## Overview
-Benchmarks LLM models against test suites, comparing cost, quality, and speed. Designed as an AI agents project.
+Benchmarks LLM models against test suites, comparing cost, quality, and speed.
 
 ## Tech
 - Python 3.10+
-- AutoGen / CrewAI / LangChain
-- OpenAI API / Gemini API
+- CrewAI
+- LangChain
+- AutoGen
+- Gemini API
 
 ## Features
 - Define benchmark test suites
@@ -19,12 +21,20 @@ Benchmarks LLM models against test suites, comparing cost, quality, and speed. D
 - Support OpenAI/Anthropic/Gemini/local models
 
 ## File Structure
-- `main.py`: Entry loop
-- `agent/`: Core tool definitions
-- `prompts/`: System prompts
-- `config.py`: Settings
-- `requirements.txt`: Dependencies
-- `tests/`: Test files
+- `README.md` — Documentation
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## API Keys
+- `GEMINI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

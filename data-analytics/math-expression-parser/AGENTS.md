@@ -1,12 +1,12 @@
-# AGENTS.md — Math Expression Parser
+# Math Expression Parser
 
 ## Overview
-Math Expression Parser — Parse and evaluate mathematical expressions safely. Designed as an AI agent project.
+Math Expression Parser — Parse and evaluate mathematical expressions safely.
 
 ## Tech
 - Python 3.10+
-- CLI (argparse)
-- No external API key required
+- python-dotenv
+- pytest
 
 ## Features
 - Evaluate arithmetic expressions
@@ -16,14 +16,18 @@ Math Expression Parser — Parse and evaluate mathematical expressions safely. D
 - Step-by-step evaluation
 
 ## File Structure
-- main.py
-- config.py
-- requirements.txt
-- agent/
-- tests/
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
-```bash
-python main.py <input>
-python main.py --help-agent
-```
+- `pip install -r requirements.txt` — Install deps
+- `python main.py` — Run agent
+- `pytest tests/` — Run tests

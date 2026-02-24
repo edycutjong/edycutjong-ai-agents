@@ -1,12 +1,12 @@
-# AGENTS.md — HTML to Markdown Converter
+# HTML To Markdown
 
 ## Overview
-HTML to Markdown Converter — Convert HTML content to clean Markdown format. Designed as an AI agent project.
+HTML to Markdown Converter — Convert HTML content to clean Markdown format.
 
 ## Tech
 - Python 3.10+
-- CLI (argparse)
-- No external API key required
+- python-dotenv
+- pytest
 
 ## Features
 - Convert HTML tags to Markdown syntax
@@ -16,12 +16,18 @@ HTML to Markdown Converter — Convert HTML content to clean Markdown format. De
 - Support inline and block elements
 
 ## File Structure
-- main.py
-- agent/
-- tests/
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
-```bash
-python main.py <input>
-python main.py --help-agent
-```
+- `pip install -r requirements.txt` — Install deps
+- `python main.py` — Run agent
+- `pytest tests/` — Run tests

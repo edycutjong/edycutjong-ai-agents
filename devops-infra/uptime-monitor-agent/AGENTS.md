@@ -1,12 +1,14 @@
-# AGENTS.md — Uptime Monitor Agent
+# Uptime Monitor Agent
 
 ## Overview
-Polls HTTP endpoints, detects downtime, and sends alerts with diagnostic context. Designed as an AI agents project.
+Polls HTTP endpoints, detects downtime, and sends alerts with diagnostic context.
 
 ## Tech
 - Python 3.10+
-- AutoGen / CrewAI / LangChain
-- OpenAI API / Gemini API
+- CrewAI
+- LangChain
+- AutoGen
+- Gemini API
 
 ## Features
 - Poll configurable endpoints at intervals
@@ -19,12 +21,22 @@ Polls HTTP endpoints, detects downtime, and sends alerts with diagnostic context
 - Dashboard with status page output
 
 ## File Structure
-- `main.py`: Entry loop
-- `agent/`: Core tool definitions
-- `prompts/`: System prompts
-- `config.py`: Settings
-- `requirements.txt`: Dependencies
-- `tests/`: Test files
+- `README.md` — Documentation
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `dashboard.py` — Dashboard
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+- `uptime.db` — Uptime.Db
+
+## API Keys
+- `GEMINI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

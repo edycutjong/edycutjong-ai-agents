@@ -1,11 +1,12 @@
-# AGENTS.md — CrewAI Agent
+# Crewai Agent
 
 ## Overview
 A multi-agent crew that collaborates to research topics, write reports, and generate insights. Uses CrewAI for agent orchestration.
 
 ## Tech
-- Python 3.12, CrewAI, OpenAI API
-- Rich for terminal output
+- Python 3.10+
+- CrewAI
+- OpenAI API
 
 ## Features
 - 3-agent crew: Researcher, Writer, Editor
@@ -17,20 +18,26 @@ A multi-agent crew that collaborates to research topics, write reports, and gene
 - Configurable topics via CLI args
 - Verbose mode showing agent reasoning
 
-## Files
-- `crew.py` — Crew definition with agents and tasks
-- `agents/researcher.py` — Research agent with search tools
-- `agents/writer.py` — Writing agent with formatting
-- `agents/editor.py` — Editing agent with quality checks
-- `tools/` — Custom tools (web_search, summarize)
-- `cli.py` — CLI entry point
-- `requirements.txt`
-- `.env.example` — OPENAI_API_KEY
+## File Structure
+- `README.md` — Documentation
+- `agents/` — Agents module
+- `cli.py` — Cli
+- `config.py` — Configuration & settings
+- `crew.py` — Crew
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+- `tools/` — Tools module
+
+## API Keys
+- `OPENAI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
-```bash
-pip install -r requirements.txt
-python cli.py --topic "AI trends 2025"
-python cli.py --topic "market analysis" --verbose
-pytest
-```
+- `pip install -r requirements.txt` — Install deps
+- `python main.py` — Run agent
+- `pytest tests/` — Run tests

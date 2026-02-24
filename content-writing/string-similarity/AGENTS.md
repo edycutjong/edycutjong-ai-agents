@@ -1,12 +1,12 @@
-# AGENTS.md — String Similarity Analyzer
+# String Similarity
 
 ## Overview
-String Similarity Analyzer — Compare two strings and calculate their similarity score. Designed as an AI agent project.
+String Similarity Analyzer — Compare two strings and calculate their similarity score.
 
 ## Tech
 - Python 3.10+
-- CLI (argparse)
-- No external API key required
+- python-dotenv
+- pytest
 
 ## Features
 - Calculate similarity percentage
@@ -16,12 +16,18 @@ String Similarity Analyzer — Compare two strings and calculate their similarit
 - Batch comparison support
 
 ## File Structure
-- main.py
-- agent/
-- tests/
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
-```bash
-python main.py <input>
-python main.py --help-agent
-```
+- `pip install -r requirements.txt` — Install deps
+- `python main.py` — Run agent
+- `pytest tests/` — Run tests

@@ -1,12 +1,14 @@
-# AGENTS.md — Responsive Design Tester
+# Responsive Design Tester
 
 ## Overview
-Screenshots web pages at multiple viewports and flags layout issues automatically. Designed as an AI agents project.
+Screenshots web pages at multiple viewports and flags layout issues automatically.
 
 ## Tech
 - Python 3.10+
-- AutoGen / CrewAI / LangChain
-- OpenAI API / Gemini API
+- CrewAI
+- LangChain
+- AutoGen
+- Gemini API
 
 ## Features
 - Capture screenshots at multiple breakpoints
@@ -19,12 +21,18 @@ Screenshots web pages at multiple viewports and flags layout issues automaticall
 - Test horizontal scrolling issues
 
 ## File Structure
-- `main.py`: Entry loop
-- `agent/`: Core tool definitions
-- `prompts/`: System prompts
-- `config.py`: Settings
-- `requirements.txt`: Dependencies
-- `tests/`: Test files
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## API Keys
+- `GEMINI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

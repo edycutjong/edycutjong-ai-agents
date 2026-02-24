@@ -1,12 +1,11 @@
-# AGENTS.md — Timestamp Converter
+# Timestamp Converter
 
 ## Overview
-Timestamp Converter — AI automation agent. Designed as an AI agents project.
+Timestamp Converter — AI automation agent.
 
 ## Tech
 - Python 3.10+
 - python-dotenv
-- pytest
 
 ## Features
 - Cmd Unix
@@ -14,12 +13,17 @@ Timestamp Converter — AI automation agent. Designed as an AI agents project.
 - Cmd Now
 
 ## File Structure
-- `README.md`: Readme.Md
-- `agent/`: Module directory
-- `config.py`: Configuration
-- `main.py`: Entry point
-- `requirements.txt`: Dependencies
-- `tests/`: Module directory
+- `README.md` — Documentation
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

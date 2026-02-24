@@ -1,11 +1,12 @@
-# AGENTS.md — AutoGen Agent
+# Autogen Agent
 
 ## Overview
 A conversational AI system with multiple agents that can write code, debug, and execute tasks collaboratively. Built with Microsoft AutoGen.
 
 ## Tech
-- Python 3.12, AutoGen, OpenAI API
-- Docker (optional, for code execution sandbox)
+- Python 3.10+
+- AutoGen
+- OpenAI API
 
 ## Features
 - AssistantAgent: plans and writes code
@@ -17,20 +18,24 @@ A conversational AI system with multiple agents that can write code, debug, and 
 - Conversation logging and export
 - Configurable agent personalities and system prompts
 
-## Files
-- `main.py` — Agent setup and conversation flow
-- `agents/assistant.py` — AssistantAgent configuration
-- `agents/user_proxy.py` — UserProxyAgent with code execution
-- `agents/group_chat.py` — Multi-agent groupchat setup
-- `config.py` — Model and execution settings
-- `tasks/` — Example task definitions
-- `requirements.txt`
-- `.env.example` — OPENAI_API_KEY
+## File Structure
+- `README.md` — Documentation
+- `agents/` — Agents module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tasks/` — Tasks module
+- `tests/` — Tests module
+
+## API Keys
+- `OPENAI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
-```bash
-pip install -r requirements.txt
-python main.py --task "Write a Python script that..."
-python main.py --task "Analyze this CSV data" --file data.csv
-pytest
-```
+- `pip install -r requirements.txt` — Install deps
+- `python main.py` — Run agent
+- `pytest tests/` — Run tests

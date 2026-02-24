@@ -1,12 +1,14 @@
-# AGENTS.md — AI Hallucination Detector
+# AI Hallucination Detector
 
 ## Overview
-Cross-references AI outputs against source documents and flags fabricated claims. Designed as an AI agents project.
+Cross-references AI outputs against source documents and flags fabricated claims.
 
 ## Tech
 - Python 3.10+
-- AutoGen / CrewAI / LangChain
-- OpenAI API / Gemini API
+- CrewAI
+- LangChain
+- AutoGen
+- Gemini API
 
 ## Features
 - Accept AI output and source documents
@@ -19,12 +21,20 @@ Cross-references AI outputs against source documents and flags fabricated claims
 - Highlight fabricated references
 
 ## File Structure
-- `main.py`: Entry loop
-- `agent/`: Core tool definitions
-- `prompts/`: System prompts
-- `config.py`: Settings
-- `requirements.txt`: Dependencies
-- `tests/`: Test files
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `prompts/` — Prompts module
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## API Keys
+- `GEMINI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

@@ -1,12 +1,12 @@
-# AGENTS.md — Lorem Ipsum Generator
+# Lorem Ipsum Generator
 
 ## Overview
-Lorem Ipsum Generator — Generate placeholder Lorem Ipsum text for mockups and layouts. Designed as an AI agent project.
+Lorem Ipsum Generator — Generate placeholder Lorem Ipsum text for mockups and layouts.
 
 ## Tech
 - Python 3.10+
-- CLI (argparse)
-- No external API key required
+- python-dotenv
+- pytest
 
 ## Features
 - Generate paragraphs, sentences, or words
@@ -16,12 +16,18 @@ Lorem Ipsum Generator — Generate placeholder Lorem Ipsum text for mockups and 
 - Clipboard-ready results
 
 ## File Structure
-- main.py
-- agent/
-- tests/
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
-```bash
-python main.py <input>
-python main.py --help-agent
-```
+- `pip install -r requirements.txt` — Install deps
+- `python main.py` — Run agent
+- `pytest tests/` — Run tests

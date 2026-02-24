@@ -1,0 +1,10 @@
+{
+  "agent_name": "Email Draft Agent",
+  "description": "Draft professional email replies from bullet points.",
+  "input_label": "Your input",
+  "input_placeholder": "Enter text or paste content...",
+  "run_button": "Run Agent",
+  "result_title": "Result",
+  "error_message": "An error occurred. Please try again.",
+  "loading": "Processing..."
+}

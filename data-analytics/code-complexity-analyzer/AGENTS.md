@@ -1,12 +1,12 @@
-# AGENTS.md — Code Complexity Analyzer
+# Code Complexity Analyzer
 
 ## Overview
-Code Complexity Analyzer — Analyze code complexity metrics (cyclomatic complexity, LOC, etc.). Designed as an AI agent project.
+Code Complexity Analyzer — Analyze code complexity metrics (cyclomatic complexity, LOC, etc.).
 
 ## Tech
 - Python 3.10+
-- CLI (argparse)
-- No external API key required
+- python-dotenv
+- pytest
 
 ## Features
 - Calculate cyclomatic complexity
@@ -16,14 +16,18 @@ Code Complexity Analyzer — Analyze code complexity metrics (cyclomatic complex
 - Support multiple languages
 
 ## File Structure
-- main.py
-- config.py
-- requirements.txt
-- agent/
-- tests/
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
-```bash
-python main.py <input>
-python main.py --help-agent
-```
+- `pip install -r requirements.txt` — Install deps
+- `python main.py` — Run agent
+- `pytest tests/` — Run tests

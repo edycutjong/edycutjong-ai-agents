@@ -1,12 +1,14 @@
-# AGENTS.md — Habit Coach
+# Habit Coach
 
 ## Overview
-Tracks daily habits, analyzes patterns, provides motivational nudges and streak tracking. Designed as an AI agents project.
+Tracks daily habits, analyzes patterns, provides motivational nudges and streak tracking.
 
 ## Tech
 - Python 3.10+
-- AutoGen / CrewAI / LangChain
-- OpenAI API / Gemini API
+- CrewAI
+- LangChain
+- AutoGen
+- Gemini API
 
 ## Features
 - Define trackable habits
@@ -19,12 +21,25 @@ Tracks daily habits, analyzes patterns, provides motivational nudges and streak 
 - Generate weekly progress reports
 
 ## File Structure
-- `main.py`: Entry loop
-- `agent/`: Core tool definitions
-- `prompts/`: System prompts
-- `config.py`: Settings
-- `requirements.txt`: Dependencies
-- `tests/`: Test files
+- `README.md` — Documentation
+- `agent/` — Agent module
+- `analytics.py` — Analytics
+- `config.py` — Configuration & settings
+- `data/` — Data module
+- `main.py` — Entry point
+- `models.py` — Models
+- `requirements.txt` — Dependencies
+- `storage.py` — Storage
+- `tests/` — Tests module
+- `visualizations.py` — Visualizations
+
+## API Keys
+- `GEMINI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

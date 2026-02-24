@@ -1,12 +1,14 @@
-# AGENTS.md — CI Pipeline Optimizer
+# CI Pipeline Optimizer
 
 ## Overview
-Analyzes CI/CD configurations, identifies bottlenecks, and suggests parallelization and caching strategies. Designed as an AI agents project.
+Analyzes CI/CD configurations, identifies bottlenecks, and suggests parallelization and caching strategies.
 
 ## Tech
 - Python 3.10+
-- AutoGen / CrewAI / LangChain
-- OpenAI API / Gemini API
+- CrewAI
+- LangChain
+- AutoGen
+- Gemini API
 
 ## Features
 - Parse GitHub Actions/GitLab CI configs
@@ -19,12 +21,21 @@ Analyzes CI/CD configurations, identifies bottlenecks, and suggests parallelizat
 - Support multi-provider configs
 
 ## File Structure
-- `main.py`: Entry loop
-- `agent/`: Core tool definitions
-- `prompts/`: System prompts
-- `config.py`: Settings
-- `requirements.txt`: Dependencies
-- `tests/`: Test files
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `prompts/` — Prompts module
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+- `utils/` — Utils module
+
+## API Keys
+- `GEMINI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

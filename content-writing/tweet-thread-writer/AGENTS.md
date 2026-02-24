@@ -1,12 +1,14 @@
-# AGENTS.md — Tweet Thread Writer
+# Tweet Thread Writer
 
 ## Overview
-Converts long-form content into optimized Twitter/X threads with hooks and CTAs. Designed as an AI agents project.
+Converts long-form content into optimized Twitter/X threads with hooks and CTAs.
 
 ## Tech
 - Python 3.10+
-- AutoGen / CrewAI / LangChain
-- OpenAI API / Gemini API
+- CrewAI
+- LangChain
+- AutoGen
+- Gemini API
 
 ## Features
 - Accept long-form content input
@@ -19,12 +21,18 @@ Converts long-form content into optimized Twitter/X threads with hooks and CTAs.
 - Preview full thread before export
 
 ## File Structure
-- `main.py`: Entry loop
-- `agent/`: Core tool definitions
-- `prompts/`: System prompts
-- `config.py`: Settings
-- `requirements.txt`: Dependencies
-- `tests/`: Test files
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## API Keys
+- `GEMINI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

@@ -1,4 +1,4 @@
-# AGENTS.md — Regex Tester
+# Regex Tester
 
 ## Overview
 Extract matches using a common pattern name.
@@ -6,7 +6,6 @@ Extract matches using a common pattern name.
 ## Tech
 - Python 3.10+
 - python-dotenv
-- pytest
 
 ## Features
 - Cmd Test
@@ -16,12 +15,18 @@ Extract matches using a common pattern name.
 - Cmd Extract
 
 ## File Structure
-- `README.md`: Readme.Md
-- `agent/`: Module directory
-- `config.py`: Configuration
-- `main.py`: Entry point
-- `requirements.txt`: Dependencies
-- `tests/`: Module directory
+- `README.md` — Documentation
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `pyproject.toml` — Project configuration
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

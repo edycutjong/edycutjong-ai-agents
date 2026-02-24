@@ -1,12 +1,14 @@
-# AGENTS.md — Expense Categorizer
+# Expense Categorizer
 
 ## Overview
-Reads bank statements and receipts, auto-categorizes expenses for bookkeeping. Designed as an AI agents project.
+Reads bank statements and receipts, auto-categorizes expenses for bookkeeping.
 
 ## Tech
 - Python 3.10+
-- AutoGen / CrewAI / LangChain
-- OpenAI API / Gemini API
+- CrewAI
+- LangChain
+- AutoGen
+- Gemini API
 
 ## Features
 - Parse bank statement CSVs
@@ -19,12 +21,20 @@ Reads bank statements and receipts, auto-categorizes expenses for bookkeeping. D
 - Export for tax preparation
 
 ## File Structure
-- `main.py`: Entry loop
-- `agent/`: Core tool definitions
-- `prompts/`: System prompts
-- `config.py`: Settings
-- `requirements.txt`: Dependencies
-- `tests/`: Test files
+- `README.md` — Documentation
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## API Keys
+- `GEMINI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

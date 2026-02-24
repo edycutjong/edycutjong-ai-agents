@@ -1,12 +1,14 @@
-# AGENTS.md — PR review agent
+# Code Reviewer
 
 ## Overview
-PR review agent — Fetch PR diff from GitHub. Designed as a agents project.
+PR review agent — Fetch PR diff from GitHub.
 
 ## Tech
 - Python 3.10+
-- AutoGen / CrewAI / LangChain
-- OpenAI API / Gemini API
+- CrewAI
+- LangChain
+- AutoGen
+- Gemini API
 
 ## Features
 - Fetch PR diff from GitHub
@@ -16,12 +18,20 @@ PR review agent — Fetch PR diff from GitHub. Designed as a agents project.
 - Security scan
 
 ## File Structure
-- requirements.txt
-- main.py
-- agent_config.py
-- .env.example
-code-reviewer/
-└── AGENTS.md
+- `agent_config.py` — Agent configuration
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `src/` — Src module
+- `tests/` — Tests module
+
+## API Keys
+- `GEMINI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

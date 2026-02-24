@@ -1,12 +1,12 @@
-# AGENTS.md — ASCII Art Generator
+# Ascii Art Generator
 
 ## Overview
-ASCII Art Generator — Generate ASCII art from text input. Designed as an AI agent project.
+ASCII Art Generator — Generate ASCII art from text input.
 
 ## Tech
 - Python 3.10+
-- CLI (argparse)
-- No external API key required
+- python-dotenv
+- pytest
 
 ## Features
 - Convert text to ASCII art banners
@@ -16,12 +16,18 @@ ASCII Art Generator — Generate ASCII art from text input. Designed as an AI ag
 - Figlet-compatible output
 
 ## File Structure
-- main.py
-- agent/
-- tests/
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
-```bash
-python main.py <input>
-python main.py --help-agent
-```
+- `pip install -r requirements.txt` — Install deps
+- `python main.py` — Run agent
+- `pytest tests/` — Run tests

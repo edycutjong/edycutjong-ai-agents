@@ -1,12 +1,14 @@
-# AGENTS.md — HTML to Markdown Converter
+# HTML To Markdown Converter
 
 ## Overview
-Scrapes and converts HTML pages to clean, well-formatted Markdown documentation. Designed as an AI agents project.
+Scrapes and converts HTML pages to clean, well-formatted Markdown documentation.
 
 ## Tech
 - Python 3.10+
-- AutoGen / CrewAI / LangChain
-- OpenAI API / Gemini API
+- CrewAI
+- LangChain
+- AutoGen
+- Gemini API
 
 ## Features
 - Parse HTML with tag hierarchy
@@ -19,12 +21,22 @@ Scrapes and converts HTML pages to clean, well-formatted Markdown documentation.
 - Maintain internal link structure
 
 ## File Structure
-- `main.py`: Entry loop
-- `agent/`: Core tool definitions
-- `prompts/`: System prompts
-- `config.py`: Settings
-- `requirements.txt`: Dependencies
-- `tests/`: Test files
+- `agent/` — Agent module
+- `app.py` — Application entry
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `prompts/` — Prompts module
+- `requirements.txt` — Dependencies
+- `test_output/` — Test Output module
+- `tests/` — Tests module
+
+## API Keys
+- `GEMINI_API_KEY` — Required
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
 - `pip install -r requirements.txt` — Install deps

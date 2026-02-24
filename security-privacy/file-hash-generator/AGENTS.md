@@ -1,12 +1,12 @@
-# AGENTS.md — File Hash Generator
+# File Hash Generator
 
 ## Overview
-File Hash Generator — Generate file hashes (MD5, SHA-256, SHA-512) for integrity checks. Designed as an AI agent project.
+File Hash Generator — Generate file hashes (MD5, SHA-256, SHA-512) for integrity checks.
 
 ## Tech
 - Python 3.10+
-- CLI (argparse)
-- No external API key required
+- python-dotenv
+- pytest
 
 ## Features
 - Generate MD5, SHA-1, SHA-256 hashes
@@ -16,12 +16,18 @@ File Hash Generator — Generate file hashes (MD5, SHA-256, SHA-512) for integri
 - Batch file hashing
 
 ## File Structure
-- main.py
-- agent/
-- tests/
+- `agent/` — Agent module
+- `config.py` — Configuration & settings
+- `main.py` — Entry point
+- `requirements.txt` — Dependencies
+- `tests/` — Tests module
+
+## Localization
+- Translations: `../../agent_translations.json`
+- Hub i18n: `../../i18n.py`
+- Supported: en, id, zh, es, pt, ja, ko, de, fr, ru, ar, hi
 
 ## Commands
-```bash
-python main.py <input>
-python main.py --help-agent
-```
+- `pip install -r requirements.txt` — Install deps
+- `python main.py` — Run agent
+- `pytest tests/` — Run tests
