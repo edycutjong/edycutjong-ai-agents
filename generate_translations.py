@@ -19,7 +19,9 @@ BASE_DIR = Path(__file__).parent
 ACRONYMS = {"ai", "api", "css", "csv", "dns", "html", "http", "ip", "json",
             "jwt", "llm", "ml", "npm", "pdf", "qa", "rag", "rss", "seo",
             "sql", "ssh", "ssl", "svg", "ui", "url", "ux", "xml", "yaml",
-            "sop", "cors", "cli", "crm", "readme", "ci", "cd"}
+            "sop", "cors", "cli", "crm", "readme", "ci", "cd",
+            "prompt", "slug", "regex", "graphql", "oauth", "webhook",
+            "postman", "crud", "dockerfile", "monorepo", "ci/cd"}
 
 
 def slug_to_name(slug: str) -> str:
@@ -74,6 +76,10 @@ def discover_agents():
     return agents
 
 
+ARABIC_BOILERPLATE = "تم تصميمه كمشروع وكلاء الذكاء الاصطناعي"
+ARABIC_BOILERPLATE_ALT = "تم تصميمه كمشروع وكيل AI"
+
+
 def google_translate(text: str, target_lang: str) -> str:
     """Translate using Google's free translate API via urllib."""
     if not text or not text.strip():
@@ -94,11 +100,26 @@ def google_translate(text: str, target_lang: str) -> str:
                 data = json.loads(resp.read().decode("utf-8"))
             # Response structure: [[["translated text", "source text", ...]]]
             translated = "".join(part[0] for part in data[0] if part[0])
-            return translated
+            return _post_process(translated, target_lang)
         except Exception as e:
             if attempt == 2:
                 return text  # Fallback to English
             time.sleep(0.5 * (attempt + 1))
+    return text
+
+
+def _post_process(text: str, lang: str) -> str:
+    """Clean up common translation artifacts."""
+    # Strip Arabic boilerplate suffix (both variants)
+    if lang == "ar":
+        for bp in (ARABIC_BOILERPLATE, ARABIC_BOILERPLATE_ALT):
+            text = text.replace(f" {bp}.", "")
+            text = text.replace(f" {bp}", "")
+            text = text.replace(bp, "")
+        text = text.rstrip()
+    # Fix double periods in ru/hi
+    if lang in ("ru", "hi") and text.endswith(".."):
+        text = text[:-1]
     return text
 
 
@@ -131,6 +152,14 @@ def main():
             sys.stdout.write(f"\r   [{pct:3d}%] {done}/{total}")
             sys.stdout.flush()
             time.sleep(0.15)  # Gentle rate limit
+
+    # Add en key with both name and description
+    for key in keys:
+        agent = agents[key]
+        translations[key]["en"] = {
+            "name": agent["name"],
+            "description": agent["description"],
+        }
 
         print(f"  ✓ {our_locale}")
 

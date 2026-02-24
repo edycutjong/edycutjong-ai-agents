@@ -34,18 +34,19 @@
     },
     "ru": {
       "name": "Детектор галлюцинаций с искусственным интеллектом",
-      "description": "Перекрестные ссылки на результаты ИИ с исходными документами и пометка сфабрикованных претензий.."
+      "description": "Перекрестные ссылки на результаты ИИ с исходными документами и пометка сфабрикованных претензий."
     },
     "ar": {
       "name": "كاشف الهلوسة بالذكاء الاصطناعي",
-      "description": "الإسناد الترافقي لمخرجات الذكاء الاصطناعي مقابل المستندات المصدرية ووضع علامات على المطالبات الملفقة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "الإسناد الترافقي لمخرجات الذكاء الاصطناعي مقابل المستندات المصدرية ووضع علامات على المطالبات الملفقة."
     },
     "hi": {
       "name": "एआई मतिभ्रम डिटेक्टर",
       "description": "स्रोत दस्तावेजों के विरुद्ध एआई आउटपुट को क्रॉस-रेफरेंस करता है और मनगढ़ंत दावों को चिह्नित करता है।."
     },
     "en": {
-      "description": "Cross-references AI outputs against source documents and flags fabricated claims."
+      "description": "Cross-references AI outputs against source documents and flags fabricated claims.",
+      "name": "AI Hallucination Detector"
     }
   },
   "ai-ml-ops/embedding-explorer": {
@@ -83,18 +84,19 @@
     },
     "ru": {
       "name": "Встраивание проводника",
-      "description": "Визуализирует и ищет векторные вложения, находит кластеры, выбросы и ближайших соседей.."
+      "description": "Визуализирует и ищет векторные вложения, находит кластеры, выбросы и ближайших соседей."
     },
     "ar": {
       "name": "تضمين المستكشف",
-      "description": "تصور عمليات تضمين المتجهات والبحث فيها، والعثور على المجموعات والقيم المتطرفة وأقرب الجيران. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "تصور عمليات تضمين المتجهات والبحث فيها، والعثور على المجموعات والقيم المتطرفة وأقرب الجيران."
     },
     "hi": {
       "name": "एंबेडिंग एक्सप्लोरर",
       "description": "वेक्टर एम्बेडिंग को विज़ुअलाइज़ करता है और खोजता है, क्लस्टर, आउटलेयर और निकटतम पड़ोसियों को ढूंढता है।."
     },
     "en": {
-      "description": "Visualizes and searches vector embeddings, finds clusters, outliers, and nearest neighbors."
+      "description": "Visualizes and searches vector embeddings, finds clusters, outliers, and nearest neighbors.",
+      "name": "Embedding Explorer"
     }
   },
   "ai-ml-ops/fine-tune-dataset-curator": {
@@ -132,18 +134,19 @@
     },
     "ru": {
       "name": "Куратор набора данных Fine Tune",
-      "description": "Курирует и форматирует наборы данных для точной настройки LLM в форматах JSONL и чата.."
+      "description": "Курирует и форматирует наборы данных для точной настройки LLM в форматах JSONL и чата."
     },
     "ar": {
       "name": "منسق مجموعة البيانات Fine Tune",
-      "description": "ينظم مجموعات البيانات وينسقها لضبط LLM في تنسيقات JSONL والدردشة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "ينظم مجموعات البيانات وينسقها لضبط LLM في تنسيقات JSONL والدردشة."
     },
     "hi": {
       "name": "फाइन ट्यून डेटासेट क्यूरेटर",
       "description": "जेएसओएनएल और चैट प्रारूपों में एलएलएम फाइन-ट्यूनिंग के लिए डेटासेट को क्यूरेट और प्रारूपित करता है।."
     },
     "en": {
-      "description": "Curates and formats datasets for LLM fine-tuning in JSONL and chat formats."
+      "description": "Curates and formats datasets for LLM fine-tuning in JSONL and chat formats.",
+      "name": "Fine Tune Dataset Curator"
     }
   },
   "ai-ml-ops/llm-cost-calculator": {
@@ -181,18 +184,19 @@
     },
     "ru": {
       "name": "Калькулятор стоимости LLM",
-      "description": "Отслеживает использование токенов поставщиками ИИ, прогнозирует затраты и предлагает варианты оптимизации.."
+      "description": "Отслеживает использование токенов поставщиками ИИ, прогнозирует затраты и предлагает варианты оптимизации."
     },
     "ar": {
       "name": "حاسبة التكلفة LLM",
-      "description": "يتتبع استخدام الرمز المميز عبر موفري الذكاء الاصطناعي، ويتنبأ بالتكاليف، ويقترح التحسينات. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يتتبع استخدام الرمز المميز عبر موفري الذكاء الاصطناعي، ويتنبأ بالتكاليف، ويقترح التحسينات."
     },
     "hi": {
       "name": "एलएलएम लागत कैलकुलेटर",
       "description": "एआई प्रदाताओं में टोकन उपयोग को ट्रैक करता है, लागत का पूर्वानुमान लगाता है और अनुकूलन का सुझाव देता है।."
     },
     "en": {
-      "description": "Tracks token usage across AI providers, forecasts costs, and suggests optimizations."
+      "description": "Tracks token usage across AI providers, forecasts costs, and suggests optimizations.",
+      "name": "LLM Cost Calculator"
     }
   },
   "ai-ml-ops/model-benchmark-runner": {
@@ -230,18 +234,19 @@
     },
     "ru": {
       "name": "Модель Benchmark Runner",
-      "description": "Сравнивает модели LLM с наборами тестов, сравнивая стоимость, качество и скорость.."
+      "description": "Сравнивает модели LLM с наборами тестов, сравнивая стоимость, качество и скорость."
     },
     "ar": {
       "name": "نموذج عداء المعيار",
-      "description": "قياس نماذج LLM مقابل مجموعات الاختبار، ومقارنة التكلفة والجودة والسرعة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "قياس نماذج LLM مقابل مجموعات الاختبار، ومقارنة التكلفة والجودة والسرعة."
     },
     "hi": {
       "name": "मॉडल बेंचमार्क धावक",
       "description": "लागत, गुणवत्ता और गति की तुलना करते हुए परीक्षण सूट के मुकाबले एलएलएम मॉडल को बेंचमार्क करें।."
     },
     "en": {
-      "description": "Benchmarks LLM models against test suites, comparing cost, quality, and speed."
+      "description": "Benchmarks LLM models against test suites, comparing cost, quality, and speed.",
+      "name": "Model Benchmark Runner"
     }
   },
   "ai-ml-ops/prompt-optimizer": {
@@ -254,7 +259,7 @@
       "description": "接受 AI 提示、运行 A/B 变体、测量输出质量并提出改进建议。"
     },
     "es": {
-      "name": "Optimizador rápido",
+      "name": "Optimizador de Prompts",
       "description": "Acepta indicaciones de IA, ejecuta variantes A/B, mide la calidad de los resultados y sugiere mejoras."
     },
     "pt": {
@@ -279,18 +284,19 @@
     },
     "ru": {
       "name": "Подсказка оптимизатора",
-      "description": "Принимает подсказки ИИ, запускает варианты A/B, измеряет качество продукции и предлагает улучшения.."
+      "description": "Принимает подсказки ИИ, запускает варианты A/B, измеряет качество продукции и предлагает улучшения."
     },
     "ar": {
       "name": "محسن موجه",
-      "description": "يأخذ مطالبات الذكاء الاصطناعي، ويشغل متغيرات A/B، ويقيس جودة المخرجات، ويقترح التحسينات. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يأخذ مطالبات الذكاء الاصطناعي، ويشغل متغيرات A/B، ويقيس جودة المخرجات، ويقترح التحسينات."
     },
     "hi": {
       "name": "शीघ्र अनुकूलक",
       "description": "एआई संकेत लेता है, ए/बी वेरिएंट चलाता है, आउटपुट गुणवत्ता मापता है और सुधार का सुझाव देता है।."
     },
     "en": {
-      "description": "Takes AI prompts, runs A/B variants, measures output quality, and suggests improvements."
+      "description": "Takes AI prompts, runs A/B variants, measures output quality, and suggests improvements.",
+      "name": "Prompt Optimizer"
     }
   },
   "ai-ml-ops/rag-evaluator": {
@@ -328,18 +334,19 @@
     },
     "ru": {
       "name": "RAG-оценщик",
-      "description": "Тестирует качество конвейера RAG, измеряя точность поиска и релевантность ответов.."
+      "description": "Тестирует качество конвейера RAG, измеряя точность поиска и релевантность ответов."
     },
     "ar": {
       "name": "مقيم RAG",
-      "description": "يختبر جودة خط أنابيب RAG من خلال قياس دقة الاسترجاع وملاءمة الإجابة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يختبر جودة خط أنابيب RAG من خلال قياس دقة الاسترجاع وملاءمة الإجابة."
     },
     "hi": {
       "name": "आरएजी मूल्यांकनकर्ता",
       "description": "पुनर्प्राप्ति सटीकता और उत्तर प्रासंगिकता को मापकर आरएजी पाइपलाइन गुणवत्ता का परीक्षण करता है।."
     },
     "en": {
-      "description": "Tests RAG pipeline quality by measuring retrieval accuracy and answer relevance."
+      "description": "Tests RAG pipeline quality by measuring retrieval accuracy and answer relevance.",
+      "name": "RAG Evaluator"
     }
   },
   "ai-ml-ops/training-data-generator": {
@@ -377,18 +384,19 @@
     },
     "ru": {
       "name": "Генератор обучающих данных",
-      "description": "Генерирует синтетические данные обучения на основе спецификаций и исходных примеров.."
+      "description": "Генерирует синтетические данные обучения на основе спецификаций и исходных примеров."
     },
     "ar": {
       "name": "مولد بيانات التدريب",
-      "description": "يولد بيانات التدريب الاصطناعية من المواصفات وأمثلة البذور. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يولد بيانات التدريب الاصطناعية من المواصفات وأمثلة البذور."
     },
     "hi": {
       "name": "प्रशिक्षण डेटा जेनरेटर",
       "description": "विशिष्टताओं और बीज उदाहरणों से सिंथेटिक प्रशिक्षण डेटा उत्पन्न करता है।."
     },
     "en": {
-      "description": "Generates synthetic training data from specifications and seed examples."
+      "description": "Generates synthetic training data from specifications and seed examples.",
+      "name": "Training Data Generator"
     }
   },
   "api-integration/api-changelog-differ": {
@@ -426,18 +434,19 @@
     },
     "ru": {
       "name": "Журнал изменений API отличается",
-      "description": "Сравнивает версии API (спецификации OpenAPI), создает подробные руководства по миграции.."
+      "description": "Сравнивает версии API (спецификации OpenAPI), создает подробные руководства по миграции."
     },
     "ar": {
       "name": "تختلف واجهة برمجة التطبيقات (API Changelog).",
-      "description": "يقارن إصدارات واجهة برمجة التطبيقات (مواصفات OpenAPI)، وينشئ أدلة ترحيل مفصلة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقارن إصدارات واجهة برمجة التطبيقات (مواصفات OpenAPI)، وينشئ أدلة ترحيل مفصلة."
     },
     "hi": {
       "name": "एपीआई चेंजलॉग भिन्न",
       "description": "एपीआई संस्करणों (ओपनएपीआई स्पेक्स) की तुलना करता है, विस्तृत माइग्रेशन गाइड तैयार करता है।."
     },
     "en": {
-      "description": "Compares API versions (OpenAPI specs), generates detailed migration guides."
+      "description": "Compares API versions (OpenAPI specs), generates detailed migration guides.",
+      "name": "API Changelog Differ"
     }
   },
   "api-integration/api-doc-generator": {
@@ -475,18 +484,19 @@
     },
     "ru": {
       "name": "Генератор документов API",
-      "description": "Считывает обработчики маршрутов API и генерирует спецификации OpenAPI с интерактивной документацией.."
+      "description": "Считывает обработчики маршрутов API и генерирует спецификации OpenAPI с интерактивной документацией."
     },
     "ar": {
       "name": "مولد مستند API",
-      "description": "يقرأ معالجات توجيه واجهة برمجة التطبيقات (API) وينشئ مواصفات OpenAPI باستخدام الوثائق التفاعلية. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ معالجات توجيه واجهة برمجة التطبيقات (API) وينشئ مواصفات OpenAPI باستخدام الوثائق التفاعلية."
     },
     "hi": {
       "name": "एपीआई डॉक जेनरेटर",
       "description": "एपीआई रूट हैंडलर को पढ़ता है और इंटरैक्टिव दस्तावेज़ीकरण के साथ ओपनएपीआई विनिर्देश तैयार करता है।."
     },
     "en": {
-      "description": "Reads API route handlers and generates OpenAPI specs with interactive documentation."
+      "description": "Reads API route handlers and generates OpenAPI specs with interactive documentation.",
+      "name": "API Doc Generator"
     }
   },
   "api-integration/api-rate-limit-tester": {
@@ -524,18 +534,19 @@
     },
     "ru": {
       "name": "Тестер ограничения скорости API",
-      "description": "API-интерфейсы подвергаются стресс-тестированию для сопоставления ограничений скорости и создания документации по использованию.."
+      "description": "API-интерфейсы подвергаются стресс-тестированию для сопоставления ограничений скорости и создания документации по использованию."
     },
     "ar": {
       "name": "اختبار حد معدل واجهة برمجة التطبيقات (API).",
-      "description": "واجهات برمجة التطبيقات لاختبارات الإجهاد لتعيين حدود المعدلات وإنشاء وثائق الاستخدام. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "واجهات برمجة التطبيقات لاختبارات الإجهاد لتعيين حدود المعدلات وإنشاء وثائق الاستخدام."
     },
     "hi": {
       "name": "एपीआई दर सीमा परीक्षक",
       "description": "दर सीमाओं को मैप करने के लिए तनाव-परीक्षण एपीआई और उपयोग दस्तावेज़ तैयार करता है।."
     },
     "en": {
-      "description": "Stress-tests APIs to map rate limits and generates usage documentation."
+      "description": "Stress-tests APIs to map rate limits and generates usage documentation.",
+      "name": "API Rate Limit Tester"
     }
   },
   "api-integration/graphql-schema-analyzer": {
@@ -573,18 +584,19 @@
     },
     "ru": {
       "name": "Анализатор схемы Graphql",
-      "description": "Анализирует схемы GraphQL, предлагает варианты оптимизации и обнаруживает проблемы с запросами N+1.."
+      "description": "Анализирует схемы GraphQL, предлагает варианты оптимизации и обнаруживает проблемы с запросами N+1."
     },
     "ar": {
       "name": "محلل مخطط Graphql",
-      "description": "يحلل مخططات GraphQL، ويقترح التحسينات، ويكتشف مشاكل استعلام N+1. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يحلل مخططات GraphQL، ويقترح التحسينات، ويكتشف مشاكل استعلام N+1."
     },
     "hi": {
       "name": "ग्राफ़िकल स्कीमा विश्लेषक",
       "description": "ग्राफक्यूएल स्कीमा का विश्लेषण करता है, अनुकूलन का सुझाव देता है, और एन+1 क्वेरी समस्याओं का पता लगाता है।."
     },
     "en": {
-      "description": "Analyzes GraphQL schemas, suggests optimizations, and detects N+1 query problems."
+      "description": "Analyzes GraphQL schemas, suggests optimizations, and detects N+1 query problems.",
+      "name": "Graphql Schema Analyzer"
     }
   },
   "api-integration/oauth-flow-debugger": {
@@ -622,18 +634,19 @@
     },
     "ru": {
       "name": "Отладчик потока OAuth",
-      "description": "Шаг за шагом отслеживает потоки OAuth 2.0, выявляет неправильные конфигурации и предлагает исправления.."
+      "description": "Шаг за шагом отслеживает потоки OAuth 2.0, выявляет неправильные конфигурации и предлагает исправления."
     },
     "ar": {
       "name": "مصحح أخطاء تدفق Oauth",
-      "description": "يتدفق تتبع OAuth 2.0 خطوة بخطوة، ويحدد التكوينات الخاطئة، ويقترح الإصلاحات. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يتدفق تتبع OAuth 2.0 خطوة بخطوة، ويحدد التكوينات الخاطئة، ويقترح الإصلاحات."
     },
     "hi": {
       "name": "ओउथ फ्लो डिबगर",
       "description": "OAuth 2.0 चरण-दर-चरण प्रवाह का पता लगाता है, गलत कॉन्फ़िगरेशन की पहचान करता है, और समाधान सुझाता है।."
     },
     "en": {
-      "description": "Traces OAuth 2.0 flows step-by-step, identifies misconfigurations, and suggests fixes."
+      "description": "Traces OAuth 2.0 flows step-by-step, identifies misconfigurations, and suggests fixes.",
+      "name": "Oauth Flow Debugger"
     }
   },
   "api-integration/postman-to-code-converter": {
@@ -671,18 +684,19 @@
     },
     "ru": {
       "name": "Конвертер почтальона в код",
-      "description": "Преобразует коллекции Postman/Insomnia в фрагменты исполняемого кода на любом языке.."
+      "description": "Преобразует коллекции Postman/Insomnia в фрагменты исполняемого кода на любом языке."
     },
     "ar": {
       "name": "ساعي البريد لتحويل رمز",
-      "description": "يحول مجموعات Postman/Insomnia إلى مقتطفات تعليمات برمجية قابلة للتنفيذ بأي لغة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يحول مجموعات Postman/Insomnia إلى مقتطفات تعليمات برمجية قابلة للتنفيذ بأي لغة."
     },
     "hi": {
       "name": "डाकिया से कोड परिवर्तक",
       "description": "पोस्टमैन/अनिद्रा संग्रहों को किसी भी भाषा में निष्पादन योग्य कोड स्निपेट में परिवर्तित करता है।."
     },
     "en": {
-      "description": "Converts Postman/Insomnia collections to executable code snippets in any language."
+      "description": "Converts Postman/Insomnia collections to executable code snippets in any language.",
+      "name": "Postman To Code Converter"
     }
   },
   "api-integration/rest-to-graphql-converter": {
@@ -720,18 +734,19 @@
     },
     "ru": {
       "name": "Конвертер Rest в Graphql",
-      "description": "Считывает определения конечных точек REST API и генерирует эквивалентную схему и преобразователи GraphQL.."
+      "description": "Считывает определения конечных точек REST API и генерирует эквивалентную схему и преобразователи GraphQL."
     },
     "ar": {
       "name": "الباقي لتحويل Graphql",
-      "description": "يقرأ تعريفات نقطة نهاية REST API وينشئ مخطط GraphQL ومحللات مكافئة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ تعريفات نقطة نهاية REST API وينشئ مخطط GraphQL ومحللات مكافئة."
     },
     "hi": {
       "name": "रेस्ट टू ग्राफ़िकल कन्वर्टर",
       "description": "REST API एंडपॉइंट परिभाषाएँ पढ़ता है और समतुल्य ग्राफक्यूएल स्कीमा और रिज़ॉल्वर उत्पन्न करता है।."
     },
     "en": {
-      "description": "Reads REST API endpoint definitions and generates equivalent GraphQL schema and resolvers."
+      "description": "Reads REST API endpoint definitions and generates equivalent GraphQL schema and resolvers.",
+      "name": "Rest To Graphql Converter"
     }
   },
   "api-integration/webhook-tester": {
@@ -769,18 +784,19 @@
     },
     "ru": {
       "name": "Тестер вебхуков",
-      "description": "Создает временные конечные точки веб-перехватчика, регистрирует входящие полезные данные и поддерживает воспроизведение запросов.."
+      "description": "Создает временные конечные точки веб-перехватчика, регистрирует входящие полезные данные и поддерживает воспроизведение запросов."
     },
     "ar": {
       "name": "اختبار خطاف الويب",
-      "description": "ينشئ نقاط نهاية خطاف ويب مؤقتة، ويسجل الحمولات الواردة، ويدعم إعادة تشغيل الطلب. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "ينشئ نقاط نهاية خطاف ويب مؤقتة، ويسجل الحمولات الواردة، ويدعم إعادة تشغيل الطلب."
     },
     "hi": {
       "name": "वेबहुक परीक्षक",
       "description": "अस्थायी वेबहुक एंडपॉइंट बनाता है, आने वाले पेलोड को लॉग करता है, और अनुरोध रीप्ले का समर्थन करता है।."
     },
     "en": {
-      "description": "Creates temporary webhook endpoints, logs incoming payloads, and supports request replay."
+      "description": "Creates temporary webhook endpoints, logs incoming payloads, and supports request replay.",
+      "name": "Webhook Tester"
     }
   },
   "business-productivity/competitive-analysis-agent": {
@@ -818,18 +834,19 @@
     },
     "ru": {
       "name": "Агент конкурентного анализа",
-      "description": "Исследует конкурентов, сравнивает характеристики и цены, составляет аналитические отчеты.."
+      "description": "Исследует конкурентов, сравнивает характеристики и цены, составляет аналитические отчеты."
     },
     "ar": {
       "name": "وكيل التحليل التنافسي",
-      "description": "يبحث عن المنافسين، ويقارن الميزات والأسعار، وينشئ تقارير تحليلية. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يبحث عن المنافسين، ويقارن الميزات والأسعار، وينشئ تقارير تحليلية."
     },
     "hi": {
       "name": "प्रतिस्पर्धी विश्लेषण एजेंट",
       "description": "प्रतिस्पर्धियों पर शोध करता है, सुविधाओं और कीमतों की तुलना करता है, विश्लेषण रिपोर्ट तैयार करता है।."
     },
     "en": {
-      "description": "Researches competitors, compares features and pricing, generates analysis reports."
+      "description": "Researches competitors, compares features and pricing, generates analysis reports.",
+      "name": "Competitive Analysis Agent"
     }
   },
   "business-productivity/contract-analyzer": {
@@ -867,18 +884,19 @@
     },
     "ru": {
       "name": "Анализатор контрактов",
-      "description": "Читает юридические контракты, выделяет рискованные положения и предлагает поправки.."
+      "description": "Читает юридические контракты, выделяет рискованные положения и предлагает поправки."
     },
     "ar": {
       "name": "محلل العقود",
-      "description": "يقرأ العقود القانونية ويسلط الضوء على البنود الخطرة ويقترح التعديلات. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ العقود القانونية ويسلط الضوء على البنود الخطرة ويقترح التعديلات."
     },
     "hi": {
       "name": "अनुबंध विश्लेषक",
       "description": "कानूनी अनुबंध पढ़ता है, जोखिम भरे खंडों पर प्रकाश डालता है और संशोधन का सुझाव देता है।."
     },
     "en": {
-      "description": "Reads legal contracts, highlights risky clauses, and suggests amendments."
+      "description": "Reads legal contracts, highlights risky clauses, and suggests amendments.",
+      "name": "Contract Analyzer"
     }
   },
   "business-productivity/expense-categorizer": {
@@ -916,18 +934,19 @@
     },
     "ru": {
       "name": "Классификатор расходов",
-      "description": "Читает банковские выписки и квитанции, автоматически классифицирует расходы для бухгалтерского учета.."
+      "description": "Читает банковские выписки и квитанции, автоматически классифицирует расходы для бухгалтерского учета."
     },
     "ar": {
       "name": "مصنف النفقات",
-      "description": "يقرأ البيانات المصرفية والإيصالات، ويصنف النفقات تلقائيًا لمسك الدفاتر. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ البيانات المصرفية والإيصالات، ويصنف النفقات تلقائيًا لمسك الدفاتر."
     },
     "hi": {
       "name": "व्यय श्रेणीकारक",
       "description": "बैंक विवरण और रसीदें पढ़ता है, बहीखाता पद्धति के लिए खर्चों को स्वचालित रूप से वर्गीकृत करता है।."
     },
     "en": {
-      "description": "Reads bank statements and receipts, auto-categorizes expenses for bookkeeping."
+      "description": "Reads bank statements and receipts, auto-categorizes expenses for bookkeeping.",
+      "name": "Expense Categorizer"
     }
   },
   "business-productivity/invoice-generator-agent": {
@@ -965,18 +984,19 @@
     },
     "ru": {
       "name": "Агент генератора счетов",
-      "description": "Считывает данные проекта и учета рабочего времени, генерирует профессиональные счета в формате PDF.."
+      "description": "Считывает данные проекта и учета рабочего времени, генерирует профессиональные счета в формате PDF."
     },
     "ar": {
       "name": "وكيل مولد الفاتورة",
-      "description": "يقرأ بيانات المشروع وتتبع الوقت، وينشئ فواتير PDF احترافية. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ بيانات المشروع وتتبع الوقت، وينشئ فواتير PDF احترافية."
     },
     "hi": {
       "name": "चालान जेनरेटर एजेंट",
       "description": "प्रोजेक्ट और समय ट्रैकिंग डेटा पढ़ता है, पेशेवर पीडीएफ चालान तैयार करता है।."
     },
     "en": {
-      "description": "Reads project and time tracking data, generates professional PDF invoices."
+      "description": "Reads project and time tracking data, generates professional PDF invoices.",
+      "name": "Invoice Generator Agent"
     }
   },
   "business-productivity/kpi-dashboard-generator": {
@@ -1014,18 +1034,19 @@
     },
     "ru": {
       "name": "Генератор панели KPI",
-      "description": "Считывает источники данных и создает информационные панели KPI с настраиваемыми оповещениями.."
+      "description": "Считывает источники данных и создает информационные панели KPI с настраиваемыми оповещениями."
     },
     "ar": {
       "name": "مولد لوحة تحكم Kpi",
-      "description": "يقرأ مصادر البيانات وينشئ لوحات معلومات مؤشرات الأداء الرئيسية مع تنبيهات قابلة للتكوين. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ مصادر البيانات وينشئ لوحات معلومات مؤشرات الأداء الرئيسية مع تنبيهات قابلة للتكوين."
     },
     "hi": {
       "name": "केपीआई डैशबोर्ड जेनरेटर",
       "description": "डेटा स्रोतों को पढ़ता है और कॉन्फ़िगर करने योग्य अलर्ट के साथ KPI डैशबोर्ड उत्पन्न करता है।."
     },
     "en": {
-      "description": "Reads data sources and generates KPI dashboards with configurable alerts."
+      "description": "Reads data sources and generates KPI dashboards with configurable alerts.",
+      "name": "Kpi Dashboard Generator"
     }
   },
   "business-productivity/meeting-notes-summarizer": {
@@ -1074,7 +1095,8 @@
       "description": "बैठक प्रतिलेखों को कार्रवाई मदों में सारांशित करें।."
     },
     "en": {
-      "description": "Summarize meeting transcripts into action items."
+      "description": "Summarize meeting transcripts into action items.",
+      "name": "Meeting Notes Summarizer"
     }
   },
   "business-productivity/meeting-scheduler-agent": {
@@ -1112,18 +1134,19 @@
     },
     "ru": {
       "name": "Агент планировщика собраний",
-      "description": "Находит оптимальное время встреч в разных календарях и часовых поясах с помощью искусственного интеллекта.."
+      "description": "Находит оптимальное время встреч в разных календарях и часовых поясах с помощью искусственного интеллекта."
     },
     "ar": {
       "name": "وكيل جدولة الاجتماعات",
-      "description": "يجد الأوقات المثالية للاجتماعات عبر التقاويم والمناطق الزمنية باستخدام الذكاء الاصطناعي. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يجد الأوقات المثالية للاجتماعات عبر التقاويم والمناطق الزمنية باستخدام الذكاء الاصطناعي."
     },
     "hi": {
       "name": "शेड्यूलर एजेंट से मिलना",
       "description": "एआई का उपयोग करके कैलेंडर और समय क्षेत्रों में इष्टतम बैठक समय ढूँढता है।."
     },
     "en": {
-      "description": "Finds optimal meeting times across calendars and time zones using AI."
+      "description": "Finds optimal meeting times across calendars and time zones using AI.",
+      "name": "Meeting Scheduler Agent"
     }
   },
   "business-productivity/okr-tracker": {
@@ -1161,18 +1184,19 @@
     },
     "ru": {
       "name": "Окр Трекер",
-      "description": "Управляет целями и ключевыми результатами, отслеживает прогресс и создает отчеты о состоянии.."
+      "description": "Управляет целями и ключевыми результатами, отслеживает прогресс и создает отчеты о состоянии."
     },
     "ar": {
       "name": "اوكر المقتفي",
-      "description": "إدارة الأهداف والنتائج الرئيسية، وتتبع التقدم، وإنشاء تقارير الحالة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "إدارة الأهداف والنتائج الرئيسية، وتتبع التقدم، وإنشاء تقارير الحالة."
     },
     "hi": {
       "name": "ओकेआर ट्रैकर",
       "description": "उद्देश्यों और मुख्य परिणामों को प्रबंधित करता है, प्रगति को ट्रैक करता है और स्थिति रिपोर्ट तैयार करता है।."
     },
     "en": {
-      "description": "Manages Objectives and Key Results, tracks progress, and generates status reports."
+      "description": "Manages Objectives and Key Results, tracks progress, and generates status reports.",
+      "name": "Okr Tracker"
     }
   },
   "business-productivity/receipt-categorizer-agent": {
@@ -1221,7 +1245,8 @@
       "description": "ओसीआर रसीदें और खर्चों को स्वत: वर्गीकृत करें।."
     },
     "en": {
-      "description": "OCR receipts and auto-categorize expenses."
+      "description": "OCR receipts and auto-categorize expenses.",
+      "name": "Receipt Categorizer Agent"
     }
   },
   "business-productivity/resume-tailor-agent": {
@@ -1270,7 +1295,8 @@
       "description": "नौकरी विवरण से मेल खाने के लिए बायोडाटा तैयार करें।."
     },
     "en": {
-      "description": "Tailor resume to match job descriptions."
+      "description": "Tailor resume to match job descriptions.",
+      "name": "Resume Tailor Agent"
     }
   },
   "business-productivity/sla-monitor": {
@@ -1308,18 +1334,19 @@
     },
     "ru": {
       "name": "Сла Монитор",
-      "description": "Отслеживает соблюдение SLA, рассчитывает процент бесперебойной работы и предупреждает о нарушениях.."
+      "description": "Отслеживает соблюдение SLA, рассчитывает процент бесперебойной работы и предупреждает о нарушениях."
     },
     "ar": {
       "name": "مراقب سلا",
-      "description": "يتتبع الامتثال لاتفاقية مستوى الخدمة (SLA)، ويحسب النسب المئوية لوقت التشغيل، وينبيه بالانتهاكات. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يتتبع الامتثال لاتفاقية مستوى الخدمة (SLA)، ويحسب النسب المئوية لوقت التشغيل، وينبيه بالانتهاكات."
     },
     "hi": {
       "name": "एसएलए मॉनिटर",
       "description": "SLA अनुपालन को ट्रैक करता है, अपटाइम प्रतिशत की गणना करता है, और उल्लंघनों पर अलर्ट करता है।."
     },
     "en": {
-      "description": "Tracks SLA compliance, calculates uptime percentages, and alerts on breaches."
+      "description": "Tracks SLA compliance, calculates uptime percentages, and alerts on breaches.",
+      "name": "Sla Monitor"
     }
   },
   "business-productivity/standup-report-generator": {
@@ -1357,18 +1384,19 @@
     },
     "ru": {
       "name": "Генератор стендап-отчетов",
-      "description": "Читает коммиты git и трекеры проблем, автоматически генерирует ежедневные отчеты.."
+      "description": "Читает коммиты git и трекеры проблем, автоматически генерирует ежедневные отчеты."
     },
     "ar": {
       "name": "مولد التقرير الاحتياطي",
-      "description": "يقرأ التزامات git ويصدر أجهزة التتبع، وينشئ تقارير وقوف يومية تلقائيًا. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ التزامات git ويصدر أجهزة التتبع، وينشئ تقارير وقوف يومية تلقائيًا."
     },
     "hi": {
       "name": "स्टैंडअप रिपोर्ट जेनरेटर",
       "description": "गिट कमिट पढ़ता है और ट्रैकर्स जारी करता है, दैनिक स्टैंडअप रिपोर्ट स्वतः उत्पन्न करता है।."
     },
     "en": {
-      "description": "Reads git commits and issue trackers, auto-generates daily standup reports."
+      "description": "Reads git commits and issue trackers, auto-generates daily standup reports.",
+      "name": "Standup Report Generator"
     }
   },
   "business-productivity/timesheet-analyzer": {
@@ -1406,18 +1434,19 @@
     },
     "ru": {
       "name": "Анализатор расписания",
-      "description": "Анализирует данные учета времени, определяет закономерности производительности и предлагает улучшения.."
+      "description": "Анализирует данные учета времени, определяет закономерности производительности и предлагает улучшения."
     },
     "ar": {
       "name": "محلل الجدول الزمني",
-      "description": "يحلل بيانات تتبع الوقت ويحدد أنماط الإنتاجية ويقترح التحسينات. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يحلل بيانات تتبع الوقت ويحدد أنماط الإنتاجية ويقترح التحسينات."
     },
     "hi": {
       "name": "टाइमशीट विश्लेषक",
       "description": "समय ट्रैकिंग डेटा का विश्लेषण करता है, उत्पादकता पैटर्न की पहचान करता है और सुधार का सुझाव देता है।."
     },
     "en": {
-      "description": "Analyzes time tracking data, identifies productivity patterns, and suggests improvements."
+      "description": "Analyzes time tracking data, identifies productivity patterns, and suggests improvements.",
+      "name": "Timesheet Analyzer"
     }
   },
   "code-generation/boilerplate-generator": {
@@ -1455,18 +1484,19 @@
     },
     "ru": {
       "name": "Шаблонный генератор",
-      "description": "Создает полные каркасы проектов (Next.js, Flask, Express) на основе спецификаций функций.."
+      "description": "Создает полные каркасы проектов (Next.js, Flask, Express) на основе спецификаций функций."
     },
     "ar": {
       "name": "مولد الصفائح",
-      "description": "يُنشئ سقالات كاملة للمشروع (Next.js، Flask، Express) من مواصفات الميزات. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يُنشئ سقالات كاملة للمشروع (Next.js، Flask، Express) من مواصفات الميزات."
     },
     "hi": {
       "name": "बॉयलरप्लेट जेनरेटर",
       "description": "फीचर विशिष्टताओं से संपूर्ण प्रोजेक्ट स्कैफोल्ड (नेक्स्ट.जेएस, फ्लास्क, एक्सप्रेस) तैयार करता है।."
     },
     "en": {
-      "description": "Generates complete project scaffolds (Next.js, Flask, Express) from feature specifications."
+      "description": "Generates complete project scaffolds (Next.js, Flask, Express) from feature specifications.",
+      "name": "Boilerplate Generator"
     }
   },
   "code-generation/config-file-generator": {
@@ -1504,18 +1534,19 @@
     },
     "ru": {
       "name": "Генератор файлов конфигурации",
-      "description": "Создает ESLint, Prettier, TSConfig и другие файлы конфигурации на основе соглашений проекта.."
+      "description": "Создает ESLint, Prettier, TSConfig и другие файлы конфигурации на основе соглашений проекта."
     },
     "ar": {
       "name": "مولد ملف التكوين",
-      "description": "يُنشئ ملفات ESLint وPrettier وTSConfig وملفات التكوين الأخرى من اصطلاحات المشروع. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يُنشئ ملفات ESLint وPrettier وTSConfig وملفات التكوين الأخرى من اصطلاحات المشروع."
     },
     "hi": {
       "name": "कॉन्फ़िग फ़ाइल जेनरेटर",
       "description": "प्रोजेक्ट कन्वेंशन से ESLint, Prettier, TSConfig और अन्य कॉन्फ़िग फ़ाइलें जेनरेट करता है।."
     },
     "en": {
-      "description": "Generates ESLint, Prettier, TSConfig, and other config files from project conventions."
+      "description": "Generates ESLint, Prettier, TSConfig, and other config files from project conventions.",
+      "name": "Config File Generator"
     }
   },
   "code-generation/crud-api-generator": {
@@ -1553,18 +1584,19 @@
     },
     "ru": {
       "name": "Генератор API Crud",
-      "description": "Считывает схемы баз данных и генерирует полный API CRUD с проверкой и документацией.."
+      "description": "Считывает схемы баз данных и генерирует полный API CRUD с проверкой и документацией."
     },
     "ar": {
       "name": "مولد API الخام",
-      "description": "يقرأ مخططات قاعدة البيانات وينشئ واجهة برمجة تطبيقات CRUD كاملة مع التحقق من الصحة والتوثيق. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ مخططات قاعدة البيانات وينشئ واجهة برمجة تطبيقات CRUD كاملة مع التحقق من الصحة والتوثيق."
     },
     "hi": {
       "name": "क्रूड एपीआई जेनरेटर",
       "description": "डेटाबेस स्कीमा पढ़ता है और सत्यापन और दस्तावेज़ीकरण के साथ पूर्ण सीआरयूडी एपीआई उत्पन्न करता है।."
     },
     "en": {
-      "description": "Reads database schemas and generates full CRUD API with validation and documentation."
+      "description": "Reads database schemas and generates full CRUD API with validation and documentation.",
+      "name": "Crud API Generator"
     }
   },
   "code-generation/dockerfile-optimizer": {
@@ -1602,18 +1634,19 @@
     },
     "ru": {
       "name": "Оптимизатор Dockerfile",
-      "description": "Анализирует существующие файлы Dockerfile, уменьшает размер образа и улучшает кэширование слоев.."
+      "description": "Анализирует существующие файлы Dockerfile, уменьшает размер образа и улучшает кэширование слоев."
     },
     "ar": {
       "name": "محسن ملف دوكر",
-      "description": "يقوم بتحليل ملفات Dockerfiles الموجودة وتقليل حجم الصورة وتحسين التخزين المؤقت للطبقة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقوم بتحليل ملفات Dockerfiles الموجودة وتقليل حجم الصورة وتحسين التخزين المؤقت للطبقة."
     },
     "hi": {
       "name": "डॉकरफ़ाइल ऑप्टिमाइज़र",
       "description": "मौजूदा Dockerfiles का विश्लेषण करता है, छवि का आकार कम करता है, और लेयर कैशिंग में सुधार करता है।."
     },
     "en": {
-      "description": "Analyzes existing Dockerfiles, reduces image size, and improves layer caching."
+      "description": "Analyzes existing Dockerfiles, reduces image size, and improves layer caching.",
+      "name": "Dockerfile Optimizer"
     }
   },
   "code-generation/github-actions-writer": {
@@ -1651,18 +1684,19 @@
     },
     "ru": {
       "name": "Писатель действий на Github",
-      "description": "Считывает структуру проекта и генерирует оптимизированные рабочие процессы CI/CD GitHub Actions.."
+      "description": "Считывает структуру проекта и генерирует оптимизированные рабочие процессы CI/CD GitHub Actions."
     },
     "ar": {
       "name": "كاتب إجراءات جيثب",
-      "description": "يقرأ هيكل المشروع وينشئ سير عمل GitHub Actions CI/CD المحسّن. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ هيكل المشروع وينشئ سير عمل GitHub Actions CI/CD المحسّن."
     },
     "hi": {
       "name": "जीथब एक्शन राइटर",
       "description": "प्रोजेक्ट संरचना को पढ़ता है और अनुकूलित GitHub क्रियाएँ CI/CD वर्कफ़्लो उत्पन्न करता है।."
     },
     "en": {
-      "description": "Reads project structure and generates optimized GitHub Actions CI/CD workflows."
+      "description": "Reads project structure and generates optimized GitHub Actions CI/CD workflows.",
+      "name": "Github Actions Writer"
     }
   },
   "code-generation/migration-file-writer": {
@@ -1700,18 +1734,19 @@
     },
     "ru": {
       "name": "Средство записи файлов миграции",
-      "description": "Сравнивает старые и новые схемы баз данных, генерирует файлы миграции для популярных ORM.."
+      "description": "Сравнивает старые и новые схемы баз данных, генерирует файлы миграции для популярных ORM."
     },
     "ar": {
       "name": "كاتب ملف الهجرة",
-      "description": "يقارن مخططات قاعدة البيانات القديمة والجديدة، وينشئ ملفات ترحيل لـ ORMs الشائعة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقارن مخططات قاعدة البيانات القديمة والجديدة، وينشئ ملفات ترحيل لـ ORMs الشائعة."
     },
     "hi": {
       "name": "माइग्रेशन फ़ाइल लेखक",
       "description": "पुराने और नए डेटाबेस स्कीमा की तुलना करता है, लोकप्रिय ORM के लिए माइग्रेशन फ़ाइलें बनाता है।."
     },
     "en": {
-      "description": "Compares old and new database schemas, generates migration files for popular ORMs."
+      "description": "Compares old and new database schemas, generates migration files for popular ORMs.",
+      "name": "Migration File Writer"
     }
   },
   "code-generation/monorepo-setup-agent": {
@@ -1749,18 +1784,19 @@
     },
     "ru": {
       "name": "Агент установки монорепо",
-      "description": "Формирует структуры монорепозиториев с рабочими областями, общими пакетами и конвейерами CI.."
+      "description": "Формирует структуры монорепозиториев с рабочими областями, общими пакетами и конвейерами CI."
     },
     "ar": {
       "name": "وكيل إعداد Monorepo",
-      "description": "تدعم هياكل monorepo بمساحات العمل والحزم المشتركة وخطوط أنابيب CI. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "تدعم هياكل monorepo بمساحات العمل والحزم المشتركة وخطوط أنابيب CI."
     },
     "hi": {
       "name": "मोनोरेपो सेटअप एजेंट",
       "description": "कार्यस्थानों, साझा पैकेजों और सीआई पाइपलाइनों के साथ मोनोरेपो संरचनाओं को तैयार करता है।."
     },
     "en": {
-      "description": "Scaffolds monorepo structures with workspaces, shared packages, and CI pipelines."
+      "description": "Scaffolds monorepo structures with workspaces, shared packages, and CI pipelines.",
+      "name": "Monorepo Setup Agent"
     }
   },
   "code-generation/type-generator": {
@@ -1798,18 +1834,19 @@
     },
     "ru": {
       "name": "Тип Генератор",
-      "description": "Выводит определения типов TypeScript и Python из ответов JSON и данных API.."
+      "description": "Выводит определения типов TypeScript и Python из ответов JSON и данных API."
     },
     "ar": {
       "name": "اكتب مولد",
-      "description": "يستنتج تعريفات نوع TypeScript وPython من استجابات JSON وبيانات API. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يستنتج تعريفات نوع TypeScript وPython من استجابات JSON وبيانات API."
     },
     "hi": {
       "name": "जेनरेटर टाइप करें",
       "description": "JSON प्रतिक्रियाओं और एपीआई डेटा से टाइपस्क्रिप्ट और पायथन प्रकार की परिभाषाओं का अनुमान लगाता है।."
     },
     "en": {
-      "description": "Infers TypeScript and Python type definitions from JSON responses and API data."
+      "description": "Infers TypeScript and Python type definitions from JSON responses and API data.",
+      "name": "Type Generator"
     }
   },
   "code-quality/bug-report-triage-agent": {
@@ -1858,7 +1895,8 @@
       "description": "गंभीरता के आधार पर ऑटो-ट्राएज बग रिपोर्ट।."
     },
     "en": {
-      "description": "Auto-triage bug reports by severity."
+      "description": "Auto-triage bug reports by severity.",
+      "name": "Bug Report Triage Agent"
     }
   },
   "code-quality/bug-triager": {
@@ -1907,7 +1945,8 @@
       "description": "समस्या प्रबंधन एजेंट - नए GitHub मुद्दे पढ़ें। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     },
     "en": {
-      "description": "Issue management agent — Read new GitHub issues."
+      "description": "Issue management agent — Read new GitHub issues.",
+      "name": "Bug Triager"
     }
   },
   "code-quality/bug-triager-auto": {
@@ -1956,7 +1995,8 @@
       "description": "एजेंट जो आने वाली बग रिपोर्ट का विश्लेषण करता है, डुप्लिकेट बनाता है और गंभीरता बताता है।"
     },
     "en": {
-      "description": "Agent that analyzes incoming bug reports, duplicates, and assigns severity."
+      "description": "Agent that analyzes incoming bug reports, duplicates, and assigns severity.",
+      "name": "Bug Triager Auto"
     }
   },
   "code-quality/code-review-agent": {
@@ -2005,7 +2045,8 @@
       "description": "शैली और बग सुझावों के साथ स्वचालित कोड समीक्षा।."
     },
     "en": {
-      "description": "Automated code review with style and bug suggestions."
+      "description": "Automated code review with style and bug suggestions.",
+      "name": "Code Review Agent"
     }
   },
   "code-quality/code-review-automator": {
@@ -2054,7 +2095,8 @@
       "description": "एआई एजेंट जो गिटहब पीआर से जुड़ता है और फर्स्ट-पास कोड समीक्षा प्रदान करता है।"
     },
     "en": {
-      "description": "AI agent that connects to GitHub PRs and provides first-pass code review."
+      "description": "AI agent that connects to GitHub PRs and provides first-pass code review.",
+      "name": "Code Review Automator"
     }
   },
   "code-quality/code-reviewer": {
@@ -2103,7 +2145,8 @@
       "description": "पीआर समीक्षा एजेंट - फ़ेच पीआर GitHub से भिन्न है। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     },
     "en": {
-      "description": "PR review agent — Fetch PR diff from GitHub."
+      "description": "PR review agent — Fetch PR diff from GitHub.",
+      "name": "Code Reviewer"
     }
   },
   "code-quality/dependency-update-agent": {
@@ -2152,7 +2195,8 @@
       "description": "सुरक्षित निर्भरता अद्यतनों की जाँच करें और सुझाव दें।."
     },
     "en": {
-      "description": "Check and suggest safe dependency updates."
+      "description": "Check and suggest safe dependency updates.",
+      "name": "Dependency Update Agent"
     }
   },
   "code-quality/regex-tester": {
@@ -2166,11 +2210,11 @@
     },
     "es": {
       "name": "Probador de expresiones regulares",
-      "description": "Extract matches using a common pattern name."
+      "description": "Extraiga coincidencias utilizando un nombre de patrón común."
     },
     "pt": {
       "name": "Testador Regex",
-      "description": "Extract matches using a common pattern name."
+      "description": "Extraia correspondências usando um nome de padrão comum."
     },
     "ja": {
       "name": "正規表現テスター",
@@ -2182,11 +2226,11 @@
     },
     "de": {
       "name": "Regex-Tester",
-      "description": "Extract matches using a common pattern name."
+      "description": "Extrahieren Sie Übereinstimmungen mithilfe eines gemeinsamen Musternamens."
     },
     "fr": {
       "name": "Testeur d'expressions régulières",
-      "description": "Extract matches using a common pattern name."
+      "description": "Extrayez les correspondances en utilisant un nom de modèle commun."
     },
     "ru": {
       "name": "Тестер регулярных выражений",
@@ -2201,7 +2245,8 @@
       "description": "एक सामान्य पैटर्न नाम का उपयोग करके मिलान निकालें।."
     },
     "en": {
-      "description": "Extract matches using a common pattern name."
+      "description": "Extract matches using a common pattern name.",
+      "name": "Regex Tester"
     }
   },
   "content-writing/blog-post-writer": {
@@ -2239,18 +2284,19 @@
     },
     "ru": {
       "name": "Автор сообщений в блоге",
-      "description": "Исследует темы, создает схемы и пишет SEO-оптимизированные сообщения в блогах с указанием источников.."
+      "description": "Исследует темы, создает схемы и пишет SEO-оптимизированные сообщения в блогах с указанием источников."
     },
     "ar": {
       "name": "كاتب مشاركة المدونة",
-      "description": "يبحث في المواضيع وينشئ الخطوط العريضة ويكتب منشورات مدونة مُحسّنة لتحسين محركات البحث مع المصادر. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يبحث في المواضيع وينشئ الخطوط العريضة ويكتب منشورات مدونة مُحسّنة لتحسين محركات البحث مع المصادر."
     },
     "hi": {
       "name": "ब्लॉग पोस्ट लेखक",
       "description": "विषयों पर शोध करता है, रूपरेखा बनाता है और स्रोतों के साथ एसईओ-अनुकूलित ब्लॉग पोस्ट लिखता है।."
     },
     "en": {
-      "description": "Researches topics, creates outlines, and writes SEO-optimized blog posts with sources."
+      "description": "Researches topics, creates outlines, and writes SEO-optimized blog posts with sources.",
+      "name": "Blog Post Writer"
     }
   },
   "content-writing/copy-editor-agent": {
@@ -2288,18 +2334,19 @@
     },
     "ru": {
       "name": "Агент редактора копий",
-      "description": "Корректирует текст на предмет грамматики, стиля, согласованности тона и оценки читабельности.."
+      "description": "Корректирует текст на предмет грамматики, стиля, согласованности тона и оценки читабельности."
     },
     "ar": {
       "name": "وكيل محرر النسخ",
-      "description": "يقوم بتدقيق النص من حيث القواعد والأسلوب واتساق النغمات ودرجة سهولة القراءة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقوم بتدقيق النص من حيث القواعد والأسلوب واتساق النغمات ودرجة سهولة القراءة."
     },
     "hi": {
       "name": "प्रतिलिपि संपादक एजेंट",
       "description": "व्याकरण, शैली, स्वर संगति और पठनीयता स्कोर के लिए पाठ को प्रूफरीड करता है।."
     },
     "en": {
-      "description": "Proofreads text for grammar, style, tone consistency, and readability score."
+      "description": "Proofreads text for grammar, style, tone consistency, and readability score.",
+      "name": "Copy Editor Agent"
     }
   },
   "content-writing/email-draft-agent": {
@@ -2348,7 +2395,8 @@
       "description": "बुलेट पॉइंट से पेशेवर ईमेल उत्तर ड्राफ़्ट करें।."
     },
     "en": {
-      "description": "Draft professional email replies from bullet points."
+      "description": "Draft professional email replies from bullet points.",
+      "name": "Email Draft Agent"
     }
   },
   "content-writing/html-to-markdown": {
@@ -2390,14 +2438,15 @@
     },
     "ar": {
       "name": "HTML إلى تخفيض السعر",
-      "description": "HTML to Markdown Converter - تحويل محتوى HTML إلى تنسيق Markdown النظيف. تم تصميمه كمشروع وكيل AI."
+      "description": "HTML to Markdown Converter - تحويل محتوى HTML إلى تنسيق Markdown النظيف."
     },
     "hi": {
       "name": "एचटीएमएल से मार्कडाउन",
       "description": "HTML से मार्कडाउन कन्वर्टर - HTML सामग्री को क्लीन मार्कडाउन फॉर्मेट में बदलें।."
     },
     "en": {
-      "description": "HTML to Markdown Converter — Convert HTML content to clean Markdown format."
+      "description": "HTML to Markdown Converter — Convert HTML content to clean Markdown format.",
+      "name": "HTML To Markdown"
     }
   },
   "content-writing/i18n-translator-agent": {
@@ -2446,7 +2495,8 @@
       "description": "मुख्य संरचना और संदर्भ को संरक्षित करते हुए i18n JSON फ़ाइलों का अनुवाद करें।."
     },
     "en": {
-      "description": "Translate i18n JSON files preserving key structure and context."
+      "description": "Translate i18n JSON files preserving key structure and context.",
+      "name": "I18n Translator Agent"
     }
   },
   "content-writing/lorem-ipsum-generator": {
@@ -2488,14 +2538,15 @@
     },
     "ar": {
       "name": "مولد لوريم إيبسوم",
-      "description": "Lorem Ipsum Generator — قم بإنشاء عنصر نائب لنص Lorem Ipsum للنماذج والتخطيطات. تم تصميمه كمشروع وكيل AI."
+      "description": "Lorem Ipsum Generator — قم بإنشاء عنصر نائب لنص Lorem Ipsum للنماذج والتخطيطات."
     },
     "hi": {
       "name": "लोरेम इप्सम जेनरेटर",
       "description": "लोरेम इप्सम जेनरेटर - मॉकअप और लेआउट के लिए प्लेसहोल्डर लोरेम इप्सम टेक्स्ट जेनरेट करें।."
     },
     "en": {
-      "description": "Lorem Ipsum Generator — Generate placeholder Lorem Ipsum text for mockups and layouts."
+      "description": "Lorem Ipsum Generator — Generate placeholder Lorem Ipsum text for mockups and layouts.",
+      "name": "Lorem Ipsum Generator"
     }
   },
   "content-writing/markdown-linter": {
@@ -2544,7 +2595,8 @@
       "description": "एकरूपता के लिए मार्कडाउन दस्तावेज़ों का विश्लेषण और स्वरूपण किया गया।."
     },
     "en": {
-      "description": "Analyzes and formats Markdown documents for consistency."
+      "description": "Analyzes and formats Markdown documents for consistency.",
+      "name": "Markdown Linter"
     }
   },
   "content-writing/newsletter-curator": {
@@ -2582,18 +2634,19 @@
     },
     "ru": {
       "name": "Куратор новостной рассылки",
-      "description": "Объединяет и обобщает технические новости из нескольких источников в формате, готовом к рассылке.."
+      "description": "Объединяет и обобщает технические новости из нескольких источников в формате, готовом к рассылке."
     },
     "ar": {
       "name": "أمين النشرة الإخبارية",
-      "description": "تجميع وتلخيص أخبار التكنولوجيا من مصادر متعددة في تنسيق جاهز للنشرة الإخبارية. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "تجميع وتلخيص أخبار التكنولوجيا من مصادر متعددة في تنسيق جاهز للنشرة الإخبارية."
     },
     "hi": {
       "name": "न्यूज़लैटर क्यूरेटर",
       "description": "कई स्रोतों से तकनीकी समाचारों को न्यूज़लेटर-तैयार प्रारूप में एकत्रित और सारांशित करता है।."
     },
     "en": {
-      "description": "Aggregates and summarizes tech news from multiple sources into newsletter-ready format."
+      "description": "Aggregates and summarizes tech news from multiple sources into newsletter-ready format.",
+      "name": "Newsletter Curator"
     }
   },
   "content-writing/press-release-writer": {
@@ -2631,18 +2684,19 @@
     },
     "ru": {
       "name": "Автор пресс-релизов",
-      "description": "Получает информацию о продукте и генерирует пресс-релизы в стандартном формате.."
+      "description": "Получает информацию о продукте и генерирует пресс-релизы в стандартном формате."
     },
     "ar": {
       "name": "كاتب البيان الصحفي",
-      "description": "يأخذ معلومات المنتج ويصدر بيانات صحفية منسقة بالتنسيق القياسي. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يأخذ معلومات المنتج ويصدر بيانات صحفية منسقة بالتنسيق القياسي."
     },
     "hi": {
       "name": "प्रेस विज्ञप्ति लेखक",
       "description": "उत्पाद की जानकारी लेता है और मानक प्रारूप में स्वरूपित प्रेस विज्ञप्तियाँ तैयार करता है।."
     },
     "en": {
-      "description": "Takes product information and generates formatted press releases in standard format."
+      "description": "Takes product information and generates formatted press releases in standard format.",
+      "name": "Press Release Writer"
     }
   },
   "content-writing/proposal-writer": {
@@ -2680,18 +2734,19 @@
     },
     "ru": {
       "name": "Автор предложений",
-      "description": "Формирует проектные предложения на основе требований с указанием сроков, бюджетной сметы и результатов.."
+      "description": "Формирует проектные предложения на основе требований с указанием сроков, бюджетной сметы и результатов."
     },
     "ar": {
       "name": "كاتب الاقتراح",
-      "description": "يُنشئ مقترحات المشروع من المتطلبات مع الجدول الزمني وتقديرات الميزانية والتسليمات. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يُنشئ مقترحات المشروع من المتطلبات مع الجدول الزمني وتقديرات الميزانية والتسليمات."
     },
     "hi": {
       "name": "प्रस्ताव लेखक",
       "description": "समयसीमा, बजट अनुमान और डिलिवरेबल्स के साथ आवश्यकताओं से परियोजना प्रस्ताव तैयार करता है।."
     },
     "en": {
-      "description": "Generates project proposals from requirements with timeline, budget estimates, and deliverables."
+      "description": "Generates project proposals from requirements with timeline, budget estimates, and deliverables.",
+      "name": "Proposal Writer"
     }
   },
   "content-writing/readme-generator": {
@@ -2729,18 +2784,19 @@
     },
     "ru": {
       "name": "Генератор README",
-      "description": "Сканирует файлы проекта и создает подробные файлы README со значками, руководствами по настройке и примерами использования.."
+      "description": "Сканирует файлы проекта и создает подробные файлы README со значками, руководствами по настройке и примерами использования."
     },
     "ar": {
       "name": "التمهيدي مولد",
-      "description": "يقوم بمسح ملفات المشروع وإنشاء ملفات README شاملة مع الشارات وأدلة الإعداد وأمثلة الاستخدام. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقوم بمسح ملفات المشروع وإنشاء ملفات README شاملة مع الشارات وأدلة الإعداد وأمثلة الاستخدام."
     },
     "hi": {
       "name": "रीडमी जेनरेटर",
       "description": "प्रोजेक्ट फ़ाइलों को स्कैन करता है और बैज, सेटअप गाइड और उपयोग उदाहरणों के साथ व्यापक रीडमी उत्पन्न करता है।."
     },
     "en": {
-      "description": "Scans project files and generates comprehensive READMEs with badges, setup guides, and usage examples."
+      "description": "Scans project files and generates comprehensive READMEs with badges, setup guides, and usage examples.",
+      "name": "README Generator"
     }
   },
   "content-writing/slug-generator": {
@@ -2757,7 +2813,7 @@
       "description": "Genera slugs de URL compatibles con SEO a partir del texto de entrada."
     },
     "pt": {
-      "name": "Gerador de Lesmas",
+      "name": "Gerador de Slugs de URL",
       "description": "Gera slugs de URL amigáveis ​​para SEO a partir do texto de entrada."
     },
     "ja": {
@@ -2789,7 +2845,8 @@
       "description": "इनपुट टेक्स्ट से SEO अनुकूल URL स्लग उत्पन्न करता है।."
     },
     "en": {
-      "description": "Generates SEO-friendly URL slugs from input text."
+      "description": "Generates SEO-friendly URL slugs from input text.",
+      "name": "Slug Generator"
     }
   },
   "content-writing/sop-generator": {
@@ -2827,18 +2884,19 @@
     },
     "ru": {
       "name": "Генератор СОП",
-      "description": "Читает процессы и рабочие процессы, генерирует стандартные рабочие процедуры с пошаговыми инструкциями.."
+      "description": "Читает процессы и рабочие процессы, генерирует стандартные рабочие процедуры с пошаговыми инструкциями."
     },
     "ar": {
       "name": "مولد SOP",
-      "description": "يقرأ العمليات وسير العمل، وينشئ إجراءات التشغيل القياسية مع تعليمات خطوة بخطوة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ العمليات وسير العمل، وينشئ إجراءات التشغيل القياسية مع تعليمات خطوة بخطوة."
     },
     "hi": {
       "name": "एसओपी जेनरेटर",
       "description": "प्रक्रियाओं और वर्कफ़्लो को पढ़ता है, चरण-दर-चरण निर्देशों के साथ मानक संचालन प्रक्रियाएँ तैयार करता है।."
     },
     "en": {
-      "description": "Reads processes and workflows, generates Standard Operating Procedures with step-by-step instructions."
+      "description": "Reads processes and workflows, generates Standard Operating Procedures with step-by-step instructions.",
+      "name": "SOP Generator"
     }
   },
   "content-writing/string-similarity": {
@@ -2880,14 +2938,15 @@
     },
     "ar": {
       "name": "تشابه السلسلة",
-      "description": "محلل تشابه السلسلة - قارن بين سلسلتين واحسب درجة التشابه بينهما. تم تصميمه كمشروع وكيل AI."
+      "description": "محلل تشابه السلسلة - قارن بين سلسلتين واحسب درجة التشابه بينهما."
     },
     "hi": {
       "name": "स्ट्रिंग समानता",
       "description": "स्ट्रिंग समानता विश्लेषक - दो स्ट्रिंग की तुलना करें और उनके समानता स्कोर की गणना करें।."
     },
     "en": {
-      "description": "String Similarity Analyzer — Compare two strings and calculate their similarity score."
+      "description": "String Similarity Analyzer — Compare two strings and calculate their similarity score.",
+      "name": "String Similarity"
     }
   },
   "content-writing/technical-blog-reviewer": {
@@ -2925,18 +2984,19 @@
     },
     "ru": {
       "name": "Рецензент технического блога",
-      "description": "Просматривает технические статьи на предмет точности, ясности, правильности и полноты кода.."
+      "description": "Просматривает технические статьи на предмет точности, ясности, правильности и полноты кода."
     },
     "ar": {
       "name": "مراجع المدونة التقنية",
-      "description": "يراجع المقالات الفنية للتأكد من دقتها ووضوحها وصحة الكود واكتمالها. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يراجع المقالات الفنية للتأكد من دقتها ووضوحها وصحة الكود واكتمالها."
     },
     "hi": {
       "name": "तकनीकी ब्लॉग समीक्षक",
       "description": "सटीकता, स्पष्टता, कोड शुद्धता और पूर्णता के लिए तकनीकी लेखों की समीक्षा करता है।."
     },
     "en": {
-      "description": "Reviews technical articles for accuracy, clarity, code correctness, and completeness."
+      "description": "Reviews technical articles for accuracy, clarity, code correctness, and completeness.",
+      "name": "Technical Blog Reviewer"
     }
   },
   "content-writing/text-case-converter": {
@@ -2978,14 +3038,15 @@
     },
     "ar": {
       "name": "محول حالة النص",
-      "description": "Text Case Converter — تحويل النص بين تنسيقات الحالات المختلفة (camelCase، وsnake_case، وما إلى ذلك). تم تصميمه كمشروع وكيل AI."
+      "description": "Text Case Converter — تحويل النص بين تنسيقات الحالات المختلفة (camelCase، وsnake_case، وما إلى ذلك)."
     },
     "hi": {
       "name": "टेक्स्ट केस कन्वर्टर",
       "description": "टेक्स्ट केस कन्वर्टर - टेक्स्ट को विभिन्न केस प्रारूपों (कैमलकेस, स्नेक_केस, आदि) के बीच परिवर्तित करें।."
     },
     "en": {
-      "description": "Text Case Converter — Convert text between different case formats (camelCase, snake_case, etc.)."
+      "description": "Text Case Converter — Convert text between different case formats (camelCase, snake_case, etc.).",
+      "name": "Text Case Converter"
     }
   },
   "content-writing/text-diff": {
@@ -3027,14 +3088,15 @@
     },
     "ar": {
       "name": "فرق النص",
-      "description": "أداة تمييز النص - قارن بين نصين وأظهر الاختلافات بينهما سطرًا تلو الآخر. تم تصميمه كمشروع وكيل AI."
+      "description": "أداة تمييز النص - قارن بين نصين وأظهر الاختلافات بينهما سطرًا تلو الآخر."
     },
     "hi": {
       "name": "पाठ अंतर",
       "description": "टेक्स्ट डिफ टूल - दो टेक्स्ट की तुलना करें और लाइन दर लाइन उनके अंतर दिखाएं।."
     },
     "en": {
-      "description": "Text Diff Tool — Compare two texts and show their differences line by line."
+      "description": "Text Diff Tool — Compare two texts and show their differences line by line.",
+      "name": "Text Diff"
     }
   },
   "content-writing/text-summarizer": {
@@ -3083,7 +3145,8 @@
       "description": "लंबे पाठ को मुख्य बिंदुओं में सारांशित करें।."
     },
     "en": {
-      "description": "Summarizes long text into key points."
+      "description": "Summarizes long text into key points.",
+      "name": "Text Summarizer"
     }
   },
   "content-writing/tutorial-generator": {
@@ -3121,18 +3184,19 @@
     },
     "ru": {
       "name": "Генератор учебных пособий",
-      "description": "Читает библиотеки кода и создает пошаговые руководства с работоспособными примерами.."
+      "description": "Читает библиотеки кода и создает пошаговые руководства с работоспособными примерами."
     },
     "ar": {
       "name": "مولد تعليمي",
-      "description": "يقرأ مكتبات التعليمات البرمجية وينشئ برامج تعليمية خطوة بخطوة مع أمثلة قابلة للتشغيل. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ مكتبات التعليمات البرمجية وينشئ برامج تعليمية خطوة بخطوة مع أمثلة قابلة للتشغيل."
     },
     "hi": {
       "name": "ट्यूटोरियल जेनरेटर",
       "description": "कोड लाइब्रेरीज़ को पढ़ता है और चलाने योग्य उदाहरणों के साथ चरण-दर-चरण ट्यूटोरियल तैयार करता है।."
     },
     "en": {
-      "description": "Reads code libraries and generates step-by-step tutorials with runnable examples."
+      "description": "Reads code libraries and generates step-by-step tutorials with runnable examples.",
+      "name": "Tutorial Generator"
     }
   },
   "content-writing/tweet-thread-writer": {
@@ -3170,18 +3234,19 @@
     },
     "ru": {
       "name": "Автор темы твитов",
-      "description": "Преобразует длинный контент в оптимизированные темы Twitter/X с помощью хуков и призывов к действию.."
+      "description": "Преобразует длинный контент в оптимизированные темы Twitter/X с помощью хуков и призывов к действию."
     },
     "ar": {
       "name": "كاتب الموضوع تويت",
-      "description": "يحول المحتوى الطويل إلى سلاسل Twitter/X محسّنة باستخدام الخطافات وعبارات الحث على اتخاذ إجراء. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يحول المحتوى الطويل إلى سلاسل Twitter/X محسّنة باستخدام الخطافات وعبارات الحث على اتخاذ إجراء."
     },
     "hi": {
       "name": "ट्वीट थ्रेड लेखक",
       "description": "हुक और सीटीए के साथ लंबे प्रारूप वाली सामग्री को अनुकूलित ट्विटर/एक्स थ्रेड में परिवर्तित करता है।."
     },
     "en": {
-      "description": "Converts long-form content into optimized Twitter/X threads with hooks and CTAs."
+      "description": "Converts long-form content into optimized Twitter/X threads with hooks and CTAs.",
+      "name": "Tweet Thread Writer"
     }
   },
   "content-writing/word-counter": {
@@ -3230,7 +3295,8 @@
       "description": "पाठ में शब्दों, वर्णों, वाक्यों और अनुच्छेदों को गिनें।."
     },
     "en": {
-      "description": "Counts words, characters, sentences, and paragraphs in text."
+      "description": "Counts words, characters, sentences, and paragraphs in text.",
+      "name": "Word Counter"
     }
   },
   "data-analytics/api-response-mocker": {
@@ -3268,18 +3334,19 @@
     },
     "ru": {
       "name": "Мокер ответа API",
-      "description": "Считывает спецификации API (OpenAPI/Swagger) и создает макеты серверов с реалистичными тестовыми данными.."
+      "description": "Считывает спецификации API (OpenAPI/Swagger) и создает макеты серверов с реалистичными тестовыми данными."
     },
     "ar": {
       "name": "مستهزئ استجابة واجهة برمجة التطبيقات (API).",
-      "description": "يقرأ مواصفات واجهة برمجة التطبيقات (OpenAPI/Swagger) وينشئ خوادم وهمية ببيانات اختبار واقعية. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ مواصفات واجهة برمجة التطبيقات (OpenAPI/Swagger) وينشئ خوادم وهمية ببيانات اختبار واقعية."
     },
     "hi": {
       "name": "एपीआई रिस्पांस मॉकर",
       "description": "एपीआई स्पेक्स (ओपनएपीआई/स्वैगर) पढ़ता है और यथार्थवादी परीक्षण डेटा के साथ नकली सर्वर उत्पन्न करता है।."
     },
     "en": {
-      "description": "Reads API specs (OpenAPI/Swagger) and generates mock servers with realistic test data."
+      "description": "Reads API specs (OpenAPI/Swagger) and generates mock servers with realistic test data.",
+      "name": "API Response Mocker"
     }
   },
   "data-analytics/api-response-validator": {
@@ -3328,7 +3395,8 @@
       "description": "अपेक्षित स्कीमा और प्रारूप के विरुद्ध एपीआई प्रतिक्रियाओं को मान्य करें।."
     },
     "en": {
-      "description": "Validates API responses against expected schemas and formats."
+      "description": "Validates API responses against expected schemas and formats.",
+      "name": "API Response Validator"
     }
   },
   "data-analytics/base64-encoder": {
@@ -3377,7 +3445,8 @@
       "description": "बेस64 स्ट्रिंग्स को एनकोड और डीकोड करता है।."
     },
     "en": {
-      "description": "Encodes and decodes Base64 strings."
+      "description": "Encodes and decodes Base64 strings.",
+      "name": "Base64 Encoder"
     }
   },
   "data-analytics/chart-generator-agent": {
@@ -3415,18 +3484,19 @@
     },
     "ru": {
       "name": "Агент генератора диаграмм",
-      "description": "Принимает данные и запросы на естественном языке, генерирует код диаграммы (Chart.js, D3, Matplotlib).."
+      "description": "Принимает данные и запросы на естественном языке, генерирует код диаграммы (Chart.js, D3, Matplotlib)."
     },
     "ar": {
       "name": "وكيل مولد الرسم البياني",
-      "description": "يأخذ البيانات واستعلامات اللغة الطبيعية، وينشئ رمز المخطط (Chart.js، D3، Matplotlib). تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يأخذ البيانات واستعلامات اللغة الطبيعية، وينشئ رمز المخطط (Chart.js، D3، Matplotlib)."
     },
     "hi": {
       "name": "चार्ट जेनरेटर एजेंट",
       "description": "डेटा और प्राकृतिक भाषा के प्रश्न लेता है, चार्ट कोड (चार्ट.जेएस, डी3, मैटप्लोटलिब) उत्पन्न करता है।."
     },
     "en": {
-      "description": "Takes data and natural language queries, generates chart code (Chart.js, D3, Matplotlib)."
+      "description": "Takes data and natural language queries, generates chart code (Chart.js, D3, Matplotlib).",
+      "name": "Chart Generator Agent"
     }
   },
   "data-analytics/code-complexity-analyzer": {
@@ -3468,14 +3538,15 @@
     },
     "ar": {
       "name": "محلل تعقيد الكود",
-      "description": "محلل تعقيد التعليمات البرمجية — تحليل مقاييس تعقيد التعليمات البرمجية (التعقيد الدوري، LOC، وما إلى ذلك). تم تصميمه كمشروع وكيل AI."
+      "description": "محلل تعقيد التعليمات البرمجية — تحليل مقاييس تعقيد التعليمات البرمجية (التعقيد الدوري، LOC، وما إلى ذلك)."
     },
     "hi": {
       "name": "कोड जटिलता विश्लेषक",
       "description": "कोड जटिलता विश्लेषक - कोड जटिलता मेट्रिक्स (साइक्लोमैटिक जटिलता, एलओसी, आदि) का विश्लेषण करें।."
     },
     "en": {
-      "description": "Code Complexity Analyzer — Analyze code complexity metrics (cyclomatic complexity, LOC, etc.)."
+      "description": "Code Complexity Analyzer — Analyze code complexity metrics (cyclomatic complexity, LOC, etc.).",
+      "name": "Code Complexity Analyzer"
     }
   },
   "data-analytics/csv-analyzer": {
@@ -3524,7 +3595,8 @@
       "description": "आंकड़ों और डेटा अंतर्दृष्टि के साथ सीएसवी फ़ाइलों का विश्लेषण करें।."
     },
     "en": {
-      "description": "Analyzes CSV files with statistics and data insights."
+      "description": "Analyzes CSV files with statistics and data insights.",
+      "name": "CSV Analyzer"
     }
   },
   "data-analytics/csv-cleaner": {
@@ -3562,18 +3634,19 @@
     },
     "ru": {
       "name": "Очиститель CSV",
-      "description": "Загружает беспорядочные файлы CSV, обнаруживает и исправляет проблемы с кодировкой, дубликаты, пропущенные значения и несоответствия типов.."
+      "description": "Загружает беспорядочные файлы CSV, обнаруживает и исправляет проблемы с кодировкой, дубликаты, пропущенные значения и несоответствия типов."
     },
     "ar": {
       "name": "منظف ​​CSV",
-      "description": "يستوعب ملفات CSV الفوضوية، ويكتشف ويصلح مشكلات الترميز والتكرارات والقيم المفقودة ونوع عدم التطابق. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يستوعب ملفات CSV الفوضوية، ويكتشف ويصلح مشكلات الترميز والتكرارات والقيم المفقودة ونوع عدم التطابق."
     },
     "hi": {
       "name": "सीएसवी क्लीनर",
       "description": "अस्त-व्यस्त CSV फ़ाइलों को समाहित करता है, एन्कोडिंग समस्याओं, डुप्लिकेट, गुम मानों और प्रकार के बेमेल का पता लगाता है और उन्हें ठीक करता है।."
     },
     "en": {
-      "description": "Ingests messy CSV files, detects and fixes encoding issues, duplicates, missing values, and type mismatches."
+      "description": "Ingests messy CSV files, detects and fixes encoding issues, duplicates, missing values, and type mismatches.",
+      "name": "CSV Cleaner"
     }
   },
   "data-analytics/csv-deduplicator": {
@@ -3622,7 +3695,8 @@
       "description": "CSV फ़ाइलों से डुप्लिकेट पंक्तियों का पता लगाएं और हटाएँ।."
     },
     "en": {
-      "description": "Detects and removes duplicate rows from CSV files."
+      "description": "Detects and removes duplicate rows from CSV files.",
+      "name": "CSV Deduplicator"
     }
   },
   "data-analytics/data-faker-agent": {
@@ -3660,18 +3734,19 @@
     },
     "ru": {
       "name": "Агент фейкового данных",
-      "description": "Генерирует реалистичные поддельные начальные данные, соответствующие определениям схемы для тестирования.."
+      "description": "Генерирует реалистичные поддельные начальные данные, соответствующие определениям схемы для тестирования."
     },
     "ar": {
       "name": "وكيل مزيف البيانات",
-      "description": "يُنشئ بيانات بذور مزيفة واقعية مطابقة لتعريفات المخطط للاختبار. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يُنشئ بيانات بذور مزيفة واقعية مطابقة لتعريفات المخطط للاختبار."
     },
     "hi": {
       "name": "डेटा फ़ेकर एजेंट",
       "description": "परीक्षण के लिए स्कीमा परिभाषाओं से मेल खाने वाले यथार्थवादी नकली बीज डेटा उत्पन्न करता है।."
     },
     "en": {
-      "description": "Generates realistic fake seed data matching schema definitions for testing."
+      "description": "Generates realistic fake seed data matching schema definitions for testing.",
+      "name": "Data Faker Agent"
     }
   },
   "data-analytics/data-pipeline-validator": {
@@ -3709,18 +3784,19 @@
     },
     "ru": {
       "name": "Валидатор конвейера данных",
-      "description": "Проверяет конвейеры ETL, проверяет целостность данных между исходной и целевой системами.."
+      "description": "Проверяет конвейеры ETL, проверяет целостность данных между исходной и целевой системами."
     },
     "ar": {
       "name": "مدقق خط أنابيب البيانات",
-      "description": "التحقق من صحة خطوط أنابيب ETL، والتحقق من سلامة البيانات بين أنظمة المصدر والوجهة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "التحقق من صحة خطوط أنابيب ETL، والتحقق من سلامة البيانات بين أنظمة المصدر والوجهة."
     },
     "hi": {
       "name": "डेटा पाइपलाइन सत्यापनकर्ता",
       "description": "ईटीएल पाइपलाइनों को सत्यापित करता है, स्रोत और गंतव्य प्रणालियों के बीच डेटा अखंडता की जांच करता है।."
     },
     "en": {
-      "description": "Validates ETL pipelines, checks data integrity between source and destination systems."
+      "description": "Validates ETL pipelines, checks data integrity between source and destination systems.",
+      "name": "Data Pipeline Validator"
     }
   },
   "data-analytics/database-diagram-generator": {
@@ -3758,18 +3834,19 @@
     },
     "ru": {
       "name": "Генератор диаграмм базы данных",
-      "description": "Считывает схемы баз данных (SQL/ORM) и генерирует диаграммы ERD в Mermaid или PlantUML.."
+      "description": "Считывает схемы баз данных (SQL/ORM) и генерирует диаграммы ERD в Mermaid или PlantUML."
     },
     "ar": {
       "name": "مولد مخطط قاعدة البيانات",
-      "description": "يقرأ مخططات قاعدة البيانات (SQL/ORM) وينشئ مخططات ERD في Mermaid أو PlantUML. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ مخططات قاعدة البيانات (SQL/ORM) وينشئ مخططات ERD في Mermaid أو PlantUML."
     },
     "hi": {
       "name": "डेटाबेस आरेख जेनरेटर",
       "description": "डेटाबेस स्कीमा (एसक्यूएल/ओआरएम) पढ़ता है और मरमेड या प्लांटयूएमएल में ईआरडी आरेख तैयार करता है।."
     },
     "en": {
-      "description": "Reads database schemas (SQL/ORM) and generates ERD diagrams in Mermaid or PlantUML."
+      "description": "Reads database schemas (SQL/ORM) and generates ERD diagrams in Mermaid or PlantUML.",
+      "name": "Database Diagram Generator"
     }
   },
   "data-analytics/ip-geolocation-lookup": {
@@ -3818,7 +3895,8 @@
       "description": "किसी IP पते की भौगोलिक स्थिति खोजता है."
     },
     "en": {
-      "description": "Looks up the geographic location of IP addresses."
+      "description": "Looks up the geographic location of IP addresses.",
+      "name": "IP Geolocation Lookup"
     }
   },
   "data-analytics/json-formatter": {
@@ -3867,7 +3945,8 @@
       "description": "प्रीटी-प्रिंट के साथ JSON डेटा को प्रारूपित और मान्य करें।."
     },
     "en": {
-      "description": "Formats and validates JSON data with pretty-print."
+      "description": "Formats and validates JSON data with pretty-print.",
+      "name": "JSON Formatter"
     }
   },
   "data-analytics/json-schema-generator": {
@@ -3905,18 +3984,19 @@
     },
     "ru": {
       "name": "Генератор схем JSON",
-      "description": "Анализирует образцы данных JSON и генерирует подробные определения схемы JSON.."
+      "description": "Анализирует образцы данных JSON и генерирует подробные определения схемы JSON."
     },
     "ar": {
       "name": "مولد مخطط JSON",
-      "description": "يحلل عينات بيانات JSON وينشئ تعريفات مخطط JSON شاملة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يحلل عينات بيانات JSON وينشئ تعريفات مخطط JSON شاملة."
     },
     "hi": {
       "name": "JSON स्कीमा जेनरेटर",
       "description": "JSON डेटा नमूनों का विश्लेषण करता है और व्यापक JSON स्कीमा परिभाषाएँ तैयार करता है।."
     },
     "en": {
-      "description": "Analyzes JSON data samples and generates comprehensive JSON Schema definitions."
+      "description": "Analyzes JSON data samples and generates comprehensive JSON Schema definitions.",
+      "name": "JSON Schema Generator"
     }
   },
   "data-analytics/log-to-metrics-converter": {
@@ -3954,18 +4034,19 @@
     },
     "ru": {
       "name": "Конвертер журналов в метрики",
-      "description": "Анализирует неструктурированные журналы приложений и преобразует их в структурированные метрики и конфигурации информационной панели.."
+      "description": "Анализирует неструктурированные журналы приложений и преобразует их в структурированные метрики и конфигурации информационной панели."
     },
     "ar": {
       "name": "سجل لتحويل المقاييس",
-      "description": "يوزع سجلات التطبيقات غير المنظمة إلى مقاييس منظمة وتكوينات لوحة المعلومات. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يوزع سجلات التطبيقات غير المنظمة إلى مقاييس منظمة وتكوينات لوحة المعلومات."
     },
     "hi": {
       "name": "मेट्रिक्स कनवर्टर पर लॉग इन करें",
       "description": "संरचित मेट्रिक्स और डैशबोर्ड कॉन्फ़िगरेशन में असंरचित एप्लिकेशन लॉग को पार्स करता है।."
     },
     "en": {
-      "description": "Parses unstructured application logs into structured metrics and dashboard configurations."
+      "description": "Parses unstructured application logs into structured metrics and dashboard configurations.",
+      "name": "Log To Metrics Converter"
     }
   },
   "data-analytics/math-expression-parser": {
@@ -4007,14 +4088,15 @@
     },
     "ar": {
       "name": "محلل التعبير الرياضي",
-      "description": "Math Expression Parser - تحليل وتقييم التعبيرات الرياضية بأمان. تم تصميمه كمشروع وكيل AI."
+      "description": "Math Expression Parser - تحليل وتقييم التعبيرات الرياضية بأمان."
     },
     "hi": {
       "name": "गणित अभिव्यक्ति पार्सर",
       "description": "गणित अभिव्यक्ति पार्सर - गणितीय अभिव्यक्तियों को सुरक्षित रूप से पार्स और मूल्यांकन करें।."
     },
     "en": {
-      "description": "Math Expression Parser — Parse and evaluate mathematical expressions safely."
+      "description": "Math Expression Parser — Parse and evaluate mathematical expressions safely.",
+      "name": "Math Expression Parser"
     }
   },
   "data-analytics/regex-builder": {
@@ -4052,18 +4134,19 @@
     },
     "ru": {
       "name": "Построитель регулярных выражений",
-      "description": "Принимает описания на естественном языке, генерирует, объясняет и тестирует шаблоны регулярных выражений.."
+      "description": "Принимает описания на естественном языке, генерирует, объясняет и тестирует шаблоны регулярных выражений."
     },
     "ar": {
       "name": "ريجكس منشئ",
-      "description": "يأخذ أوصاف اللغة الطبيعية وينشئ أنماط التعبير العادي ويشرحها ويختبرها. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يأخذ أوصاف اللغة الطبيعية وينشئ أنماط التعبير العادي ويشرحها ويختبرها."
     },
     "hi": {
       "name": "रेगेक्स बिल्डर",
       "description": "प्राकृतिक भाषा विवरण लेता है और रेगेक्स पैटर्न उत्पन्न करता है, समझाता है और परीक्षण करता है।."
     },
     "en": {
-      "description": "Takes natural language descriptions and generates, explains, and tests regex patterns."
+      "description": "Takes natural language descriptions and generates, explains, and tests regex patterns.",
+      "name": "Regex Builder"
     }
   },
   "data-analytics/regex-tester": {
@@ -4112,7 +4195,8 @@
       "description": "वास्तविक समय मिलान के साथ रेगेक्स पैटर्न का परीक्षण और सत्यापन करें।."
     },
     "en": {
-      "description": "Tests and validates regex patterns with real-time matching."
+      "description": "Tests and validates regex patterns with real-time matching.",
+      "name": "Regex Tester"
     }
   },
   "data-analytics/spreadsheet-formula-writer": {
@@ -4150,18 +4234,19 @@
     },
     "ru": {
       "name": "Составитель формул для электронных таблиц",
-      "description": "Преобразует вопросы на естественном языке в формулы Excel/Google Таблиц с пояснениями.."
+      "description": "Преобразует вопросы на естественном языке в формулы Excel/Google Таблиц с пояснениями."
     },
     "ar": {
       "name": "كاتب صيغة جداول البيانات",
-      "description": "تحويل أسئلة اللغة الطبيعية إلى صيغ Excel/Google Sheets مع الشرح. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "تحويل أسئلة اللغة الطبيعية إلى صيغ Excel/Google Sheets مع الشرح."
     },
     "hi": {
       "name": "स्प्रेडशीट फ़ॉर्मूला लेखक",
       "description": "प्राकृतिक भाषा के प्रश्नों को स्पष्टीकरण के साथ एक्सेल/गूगल शीट्स फॉर्मूलों में परिवर्तित करता है।."
     },
     "en": {
-      "description": "Converts natural language questions to Excel/Google Sheets formulas with explanations."
+      "description": "Converts natural language questions to Excel/Google Sheets formulas with explanations.",
+      "name": "Spreadsheet Formula Writer"
     }
   },
   "data-analytics/sql-formatter": {
@@ -4203,14 +4288,15 @@
     },
     "ar": {
       "name": "منسق SQL",
-      "description": "SQL Formatter - تنسيق وتجميل استعلامات SQL لسهولة القراءة. تم تصميمه كمشروع وكيل AI."
+      "description": "SQL Formatter - تنسيق وتجميل استعلامات SQL لسهولة القراءة."
     },
     "hi": {
       "name": "एसक्यूएल फ़ॉर्मेटर",
       "description": "एसक्यूएल फ़ॉर्मेटर - पठनीयता के लिए एसक्यूएल प्रश्नों को प्रारूपित और सुशोभित करें।."
     },
     "en": {
-      "description": "SQL Formatter — Format and beautify SQL queries for readability."
+      "description": "SQL Formatter — Format and beautify SQL queries for readability.",
+      "name": "SQL Formatter"
     }
   },
   "data-analytics/sql-query-optimizer": {
@@ -4259,7 +4345,8 @@
       "description": "प्रदर्शन के लिए SQL क्वेरी का विश्लेषण और अनुकूलन करें।."
     },
     "en": {
-      "description": "Analyzes and optimizes SQL queries for performance."
+      "description": "Analyzes and optimizes SQL queries for performance.",
+      "name": "SQL Query Optimizer"
     }
   },
   "data-analytics/timestamp-converter": {
@@ -4308,7 +4395,8 @@
       "description": "टाइमस्टैम्प और टाइमज़ोन प्रारूपों के बीच कनवर्ट करता है।."
     },
     "en": {
-      "description": "Converts between timestamp formats and time zones."
+      "description": "Converts between timestamp formats and time zones.",
+      "name": "Timestamp Converter"
     }
   },
   "data-analytics/unit-converter": {
@@ -4357,7 +4445,8 @@
       "description": "माप की विभिन्न इकाइयों के बीच कनवर्ट करें।."
     },
     "en": {
-      "description": "Converts between various units of measurement."
+      "description": "Converts between various units of measurement.",
+      "name": "Unit Converter"
     }
   },
   "data-analytics/url-shortener": {
@@ -4399,14 +4488,15 @@
     },
     "ar": {
       "name": "اختصار URL",
-      "description": "URL Shortener - إنشاء عناوين URL مختصرة وإدارة عمليات إعادة توجيه الروابط. تم تصميمه كمشروع وكيل AI."
+      "description": "URL Shortener - إنشاء عناوين URL مختصرة وإدارة عمليات إعادة توجيه الروابط."
     },
     "hi": {
       "name": "यूआरएल शॉर्टनर",
       "description": "यूआरएल शॉर्टनर - छोटे यूआरएल जेनरेट करें और लिंक रीडायरेक्ट प्रबंधित करें।."
     },
     "en": {
-      "description": "URL Shortener — Generate shortened URLs and manage link redirects."
+      "description": "URL Shortener — Generate shortened URLs and manage link redirects.",
+      "name": "URL Shortener"
     }
   },
   "data-analytics/uuid-generator": {
@@ -4448,14 +4538,15 @@
     },
     "ar": {
       "name": "مولد Uuid",
-      "description": "UUID Generator - إنشاء UUIDs والتحقق من صحتها (الإصدار 1، الإصدار 4، الإصدار 5). تم تصميمه كمشروع وكيل AI."
+      "description": "UUID Generator - إنشاء UUIDs والتحقق من صحتها (الإصدار 1، الإصدار 4، الإصدار 5)."
     },
     "hi": {
       "name": "यूयूआईडी जेनरेटर",
       "description": "यूयूआईडी जनरेटर - यूयूआईडी (v1, v4, v5) उत्पन्न और मान्य करें।."
     },
     "en": {
-      "description": "UUID Generator — Generate and validate UUIDs (v1, v4, v5)."
+      "description": "UUID Generator — Generate and validate UUIDs (v1, v4, v5).",
+      "name": "Uuid Generator"
     }
   },
   "data-analytics/yaml-validator": {
@@ -4497,14 +4588,15 @@
     },
     "ar": {
       "name": "مدقق YAML",
-      "description": "YAML Validator — التحقق من صحة ملفات YAML والإبلاغ عن الأخطاء النحوية. تم تصميمه كمشروع وكيل AI."
+      "description": "YAML Validator — التحقق من صحة ملفات YAML والإبلاغ عن الأخطاء النحوية."
     },
     "hi": {
       "name": "वाईएएमएल सत्यापनकर्ता",
       "description": "YAML सत्यापनकर्ता - YAML फ़ाइलों को मान्य करें और सिंटैक्स त्रुटियों की रिपोर्ट करें।."
     },
     "en": {
-      "description": "YAML Validator — Validate YAML files and report syntax errors."
+      "description": "YAML Validator — Validate YAML files and report syntax errors.",
+      "name": "YAML Validator"
     }
   },
   "design-frontend/accessibility-auditor": {
@@ -4542,18 +4634,19 @@
     },
     "ru": {
       "name": "Аудитор доступности",
-      "description": "Сканирует HTML-страницы на наличие нарушений WCAG 2.1 и генерирует приоритетные предложения по исправлению.."
+      "description": "Сканирует HTML-страницы на наличие нарушений WCAG 2.1 и генерирует приоритетные предложения по исправлению."
     },
     "ar": {
       "name": "مدقق إمكانية الوصول",
-      "description": "يقوم بمسح صفحات HTML بحثًا عن انتهاكات WCAG 2.1 وينشئ اقتراحات إصلاح ذات أولوية. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقوم بمسح صفحات HTML بحثًا عن انتهاكات WCAG 2.1 وينشئ اقتراحات إصلاح ذات أولوية."
     },
     "hi": {
       "name": "अभिगम्यता लेखा परीक्षक",
       "description": "WCAG 2.1 उल्लंघनों के लिए HTML पृष्ठों को स्कैन करता है और प्राथमिकता वाले सुधार सुझाव तैयार करता है।."
     },
     "en": {
-      "description": "Scans HTML pages for WCAG 2.1 violations and generates prioritized fix suggestions."
+      "description": "Scans HTML pages for WCAG 2.1 violations and generates prioritized fix suggestions.",
+      "name": "Accessibility Auditor"
     }
   },
   "design-frontend/ascii-art-generator": {
@@ -4595,14 +4688,15 @@
     },
     "ar": {
       "name": "مولد الفن أسكي",
-      "description": "ASCII Art Generator - إنشاء فن ASCII من إدخال النص. تم تصميمه كمشروع وكيل AI."
+      "description": "ASCII Art Generator - إنشاء فن ASCII من إدخال النص."
     },
     "hi": {
       "name": "अस्की आर्ट जेनरेटर",
       "description": "ASCII आर्ट जेनरेटर - टेक्स्ट इनपुट से ASCII आर्ट जेनरेट करें।."
     },
     "en": {
-      "description": "ASCII Art Generator — Generate ASCII art from text input."
+      "description": "ASCII Art Generator — Generate ASCII art from text input.",
+      "name": "Ascii Art Generator"
     }
   },
   "design-frontend/color-converter": {
@@ -4644,14 +4738,15 @@
     },
     "ar": {
       "name": "محول الألوان",
-      "description": "محول الألوان - التحويل بين تنسيقات الألوان (HEX، RGB، HSL). تم تصميمه كمشروع وكيل AI."
+      "description": "محول الألوان - التحويل بين تنسيقات الألوان (HEX، RGB، HSL)."
     },
     "hi": {
       "name": "रंग परिवर्तक",
       "description": "रंग कनवर्टर - रंग प्रारूपों (HEX, RGB, HSL) के बीच कनवर्ट करें।."
     },
     "en": {
-      "description": "Color Converter — Convert between color formats (HEX, RGB, HSL)."
+      "description": "Color Converter — Convert between color formats (HEX, RGB, HSL).",
+      "name": "Color Converter"
     }
   },
   "design-frontend/color-palette-generator": {
@@ -4689,18 +4784,19 @@
     },
     "ru": {
       "name": "Генератор цветовой палитры",
-      "description": "Генерирует гармоничные цветовые палитры на основе изображений, описаний брендов или ключевых слов настроения.."
+      "description": "Генерирует гармоничные цветовые палитры на основе изображений, описаний брендов или ключевых слов настроения."
     },
     "ar": {
       "name": "مولد لوحة الألوان",
-      "description": "يُنشئ لوحات ألوان متناغمة من الصور أو أوصاف العلامة التجارية أو الكلمات الرئيسية المزاجية. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يُنشئ لوحات ألوان متناغمة من الصور أو أوصاف العلامة التجارية أو الكلمات الرئيسية المزاجية."
     },
     "hi": {
       "name": "रंग पैलेट जेनरेटर",
       "description": "छवियों, ब्रांड विवरण या मूड कीवर्ड से सामंजस्यपूर्ण रंग पैलेट उत्पन्न करता है।."
     },
     "en": {
-      "description": "Generates harmonious color palettes from images, brand descriptions, or mood keywords."
+      "description": "Generates harmonious color palettes from images, brand descriptions, or mood keywords.",
+      "name": "Color Palette Generator"
     }
   },
   "design-frontend/component-documenter": {
@@ -4738,18 +4834,19 @@
     },
     "ru": {
       "name": "Документатор компонентов",
-      "description": "Читает компоненты React/Vue/Svelte и генерирует документацию в стиле Storybook.."
+      "description": "Читает компоненты React/Vue/Svelte и генерирует документацию в стиле Storybook."
     },
     "ar": {
       "name": "موثق المكونات",
-      "description": "يقرأ مكونات React/Vue/Svelte وينشئ وثائق على نمط القصص المصورة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ مكونات React/Vue/Svelte وينشئ وثائق على نمط القصص المصورة."
     },
     "hi": {
       "name": "घटक दस्तावेज़कार",
       "description": "React/Vue/Svelte घटकों को पढ़ता है और स्टोरीबुक-शैली दस्तावेज़ तैयार करता है।."
     },
     "en": {
-      "description": "Reads React/Vue/Svelte components and generates Storybook-style documentation."
+      "description": "Reads React/Vue/Svelte components and generates Storybook-style documentation.",
+      "name": "Component Documenter"
     }
   },
   "design-frontend/design-token-extractor": {
@@ -4787,18 +4884,19 @@
     },
     "ru": {
       "name": "Экстрактор токенов дизайна",
-      "description": "Считывает файлы Figma или спецификации дизайна и генерирует переменные токена дизайна CSS/SCSS.."
+      "description": "Считывает файлы Figma или спецификации дизайна и генерирует переменные токена дизайна CSS/SCSS."
     },
     "ar": {
       "name": "تصميم رمز النازع",
-      "description": "يقرأ ملفات Figma أو مواصفات التصميم وينشئ متغيرات رمز تصميم CSS/SCSS. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ ملفات Figma أو مواصفات التصميم وينشئ متغيرات رمز تصميم CSS/SCSS."
     },
     "hi": {
       "name": "डिज़ाइन टोकन एक्सट्रैक्टर",
       "description": "फिग्मा फ़ाइलें या डिज़ाइन विवरण पढ़ता है और CSS/SCSS डिज़ाइन टोकन वेरिएबल उत्पन्न करता है।."
     },
     "en": {
-      "description": "Reads Figma files or design specs and generates CSS/SCSS design token variables."
+      "description": "Reads Figma files or design specs and generates CSS/SCSS design token variables.",
+      "name": "Design Token Extractor"
     }
   },
   "design-frontend/icon-set-generator": {
@@ -4836,18 +4934,19 @@
     },
     "ru": {
       "name": "Генератор набора иконок",
-      "description": "Генерирует согласованные наборы значков из текстовых описаний с помощью искусственного интеллекта.."
+      "description": "Генерирует согласованные наборы значков из текстовых описаний с помощью искусственного интеллекта."
     },
     "ar": {
       "name": "مولد مجموعة الأيقونات",
-      "description": "يُنشئ مجموعات أيقونات متسقة من أوصاف النص باستخدام الذكاء الاصطناعي. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يُنشئ مجموعات أيقونات متسقة من أوصاف النص باستخدام الذكاء الاصطناعي."
     },
     "hi": {
       "name": "चिह्न सेट जेनरेटर",
       "description": "एआई का उपयोग करके पाठ विवरण से सुसंगत आइकन सेट उत्पन्न करता है।."
     },
     "en": {
-      "description": "Generates consistent icon sets from text descriptions using AI."
+      "description": "Generates consistent icon sets from text descriptions using AI.",
+      "name": "Icon Set Generator"
     }
   },
   "design-frontend/image-alt-text-writer": {
@@ -4885,18 +4984,19 @@
     },
     "ru": {
       "name": "Средство записи альтернативного текста изображения",
-      "description": "Сканирует HTML на наличие изображений, в которых отсутствует замещающий текст, и генерирует описательные альтернативы с помощью ИИ.."
+      "description": "Сканирует HTML на наличие изображений, в которых отсутствует замещающий текст, и генерирует описательные альтернативы с помощью ИИ."
     },
     "ar": {
       "name": "صورة نص بديل الكاتب",
-      "description": "يقوم بمسح HTML بحثًا عن الصور التي تفتقد النص البديل ويولد بدائل وصفية باستخدام الذكاء الاصطناعي. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقوم بمسح HTML بحثًا عن الصور التي تفتقد النص البديل ويولد بدائل وصفية باستخدام الذكاء الاصطناعي."
     },
     "hi": {
       "name": "इमेज ऑल्ट टेक्स्ट राइटर",
       "description": "उन छवियों के लिए HTML को स्कैन करता है जिनमें वैकल्पिक टेक्स्ट नहीं है और AI का उपयोग करके वर्णनात्मक विकल्प उत्पन्न करता है।."
     },
     "en": {
-      "description": "Scans HTML for images missing alt text and generates descriptive alternatives using AI."
+      "description": "Scans HTML for images missing alt text and generates descriptive alternatives using AI.",
+      "name": "Image Alt Text Writer"
     }
   },
   "design-frontend/responsive-design-tester": {
@@ -4934,18 +5034,19 @@
     },
     "ru": {
       "name": "Тестировщик адаптивного дизайна",
-      "description": "Делает снимки экрана веб-страниц в нескольких окнах просмотра и автоматически отмечает проблемы с макетом.."
+      "description": "Делает снимки экрана веб-страниц в нескольких окнах просмотра и автоматически отмечает проблемы с макетом."
     },
     "ar": {
       "name": "اختبار التصميم سريع الاستجابة",
-      "description": "لقطات شاشة لصفحات الويب في إطارات عرض متعددة ومشاكل تخطيط العلامات تلقائيًا. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "لقطات شاشة لصفحات الويب في إطارات عرض متعددة ومشاكل تخطيط العلامات تلقائيًا."
     },
     "hi": {
       "name": "उत्तरदायी डिज़ाइन परीक्षक",
       "description": "एकाधिक व्यूपोर्ट पर स्क्रीनशॉट वेब पेज और फ़्लैग लेआउट समस्याएँ स्वचालित रूप से।."
     },
     "en": {
-      "description": "Screenshots web pages at multiple viewports and flags layout issues automatically."
+      "description": "Screenshots web pages at multiple viewports and flags layout issues automatically.",
+      "name": "Responsive Design Tester"
     }
   },
   "design-frontend/ui-copy-reviewer": {
@@ -4983,18 +5084,19 @@
     },
     "ru": {
       "name": "Рецензент копирования пользовательского интерфейса",
-      "description": "Проверяет текст пользовательского интерфейса на предмет ясности, последовательности, инклюзивности и локализуемости.."
+      "description": "Проверяет текст пользовательского интерфейса на предмет ясности, последовательности, инклюзивности и локализуемости."
     },
     "ar": {
       "name": "مراجع نسخة واجهة المستخدم",
-      "description": "يراجع نص واجهة المستخدم للتأكد من الوضوح والاتساق والشمولية وقابلية الترجمة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يراجع نص واجهة المستخدم للتأكد من الوضوح والاتساق والشمولية وقابلية الترجمة."
     },
     "hi": {
       "name": "यूआई कॉपी समीक्षक",
       "description": "स्पष्टता, स्थिरता, समावेशिता और स्थानीयकरण के लिए यूआई टेक्स्ट की समीक्षा करता है।."
     },
     "en": {
-      "description": "Reviews UI text for clarity, consistency, inclusivity, and localizability."
+      "description": "Reviews UI text for clarity, consistency, inclusivity, and localizability.",
+      "name": "UI Copy Reviewer"
     }
   },
   "devops-infra/changelog-generator": {
@@ -5043,7 +5145,8 @@
       "description": "Git प्रतिबद्ध इतिहास से एक चेंजलॉग उत्पन्न करता है।."
     },
     "en": {
-      "description": "Generates changelogs from Git commit history."
+      "description": "Generates changelogs from Git commit history.",
+      "name": "Changelog Generator"
     }
   },
   "devops-infra/ci-pipeline-optimizer": {
@@ -5081,18 +5184,19 @@
     },
     "ru": {
       "name": "Оптимизатор конвейера CI",
-      "description": "Анализирует конфигурации CI/CD, выявляет узкие места и предлагает стратегии распараллеливания и кэширования.."
+      "description": "Анализирует конфигурации CI/CD, выявляет узкие места и предлагает стратегии распараллеливания и кэширования."
     },
     "ar": {
       "name": "محسن خط أنابيب CI",
-      "description": "يحلل تكوينات CI/CD، ويحدد الاختناقات، ويقترح استراتيجيات الموازاة والتخزين المؤقت. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يحلل تكوينات CI/CD، ويحدد الاختناقات، ويقترح استراتيجيات الموازاة والتخزين المؤقت."
     },
     "hi": {
       "name": "सीआई पाइपलाइन अनुकूलक",
       "description": "सीआई/सीडी कॉन्फ़िगरेशन का विश्लेषण करता है, बाधाओं की पहचान करता है, और समानांतरीकरण और कैशिंग रणनीतियों का सुझाव देता है।."
     },
     "en": {
-      "description": "Analyzes CI/CD configurations, identifies bottlenecks, and suggests parallelization and caching strategies."
+      "description": "Analyzes CI/CD configurations, identifies bottlenecks, and suggests parallelization and caching strategies.",
+      "name": "CI Pipeline Optimizer"
     }
   },
   "devops-infra/config-file-merger": {
@@ -5141,7 +5245,8 @@
       "description": "विभिन्न स्रोतों से कॉन्फ़िगरेशन फ़ाइलों को संयोजित करें।."
     },
     "en": {
-      "description": "Merges configuration files from multiple sources."
+      "description": "Merges configuration files from multiple sources.",
+      "name": "Config File Merger"
     }
   },
   "devops-infra/cron-expression-parser": {
@@ -5190,7 +5295,8 @@
       "description": "क्रॉन अभिव्यक्तियों को पार्स करें और समझाएं।."
     },
     "en": {
-      "description": "Parses and explains cron expressions."
+      "description": "Parses and explains cron expressions.",
+      "name": "Cron Expression Parser"
     }
   },
   "devops-infra/cron-parser": {
@@ -5232,14 +5338,15 @@
     },
     "ar": {
       "name": "محلل كرون",
-      "description": "Cron Parser - تحليل وشرح تعبيرات cron بتنسيق يمكن قراءته بواسطة الإنسان. تم تصميمه كمشروع وكيل AI."
+      "description": "Cron Parser - تحليل وشرح تعبيرات cron بتنسيق يمكن قراءته بواسطة الإنسان."
     },
     "hi": {
       "name": "क्रोन पार्सर",
       "description": "क्रॉन पार्सर - मानव-पठनीय प्रारूप में क्रॉन अभिव्यक्तियों को पार्स करें और समझाएं।."
     },
     "en": {
-      "description": "Cron Parser — Parse and explain cron expressions in human-readable format."
+      "description": "Cron Parser — Parse and explain cron expressions in human-readable format.",
+      "name": "Cron Parser"
     }
   },
   "devops-infra/dependency-checker": {
@@ -5281,14 +5388,15 @@
     },
     "ar": {
       "name": "مدقق التبعية",
-      "description": "مدقق التبعية — التحقق من تبعيات المشروع بحثًا عن الحزم القديمة أو الضعيفة. تم تصميمه كمشروع وكيل AI."
+      "description": "مدقق التبعية — التحقق من تبعيات المشروع بحثًا عن الحزم القديمة أو الضعيفة."
     },
     "hi": {
       "name": "निर्भरता परीक्षक",
       "description": "निर्भरता परीक्षक - पुराने या कमजोर पैकेजों के लिए परियोजना निर्भरता की जाँच करें।."
     },
     "en": {
-      "description": "Dependency Checker — Check project dependencies for outdated or vulnerable packages."
+      "description": "Dependency Checker — Check project dependencies for outdated or vulnerable packages.",
+      "name": "Dependency Checker"
     }
   },
   "devops-infra/dependency-updater": {
@@ -5337,7 +5445,8 @@
       "description": "प्रोजेक्ट निर्भरताएँ जाँचें और अद्यतन करें।."
     },
     "en": {
-      "description": "Checks and updates project dependencies."
+      "description": "Checks and updates project dependencies.",
+      "name": "Dependency Updater"
     }
   },
   "devops-infra/docker-compose-generator": {
@@ -5375,18 +5484,19 @@
     },
     "ru": {
       "name": "Генератор Docker Compose",
-      "description": "Считывает структуру проекта и генерирует оптимизированные конфигурации Docker и Docker Compose.."
+      "description": "Считывает структуру проекта и генерирует оптимизированные конфигурации Docker и Docker Compose."
     },
     "ar": {
       "name": "دوكر يؤلف مولد",
-      "description": "يقرأ بنية المشروع وينشئ تكوينات Docker وDocker Compose المحسنة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ بنية المشروع وينشئ تكوينات Docker وDocker Compose المحسنة."
     },
     "hi": {
       "name": "डॉकर कंपोज़ जेनरेटर",
       "description": "प्रोजेक्ट संरचना को पढ़ता है और अनुकूलित डॉकर और डॉकर कंपोज़ कॉन्फ़िगरेशन उत्पन्न करता है।."
     },
     "en": {
-      "description": "Reads project structure and generates optimized Docker and Docker Compose configurations."
+      "description": "Reads project structure and generates optimized Docker and Docker Compose configurations.",
+      "name": "Docker Compose Generator"
     }
   },
   "devops-infra/dockerfile-generator": {
@@ -5435,7 +5545,8 @@
       "description": "प्रोजेक्ट के लिए एक अनुकूलित Dockerfile उत्पन्न करता है।."
     },
     "en": {
-      "description": "Generates optimized Dockerfiles for projects."
+      "description": "Generates optimized Dockerfiles for projects.",
+      "name": "Dockerfile Generator"
     }
   },
   "devops-infra/env-file-auditor": {
@@ -5473,18 +5584,19 @@
     },
     "ru": {
       "name": "Аудитор файлов Env",
-      "description": "Сканирует файлы .env в репозиториях, обнаруживает утечку секретов, дубликаты и отсутствующие переменные.."
+      "description": "Сканирует файлы .env в репозиториях, обнаруживает утечку секретов, дубликаты и отсутствующие переменные."
     },
     "ar": {
       "name": "Env ملف المدقق",
-      "description": "يقوم بمسح ملفات .env عبر المستودعات، ويكتشف الأسرار المسربة، والنسخ المكررة، والمتغيرات المفقودة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقوم بمسح ملفات .env عبر المستودعات، ويكتشف الأسرار المسربة، والنسخ المكررة، والمتغيرات المفقودة."
     },
     "hi": {
       "name": "एनवी फ़ाइल ऑडिटर",
       "description": "रिपॉजिटरी में .env फ़ाइलों को स्कैन करता है, लीक हुए रहस्यों, डुप्लिकेट और गायब वेरिएबल्स का पता लगाता है।."
     },
     "en": {
-      "description": "Scans .env files across repositories, detects leaked secrets, duplicates, and missing variables."
+      "description": "Scans .env files across repositories, detects leaked secrets, duplicates, and missing variables.",
+      "name": "Env File Auditor"
     }
   },
   "devops-infra/env-validator": {
@@ -5533,7 +5645,8 @@
       "description": "स्कीमा के विरुद्ध पर्यावरण चर मान्य करें।."
     },
     "en": {
-      "description": "Validates environment variables against schemas."
+      "description": "Validates environment variables against schemas.",
+      "name": "Env Validator"
     }
   },
   "devops-infra/git-commit-analyzer": {
@@ -5582,7 +5695,8 @@
       "description": "अंतर्दृष्टि के लिए Git प्रतिबद्ध इतिहास का विश्लेषण करें।."
     },
     "en": {
-      "description": "Analyzes Git commit history for insights."
+      "description": "Analyzes Git commit history for insights.",
+      "name": "Git Commit Analyzer"
     }
   },
   "devops-infra/gitignore-generator": {
@@ -5631,7 +5745,8 @@
       "description": "विभिन्न भाषाओं के लिए .gitignore फ़ाइलें जेनरेट करता है।."
     },
     "en": {
-      "description": "Generates .gitignore files for various languages and frameworks."
+      "description": "Generates .gitignore files for various languages and frameworks.",
+      "name": "Gitignore Generator"
     }
   },
   "devops-infra/incident-responder": {
@@ -5669,18 +5784,19 @@
     },
     "ru": {
       "name": "Ответчик на инциденты",
-      "description": "Отслеживает журналы, обнаруживает аномалии и автоматически создает отчеты об инцидентах с анализом первопричин.."
+      "description": "Отслеживает журналы, обнаруживает аномалии и автоматически создает отчеты об инцидентах с анализом первопричин."
     },
     "ar": {
       "name": "المستجيب للحوادث",
-      "description": "يقوم بمراقبة السجلات والكشف عن الحالات الشاذة وإنشاء تقارير الحوادث تلقائيًا مع تحليل السبب الجذري. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقوم بمراقبة السجلات والكشف عن الحالات الشاذة وإنشاء تقارير الحوادث تلقائيًا مع تحليل السبب الجذري."
     },
     "hi": {
       "name": "घटना प्रत्युत्तरकर्ता",
       "description": "लॉग पर नज़र रखता है, विसंगतियों का पता लगाता है, और मूल कारण विश्लेषण के साथ घटना रिपोर्ट स्वतः उत्पन्न करता है।."
     },
     "en": {
-      "description": "Monitors logs, detects anomalies, and auto-generates incident reports with root cause analysis."
+      "description": "Monitors logs, detects anomalies, and auto-generates incident reports with root cause analysis.",
+      "name": "Incident Responder"
     }
   },
   "devops-infra/infra-cost-analyzer": {
@@ -5718,18 +5834,19 @@
     },
     "ru": {
       "name": "Анализатор инфраструктурных затрат",
-      "description": "Анализирует данные об облачных платежах (AWS/GCP/Azure), выявляет потери и предлагает правильный размер.."
+      "description": "Анализирует данные об облачных платежах (AWS/GCP/Azure), выявляет потери и предлагает правильный размер."
     },
     "ar": {
       "name": "محلل تكلفة الأشعة تحت الحمراء",
-      "description": "يوزع بيانات الفوترة السحابية (AWS/GCP/Azure)، ويحدد الهدر، ويقترح الحجم الصحيح. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يوزع بيانات الفوترة السحابية (AWS/GCP/Azure)، ويحدد الهدر، ويقترح الحجم الصحيح."
     },
     "hi": {
       "name": "इन्फ्रा लागत विश्लेषक",
       "description": "क्लाउड बिलिंग डेटा (AWS/GCP/Azure) को पार्स करता है, अपशिष्ट की पहचान करता है, और सही आकार का सुझाव देता है।."
     },
     "en": {
-      "description": "Parses cloud billing data (AWS/GCP/Azure), identifies waste, and suggests right-sizing."
+      "description": "Parses cloud billing data (AWS/GCP/Azure), identifies waste, and suggests right-sizing.",
+      "name": "Infra Cost Analyzer"
     }
   },
   "devops-infra/log-analyzer": {
@@ -5767,18 +5884,19 @@
     },
     "ru": {
       "name": "Анализатор журналов",
-      "description": "Принимает журналы приложений, выявляет закономерности и выявляет ошибки с учетом контекста.."
+      "description": "Принимает журналы приложений, выявляет закономерности и выявляет ошибки с учетом контекста."
     },
     "ar": {
       "name": "محلل السجل",
-      "description": "استيعاب سجلات التطبيق، وتحديد الأنماط، وإظهار الأخطاء مع السياق. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "استيعاب سجلات التطبيق، وتحديد الأنماط، وإظهار الأخطاء مع السياق."
     },
     "hi": {
       "name": "लॉग विश्लेषक",
       "description": "एप्लिकेशन लॉग को समाहित करता है, पैटर्न की पहचान करता है, और संदर्भ के साथ त्रुटियों को सामने लाता है।."
     },
     "en": {
-      "description": "Ingests application logs, identifies patterns, and surfaces errors with context."
+      "description": "Ingests application logs, identifies patterns, and surfaces errors with context.",
+      "name": "Log Analyzer"
     }
   },
   "devops-infra/migration-planner": {
@@ -5816,18 +5934,19 @@
     },
     "ru": {
       "name": "Планировщик миграции",
-      "description": "Анализирует схемы баз данных и создает планы миграции со стратегиями отката.."
+      "description": "Анализирует схемы баз данных и создает планы миграции со стратегиями отката."
     },
     "ar": {
       "name": "مخطط الهجرة",
-      "description": "يحلل مخططات قاعدة البيانات وينشئ خطط الترحيل باستخدام إستراتيجيات التراجع. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يحلل مخططات قاعدة البيانات وينشئ خطط الترحيل باستخدام إستراتيجيات التراجع."
     },
     "hi": {
       "name": "प्रवास योजनाकार",
       "description": "डेटाबेस स्कीमा का विश्लेषण करता है और रोलबैक रणनीतियों के साथ माइग्रेशन योजनाएं तैयार करता है।."
     },
     "en": {
-      "description": "Analyzes database schemas and generates migration plans with rollback strategies."
+      "description": "Analyzes database schemas and generates migration plans with rollback strategies.",
+      "name": "Migration Planner"
     }
   },
   "devops-infra/release-notes-generator": {
@@ -5865,18 +5984,19 @@
     },
     "ru": {
       "name": "Генератор примечаний к выпуску",
-      "description": "Считывает историю git между тегами и генерирует полированные, классифицированные примечания к выпуску.."
+      "description": "Считывает историю git между тегами и генерирует полированные, классифицированные примечания к выпуску."
     },
     "ar": {
       "name": "الافراج عن مولد الملاحظات",
-      "description": "يقرأ سجل git بين العلامات وينشئ ملاحظات إصدار مصقولة ومصنفة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ سجل git بين العلامات وينشئ ملاحظات إصدار مصقولة ومصنفة."
     },
     "hi": {
       "name": "रिलीज़ नोट्स जेनरेटर",
       "description": "टैग के बीच गिट इतिहास पढ़ता है और परिष्कृत, वर्गीकृत रिलीज़ नोट्स तैयार करता है।."
     },
     "en": {
-      "description": "Reads git history between tags and generates polished, categorized release notes."
+      "description": "Reads git history between tags and generates polished, categorized release notes.",
+      "name": "Release Notes Generator"
     }
   },
   "devops-infra/semver-parser": {
@@ -5925,7 +6045,8 @@
       "description": "सिमेंटिक संस्करणों को पार्स करना और तुलना करना।."
     },
     "en": {
-      "description": "Parses and compares semantic versions."
+      "description": "Parses and compares semantic versions.",
+      "name": "Semver Parser"
     }
   },
   "devops-infra/terraform-reviewer": {
@@ -5963,18 +6084,19 @@
     },
     "ru": {
       "name": "Рецензент Терраформа",
-      "description": "Просматривает планы Terraform и IaC, отмечает риски безопасности и финансовые последствия.."
+      "description": "Просматривает планы Terraform и IaC, отмечает риски безопасности и финансовые последствия."
     },
     "ar": {
       "name": "مراجع Terraform",
-      "description": "يقوم بمراجعة خطط Terraform وIaC، ويحدد المخاطر الأمنية والآثار المترتبة على التكلفة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقوم بمراجعة خطط Terraform وIaC، ويحدد المخاطر الأمنية والآثار المترتبة على التكلفة."
     },
     "hi": {
       "name": "टेराफॉर्म समीक्षक",
       "description": "टेराफॉर्म और आईएसी योजनाओं की समीक्षा करता है, सुरक्षा जोखिमों और लागत निहितार्थों पर प्रकाश डालता है।."
     },
     "en": {
-      "description": "Reviews Terraform and IaC plans, flags security risks and cost implications."
+      "description": "Reviews Terraform and IaC plans, flags security risks and cost implications.",
+      "name": "Terraform Reviewer"
     }
   },
   "devops-infra/uptime-monitor-agent": {
@@ -6012,18 +6134,19 @@
     },
     "ru": {
       "name": "Агент мониторинга работоспособности",
-      "description": "Опрашивает конечные точки HTTP, определяет время простоя и отправляет оповещения с диагностическим контекстом.."
+      "description": "Опрашивает конечные точки HTTP, определяет время простоя и отправляет оповещения с диагностическим контекстом."
     },
     "ar": {
       "name": "وكيل مراقبة وقت التشغيل",
-      "description": "يستقصي نقاط نهاية HTTP، ويكتشف وقت التوقف عن العمل، ويرسل تنبيهات مع سياق تشخيصي. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يستقصي نقاط نهاية HTTP، ويكتشف وقت التوقف عن العمل، ويرسل تنبيهات مع سياق تشخيصي."
     },
     "hi": {
       "name": "अपटाइम मॉनिटर एजेंट",
       "description": "HTTP एंडपॉइंट्स को पोल करता है, डाउनटाइम का पता लगाता है, और डायग्नोस्टिक संदर्भ के साथ अलर्ट भेजता है।."
     },
     "en": {
-      "description": "Polls HTTP endpoints, detects downtime, and sends alerts with diagnostic context."
+      "description": "Polls HTTP endpoints, detects downtime, and sends alerts with diagnostic context.",
+      "name": "Uptime Monitor Agent"
     }
   },
   "documentation/changelog-writer": {
@@ -6072,7 +6195,8 @@
       "description": "रिलीज़ नोट एजेंट - गिट कमिट रेंज का विश्लेषण करें। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     },
     "en": {
-      "description": "Release note agent — Analyze git commit range."
+      "description": "Release note agent — Analyze git commit range.",
+      "name": "Changelog Writer"
     }
   },
   "documentation/changelog-writer-agent": {
@@ -6121,7 +6245,8 @@
       "description": "गिट कमिट हिस्ट्री से चेंजलॉग जेनरेट करें।."
     },
     "en": {
-      "description": "Generate changelogs from git commit history."
+      "description": "Generate changelogs from git commit history.",
+      "name": "Changelog Writer Agent"
     }
   },
   "documentation/doc-writer": {
@@ -6170,7 +6295,8 @@
       "description": "दस्तावेज़ीकरण जनरेटर - पार्स कोडबेस एएसटी। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     },
     "en": {
-      "description": "Documentation generator — Parse codebase AST."
+      "description": "Documentation generator — Parse codebase AST.",
+      "name": "Doc Writer"
     }
   },
   "documentation/docs-qa-agent": {
@@ -6219,7 +6345,8 @@
       "description": "प्रोजेक्ट दस्तावेज़ीकरण के बारे में प्रश्नों के उत्तर दें."
     },
     "en": {
-      "description": "Answer questions about project documentation."
+      "description": "Answer questions about project documentation.",
+      "name": "Docs QA Agent"
     }
   },
   "documentation/documentation-writer-bot": {
@@ -6268,7 +6395,8 @@
       "description": "एजेंट जो कोडबेस पढ़ता है और दस्तावेज़ फ़ोल्डर जेनरेट/अपडेट करता है।"
     },
     "en": {
-      "description": "Agent that reads codebases and generates/updates documentation folders."
+      "description": "Agent that reads codebases and generates/updates documentation folders.",
+      "name": "Documentation Writer Bot"
     }
   },
   "documentation/license-generator": {
@@ -6310,14 +6438,15 @@
     },
     "ar": {
       "name": "مولد الترخيص",
-      "description": "منشئ الترخيص — إنشاء ملفات ترخيص مفتوحة المصدر (MIT، وApache، وGPL، وما إلى ذلك). تم تصميمه كمشروع وكيل AI."
+      "description": "منشئ الترخيص — إنشاء ملفات ترخيص مفتوحة المصدر (MIT، وApache، وGPL، وما إلى ذلك)."
     },
     "hi": {
       "name": "लाइसेंस जेनरेटर",
       "description": "लाइसेंस जेनरेटर - ओपन-सोर्स लाइसेंस फ़ाइलें (एमआईटी, अपाचे, जीपीएल, आदि) जेनरेट करें।."
     },
     "en": {
-      "description": "License Generator — Generate open-source license files (MIT, Apache, GPL, etc.)."
+      "description": "License Generator — Generate open-source license files (MIT, Apache, GPL, etc.).",
+      "name": "License Generator"
     }
   },
   "documentation/readme-generator": {
@@ -6359,14 +6488,15 @@
     },
     "ar": {
       "name": "التمهيدي مولد",
-      "description": "README Generator — إنشاء ملفات README من بنية المشروع والبيانات الوصفية. تم تصميمه كمشروع وكيل AI."
+      "description": "README Generator — إنشاء ملفات README من بنية المشروع والبيانات الوصفية."
     },
     "hi": {
       "name": "रीडमी जेनरेटर",
       "description": "README जेनरेटर - प्रोजेक्ट संरचना और मेटाडेटा से README फ़ाइलें जेनरेट करें।."
     },
     "en": {
-      "description": "README Generator — Generate README files from project structure and metadata."
+      "description": "README Generator — Generate README files from project structure and metadata.",
+      "name": "README Generator"
     }
   },
   "file-conversion/csv-to-api-agent": {
@@ -6404,18 +6534,19 @@
     },
     "ru": {
       "name": "CSV в API-агент",
-      "description": "Принимает файлы CSV и автоматически генерирует серверы REST API с операциями CRUD.."
+      "description": "Принимает файлы CSV и автоматически генерирует серверы REST API с операциями CRUD."
     },
     "ar": {
       "name": "CSV إلى وكيل API",
-      "description": "يأخذ ملفات CSV وينشئ خوادم REST API مع عمليات CRUD تلقائيًا. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يأخذ ملفات CSV وينشئ خوادم REST API مع عمليات CRUD تلقائيًا."
     },
     "hi": {
       "name": "एपीआई एजेंट के लिए सीएसवी",
       "description": "CSV फ़ाइलें लेता है और CRUD संचालन के साथ स्वचालित रूप से REST API सर्वर उत्पन्न करता है।."
     },
     "en": {
-      "description": "Takes CSV files and generates REST API servers with CRUD operations automatically."
+      "description": "Takes CSV files and generates REST API servers with CRUD operations automatically.",
+      "name": "CSV To API Agent"
     }
   },
   "file-conversion/figma-to-css-agent": {
@@ -6453,18 +6584,19 @@
     },
     "ru": {
       "name": "Figma для CSS-агента",
-      "description": "Извлекает свойства дизайна из файлов экспорта Figma и генерирует рабочий CSS.."
+      "description": "Извлекает свойства дизайна из файлов экспорта Figma и генерирует рабочий CSS."
     },
     "ar": {
       "name": "فيجما إلى وكيل CSS",
-      "description": "يستخرج خصائص التصميم من ملفات تصدير Figma ويقوم بإنشاء CSS للإنتاج. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يستخرج خصائص التصميم من ملفات تصدير Figma ويقوم بإنشاء CSS للإنتاج."
     },
     "hi": {
       "name": "फिग्मा टू सीएसएस एजेंट",
       "description": "फिग्मा निर्यात फ़ाइलों से डिज़ाइन गुण निकालता है और उत्पादन सीएसएस उत्पन्न करता है।."
     },
     "en": {
-      "description": "Extracts design properties from Figma export files and generates production CSS."
+      "description": "Extracts design properties from Figma export files and generates production CSS.",
+      "name": "Figma To CSS Agent"
     }
   },
   "file-conversion/file-organizer": {
@@ -6513,7 +6645,8 @@
       "description": "फ़ाइलों को प्रकार और पैटर्न के अनुसार फ़ोल्डरों में व्यवस्थित करें।."
     },
     "en": {
-      "description": "Organizes files into folders by type and pattern."
+      "description": "Organizes files into folders by type and pattern.",
+      "name": "File Organizer"
     }
   },
   "file-conversion/html-to-markdown": {
@@ -6562,7 +6695,8 @@
       "description": "मार्कडाउन को साफ़ करने के लिए HTML को परिवर्तित करता है।."
     },
     "en": {
-      "description": "Converts HTML to clean Markdown."
+      "description": "Converts HTML to clean Markdown.",
+      "name": "HTML To Markdown"
     }
   },
   "file-conversion/html-to-markdown-converter": {
@@ -6600,18 +6734,19 @@
     },
     "ru": {
       "name": "Конвертер HTML в Markdown",
-      "description": "Очищает и преобразует HTML-страницы в чистую, хорошо отформатированную документацию Markdown.."
+      "description": "Очищает и преобразует HTML-страницы в чистую, хорошо отформатированную документацию Markdown."
     },
     "ar": {
       "name": "HTML لتحويل تخفيض السعر",
-      "description": "يقوم بمسح صفحات HTML وتحويلها إلى وثائق Markdown نظيفة ومنسقة بشكل جيد. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقوم بمسح صفحات HTML وتحويلها إلى وثائق Markdown نظيفة ومنسقة بشكل جيد."
     },
     "hi": {
       "name": "एचटीएमएल से मार्कडाउन कनवर्टर",
       "description": "HTML पृष्ठों को स्क्रैप और साफ़, अच्छी तरह से स्वरूपित मार्कडाउन दस्तावेज़ में परिवर्तित करता है।."
     },
     "en": {
-      "description": "Scrapes and converts HTML pages to clean, well-formatted Markdown documentation."
+      "description": "Scrapes and converts HTML pages to clean, well-formatted Markdown documentation.",
+      "name": "HTML To Markdown Converter"
     }
   },
   "file-conversion/json-yaml-converter": {
@@ -6625,11 +6760,11 @@
     },
     "es": {
       "name": "Convertidor JSON YAML",
-      "description": "CLI for JSON/YAML/TOML Converter."
+      "description": "CLI para convertidor JSON/YAML/TOML."
     },
     "pt": {
       "name": "Conversor JSON-YAML",
-      "description": "CLI for JSON/YAML/TOML Converter."
+      "description": "CLI para conversor JSON/YAML/TOML."
     },
     "ja": {
       "name": "JSON YAMLコンバータ",
@@ -6641,11 +6776,11 @@
     },
     "de": {
       "name": "JSON YAML-Konverter",
-      "description": "CLI for JSON/YAML/TOML Converter."
+      "description": "CLI für JSON/YAML/TOML-Konverter."
     },
     "fr": {
       "name": "Convertisseur JSON YAML",
-      "description": "CLI for JSON/YAML/TOML Converter."
+      "description": "CLI pour le convertisseur JSON/YAML/TOML."
     },
     "ru": {
       "name": "JSON-YAML-конвертер",
@@ -6660,7 +6795,8 @@
       "description": "JSON/YAML/TOML कनवर्टर के लिए सीएलआई।."
     },
     "en": {
-      "description": "CLI for JSON/YAML/TOML Converter."
+      "description": "CLI for JSON/YAML/TOML Converter.",
+      "name": "JSON YAML Converter"
     }
   },
   "file-conversion/markdown-to-pdf-agent": {
@@ -6698,18 +6834,19 @@
     },
     "ru": {
       "name": "Агент уценки в PDF",
-      "description": "Преобразует стилизованные документы Markdown в красивые PDF-файлы с верхними, нижними колонтитулами и темами.."
+      "description": "Преобразует стилизованные документы Markdown в красивые PDF-файлы с верхними, нижними колонтитулами и темами."
     },
     "ar": {
       "name": "تخفيض السعر إلى وكيل PDF",
-      "description": "يحول مستندات Markdown المصممة إلى ملفات PDF جميلة تحتوي على رؤوس وتذييلات وموضوعات. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يحول مستندات Markdown المصممة إلى ملفات PDF جميلة تحتوي على رؤوس وتذييلات وموضوعات."
     },
     "hi": {
       "name": "पीडीएफ एजेंट के लिए मार्कडाउन",
       "description": "स्टाइल वाले मार्कडाउन दस्तावेज़ों को हेडर, फ़ूटर और थीम के साथ सुंदर पीडीएफ़ में परिवर्तित करता है।."
     },
     "en": {
-      "description": "Converts styled Markdown documents to beautiful PDFs with headers, footers, and themes."
+      "description": "Converts styled Markdown documents to beautiful PDFs with headers, footers, and themes.",
+      "name": "Markdown To PDF Agent"
     }
   },
   "file-conversion/sql-to-nosql-migrator": {
@@ -6747,18 +6884,19 @@
     },
     "ru": {
       "name": "Мигратор SQL в Nosql",
-      "description": "Преобразует схемы базы данных SQL в эквиваленты MongoDB/DynamoDB с помощью сценариев миграции.."
+      "description": "Преобразует схемы базы данных SQL в эквиваленты MongoDB/DynamoDB с помощью сценариев миграции."
     },
     "ar": {
       "name": "SQL إلى Nosql المهاجر",
-      "description": "تحويل مخططات قاعدة بيانات SQL إلى مكافئات MongoDB/DynamoDB باستخدام البرامج النصية للترحيل. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "تحويل مخططات قاعدة بيانات SQL إلى مكافئات MongoDB/DynamoDB باستخدام البرامج النصية للترحيل."
     },
     "hi": {
       "name": "एसक्यूएल से नोएसक्यूएल माइग्रेटर",
       "description": "माइग्रेशन स्क्रिप्ट के साथ SQL डेटाबेस स्कीमा को MongoDB/DynamoDB समकक्षों में परिवर्तित करता है।."
     },
     "en": {
-      "description": "Converts SQL database schemas to MongoDB/DynamoDB equivalents with migration scripts."
+      "description": "Converts SQL database schemas to MongoDB/DynamoDB equivalents with migration scripts.",
+      "name": "SQL To Nosql Migrator"
     }
   },
   "file-conversion/swagger-to-typescript": {
@@ -6796,18 +6934,19 @@
     },
     "ru": {
       "name": "Swagger в машинописный текст",
-      "description": "Генерирует интерфейсы TypeScript и клиентский код API на основе спецификаций OpenAPI/Swagger.."
+      "description": "Генерирует интерфейсы TypeScript и клиентский код API на основе спецификаций OpenAPI/Swagger."
     },
     "ar": {
       "name": "اختيال إلى Typescript",
-      "description": "يُنشئ واجهات TypeScript ورمز عميل API من مواصفات OpenAPI/Swagger. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يُنشئ واجهات TypeScript ورمز عميل API من مواصفات OpenAPI/Swagger."
     },
     "hi": {
       "name": "टाइपस्क्रिप्ट के लिए स्वैगर",
       "description": "ओपनएपीआई/स्वैगर विनिर्देशों से टाइपस्क्रिप्ट इंटरफेस और एपीआई क्लाइंट कोड उत्पन्न करता है।."
     },
     "en": {
-      "description": "Generates TypeScript interfaces and API client code from OpenAPI/Swagger specifications."
+      "description": "Generates TypeScript interfaces and API client code from OpenAPI/Swagger specifications.",
+      "name": "Swagger To Typescript"
     }
   },
   "file-conversion/video-to-transcript": {
@@ -6845,18 +6984,19 @@
     },
     "ru": {
       "name": "Видео для расшифровки",
-      "description": "Расшифровывает видео и аудио файлы, генерируя расшифровки Markdown с отметкой времени.."
+      "description": "Расшифровывает видео и аудио файлы, генерируя расшифровки Markdown с отметкой времени."
     },
     "ar": {
       "name": "فيديو للنص",
-      "description": "يقوم بنسخ ملفات الفيديو والصوت، وإنشاء نصوص Markdown ذات طابع زمني. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقوم بنسخ ملفات الفيديو والصوت، وإنشاء نصوص Markdown ذات طابع زمني."
     },
     "hi": {
       "name": "प्रतिलेख के लिए वीडियो",
       "description": "वीडियो और ऑडियो फ़ाइलों को ट्रांसक्रिप्ट करता है, टाइमस्टैम्प्ड मार्कडाउन ट्रांसक्रिप्ट तैयार करता है।."
     },
     "en": {
-      "description": "Transcribes video and audio files, generating timestamped Markdown transcripts."
+      "description": "Transcribes video and audio files, generating timestamped Markdown transcripts.",
+      "name": "Video To Transcript"
     }
   },
   "file-conversion/yaml-json-converter": {
@@ -6894,18 +7034,19 @@
     },
     "ru": {
       "name": "YAML-JSON-конвертер",
-      "description": "Двунаправленное преобразование YAML в JSON с проверкой, сохранением комментариев и форматированием.."
+      "description": "Двунаправленное преобразование YAML в JSON с проверкой, сохранением комментариев и форматированием."
     },
     "ar": {
       "name": "محول YAML JSON",
-      "description": "تحويل YAML إلى JSON ثنائي الاتجاه مع التحقق من الصحة والحفاظ على التعليقات والتنسيق. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "تحويل YAML إلى JSON ثنائي الاتجاه مع التحقق من الصحة والحفاظ على التعليقات والتنسيق."
     },
     "hi": {
       "name": "YAML JSON कन्वर्टर",
       "description": "सत्यापन, टिप्पणियाँ संरक्षण और स्वरूपण के साथ द्वि-दिशात्मक YAML-से-JSON रूपांतरण।."
     },
     "en": {
-      "description": "Bi-directional YAML-to-JSON conversion with validation, comments preservation, and formatting."
+      "description": "Bi-directional YAML-to-JSON conversion with validation, comments preservation, and formatting.",
+      "name": "YAML JSON Converter"
     }
   },
   "fixers/api-breaking-change-detect": {
@@ -6954,7 +7095,8 @@
       "description": "विलय से पहले ब्रेकिंग एपीआई परिवर्तनों का पता लगाएं।"
     },
     "en": {
-      "description": "Detect breaking API changes before merge."
+      "description": "Detect breaking API changes before merge.",
+      "name": "API Breaking Change Detect"
     }
   },
   "fixers/code-style-enforcer-bot": {
@@ -7003,7 +7145,8 @@
       "description": "शैली को लागू करने और ठीक करने के लिए अनुकूल बॉट।"
     },
     "en": {
-      "description": "Friendly bot to enforce and fix style."
+      "description": "Friendly bot to enforce and fix style.",
+      "name": "Code Style Enforcer Bot"
     }
   },
   "fixers/css-dead-code-remover": {
@@ -7052,7 +7195,8 @@
       "description": "अप्रयुक्त सीएसएस चयनकर्ताओं की पहचान करें।"
     },
     "en": {
-      "description": "Identify unused CSS selectors."
+      "description": "Identify unused CSS selectors.",
+      "name": "CSS Dead Code Remover"
     }
   },
   "fixers/dependency-bloat-reducer": {
@@ -7101,7 +7245,8 @@
       "description": "भारी/अप्रयुक्त निर्भरताएँ खोजें।"
     },
     "en": {
-      "description": "Find heavy/unused dependencies."
+      "description": "Find heavy/unused dependencies.",
+      "name": "Dependency Bloat Reducer"
     }
   },
   "fixers/deprecation-hunter": {
@@ -7150,7 +7295,8 @@
       "description": "अप्रचलित उपयोग को ढूँढता है और उसे ठीक करने का इरादा रखता है।"
     },
     "en": {
-      "description": "Finds and intends to fix deprecated usage."
+      "description": "Finds and intends to fix deprecated usage.",
+      "name": "Deprecation Hunter"
     }
   },
   "fixers/doc-drift-fixer": {
@@ -7199,7 +7345,8 @@
       "description": "कोड परिवर्तन के साथ दस्तावेज़ीकरण को संरेखित करता है।"
     },
     "en": {
-      "description": "Aligns documentation with code changes."
+      "description": "Aligns documentation with code changes.",
+      "name": "Doc Drift Fixer"
     }
   },
   "fixers/i18n-missing-key-finder": {
@@ -7248,7 +7395,8 @@
       "description": "गुम अनुवाद कुंजियाँ ढूँढ़ें।"
     },
     "en": {
-      "description": "Find missing translation keys."
+      "description": "Find missing translation keys.",
+      "name": "I18n Missing Key Finder"
     }
   },
   "fixers/log-noise-reducer": {
@@ -7297,7 +7445,8 @@
       "description": "सफ़ाई के लिए स्पैमयुक्त लॉग की पहचान करें।"
     },
     "en": {
-      "description": "Identify spammy logs to cleanup."
+      "description": "Identify spammy logs to cleanup.",
+      "name": "Log Noise Reducer"
     }
   },
   "fixers/unused-asset-cleaner": {
@@ -7346,7 +7495,8 @@
       "description": "अप्रयुक्त छवियों/फ़ाइलों को ढूंढें और हटाएं।"
     },
     "en": {
-      "description": "Find and remove unused images/files."
+      "description": "Find and remove unused images/files.",
+      "name": "Unused Asset Cleaner"
     }
   },
   "fixers/vuln-auto-patcher": {
@@ -7395,7 +7545,8 @@
       "description": "ज्ञात सुरक्षा कमजोरियों को ऑटो-पैच करें।"
     },
     "en": {
-      "description": "Auto-patch known security vulnerabilities."
+      "description": "Auto-patch known security vulnerabilities.",
+      "name": "Vuln Auto Patcher"
     }
   },
   "learning-education/code-explainer": {
@@ -7433,18 +7584,19 @@
     },
     "ru": {
       "name": "Объяснение кода",
-      "description": "Берет сложные фрагменты кода и генерирует построчные объяснения для обучения.."
+      "description": "Берет сложные фрагменты кода и генерирует построчные объяснения для обучения."
     },
     "ar": {
       "name": "شرح الكود",
-      "description": "يأخذ مقتطفات تعليمات برمجية معقدة وينشئ تفسيرات سطرًا تلو الآخر للتعلم. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يأخذ مقتطفات تعليمات برمجية معقدة وينشئ تفسيرات سطرًا تلو الآخر للتعلم."
     },
     "hi": {
       "name": "कोड व्याख्याकार",
       "description": "जटिल कोड स्निपेट लेता है और सीखने के लिए पंक्ति-दर-पंक्ति स्पष्टीकरण उत्पन्न करता है।."
     },
     "en": {
-      "description": "Takes complex code snippets and generates line-by-line explanations for learning."
+      "description": "Takes complex code snippets and generates line-by-line explanations for learning.",
+      "name": "Code Explainer"
     }
   },
   "learning-education/flashcard-generator": {
@@ -7482,18 +7634,19 @@
     },
     "ru": {
       "name": "Генератор карточек",
-      "description": "Читает техническую документацию или заметки и создает карточки, совместимые с Anki.."
+      "description": "Читает техническую документацию или заметки и создает карточки, совместимые с Anki."
     },
     "ar": {
       "name": "مولد البطاقات التعليمية",
-      "description": "يقرأ الوثائق الفنية أو الملاحظات وينشئ بطاقات تعليمية متوافقة مع Anki. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ الوثائق الفنية أو الملاحظات وينشئ بطاقات تعليمية متوافقة مع Anki."
     },
     "hi": {
       "name": "फ़्लैशकार्ड जेनरेटर",
       "description": "तकनीकी दस्तावेज या नोट्स पढ़ता है और अंकी-संगत फ़्लैशकार्ड बनाता है।."
     },
     "en": {
-      "description": "Reads technical documentation or notes and generates Anki-compatible flashcards."
+      "description": "Reads technical documentation or notes and generates Anki-compatible flashcards.",
+      "name": "Flashcard Generator"
     }
   },
   "learning-education/interview-prep-agent": {
@@ -7531,18 +7684,19 @@
     },
     "ru": {
       "name": "Агент по подготовке к собеседованию",
-      "description": "Генерирует вопросы технического интервью на основе должностных инструкций и технических стеков.."
+      "description": "Генерирует вопросы технического интервью на основе должностных инструкций и технических стеков."
     },
     "ar": {
       "name": "مقابلة وكيل الإعدادية",
-      "description": "يُنشئ أسئلة المقابلة الفنية بناءً على الأوصاف الوظيفية والمكدسات التقنية. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يُنشئ أسئلة المقابلة الفنية بناءً على الأوصاف الوظيفية والمكدسات التقنية."
     },
     "hi": {
       "name": "साक्षात्कार तैयारी एजेंट",
       "description": "नौकरी विवरण और तकनीकी ढेर के आधार पर तकनीकी साक्षात्कार प्रश्न उत्पन्न करता है।."
     },
     "en": {
-      "description": "Generates technical interview questions based on job descriptions and tech stacks."
+      "description": "Generates technical interview questions based on job descriptions and tech stacks.",
+      "name": "Interview Prep Agent"
     }
   },
   "learning-education/learning-path-planner": {
@@ -7580,18 +7734,19 @@
     },
     "ru": {
       "name": "Планировщик пути обучения",
-      "description": "Анализирует пробелы в навыках и создает персонализированные планы обучения с ресурсами.."
+      "description": "Анализирует пробелы в навыках и создает персонализированные планы обучения с ресурсами."
     },
     "ar": {
       "name": "مخطط مسار التعلم",
-      "description": "يحلل الفجوات في المهارات وينشئ خرائط طريق تعليمية مخصصة باستخدام الموارد. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يحلل الفجوات في المهارات وينشئ خرائط طريق تعليمية مخصصة باستخدام الموارد."
     },
     "hi": {
       "name": "लर्निंग पाथ प्लानर",
       "description": "कौशल अंतराल का विश्लेषण करता है और संसाधनों के साथ व्यक्तिगत शिक्षण रोडमैप तैयार करता है।."
     },
     "en": {
-      "description": "Analyzes skill gaps and generates personalized learning roadmaps with resources."
+      "description": "Analyzes skill gaps and generates personalized learning roadmaps with resources.",
+      "name": "Learning Path Planner"
     }
   },
   "learning-education/paper-summarizer": {
@@ -7629,18 +7784,19 @@
     },
     "ru": {
       "name": "Бумажный сумматор",
-      "description": "Читает научные статьи (arXiv и т. д.) и составляет простым языком резюме и ключевые выводы.."
+      "description": "Читает научные статьи (arXiv и т. д.) и составляет простым языком резюме и ключевые выводы."
     },
     "ar": {
       "name": "ملخص الورق",
-      "description": "يقرأ الأوراق الأكاديمية (arXiv، وما إلى ذلك) وينشئ ملخصات باللغة البسيطة والوجبات السريعة الأساسية. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ الأوراق الأكاديمية (arXiv، وما إلى ذلك) وينشئ ملخصات باللغة البسيطة والوجبات السريعة الأساسية."
     },
     "hi": {
       "name": "पेपर सारांश",
       "description": "अकादमिक पेपर (arXiv, आदि) पढ़ता है और सरल भाषा में सारांश और मुख्य निष्कर्ष तैयार करता है।."
     },
     "en": {
-      "description": "Reads academic papers (arXiv, etc.) and generates plain-language summaries and key takeaways."
+      "description": "Reads academic papers (arXiv, etc.) and generates plain-language summaries and key takeaways.",
+      "name": "Paper Summarizer"
     }
   },
   "learning-education/quiz-generator": {
@@ -7678,18 +7834,19 @@
     },
     "ru": {
       "name": "Генератор викторин",
-      "description": "Читает образовательный контент и создает открытые викторины с несколькими вариантами ответов.."
+      "description": "Читает образовательный контент и создает открытые викторины с несколькими вариантами ответов."
     },
     "ar": {
       "name": "مولد مسابقة",
-      "description": "يقرأ المحتوى التعليمي وينشئ اختبارات متعددة الاختيارات ومفتوحة النهاية. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ المحتوى التعليمي وينشئ اختبارات متعددة الاختيارات ومفتوحة النهاية."
     },
     "hi": {
       "name": "प्रश्नोत्तरी जेनरेटर",
       "description": "शैक्षिक सामग्री पढ़ता है और बहुविकल्पीय और ओपन-एंडेड क्विज़ तैयार करता है।."
     },
     "en": {
-      "description": "Reads educational content and generates multiple-choice and open-ended quizzes."
+      "description": "Reads educational content and generates multiple-choice and open-ended quizzes.",
+      "name": "Quiz Generator"
     }
   },
   "misc/ai-frameworks/autogen-agent": {
@@ -7738,7 +7895,8 @@
       "description": "कई एजेंटों के साथ एक संवादी एआई प्रणाली जो कोड लिख सकती है, डीबग कर सकती है और सहयोगात्मक रूप से कार्यों को निष्पादित कर सकती है। माइक्रोसॉफ्ट ऑटोजेन के साथ निर्मित।"
     },
     "en": {
-      "description": "A conversational AI system with multiple agents that can write code, debug, and execute tasks collaboratively. Built with Microsoft AutoGen."
+      "description": "A conversational AI system with multiple agents that can write code, debug, and execute tasks collaboratively. Built with Microsoft AutoGen.",
+      "name": "Autogen Agent"
     }
   },
   "misc/ai-frameworks/crewai-agent": {
@@ -7787,7 +7945,8 @@
       "description": "एक बहु-एजेंट दल जो विषयों पर शोध करने, रिपोर्ट लिखने और अंतर्दृष्टि उत्पन्न करने में सहयोग करता है। एजेंट ऑर्केस्ट्रेशन के लिए CrewAI का उपयोग करता है।"
     },
     "en": {
-      "description": "A multi-agent crew that collaborates to research topics, write reports, and generate insights. Uses CrewAI for agent orchestration."
+      "description": "A multi-agent crew that collaborates to research topics, write reports, and generate insights. Uses CrewAI for agent orchestration.",
+      "name": "Crewai Agent"
     }
   },
   "misc/ai-frameworks/langchain-agent": {
@@ -7836,7 +7995,8 @@
       "description": "एक एआई अनुसंधान एजेंट जो लैंगचेन और ओपनएआई का उपयोग करके वेब पर खोज कर सकता है, दस्तावेज़ों का सारांश दे सकता है और जटिल प्रश्नों का उत्तर दे सकता है। सीएलआई उपकरण के रूप में चलता है।"
     },
     "en": {
-      "description": "An AI research agent that can search the web, summarize documents, and answer complex questions using LangChain and OpenAI. Runs as a CLI tool."
+      "description": "An AI research agent that can search the web, summarize documents, and answer complex questions using LangChain and OpenAI. Runs as a CLI tool.",
+      "name": "Langchain Agent"
     }
   },
   "misc/communication/email-drafter": {
@@ -7885,7 +8045,8 @@
       "description": "संदर्भ-जागरूक प्रतिक्रिया बॉट - आने वाली ईमेल थ्रेड पढ़ें। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     },
     "en": {
-      "description": "Context-aware response bot — Read incoming email thread."
+      "description": "Context-aware response bot — Read incoming email thread.",
+      "name": "Email Drafter"
     }
   },
   "misc/communication/email-triage-assistant": {
@@ -7934,7 +8095,8 @@
       "description": "स्थानीय एआई एजेंट ईमेल के उत्तरों को वर्गीकृत, सारांशित और प्रारूपित करने के लिए।"
     },
     "en": {
-      "description": "Local AI agent to categorize, summarize, and draft replies to emails."
+      "description": "Local AI agent to categorize, summarize, and draft replies to emails.",
+      "name": "Email Triage Assistant"
     }
   },
   "misc/content-marketing/resume-tailor-agent": {
@@ -7983,7 +8145,8 @@
       "description": "एजेंट जो आपके बायोडाटा/सीवी को विशिष्ट नौकरी विवरण के लिए तैयार करता है।"
     },
     "en": {
-      "description": "Agent that tailors your resume/CV for specific job descriptions."
+      "description": "Agent that tailors your resume/CV for specific job descriptions.",
+      "name": "Resume Tailor Agent"
     }
   },
   "misc/content-marketing/social-media-manager-agent": {
@@ -8032,7 +8195,8 @@
       "description": "ब्रांड की आवाज के आधार पर सामाजिक सामग्री का मसौदा तैयार करने, शेड्यूल करने और उसमें संलग्न होने के लिए एआई एजेंट।"
     },
     "en": {
-      "description": "AI agent to draft, schedule, and engage with social content based on brand voice."
+      "description": "AI agent to draft, schedule, and engage with social content based on brand voice.",
+      "name": "Social Media Manager Agent"
     }
   },
   "misc/meetings/meeting-notes-organizer": {
@@ -8081,7 +8245,8 @@
       "description": "एजेंट जो ट्रांस्क्रिप्ट लेता है, कार्य निकालता है और प्रोजेक्ट प्रबंधन टूल को अपडेट करता है।"
     },
     "en": {
-      "description": "Agent that takes transcripts, extracts tasks, and updates project management tools."
+      "description": "Agent that takes transcripts, extracts tasks, and updates project management tools.",
+      "name": "Meeting Notes Organizer"
     }
   },
   "misc/meetings/meeting-summarizer": {
@@ -8130,7 +8295,8 @@
       "description": "ट्रांसक्रिप्ट प्रोसेसर - वीटीटी/टेक्स्ट ट्रांसक्रिप्ट पढ़ें। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     },
     "en": {
-      "description": "Transcript processor — Read VTT/Text transcript."
+      "description": "Transcript processor — Read VTT/Text transcript.",
+      "name": "Meeting Summarizer"
     }
   },
   "misc/research-data/data-analyst": {
@@ -8179,7 +8345,8 @@
       "description": "सीएसवी अंतर्दृष्टि जनरेटर - सीएसवी/एक्सेल डेटा लोड करें। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     },
     "en": {
-      "description": "CSV insight generator — Load CSV/Excel data."
+      "description": "CSV insight generator — Load CSV/Excel data.",
+      "name": "Data Analyst"
     }
   },
   "misc/research-data/research-summarizer-agent": {
@@ -8228,7 +8395,8 @@
       "description": "गहन अनुसंधान एजेंट. एक विषय दें, यह एक रिपोर्ट को ब्राउज़ करता है, पढ़ता है और संश्लेषित करता है।"
     },
     "en": {
-      "description": "Deep research agent. Give a topic, it browses, reads, and synthesizes a report."
+      "description": "Deep research agent. Give a topic, it browses, reads, and synthesizes a report.",
+      "name": "Research Summarizer Agent"
     }
   },
   "misc/research-data/sql-query-builder-agent": {
@@ -8277,7 +8445,8 @@
       "description": "SQL एजेंट के लिए प्राकृतिक भाषा। स्कीमा से जुड़ता है, सुरक्षित क्वेरी लिखता है।"
     },
     "en": {
-      "description": "Natural language to SQL agent. Connects to schema, writes safe queries."
+      "description": "Natural language to SQL agent. Connects to schema, writes safe queries.",
+      "name": "SQL Query Builder Agent"
     }
   },
   "misc/testing-qa/qa-test-generator": {
@@ -8326,7 +8495,8 @@
       "description": "एजेंट जो सुविधाओं/कोड को पढ़ता है और साइप्रस/नाटककार परीक्षण उत्पन्न करता है।"
     },
     "en": {
-      "description": "Agent that reads features/code and generates Cypress/Playwright tests."
+      "description": "Agent that reads features/code and generates Cypress/Playwright tests.",
+      "name": "QA Test Generator"
     }
   },
   "misc/testing-qa/test-generator": {
@@ -8375,7 +8545,8 @@
       "description": "यूनिट परीक्षण लेखक - फ़ंक्शन हस्ताक्षर का विश्लेषण करें। एक एजेंट प्रोजेक्ट के रूप में डिज़ाइन किया गया।"
     },
     "en": {
-      "description": "Unit test writer — Analyze function signature."
+      "description": "Unit test writer — Analyze function signature.",
+      "name": "Test Generator"
     }
   },
   "personal-lifestyle/gift-recommendation-agent": {
@@ -8413,18 +8584,19 @@
     },
     "ru": {
       "name": "Агент по рекомендации подарков",
-      "description": "Предлагает персонализированные идеи подарков в зависимости от профиля получателя, случая и бюджета.."
+      "description": "Предлагает персонализированные идеи подарков в зависимости от профиля получателя, случая и бюджета."
     },
     "ar": {
       "name": "وكيل توصية الهدايا",
-      "description": "يقترح أفكار هدايا مخصصة بناءً على الملف الشخصي للمستلم والمناسبة والميزانية. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقترح أفكار هدايا مخصصة بناءً على الملف الشخصي للمستلم والمناسبة والميزانية."
     },
     "hi": {
       "name": "उपहार अनुशंसा एजेंट",
       "description": "प्राप्तकर्ता प्रोफ़ाइल, अवसर और बजट के आधार पर वैयक्तिकृत उपहार विचार सुझाता है।."
     },
     "en": {
-      "description": "Suggests personalized gift ideas based on recipient profile, occasion, and budget."
+      "description": "Suggests personalized gift ideas based on recipient profile, occasion, and budget.",
+      "name": "Gift Recommendation Agent"
     }
   },
   "personal-lifestyle/habit-coach": {
@@ -8462,18 +8634,19 @@
     },
     "ru": {
       "name": "Тренер по привычкам",
-      "description": "Отслеживает повседневные привычки, анализирует закономерности, обеспечивает мотивационные подталкивания и отслеживание полос.."
+      "description": "Отслеживает повседневные привычки, анализирует закономерности, обеспечивает мотивационные подталкивания и отслеживание полос."
     },
     "ar": {
       "name": "مدرب العادة",
-      "description": "يتتبع العادات اليومية ويحلل الأنماط ويوفر دفعات تحفيزية وتتبعًا مستمرًا. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يتتبع العادات اليومية ويحلل الأنماط ويوفر دفعات تحفيزية وتتبعًا مستمرًا."
     },
     "hi": {
       "name": "आदत कोच",
       "description": "दैनिक आदतों को ट्रैक करता है, पैटर्न का विश्लेषण करता है, प्रेरक संकेत और स्ट्रीक ट्रैकिंग प्रदान करता है।."
     },
     "en": {
-      "description": "Tracks daily habits, analyzes patterns, provides motivational nudges and streak tracking."
+      "description": "Tracks daily habits, analyzes patterns, provides motivational nudges and streak tracking.",
+      "name": "Habit Coach"
     }
   },
   "personal-lifestyle/journaling-prompt-agent": {
@@ -8511,18 +8684,19 @@
     },
     "ru": {
       "name": "Агент подсказки для ведения журнала",
-      "description": "Создает персонализированные подсказки для ежедневного ведения журнала в зависимости от настроения, целей и контекста.."
+      "description": "Создает персонализированные подсказки для ежедневного ведения журнала в зависимости от настроения, целей и контекста."
     },
     "ar": {
       "name": "يوميات وكيل الفوري",
-      "description": "يُنشئ مطالبات يومية مخصصة بناءً على الحالة المزاجية والأهداف والسياق. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يُنشئ مطالبات يومية مخصصة بناءً على الحالة المزاجية والأهداف والسياق."
     },
     "hi": {
       "name": "जर्नलिंग प्रॉम्प्ट एजेंट",
       "description": "मनोदशा, लक्ष्य और संदर्भ के आधार पर वैयक्तिकृत दैनिक जर्नलिंग संकेत उत्पन्न करता है।."
     },
     "en": {
-      "description": "Generates personalized daily journaling prompts based on mood, goals, and context."
+      "description": "Generates personalized daily journaling prompts based on mood, goals, and context.",
+      "name": "Journaling Prompt Agent"
     }
   },
   "personal-lifestyle/recipe-planner": {
@@ -8560,18 +8734,19 @@
     },
     "ru": {
       "name": "Планировщик рецептов",
-      "description": "Создает еженедельные планы питания с рецептами, основанными на диетических предпочтениях, аллергии и бюджете.."
+      "description": "Создает еженедельные планы питания с рецептами, основанными на диетических предпочтениях, аллергии и бюджете."
     },
     "ar": {
       "name": "مخطط الوصفة",
-      "description": "يُنشئ خطط وجبات أسبوعية تحتوي على وصفات بناءً على التفضيلات الغذائية والحساسية والميزانية. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يُنشئ خطط وجبات أسبوعية تحتوي على وصفات بناءً على التفضيلات الغذائية والحساسية والميزانية."
     },
     "hi": {
       "name": "रेसिपी प्लानर",
       "description": "आहार संबंधी प्राथमिकताओं, एलर्जी और बजट के आधार पर व्यंजनों के साथ साप्ताहिक भोजन योजनाएँ तैयार करता है।."
     },
     "en": {
-      "description": "Generates weekly meal plans with recipes based on dietary preferences, allergies, and budget."
+      "description": "Generates weekly meal plans with recipes based on dietary preferences, allergies, and budget.",
+      "name": "Recipe Planner"
     }
   },
   "personal-lifestyle/travel-itinerary-agent": {
@@ -8609,18 +8784,19 @@
     },
     "ru": {
       "name": "Туристический агент",
-      "description": "Планирует подробные маршруты путешествий с указанием стоимости, маршрутов, проживания и мероприятий.."
+      "description": "Планирует подробные маршруты путешествий с указанием стоимости, маршрутов, проживания и мероприятий."
     },
     "ar": {
       "name": "وكيل خط سير الرحلة",
-      "description": "خطط مسارات سفر مفصلة مع التكاليف والطرق وأماكن الإقامة والأنشطة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "خطط مسارات سفر مفصلة مع التكاليف والطرق وأماكن الإقامة والأنشطة."
     },
     "hi": {
       "name": "यात्रा कार्यक्रम एजेंट",
       "description": "लागत, मार्ग, आवास और गतिविधियों के साथ विस्तृत यात्रा कार्यक्रम की योजना बनाएं।."
     },
     "en": {
-      "description": "Plans detailed travel itineraries with costs, routes, accommodations, and activities."
+      "description": "Plans detailed travel itineraries with costs, routes, accommodations, and activities.",
+      "name": "Travel Itinerary Agent"
     }
   },
   "personal-lifestyle/workout-planner": {
@@ -8658,18 +8834,19 @@
     },
     "ru": {
       "name": "Планировщик тренировок",
-      "description": "Создает персональные планы тренировок на основе фитнес-целей, оборудования и расписания.."
+      "description": "Создает персональные планы тренировок на основе фитнес-целей, оборудования и расписания."
     },
     "ar": {
       "name": "مخطط تجريب",
-      "description": "ينشئ خطط تمرين مخصصة بناءً على أهداف اللياقة البدنية والمعدات والجدول الزمني. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "ينشئ خطط تمرين مخصصة بناءً على أهداف اللياقة البدنية والمعدات والجدول الزمني."
     },
     "hi": {
       "name": "वर्कआउट प्लानर",
       "description": "फिटनेस लक्ष्य, उपकरण और शेड्यूल के आधार पर वैयक्तिकृत वर्कआउट योजनाएँ बनाता है।."
     },
     "en": {
-      "description": "Creates personalized workout plans based on fitness goals, equipment, and schedule."
+      "description": "Creates personalized workout plans based on fitness goals, equipment, and schedule.",
+      "name": "Workout Planner"
     }
   },
   "security-privacy/cors-config-validator": {
@@ -8707,18 +8884,19 @@
     },
     "ru": {
       "name": "Валидатор конфигурации CORS",
-      "description": "Анализирует конфигурации CORS в API-интерфейсах, отмечает чрезмерно разрешительные или неработающие настройки.."
+      "description": "Анализирует конфигурации CORS в API-интерфейсах, отмечает чрезмерно разрешительные или неработающие настройки."
     },
     "ar": {
       "name": "مدقق تكوين CORS",
-      "description": "يحلل تكوينات CORS عبر واجهات برمجة التطبيقات، ويضع علامات على الإعدادات المفرطة في التساهل أو المعطلة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يحلل تكوينات CORS عبر واجهات برمجة التطبيقات، ويضع علامات على الإعدادات المفرطة في التساهل أو المعطلة."
     },
     "hi": {
       "name": "CORS कॉन्फ़िग सत्यापनकर्ता",
       "description": "एपीआई में सीओआरएस कॉन्फ़िगरेशन का विश्लेषण करता है, अत्यधिक अनुमेय या टूटे हुए सेटअप को चिह्नित करता है।."
     },
     "en": {
-      "description": "Analyzes CORS configurations across APIs, flags overly permissive or broken setups."
+      "description": "Analyzes CORS configurations across APIs, flags overly permissive or broken setups.",
+      "name": "CORS Config Validator"
     }
   },
   "security-privacy/dependency-vulnerability-monitor": {
@@ -8756,18 +8934,19 @@
     },
     "ru": {
       "name": "Монитор уязвимостей зависимостей",
-      "description": "Постоянно отслеживает зависимости проекта на наличие новых CVE и автоматически создает запросы на исправления.."
+      "description": "Постоянно отслеживает зависимости проекта на наличие новых CVE и автоматически создает запросы на исправления."
     },
     "ar": {
       "name": "مراقبة ثغرات التبعية",
-      "description": "يراقب باستمرار تبعيات المشروع لـ CVEs الجديدة ويقوم تلقائيًا بإنشاء علاقات عامة للإصلاح. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يراقب باستمرار تبعيات المشروع لـ CVEs الجديدة ويقوم تلقائيًا بإنشاء علاقات عامة للإصلاح."
     },
     "hi": {
       "name": "निर्भरता भेद्यता मॉनिटर",
       "description": "नए सीवीई के लिए प्रोजेक्ट निर्भरता की लगातार निगरानी करता है और फिक्स पीआर को स्वतः बनाता है।."
     },
     "en": {
-      "description": "Continuously monitors project dependencies for new CVEs and auto-creates fix PRs."
+      "description": "Continuously monitors project dependencies for new CVEs and auto-creates fix PRs.",
+      "name": "Dependency Vulnerability Monitor"
     }
   },
   "security-privacy/file-hash-generator": {
@@ -8809,14 +8988,15 @@
     },
     "ar": {
       "name": "مولد تجزئة الملف",
-      "description": "File Hash Generator - قم بإنشاء تجزئات الملف (MD5، SHA-256، SHA-512) للتحقق من تكاملها. تم تصميمه كمشروع وكيل AI."
+      "description": "File Hash Generator - قم بإنشاء تجزئات الملف (MD5، SHA-256، SHA-512) للتحقق من تكاملها."
     },
     "hi": {
       "name": "फ़ाइल हैश जेनरेटर",
       "description": "फ़ाइल हैश जेनरेटर - अखंडता जांच के लिए फ़ाइल हैश (MD5, SHA-256, SHA-512) उत्पन्न करें।."
     },
     "en": {
-      "description": "File Hash Generator — Generate file hashes (MD5, SHA-256, SHA-512) for integrity checks."
+      "description": "File Hash Generator — Generate file hashes (MD5, SHA-256, SHA-512) for integrity checks.",
+      "name": "File Hash Generator"
     }
   },
   "security-privacy/hash-generator": {
@@ -8865,7 +9045,8 @@
       "description": "क्रिप्टोग्राफ़िक हैश (MD5, SHA-256, आदि) उत्पन्न करता है।."
     },
     "en": {
-      "description": "Generates cryptographic hashes (MD5, SHA-256, etc.)."
+      "description": "Generates cryptographic hashes (MD5, SHA-256, etc.).",
+      "name": "Hash Generator"
     }
   },
   "security-privacy/http-header-analyzer": {
@@ -8914,7 +9095,8 @@
       "description": "सुरक्षा समस्याओं के लिए HTTP हेडर का विश्लेषण करें।."
     },
     "en": {
-      "description": "Analyzes HTTP headers for security issues."
+      "description": "Analyzes HTTP headers for security issues.",
+      "name": "HTTP Header Analyzer"
     }
   },
   "security-privacy/ip-lookup": {
@@ -8956,14 +9138,15 @@
     },
     "ar": {
       "name": "بحث IP",
-      "description": "بحث IP - ابحث عن الموقع الجغرافي لعنوان IP ومعلومات الشبكة. تم تصميمه كمشروع وكيل AI."
+      "description": "بحث IP - ابحث عن الموقع الجغرافي لعنوان IP ومعلومات الشبكة."
     },
     "hi": {
       "name": "आईपी ​​लुकअप",
       "description": "आईपी ​​लुकअप - आईपी एड्रेस जियोलोकेशन और नेटवर्क जानकारी देखें।."
     },
     "en": {
-      "description": "IP Lookup — Look up IP address geolocation and network information."
+      "description": "IP Lookup — Look up IP address geolocation and network information.",
+      "name": "IP Lookup"
     }
   },
   "security-privacy/jwt-decoder": {
@@ -9012,7 +9195,8 @@
       "description": "JWT टोकन को डिकोड और मान्य करें।."
     },
     "en": {
-      "description": "Decodes and validates JWT tokens."
+      "description": "Decodes and validates JWT tokens.",
+      "name": "JWT Decoder"
     }
   },
   "security-privacy/license-compliance-checker": {
@@ -9050,18 +9234,19 @@
     },
     "ru": {
       "name": "Проверка соответствия лицензии",
-      "description": "Аудит зависимостей проекта на наличие конфликтов лицензий (GPL, MIT или проприетарная лицензия).."
+      "description": "Аудит зависимостей проекта на наличие конфликтов лицензий (GPL, MIT или проприетарная лицензия)."
     },
     "ar": {
       "name": "مدقق الامتثال للترخيص",
-      "description": "يدقق تبعيات المشروع لتعارضات التراخيص (GPL مقابل MIT مقابل الملكية). تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يدقق تبعيات المشروع لتعارضات التراخيص (GPL مقابل MIT مقابل الملكية)."
     },
     "hi": {
       "name": "लाइसेंस अनुपालन जांचकर्ता",
       "description": "लाइसेंस विवादों (जीपीएल बनाम एमआईटी बनाम मालिकाना) के लिए परियोजना निर्भरता का ऑडिट करता है।."
     },
     "en": {
-      "description": "Audits project dependencies for license conflicts (GPL vs MIT vs proprietary)."
+      "description": "Audits project dependencies for license conflicts (GPL vs MIT vs proprietary).",
+      "name": "License Compliance Checker"
     }
   },
   "security-privacy/password-strength-analyzer": {
@@ -9099,18 +9284,19 @@
     },
     "ru": {
       "name": "Анализатор надежности паролей",
-      "description": "Оценивает политики паролей и реализации аутентификации в базах кода.."
+      "description": "Оценивает политики паролей и реализации аутентификации в базах кода."
     },
     "ar": {
       "name": "محلل قوة كلمة المرور",
-      "description": "يقيم سياسات كلمة المرور وتطبيقات المصادقة في قواعد التعليمات البرمجية. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقيم سياسات كلمة المرور وتطبيقات المصادقة في قواعد التعليمات البرمجية."
     },
     "hi": {
       "name": "पासवर्ड शक्ति विश्लेषक",
       "description": "कोडबेस में पासवर्ड नीतियों और प्रमाणीकरण कार्यान्वयन का मूल्यांकन करता है।."
     },
     "en": {
-      "description": "Evaluates password policies and authentication implementations in codebases."
+      "description": "Evaluates password policies and authentication implementations in codebases.",
+      "name": "Password Strength Analyzer"
     }
   },
   "security-privacy/password-strength-checker": {
@@ -9159,7 +9345,8 @@
       "description": "पासवर्ड की ताकत और सुरक्षा का मूल्यांकन करें."
     },
     "en": {
-      "description": "Evaluates password strength and security."
+      "description": "Evaluates password strength and security.",
+      "name": "Password Strength Checker"
     }
   },
   "security-privacy/permission-auditor": {
@@ -9197,18 +9384,19 @@
     },
     "ru": {
       "name": "Аудитор разрешений",
-      "description": "Сканирует манифесты и конфигурации приложений на наличие чрезмерных разрешений и предлагает удалить их.."
+      "description": "Сканирует манифесты и конфигурации приложений на наличие чрезмерных разрешений и предлагает удалить их."
     },
     "ar": {
       "name": "مدقق إذن",
-      "description": "يقوم بمسح بيانات التطبيق وتكويناته بحثًا عن الأذونات الزائدة ويقترح عمليات الإزالة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقوم بمسح بيانات التطبيق وتكويناته بحثًا عن الأذونات الزائدة ويقترح عمليات الإزالة."
     },
     "hi": {
       "name": "अनुमति लेखा परीक्षक",
       "description": "अत्यधिक अनुमतियों के लिए ऐप मेनिफ़ेस्ट और कॉन्फ़िगरेशन को स्कैन करता है और हटाने का सुझाव देता है।."
     },
     "en": {
-      "description": "Scans app manifests and configurations for excessive permissions and suggests removals."
+      "description": "Scans app manifests and configurations for excessive permissions and suggests removals.",
+      "name": "Permission Auditor"
     }
   },
   "security-privacy/phishing-email-detector": {
@@ -9246,18 +9434,19 @@
     },
     "ru": {
       "name": "Детектор фишинговой электронной почты",
-      "description": "Анализирует заголовки и содержимое электронных писем, чтобы помечать попытки фишинга с помощью оценок достоверности.."
+      "description": "Анализирует заголовки и содержимое электронных писем, чтобы помечать попытки фишинга с помощью оценок достоверности."
     },
     "ar": {
       "name": "كاشف البريد الإلكتروني التصيد",
-      "description": "يقوم بتحليل رؤوس البريد الإلكتروني والمحتوى للإبلاغ عن محاولات التصيد الاحتيالي من خلال درجات الثقة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقوم بتحليل رؤوس البريد الإلكتروني والمحتوى للإبلاغ عن محاولات التصيد الاحتيالي من خلال درجات الثقة."
     },
     "hi": {
       "name": "फ़िशिंग ईमेल डिटेक्टर",
       "description": "कॉन्फिडेंस स्कोर के साथ फ़िशिंग प्रयासों को फ़्लैग करने के लिए ईमेल हेडर और सामग्री का विश्लेषण करता है।."
     },
     "en": {
-      "description": "Analyzes email headers and content to flag phishing attempts with confidence scores."
+      "description": "Analyzes email headers and content to flag phishing attempts with confidence scores.",
+      "name": "Phishing Email Detector"
     }
   },
   "security-privacy/port-scanner": {
@@ -9306,7 +9495,8 @@
       "description": "सेवा पहचान के साथ पोर्ट कॉन्फ़िगरेशन का विश्लेषण करें।."
     },
     "en": {
-      "description": "Analyzes port configurations with service detection."
+      "description": "Analyzes port configurations with service detection.",
+      "name": "Port Scanner"
     }
   },
   "security-privacy/privacy-policy-generator": {
@@ -9344,18 +9534,19 @@
     },
     "ru": {
       "name": "Генератор политики конфиденциальности",
-      "description": "Считывает код приложения, определяет шаблоны сбора данных и генерирует политики конфиденциальности, соответствующие GDPR/CCPA.."
+      "description": "Считывает код приложения, определяет шаблоны сбора данных и генерирует политики конфиденциальности, соответствующие GDPR/CCPA."
     },
     "ar": {
       "name": "مولد سياسة الخصوصية",
-      "description": "يقرأ رمز التطبيق، ويحدد أنماط جمع البيانات، وينشئ سياسات خصوصية متوافقة مع القانون العام لحماية البيانات/CCPA. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "يقرأ رمز التطبيق، ويحدد أنماط جمع البيانات، وينشئ سياسات خصوصية متوافقة مع القانون العام لحماية البيانات/CCPA."
     },
     "hi": {
       "name": "गोपनीयता नीति जेनरेटर",
       "description": "एप्लिकेशन कोड पढ़ता है, डेटा संग्रह पैटर्न की पहचान करता है, और जीडीपीआर/सीसीपीए-अनुपालक गोपनीयता नीतियां तैयार करता है।."
     },
     "en": {
-      "description": "Reads application code, identifies data collection patterns, and generates GDPR/CCPA-compliant privacy policies."
+      "description": "Reads application code, identifies data collection patterns, and generates GDPR/CCPA-compliant privacy policies.",
+      "name": "Privacy Policy Generator"
     }
   },
   "security-privacy/secret-scanner": {
@@ -9393,18 +9584,19 @@
     },
     "ru": {
       "name": "Секретный сканер",
-      "description": "Глубоко сканирует репозитории на предмет утечек ключей API, паролей, токенов и сертификатов.."
+      "description": "Глубоко сканирует репозитории на предмет утечек ключей API, паролей, токенов и сертификатов."
     },
     "ar": {
       "name": "الماسح السري",
-      "description": "مستودعات الفحص العميق لمفاتيح API وكلمات المرور والرموز والشهادات المسربة. تم تصميمه كمشروع وكلاء الذكاء الاصطناعي."
+      "description": "مستودعات الفحص العميق لمفاتيح API وكلمات المرور والرموز والشهادات المسربة."
     },
     "hi": {
       "name": "गुप्त स्कैनर",
       "description": "लीक हुई एपीआई कुंजी, पासवर्ड, टोकन और प्रमाणपत्रों के लिए रिपॉजिटरी को डीप-स्कैन करें।."
     },
     "en": {
-      "description": "Deep-scans repositories for leaked API keys, passwords, tokens, and certificates."
+      "description": "Deep-scans repositories for leaked API keys, passwords, tokens, and certificates.",
+      "name": "Secret Scanner"
     }
   }
 }
