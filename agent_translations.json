@@ -9376,5 +9376,235 @@
     "en": {
       "description": "Deep-scans repositories for leaked API keys, passwords, tokens, and certificates. Designed as an AI agents project."
     }
+  },
+  "career-development/resume-tailor-agent": {
+    "id": {
+      "name": "Resume Tailor Agent",
+      "description": "Sesuaikan resume untuk lowongan pekerjaan tertentu"
+    },
+    "zh": {
+      "name": "简历定制代理",
+      "description": "为特定职位定制简历"
+    },
+    "es": {
+      "name": "Agente de Adaptación de CV",
+      "description": "Personaliza tu currículum para ofertas de empleo específicas"
+    },
+    "pt": {
+      "name": "Agente de Personalização de Currículo",
+      "description": "Personalize seu currículo para vagas específicas"
+    },
+    "ja": {
+      "name": "履歴書カスタマイズエージェント",
+      "description": "特定の求人に合わせて履歴書をカスタマイズ"
+    },
+    "ko": {
+      "name": "이력서 맞춤 에이전트",
+      "description": "특정 채용 공고에 맞춰 이력서 맞춤화"
+    },
+    "de": {
+      "name": "Lebenslauf-Anpassungsagent",
+      "description": "Passen Sie Ihren Lebenslauf an bestimmte Stellenangebote an"
+    },
+    "fr": {
+      "name": "Agent d'Adaptation de CV",
+      "description": "Personnalisez votre CV pour des offres d'emploi spécifiques"
+    },
+    "ru": {
+      "name": "Агент подгонки резюме",
+      "description": "Адаптируйте резюме под конкретные вакансии"
+    },
+    "ar": {
+      "name": "وكيل تخصيص السيرة الذاتية",
+      "description": "خصص سيرتك الذاتية لفرص عمل محددة"
+    },
+    "hi": {
+      "name": "रिज्यूमे टेलर एजेंट",
+      "description": "विशिष्ट नौकरी पदों के लिए अपना रिज्यूमे अनुकूलित करें"
+    }
+  },
+  "developer-tools/bug-report-triage-agent": {
+    "id": {
+      "name": "Bug Report Triage Agent",
+      "description": "Triase dan prioritaskan laporan bug secara otomatis"
+    },
+    "zh": {
+      "name": "Bug报告分类代理",
+      "description": "自动分类和优先处理错误报告"
+    },
+    "es": {
+      "name": "Agente de Triaje de Errores",
+      "description": "Clasifica y prioriza informes de errores automáticamente"
+    },
+    "pt": {
+      "name": "Agente de Triagem de Bugs",
+      "description": "Classifique e priorize relatórios de bugs automaticamente"
+    },
+    "ja": {
+      "name": "バグレポートトリアージエージェント",
+      "description": "バグレポートを自動で分類・優先順位付け"
+    },
+    "ko": {
+      "name": "버그 리포트 분류 에이전트",
+      "description": "버그 보고서를 자동으로 분류하고 우선순위 결정"
+    },
+    "de": {
+      "name": "Bug-Report-Triage-Agent",
+      "description": "Fehlermeldungen automatisch sortieren und priorisieren"
+    },
+    "fr": {
+      "name": "Agent de Triage de Bugs",
+      "description": "Triez et priorisez les rapports de bugs automatiquement"
+    },
+    "ru": {
+      "name": "Агент сортировки баг-репортов",
+      "description": "Автоматическая сортировка и приоритизация отчетов об ошибках"
+    },
+    "ar": {
+      "name": "وكيل فرز تقارير الأخطاء",
+      "description": "فرز وترتيب أولويات تقارير الأخطاء تلقائيًا"
+    },
+    "hi": {
+      "name": "बग रिपोर्ट ट्रायाज एजेंट",
+      "description": "बग रिपोर्ट को स्वचालित रूप से वर्गीकृत और प्राथमिकता दें"
+    }
+  },
+  "developer-tools/code-review-agent": {
+    "id": {
+      "name": "Code Review Agent",
+      "description": "Review kode otomatis dengan AI untuk kualitas dan keamanan"
+    },
+    "zh": {
+      "name": "代码审查代理",
+      "description": "AI驱动的自动代码审查，检查质量和安全性"
+    },
+    "es": {
+      "name": "Agente de Revisión de Código",
+      "description": "Revisión de código automatizada con IA para calidad y seguridad"
+    },
+    "pt": {
+      "name": "Agente de Revisão de Código",
+      "description": "Revisão de código automatizada com IA para qualidade e segurança"
+    },
+    "ja": {
+      "name": "コードレビューエージェント",
+      "description": "AIによる自動コードレビューで品質とセキュリティをチェック"
+    },
+    "ko": {
+      "name": "코드 리뷰 에이전트",
+      "description": "AI 기반 자동 코드 리뷰로 품질과 보안 점검"
+    },
+    "de": {
+      "name": "Code-Review-Agent",
+      "description": "KI-gestützte automatische Codeüberprüfung für Qualität und Sicherheit"
+    },
+    "fr": {
+      "name": "Agent de Revue de Code",
+      "description": "Revue de code automatisée par IA pour la qualité et la sécurité"
+    },
+    "ru": {
+      "name": "Агент ревью кода",
+      "description": "Автоматическая проверка кода с ИИ для качества и безопасности"
+    },
+    "ar": {
+      "name": "وكيل مراجعة الكود",
+      "description": "مراجعة الكود تلقائيًا بالذكاء الاصطناعي للجودة والأمان"
+    },
+    "hi": {
+      "name": "कोड रिव्यू एजेंट",
+      "description": "गुणवत्ता और सुरक्षा के लिए AI-संचालित स्वचालित कोड समीक्षा"
+    }
+  },
+  "developer-tools/dependency-update-agent": {
+    "id": {
+      "name": "Dependency Update Agent",
+      "description": "Pantau dan perbarui dependensi proyek secara otomatis"
+    },
+    "zh": {
+      "name": "依赖更新代理",
+      "description": "自动监控和更新项目依赖"
+    },
+    "es": {
+      "name": "Agente de Actualización de Dependencias",
+      "description": "Monitorea y actualiza dependencias del proyecto automáticamente"
+    },
+    "pt": {
+      "name": "Agente de Atualização de Dependências",
+      "description": "Monitore e atualize dependências do projeto automaticamente"
+    },
+    "ja": {
+      "name": "依存関係更新エージェント",
+      "description": "プロジェクトの依存関係を自動で監視・更新"
+    },
+    "ko": {
+      "name": "의존성 업데이트 에이전트",
+      "description": "프로젝트 의존성을 자동으로 모니터링하고 업데이트"
+    },
+    "de": {
+      "name": "Abhängigkeiten-Update-Agent",
+      "description": "Projektabhängigkeiten automatisch überwachen und aktualisieren"
+    },
+    "fr": {
+      "name": "Agent de Mise à Jour des Dépendances",
+      "description": "Surveillez et mettez à jour les dépendances du projet automatiquement"
+    },
+    "ru": {
+      "name": "Агент обновления зависимостей",
+      "description": "Автоматический мониторинг и обновление зависимостей проекта"
+    },
+    "ar": {
+      "name": "وكيل تحديث التبعيات",
+      "description": "مراقبة وتحديث تبعيات المشروع تلقائيًا"
+    },
+    "hi": {
+      "name": "डिपेंडेंसी अपडेट एजेंट",
+      "description": "प्रोजेक्ट निर्भरताओं की स्वचालित निगरानी और अपडेट"
+    }
+  },
+  "developer-tools/changelog-writer-agent": {
+    "id": {
+      "name": "Changelog Writer Agent",
+      "description": "Buat changelog otomatis dari riwayat commit Git"
+    },
+    "zh": {
+      "name": "变更日志编写代理",
+      "description": "从Git提交历史自动生成变更日志"
+    },
+    "es": {
+      "name": "Agente de Escritura de Changelog",
+      "description": "Genera changelog automáticamente desde el historial de commits de Git"
+    },
+    "pt": {
+      "name": "Agente de Escrita de Changelog",
+      "description": "Gere changelog automaticamente a partir do histórico de commits do Git"
+    },
+    "ja": {
+      "name": "変更履歴作成エージェント",
+      "description": "Gitコミット履歴から変更ログを自動生成"
+    },
+    "ko": {
+      "name": "변경 로그 작성 에이전트",
+      "description": "Git 커밋 이력에서 변경 로그 자동 생성"
+    },
+    "de": {
+      "name": "Changelog-Schreibagent",
+      "description": "Changelog automatisch aus Git-Commit-Verlauf generieren"
+    },
+    "fr": {
+      "name": "Agent d'Écriture de Changelog",
+      "description": "Générez un changelog automatiquement à partir de l'historique des commits Git"
+    },
+    "ru": {
+      "name": "Агент написания changelog",
+      "description": "Автоматическая генерация changelog из истории коммитов Git"
+    },
+    "ar": {
+      "name": "وكيل كتابة سجل التغييرات",
+      "description": "إنشاء سجل التغييرات تلقائيًا من سجل commits Git"
+    },
+    "hi": {
+      "name": "चेंजलॉग लेखक एजेंट",
+      "description": "Git कमिट इतिहास से स्वचालित रूप से चेंजलॉग बनाएं"
+    }
   }
 }
