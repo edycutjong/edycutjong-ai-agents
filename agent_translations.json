@@ -2328,6 +2328,9 @@
     "hi": {
       "name": "Email Draft Agent",
       "description": "Draft professional email replies from bullet points"
+    },
+    "en": {
+      "description": "Draft professional email replies from bullet points."
     }
   },
   "content-writing/html-to-markdown": {
@@ -2423,6 +2426,9 @@
     "hi": {
       "name": "I18N Translator Agent",
       "description": "Translate i18n JSON files preserving context"
+    },
+    "en": {
+      "description": "Translate i18n JSON files preserving key structure and context."
     }
   },
   "content-writing/lorem-ipsum-generator": {
@@ -2485,42 +2491,42 @@
     },
     "es": {
       "name": "Linter de rebajas",
-      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
+      "description": "Markdown Linter: agente de automatización de IA."
     },
     "pt": {
       "name": "Linter de redução",
-      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
+      "description": "Markdown Linter — agente de automação de IA."
     },
     "ja": {
       "name": "マークダウンリンター",
-      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
+      "description": "Markdown Linter — AI 自動化エージェント。"
     },
     "ko": {
       "name": "마크다운 린터",
-      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
+      "description": "Markdown Linter — AI 자동화 에이전트."
     },
     "de": {
       "name": "Markdown-Linter",
-      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
+      "description": "Markdown Linter – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Linter de démarque",
-      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
+      "description": "Markdown Linter — Agent d'automatisation de l'IA."
     },
     "ru": {
       "name": "Маркдаун Линтер",
-      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
+      "description": "Markdown Linter — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "ماركدوون لينتر",
-      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
+      "description": "Markdown Linter – وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "मार्कडाउन लिंटर",
-      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
+      "description": "मार्कडाउन लिंटर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Markdown Linter — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "content-writing/newsletter-curator": {
@@ -2730,42 +2736,42 @@
     },
     "es": {
       "name": "Generador de babosas",
-      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Slug Generator: agente de automatización de IA."
     },
     "pt": {
       "name": "Gerador de Lesmas",
-      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Slug Generator — agente de automação de IA."
     },
     "ja": {
       "name": "スラグジェネレーター",
-      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Slug Generator — AI 自動化エージェント。"
     },
     "ko": {
       "name": "슬러그 생성기",
-      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
+      "description": "슬러그 생성기 — AI 자동화 에이전트."
     },
     "de": {
       "name": "Schneckengenerator",
-      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Slug Generator – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Générateur de limaces",
-      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Slug Generator – Agent d’automatisation de l’IA."
     },
     "ru": {
       "name": "Генератор слизней",
-      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Slug Generator — агент автоматизации ИИ."
     },
     "ar": {
       "name": "مولد سبيكة",
-      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Slug Generator - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "स्लग जनरेटर",
-      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
+      "description": "स्लग जेनरेटर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Slug Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "content-writing/sop-generator": {
@@ -3024,42 +3030,42 @@
     },
     "es": {
       "name": "Resumidor de texto",
-      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
+      "description": "Text Summarizer: agente de automatización de IA."
     },
     "pt": {
       "name": "Resumidor de texto",
-      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
+      "description": "Text Summarizer – agente de automação de IA."
     },
     "ja": {
       "name": "テキストサマライザー",
-      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
+      "description": "Text Summarizer — AI 自動化エージェント。"
     },
     "ko": {
       "name": "텍스트 요약기",
-      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
+      "description": "텍스트 요약기 — AI 자동화 에이전트."
     },
     "de": {
       "name": "Textzusammenfassung",
-      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
+      "description": "Text Summarizer – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Récapitulateur de texte",
-      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
+      "description": "Text Summarizer – Agent d’automatisation IA."
     },
     "ru": {
       "name": "Сумматор текста",
-      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
+      "description": "Text Summarizer — агент автоматизации AI."
     },
     "ar": {
       "name": "ملخص النص",
-      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
+      "description": "ملخص النص – وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "पाठ सारांश",
-      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
+      "description": "पाठ सारांश - एआई स्वचालन एजेंट।"
     },
     "en": {
-      "description": "Text Summarizer — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "content-writing/tutorial-generator": {
@@ -3171,42 +3177,42 @@
     },
     "es": {
       "name": "Contador de palabras",
-      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
+      "description": "Contador de palabras: agente de automatización de IA."
     },
     "pt": {
       "name": "Contador de palavras",
-      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
+      "description": "Contador de palavras — agente de automação de IA."
     },
     "ja": {
       "name": "ワードカウンター",
-      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
+      "description": "Word Counter — AI 自動化エージェント。"
     },
     "ko": {
       "name": "단어 카운터",
-      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
+      "description": "단어 카운터 — AI 자동화 에이전트."
     },
     "de": {
       "name": "Wortzähler",
-      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
+      "description": "Word Counter – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Compteur de mots",
-      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
+      "description": "Word Counter – Agent d’automatisation IA."
     },
     "ru": {
       "name": "Счетчик слов",
-      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
+      "description": "Счетчик слов — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "عداد الكلمات",
-      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
+      "description": "عداد الكلمات – وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "शब्द काउंटर",
-      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
+      "description": "वर्ड काउंटर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Word Counter — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "data-analytics/api-response-mocker": {
@@ -3269,42 +3275,42 @@
     },
     "es": {
       "name": "Validador de respuesta API",
-      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Api Response Validator: agente de automatización de IA."
     },
     "pt": {
       "name": "Validador de resposta da API",
-      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Validador de resposta da API – agente de automação de IA."
     },
     "ja": {
       "name": "API レスポンスバリデータ",
-      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
+      "description": "API Response Validator — AI 自動化エージェント。"
     },
     "ko": {
       "name": "API 응답 유효성 검사기",
-      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Api 응답 유효성 검사기 — AI 자동화 에이전트."
     },
     "de": {
       "name": "API-Antwortvalidator",
-      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Api Response Validator – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Validateur de réponse API",
-      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Api Response Validator – Agent d'automatisation de l'IA."
     },
     "ru": {
       "name": "Валидатор ответа API",
-      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Api Response Validator — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "مدقق استجابة API",
-      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
+      "description": "أداة التحقق من استجابة API - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "एपीआई प्रतिक्रिया सत्यापनकर्ता",
-      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
+      "description": "एपीआई रिस्पांस वैलिडेटर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Api Response Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "data-analytics/base64-encoder": {
@@ -3318,42 +3324,42 @@
     },
     "es": {
       "name": "Codificador Base64",
-      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
+      "description": "Codificador Base64: agente de automatización de IA."
     },
     "pt": {
       "name": "Codificador Base64",
-      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
+      "description": "Codificador Base64 – agente de automação de IA."
     },
     "ja": {
       "name": "Base64 エンコーダ",
-      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
+      "description": "Base64 エンコーダ — AI 自動化エージェント。"
     },
     "ko": {
       "name": "Base64 인코더",
-      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
+      "description": "Base64 인코더 — AI 자동화 에이전트."
     },
     "de": {
       "name": "Base64-Encoder",
-      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
+      "description": "Base64-Encoder – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Encodeur Base64",
-      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
+      "description": "Base64 Encoder – Agent d’automatisation IA."
     },
     "ru": {
       "name": "Кодировщик Base64",
-      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
+      "description": "Base64 Encoder — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "التشفير Base64",
-      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
+      "description": "Base64 Encoder – وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "बेस64 एनकोडर",
-      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
+      "description": "बेस64 एनकोडर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Base64 Encoder — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "data-analytics/chart-generator-agent": {
@@ -3465,42 +3471,42 @@
     },
     "es": {
       "name": "Analizador CSV",
-      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Csv Analyzer: agente de automatización de IA."
     },
     "pt": {
       "name": "Analisador CSV",
-      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Csv Analyzer — agente de automação de IA."
     },
     "ja": {
       "name": "CSVアナライザー",
-      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Csv アナライザー — AI 自動化エージェント。"
     },
     "ko": {
       "name": "CSV 분석기",
-      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Csv 분석기 — AI 자동화 에이전트."
     },
     "de": {
       "name": "CSV-Analysator",
-      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Csv-Analysator – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Analyseur CSV",
-      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Csv Analyzer — Agent d'automatisation de l'IA."
     },
     "ru": {
       "name": "CSV-анализатор",
-      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Csv Analyzer — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "محلل CSV",
-      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "محلل Csv - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "सीएसवी विश्लेषक",
-      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "सीएसवी विश्लेषक - एआई स्वचालन एजेंट।"
     },
     "en": {
-      "description": "Csv Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "data-analytics/csv-cleaner": {
@@ -3563,42 +3569,42 @@
     },
     "es": {
       "name": "Desduplicador CSV",
-      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
+      "description": "Csv Deduplicator: agente de automatización de IA."
     },
     "pt": {
       "name": "Desduplicador CSV",
-      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
+      "description": "Csv Deduplicator – agente de automação de IA."
     },
     "ja": {
       "name": "CSV デデュプリケーター",
-      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
+      "description": "Csv Deduplicator — AI 自動化エージェント。"
     },
     "ko": {
       "name": "CSV 중복 제거기",
-      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
+      "description": "Csv 중복 제거기 — AI 자동화 에이전트."
     },
     "de": {
       "name": "CSV-Deduplikator",
-      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
+      "description": "Csv Deduplicator – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Déduplicateur CSV",
-      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
+      "description": "Csv Deduplicator — Agent d'automatisation IA."
     },
     "ru": {
       "name": "Дедупликатор CSV",
-      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
+      "description": "Csv Dedulicator — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "أداة إلغاء تكرار ملف CSV",
-      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
+      "description": "Csv Deduplicator - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "सीएसवी डिडुप्लिकेटर",
-      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
+      "description": "सीएसवी डेडुप्लिकेटर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Csv Deduplicator — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "data-analytics/data-faker-agent": {
@@ -3759,42 +3765,42 @@
     },
     "es": {
       "name": "Búsqueda de geolocalización de IP",
-      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
+      "description": "Búsqueda de geolocalización de IP: agente de automatización de IA."
     },
     "pt": {
       "name": "Pesquisa de geolocalização IP",
-      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
+      "description": "Pesquisa de geolocalização de IP – agente de automação de IA."
     },
     "ja": {
       "name": "IP地理位置情報ルックアップ",
-      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
+      "description": "IP 地理位置情報ルックアップ — AI 自動化エージェント。"
     },
     "ko": {
       "name": "IP 지리적 위치 조회",
-      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
+      "description": "IP 위치정보 조회 — AI 자동화 에이전트."
     },
     "de": {
       "name": "IP-Geolokalisierungssuche",
-      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
+      "description": "Ip Geolocation Lookup – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Recherche de géolocalisation IP",
-      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
+      "description": "Recherche de géolocalisation IP – Agent d’automatisation IA."
     },
     "ru": {
       "name": "Поиск IP-геолокации",
-      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
+      "description": "Поиск геолокации по IP — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "بحث تحديد الموقع الجغرافي IP",
-      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
+      "description": "IP Geolocation Lookup — وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "आईपी ​​जियोलोकेशन लुकअप",
-      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
+      "description": "आईपी ​​जियोलोकेशन लुकअप - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Ip Geolocation Lookup — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "data-analytics/json-formatter": {
@@ -3808,42 +3814,42 @@
     },
     "es": {
       "name": "Formateador JSON",
-      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
+      "description": "Json Formatter: agente de automatización de IA."
     },
     "pt": {
       "name": "Formatador JSON",
-      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
+      "description": "Json Formatter — agente de automação de IA."
     },
     "ja": {
       "name": "JSON フォーマッタ",
-      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
+      "description": "Json Formatter — AI 自動化エージェント。"
     },
     "ko": {
       "name": "JSON 포맷터",
-      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
+      "description": "Json Formatter — AI 자동화 에이전트."
     },
     "de": {
       "name": "JSON-Formatierer",
-      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
+      "description": "Json Formatter – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Formateur JSON",
-      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
+      "description": "Json Formatter — Agent d'automatisation de l'IA."
     },
     "ru": {
       "name": "Форматер JSON",
-      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
+      "description": "Json Formatter — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "تنسيق JSON",
-      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
+      "description": "Json Formatter - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "JSON फ़ॉर्मेटर",
-      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
+      "description": "Json फ़ॉर्मेटर - AI स्वचालन एजेंट।"
     },
     "en": {
-      "description": "Json Formatter — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "data-analytics/json-schema-generator": {
@@ -4053,42 +4059,42 @@
     },
     "es": {
       "name": "Probador de expresiones regulares",
-      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
+      "description": "Regex Tester: agente de automatización de IA."
     },
     "pt": {
       "name": "Testador Regex",
-      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
+      "description": "Regex Tester – agente de automação de IA."
     },
     "ja": {
       "name": "正規表現テスター",
-      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
+      "description": "Regex Tester — AI 自動化エージェント。"
     },
     "ko": {
       "name": "정규식 테스터",
-      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
+      "description": "Regex Tester — AI 자동화 에이전트."
     },
     "de": {
       "name": "Regex-Tester",
-      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
+      "description": "Regex Tester – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Testeur d'expressions régulières",
-      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
+      "description": "Regex Tester – Agent d’automatisation de l’IA."
     },
     "ru": {
       "name": "Тестер регулярных выражений",
-      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
+      "description": "Regex Tester — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "اختبار ريجكس",
-      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
+      "description": "Regex Tester - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "रेगेक्स परीक्षक",
-      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
+      "description": "रेगेक्स परीक्षक - एआई स्वचालन एजेंट।"
     },
     "en": {
-      "description": "Regex Tester — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "data-analytics/spreadsheet-formula-writer": {
@@ -4200,42 +4206,42 @@
     },
     "es": {
       "name": "Optimizador de consultas SQL",
-      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
+      "description": "Sql Query Optimizer: agente de automatización de IA."
     },
     "pt": {
       "name": "Otimizador de consulta SQL",
-      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
+      "description": "Sql Query Optimizer – agente de automação de IA."
     },
     "ja": {
       "name": "SQLクエリオプティマイザー",
-      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
+      "description": "SQL クエリ オプティマイザー — AI 自動化エージェント。"
     },
     "ko": {
       "name": "SQL 쿼리 최적화 프로그램",
-      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
+      "description": "SQL 쿼리 최적화 프로그램 — AI 자동화 에이전트."
     },
     "de": {
       "name": "SQL-Abfrageoptimierer",
-      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
+      "description": "SQL Query Optimizer – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Optimiseur de requêtes SQL",
-      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
+      "description": "Sql Query Optimizer — Agent d'automatisation IA."
     },
     "ru": {
       "name": "Оптимизатор SQL-запросов",
-      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
+      "description": "Sql Query Optimizer — агент автоматизации AI."
     },
     "ar": {
       "name": "محسن استعلام SQL",
-      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
+      "description": "Sql Query Optimizer - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "एसक्यूएल क्वेरी ऑप्टिमाइज़र",
-      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
+      "description": "एसक्यूएल क्वेरी ऑप्टिमाइज़र - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Sql Query Optimizer — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "data-analytics/timestamp-converter": {
@@ -4249,42 +4255,42 @@
     },
     "es": {
       "name": "Convertidor de marca de tiempo",
-      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
+      "description": "Convertidor de marcas de tiempo: agente de automatización de IA."
     },
     "pt": {
       "name": "Conversor de carimbo de data/hora",
-      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
+      "description": "Timestamp Converter — agente de automação de IA."
     },
     "ja": {
       "name": "タイムスタンプコンバータ",
-      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
+      "description": "タイムスタンプ コンバーター — AI 自動化エージェント。"
     },
     "ko": {
       "name": "타임스탬프 변환기",
-      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
+      "description": "타임스탬프 변환기 — AI 자동화 에이전트."
     },
     "de": {
       "name": "Zeitstempelkonverter",
-      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
+      "description": "Zeitstempelkonverter – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Convertisseur d'horodatage",
-      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
+      "description": "Timestamp Converter – Agent d’automatisation IA."
     },
     "ru": {
       "name": "Конвертер временных меток",
-      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
+      "description": "Конвертер временных меток — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "محول الطابع الزمني",
-      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
+      "description": "محول الطابع الزمني – وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "टाइमस्टैम्प कनवर्टर",
-      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
+      "description": "टाइमस्टैम्प कन्वर्टर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Timestamp Converter — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "data-analytics/unit-converter": {
@@ -4298,42 +4304,42 @@
     },
     "es": {
       "name": "Convertidor de unidades",
-      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
+      "description": "Convertidor de unidades: agente de automatización de IA."
     },
     "pt": {
       "name": "Conversor de unidades",
-      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
+      "description": "Unit Converter — agente de automação de IA."
     },
     "ja": {
       "name": "単位換算器",
-      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
+      "description": "単位コンバーター — AI 自動化エージェント。"
     },
     "ko": {
       "name": "단위 변환기",
-      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
+      "description": "단위 변환기 — AI 자동화 에이전트."
     },
     "de": {
       "name": "Einheitenumrechner",
-      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
+      "description": "Einheitenumrechner – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Convertisseur d'unités",
-      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
+      "description": "Unit Converter – Agent d’automatisation IA."
     },
     "ru": {
       "name": "Конвертер единиц измерения",
-      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
+      "description": "Конвертер единиц измерения — агент автоматизации ИИ."
     },
     "ar": {
       "name": "محول الوحدات",
-      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
+      "description": "محول الوحدات – وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "इकाई परिवर्तक",
-      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
+      "description": "यूनिट कन्वर्टर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Unit Converter — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "data-analytics/url-shortener": {
@@ -4984,42 +4990,42 @@
     },
     "es": {
       "name": "Generador de registros de cambios",
-      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Generador de registros de cambios: agente de automatización de IA."
     },
     "pt": {
       "name": "Gerador de log de alterações",
-      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Gerador de Changelog — agente de automação de IA."
     },
     "ja": {
       "name": "変更ログジェネレーター",
-      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Changelog Generator — AI 自動化エージェント。"
     },
     "ko": {
       "name": "변경 로그 생성기",
-      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
+      "description": "변경 로그 생성기 - AI 자동화 에이전트."
     },
     "de": {
       "name": "Changelog-Generator",
-      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Changelog Generator – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Générateur de journal des modifications",
-      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Générateur de journaux de modifications – Agent d'automatisation de l'IA."
     },
     "ru": {
       "name": "Генератор журнала изменений",
-      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Генератор журналов изменений — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "مولد التغيير",
-      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Changelog Generator - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "चेंजलॉग जेनरेटर",
-      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
+      "description": "चेंजलॉग जेनरेटर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Changelog Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "devops-infra/ci-pipeline-optimizer": {
@@ -5082,42 +5088,42 @@
     },
     "es": {
       "name": "Fusión de archivos de configuración",
-      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
+      "description": "Fusión de archivos de configuración: agente de automatización de IA."
     },
     "pt": {
       "name": "Fusão de arquivos de configuração",
-      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
+      "description": "Config File Merger – agente de automação de IA."
     },
     "ja": {
       "name": "構成ファイルのマージ",
-      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
+      "description": "Config File Merger — AI 自動化エージェント。"
     },
     "ko": {
       "name": "구성 파일 병합",
-      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
+      "description": "구성 파일 병합기 — AI 자동화 에이전트."
     },
     "de": {
       "name": "Konfigurationsdateizusammenführung",
-      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
+      "description": "Config File Merger – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Fusion de fichiers de configuration",
-      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
+      "description": "Fusion de fichiers de configuration – Agent d'automatisation IA."
     },
     "ru": {
       "name": "Объединение файлов конфигурации",
-      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
+      "description": "Config File Merger — агент автоматизации AI."
     },
     "ar": {
       "name": "دمج ملف التكوين",
-      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
+      "description": "دمج ملفات التكوين - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "कॉन्फ़िग फ़ाइल मर्जर",
-      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
+      "description": "कॉन्फ़िग फ़ाइल मर्जर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Config File Merger — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "devops-infra/cron-expression-parser": {
@@ -5131,42 +5137,42 @@
     },
     "es": {
       "name": "Analizador de expresiones cron",
-      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Cron Expression Parser: agente de automatización de IA."
     },
     "pt": {
       "name": "Analisador de expressão Cron",
-      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Cron Expression Parser — agente de automação de IA."
     },
     "ja": {
       "name": "Cron 式パーサー",
-      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Cron Expression Parser — AI 自動化エージェント。"
     },
     "ko": {
       "name": "크론 표현식 파서",
-      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Cron Expression Parser — AI 자동화 에이전트."
     },
     "de": {
       "name": "Cron-Ausdrucksparser",
-      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Cron Expression Parser – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Analyseur d'expressions Cron",
-      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Cron Expression Parser – Agent d'automatisation de l'IA."
     },
     "ru": {
       "name": "Анализатор выражений Cron",
-      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Cron Expression Parser — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "محلل التعبير كرون",
-      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Cron Expression Parser - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "क्रोन एक्सप्रेशन पार्सर",
-      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
+      "description": "क्रॉन एक्सप्रेशन पार्सर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Cron Expression Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "devops-infra/cron-parser": {
@@ -5278,42 +5284,42 @@
     },
     "es": {
       "name": "Actualizador de dependencias",
-      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
+      "description": "Actualizador de dependencias: agente de automatización de IA."
     },
     "pt": {
       "name": "Atualizador de Dependência",
-      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
+      "description": "Atualizador de dependência – agente de automação de IA."
     },
     "ja": {
       "name": "依存関係アップデーター",
-      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
+      "description": "依存関係アップデータ — AI 自動化エージェント。"
     },
     "ko": {
       "name": "종속성 업데이트 프로그램",
-      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
+      "description": "종속성 업데이터 — AI 자동화 에이전트."
     },
     "de": {
       "name": "Abhängigkeits-Updater",
-      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
+      "description": "Dependency Updater – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Programme de mise à jour des dépendances",
-      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
+      "description": "Dependency Updater – Agent d’automatisation de l’IA."
     },
     "ru": {
       "name": "Средство обновления зависимостей",
-      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
+      "description": "Dependency Updater — агент автоматизации ИИ."
     },
     "ar": {
       "name": "محدث التبعية",
-      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
+      "description": "محدث التبعية - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "निर्भरता अद्यतनकर्ता",
-      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
+      "description": "निर्भरता अद्यतनकर्ता - एआई स्वचालन एजेंट।"
     },
     "en": {
-      "description": "Dependency Updater — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "devops-infra/docker-compose-generator": {
@@ -5376,42 +5382,42 @@
     },
     "es": {
       "name": "Generador de archivos Docker",
-      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Dockerfile Generator: agente de automatización de IA."
     },
     "pt": {
       "name": "Gerador Dockerfile",
-      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Dockerfile Generator — agente de automação de IA."
     },
     "ja": {
       "name": "Dockerfile ジェネレーター",
-      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Dockerfile Generator — AI 自動化エージェント。"
     },
     "ko": {
       "name": "Dockerfile 생성기",
-      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Dockerfile Generator — AI 자동화 에이전트."
     },
     "de": {
       "name": "Dockerfile-Generator",
-      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Dockerfile Generator – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Générateur de fichiers Docker",
-      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Dockerfile Generator — Agent d'automatisation de l'IA."
     },
     "ru": {
       "name": "Генератор Docker-файлов",
-      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Dockerfile Generator — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "مولد ملف دوكر",
-      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Dockerfile Generator - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "डॉकरफ़ाइल जेनरेटर",
-      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
+      "description": "डॉकरफाइल जेनरेटर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Dockerfile Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "devops-infra/env-file-auditor": {
@@ -5474,42 +5480,42 @@
     },
     "es": {
       "name": "Validador de entorno",
-      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Env Validator: agente de automatización de IA."
     },
     "pt": {
       "name": "Validador de ambiente",
-      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Env Validator – agente de automação de IA."
     },
     "ja": {
       "name": "環境バリデーター",
-      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Env Validator — AI 自動化エージェント。"
     },
     "ko": {
       "name": "환경 유효성 검사기",
-      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Env Validator — AI 자동화 에이전트."
     },
     "de": {
       "name": "Env-Validator",
-      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Env Validator – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Validateur d'environnement",
-      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Env Validator – Agent d'automatisation de l'IA."
     },
     "ru": {
       "name": "Валидатор конвертов",
-      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Env Validator — агент автоматизации AI."
     },
     "ar": {
       "name": "مدقق البيئة",
-      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Env Validator – وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "एनवी सत्यापनकर्ता",
-      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
+      "description": "एनवी वैलिडेटर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Env Validator — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "devops-infra/git-commit-analyzer": {
@@ -5523,42 +5529,42 @@
     },
     "es": {
       "name": "Analizador de confirmación de Git",
-      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Git Commit Analyzer: agente de automatización de IA."
     },
     "pt": {
       "name": "Analisador de commits Git",
-      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Git Commit Analyzer — agente de automação de IA."
     },
     "ja": {
       "name": "Git コミット アナライザー",
-      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Git Commit Analyzer — AI 自動化エージェント。"
     },
     "ko": {
       "name": "Git 커밋 분석기",
-      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Git Commit Analyser — AI 자동화 에이전트."
     },
     "de": {
       "name": "Git-Commit-Analysator",
-      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Git Commit Analyzer – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Analyseur de validation Git",
-      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Git Commit Analyzer — Agent d'automatisation de l'IA."
     },
     "ru": {
       "name": "Анализатор коммитов Git",
-      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Git Commit Analyser — агент автоматизации ИИ."
     },
     "ar": {
       "name": "محلل التزام جيت",
-      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Git Commit Analyzer - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "गिट कमिट विश्लेषक",
-      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "गिट कमिट एनालाइज़र - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Git Commit Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "devops-infra/gitignore-generator": {
@@ -5572,42 +5578,42 @@
     },
     "es": {
       "name": "Generador de Gitignore",
-      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Generador Gitignore: agente de automatización de IA."
     },
     "pt": {
       "name": "Gerador Gitignore",
-      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Gitignore Generator — agente de automação de IA."
     },
     "ja": {
       "name": "Gitignore ジェネレーター",
-      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Gitignore Generator — AI 自動化エージェント。"
     },
     "ko": {
       "name": "Gitignore 생성기",
-      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Gitignore Generator — AI 자동화 에이전트."
     },
     "de": {
       "name": "Gitignore-Generator",
-      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Gitignore Generator – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Générateur Gitignore",
-      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Gitignore Generator — Agent d'automatisation de l'IA."
     },
     "ru": {
       "name": "Генератор Gitignore",
-      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Gitignore Generator — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "مولد جيتينيور",
-      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Gitignore Generator - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "गिटिग्नोर जेनरेटर",
-      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
+      "description": "गिटिग्नोर जेनरेटर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Gitignore Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "devops-infra/incident-responder": {
@@ -5866,42 +5872,42 @@
     },
     "es": {
       "name": "Analizador Semver",
-      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Semver Parser: agente de automatización de IA."
     },
     "pt": {
       "name": "Analisador Semver",
-      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Semver Parser — agente de automação de IA."
     },
     "ja": {
       "name": "センバーパーサー",
-      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Semver Parser — AI 自動化エージェント。"
     },
     "ko": {
       "name": "셈버 파서",
-      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Semver Parser — AI 자동화 에이전트."
     },
     "de": {
       "name": "Semver-Parser",
-      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Semver Parser – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Analyseur Semver",
-      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Semver Parser — Agent d'automatisation de l'IA."
     },
     "ru": {
       "name": "Семвер Парсер",
-      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Semver Parser — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "محلل سيمفر",
-      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Semver Parser — وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "सेम्वर पार्सर",
-      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
+      "description": "सेम्वर पार्सर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Semver Parser — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "devops-infra/terraform-reviewer": {
@@ -6448,42 +6454,42 @@
     },
     "es": {
       "name": "Organizador de archivos",
-      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
+      "description": "Organizador de archivos: agente de automatización de IA."
     },
     "pt": {
       "name": "Organizador de arquivos",
-      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
+      "description": "Organizador de arquivos – agente de automação de IA."
     },
     "ja": {
       "name": "ファイルオーガナイザー",
-      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
+      "description": "ファイル オーガナイザー — AI 自動化エージェント。"
     },
     "ko": {
       "name": "파일 정리",
-      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
+      "description": "파일 정리함 — AI 자동화 에이전트."
     },
     "de": {
       "name": "Datei-Organizer",
-      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
+      "description": "File Organizer – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Organisateur de fichiers",
-      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
+      "description": "Organisateur de fichiers – Agent d'automatisation IA."
     },
     "ru": {
       "name": "Организатор файлов",
-      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
+      "description": "Организатор файлов — агент автоматизации AI."
     },
     "ar": {
       "name": "منظم الملفات",
-      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
+      "description": "منظم الملفات – وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "फ़ाइल आयोजक",
-      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
+      "description": "फ़ाइल ऑर्गनाइज़र - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "File Organizer — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "file-conversion/html-to-markdown": {
@@ -6497,42 +6503,42 @@
     },
     "es": {
       "name": "HTML para rebajas",
-      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
+      "description": "Html To Markdown: agente de automatización de IA."
     },
     "pt": {
       "name": "HTML para redução",
-      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
+      "description": "Html To Markdown — agente de automação de IA."
     },
     "ja": {
       "name": "HTMLからマークダウンへ",
-      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
+      "description": "Html To Markdown — AI 自動化エージェント。"
     },
     "ko": {
       "name": "HTML을 마크다운으로",
-      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
+      "description": "Html To Markdown — AI 자동화 에이전트."
     },
     "de": {
       "name": "HTML zu Markdown",
-      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
+      "description": "Html To Markdown – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "HTML en démarque",
-      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
+      "description": "Html To Markdown – Agent d’automatisation IA."
     },
     "ru": {
       "name": "HTML в Markdown",
-      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
+      "description": "Html To Markdown — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "HTML إلى تخفيض السعر",
-      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
+      "description": "Html To Markdown - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "एचटीएमएल से मार्कडाउन",
-      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
+      "description": "एचटीएमएल टू मार्कडाउन - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Html To Markdown — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "file-conversion/html-to-markdown-converter": {
@@ -8800,42 +8806,42 @@
     },
     "es": {
       "name": "Generador de hash",
-      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Hash Generator: agente de automatización de IA."
     },
     "pt": {
       "name": "Gerador de hash",
-      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Hash Generator — agente de automação de IA."
     },
     "ja": {
       "name": "ハッシュジェネレーター",
-      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
+      "description": "ハッシュ ジェネレーター — AI 自動化エージェント。"
     },
     "ko": {
       "name": "해시 생성기",
-      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
+      "description": "해시 생성기 — AI 자동화 에이전트."
     },
     "de": {
       "name": "Hash-Generator",
-      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Hash Generator – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Générateur de hachage",
-      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Hash Generator – Agent d’automatisation de l’IA."
     },
     "ru": {
       "name": "Хэш-генератор",
-      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Hash Generator — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "مولد التجزئة",
-      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Hash Generator - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "हैश जेनरेटर",
-      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
+      "description": "हैश जेनरेटर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Hash Generator — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "security-privacy/http-header-analyzer": {
@@ -8849,42 +8855,42 @@
     },
     "es": {
       "name": "Analizador de encabezados HTTP",
-      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Http Header Analyzer: agente de automatización de IA."
     },
     "pt": {
       "name": "Analisador de cabeçalho HTTP",
-      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Http Header Analyzer – agente de automação de IA."
     },
     "ja": {
       "name": "HTTPヘッダーアナライザー",
-      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Http Header Analyzer — AI 自動化エージェント。"
     },
     "ko": {
       "name": "HTTP 헤더 분석기",
-      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "HTTP 헤더 분석기 — AI 자동화 에이전트."
     },
     "de": {
       "name": "HTTP-Header-Analysator",
-      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Http Header Analyzer – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Analyseur d'en-tête HTTP",
-      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Http Header Analyzer – Agent d’automatisation IA."
     },
     "ru": {
       "name": "Анализатор HTTP-заголовков",
-      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Http Header Analyzer — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "محلل رأس HTTP",
-      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "محلل رأس Http - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "HTTP हेडर विश्लेषक",
-      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Http हैडर विश्लेषक - एआई स्वचालन एजेंट।"
     },
     "en": {
-      "description": "Http Header Analyzer — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "security-privacy/ip-lookup": {
@@ -8947,42 +8953,42 @@
     },
     "es": {
       "name": "Decodificador JWT",
-      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
+      "description": "Jwt Decoder: agente de automatización de IA."
     },
     "pt": {
       "name": "Decodificador JWT",
-      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
+      "description": "Jwt Decoder — agente de automação de IA."
     },
     "ja": {
       "name": "JWT デコーダ",
-      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
+      "description": "Jwt Decoder — AI 自動化エージェント。"
     },
     "ko": {
       "name": "JWT 디코더",
-      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
+      "description": "Jwt 디코더 — AI 자동화 에이전트."
     },
     "de": {
       "name": "JWT-Decoder",
-      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
+      "description": "Jwt Decoder – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Décodeur JWT",
-      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
+      "description": "Jwt Decoder — Agent d'automatisation de l'IA."
     },
     "ru": {
       "name": "JWT-декодер",
-      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
+      "description": "Jwt Decoder — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "وحدة فك ترميز JWT",
-      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
+      "description": "Jwt Decoder - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "जेडब्ल्यूटी डिकोडर",
-      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
+      "description": "जेडब्ल्यूटी डिकोडर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Jwt Decoder — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "security-privacy/license-compliance-checker": {
@@ -9094,42 +9100,42 @@
     },
     "es": {
       "name": "Comprobador de seguridad de contraseña",
-      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
+      "description": "Comprobador de seguridad de contraseña: agente de automatización de IA."
     },
     "pt": {
       "name": "Verificador de força de senha",
-      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
+      "description": "Verificador de força de senha – agente de automação de IA."
     },
     "ja": {
       "name": "パスワード強度チェッカー",
-      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
+      "description": "パスワード強度チェッカー — AI 自動化エージェント。"
     },
     "ko": {
       "name": "비밀번호 강도 검사기",
-      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
+      "description": "비밀번호 강도 검사기 — AI 자동화 에이전트."
     },
     "de": {
       "name": "Passwortstärke-Prüfer",
-      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
+      "description": "Password Strength Checker – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Vérificateur de force de mot de passe",
-      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
+      "description": "Vérificateur de force de mot de passe – Agent d’automatisation IA."
     },
     "ru": {
       "name": "Проверка надежности пароля",
-      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
+      "description": "Проверка надежности пароля — агент автоматизации искусственного интеллекта."
     },
     "ar": {
       "name": "مدقق قوة كلمة المرور",
-      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
+      "description": "مدقق قوة كلمة المرور - وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "पासवर्ड स्ट्रेंथ चेकर",
-      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
+      "description": "पासवर्ड स्ट्रेंथ चेकर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Password Strength Checker — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "security-privacy/permission-auditor": {
@@ -9241,42 +9247,42 @@
     },
     "es": {
       "name": "Escáner de puertos",
-      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
+      "description": "Port Scanner: agente de automatización de IA."
     },
     "pt": {
       "name": "Scanner de porta",
-      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
+      "description": "Port Scanner — agente de automação de IA."
     },
     "ja": {
       "name": "ポートスキャナー",
-      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
+      "description": "ポート スキャナー — AI 自動化エージェント。"
     },
     "ko": {
       "name": "포트 스캐너",
-      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
+      "description": "포트 스캐너 — AI 자동화 에이전트."
     },
     "de": {
       "name": "Port-Scanner",
-      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
+      "description": "Port-Scanner – KI-Automatisierungsagent."
     },
     "fr": {
       "name": "Scanner de ports",
-      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
+      "description": "Port Scanner – Agent d’automatisation IA."
     },
     "ru": {
       "name": "Сканер портов",
-      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
+      "description": "Сканер портов — агент автоматизации AI."
     },
     "ar": {
       "name": "ماسح المنفذ",
-      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
+      "description": "Port Scanner – وكيل أتمتة الذكاء الاصطناعي."
     },
     "hi": {
       "name": "पोर्ट स्कैनर",
-      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
+      "description": "पोर्ट स्कैनर - एआई ऑटोमेशन एजेंट।"
     },
     "en": {
-      "description": "Port Scanner — AI automation agent. Designed as an AI agents project."
+      "description": "Python 3.10+"
     }
   },
   "security-privacy/privacy-policy-generator": {
