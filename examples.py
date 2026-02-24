@@ -5,6 +5,30 @@ The function returns (placeholder, label, examples_list) based on agent name key
 """
 
 HINTS = [
+    (["receipt", "expense", "invoice", "spend", "categorize", "receipt-categorizer"], "Paste receipt text or describe expense...", "🧾 Receipt / Expense", [
+        "Walmart $45.20 for groceries on Oct 12",
+        "Uber ride to airport $35.00",
+        "Coffee at Starbucks $4.50",
+        "Bought a new laptop for $1200 at BestBuy",
+        "Dinner with client at Joe's Steakhouse, $150.00",
+        "Flight to NY via Delta, $380, Nov 15",
+        "Monthly Notion subscription $10",
+        "Target $89.99 for office supplies",
+        "Gas station fill up $42.50 Shell",
+        "Hotel stay Marriott $450 for 2 nights",
+    ]),
+    (["draft", "compose", "write email", "reply", "email-draft"], "Enter bullet points to draft an email...", "✍️ Draft Email", [
+        "draft an email to the team: we hit our Q3 goals, great job everyone, taking Friday off",
+        "write an email to client: project is delayed by 1 week, apologies, new deadline is next Friday",
+        "reply to recruiter: interested in the role, available for a call tomorrow at 10am",
+        "email to manager: requesting 2 weeks PTO in August for family vacation",
+        "draft intro for new hire: meet Sarah, joining as Senior Designer, previously at TechCorp",
+        "send reminder to marketing: need the final slide deck by 3pm today for the all-hands",
+        "decline vendor proposal: thanks for the time, went with another solution, stay in touch",
+        "follow up after interview: great meeting the team, excited about the roadmap, attached references",
+        "announce to company: new health benefits plan starting next month, FAQ attached",
+        "apologize for missing meeting: stuck in traffic, please share recording and notes",
+    ]),
     (["email", "triage", "inbox", "newsletter"], "Paste email text here...", "📧 Paste Email", [
         "Subject: Q3 Budget Review Meeting\n\nHi Team,\n\nPlease review the attached Q3 budget proposal before Friday. We need to finalize the marketing spend.\n\nThanks,\nSarah",
         "Subject: URGENT: Server Down in Production\n\nThe main API server is returning 503 errors since 2:15 AM. Customer complaints are flooding in. Need someone from DevOps to investigate ASAP.\n\n- Error rate: 89%\n- Affected: US-East region\n- Last deploy: yesterday 6 PM",

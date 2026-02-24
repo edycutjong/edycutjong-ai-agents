@@ -19,8 +19,9 @@ Draft professional email replies from bullet points.
 
 ## File Structure
 - `main.py` — Entry point
-- `agent/` — Core agent logic
 - `config.py` — Configuration & settings
+- `src/agent.py` — Core Gemini logic
+- `src/utils.py` — Rich console helpers
 - `requirements.txt` — Dependencies
 - `tests/` — Test files
 - `.env.example` — Environment variables template
