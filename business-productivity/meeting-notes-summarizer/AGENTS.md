@@ -19,8 +19,9 @@ Summarize meeting transcripts into action items.
 
 ## File Structure
 - `main.py` — Entry point
-- `agent/` — Core agent logic
 - `config.py` — Configuration & settings
+- `src/agent.py` — Core Gemini agent logic
+- `src/utils.py` — Rich console utilities
 - `requirements.txt` — Dependencies
 - `tests/` — Test files
 - `.env.example` — Environment variables template

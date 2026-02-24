@@ -1,0 +1,6 @@
+google-generativeai
+gitpython
+rich
+python-dotenv
+pytest
+pytest-mock

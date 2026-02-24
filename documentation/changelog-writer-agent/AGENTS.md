@@ -19,8 +19,10 @@ Generate changelogs from git commit history.
 
 ## File Structure
 - `main.py` — Entry point
-- `agent/` — Core agent logic
 - `config.py` — Configuration & settings
+- `src/agent.py` — Core Gemini agent logic
+- `src/git_utils.py` — Git log parsing utilities
+- `src/utils.py` — Rich console utilities
 - `requirements.txt` — Dependencies
 - `tests/` — Test files
 - `.env.example` — Environment variables template
