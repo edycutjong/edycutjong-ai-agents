@@ -1,6 +1,6 @@
 # 🧠 AI Agents Hub
 
-184 AI automation agents built with Python & Streamlit.
+192 AI automation agents built with Python & Streamlit.
 
 ## API Keys Required
 
