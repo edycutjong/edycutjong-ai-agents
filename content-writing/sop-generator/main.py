@@ -93,8 +93,6 @@ def main():
 
     except Exception as e:
         console.print(f"[bold red]An error occurred:[/bold red] {e}")
-        # import traceback
-        # console.print(traceback.format_exc())
 
 if __name__ == "__main__":
     main()
