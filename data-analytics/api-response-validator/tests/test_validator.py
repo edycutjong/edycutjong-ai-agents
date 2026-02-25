@@ -66,3 +66,30 @@ def test_format():
     r = validate_response(SAMPLE, rules)
     md = format_result_markdown(r)
     assert "✅" in md
+
+def test_create_rules_unsupported_types():
+    """Verify create_rules_from_sample handles unsupported types gracefully (e.g. tuple)."""
+    # Create sample data with unsupported types (tuple, set)
+    sample_data = {
+        "tuple_field": (1, 2, 3),
+        "set_field": {1, 2, 3},
+        "object_field": object()
+    }
+
+    # Generate rules
+    rules = create_rules_from_sample(sample_data)
+
+    # Verify rules were generated
+    assert len(rules) == 3
+
+    # Verify expected_type is empty string (graceful fallback) for all unsupported types
+    rule_map = {r.field: r for r in rules}
+    assert rule_map["tuple_field"].expected_type == ""
+    assert rule_map["set_field"].expected_type == ""
+    assert rule_map["object_field"].expected_type == ""
+
+    # Verify validation doesn't crash when using these rules
+    # It should pass because type check is skipped when expected_type is empty
+    result = validate_response(sample_data, rules)
+    assert result.is_valid
+    assert not result.errors
