@@ -20,3 +20,5 @@ def test_relative_past(): s = format_relative(time.time() - 7200); assert "hours
 def test_roundtrip(): r1 = unix_to_datetime(1609459200); r2 = iso_to_unix(r1.iso); assert abs(r2.unix - 1609459200) < 1
 def test_format(): md = format_result_markdown(unix_to_datetime(0)); assert "Timestamp" in md
 def test_to_dict(): d = unix_to_datetime(0).to_dict(); assert "unix" in d
+def test_unix_invalid(): r = unix_to_datetime(1e20); assert not r.is_valid
+def test_unix_bad_type(): r = unix_to_datetime("invalid"); assert not r.is_valid
