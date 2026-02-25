@@ -20,6 +20,14 @@ except ImportError:
 # Extensions to scan
 SCAN_EXTENSIONS = {'.html', '.htm', '.js', '.jsx', '.ts', '.tsx', '.vue', '.php'}
 
+# Regex to find class names in strings (e.g., "class-name", 'class-name')
+# Use a broad regex to catch most potential class names
+# Matches words with hyphens or underscores
+CLASS_PATTERN = re.compile(r'["\']([a-zA-Z0-9_-]+(?:\s+[a-zA-Z0-9_-]+)*)["\']')
+
+# Matches className="..." or class="..."
+ATTR_PATTERN = re.compile(r'\b(class|className)\s*=\s*(?:\{`([^`]+)`\}|["\']([^"\']+)["\'])')
+
 def scan_directory(directory: str, smart_scan: bool = False) -> Set[str]:
     """
     Recursively scans a directory for files and extracts used CSS classes and IDs.
@@ -94,15 +102,7 @@ def _scan_html(content: str) -> Set[str]:
 def _scan_regex(content: str) -> Set[str]:
     selectors = set()
 
-    # Regex to find class names in strings (e.g., "class-name", 'class-name')
-    # Use a broad regex to catch most potential class names
-    # Matches words with hyphens or underscores
-    class_pattern = re.compile(r'["\']([a-zA-Z0-9_-]+(?:\s+[a-zA-Z0-9_-]+)*)["\']')
-
-    # Matches className="..." or class="..."
-    attr_pattern = re.compile(r'\b(class|className)\s*=\s*(?:\{`([^`]+)`\}|["\']([^"\']+)["\'])')
-
-    matches = class_pattern.findall(content)
+    matches = CLASS_PATTERN.findall(content)
     for match in matches:
         # Split by space in case of "class1 class2"
         for part in match.split():
@@ -113,7 +113,7 @@ def _scan_regex(content: str) -> Set[str]:
              selectors.add(f"#{part}")
 
     # Specifically for JS/React className
-    attr_matches = attr_pattern.findall(content)
+    attr_matches = ATTR_PATTERN.findall(content)
     for match in attr_matches:
         # match is tuple: (attr_name, template_literal_content, string_content)
         val = match[1] if match[1] else match[2]
