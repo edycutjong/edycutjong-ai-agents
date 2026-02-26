@@ -7,6 +7,7 @@ import streamlit as st
 import os
 import json
 import random
+import html
 from datetime import datetime
 from pathlib import Path
 from examples import get_agent_hint
@@ -448,8 +449,14 @@ def main():
                 del st.query_params["agent"]
                 st.rerun()
 
+        # Initialize search counter for dynamic key reset
+        if "search_counter" not in st.session_state:
+            st.session_state.search_counter = 0
+
         # Search Input (real-time keyup to allow button disabled state to toggle on typing)
-        search_val = st_keyup(f"🔍 {tr['search']}", placeholder=tr['search'], key="keyup_search_val", debounce=100)
+        # Use dynamic key to force reset when needed
+        keyup_key = f"keyup_search_val_{st.session_state.search_counter}"
+        search_val = st_keyup(f"🔍 {tr['search']}", placeholder=tr['search'], key=keyup_key, debounce=100)
         if search_val is None:
             search_val = ""
         
@@ -582,40 +589,69 @@ def _render_hub(filtered, all_agents):
     st.markdown("")
 
     # Results count
-    if len(filtered) < len(all_agents):
+    if len(filtered) < len(all_agents) and len(filtered) > 0:
         st.info(tr.get('showing_agents', 'Showing **{count}** of {total} agents').format(count=len(filtered), total=len(all_agents)))
 
-    # Agent grid
-    items = list(filtered.items())
-    for i in range(0, len(items), 3):
-        cols = st.columns(3)
-        for j, col in enumerate(cols):
-            if i + j >= len(items):
-                break
-            key, agent = items[i + j]
-            with col:
-                icon = CATEGORY_META.get(agent["category"], ("📦",))[0]
-                status = "✅" if agent["has_main"] else "📋"
+    # Empty State or Agent Grid
+    if not filtered:
+        # Empty state component
+        st.markdown("<br><br>", unsafe_allow_html=True)
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            st.markdown(
+                f"""
+                <div style="text-align: center; padding: 2rem; border-radius: 12px; background: var(--card-bg); border: 1px dashed var(--card-border);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔍</div>
+                    <h3 style="margin-bottom: 0.5rem;">{tr.get('no_results_title', 'No agents found')}</h3>
+                    <p style="color: #6b7280; margin-bottom: 1.5rem;">
+                        {tr.get('no_results_desc', 'No agents found matching "{query}". Try a different search term or browse by category.').format(query=html.escape(st.session_state.last_search))}
+                    </p>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
 
-                with st.container(border=True):
-                    locale = st.session_state.get("locale", "en")
-                    a_name = _tr_agent(key, "name", locale, agent["name"]) if locale != "en" else agent["name"]
-                    a_desc = _tr_agent(key, "description", locale, agent["description"]) if locale != "en" else agent["description"]
-                    st.markdown(f"**{icon} {a_name}**")
-                    if a_desc:
-                        st.caption(a_desc[:120] + ("..." if len(a_desc) > 120 else ""))
-                    else:
-                        _cat_tr = tr.get('category_names', {}).get(agent['category'], agent['category_display'])
-                        st.caption(f"{tr['category_label']}: {_cat_tr}")
+            # Clear search button
+            c1, c2, c3 = st.columns([1, 2, 1])
+            with c2:
+                if st.button(tr.get('clear_search', 'Clear Search'), key="clear_search_btn", use_container_width=True):
+                    st.session_state.last_search = ""
+                    st.session_state.search_counter += 1  # Increment counter to force st_keyup reset
+                    if "agent" in st.query_params:
+                        del st.query_params["agent"]
+                    st.rerun()
+    else:
+        # Agent grid
+        items = list(filtered.items())
+        for i in range(0, len(items), 3):
+            cols = st.columns(3)
+            for j, col in enumerate(cols):
+                if i + j >= len(items):
+                    break
+                key, agent = items[i + j]
+                with col:
+                    icon = CATEGORY_META.get(agent["category"], ("📦",))[0]
+                    status = "✅" if agent["has_main"] else "📋"
 
-                    c1, c2 = st.columns([1, 1])
-                    with c1:
-                        st.markdown(f"<div style='display:flex;align-items:center;min-height:38px;padding:0.25rem 0;font-size:0.85rem;opacity:0.7'>{status} {tr['built'] if agent['has_main'] else tr['spec']}</div>", unsafe_allow_html=True)
-                    with c2:
-                        if agent["has_main"]:
-                            if st.button(tr['view'], key=f"view_{key}", use_container_width=True):
-                                st.query_params["agent"] = key
-                                st.rerun()
+                    with st.container(border=True):
+                        locale = st.session_state.get("locale", "en")
+                        a_name = _tr_agent(key, "name", locale, agent["name"]) if locale != "en" else agent["name"]
+                        a_desc = _tr_agent(key, "description", locale, agent["description"]) if locale != "en" else agent["description"]
+                        st.markdown(f"**{icon} {a_name}**")
+                        if a_desc:
+                            st.caption(a_desc[:120] + ("..." if len(a_desc) > 120 else ""))
+                        else:
+                            _cat_tr = tr.get('category_names', {}).get(agent['category'], agent['category_display'])
+                            st.caption(f"{tr['category_label']}: {_cat_tr}")
+
+                        c1, c2 = st.columns([1, 1])
+                        with c1:
+                            st.markdown(f"<div style='display:flex;align-items:center;min-height:38px;padding:0.25rem 0;font-size:0.85rem;opacity:0.7'>{status} {tr['built'] if agent['has_main'] else tr['spec']}</div>", unsafe_allow_html=True)
+                        with c2:
+                            if agent["has_main"]:
+                                if st.button(tr['view'], key=f"view_{key}", use_container_width=True):
+                                    st.query_params["agent"] = key
+                                    st.rerun()
 
 
 # _get_agent_hint is now imported from examples.py as get_agent_hint

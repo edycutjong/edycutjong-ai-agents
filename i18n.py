@@ -98,6 +98,9 @@ _translations = {
         "streamlit_app_info": "This is a **Streamlit app** — run it separately:",
         "translate_toggle": "🌐 Translate response to {lang}",
         "press_enter": "Press Enter to apply",
+        "no_results_title": "No agents found",
+        "no_results_desc": "No agents found matching \"{query}\". Try a different search term or browse by category.",
+        "clear_search": "Clear Search",
     },
     "id": {
         "title": "Pusat Agen AI",
@@ -176,6 +179,9 @@ _translations = {
         "streamlit_app_info": "Ini adalah **aplikasi Streamlit** — jalankan secara terpisah:",
         "translate_toggle": "🌐 Terjemahkan respons ke {lang}",
         "press_enter": "Tekan Enter untuk menerapkan",
+        "no_results_title": "Tidak ada agen ditemukan",
+        "no_results_desc": "Tidak ada agen yang cocok dengan \"{query}\". Coba kata kunci lain atau telusuri kategori.",
+        "clear_search": "Hapus Pencarian",
     },
     "zh": {
         "title": "AI 智能体中心",
@@ -254,6 +260,9 @@ _translations = {
         "streamlit_app_info": "这是一个 **Streamlit 应用** — 请单独运行：",
         "translate_toggle": "🌐 将回复翻译为 {lang}",
         "press_enter": "按 Enter 键应用",
+        "no_results_title": "未找到智能体",
+        "no_results_desc": "未找到与“{query}”匹配的智能体。请尝试不同的搜索词或按类别浏览。",
+        "clear_search": "清除搜索",
     },
     "es": {
         "title": "Centro de Agentes IA",
@@ -332,6 +341,9 @@ _translations = {
         "streamlit_app_info": "Es una **app Streamlit** — ejecútela por separado:",
         "translate_toggle": "🌐 Traducir respuesta a {lang}",
         "press_enter": "Presiona Enter para aplicar",
+        "no_results_title": "No se encontraron agentes",
+        "no_results_desc": "No se encontraron agentes que coincidan con \"{query}\". Intenta con otro término o busca por categoría.",
+        "clear_search": "Borrar Búsqueda",
     },
     "pt": {
         "title": "Hub de Agentes IA",
@@ -410,6 +422,9 @@ _translations = {
         "streamlit_app_info": "Este é um **app Streamlit** — execute separadamente:",
         "translate_toggle": "🌐 Traduzir resposta para {lang}",
         "press_enter": "Pressione Enter para aplicar",
+        "no_results_title": "Nenhum agente encontrado",
+        "no_results_desc": "Nenhum agente encontrado correspondente a \"{query}\". Tente um termo diferente ou navegue por categoria.",
+        "clear_search": "Limpar Pesquisa",
     },
     "ja": {
         "title": "AI エージェントハブ",
@@ -488,6 +503,9 @@ _translations = {
         "streamlit_app_info": "これは **Streamlitアプリ** です — 別途実行してください：",
         "translate_toggle": "🌐 {lang} に翻訳する",
         "press_enter": "Enter を押して適用",
+        "no_results_title": "エージェントが見つかりません",
+        "no_results_desc": "「{query}」に一致するエージェントは見つかりませんでした。別の用語を試すか、カテゴリ別に閲覧してください。",
+        "clear_search": "検索をクリア",
     },
     "ko": {
         "title": "AI 에이전트 허브",
@@ -566,6 +584,9 @@ _translations = {
         "streamlit_app_info": "이것은 **Streamlit 앱** 입니다 — 별도로 실행하세요:",
         "translate_toggle": "🌐 {lang}로 번역",
         "press_enter": "Enter를 눌러 적용",
+        "no_results_title": "에이전트를 찾을 수 없습니다",
+        "no_results_desc": "\"{query}\"와(과) 일치하는 에이전트가 없습니다. 다른 검색어를 사용하거나 카테고리별로 찾아보세요.",
+        "clear_search": "검색 지우기",
     },
     "de": {
         "title": "KI-Agenten Hub",
@@ -644,6 +665,9 @@ _translations = {
         "streamlit_app_info": "Dies ist eine **Streamlit-App** — führen Sie sie separat aus:",
         "translate_toggle": "🌐 Antwort auf {lang} übersetzen",
         "press_enter": "Drücke Enter zum Anwenden",
+        "no_results_title": "Keine Agenten gefunden",
+        "no_results_desc": "Keine Agenten gefunden, die \"{query}\" entsprechen. Versuchen Sie einen anderen Suchbegriff oder durchsuchen Sie nach Kategorie.",
+        "clear_search": "Suche löschen",
     },
     "fr": {
         "title": "Hub Agents IA",
@@ -722,6 +746,9 @@ _translations = {
         "streamlit_app_info": "C'est une **application Streamlit** — exécutez-la séparément :",
         "translate_toggle": "🌐 Traduire la réponse en {lang}",
         "press_enter": "Appuyez sur Entrée pour appliquer",
+        "no_results_title": "Aucun agent trouvé",
+        "no_results_desc": "Aucun agent ne correspond à \"{query}\". Essayez un autre terme ou parcourez par catégorie.",
+        "clear_search": "Effacer la recherche",
     },
     "ru": {
         "title": "Хаб ИИ-Агентов",
@@ -800,6 +827,9 @@ _translations = {
         "streamlit_app_info": "Это **приложение Streamlit** — запустите его отдельно:",
         "translate_toggle": "🌐 Перевести ответ на {lang}",
         "press_enter": "Нажмите Enter для применения",
+        "no_results_title": "Агенты не найдены",
+        "no_results_desc": "Агентов, соответствующих \"{query}\", не найдено. Попробуйте другой запрос или посмотрите по категориям.",
+        "clear_search": "Очистить поиск",
     },
     "ar": {
         "title": "مركز وكلاء الذكاء الاصطناعي",
@@ -878,6 +908,9 @@ _translations = {
         "streamlit_app_info": "هذا **تطبيق Streamlit** — قم بتشغيله بشكل منفصل:",
         "translate_toggle": "🌐 ترجمة الرد إلى {lang}",
         "press_enter": "اضغط Enter للتطبيق",
+        "no_results_title": "لم يتم العثور على وكلاء",
+        "no_results_desc": "لم يتم العثور على وكلاء مطابقين لـ \"{query}\". جرب مصطلح بحث مختلف أو تصفح حسب الفئة.",
+        "clear_search": "مسح البحث",
     },
     "hi": {
         "title": "AI एजेंट हब",
@@ -956,6 +989,9 @@ _translations = {
         "streamlit_app_info": "यह एक **Streamlit ऐप** है — इसे अलग से चलाएं:",
         "translate_toggle": "🌐 प्रतिक्रिया का {lang} में अनुवाद करें",
         "press_enter": "लागू करने के लिए Enter दबाएं",
+        "no_results_title": "कोई एजेंट नहीं मिला",
+        "no_results_desc": "\"{query}\" से मेल खाने वाला कोई एजेंट नहीं मिला। कोई दूसरा शब्द आज़माएँ या श्रेणी के अनुसार ब्राउज़ करें।",
+        "clear_search": "खोज साफ़ करें",
     },
 }
 
