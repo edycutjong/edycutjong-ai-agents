@@ -1,6 +1,7 @@
 import argparse
 import os
 import sys
+import asyncio
 
 # Ensure project root is in path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -8,7 +9,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from agent.scanner import Scanner
 from agent.generator import AltTextGenerator
 from agent.reporter import Reporter
-from agent.utils import get_image_data
+from agent.utils import get_image_data, get_image_data_async
 from config import config
 
 # Import rich components inside main or global if installed
@@ -20,6 +21,33 @@ try:
 except ImportError:
     RICH_AVAILABLE = False
     print("Warning: 'rich' library not installed. Falling back to simple output.")
+
+
+async def process_image_task(i, img, images_len, generator, print_func):
+    if not RICH_AVAILABLE:
+         print_func(f"Processing image {i+1}/{images_len}: {img.src}")
+
+    # Resolve base path for local images
+    base_path = os.path.dirname(img.filepath)
+
+    image_data = await get_image_data_async(img.src, base_path=base_path)
+
+    result = img.to_dict()
+    if image_data:
+        alt_text = await generator.generate_alt_text_async(image_data, context=img.context)
+        if not RICH_AVAILABLE:
+            print_func(f"  Generated Alt: {alt_text}")
+        result["suggested_alt"] = alt_text
+    else:
+        if not RICH_AVAILABLE:
+            print_func(f"  Skipping image (could not load): {img.src}")
+        result["error"] = "Could not load image"
+
+    return result
+
+async def process_images_async(images, generator, print_func):
+    tasks = [process_image_task(i, img, len(images), generator, print_func) for i, img in enumerate(images)]
+    return await asyncio.gather(*tasks)
 
 def main():
     parser = argparse.ArgumentParser(description="Image Alt Text Writer")
@@ -93,31 +121,10 @@ def main():
 
     # Process images
     if images:
-        iterator = track(images, description="Processing images...") if RICH_AVAILABLE else images
+        if RICH_AVAILABLE:
+            console.print("Processing images concurrently...")
 
-        for i, img in enumerate(iterator):
-            if not RICH_AVAILABLE:
-                 print(f"Processing image {i+1}/{len(images)}: {img.src}")
-
-            # Resolve base path for local images
-            base_path = os.path.dirname(img.filepath)
-
-            image_data = get_image_data(img.src, base_path=base_path)
-
-            if image_data:
-                alt_text = generator.generate_alt_text(image_data, context=img.context)
-                if not RICH_AVAILABLE:
-                    print(f"  Generated Alt: {alt_text}")
-
-                result = img.to_dict()
-                result["suggested_alt"] = alt_text
-                results.append(result)
-            else:
-                if not RICH_AVAILABLE:
-                    print(f"  Skipping image (could not load): {img.src}")
-                result = img.to_dict()
-                result["error"] = "Could not load image"
-                results.append(result)
+        results = asyncio.run(process_images_async(images, generator, print_func))
 
     # Generate report
     if results:

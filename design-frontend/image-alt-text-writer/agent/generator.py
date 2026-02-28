@@ -85,3 +85,50 @@ class AltTextGenerator:
             return response.content.strip()
         except Exception as e:
             return f"Error generating alt text: {e}"
+
+    async def generate_alt_text_async(self, image_data: str, context: str = "") -> str:
+        """
+        Asynchronously generates alt text for an image.
+        image_data: base64 encoded string of the image.
+        context: text context surrounding the image.
+        """
+        if not image_data:
+            return "Error: Image data missing."
+
+        prompt_text = USER_PROMPT_TEMPLATE.format(context=context, src="[Image]")
+
+        if self.provider == "openai":
+            messages = [
+                SystemMessage(content=SYSTEM_PROMPT),
+                HumanMessage(
+                    content=[
+                        {"type": "text", "text": prompt_text},
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                "url": f"data:image/jpeg;base64,{image_data}"
+                            },
+                        },
+                    ]
+                )
+            ]
+        elif self.provider == "google":
+            # Google Generative AI (Gemini) handles images differently in LangChain
+            messages = [
+                SystemMessage(content=SYSTEM_PROMPT),
+                HumanMessage(
+                    content=[
+                        {"type": "text", "text": prompt_text},
+                        {
+                            "type": "image_url",
+                            "image_url": f"data:image/jpeg;base64,{image_data}"
+                        },
+                    ]
+                )
+            ]
+
+        try:
+            response = await self.llm.ainvoke(messages)
+            return response.content.strip()
+        except Exception as e:
+            return f"Error generating alt text: {e}"

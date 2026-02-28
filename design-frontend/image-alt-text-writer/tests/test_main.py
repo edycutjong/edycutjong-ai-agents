@@ -1,7 +1,8 @@
 import pytest
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch, MagicMock, AsyncMock
 import sys
 import os
+import asyncio
 
 # Add project root to sys.path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -22,16 +23,17 @@ def test_main_flow(mock_args, MockReporter, MockGenerator, MockScanner):
     ]
 
     mock_generator = MockGenerator.return_value
-    mock_generator.generate_alt_text.return_value = "Generated Alt"
+    mock_generator.generate_alt_text_async = AsyncMock(return_value="Generated Alt")
 
     mock_reporter = MockReporter.return_value
     mock_reporter.generate_report.return_value = "report.json"
 
-    with patch('main.get_image_data', return_value="base64data"):
+    with patch('main.get_image_data_async', new_callable=AsyncMock) as mock_get_image_data_async:
+        mock_get_image_data_async.return_value = "base64data"
         with patch('os.path.isfile', return_value=True):
              with patch('builtins.print'):
                 main()
 
     mock_scanner.scan_file.assert_called_once()
-    mock_generator.generate_alt_text.assert_called_once()
+    mock_generator.generate_alt_text_async.assert_called_once()
     mock_reporter.generate_report.assert_called_once()
