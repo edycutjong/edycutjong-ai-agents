@@ -166,16 +166,12 @@ def main():
                 # Let's use requests for simplicity if possible, or just a mock/placeholder for "Raw HTML Code" input.
                 if st.button("Fetch & Analyze URL"):
                     with st.spinner("Fetching URL content..."):
-                        # TODO: Implement URL fetching via requests or playwright
-                        # mocking for now since we don't have internet access guarantees or playwright browser installed in the runner environment maybe?
-                        # Actually, we have playwright in requirements.
-                        # We can use playwright to fetch the page content.
                         try:
                             from playwright.sync_api import sync_playwright
                             with sync_playwright() as p:
                                 browser = p.chromium.launch(headless=True)
                                 page = browser.new_page()
-                                page.goto(target_url)
+                                page.goto(target_url, wait_until="networkidle")
                                 html_content = page.content()
                                 browser.close()
 
