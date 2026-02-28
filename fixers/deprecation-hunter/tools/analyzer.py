@@ -132,5 +132,4 @@ class DeprecationAnalyzer:
                     ))
             return findings
         except Exception as e:
-            # print(f"LLM Analysis failed for {filepath}: {e}")
             return []
