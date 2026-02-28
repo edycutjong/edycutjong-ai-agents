@@ -1,0 +1,3 @@
+## 2024-05-18 - Improve Screen Reader Accessibility for Collapsed Labels
+**Learning:** In Streamlit, when using `label_visibility="collapsed"`, the first argument (the label string) is still used as the `aria-label` for the input element. Hardcoding it to "hidden_label" or leaving it unlocalized creates a poor experience for screen reader users who rely on that hidden text for context.
+**Action:** Always provide descriptive and localized label strings to Streamlit form inputs, even if `label_visibility="collapsed"` is used, to ensure the resulting HTML has correct `aria-label` attributes for accessibility.
