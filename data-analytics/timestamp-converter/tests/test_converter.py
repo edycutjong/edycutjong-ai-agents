@@ -17,6 +17,9 @@ def test_future(): assert is_future(time.time() + 10000)
 def test_not_future(): assert not is_future(0)
 def test_relative_now(): s = format_relative(time.time()); assert "just now" in s
 def test_relative_past(): s = format_relative(time.time() - 7200); assert "hours ago" in s
+def test_relative_future_minutes(): s = format_relative(time.time() + 120); assert "minutes from now" in s
+def test_relative_future_hours(): s = format_relative(time.time() + 7200); assert "hours from now" in s
+def test_relative_future_days(): s = format_relative(time.time() + 172800); assert "days from now" in s
 def test_roundtrip(): r1 = unix_to_datetime(1609459200); r2 = iso_to_unix(r1.iso); assert abs(r2.unix - 1609459200) < 1
 def test_format(): md = format_result_markdown(unix_to_datetime(0)); assert "Timestamp" in md
 def test_to_dict(): d = unix_to_datetime(0).to_dict(); assert "unix" in d
