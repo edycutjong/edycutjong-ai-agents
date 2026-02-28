@@ -1,4 +1,5 @@
 import streamlit as st
+import html
 import os
 import re
 from dotenv import load_dotenv
@@ -168,7 +169,8 @@ if st.session_state.review_results:
 
     # Summary Section
     st.subheader("📝 Review Summary")
-    st.markdown(f"<div style='background-color: #1f2937; padding: 20px; border-radius: 10px; border-left: 5px solid #6a11cb;'>{summary}</div>", unsafe_allow_html=True)
+    safe_summary = html.escape(summary).replace('\n', '<br>')
+    st.markdown(f"<div style='background-color: #1f2937; padding: 20px; border-radius: 10px; border-left: 5px solid #6a11cb;'>{safe_summary}</div>", unsafe_allow_html=True)
 
     st.divider()
 
@@ -201,12 +203,16 @@ if st.session_state.review_results:
                 elif "Style" in category:
                     color = "#10b981" # green
 
+                safe_category = html.escape(str(category))
+                safe_line = html.escape(str(line))
+                safe_body = html.escape(str(body)).replace('\n', '<br>')
+
                 st.markdown(
                     f"""
                     <div style="margin-bottom: 10px; padding: 10px; border: 1px solid #374151; border-radius: 5px;">
-                        <span style="background-color: {color}; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold;">{category}</span>
-                        <span style="margin-left: 10px; color: #9ca3af;">Line {line}</span>
-                        <p style="margin-top: 5px;">{body}</p>
+                        <span style="background-color: {color}; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold;">{safe_category}</span>
+                        <span style="margin-left: 10px; color: #9ca3af;">Line {safe_line}</span>
+                        <p style="margin-top: 5px;">{safe_body}</p>
                     </div>
                     """,
                     unsafe_allow_html=True
