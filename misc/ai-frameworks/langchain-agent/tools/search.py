@@ -1,7 +1,7 @@
 """Web search tool using DuckDuckGo."""
 
 from langchain_community.tools import DuckDuckGoSearchRun
-from langchain.tools import Tool
+from langchain_core.tools import Tool
 
 
 def create_search_tool() -> Tool:
