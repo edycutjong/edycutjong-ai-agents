@@ -179,10 +179,20 @@ class FigmaParser:
     def _extract_corner_radius(self, node: Dict[str, Any]) -> Dict[str, str]:
         """Extracts border radius."""
         styles = {}
-        radius = node.get("cornerRadius")
-        if radius:
-             styles["border-radius"] = f"{radius}px"
-        # TODO: Handle rectangleCornerRadii for individual corners
+        radii = node.get("rectangleCornerRadii")
+        if radii and len(radii) == 4:
+            if radii[0] == radii[2] and radii[1] == radii[3]:
+                if radii[0] == radii[1]:
+                    styles["border-radius"] = f"{radii[0]}px"
+                else:
+                    styles["border-radius"] = f"{radii[0]}px {radii[1]}px"
+            else:
+                # Figma format: top-left, top-right, bottom-right, bottom-left
+                styles["border-radius"] = f"{radii[0]}px {radii[1]}px {radii[2]}px {radii[3]}px"
+        else:
+            radius = node.get("cornerRadius")
+            if radius:
+                 styles["border-radius"] = f"{radius}px"
         return styles
 
     def _extract_layout(self, node: Dict[str, Any]) -> Dict[str, str]:
