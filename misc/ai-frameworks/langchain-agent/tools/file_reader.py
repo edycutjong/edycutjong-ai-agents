@@ -1,7 +1,7 @@
 """File reader tool — reads text and PDF files."""
 
 import os
-from langchain.tools import Tool
+from langchain_core.tools import Tool
 
 
 def _read_file(filepath: str) -> str:
