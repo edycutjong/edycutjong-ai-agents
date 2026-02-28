@@ -65,7 +65,7 @@ class Optimizer:
                         temp_path.unlink()
                 except:
                     pass
-                # print(f"Error optimizing {file_path}: {e}")
+
 
         return count_optimized, bytes_saved
 
