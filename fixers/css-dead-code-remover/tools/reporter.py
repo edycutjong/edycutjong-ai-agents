@@ -27,7 +27,7 @@ def generate_report(
         for rule in unused_rules[:10]: # Top 10
             top_unused.append({
                 "selector": ", ".join(rule.selectors),
-                "source": "main.css" # TODO: Pass source filename if available
+                "source": getattr(rule, "source_file", "main.css") or "main.css"
             })
 
         detailed_audit = []
