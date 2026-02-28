@@ -11,7 +11,6 @@ class AIHelper:
             self.llm = ChatOpenAI(temperature=0.7, openai_api_key=self.api_key)
         else:
             self.llm = None
-            # print("[warning] No OPENAI_API_KEY found. AI features will be mocked.[/warning]")
 
     def explain_rule(self, rule_code: str, description: str) -> str:
         """Explains a style rule using AI."""
