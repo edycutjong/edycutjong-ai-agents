@@ -66,3 +66,9 @@ def test_format():
     r = validate_response(SAMPLE, rules)
     md = format_result_markdown(r)
     assert "✅" in md
+
+def test_create_rules_unsupported_type():
+    rules = create_rules_from_sample({"location": (10.0, 20.0)})
+    assert len(rules) == 1
+    assert rules[0].field == "location"
+    assert rules[0].expected_type == ""
