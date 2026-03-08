@@ -1,0 +1,23 @@
+name: Keep Streamlit App Alive
+
+on:
+  schedule:
+    # Runs every 24 hours at 6:00 AM UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Streamlit App
+        run: |
+          echo "Pinging aiagents-edycu-dev.streamlit.app..."
+          status=$(curl -o /dev/null -s -w "%{http_code}" --max-time 30 \
+            "https://aiagents-edycu-dev.streamlit.app/")
+          echo "HTTP Status: $status"
+          if [ "$status" -ge 200 ] && [ "$status" -lt 400 ]; then
+            echo "✅ App is alive!"
+          else
+            echo "⚠️ App returned status $status (may be waking up)"
+          fi
