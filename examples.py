@@ -121,7 +121,7 @@ HINTS = [
         'SENDGRID_API_KEY=SG.xxxxxxxxxxxxxxxxxxx\nSTRIPE_SECRET_KEY=sk_live_xxxxxxxxxxxxxx\n# committed to git by accident',
         'app.get("/debug", (req, res) => {\n  res.json({ env: process.env, config: appConfig });\n});\n// Remove before production (TODO since 2022)',
         'def deserialize(data):\n    return pickle.loads(base64.b64decode(data))\n# data comes from user cookie',
-        'SELECT * FROM users WHERE username = \'' + username + '\' AND password = \'' + password + '\'',
+        "# Vulnerable SQL: string concatenation\nquery = \"SELECT * FROM users WHERE username = '\" + user_input + \"' AND password = '\" + pw_input + \"'\"\ndb.execute(query)  # SQL injection!",
     ]),
     (["docker", "k8s", "kubernetes", "ci-pipeline", "deploy"], "Paste config (Dockerfile, YAML, CI)...", "🐳 DevOps Config", [
         'FROM node:18\nWORKDIR /app\nCOPY package*.json ./\nRUN npm install\nCOPY . .\nEXPOSE 3000\nCMD ["node", "server.js"]',
