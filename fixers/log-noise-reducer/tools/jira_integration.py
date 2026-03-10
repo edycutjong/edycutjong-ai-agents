@@ -11,5 +11,4 @@ def create_jira_ticket(title: str, description: str, project_key: str = "LOG") -
 
     ticket_id = f"{project_key}-{random.randint(1000, 9999)}"
     # In a real app, this would verify credentials and call the Jira API
-    # print(f"Creating Jira Ticket: {title} -> {ticket_id}")
     return ticket_id
