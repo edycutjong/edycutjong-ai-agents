@@ -1,3 +1,4 @@
+import os
 import cssutils
 import logging
 from dataclasses import dataclass, field
@@ -12,6 +13,7 @@ class CSSRule:
     properties: Dict[str, str]
     media: Optional[List[str]] = None
     original_text: str = ""
+    source_file: str = ""
 
 def parse_css_file(filepath: str) -> List[CSSRule]:
     """
@@ -32,13 +34,14 @@ def parse_css_file(filepath: str) -> List[CSSRule]:
         return []
 
     rules = []
+    source_filename = os.path.basename(filepath)
 
     for rule in stylesheet:
         try:
             if rule.type == rule.STYLE_RULE:
-                _process_style_rule(rule, rules)
+                _process_style_rule(rule, rules, source_file=source_filename)
             elif rule.type == rule.MEDIA_RULE:
-                _process_media_rule(rule, rules)
+                _process_media_rule(rule, rules, source_file=source_filename)
             # Add handling for other rule types if needed (e.g., @supports)
         except Exception as e:
             logging.warning(f"Error processing rule: {e}")
@@ -46,7 +49,7 @@ def parse_css_file(filepath: str) -> List[CSSRule]:
 
     return rules
 
-def _process_style_rule(rule, rules_list: List[CSSRule], media: Optional[List[str]] = None):
+def _process_style_rule(rule, rules_list: List[CSSRule], media: Optional[List[str]] = None, source_file: str = ""):
     try:
         selectors = [s.selectorText for s in rule.selectorList]
         properties = {p.name: p.value for p in rule.style}
@@ -55,17 +58,18 @@ def _process_style_rule(rule, rules_list: List[CSSRule], media: Optional[List[st
             selectors=selectors,
             properties=properties,
             media=media,
-            original_text=rule.cssText
+            original_text=rule.cssText,
+            source_file=source_file
         ))
     except Exception as e:
         logging.warning(f"Skipping style rule due to error: {e}")
 
-def _process_media_rule(media_rule, rules_list: List[CSSRule]):
+def _process_media_rule(media_rule, rules_list: List[CSSRule], source_file: str = ""):
     try:
         media_query = media_rule.media.mediaText
         for rule in media_rule:
             if rule.type == rule.STYLE_RULE:
-                _process_style_rule(rule, rules_list, media=[media_query])
+                _process_style_rule(rule, rules_list, media=[media_query], source_file=source_file)
     except Exception as e:
         logging.warning(f"Skipping media rule due to error: {e}")
 
