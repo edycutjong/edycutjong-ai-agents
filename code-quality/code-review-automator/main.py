@@ -168,7 +168,7 @@ if st.session_state.review_results:
 
     # Summary Section
     st.subheader("📝 Review Summary")
-    st.markdown(f"<div style='background-color: #1f2937; padding: 20px; border-radius: 10px; border-left: 5px solid #6a11cb;'>{summary}</div>", unsafe_allow_html=True)
+    st.info(summary)
 
     st.divider()
 
@@ -201,16 +201,13 @@ if st.session_state.review_results:
                 elif "Style" in category:
                     color = "#10b981" # green
 
-                st.markdown(
-                    f"""
-                    <div style="margin-bottom: 10px; padding: 10px; border: 1px solid #374151; border-radius: 5px;">
-                        <span style="background-color: {color}; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold;">{category}</span>
-                        <span style="margin-left: 10px; color: #9ca3af;">Line {line}</span>
-                        <p style="margin-top: 5px;">{body}</p>
-                    </div>
-                    """,
-                    unsafe_allow_html=True
-                )
+                msg = f"**{category}** (Line {line})\n\n{body}"
+                if color == "#ef4444":
+                    st.error(msg)
+                elif color == "#10b981":
+                    st.success(msg)
+                else:
+                    st.info(msg)
 
                 if suggestion:
                     st.code(suggestion, language="python") # Defaulting to python syntax highlighting for now
