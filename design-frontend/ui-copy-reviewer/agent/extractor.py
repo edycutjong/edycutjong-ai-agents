@@ -8,6 +8,12 @@ class TextExtractor:
         # Attributes that likely contain UI copy
         self.copy_attributes = {'title', 'alt', 'placeholder', 'aria-label', 'label'}
 
+        # 1. Text between tags: >Some Text<
+        self.text_content_pattern = re.compile(r'>([^<{]+)<')
+
+        # 2. Text in specific attributes: title="Some Text" or title='Some Text'
+        self.attr_pattern = re.compile(r'\b(' + '|'.join(self.copy_attributes) + r')=(["\'])(.*?)\2')
+
     def extract_text_from_file(self, filepath):
         """
         Extracts UI text strings from a file.
@@ -70,18 +76,12 @@ class TextExtractor:
         results = []
         lines = content.split('\n')
 
-        # 1. Text between tags: >Some Text<
-        text_content_pattern = re.compile(r'>([^<{]+)<')
-
-        # 2. Text in specific attributes: title="Some Text" or title='Some Text'
-        attr_pattern = re.compile(r'\b(' + '|'.join(self.copy_attributes) + r')=(["\'])(.*?)\2')
-
         # 3. Python f-strings or strings might be UI copy? Hard to tell.
         # For now, assume mainly JSX-like structures or attributes.
 
         for i, line in enumerate(lines):
             # Check for text content
-            for match in text_content_pattern.finditer(line):
+            for match in self.text_content_pattern.finditer(line):
                 text = match.group(1).strip()
                 if text:
                     results.append({
@@ -92,7 +92,7 @@ class TextExtractor:
                     })
 
             # Check for attributes
-            for match in attr_pattern.finditer(line):
+            for match in self.attr_pattern.finditer(line):
                 attr_name = match.group(1)
                 text = match.group(3).strip()
                 if text:
