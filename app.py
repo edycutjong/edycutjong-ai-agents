@@ -449,7 +449,11 @@ def main():
                 st.rerun()
 
         # Search Input (real-time keyup to allow button disabled state to toggle on typing)
-        search_val = st_keyup(f"🔍 {tr['search']}", placeholder=tr['search'], key="keyup_search_val", debounce=100)
+        # We use a dynamic key to force reset the widget when "Clear Search" is clicked
+        if "search_key_suffix" not in st.session_state:
+            st.session_state.search_key_suffix = 0
+
+        search_val = st_keyup(f"🔍 {tr['search']}", placeholder=tr['search'], key=f"keyup_search_val_{st.session_state.search_key_suffix}", debounce=100)
         if search_val is None:
             search_val = ""
         
@@ -582,7 +586,14 @@ def _render_hub(filtered, all_agents):
     st.markdown("")
 
     # Results count
-    if len(filtered) < len(all_agents):
+    if len(filtered) == 0:
+        st.info(tr.get('no_results', 'No agents found matching your criteria.'))
+        if st.button(tr.get('clear_search', 'Clear Search'), key="clear_search_main"):
+            st.session_state.last_search = ""
+            st.session_state.search_key_suffix += 1
+            st.query_params.clear()
+            st.rerun()
+    elif len(filtered) < len(all_agents):
         st.info(tr.get('showing_agents', 'Showing **{count}** of {total} agents').format(count=len(filtered), total=len(all_agents)))
 
     # Agent grid
