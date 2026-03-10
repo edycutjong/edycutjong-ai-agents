@@ -42,6 +42,13 @@ def is_safe_code(code: str) -> bool:
 
     unsafe_modules = {'os', 'sys', 'subprocess', 'shutil', 'socket', 'requests', 'http', 'urllib', 'builtins', 'pickle'}
     unsafe_functions = {'open', 'eval', 'exec', 'compile', 'getattr', 'setattr', 'delattr', 'input', '__import__', 'globals', 'locals'}
+    unsafe_attributes = {
+        '__subclasses__', '__bases__', '__globals__', '__code__',
+        '__closure__', '__func__', '__self__', '__module__',
+        '__dict__', '__class__', '__base__', '__mro__',
+        '__import__', '__loader__', '__spec__', '__builtins__',
+        '__package__', '__getattribute__', '__getattr__', '__setattr__', '__delattr__'
+    }
 
     for node in ast.walk(tree):
         # Check imports
@@ -60,6 +67,11 @@ def is_safe_code(code: str) -> bool:
                     return False
             # Check attribute access calls (e.g. os.system which is blocked by import, but good to cover)
             # Actually import check is primary defense.
+
+        # Check attribute access
+        if isinstance(node, ast.Attribute):
+            if node.attr in unsafe_attributes:
+                return False
 
     return True
 
@@ -91,9 +103,9 @@ def execute_python_snippet(code: str, timeout: int = 5) -> Dict[str, Any]:
             'enumerate', 'filter', 'float', 'format', 'frozenset', 'hash',
             'help', 'hex', 'id', 'int', 'isinstance', 'issubclass', 'iter',
             'len', 'list', 'map', 'max', 'memoryview', 'min', 'next',
-            'object', 'oct', 'ord', 'pow', 'print', 'property', 'range',
+            'oct', 'ord', 'pow', 'print', 'property', 'range',
             'repr', 'reversed', 'round', 'set', 'slice', 'sorted',
-            'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip'
+            'staticmethod', 'str', 'sum', 'super', 'tuple', 'vars', 'zip'
         }
 
         # Construct restricted __builtins__
