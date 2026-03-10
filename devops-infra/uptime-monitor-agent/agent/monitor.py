@@ -4,6 +4,75 @@ import ssl
 import socket
 from datetime import datetime
 import re
+import ipaddress
+from urllib.parse import urlparse, urljoin
+
+def validate_url(url):
+    """
+    Validates a URL for SSRF protection.
+    Raises ValueError if validation fails.
+    """
+    try:
+        parsed = urlparse(url)
+    except Exception as e:
+         raise ValueError(f"Invalid URL format: {e}")
+
+    if parsed.scheme not in ('http', 'https'):
+        raise ValueError(f"Invalid scheme: {parsed.scheme}. Only http and https are allowed.")
+
+    hostname = parsed.hostname
+    if not hostname:
+        raise ValueError("Invalid hostname.")
+
+    try:
+        # Resolve hostname to IPs (IPv4 and IPv6)
+        # 0 = any family, SOCK_STREAM = TCP
+        addr_infos = socket.getaddrinfo(hostname, None, 0, socket.SOCK_STREAM)
+
+        for family, type, proto, canonname, sockaddr in addr_infos:
+            ip_str = sockaddr[0]
+            ip_obj = ipaddress.ip_address(ip_str)
+
+            # Check for private/reserved/loopback IPs
+            if (ip_obj.is_private or
+                ip_obj.is_loopback or
+                ip_obj.is_link_local or
+                ip_obj.is_multicast or
+                ip_obj.is_reserved or
+                ip_obj.is_unspecified):
+                raise ValueError(f"Access to local/private resource {ip_str} is denied.")
+
+    except socket.gaierror:
+        raise ValueError(f"Could not resolve hostname: {hostname}")
+
+def safe_request(method, url, timeout=10, **kwargs):
+    """
+    Makes a safe HTTP request, validating each redirect.
+    """
+    current_url = url
+    max_redirects = 5
+
+    for _ in range(max_redirects + 1):
+        validate_url(current_url)
+
+        try:
+            # We must disable automatic redirects to validate each step
+            response = requests.request(method, current_url, allow_redirects=False, timeout=timeout, **kwargs)
+        except requests.exceptions.RequestException as e:
+            raise e
+
+        if response.is_redirect:
+            location = response.headers.get('Location')
+            if not location:
+                return response
+
+            # Handle relative redirects
+            current_url = urljoin(current_url, location)
+            continue
+        else:
+            return response
+
+    raise requests.exceptions.TooManyRedirects("Exceeded maximum redirect limit")
 
 def check_endpoint(url):
     """
@@ -15,11 +84,11 @@ def check_endpoint(url):
     """
     start_time = time.time()
     try:
-        response = requests.get(url, timeout=10)
+        response = safe_request('GET', url, timeout=10)
         end_time = time.time()
         response_time = end_time - start_time
         return response.status_code, response_time, None
-    except requests.exceptions.RequestException as e:
+    except (requests.exceptions.RequestException, ValueError) as e:
         end_time = time.time()
         response_time = end_time - start_time
         return 0, response_time, str(e)
@@ -32,7 +101,9 @@ def check_ssl_expiry(url):
         error_message (str): Error message if any.
     """
     try:
-        hostname = url.split("//")[-1].split("/")[0].split(":")[0]
+        validate_url(url)
+        parsed = urlparse(url)
+        hostname = parsed.hostname
         port = 443
 
         context = ssl.create_default_context()
@@ -55,7 +126,7 @@ def check_custom_regex(url, regex_pattern):
         error_message (str): Error message if any.
     """
     try:
-        response = requests.get(url, timeout=10)
+        response = safe_request('GET', url, timeout=10)
         if response.status_code == 200:
             content = response.text
             if re.search(regex_pattern, content):
