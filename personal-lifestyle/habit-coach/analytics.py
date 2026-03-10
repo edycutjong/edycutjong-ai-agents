@@ -1,14 +1,17 @@
 from datetime import date, timedelta
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from collections import Counter
 import pandas as pd
 try:
     from .storage import get_logs, get_habits
+    from .models import HabitLog
 except ImportError:
     from storage import get_logs, get_habits
+    from models import HabitLog
 
-def calculate_current_streak(habit_id: str) -> int:
-    logs = get_logs(habit_id)
+def calculate_current_streak(habit_id: str, logs: Optional[List[HabitLog]] = None) -> int:
+    if logs is None:
+        logs = get_logs(habit_id)
     # Filter only completed
     completed_dates = sorted([l.date for l in logs if l.status == 'completed'], reverse=True)
 
@@ -37,8 +40,9 @@ def calculate_current_streak(habit_id: str) -> int:
 
     return streak
 
-def calculate_longest_streak(habit_id: str) -> int:
-    logs = get_logs(habit_id)
+def calculate_longest_streak(habit_id: str, logs: Optional[List[HabitLog]] = None) -> int:
+    if logs is None:
+        logs = get_logs(habit_id)
     completed_dates = sorted(list(set([l.date for l in logs if l.status == 'completed'])))
 
     if not completed_dates:
@@ -61,8 +65,9 @@ def calculate_longest_streak(habit_id: str) -> int:
     longest_streak = max(longest_streak, current_streak)
     return longest_streak
 
-def calculate_completion_rate(habit_id: str, days: int = 30) -> float:
-    logs = get_logs(habit_id)
+def calculate_completion_rate(habit_id: str, days: int = 30, logs: Optional[List[HabitLog]] = None) -> float:
+    if logs is None:
+        logs = get_logs(habit_id)
     cutoff_date = date.today() - timedelta(days=days)
     relevant_logs = [l for l in logs if l.date >= cutoff_date and l.status == 'completed']
 
@@ -72,8 +77,9 @@ def calculate_completion_rate(habit_id: str, days: int = 30) -> float:
 
     return (len(relevant_logs) / days) * 100
 
-def get_best_day_of_week(habit_id: str) -> str:
-    logs = get_logs(habit_id)
+def get_best_day_of_week(habit_id: str, logs: Optional[List[HabitLog]] = None) -> str:
+    if logs is None:
+        logs = get_logs(habit_id)
     completed_dates = [l.date for l in logs if l.status == 'completed']
 
     if not completed_dates:
@@ -85,14 +91,23 @@ def get_best_day_of_week(habit_id: str) -> str:
 
 def get_all_habits_summary() -> List[Dict[str, Any]]:
     habits = get_habits()
+    all_logs = get_logs()
+
+    logs_by_habit = {}
+    for log in all_logs:
+        if log.habit_id not in logs_by_habit:
+            logs_by_habit[log.habit_id] = []
+        logs_by_habit[log.habit_id].append(log)
+
     summary = []
     for h in habits:
+        habit_logs = logs_by_habit.get(h.id, [])
         summary.append({
             "id": h.id,
             "name": h.name,
-            "current_streak": calculate_current_streak(h.id),
-            "longest_streak": calculate_longest_streak(h.id),
-            "completion_rate_30d": calculate_completion_rate(h.id),
-            "best_day": get_best_day_of_week(h.id)
+            "current_streak": calculate_current_streak(h.id, logs=habit_logs),
+            "longest_streak": calculate_longest_streak(h.id, logs=habit_logs),
+            "completion_rate_30d": calculate_completion_rate(h.id, logs=habit_logs),
+            "best_day": get_best_day_of_week(h.id, logs=habit_logs)
         })
     return summary

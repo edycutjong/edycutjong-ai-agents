@@ -1,7 +1,7 @@
 import pytest
 from datetime import date, timedelta
 from analytics import calculate_current_streak, calculate_longest_streak, calculate_completion_rate, get_best_day_of_week
-from storage import add_habit, log_habit, delete_habit, _ensure_data_files
+from storage import add_habit, log_habit, delete_habit, _ensure_data_files, get_logs
 from models import Habit
 import os
 import json
@@ -79,3 +79,44 @@ def test_best_day():
     log_habit(h.id, last_monday + timedelta(days=1), "completed") # A Tuesday
 
     assert get_best_day_of_week(h.id) == "Monday"
+
+def test_optimized_analytics_pass_logs():
+    h = add_habit("Optimized Habit")
+    today = date.today()
+
+    # Add some logs
+    log_habit(h.id, today, "completed")
+    log_habit(h.id, today - timedelta(days=1), "completed")
+    log_habit(h.id, today - timedelta(days=3), "completed")
+
+    logs = get_logs(h.id)
+    assert len(logs) == 3
+
+    # Test with logs passed explicitly
+    assert calculate_current_streak(h.id, logs=logs) == 2
+    assert calculate_longest_streak(h.id, logs=logs) == 2
+
+    # For completion rate, we have 3 logs in last 30 days
+    # 3 / 30 * 100 = 10.0
+    assert calculate_completion_rate(h.id, logs=logs) == 10.0
+
+    # Best day depends on today's weekday.
+    assert isinstance(get_best_day_of_week(h.id, logs=logs), str)
+
+def test_get_all_habits_summary_uses_optimization():
+    h1 = add_habit("Habit 1")
+    h2 = add_habit("Habit 2")
+
+    log_habit(h1.id, date.today(), "completed")
+    log_habit(h2.id, date.today(), "completed")
+
+    from analytics import get_all_habits_summary
+    summary = get_all_habits_summary()
+    assert len(summary) == 2
+
+    # Find summary for h1 and h2
+    s1 = next(s for s in summary if s["id"] == h1.id)
+    s2 = next(s for s in summary if s["id"] == h2.id)
+
+    assert s1["current_streak"] == 1
+    assert s2["current_streak"] == 1
