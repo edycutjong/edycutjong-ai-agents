@@ -105,3 +105,16 @@ def test_tags_in_report():
     e = StandupEntry(author="Dev", today=["Work"], tags=["backend", "api"])
     report = generate_daily_report([e], e.date)
     assert "backend" in report
+
+def test_weekly_summary_item_limit():
+    author = "Overachiever"
+    today_items = [f"Task {i}" for i in range(15)]
+    entries = [StandupEntry(author=author, today=today_items, blockers=[])]
+    summary = generate_weekly_summary(entries)
+
+    assert "Weekly Standup Summary" in summary
+    assert author in summary
+
+    # Check that exactly 10 tasks are included
+    item_lines = [line for line in summary.split("\n") if line.startswith("- Task ")]
+    assert len(item_lines) == 10
