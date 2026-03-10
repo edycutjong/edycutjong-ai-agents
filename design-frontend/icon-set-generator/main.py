@@ -1,6 +1,7 @@
 import streamlit as st
 import zipfile
 import io
+import html
 import os
 import sys
 
@@ -126,10 +127,11 @@ if 'generated_icons' in st.session_state and st.session_state['generated_icons']
 
     for i, (name, svg) in enumerate(icons.items()):
         with cols[i % 4]:
+            safe_name = html.escape(name)
             st.markdown(f"""
                 <div class="icon-card">
                     {svg}
-                    <div class="icon-title">{name}</div>
+                    <div class="icon-title">{safe_name}</div>
                 </div>
             """, unsafe_allow_html=True)
 
