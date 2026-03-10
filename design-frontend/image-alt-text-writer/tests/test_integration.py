@@ -27,14 +27,17 @@ def test_full_integration(tmp_path):
 
         # Mock LLM and Config
         with patch('agent.generator.ChatOpenAI') as mock_llm:
-            mock_llm.return_value.invoke.return_value = MagicMock(content="Integrated Alt Text")
+            mock_llm_instance = MagicMock()
+            from unittest.mock import AsyncMock
+            mock_llm_instance.ainvoke = AsyncMock(return_value=MagicMock(content="Integrated Alt Text"))
+            mock_llm.return_value = mock_llm_instance
 
             with patch('config.config.OPENAI_API_KEY', 'dummy_key'):
                 with patch('builtins.print'): # Suppress output
                     main()
 
             # Verify LLM was called
-            mock_llm.return_value.invoke.assert_called_once()
+            mock_llm.return_value.ainvoke.assert_called_once()
 
             # Verify report was created
             # Since Reporter uses datetime in filename, we check if any file exists in the report dir

@@ -38,3 +38,24 @@ def test_generate_alt_text_google(mock_llm_google):
         result = generator.generate_alt_text("base64data", "context")
         assert result == "A Google descriptive alt text."
         mock_llm_google.return_value.invoke.assert_called_once()
+
+import asyncio
+
+@pytest.fixture
+def mock_llm_openai_async():
+    with patch('agent.generator.ChatOpenAI') as mock:
+        llm_instance = MagicMock()
+
+        async def mock_ainvoke(*args, **kwargs):
+            return AIMessage(content="Async descriptive alt text.")
+
+        llm_instance.ainvoke = mock_ainvoke
+        mock.return_value = llm_instance
+        yield mock
+
+@pytest.mark.asyncio
+async def test_generate_alt_text_async_openai(mock_llm_openai_async):
+    with patch('config.config.OPENAI_API_KEY', 'test_key'):
+        generator = AltTextGenerator(provider='openai')
+        result = await generator.generate_alt_text_async("base64data", "context")
+        assert result == "Async descriptive alt text."
