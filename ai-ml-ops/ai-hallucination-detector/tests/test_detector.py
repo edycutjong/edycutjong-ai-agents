@@ -68,6 +68,30 @@ class TestHallucinationDetector(unittest.TestCase):
             self.assertEqual(result["explanation"], "Found it.")
             self.assertEqual(len(result["sources"]), 1)
 
+
+    def test_verify_claim_malformed_json(self):
+        # Mock vectorstore search
+        mock_doc = MagicMock()
+        mock_doc.page_content = "Source text snippet."
+        self.mock_vectorstore.similarity_search.return_value = [mock_doc]
+
+        # Mock LLM response for verification with invalid JSON
+        mock_response = MagicMock()
+        mock_response.content = 'This is just some text without any valid JSON like {"unclosed": "object"'
+
+        mock_chain = MagicMock()
+        mock_chain.invoke.return_value = mock_response
+
+        with patch('agent.detector.verification_prompt') as mock_prompt:
+            mock_prompt.__or__ = MagicMock(return_value=mock_chain)
+
+            result = self.detector.verify_claim("Claim one.", self.mock_vectorstore)
+
+            self.assertEqual(result["status"], "ERROR")
+            self.assertEqual(result["confidence"], 0.0)
+            self.assertTrue(result["explanation"].startswith("Failed to parse verification result. Raw:"))
+            self.assertEqual(len(result["sources"]), 1)
+
     @patch('agent.detector.load_document')
     @patch('agent.detector.split_documents')
     def test_process(self, mock_split, mock_load):
