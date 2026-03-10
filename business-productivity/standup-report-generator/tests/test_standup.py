@@ -105,3 +105,12 @@ def test_tags_in_report():
     e = StandupEntry(author="Dev", today=["Work"], tags=["backend", "api"])
     report = generate_daily_report([e], e.date)
     assert "backend" in report
+
+
+
+def test_load_corrupted_json(temp_path):
+    with open(temp_path, "w") as f:
+        f.write("{ invalid json")
+
+    s = StandupStorage(filepath=temp_path)
+    assert s._load() == []
