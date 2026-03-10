@@ -105,3 +105,13 @@ def test_tags_in_report():
     e = StandupEntry(author="Dev", today=["Work"], tags=["backend", "api"])
     report = generate_daily_report([e], e.date)
     assert "backend" in report
+
+def test_weekly_summary_limits_items():
+    items = [f"Item {i}" for i in range(1, 16)]
+    e = StandupEntry(author="Alice", today=items)
+    summary = generate_weekly_summary([e])
+
+    assert "Item 1" in summary
+    assert "Item 10" in summary
+    assert "Item 11" not in summary
+    assert "Item 15" not in summary
