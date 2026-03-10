@@ -31,8 +31,7 @@ class CodeScanner:
                             "type": log_type,
                             "message_template": self._extract_message(node)
                         })
-        except Exception as e:
-            # print(f"Error parsing {filepath}: {e}")
+        except Exception:
             pass
         return findings
 
