@@ -392,13 +392,14 @@ def main():
 
     # Sidebar
     with st.sidebar:
+        tr = get_translations(st.session_state.get("locale", "en"))
         # Language selector (horizontal: 🌐 + dropdown)
         locale_options = list(LOCALE_NAMES.keys())
         locale_labels = list(LOCALE_NAMES.values())
         current_locale = st.session_state.get("locale", "en")
         locale_idx = locale_options.index(current_locale) if current_locale in locale_options else 0
         selected_locale = st.selectbox(
-            "Language",
+            tr.get("language_selector", "Language"),
             locale_options,
             index=locale_idx,
             format_func=lambda x: f"{x.upper()} · {LOCALE_NAMES[x]}",
@@ -409,7 +410,6 @@ def main():
             st.session_state["locale"] = selected_locale
             st.query_params["lang"] = selected_locale
             st.rerun()
-        tr = get_translations(st.session_state.get("locale", "en"))
         
         # Inject dynamic CSS to localize the native Streamlit InputInstructions
         st.markdown(f"""
@@ -747,7 +747,7 @@ def _render_agent_detail(agent, agent_key):
                 st.markdown(f"**{base_label}**")
 
             user_input = st.text_area(
-                "hidden_label",
+                base_label,
                 label_visibility="collapsed",
                 placeholder=tr.get('default_input_placeholder', placeholder) if placeholder == "Describe what you need or paste your text..." else placeholder,
                 height=150,
