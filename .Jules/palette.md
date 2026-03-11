@@ -1,0 +1,3 @@
+## 2024-05-18 - Avoid dummy labels when using label_visibility="collapsed"
+**Learning:** In Streamlit, when setting `label_visibility="collapsed"`, the string passed as the first argument (the label) is still rendered in the DOM and used as the `aria-label` for screen readers. Using dummy values like "hidden_label" causes poor accessibility for screen reader users, who will just hear "hidden label" when focusing on the element.
+**Action:** Always provide a descriptive, meaningful label string to Streamlit input components (like `st.text_area`, `st.selectbox`, etc.) even when using `label_visibility="collapsed"`. This descriptive string will serve as the ARIA label and improve accessibility without affecting visual layout.
