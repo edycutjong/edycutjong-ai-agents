@@ -1,7 +1,7 @@
-# Dependency Updater
+# Code Review Bot
 
 ## Overview
-Autonomous agent that discovers outdated dependencies, creates PRs with updates, and verifies tests pass.
+Autonomous code review agent that checks style, complexity, security patterns, and suggests improvements.
 
 ## Tech
 - Python 3.10+
@@ -10,14 +10,14 @@ Autonomous agent that discovers outdated dependencies, creates PRs with updates,
 - pytest
 
 ## Features
-- Scan for outdated npm dependencies
-- Scan for outdated pip dependencies
-- Create GitHub PRs for updates
-- Run tests to verify compatibility
-- Group related updates
-- Generate changelog entries
-- Configurable update strategy (major/minor/patch)
-- Rollback on test failure
+- Analyze code for style issues
+- Check cyclomatic complexity
+- Detect security anti-patterns
+- Suggest performance improvements
+- Generate review summary
+- Support for Python, JS, TS
+- Configurable severity levels
+- Inline comment suggestions
 
 ## File Structure
 - `agent/` — Agent module

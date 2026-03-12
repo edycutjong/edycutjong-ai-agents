@@ -1,7 +1,7 @@
-# Dependency Updater
+# Test Generator
 
 ## Overview
-Autonomous agent that discovers outdated dependencies, creates PRs with updates, and verifies tests pass.
+Reads source code and generates comprehensive unit and integration test suites with high coverage.
 
 ## Tech
 - Python 3.10+
@@ -10,14 +10,14 @@ Autonomous agent that discovers outdated dependencies, creates PRs with updates,
 - pytest
 
 ## Features
-- Scan for outdated npm dependencies
-- Scan for outdated pip dependencies
-- Create GitHub PRs for updates
-- Run tests to verify compatibility
-- Group related updates
-- Generate changelog entries
-- Configurable update strategy (major/minor/patch)
-- Rollback on test failure
+- Analyze function signatures and types
+- Generate unit tests per function
+- Generate edge case tests
+- Generate integration tests
+- Support for Jest and pytest
+- Mock dependency generation
+- Coverage report integration
+- Test description generation
 
 ## File Structure
 - `agent/` — Agent module

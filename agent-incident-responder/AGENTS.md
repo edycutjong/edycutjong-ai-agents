@@ -1,7 +1,7 @@
-# Dependency Updater
+# Incident Responder
 
 ## Overview
-Autonomous agent that discovers outdated dependencies, creates PRs with updates, and verifies tests pass.
+Monitors application logs and metrics, auto-diagnoses issues, and suggests or applies remediation steps.
 
 ## Tech
 - Python 3.10+
@@ -10,14 +10,14 @@ Autonomous agent that discovers outdated dependencies, creates PRs with updates,
 - pytest
 
 ## Features
-- Scan for outdated npm dependencies
-- Scan for outdated pip dependencies
-- Create GitHub PRs for updates
-- Run tests to verify compatibility
-- Group related updates
-- Generate changelog entries
-- Configurable update strategy (major/minor/patch)
-- Rollback on test failure
+- Monitor log files in real-time
+- Detect error patterns and anomalies
+- Auto-diagnose common issues
+- Suggest remediation steps
+- Apply automated fixes when safe
+- Generate incident reports
+- Escalation rules configuration
+- Post-mortem template generation
 
 ## File Structure
 - `agent/` — Agent module

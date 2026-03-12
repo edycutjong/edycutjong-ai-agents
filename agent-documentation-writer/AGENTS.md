@@ -1,7 +1,7 @@
-# Dependency Updater
+# Documentation Writer
 
 ## Overview
-Autonomous agent that discovers outdated dependencies, creates PRs with updates, and verifies tests pass.
+Reads source code and generates comprehensive README files, API documentation, and inline code comments.
 
 ## Tech
 - Python 3.10+
@@ -10,14 +10,14 @@ Autonomous agent that discovers outdated dependencies, creates PRs with updates,
 - pytest
 
 ## Features
-- Scan for outdated npm dependencies
-- Scan for outdated pip dependencies
-- Create GitHub PRs for updates
-- Run tests to verify compatibility
-- Group related updates
-- Generate changelog entries
-- Configurable update strategy (major/minor/patch)
-- Rollback on test failure
+- Parse source code structure
+- Generate README.md from code
+- Generate API reference docs
+- Add inline JSDoc/docstring comments
+- Detect undocumented functions
+- Support for JS, TS, Python
+- Configurable documentation style
+- Update existing docs incrementally
 
 ## File Structure
 - `agent/` — Agent module
