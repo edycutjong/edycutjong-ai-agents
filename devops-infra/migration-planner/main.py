@@ -119,8 +119,6 @@ def main():
 
     except Exception as e:
         console.print(f"[bold red]An error occurred during planning:[/bold red] {e}")
-        # import traceback
-        # traceback.print_exc()
         sys.exit(1)
 
 if __name__ == "__main__":
