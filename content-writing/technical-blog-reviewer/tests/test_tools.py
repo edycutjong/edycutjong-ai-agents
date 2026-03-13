@@ -71,3 +71,29 @@ def test_extract_code_blocks():
     assert len(blocks) == 2
     assert "print('hello')" in blocks[0]
     assert "x = 1" in blocks[1]
+
+def test_is_safe_code_unsafe_attribute_access():
+    code = "().__class__.__bases__[0].__subclasses__()"
+    assert is_safe_code(code) is False
+
+def test_is_safe_code_unsafe_globals():
+    code = "print(globals())"
+    assert is_safe_code(code) is False
+
+def test_execute_python_snippet_no_object():
+    code = "print(object)"
+    result = execute_python_snippet(code)
+    assert result["success"] is False
+    assert "name 'object' is not defined" in result["error"]
+
+def test_execute_python_snippet_no_type():
+    code = "print(type(1))"
+    result = execute_python_snippet(code)
+    assert result["success"] is False
+    assert "name 'type' is not defined" in result["error"]
+
+def test_execute_python_snippet_blocked_reflection():
+    code = "().__class__"
+    result = execute_python_snippet(code)
+    assert result["success"] is False
+    assert "Safety check failed" in result["error"]

@@ -33,7 +33,8 @@ def extract_text_from_url(url: str) -> str:
 def is_safe_code(code: str) -> bool:
     """
     Checks if the Python code snippet is safe to execute via AST analysis.
-    Disallows imports of dangerous modules and calls to dangerous functions.
+    Disallows imports of dangerous modules, calls to dangerous functions,
+    and access to dangerous attributes used for sandbox escapes.
     """
     try:
         tree = ast.parse(code)
@@ -42,6 +43,7 @@ def is_safe_code(code: str) -> bool:
 
     unsafe_modules = {'os', 'sys', 'subprocess', 'shutil', 'socket', 'requests', 'http', 'urllib', 'builtins', 'pickle'}
     unsafe_functions = {'open', 'eval', 'exec', 'compile', 'getattr', 'setattr', 'delattr', 'input', '__import__', 'globals', 'locals'}
+    unsafe_attributes = {'__class__', '__bases__', '__subclasses__', '__mro__', '__globals__', '__builtins__', '__dict__', '__code__', '__closure__', '__doc__', '__name__', '__module__'}
 
     for node in ast.walk(tree):
         # Check imports
@@ -58,8 +60,11 @@ def is_safe_code(code: str) -> bool:
             if isinstance(node.func, ast.Name):
                 if node.func.id in unsafe_functions:
                     return False
-            # Check attribute access calls (e.g. os.system which is blocked by import, but good to cover)
-            # Actually import check is primary defense.
+
+        # Check attribute access (prevents sandbox escapes via reflection)
+        if isinstance(node, ast.Attribute):
+            if node.attr in unsafe_attributes:
+                return False
 
     return True
 
@@ -91,9 +96,9 @@ def execute_python_snippet(code: str, timeout: int = 5) -> Dict[str, Any]:
             'enumerate', 'filter', 'float', 'format', 'frozenset', 'hash',
             'help', 'hex', 'id', 'int', 'isinstance', 'issubclass', 'iter',
             'len', 'list', 'map', 'max', 'memoryview', 'min', 'next',
-            'object', 'oct', 'ord', 'pow', 'print', 'property', 'range',
+            'oct', 'ord', 'pow', 'print', 'property', 'range',
             'repr', 'reversed', 'round', 'set', 'slice', 'sorted',
-            'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip'
+            'staticmethod', 'str', 'sum', 'super', 'tuple', 'vars', 'zip'
         }
 
         # Construct restricted __builtins__
