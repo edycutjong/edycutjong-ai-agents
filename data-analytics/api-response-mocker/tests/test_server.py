@@ -19,7 +19,7 @@ def client(parser):
 def test_mock_server_routes(client):
     response = client.get("/users")
     if response.status_code != 200:
-        print(response.text)
+        print(response.text)  # pragma: no cover
     assert response.status_code == 200
     data = response.json()
     assert isinstance(data, list)
@@ -29,7 +29,7 @@ def test_mock_server_routes(client):
 def test_mock_server_path_params(client):
     response = client.get("/users/123")
     if response.status_code != 200:
-        print(response.text)
+        print(response.text)  # pragma: no cover
     assert response.status_code == 200
     data = response.json()
     assert isinstance(data, dict)
@@ -55,3 +55,33 @@ def test_mock_server_error_simulation(parser):
 
     response = client.get("/users")
     assert response.status_code >= 400
+
+def test_mock_server_update_config(parser):
+    server = MockServer(parser)
+    assert server.latency_ms == 0
+    assert server.error_rate == 0.0
+    server.update_config({'latency_ms': 50, 'error_rate': 0.5})
+    assert server.latency_ms == 50
+    assert server.error_rate == 0.5
+
+def test_mock_server_no_schema():
+    from agent.parser import OpenAPIParser
+    spec = """
+openapi: 3.0.0
+info:
+  title: Test
+  version: 1.0.0
+paths:
+  /empty:
+    get:
+      responses:
+        '200':
+          description: OK
+    """
+    parser = OpenAPIParser(spec)
+    server = MockServer(parser)
+    client = TestClient(server.app)
+
+    response = client.get("/empty")
+    assert response.status_code == 200
+    assert response.json() == {"message": "Success (no schema defined)"}

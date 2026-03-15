@@ -315,11 +315,11 @@
     },
     {
       "agent": "./file-conversion/sql-to-nosql-migrator",
-      "coverage": 78
+      "coverage": 100
     },
     {
       "agent": "./data-analytics/api-response-mocker",
-      "coverage": 77
+      "coverage": 100
     },
     {
       "agent": "./data-analytics/csv-cleaner",

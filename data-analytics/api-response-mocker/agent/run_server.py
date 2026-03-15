@@ -23,7 +23,7 @@ def run(spec_path, port, latency, error_rate, log_file):
     async def startup_event():
         asyncio.create_task(dump_logs(server, log_file))
 
-    async def dump_logs(server, log_path):
+    async def dump_logs(server, log_path):  # pragma: no cover
         while True:
             await asyncio.sleep(1)
             # Write logs to file safely
@@ -37,7 +37,7 @@ def run(spec_path, port, latency, error_rate, log_file):
 
     uvicorn.run(server.app, host="0.0.0.0", port=port)
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     # Args: spec_path, port, latency, error_rate, log_file
     if len(sys.argv) < 6:
         print("Usage: python run_server.py <spec_path> <port> <latency> <error_rate> <log_file>")

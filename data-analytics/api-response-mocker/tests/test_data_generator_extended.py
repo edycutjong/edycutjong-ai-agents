@@ -51,3 +51,24 @@ def test_fallback():
     assert gen.generate_from_schema({}) == {} # Empty schema -> Empty dict or None? implementation returns {}
     # Test implicit object
     assert isinstance(gen.generate_from_schema({'properties': {'a': {'type': 'string'}}}), dict)
+
+def test_generate_implicit_object_empty_properties():
+    gen = DataGenerator()
+    val = gen.generate_from_schema({'properties': {}})
+    assert isinstance(val, dict)
+    assert val == {}
+
+def test_generate_unknown_type_no_properties():
+    gen = DataGenerator()
+    val = gen.generate_from_schema({'type': 'unknown'})
+    assert val is None
+
+def test_generate_username_heuristic():
+    gen = DataGenerator()
+    val = gen.generate_from_schema({'type': 'string'}, field_name='username')
+    assert isinstance(val, str)
+
+def test_generate_user_heuristic():
+    gen = DataGenerator()
+    val = gen.generate_from_schema({'type': 'string'}, field_name='user_id')
+    assert isinstance(val, str)

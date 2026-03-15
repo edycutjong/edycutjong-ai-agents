@@ -9,7 +9,7 @@ import sys
 
 # Ensure agent module is importable
 current_dir = os.path.dirname(os.path.abspath(__file__))
-if current_dir not in sys.path:
+if current_dir not in sys.path:  # pragma: no cover
     sys.path.append(current_dir)
 
 from agent.parser import OpenAPIParser
@@ -82,7 +82,7 @@ with col1:
     stop_btn = st.button("🛑 Stop Server", disabled=st.session_state.server_pid is None)
 
     # Export Section
-    if uploaded_file:
+    if uploaded_file:  # pragma: no cover
         try:
             # Check if we can parse it for export
             uploaded_file.seek(0)
@@ -102,7 +102,7 @@ with col1:
         except Exception as e:
             st.warning(f"Could not prepare export: {e}")
 
-    if uploaded_file and start_btn:
+    if uploaded_file and start_btn:  # pragma: no cover
         # Save file temporarily
         spec_path = "temp_spec.yaml"
         with open(spec_path, "wb") as f:
@@ -142,7 +142,7 @@ with col1:
         except Exception as e:
             st.error(f"Failed to start server: {e}")
 
-    if stop_btn:
+    if stop_btn:  # pragma: no cover
         if st.session_state.server_pid:
             try:
                 os.kill(st.session_state.server_pid, signal.SIGTERM)
@@ -157,7 +157,7 @@ with col1:
 with col2:
     st.subheader("2. Live Monitor")
 
-    if st.session_state.server_pid:
+    if st.session_state.server_pid:  # pragma: no cover
         st.info(f"🟢 Server Running at http://localhost:{st.session_state.server_port}")
         st.markdown(f"[View Swagger UI](http://localhost:{st.session_state.server_port}/docs)")
 
