@@ -78,3 +78,20 @@ def test_conventional_types():
 def test_breaking_keyword():
     c = parse_commit("abc1234 feat: something BREAKING CHANGE here")
     assert c.is_breaking
+
+
+def test_parse_commit_no_hash():
+    """Cover line 36: commit message without hash (single word)."""
+    from agent.analyzer import parse_commit
+    c = parse_commit("fixedsomething")
+    assert c.message == "fixedsomething"
+    assert c.hash == ""
+
+def test_format_with_issues():
+    """Cover lines 90-91: format with issues."""
+    from agent.analyzer import analyze_commits, parse_commits, format_analysis_markdown
+    text = "abc x"  # Short, non-conventional
+    commits = parse_commits(text)
+    a = analyze_commits(commits)
+    md = format_analysis_markdown(a)
+    assert "Issues" in md

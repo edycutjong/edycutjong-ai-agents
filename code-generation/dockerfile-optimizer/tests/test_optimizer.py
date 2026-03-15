@@ -103,3 +103,20 @@ def test_score_bounded():
     for df in [GOOD_DOCKERFILE, BAD_DOCKERFILE, ""]:
         r = analyze_dockerfile(df)
         assert 0 <= r.score <= 100
+
+
+def test_rule_exception_handling():
+    """Cover lines 83-84: exception during rule check."""
+    from agent.optimizer import analyze_dockerfile
+    # The RULES lambda might throw on certain inputs; use a dockerfile with edge-case
+    # that causes a rule's lambda to fail gracefully due to exception handling
+    # Inject a rule that always raises, then verify no crash
+    import agent.optimizer as opt
+    original_rules = opt.RULES[:]
+    opt.RULES.append({"id": "TEST", "severity": "info", "pattern": None, "check": lambda line: 1/0, "message": "test", "fix": ""})
+    try:
+        result = analyze_dockerfile("FROM python:3.9\nRUN echo hello")
+        assert result is not None
+        assert not any(i.rule_id == "TEST" for i in result.issues)
+    finally:
+        opt.RULES[:] = original_rules

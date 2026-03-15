@@ -154,3 +154,17 @@ def test_run_with_commit_no_changes(mock_dependencies):
 
     assert result.exit_code == 0
     assert "No changes to commit" in result.stdout
+
+
+def test_main_module_entry_point():
+    """Cover main.py line 109: if __name__ == '__main__': app()."""
+    import runpy
+    with patch('main.FileScanner') as mock_scanner, \
+         patch('main.DocGenerator'), \
+         patch('main.GitHandler'):
+        mock_scanner.return_value.get_source_files.return_value = []
+        with patch.dict('sys.modules', {'__main__': None}):
+            try:
+                runpy.run_module('main', run_name='__main__', alter_sys=True)
+            except SystemExit:
+                pass  # Typer may call sys.exit

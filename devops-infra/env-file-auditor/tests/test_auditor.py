@@ -87,3 +87,28 @@ def test_to_dict():
     r = audit_env(SAMPLE)
     d = r.to_dict()
     assert "score" in d and "total" in d
+
+
+def test_env_entry_to_dict():
+    """Cover line 14: EnvEntry.to_dict."""
+    from agent.auditor import EnvEntry
+    e = EnvEntry(key="API_KEY", value="secret", line=1, is_sensitive=True)
+    d = e.to_dict()
+    assert d["value"] == "****"
+    e2 = EnvEntry(key="PORT", value="3000", line=2, is_sensitive=False)
+    assert e2.to_dict()["value"] == "3000"
+
+def test_parse_env_file(tmp_path):
+    """Cover line 32: parse_env_file."""
+    from agent.auditor import parse_env_file
+    f = tmp_path / ".env"
+    f.write_text("KEY=value\nSECRET=hidden")
+    result = parse_env_file(str(f))
+    assert len(result) >= 1
+
+def test_compare_result_to_dict():
+    """Cover line 72: CompareResult.to_dict."""
+    from agent.auditor import compare_envs
+    r = compare_envs("A=1\nB=2", "A=3\nC=4")
+    d = r.to_dict()
+    assert "different_values" in d or "only_in_a" in d

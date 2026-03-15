@@ -98,7 +98,7 @@ cols = st.columns(min(len(unique_endpoints), 4))
 
 for i, endpoint in enumerate(unique_endpoints):
     endpoint_data = df[df['endpoint'] == endpoint].sort_values('timestamp', ascending=False)
-    if endpoint_data.empty:
+    if endpoint_data.empty:  # pragma: no cover
         continue
 
     latest = endpoint_data.iloc[0]

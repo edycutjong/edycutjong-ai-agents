@@ -72,3 +72,18 @@ def test_main_file_read_exception(tmp_path):
 
          # When open fails, the string path is used as-is
          mock_instance.generate_proposal.assert_called_with(str(requirements_file))
+
+
+def test_main_module_entry_point():
+    """Cover main.py line 55: if __name__ == '__main__': main()."""
+    with patch('sys.argv', ['main.py', 'test requirements']), \
+         patch('main.ProposalGenerator') as MockGen, \
+         patch('main.create_pdf'), \
+         patch('main.create_markdown'):
+        mock_instance = MockGen.return_value
+        mock_instance.generate_proposal.return_value = Mock(project_title="Test")
+
+        import runpy
+        with patch.dict('sys.modules', {'__main__': None}):
+            # Execute the module as __main__
+            runpy.run_module('main', run_name='__main__', alter_sys=True)

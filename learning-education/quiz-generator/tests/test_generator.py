@@ -85,3 +85,10 @@ def test_bank_has_topics():
     assert "python" in QUESTION_BANK
     assert "javascript" in QUESTION_BANK
     assert "general-cs" in QUESTION_BANK
+
+
+def test_generate_quiz_with_difficulty():
+    """Cover lines 65-66: difficulty filter."""
+    from agent.generator import generate_quiz
+    quiz = generate_quiz("python", count=3, difficulty="medium")
+    assert len(quiz.questions) > 0

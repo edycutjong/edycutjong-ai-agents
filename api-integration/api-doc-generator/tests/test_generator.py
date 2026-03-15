@@ -126,3 +126,21 @@ def test_empty_code():
     assert len(parse_flask_routes("")) == 0
     assert len(parse_express_routes("")) == 0
     assert len(parse_fastapi_routes("")) == 0
+
+
+def test_endpoint_to_dict_optionals():
+    """Cover lines 17-23: optional fields in to_dict."""
+    from agent.generator import Endpoint
+    ep = Endpoint(method="POST", path="/api", summary="Create", description="Create resource",
+                  parameters=[{"name": "id"}], request_body={"content": {}},
+                  responses={"201": {"description": "Created"}}, tags=["api"])
+    d = ep.to_dict()
+    assert d["description"] == "Create resource"
+    assert d["parameters"] == [{"name": "id"}]
+    assert "requestBody" in d
+    assert d["tags"] == ["api"]
+
+def test_detect_framework_fallback():
+    """Cover line 75: unknown code defaults to flask."""
+    from agent.generator import detect_framework
+    assert detect_framework("print('hello')") == "flask"

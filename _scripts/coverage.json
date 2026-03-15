@@ -1,196 +1,929 @@
 {
-  "ai-ml-ops/ai-hallucination-detector": 54,
-  "ai-ml-ops/embedding-explorer": 44,
-  "ai-ml-ops/fine-tune-dataset-curator": 79,
-  "ai-ml-ops/llm-cost-calculator": 70,
-  "ai-ml-ops/model-benchmark-runner": 100,
-  "ai-ml-ops/prompt-optimizer": 83,
-  "ai-ml-ops/rag-evaluator": 61,
-  "ai-ml-ops/training-data-generator": 100,
-  "api-integration/api-changelog-differ": 100,
-  "api-integration/api-doc-generator": 100,
-  "api-integration/api-rate-limit-tester": 71,
-  "api-integration/graphql-schema-analyzer": 100,
-  "api-integration/oauth-flow-debugger": 48,
-  "api-integration/postman-to-code-converter": 83,
-  "api-integration/rest-to-graphql-converter": 72,
-  "api-integration/webhook-tester": 61,
-  "business-productivity/competitive-analysis-agent": 100,
-  "business-productivity/contract-analyzer": 100,
-  "business-productivity/expense-categorizer": 73,
-  "business-productivity/invoice-generator-agent": 100,
-  "business-productivity/kpi-dashboard-generator": 51,
-  "business-productivity/meeting-notes-summarizer": 40,
-  "business-productivity/meeting-scheduler-agent": 75,
-  "business-productivity/okr-tracker": 100,
-  "business-productivity/receipt-categorizer-agent": 48,
-  "business-productivity/resume-tailor-agent": 41,
-  "business-productivity/sla-monitor": 100,
-  "business-productivity/standup-report-generator": 100,
-  "business-productivity/timesheet-analyzer": 100,
-  "code-generation/boilerplate-generator": 83,
-  "code-generation/config-file-generator": 74,
-  "code-generation/crud-api-generator": 100,
-  "code-generation/dockerfile-optimizer": 100,
-  "code-generation/github-actions-writer": 100,
-  "code-generation/migration-file-writer": 78,
-  "code-generation/monorepo-setup-agent": 99,
-  "code-generation/type-generator": 100,
-  "code-quality/bug-report-triage-agent": 46,
-  "code-quality/bug-triager": 48,
-  "code-quality/bug-triager-auto": 57,
-  "code-quality/code-review-agent": 41,
-  "code-quality/code-review-automator": 22,
-  "code-quality/code-reviewer": 66,
-  "code-quality/dependency-update-agent": 45,
-  "code-quality/regex-tester": 63,
-  "code-quality/test-generator": 68,
-  "content-writing/blog-post-writer": 46,
-  "content-writing/copy-editor-agent": 53,
-  "content-writing/email-draft-agent": 48,
-  "content-writing/html-to-markdown": 67,
-  "content-writing/i18n-translator-agent": 46,
-  "content-writing/lorem-ipsum-generator": 70,
-  "content-writing/markdown-linter": 80,
-  "content-writing/newsletter-curator": 74,
-  "content-writing/press-release-writer": 60,
-  "content-writing/proposal-writer": 100,
-  "content-writing/readme-generator": 83,
-  "content-writing/slug-generator": 81,
-  "content-writing/sop-generator": 78,
-  "content-writing/string-similarity": 71,
-  "content-writing/technical-blog-reviewer": 60,
-  "content-writing/text-case-converter": 71,
-  "content-writing/text-diff": 74,
-  "content-writing/text-summarizer": 83,
-  "content-writing/tutorial-generator": 55,
-  "content-writing/tweet-thread-writer": 6,
-  "content-writing/word-counter": 82,
-  "data-analytics/api-response-mocker": 77,
-  "data-analytics/api-response-validator": 83,
-  "data-analytics/base64-encoder": 75,
-  "data-analytics/chart-generator-agent": 71,
-  "data-analytics/code-complexity-analyzer": 75,
-  "data-analytics/csv-analyzer": 100,
-  "data-analytics/csv-cleaner": 77,
-  "data-analytics/csv-deduplicator": 100,
-  "data-analytics/data-faker-agent": 100,
-  "data-analytics/data-pipeline-validator": 44,
-  "data-analytics/database-diagram-generator": 6,
-  "data-analytics/ip-geolocation-lookup": 83,
-  "data-analytics/json-formatter": 74,
-  "data-analytics/json-schema-generator": 100,
-  "data-analytics/log-to-metrics-converter": 58,
-  "data-analytics/math-expression-parser": 69,
-  "data-analytics/regex-builder": 80,
-  "data-analytics/regex-tester": 83,
-  "data-analytics/spreadsheet-formula-writer": 70,
-  "data-analytics/sql-formatter": 69,
-  "data-analytics/sql-query-optimizer": 100,
-  "data-analytics/timestamp-converter": 75,
-  "data-analytics/unit-converter": 76,
-  "data-analytics/url-shortener": 65,
-  "data-analytics/uuid-generator": 70,
-  "data-analytics/yaml-validator": 71,
-  "design-frontend/accessibility-auditor": 100,
-  "design-frontend/ascii-art-generator": 64,
-  "design-frontend/color-converter": 69,
-  "design-frontend/color-palette-generator": 100,
-  "design-frontend/component-documenter": 98,
-  "design-frontend/design-token-extractor": 67,
-  "design-frontend/icon-set-generator": 66,
-  "design-frontend/image-alt-text-writer": 80,
-  "design-frontend/responsive-design-tester": 6,
-  "design-frontend/ui-copy-reviewer": 79,
-  "devops-infra/changelog-generator": 82,
-  "devops-infra/ci-pipeline-optimizer": 71,
-  "devops-infra/config-file-merger": 78,
-  "devops-infra/cron-expression-parser": 100,
-  "devops-infra/cron-parser": 68,
-  "devops-infra/dependency-checker": 69,
-  "devops-infra/dependency-updater": 100,
-  "devops-infra/docker-compose-generator": 82,
-  "devops-infra/dockerfile-generator": 82,
-  "devops-infra/env-file-auditor": 100,
-  "devops-infra/env-validator": 81,
-  "devops-infra/git-commit-analyzer": 100,
-  "devops-infra/gitignore-generator": 76,
-  "devops-infra/incident-responder": 56,
-  "devops-infra/incident-responder/agent-incident-responder": 60,
-  "devops-infra/infra-cost-analyzer": 64,
-  "devops-infra/log-analyzer": 100,
-  "devops-infra/migration-planner": 68,
-  "devops-infra/release-notes-generator": 100,
-  "devops-infra/semver-parser": 79,
-  "devops-infra/terraform-reviewer": 55,
-  "devops-infra/uptime-monitor-agent": 82,
-  "documentation/changelog-writer": 99,
-  "documentation/changelog-writer-agent": 53,
-  "documentation/doc-writer": 66,
-  "documentation/docs-qa-agent": 51,
-  "documentation/documentation-writer-bot": 100,
-  "documentation/license-generator": 58,
-  "documentation/readme-generator": 67,
-  "file-conversion/csv-to-api-agent": 66,
-  "file-conversion/figma-to-css-agent": 60,
-  "file-conversion/file-organizer": 78,
-  "file-conversion/html-to-markdown": 100,
-  "file-conversion/html-to-markdown-converter": 57,
-  "file-conversion/json-yaml-converter": 75,
-  "file-conversion/markdown-to-pdf-agent": 46,
-  "file-conversion/sql-to-nosql-migrator": 78,
-  "file-conversion/swagger-to-typescript": 55,
-  "file-conversion/video-to-transcript": 43,
-  "file-conversion/yaml-json-converter": 71,
-  "fixers/api-breaking-change-detect": 69,
-  "fixers/code-style-enforcer-bot": 61,
-  "fixers/css-dead-code-remover": 68,
-  "fixers/dependency-bloat-reducer": 60,
-  "fixers/deprecation-hunter": 39,
-  "fixers/doc-drift-fixer": 61,
-  "fixers/i18n-missing-key-finder": 64,
-  "fixers/log-noise-reducer": 45,
-  "fixers/unused-asset-cleaner": 56,
-  "fixers/vuln-auto-patcher": 38,
-  "learning-education/code-explainer": 100,
-  "learning-education/flashcard-generator": 100,
-  "learning-education/interview-prep-agent": 59,
-  "learning-education/learning-path-planner": 51,
-  "learning-education/paper-summarizer": 80,
-  "learning-education/quiz-generator": 100,
-  "misc/ai-frameworks/autogen-agent": 2,
-  "misc/ai-frameworks/crewai-agent": 2,
-  "misc/ai-frameworks/langchain-agent": 1,
-  "misc/communication/email-drafter": 56,
-  "misc/communication/email-triage-assistant": 45,
-  "misc/content-marketing/resume-tailor-agent": 43,
-  "misc/content-marketing/social-media-manager-agent": 43,
-  "misc/meetings/meeting-notes-organizer": 70,
-  "misc/meetings/meeting-summarizer": 100,
-  "misc/research-data/data-analyst": 46,
-  "misc/research-data/research-summarizer-agent": 63,
-  "misc/research-data/sql-query-builder-agent": 43,
-  "misc/testing-qa/qa-test-generator": 45,
-  "misc/testing-qa/test-generator": 77,
-  "personal-lifestyle/gift-recommendation-agent": 50,
-  "personal-lifestyle/habit-coach": 59,
-  "personal-lifestyle/journaling-prompt-agent": 63,
-  "personal-lifestyle/recipe-planner": 71,
-  "personal-lifestyle/travel-itinerary-agent": 100,
-  "personal-lifestyle/workout-planner": 75,
-  "security-privacy/cors-config-validator": 100,
-  "security-privacy/dependency-vulnerability-monitor": 76,
-  "security-privacy/file-hash-generator": 64,
-  "security-privacy/hash-generator": 75,
-  "security-privacy/http-header-analyzer": 80,
-  "security-privacy/ip-lookup": 61,
-  "security-privacy/jwt-decoder": 81,
-  "security-privacy/license-compliance-checker": 100,
-  "security-privacy/password-strength-analyzer": 100,
-  "security-privacy/password-strength-checker": 100,
-  "security-privacy/permission-auditor": 65,
-  "security-privacy/phishing-email-detector": 100,
-  "security-privacy/port-scanner": 79,
-  "security-privacy/privacy-policy-generator": 70,
-  "security-privacy/secret-scanner": 100
+  "timestamp": "2026-03-15T12:45:38Z",
+  "summary": {
+    "total_agents": 230,
+    "agents_with_coverage": 229,
+    "average_coverage": 71,
+    "passed": 229,
+    "failed": 0,
+    "skipped": 1
+  },
+  "agents": [
+    {
+      "agent": "./ai-ml-ops/model-benchmark-runner",
+      "coverage": 100
+    },
+    {
+      "agent": "./ai-ml-ops/prompt-optimizer",
+      "coverage": 100
+    },
+    {
+      "agent": "./ai-ml-ops/training-data-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./api-integration/api-changelog-differ",
+      "coverage": 100
+    },
+    {
+      "agent": "./api-integration/api-doc-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./api-integration/graphql-schema-analyzer",
+      "coverage": 100
+    },
+    {
+      "agent": "./api-integration/postman-to-code-converter",
+      "coverage": 100
+    },
+    {
+      "agent": "./business-productivity/competitive-analysis-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./business-productivity/contract-analyzer",
+      "coverage": 100
+    },
+    {
+      "agent": "./business-productivity/invoice-generator-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./business-productivity/okr-tracker",
+      "coverage": 100
+    },
+    {
+      "agent": "./business-productivity/sla-monitor",
+      "coverage": 100
+    },
+    {
+      "agent": "./business-productivity/standup-report-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./business-productivity/timesheet-analyzer",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-generation/boilerplate-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-generation/crud-api-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-generation/dockerfile-optimizer",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-generation/github-actions-writer",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-generation/monorepo-setup-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-generation/type-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/markdown-linter",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/proposal-writer",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/readme-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/slug-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/text-summarizer",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/word-counter",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/api-response-validator",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/csv-analyzer",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/csv-deduplicator",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/data-faker-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/ip-geolocation-lookup",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/json-schema-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/regex-builder",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/regex-tester",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/sql-query-optimizer",
+      "coverage": 100
+    },
+    {
+      "agent": "./design-frontend/accessibility-auditor",
+      "coverage": 100
+    },
+    {
+      "agent": "./design-frontend/color-palette-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/changelog-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/cron-expression-parser",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/dependency-updater",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/docker-compose-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/dockerfile-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/env-file-auditor",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/env-validator",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/git-commit-analyzer",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/log-analyzer",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/release-notes-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/uptime-monitor-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./documentation/changelog-writer",
+      "coverage": 100
+    },
+    {
+      "agent": "./documentation/documentation-writer-bot",
+      "coverage": 100
+    },
+    {
+      "agent": "./file-conversion/html-to-markdown",
+      "coverage": 100
+    },
+    {
+      "agent": "./learning-education/code-explainer",
+      "coverage": 100
+    },
+    {
+      "agent": "./learning-education/flashcard-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./learning-education/quiz-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./misc/meetings/meeting-summarizer",
+      "coverage": 100
+    },
+    {
+      "agent": "./personal-lifestyle/travel-itinerary-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./security-privacy/cors-config-validator",
+      "coverage": 100
+    },
+    {
+      "agent": "./security-privacy/jwt-decoder",
+      "coverage": 100
+    },
+    {
+      "agent": "./security-privacy/license-compliance-checker",
+      "coverage": 100
+    },
+    {
+      "agent": "./security-privacy/password-strength-analyzer",
+      "coverage": 100
+    },
+    {
+      "agent": "./security-privacy/password-strength-checker",
+      "coverage": 100
+    },
+    {
+      "agent": "./security-privacy/phishing-email-detector",
+      "coverage": 100
+    },
+    {
+      "agent": "./security-privacy/secret-scanner",
+      "coverage": 100
+    },
+    {
+      "agent": "./design-frontend/component-documenter",
+      "coverage": 99
+    },
+    {
+      "agent": "./design-frontend/image-alt-text-writer",
+      "coverage": 80
+    },
+    {
+      "agent": "./learning-education/paper-summarizer",
+      "coverage": 80
+    },
+    {
+      "agent": "./security-privacy/http-header-analyzer",
+      "coverage": 80
+    },
+    {
+      "agent": "./ai-ml-ops/fine-tune-dataset-curator",
+      "coverage": 79
+    },
+    {
+      "agent": "./design-frontend/ui-copy-reviewer",
+      "coverage": 79
+    },
+    {
+      "agent": "./devops-infra/semver-parser",
+      "coverage": 79
+    },
+    {
+      "agent": "./security-privacy/port-scanner",
+      "coverage": 79
+    },
+    {
+      "agent": "./code-quality/dead-code-hunter",
+      "coverage": 79
+    },
+    {
+      "agent": "./code-generation/migration-file-writer",
+      "coverage": 78
+    },
+    {
+      "agent": "./content-writing/sop-generator",
+      "coverage": 78
+    },
+    {
+      "agent": "./devops-infra/config-file-merger",
+      "coverage": 78
+    },
+    {
+      "agent": "./file-conversion/file-organizer",
+      "coverage": 78
+    },
+    {
+      "agent": "./file-conversion/sql-to-nosql-migrator",
+      "coverage": 78
+    },
+    {
+      "agent": "./data-analytics/api-response-mocker",
+      "coverage": 77
+    },
+    {
+      "agent": "./data-analytics/csv-cleaner",
+      "coverage": 77
+    },
+    {
+      "agent": "./misc/testing-qa/test-generator",
+      "coverage": 77
+    },
+    {
+      "agent": "./code-quality/agent-code-smell-detector",
+      "coverage": 77
+    },
+    {
+      "agent": "./code-quality/ai-code-review-agent",
+      "coverage": 77
+    },
+    {
+      "agent": "./data-analytics/unit-converter",
+      "coverage": 76
+    },
+    {
+      "agent": "./devops-infra/gitignore-generator",
+      "coverage": 76
+    },
+    {
+      "agent": "./security-privacy/dependency-vulnerability-monitor",
+      "coverage": 76
+    },
+    {
+      "agent": "./code-quality/test-generation-agent",
+      "coverage": 76
+    },
+    {
+      "agent": "./business-productivity/meeting-scheduler-agent",
+      "coverage": 75
+    },
+    {
+      "agent": "./data-analytics/base64-encoder",
+      "coverage": 75
+    },
+    {
+      "agent": "./data-analytics/code-complexity-analyzer",
+      "coverage": 75
+    },
+    {
+      "agent": "./data-analytics/timestamp-converter",
+      "coverage": 75
+    },
+    {
+      "agent": "./file-conversion/json-yaml-converter",
+      "coverage": 75
+    },
+    {
+      "agent": "./personal-lifestyle/workout-planner",
+      "coverage": 75
+    },
+    {
+      "agent": "./security-privacy/hash-generator",
+      "coverage": 75
+    },
+    {
+      "agent": "./code-quality/database-migration-reviewer",
+      "coverage": 75
+    },
+    {
+      "agent": "./code-quality/tech-debt-scorer",
+      "coverage": 75
+    },
+    {
+      "agent": "./content-writing/agent-blog-outline-gen",
+      "coverage": 75
+    },
+    {
+      "agent": "./content-writing/seo-auditor",
+      "coverage": 75
+    },
+    {
+      "agent": "./code-generation/config-file-generator",
+      "coverage": 74
+    },
+    {
+      "agent": "./content-writing/newsletter-curator",
+      "coverage": 74
+    },
+    {
+      "agent": "./content-writing/text-diff",
+      "coverage": 74
+    },
+    {
+      "agent": "./data-analytics/json-formatter",
+      "coverage": 74
+    },
+    {
+      "agent": "./developer/agent-changelog-writer",
+      "coverage": 74
+    },
+    {
+      "agent": "./productivity/agent-email-classifier",
+      "coverage": 74
+    },
+    {
+      "agent": "./productivity/agent-meeting-scheduler",
+      "coverage": 74
+    },
+    {
+      "agent": "./security-privacy/security-audit-agent",
+      "coverage": 74
+    },
+    {
+      "agent": "./business-productivity/expense-categorizer",
+      "coverage": 73
+    },
+    {
+      "agent": "./api-integration/rest-to-graphql-converter",
+      "coverage": 72
+    },
+    {
+      "agent": "./code-quality/commit-message-linter",
+      "coverage": 72
+    },
+    {
+      "agent": "./developer/agent-migration-checker",
+      "coverage": 72
+    },
+    {
+      "agent": "./api-integration/api-rate-limit-tester",
+      "coverage": 71
+    },
+    {
+      "agent": "./content-writing/string-similarity",
+      "coverage": 71
+    },
+    {
+      "agent": "./content-writing/text-case-converter",
+      "coverage": 71
+    },
+    {
+      "agent": "./data-analytics/chart-generator-agent",
+      "coverage": 71
+    },
+    {
+      "agent": "./data-analytics/yaml-validator",
+      "coverage": 71
+    },
+    {
+      "agent": "./devops-infra/ci-pipeline-optimizer",
+      "coverage": 71
+    },
+    {
+      "agent": "./file-conversion/yaml-json-converter",
+      "coverage": 71
+    },
+    {
+      "agent": "./personal-lifestyle/recipe-planner",
+      "coverage": 71
+    },
+    {
+      "agent": "./ai-ml-ops/llm-cost-calculator",
+      "coverage": 70
+    },
+    {
+      "agent": "./content-writing/lorem-ipsum-generator",
+      "coverage": 70
+    },
+    {
+      "agent": "./data-analytics/spreadsheet-formula-writer",
+      "coverage": 70
+    },
+    {
+      "agent": "./data-analytics/uuid-generator",
+      "coverage": 70
+    },
+    {
+      "agent": "./misc/meetings/meeting-notes-organizer",
+      "coverage": 70
+    },
+    {
+      "agent": "./security-privacy/privacy-policy-generator",
+      "coverage": 70
+    },
+    {
+      "agent": "./code-quality/pr-description-writer",
+      "coverage": 70
+    },
+    {
+      "agent": "./data-analytics/math-expression-parser",
+      "coverage": 69
+    },
+    {
+      "agent": "./data-analytics/sql-formatter",
+      "coverage": 69
+    },
+    {
+      "agent": "./design-frontend/color-converter",
+      "coverage": 69
+    },
+    {
+      "agent": "./devops-infra/dependency-checker",
+      "coverage": 69
+    },
+    {
+      "agent": "./fixers/api-breaking-change-detect",
+      "coverage": 69
+    },
+    {
+      "agent": "./devops-infra/migration-agent",
+      "coverage": 69
+    },
+    {
+      "agent": "./code-quality/test-generator",
+      "coverage": 68
+    },
+    {
+      "agent": "./devops-infra/cron-parser",
+      "coverage": 68
+    },
+    {
+      "agent": "./devops-infra/migration-planner",
+      "coverage": 68
+    },
+    {
+      "agent": "./fixers/css-dead-code-remover",
+      "coverage": 68
+    },
+    {
+      "agent": "./developer/agent-issue-labeler",
+      "coverage": 68
+    },
+    {
+      "agent": "./content-writing/html-to-markdown",
+      "coverage": 67
+    },
+    {
+      "agent": "./design-frontend/design-token-extractor",
+      "coverage": 67
+    },
+    {
+      "agent": "./documentation/readme-generator",
+      "coverage": 67
+    },
+    {
+      "agent": "./code-quality/code-reviewer",
+      "coverage": 66
+    },
+    {
+      "agent": "./design-frontend/icon-set-generator",
+      "coverage": 66
+    },
+    {
+      "agent": "./documentation/doc-writer",
+      "coverage": 66
+    },
+    {
+      "agent": "./file-conversion/csv-to-api-agent",
+      "coverage": 66
+    },
+    {
+      "agent": "./developer/agent-pr-reviewer",
+      "coverage": 66
+    },
+    {
+      "agent": "./data-analytics/url-shortener",
+      "coverage": 65
+    },
+    {
+      "agent": "./security-privacy/permission-auditor",
+      "coverage": 65
+    },
+    {
+      "agent": "./developer/agent-test-writer",
+      "coverage": 65
+    },
+    {
+      "agent": "./design-frontend/ascii-art-generator",
+      "coverage": 64
+    },
+    {
+      "agent": "./devops-infra/infra-cost-analyzer",
+      "coverage": 64
+    },
+    {
+      "agent": "./fixers/i18n-missing-key-finder",
+      "coverage": 64
+    },
+    {
+      "agent": "./security-privacy/file-hash-generator",
+      "coverage": 64
+    },
+    {
+      "agent": "./code-quality/regex-tester",
+      "coverage": 63
+    },
+    {
+      "agent": "./misc/research-data/research-summarizer-agent",
+      "coverage": 63
+    },
+    {
+      "agent": "./personal-lifestyle/journaling-prompt-agent",
+      "coverage": 63
+    },
+    {
+      "agent": "./code-quality/api-contract-validator",
+      "coverage": 62
+    },
+    {
+      "agent": "./ai-ml-ops/rag-evaluator",
+      "coverage": 61
+    },
+    {
+      "agent": "./api-integration/webhook-tester",
+      "coverage": 61
+    },
+    {
+      "agent": "./fixers/code-style-enforcer-bot",
+      "coverage": 61
+    },
+    {
+      "agent": "./fixers/doc-drift-fixer",
+      "coverage": 61
+    },
+    {
+      "agent": "./security-privacy/ip-lookup",
+      "coverage": 61
+    },
+    {
+      "agent": "./code-quality/test-coverage-gap-finder",
+      "coverage": 61
+    },
+    {
+      "agent": "./content-writing/press-release-writer",
+      "coverage": 60
+    },
+    {
+      "agent": "./content-writing/technical-blog-reviewer",
+      "coverage": 60
+    },
+    {
+      "agent": "./devops-infra/incident-responder/agent-incident-responder",
+      "coverage": 60
+    },
+    {
+      "agent": "./file-conversion/figma-to-css-agent",
+      "coverage": 60
+    },
+    {
+      "agent": "./fixers/dependency-bloat-reducer",
+      "coverage": 60
+    },
+    {
+      "agent": "./learning-education/interview-prep-agent",
+      "coverage": 59
+    },
+    {
+      "agent": "./personal-lifestyle/habit-coach",
+      "coverage": 59
+    },
+    {
+      "agent": "./data-analytics/log-to-metrics-converter",
+      "coverage": 58
+    },
+    {
+      "agent": "./documentation/license-generator",
+      "coverage": 58
+    },
+    {
+      "agent": "./data-analytics/research-agent",
+      "coverage": 58
+    },
+    {
+      "agent": "./code-quality/bug-triager-auto",
+      "coverage": 57
+    },
+    {
+      "agent": "./file-conversion/html-to-markdown-converter",
+      "coverage": 57
+    },
+    {
+      "agent": "./devops-infra/incident-responder",
+      "coverage": 56
+    },
+    {
+      "agent": "./fixers/unused-asset-cleaner",
+      "coverage": 56
+    },
+    {
+      "agent": "./misc/communication/email-drafter",
+      "coverage": 56
+    },
+    {
+      "agent": "./devops-infra/performance-profiler",
+      "coverage": 56
+    },
+    {
+      "agent": "./content-writing/tutorial-generator",
+      "coverage": 55
+    },
+    {
+      "agent": "./devops-infra/terraform-reviewer",
+      "coverage": 55
+    },
+    {
+      "agent": "./file-conversion/swagger-to-typescript",
+      "coverage": 55
+    },
+    {
+      "agent": "./ai-ml-ops/ai-hallucination-detector",
+      "coverage": 54
+    },
+    {
+      "agent": "./content-writing/copy-editor-agent",
+      "coverage": 53
+    },
+    {
+      "agent": "./documentation/changelog-writer-agent",
+      "coverage": 53
+    },
+    {
+      "agent": "./developer/agent-code-reviewer",
+      "coverage": 52
+    },
+    {
+      "agent": "./business-productivity/kpi-dashboard-generator",
+      "coverage": 51
+    },
+    {
+      "agent": "./documentation/docs-qa-agent",
+      "coverage": 51
+    },
+    {
+      "agent": "./learning-education/learning-path-planner",
+      "coverage": 51
+    },
+    {
+      "agent": "./developer/agent-doc-generator",
+      "coverage": 51
+    },
+    {
+      "agent": "./developer/agent-license-auditor",
+      "coverage": 51
+    },
+    {
+      "agent": "./personal-lifestyle/gift-recommendation-agent",
+      "coverage": 50
+    },
+    {
+      "agent": "./code-quality/pr-description-agent",
+      "coverage": 50
+    },
+    {
+      "agent": "./api-integration/oauth-flow-debugger",
+      "coverage": 48
+    },
+    {
+      "agent": "./business-productivity/receipt-categorizer-agent",
+      "coverage": 48
+    },
+    {
+      "agent": "./code-quality/bug-triager",
+      "coverage": 48
+    },
+    {
+      "agent": "./content-writing/email-draft-agent",
+      "coverage": 48
+    },
+    {
+      "agent": "./code-quality/bug-report-triage-agent",
+      "coverage": 46
+    },
+    {
+      "agent": "./content-writing/blog-post-writer",
+      "coverage": 46
+    },
+    {
+      "agent": "./content-writing/i18n-translator-agent",
+      "coverage": 46
+    },
+    {
+      "agent": "./file-conversion/markdown-to-pdf-agent",
+      "coverage": 46
+    },
+    {
+      "agent": "./misc/research-data/data-analyst",
+      "coverage": 46
+    },
+    {
+      "agent": "./code-quality/dependency-update-agent",
+      "coverage": 45
+    },
+    {
+      "agent": "./fixers/log-noise-reducer",
+      "coverage": 45
+    },
+    {
+      "agent": "./misc/communication/email-triage-assistant",
+      "coverage": 45
+    },
+    {
+      "agent": "./misc/testing-qa/qa-test-generator",
+      "coverage": 45
+    },
+    {
+      "agent": "./ai-ml-ops/embedding-explorer",
+      "coverage": 44
+    },
+    {
+      "agent": "./data-analytics/data-pipeline-validator",
+      "coverage": 44
+    },
+    {
+      "agent": "./developer/agent-dependency-updater",
+      "coverage": 44
+    },
+    {
+      "agent": "./file-conversion/video-to-transcript",
+      "coverage": 43
+    },
+    {
+      "agent": "./misc/content-marketing/resume-tailor-agent",
+      "coverage": 43
+    },
+    {
+      "agent": "./misc/content-marketing/social-media-manager-agent",
+      "coverage": 43
+    },
+    {
+      "agent": "./misc/research-data/sql-query-builder-agent",
+      "coverage": 43
+    },
+    {
+      "agent": "./devops-infra/api-monitor",
+      "coverage": 43
+    },
+    {
+      "agent": "./business-productivity/resume-tailor-agent",
+      "coverage": 41
+    },
+    {
+      "agent": "./code-quality/code-review-agent",
+      "coverage": 41
+    },
+    {
+      "agent": "./business-productivity/meeting-notes-summarizer",
+      "coverage": 40
+    },
+    {
+      "agent": "./fixers/deprecation-hunter",
+      "coverage": 39
+    },
+    {
+      "agent": "./fixers/vuln-auto-patcher",
+      "coverage": 38
+    },
+    {
+      "agent": "./developer/agent-api-monitor",
+      "coverage": 36
+    },
+    {
+      "agent": "./documentation/agent-api-doc-writer",
+      "coverage": 36
+    },
+    {
+      "agent": "./documentation/documentation-agent",
+      "coverage": 36
+    },
+    {
+      "agent": "./developer/agent-readme-keeper",
+      "coverage": 33
+    },
+    {
+      "agent": "./devops-infra/git-workflow-agent",
+      "coverage": 33
+    },
+    {
+      "agent": "./code-quality/refactoring-agent",
+      "coverage": 32
+    },
+    {
+      "agent": "./code-quality/code-review-automator",
+      "coverage": 22
+    },
+    {
+      "agent": "./content-writing/tweet-thread-writer",
+      "coverage": 6
+    },
+    {
+      "agent": "./data-analytics/database-diagram-generator",
+      "coverage": 6
+    },
+    {
+      "agent": "./design-frontend/responsive-design-tester",
+      "coverage": 6
+    },
+    {
+      "agent": "./misc/ai-frameworks/autogen-agent",
+      "coverage": 2
+    },
+    {
+      "agent": "./misc/ai-frameworks/crewai-agent",
+      "coverage": 2
+    },
+    {
+      "agent": "./misc/ai-frameworks/langchain-agent",
+      "coverage": 1
+    }
+  ]
 }

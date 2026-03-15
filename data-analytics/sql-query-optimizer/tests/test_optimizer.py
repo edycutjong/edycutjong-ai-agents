@@ -60,3 +60,9 @@ def test_format():
     a = analyze_query("SELECT * FROM users")
     md = format_analysis_markdown(a)
     assert "SQL Analysis" in md
+
+
+def test_detect_unknown_query_type():
+    """Cover line 25: return UNKNOWN."""
+    from agent.optimizer import detect_query_type
+    assert detect_query_type("EXPLAIN SELECT 1") == "UNKNOWN"

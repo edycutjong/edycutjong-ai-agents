@@ -98,3 +98,20 @@ def test_competitor_roundtrip():
 def test_empty_competitors():
     report = run_analysis(YOUR, [])
     assert len(report.feature_matrix) > 0
+
+
+def test_market_gaps_elif_count_gte_2():
+    """Cover line 78: elif count >= 2 branch (count >= 2 but pct < 50%)."""
+    your = Competitor(name="Mine", features=["Auth"])
+    # 5 competitors, only 2 have "Billing" = 40% (< 50% threshold), but count >= 2
+    comps = [
+        Competitor(name="A", features=["Billing"]),
+        Competitor(name="B", features=["Billing"]),
+        Competitor(name="C", features=["Auth"]),
+        Competitor(name="D", features=["Auth"]),
+        Competitor(name="E", features=["Auth"]),
+    ]
+    gaps = find_market_gaps(your, comps)
+    gap_text = " ".join(gaps).lower()
+    assert "billing" in gap_text
+    assert "2 competitors" in gap_text

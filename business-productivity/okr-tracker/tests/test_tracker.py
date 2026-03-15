@@ -86,3 +86,12 @@ def test_format_markdown():
     md = format_okrs_markdown(objs)
     assert "OKR Dashboard" in md
     assert "Ship v2" in md
+
+
+def test_store_load_corrupt_json(tmp_path):
+    """Cover tracker.py line 64: except clause on corrupt JSON."""
+    store_file = tmp_path / "okrs.json"
+    store_file.write_text("NOT VALID JSON !!!")
+    s = OKRStore(filepath=str(store_file))
+    data = s._load()
+    assert data == []

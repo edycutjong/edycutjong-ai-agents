@@ -57,3 +57,10 @@ def test_multiple_deps():
     deps = [LicenseInfo(name="a", license="MIT"), LicenseInfo(name="b", license="Apache-2.0"), LicenseInfo(name="c", license="GPL-3.0")]
     issues = check_compatibility("MIT", deps)
     assert len(issues) == 1  # only GPL is incompatible
+
+
+def test_parse_package_json_invalid():
+    """Cover line 70: parse_package_json exception."""
+    from agent.checker import parse_package_json
+    result = parse_package_json("not json at all")
+    assert result == []

@@ -77,3 +77,13 @@ def test_format_findings():
 
 def test_patterns_count():
     assert len(SECRET_PATTERNS) >= 10
+
+
+def test_scan_file_exception():
+    """Cover line 52: except clause in scan_file."""
+    from agent.scanner import scan_file
+    # A directory path will fail on open(filepath, "r") → triggers except
+    import tempfile
+    with tempfile.TemporaryDirectory() as td:
+        result = scan_file(td)
+        assert result == []

@@ -155,3 +155,62 @@ def test_field_args():
     query = next(t for t in types if t.name == "Query")
     user_field = next(f for f in query.fields if f.name == "user")
     assert "id" in user_field.args
+
+
+# --- Cover remaining lines ---
+def test_to_dict_with_fields_and_implements():
+    """Cover lines 32, 34."""
+    from agent.analyzer import TypeInfo, FieldInfo
+    t = TypeInfo(name="Dog", kind="type", fields=[FieldInfo(name="name", field_type="String")], implements=["Animal"])
+    d = t.to_dict()
+    assert "fields" in d
+    assert "implements" in d
+
+def test_subscription_stats():
+    """Cover line 124."""
+    sdl = """type Subscription { messageAdded: String }"""
+    types = parse_schema(sdl)
+    stats = get_schema_stats(types)
+    assert stats.subscriptions == 1
+
+def test_complexity_many_fields():
+    """Cover line 159 — type with >20 fields."""
+    from agent.analyzer import TypeInfo, FieldInfo, find_complexity_issues
+    fields = [FieldInfo(name=f"f{i}", field_type="String") for i in range(25)]
+    t = TypeInfo(name="Big", kind="type", fields=fields)
+    issues = find_complexity_issues([t])
+    assert any("25 fields" in i for i in issues)
+
+def test_complexity_many_args():
+    """Cover line 162 — field with >5 args."""
+    from agent.analyzer import TypeInfo, FieldInfo, find_complexity_issues
+    f = FieldInfo(name="search", field_type="String", args=["a","b","c","d","e","f"])
+    t = TypeInfo(name="Query", kind="type", fields=[f])
+    issues = find_complexity_issues([t])
+    assert any("6 args" in i for i in issues)
+
+def test_complexity_many_enum_values():
+    """Cover line 164 — enum with >20 values."""
+    from agent.analyzer import TypeInfo, find_complexity_issues
+    t = TypeInfo(name="Country", kind="enum", values=[f"C{i}" for i in range(25)])
+    issues = find_complexity_issues([t])
+    assert any("25 values" in i for i in issues)
+
+def test_format_with_issues():
+    """Cover lines 180-183 — format_analysis_markdown when issues exist."""
+    from agent.analyzer import TypeInfo, FieldInfo
+    fields = [FieldInfo(name=f"f{i}", field_type="String") for i in range(25)]
+    t = TypeInfo(name="Huge", kind="type", fields=fields)
+    types_with_issues = [t]
+    stats = get_schema_stats(types_with_issues)
+    md = format_analysis_markdown(types_with_issues, stats)
+    assert "Issues" in md
+    assert "25 fields" in md
+
+def test_to_dict_with_values():
+    """Cover line 32: to_dict with values set (enum)."""
+    from agent.analyzer import TypeInfo
+    t = TypeInfo(name="Status", kind="enum", values=["ACTIVE", "INACTIVE"])
+    d = t.to_dict()
+    assert "values" in d
+    assert d["values"] == ["ACTIVE", "INACTIVE"]

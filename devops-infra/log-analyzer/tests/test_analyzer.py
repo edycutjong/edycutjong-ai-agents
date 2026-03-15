@@ -85,3 +85,18 @@ def test_format():
     a = analyze_logs(entries)
     md = format_analysis_markdown(a)
     assert "Log Analysis" in md and "Errors" in md
+
+
+def test_parse_apache_log():
+    """Cover lines 46-47: Apache-like log pattern (2 groups)."""
+    from agent.analyzer import parse_line
+    entry = parse_line("01/Jan/2024:10:00:00+0000 GET /api/status 200")
+    assert entry.timestamp != ""
+    assert entry.message != ""
+
+def test_parse_level_fallback():
+    """Cover line 52: fallback LogEntry with no pattern match and no level keyword."""
+    from agent.analyzer import parse_line
+    entry = parse_line("just a random line with no recognizable pattern")
+    assert entry.message == "just a random line with no recognizable pattern"
+    assert entry.level == ""

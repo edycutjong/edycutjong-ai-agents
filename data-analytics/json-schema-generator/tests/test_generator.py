@@ -75,3 +75,23 @@ def test_title():
 def test_empty_array():
     s = generate_schema({"items": []})
     assert s["properties"]["items"]["type"] == "array"
+
+
+def test_infer_unknown_type():
+    """Cover line 14: fallback to string for unknown types."""
+    from agent.generator import infer_type
+    assert infer_type(set()) == "string"
+
+def test_array_union_types():
+    """Cover lines 47-49: array with mixed types → oneOf."""
+    from agent.generator import generate_schema
+    data = {"items": [1, "hello", True]}
+    schema = generate_schema(data)
+    items_schema = schema["properties"]["items"]["items"]
+    assert "oneOf" in items_schema
+
+def test_null_value():
+    """Cover line 56: null type."""
+    from agent.generator import _infer_schema
+    schema = _infer_schema(None)
+    assert schema["type"] == "null"

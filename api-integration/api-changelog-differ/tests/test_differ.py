@@ -107,3 +107,60 @@ def test_to_dict():
 def test_empty_specs():
     r = diff_specs({"paths": {}}, {"paths": {}})
     assert len(r.changes) == 0
+
+
+def test_diff_endpoint_method_removed():
+    """Cover lines 106,108: method removed from endpoint (skip 'parameters')."""
+    from agent.differ import diff_specs
+    old = {"info": {"version": "1"}, "paths": {"/api": {"get": {}, "post": {}, "parameters": []}}, "components": {"schemas": {}}}
+    new = {"info": {"version": "2"}, "paths": {"/api": {"get": {}, "parameters": []}}, "components": {"schemas": {}}}
+    r = diff_specs(old, new)
+    assert any("Method removed" in c.description for c in r.changes)
+
+def test_diff_endpoint_method_added():
+    """Cover lines 117,119: new method added to endpoint (skip 'parameters')."""
+    from agent.differ import diff_specs
+    old = {"info": {"version": "1"}, "paths": {"/api": {"get": {}, "parameters": []}}, "components": {"schemas": {}}}
+    new = {"info": {"version": "2"}, "paths": {"/api": {"get": {}, "put": {}, "parameters": []}}, "components": {"schemas": {}}}
+    r = diff_specs(old, new)
+    assert any("Method added" in c.description for c in r.changes)
+
+def test_diff_new_optional_param():
+    """Cover line 146: new optional parameter."""
+    from agent.differ import diff_specs
+    old = {"info": {"version": "1"}, "paths": {"/api": {"get": {"parameters": []}}}, "components": {"schemas": {}}}
+    new = {"info": {"version": "2"}, "paths": {"/api": {"get": {"parameters": [{"name": "limit", "required": False}]}}}, "components": {"schemas": {}}}
+    r = diff_specs(old, new)
+    assert any("optional parameter" in c.description for c in r.changes)
+
+def test_diff_param_removed():
+    """Cover line 153: parameter removed."""
+    from agent.differ import diff_specs
+    old = {"info": {"version": "1"}, "paths": {"/api": {"get": {"parameters": [{"name": "page"}]}}}, "components": {"schemas": {}}}
+    new = {"info": {"version": "2"}, "paths": {"/api": {"get": {"parameters": []}}}, "components": {"schemas": {}}}
+    r = diff_specs(old, new)
+    assert any("Parameter removed" in c.description for c in r.changes)
+
+def test_diff_new_response_code():
+    """Cover line 163: new response code."""
+    from agent.differ import diff_specs
+    old = {"info": {"version": "1"}, "paths": {"/api": {"get": {"responses": {"200": {}}}}}, "components": {"schemas": {}}}
+    new = {"info": {"version": "2"}, "paths": {"/api": {"get": {"responses": {"200": {}, "404": {}}}}}, "components": {"schemas": {}}}
+    r = diff_specs(old, new)
+    assert any("New response code" in c.description for c in r.changes)
+
+def test_diff_schema_removed():
+    """Cover line 179: schema removed."""
+    from agent.differ import diff_specs
+    old = {"info": {"version": "1"}, "paths": {}, "components": {"schemas": {"User": {"properties": {"id": {}}}}}}
+    new = {"info": {"version": "2"}, "paths": {}, "components": {"schemas": {}}}
+    r = diff_specs(old, new)
+    assert any("Schema removed" in c.description for c in r.changes)
+
+def test_diff_property_now_required():
+    """Cover line 204: property changed to required."""
+    from agent.differ import diff_specs
+    old = {"info": {"version": "1"}, "paths": {}, "components": {"schemas": {"User": {"properties": {"name": {}}, "required": []}}}}
+    new = {"info": {"version": "2"}, "paths": {}, "components": {"schemas": {"User": {"properties": {"name": {}}, "required": ["name"]}}}}
+    r = diff_specs(old, new)
+    assert any("now required" in c.description for c in r.changes)

@@ -65,3 +65,15 @@ def test_from_array():
 def test_empty():
     ts = generate_types({}, fmt="typescript")
     assert "interface Root" in ts
+
+
+def test_infer_unknown_type():
+    """Cover generator.py line 21: return 'any' for unknown types."""
+    assert infer_json_type(object()) == "any"
+    assert infer_json_type(set()) == "any"
+
+
+def test_default_format_fallback():
+    """Cover generator.py line 101: default to typescript for unknown format."""
+    result = generate_types({"x": 1}, fmt="unknown_format")
+    assert "interface Root" in result

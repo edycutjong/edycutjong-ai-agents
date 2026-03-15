@@ -103,3 +103,28 @@ def test_markdown_currency_symbol():
     inv.add_item("Work", 1, 100)
     md = format_invoice_markdown(inv)
     assert "€" in md
+
+
+def test_storage_load_corrupt(tmp_path):
+    """Cover line 103: corrupt json returns []."""
+    from agent.invoice import InvoiceStorage
+    s = InvoiceStorage()
+    s.filepath = str(tmp_path / "invoices.json")
+    with open(s.filepath, "w") as f: f.write("not json")
+    assert s._load() == []
+
+def test_storage_get_by_number_not_found(tmp_path):
+    """Cover line 120: get_by_number returns None."""
+    from agent.invoice import InvoiceStorage
+    s = InvoiceStorage()
+    s.filepath = str(tmp_path / "invoices.json")
+    with open(s.filepath, "w") as f: f.write("[]")
+    assert s.get_by_number("INV-9999") is None
+
+def test_format_invoice_with_notes():
+    """Cover line 162: notes in format."""
+    from agent.invoice import Invoice, format_invoice_markdown
+    inv = Invoice(from_name="Test", to_name="Client", notes="Special instructions")
+    inv.add_item("Service", 100, 1)
+    md = format_invoice_markdown(inv)
+    assert "Special instructions" in md

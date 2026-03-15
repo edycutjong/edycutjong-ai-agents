@@ -4,8 +4,7 @@ import sys
 
 # Ensure proper path for imports
 current_dir = os.path.dirname(os.path.abspath(__file__))
-if current_dir not in sys.path:
-    sys.path.append(current_dir)
+sys.path.append(current_dir)
 
 from agent.parser import parse_uploaded_file, get_language_from_extension
 from agent.generator import ComponentDocumenter

@@ -118,3 +118,32 @@ def test_templates_exist():
     assert len(TEMPLATES) >= 6
     assert "qa" in TEMPLATES
     assert "code" in TEMPLATES
+
+
+def test_to_chat_with_input():
+    """Cover line 25: input appended in to_chat."""
+    from agent.generator import TrainingExample
+    ex = TrainingExample(instruction="Analyze", input="Some data here", output="Result")
+    d = ex.to_chat()
+    assert "Some data here" in d["messages"][1]["content"]
+
+def test_to_completion_with_input():
+    """Cover line 33: input appended in to_completion."""
+    from agent.generator import TrainingExample
+    ex = TrainingExample(instruction="Do", input="extra input", output="done")
+    d = ex.to_completion()
+    assert "extra input" in d["prompt"]
+
+def test_validate_empty_instruction():
+    """Cover line 118: empty instruction issue."""
+    from agent.generator import TrainingExample, validate_dataset
+    examples = [TrainingExample(instruction="", input="", output="something")]
+    stats = validate_dataset(examples)
+    assert any("empty instruction" in i for i in stats["issues"])
+
+def test_export_unknown_format():
+    """Cover line 148: fallback format."""
+    from agent.generator import TrainingExample, export_dataset
+    examples = [TrainingExample(instruction="Test", output="Result")]
+    result = export_dataset(examples, fmt="unknown_format")
+    assert "Test" in result

@@ -82,3 +82,22 @@ def test_to_dict():
 def test_dev_filename():
     deps = parse_requirements("pytest\n", filename="requirements-dev.txt")
     assert deps[0].is_dev
+
+
+def test_parse_package_json_dev_deps_tilde():
+    """Cover line 50: devDependencies with ~ prefix."""
+    from agent.updater import parse_package_json
+    data = {"dependencies": {"react": "^18.0.0"}, "devDependencies": {"jest": "~29.0.0", "eslint": "^8.0.0"}}
+    deps = parse_package_json(data)
+    dev_deps = [d for d in deps if d.is_dev]
+    assert len(dev_deps) == 2
+    jest_dep = next(d for d in deps if d.name == "jest")
+    assert jest_dep.constraint == "~"
+    assert jest_dep.current_version == "29.0.0"
+
+def test_analyze_large_dependency_count():
+    """Cover line 66: >50 deps."""
+    from agent.updater import Dependency, analyze_dependencies
+    deps = [Dependency(name=f"pkg-{i}", current_version=f"{i}.0.0", constraint="==") for i in range(55)]
+    r = analyze_dependencies(deps)
+    assert any("Large dependency count" in i for i in r.issues)

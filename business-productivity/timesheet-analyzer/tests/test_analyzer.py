@@ -91,3 +91,21 @@ def test_entry_to_dict():
     e = TimeEntry(date="2026-01-01", project="X", hours=5)
     d = e.to_dict()
     assert d["hours"] == 5
+
+
+def test_parse_csv_invalid_row():
+    """Cover lines 50-51: ValueError/KeyError skip."""
+    from agent.analyzer import parse_csv_timesheet
+    csv = "date,project,hours\n2024-01-01,Alpha,notanumber\n2024-01-02,Beta,8.0"
+    entries = parse_csv_timesheet(csv)
+    assert len(entries) == 1  # Only the valid row
+    assert entries[0].project == "Beta"
+
+def test_format_report_with_anomalies():
+    """Cover lines 107-108: anomalies in markdown output."""
+    from agent.analyzer import analyze_timesheet, parse_csv_timesheet, format_report_markdown
+    csv = "date,project,hours\n2024-01-01,Alpha,14.0\n2024-01-02,Beta,1.5"
+    entries = parse_csv_timesheet(csv)
+    report = analyze_timesheet(entries)
+    md = format_report_markdown(report)
+    assert "Anomalies" in md

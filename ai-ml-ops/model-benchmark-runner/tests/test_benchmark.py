@@ -97,3 +97,36 @@ def test_storage(tmp_path):
 def test_empty_benchmark():
     report = run_benchmark([], {})
     assert len(report.results) == 0
+
+
+# --- Cover remaining lines ---
+def test_score_length_ratio_empty_expected_empty_output():
+    """Cover line 66: empty expected + empty output."""
+    from agent.benchmark import score_length_ratio
+    assert score_length_ratio("", "") == 0.0
+
+def test_score_keyword_coverage_empty_expected():
+    """Cover line 76: empty expected string."""
+    from agent.benchmark import score_keyword_coverage
+    assert score_keyword_coverage("hello", "") == 1.0
+
+def test_score_keyword_coverage_whitespace_expected():
+    """Cover line 80: expected with only whitespace (empty set)."""
+    from agent.benchmark import score_keyword_coverage
+    assert score_keyword_coverage("hello", "   ") == 1.0
+
+def test_score_format_quality_long_structured():
+    """Cover line 93: output > 50 chars.""" 
+    from agent.benchmark import score_format_quality
+    long_output = "# Title\n\n- item 1\n- item 2\n- item 3\n\nThis is a rather long piece of text that should be over fifty characters ending properly."
+    s = score_format_quality(long_output)
+    assert s > 0.5
+
+def test_storage_load_corrupt(tmp_path):
+    """Cover line 166: _load except clause."""
+    from agent.benchmark import BenchmarkStorage
+    f = tmp_path / "bench.json"
+    f.write_text("{corrupt json")
+    s = BenchmarkStorage(filepath=str(f))
+    result = s._load()
+    assert result == []

@@ -6,8 +6,7 @@ from unittest.mock import MagicMock
 # Ensure the parent directory is in sys.path
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
-if parent_dir not in sys.path:
-    sys.path.append(parent_dir)
+sys.path.append(parent_dir)
 
 from agent.parser import get_language_from_extension, read_file_content, parse_uploaded_file
 

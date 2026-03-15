@@ -80,3 +80,11 @@ def test_to_dict():
 
 def test_presets_count():
     assert len(PRESETS) >= 6
+
+
+def test_parse_cron_invalid_field():
+    """Cover lines 68-71: except ValueError/IndexError."""
+    from agent.parser import parse_cron
+    r = parse_cron("abc * * * *")
+    assert not r.is_valid
+    assert len(r.error) > 0

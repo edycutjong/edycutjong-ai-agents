@@ -66,3 +66,12 @@ def test_empty():
 def test_nested():
     md = html_to_markdown("<p><strong>bold <em>italic</em></strong></p>")
     assert "**bold *italic***" in md
+
+
+def test_convert_file(tmp_path):
+    """Cover line 52: convert_file function."""
+    from agent.converter import convert_file
+    f = tmp_path / "test.html"
+    f.write_text("<h1>Hello</h1><p>World</p>")
+    result = convert_file(str(f))
+    assert "Hello" in result

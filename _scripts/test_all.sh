@@ -121,7 +121,7 @@ report = {
         'failed': $failed,
         'skipped': $skipped
     },
-    'agents': sorted(data, key=lambda x: x['coverage'])
+    'agents': sorted(data, key=lambda x: x['coverage'], reverse=True)
 }
 with open('$report_file', 'w') as f:
     json.dump(report, f, indent=2)

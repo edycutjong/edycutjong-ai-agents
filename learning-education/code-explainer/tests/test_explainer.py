@@ -92,3 +92,11 @@ def test_to_dict():
     a = analyze_python(PY_CODE)
     d = a.to_dict()
     assert "language" in d and "functions" in d
+
+
+def test_analyze_python_syntax_error():
+    """Cover line 47: except SyntaxError."""
+    from agent.explainer import analyze_python
+    result = analyze_python("def broken(")
+    assert result.language == "python"
+    assert result.lines > 0

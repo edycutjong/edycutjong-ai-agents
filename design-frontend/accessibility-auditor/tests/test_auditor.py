@@ -72,3 +72,18 @@ def test_to_dict():
     r = audit_html(BAD_HTML)
     d = r.to_dict()
     assert "score" in d and "errors" in d
+
+
+def test_empty_alt_non_decorative():
+    """Cover lines 35-36: empty alt on non-decorative image."""
+    from agent.auditor import audit_html
+    html = '<html lang="en"><head><title>Test</title></head><body><img alt="" src="photo.jpg"><h1>Hi</h1></body></html>'
+    r = audit_html(html)
+    assert any("img-alt-empty" in i.rule for i in r.issues)
+
+def test_input_no_id_no_aria():
+    """Cover lines 66-67: input without id or aria-label."""
+    from agent.auditor import audit_html
+    html = '<html lang="en"><head><title>Test</title></head><body><h1>Form</h1><input type="text" name="foo"></body></html>'
+    r = audit_html(html)
+    assert any("input-label" in i.rule for i in r.issues)

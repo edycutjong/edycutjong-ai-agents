@@ -76,3 +76,19 @@ def test_to_dict():
     r = validate_cors(c)
     d = r.to_dict()
     assert "score" in d
+
+
+def test_credentials_no_origins():
+    """Cover lines 50-51: credentials with empty origins."""
+    from agent.validator import validate_cors, CorsConfig
+    cfg = CorsConfig(allow_credentials=True, allow_origins=[])
+    r = validate_cors(cfg)
+    assert any("Credentials enabled" in i for i in r.issues)
+
+def test_format_with_suggestions():
+    """Cover lines 88-89: suggestions in markdown output."""
+    from agent.validator import validate_cors, CorsConfig, format_result_markdown
+    cfg = CorsConfig(allow_origins=["*"], allow_methods=["GET", "DELETE"], allow_headers=["authorization"])
+    r = validate_cors(cfg)
+    md = format_result_markdown(cfg, r)
+    assert "Suggestions" in md

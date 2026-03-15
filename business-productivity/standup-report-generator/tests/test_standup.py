@@ -105,3 +105,26 @@ def test_tags_in_report():
     e = StandupEntry(author="Dev", today=["Work"], tags=["backend", "api"])
     report = generate_daily_report([e], e.date)
     assert "backend" in report
+
+
+def test_storage_load_existing(tmp_path):
+    """Cover lines 55-56: read existing JSON."""
+    from agent.standup import StandupStorage, StandupEntry
+    s = StandupStorage()
+    s.filepath = str(tmp_path / "standups.json")
+    entry = StandupEntry(author="Dev", yesterday=["Fixed bugs"], today=["Build"])
+    with open(s.filepath, "w") as f:
+        import json; json.dump([entry.to_dict()], f)
+    data = s._load()
+    assert len(data) == 1
+
+def test_get_last_n_days(tmp_path):
+    """Cover lines 78-79: get_last_n_days filter."""
+    from agent.standup import StandupStorage, StandupEntry
+    from datetime import datetime
+    s = StandupStorage()
+    s.filepath = str(tmp_path / "standups.json")
+    entry = StandupEntry(author="Dev", yesterday=["X"], today=["Y"], date=datetime.now().strftime("%Y-%m-%d"))
+    s.add(entry)
+    result = s.get_last_n_days(7)
+    assert len(result) >= 1

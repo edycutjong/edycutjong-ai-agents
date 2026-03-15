@@ -74,3 +74,12 @@ def test_unique_ids():
     data = generate_fake_data("user", 10)
     ids = [d["id"] for d in data]
     assert len(set(ids)) == 10
+
+
+def test_export_csv_with_nested_dict():
+    """Cover line 63: dict value flattening in export_csv."""
+    from agent.faker import export_csv
+    data = [{"name": "Alice", "address": {"city": "NYC", "zip": "10001"}, "active": True}]
+    csv_str = export_csv(data)
+    assert "address_city" in csv_str
+    assert "NYC" in csv_str

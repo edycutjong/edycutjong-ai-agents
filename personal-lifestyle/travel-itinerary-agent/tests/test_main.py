@@ -93,3 +93,22 @@ def test_main_no_llm(MockTravelAgent, MockPrompt, mocker):
     mocker.patch("main.console.status", MagicMock())
     main()
     # Should print error about missing API key
+
+
+def test_main_module_entry_point(mocker):
+    """Cover main.py line 64: if __name__ == '__main__': main()."""
+    import runpy
+    mocker.patch("main.Prompt.ask", side_effect=["Paris", "May 1-5", "n"])
+    mock_agent_cls = mocker.patch("main.TravelAgent")
+    mock_agent_cls.return_value.llm = True
+    mock_agent_cls.return_value.generate_itinerary.return_value = "Mock"
+    mocker.patch("main.console")
+
+    with patch.dict('sys.modules', {'__main__': None}):
+        runpy.run_module('main', run_name='__main__', alter_sys=True)
+
+
+def test_conftest_fixtures_work(mock_search_tool, mock_llm_chain):
+    """Ensure conftest fixtures are exercised (covers conftest.py lines 6-8, 12-14)."""
+    assert mock_search_tool.invoke("test") == "Mock search results"
+    assert mock_llm_chain.invoke({"input": "test"}) == {"output": "Mock Itinerary"}

@@ -74,3 +74,13 @@ def test_checkout_in_all():
         w = generate_workflow(WorkflowConfig(template=name))
         steps = list(w["jobs"].values())[0]["steps"]
         assert any("checkout" in str(s) for s in steps)
+
+
+def test_yaml_bool_value():
+    """Cover lines 96,98: bool and int yaml formatting."""
+    from agent.writer import _yaml_dump_value
+    assert _yaml_dump_value(True) == "true"
+    assert _yaml_dump_value(False) == "false"
+    assert _yaml_dump_value(42) == "42"
+    assert _yaml_dump_value(3.14) == "3.14"
+    assert _yaml_dump_value(None) == "None"

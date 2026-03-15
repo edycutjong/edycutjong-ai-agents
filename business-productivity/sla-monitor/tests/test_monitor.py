@@ -78,3 +78,20 @@ def test_measurement():
     m = SLAMeasurement(sla_name="API", value=99.99)
     assert m.timestamp
     assert m.to_dict()["value"] == 99.99
+
+
+def test_sla_definition_to_dict():
+    """Cover line 15: SLADefinition.to_dict."""
+    from agent.monitor import SLADefinition
+    s = SLADefinition(name="Test", metric="uptime", target=99.9)
+    d = s.to_dict()
+    assert d["name"] == "Test"
+
+def test_format_breach():
+    """Cover lines 78, 84-86: breach formatting."""
+    from agent.monitor import SLADefinition, check_compliance, format_sla_dashboard
+    sla = SLADefinition(name="API Uptime", metric="uptime", target=99.9, unit="%")
+    status = check_compliance(sla, 95.0)
+    md = format_sla_dashboard([status])
+    assert "Breaches" in md
+    assert "🔴" in md

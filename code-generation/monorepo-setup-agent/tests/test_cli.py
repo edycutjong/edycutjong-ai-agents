@@ -109,3 +109,16 @@ def test_cli_no_ci_no_packages(mock_confirm, mock_prompt, MockAgent):
 
     # Pydantic rejects None for ci_provider, causing an error that's caught
     assert result.exit_code == 1
+
+
+def test_main_module_entry_point():
+    """Cover main.py line 111: if __name__ == '__main__': app()."""
+    import runpy
+    with patch('main.MonorepoAgent'), \
+         patch('main.Prompt.ask', side_effect=["test", "pnpm", "turbo", "none"]), \
+         patch('main.Confirm.ask', side_effect=[False, True]):
+        with patch.dict('sys.modules', {'__main__': None}):
+            try:
+                runpy.run_module('main', run_name='__main__', alter_sys=True)
+            except SystemExit:
+                pass
