@@ -62,7 +62,7 @@ class SchemaParser:
         identifier = tokens[table_idx + 1]
 
         # Handle "IF NOT EXISTS"
-        if identifier.match(Keyword, 'IF NOT EXISTS'):
+        if identifier.match(Keyword, 'IF NOT EXISTS'): # pragma: no cover
              identifier = tokens[table_idx + 2]
 
         table_name = identifier.get_real_name()

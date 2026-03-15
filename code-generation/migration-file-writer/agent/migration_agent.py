@@ -17,7 +17,7 @@ try:
         ROLLBACK_PROMPT,
         SAFETY_ANALYSIS_PROMPT,
     )
-except ImportError:
+except ImportError: # pragma: no cover
     # Fallback for when running from a different context
     from apps.agents.code_generation.migration_file_writer.config import Config
     from apps.agents.code_generation.migration_file_writer.prompts.system_prompts import (

@@ -11,7 +11,7 @@ try:
     from rich.table import Table
     from rich.panel import Panel
     console = Console()
-except ImportError:
+except ImportError: # pragma: no cover
     class Console:
         def print(self, *a, **k): print(*a)
     console = Console()
@@ -61,5 +61,5 @@ def main():
     args.func(args)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     main()

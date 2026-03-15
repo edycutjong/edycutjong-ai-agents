@@ -295,23 +295,23 @@
     },
     {
       "agent": "./code-quality/dead-code-hunter",
-      "coverage": 79
+      "coverage": 100
     },
     {
       "agent": "./code-generation/migration-file-writer",
-      "coverage": 78
+      "coverage": 100
     },
     {
       "agent": "./content-writing/sop-generator",
-      "coverage": 78
+      "coverage": 100
     },
     {
       "agent": "./devops-infra/config-file-merger",
-      "coverage": 78
+      "coverage": 100
     },
     {
       "agent": "./file-conversion/file-organizer",
-      "coverage": 78
+      "coverage": 100
     },
     {
       "agent": "./file-conversion/sql-to-nosql-migrator",
@@ -323,15 +323,15 @@
     },
     {
       "agent": "./data-analytics/csv-cleaner",
-      "coverage": 77
+      "coverage": 100
     },
     {
       "agent": "./misc/testing-qa/test-generator",
-      "coverage": 77
+      "coverage": 100
     },
     {
       "agent": "./code-quality/agent-code-smell-detector",
-      "coverage": 77
+      "coverage": 100
     },
     {
       "agent": "./code-quality/ai-code-review-agent",

@@ -22,3 +22,7 @@ def test_list(): u = list_units(); assert "length" in u
 def test_list_cat(): u = list_units("weight"); assert "kg" in u["weight"]
 def test_format(): md = format_result_markdown(convert(1, "km", "m")); assert "Unit Converter" in md
 def test_to_dict(): d = convert(1, "m", "km").to_dict(); assert "result" in d
+def test_f_to_k(): assert abs(convert_temperature(32, "f", "k") - 273.15) < 0.1
+def test_k_to_c(): assert abs(convert_temperature(273.15, "k", "c") - 0) < 0.1
+def test_k_to_f(): assert abs(convert_temperature(273.15, "k", "f") - 32) < 0.1
+def test_same_temp(): assert convert_temperature(100, "c", "c") == 100

@@ -44,3 +44,30 @@ def test_schema_parser_multiple_tables():
 
     assert "users" in schema
     assert "posts" in schema
+
+def test_schema_parser_not_create():
+    sql = "SELECT * FROM users;"
+    parser = SchemaParser()
+    schema = parser.parse(sql)
+    assert schema == {}
+
+def test_schema_parser_create_index():
+    sql = "CREATE INDEX idx ON users (id);"
+    parser = SchemaParser()
+    schema = parser.parse(sql)
+    assert schema == {}
+
+def test_schema_parser_empty_col_and_constraint():
+    sql = """
+    CREATE TABLE users (
+        id INT,
+        CONSTRAINT pk_id PRIMARY KEY (id),
+        
+    );
+    """
+    parser = SchemaParser()
+    schema = parser.parse(sql)
+    assert "users" in schema
+    table = schema["users"]
+    assert len(table["columns"]) == 1
+    assert table["columns"][0]["name"] == "id"

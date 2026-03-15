@@ -10,4 +10,4 @@ def main():
     p = argparse.ArgumentParser(description="File Organizer"); s = p.add_subparsers(dest="command", required=True)
     o = s.add_parser("organize"); o.add_argument("file", nargs="?", default="-"); o.set_defaults(func=cmd_organize)
     args = p.parse_args(); args.func(args)
-if __name__ == "__main__": main()
+if __name__ == "__main__": main() # pragma: no cover

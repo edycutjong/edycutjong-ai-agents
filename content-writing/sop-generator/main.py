@@ -96,5 +96,5 @@ def main():
         # import traceback
         # console.print(traceback.format_exc())
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     main()
