@@ -1,0 +1,6 @@
+# Agents Missing Unit Tests — RESOLVED ✅
+# All 35 agents now have test files (test_main.py)
+# 6 misc entries were false positives (subcategories, not agents)
+# Date completed: 2026-03-15
+#
+# No agents are missing tests.
