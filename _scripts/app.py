@@ -571,13 +571,31 @@ def _render_hub(filtered, all_agents):
     built = sum(1 for a in all_agents.values() if a["has_main"])
     cats = len(set(a["category"] for a in all_agents.values()))
 
-    col1, col2, col3 = st.columns(3)
+    # Load coverage data if available
+    cov_file = BASE_DIR / "coverage.json"
+    avg_cov = None
+    if cov_file.exists():
+        try:
+            cov_data = json.loads(cov_file.read_text(encoding="utf-8"))
+            avg_cov = cov_data.get("summary", {}).get("average_coverage")
+        except Exception:
+            pass
+
+    if avg_cov is not None:
+        col1, col2, col3, col4 = st.columns(4)
+    else:
+        col1, col2, col3 = st.columns(3)
+
     with col1:
         st.markdown(f'<div class="stat-box"><div class="stat-num">{total}</div><div class="stat-label">{tr["total_agents"]}</div></div>', unsafe_allow_html=True)
     with col2:
         st.markdown(f'<div class="stat-box"><div class="stat-num">{built}</div><div class="stat-label">{tr["ready_to_run"]}</div></div>', unsafe_allow_html=True)
     with col3:
         st.markdown(f'<div class="stat-box"><div class="stat-num">{cats}</div><div class="stat-label">{tr["categories"]}</div></div>', unsafe_allow_html=True)
+    if avg_cov is not None:
+        with col4:
+            st.markdown(f'<div class="stat-box"><div class="stat-num">{avg_cov}%</div><div class="stat-label">{tr.get("test_coverage", "Test Coverage")}</div></div>', unsafe_allow_html=True)
+
 
     st.markdown("")
 

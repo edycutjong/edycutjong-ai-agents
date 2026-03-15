@@ -98,6 +98,7 @@ _translations = {
         "streamlit_app_info": "This is a **Streamlit app** — run it separately:",
         "translate_toggle": "🌐 Translate response to {lang}",
         "press_enter": "Press Enter to apply",
+        "test_coverage": "Test Coverage",
     },
     "id": {
         "title": "Pusat Agen AI",
@@ -176,6 +177,7 @@ _translations = {
         "streamlit_app_info": "Ini adalah **aplikasi Streamlit** — jalankan secara terpisah:",
         "translate_toggle": "🌐 Terjemahkan respons ke {lang}",
         "press_enter": "Tekan Enter untuk menerapkan",
+        "test_coverage": "Cakupan Tes",
     },
     "zh": {
         "title": "AI 智能体中心",
@@ -254,6 +256,7 @@ _translations = {
         "streamlit_app_info": "这是一个 **Streamlit 应用** — 请单独运行：",
         "translate_toggle": "🌐 将回复翻译为 {lang}",
         "press_enter": "按 Enter 键应用",
+        "test_coverage": "测试覆盖率",
     },
     "es": {
         "title": "Centro de Agentes IA",
@@ -332,6 +335,7 @@ _translations = {
         "streamlit_app_info": "Es una **app Streamlit** — ejecútela por separado:",
         "translate_toggle": "🌐 Traducir respuesta a {lang}",
         "press_enter": "Presiona Enter para aplicar",
+        "test_coverage": "Cobertura de Pruebas",
     },
     "pt": {
         "title": "Hub de Agentes IA",
@@ -410,6 +414,7 @@ _translations = {
         "streamlit_app_info": "Este é um **app Streamlit** — execute separadamente:",
         "translate_toggle": "🌐 Traduzir resposta para {lang}",
         "press_enter": "Pressione Enter para aplicar",
+        "test_coverage": "Cobertura de Testes",
     },
     "ja": {
         "title": "AI エージェントハブ",
@@ -488,6 +493,7 @@ _translations = {
         "streamlit_app_info": "これは **Streamlitアプリ** です — 別途実行してください：",
         "translate_toggle": "🌐 {lang} に翻訳する",
         "press_enter": "Enter を押して適用",
+        "test_coverage": "テストカバレッジ",
     },
     "ko": {
         "title": "AI 에이전트 허브",
@@ -566,6 +572,7 @@ _translations = {
         "streamlit_app_info": "이것은 **Streamlit 앱** 입니다 — 별도로 실행하세요:",
         "translate_toggle": "🌐 {lang}로 번역",
         "press_enter": "Enter를 눌러 적용",
+        "test_coverage": "테스트 커버리지",
     },
     "de": {
         "title": "KI-Agenten Hub",
@@ -644,6 +651,7 @@ _translations = {
         "streamlit_app_info": "Dies ist eine **Streamlit-App** — führen Sie sie separat aus:",
         "translate_toggle": "🌐 Antwort auf {lang} übersetzen",
         "press_enter": "Drücke Enter zum Anwenden",
+        "test_coverage": "Testabdeckung",
     },
     "fr": {
         "title": "Hub Agents IA",
@@ -722,6 +730,7 @@ _translations = {
         "streamlit_app_info": "C'est une **application Streamlit** — exécutez-la séparément :",
         "translate_toggle": "🌐 Traduire la réponse en {lang}",
         "press_enter": "Appuyez sur Entrée pour appliquer",
+        "test_coverage": "Couverture de Test",
     },
     "ru": {
         "title": "Хаб ИИ-Агентов",
@@ -800,6 +809,7 @@ _translations = {
         "streamlit_app_info": "Это **приложение Streamlit** — запустите его отдельно:",
         "translate_toggle": "🌐 Перевести ответ на {lang}",
         "press_enter": "Нажмите Enter для применения",
+        "test_coverage": "Покрытие Тестов",
     },
     "ar": {
         "title": "مركز وكلاء الذكاء الاصطناعي",
@@ -878,6 +888,7 @@ _translations = {
         "streamlit_app_info": "هذا **تطبيق Streamlit** — قم بتشغيله بشكل منفصل:",
         "translate_toggle": "🌐 ترجمة الرد إلى {lang}",
         "press_enter": "اضغط Enter للتطبيق",
+        "test_coverage": "تغطية الاختبار",
     },
     "hi": {
         "title": "AI एजेंट हब",
@@ -956,6 +967,7 @@ _translations = {
         "streamlit_app_info": "यह एक **Streamlit ऐप** है — इसे अलग से चलाएं:",
         "translate_toggle": "🌐 प्रतिक्रिया का {lang} में अनुवाद करें",
         "press_enter": "लागू करने के लिए Enter दबाएं",
+        "test_coverage": "टेस्ट कवरेज",
     },
 }
 

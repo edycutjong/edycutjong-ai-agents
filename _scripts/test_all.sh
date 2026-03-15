@@ -1,40 +1,79 @@
 #!/bin/bash
 # Test all agents — discovers both tests/ subdirectories and root-level test_main.py files
+# Usage: bash _scripts/test_all.sh [--coverage]
+
+COVERAGE=false
+if [[ "$1" == "--coverage" ]]; then
+  COVERAGE=true
+fi
+
 passed=0
 failed=0
 skipped=0
 total=0
+cov_sum=0
+cov_count=0
+
+# Coverage JSON output
+COV_JSON="[]"
 
 echo "Testing all agents..."
 
 # Collect all unique agent directories that have tests
 declare -A tested_agents
 
+run_pytest() {
+  local agent_dir="$1"
+  local test_target="$2"
+  local label="$3"
+
+  total=$((total+1))
+  echo -n "\rTesting $agent_dir${label:+ ($label)}... "
+
+  if [ "$COVERAGE" = true ]; then
+    # Run with coverage and capture the TOTAL line
+    output=$(cd "$agent_dir" && python3 -m pytest "$test_target" -q --disable-warnings --cov=. --cov-report=term-missing 2>&1)
+    exit_code=$?
+
+    # Extract coverage % from TOTAL line
+    cov_pct=$(echo "$output" | grep "^TOTAL" | awk '{print $NF}' | tr -d '%')
+    if [ -n "$cov_pct" ] && [ "$cov_pct" -eq "$cov_pct" ] 2>/dev/null; then
+      cov_sum=$((cov_sum + cov_pct))
+      cov_count=$((cov_count + 1))
+      COV_JSON=$(echo "$COV_JSON" | python3 -c "
+import sys, json
+data = json.load(sys.stdin)
+data.append({'agent': '$agent_dir', 'coverage': $cov_pct})
+json.dump(data, sys.stdout)
+")
+    fi
+  else
+    (cd "$agent_dir" && python3 -m pytest "$test_target" -q --disable-warnings > /dev/null 2>&1)
+    exit_code=$?
+  fi
+
+  if [ $exit_code -eq 0 ]; then
+    passed=$((passed+1))
+  else
+    failed=$((failed+1))
+    echo -e "\n❌ FAILED: $agent_dir"
+  fi
+}
+
 # 1) Agents with tests/ subdirectory (pytest on tests/)
 for d in $(find . -maxdepth 5 -type d -name "tests" ! -path './.git/*' ! -path './_scripts/*' | sort); do
   agent_dir=$(dirname "$d")
-
-  # Skip if this is a nested tests dir we already handled
   [[ -n "${tested_agents[$agent_dir]}" ]] && continue
   tested_agents[$agent_dir]=1
 
-  total=$((total+1))
-
-  # Check if tests dir has Python test files
+  # Check for Python test files
   py_tests=$(find "$d" -maxdepth 1 -name "test_*.py" 2>/dev/null | head -1)
-  # Check for TypeScript/JS test files
   ts_tests=$(find "$d" -maxdepth 1 \( -name "*.test.ts" -o -name "*.test.js" -o -name "*.spec.ts" -o -name "*.spec.js" \) 2>/dev/null | head -1)
 
   if [ -n "$py_tests" ]; then
-    echo -n "\rTesting $agent_dir... "
-    if (cd "$agent_dir" && python3 -m pytest tests/ -q --disable-warnings > /dev/null 2>&1); then
-      passed=$((passed+1))
-    else
-      failed=$((failed+1))
-      echo -e "\n❌ FAILED: $agent_dir"
-    fi
+    run_pytest "$agent_dir" "tests/" ""
   elif [ -n "$ts_tests" ]; then
-    # TypeScript tests — try npx jest or npm test
+    total=$((total+1))
     echo -n "\rTesting $agent_dir (TS)... "
     if (cd "$agent_dir" && npm test --silent > /dev/null 2>&1); then
       passed=$((passed+1))
@@ -50,19 +89,10 @@ done
 # 2) Agents with test_main.py in root (not inside tests/)
 for f in $(find . -maxdepth 4 -name "test_main.py" -type f ! -path '*/tests/*' | sort); do
   agent_dir=$(dirname "$f")
-
-  # Skip if already tested via tests/ subdir
   [[ -n "${tested_agents[$agent_dir]}" ]] && continue
   tested_agents[$agent_dir]=1
 
-  total=$((total+1))
-  echo -n "\rTesting $agent_dir (root test)... "
-  if (cd "$agent_dir" && python3 -m pytest test_main.py -q --disable-warnings > /dev/null 2>&1); then
-    passed=$((passed+1))
-  else
-    failed=$((failed+1))
-    echo -e "\n❌ FAILED: $agent_dir"
-  fi
+  run_pytest "$agent_dir" "test_main.py" "root test"
 done
 
 echo -e "\r\033[K" # Clear the line
@@ -71,6 +101,34 @@ echo "Total tested : $total"
 echo "✅ Passed    : $passed"
 [ "$failed" -gt 0 ] && echo "❌ Failed    : $failed"
 [ "$skipped" -gt 0 ] && echo "⏭️  Skipped   : $skipped"
+
+if [ "$COVERAGE" = true ] && [ "$cov_count" -gt 0 ]; then
+  avg_cov=$((cov_sum / cov_count))
+  echo "📊 Avg Coverage: ${avg_cov}% (${cov_count} agents)"
+
+  # Write coverage report JSON
+  report_file="$(dirname "$0")/coverage.json"
+  python3 -c "
+import json, sys
+data = json.loads('''$COV_JSON''')
+report = {
+    'timestamp': '$(date -u +%Y-%m-%dT%H:%M:%SZ)',
+    'summary': {
+        'total_agents': $total,
+        'agents_with_coverage': $cov_count,
+        'average_coverage': $avg_cov,
+        'passed': $passed,
+        'failed': $failed,
+        'skipped': $skipped
+    },
+    'agents': sorted(data, key=lambda x: x['coverage'])
+}
+with open('$report_file', 'w') as f:
+    json.dump(report, f, indent=2)
+print(f'📄 Report written to $report_file')
+"
+fi
+
 echo "====================================="
 
 if [ "$failed" -gt 0 ]; then
