@@ -98,3 +98,59 @@ def test_verbose_mode(mock_dependencies):
     # Rich output is hard to assert exactly, but we can check if it ran without error
     # and maybe check for parts of the preview.
     # Since we mocked open, the preview relies on full_content which is constructed in main.
+
+
+def test_run_with_commit_failure(mock_dependencies):
+    """Cover main.py line 102: commit fails."""
+    scanner, generator, git = mock_dependencies
+    scanner.get_source_files.return_value = ["file1.py"]
+    git.is_git_repo.return_value = True
+    git.has_changes.return_value = True
+    git.commit_changes.return_value = False
+
+    generator.generate_doc.return_value = "Doc"
+    generator.generate_mermaid.return_value = ""
+    generator.generate_api_ref.return_value = ""
+
+    with patch("builtins.open", new_callable=MagicMock()), \
+         patch("os.makedirs"):
+        result = runner.invoke(app, ["--target-dir", ".", "--commit"])
+
+    assert result.exit_code == 0
+    assert "Failed to commit changes" in result.stdout
+
+
+def test_run_with_commit_dry_run(mock_dependencies):
+    """Cover main.py lines 103-104: dry-run skips commit."""
+    scanner, generator, git = mock_dependencies
+    scanner.get_source_files.return_value = ["file1.py"]
+    git.is_git_repo.return_value = True
+    git.has_changes.return_value = True
+
+    generator.generate_doc.return_value = "Doc"
+    generator.generate_mermaid.return_value = ""
+    generator.generate_api_ref.return_value = ""
+
+    result = runner.invoke(app, ["--target-dir", ".", "--commit", "--dry-run"])
+
+    assert result.exit_code == 0
+    assert "Dry run: Skipping commit" in result.stdout
+
+
+def test_run_with_commit_no_changes(mock_dependencies):
+    """Cover main.py lines 105-106: no changes to commit."""
+    scanner, generator, git = mock_dependencies
+    scanner.get_source_files.return_value = ["file1.py"]
+    git.is_git_repo.return_value = True
+    git.has_changes.return_value = False
+
+    generator.generate_doc.return_value = "Doc"
+    generator.generate_mermaid.return_value = ""
+    generator.generate_api_ref.return_value = ""
+
+    with patch("builtins.open", new_callable=MagicMock()), \
+         patch("os.makedirs"):
+        result = runner.invoke(app, ["--target-dir", ".", "--commit"])
+
+    assert result.exit_code == 0
+    assert "No changes to commit" in result.stdout

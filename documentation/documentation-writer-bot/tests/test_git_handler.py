@@ -42,6 +42,22 @@ def test_not_git_repo():
     assert not handler.is_git_repo()
     shutil.rmtree(temp_dir)
 
+
+def test_has_changes_not_git_repo():
+    """Cover git_handler.py line 17: has_changes returns False for non-git."""
+    temp_dir = tempfile.mkdtemp()
+    handler = GitHandler(temp_dir)
+    assert not handler.has_changes()
+    shutil.rmtree(temp_dir)
+
+
+def test_commit_changes_not_git_repo():
+    """Cover git_handler.py line 22: commit_changes returns False for non-git."""
+    temp_dir = tempfile.mkdtemp()
+    handler = GitHandler(temp_dir)
+    assert not handler.commit_changes("test msg")
+    shutil.rmtree(temp_dir)
+
 def test_has_changes(temp_git_repo):
     handler = GitHandler(temp_git_repo)
     assert not handler.has_changes()

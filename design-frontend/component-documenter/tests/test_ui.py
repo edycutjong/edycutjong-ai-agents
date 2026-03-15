@@ -73,3 +73,57 @@ def test_main_with_upload(mock_parse, mock_documenter, mock_st):
     # Check if we stored it
     assert "docs_Test.tsx" in mock_st.session_state
     assert mock_st.session_state["docs_Test.tsx"] == "Generated Docs"
+
+
+@patch("main.st")
+@patch("main.ComponentDocumenter")
+@patch("main.parse_uploaded_file")
+def test_main_no_api_key(mock_parse, mock_documenter, mock_st):
+    """Cover main.py line 94: no api key on button click."""
+    mock_file = MagicMock()
+    mock_file.name = "Test.tsx"
+    mock_st.file_uploader.return_value = [mock_file]
+    mock_parse.return_value = ("code", "react-ts")
+    mock_st.session_state = {}
+    mock_st.button.return_value = True
+    mock_st.text_input.return_value = ""  # No API key
+
+    mock_col1 = MagicMock()
+    mock_col2 = MagicMock()
+    mock_st.columns.return_value = [mock_col1, mock_col2]
+    mock_col1.__enter__.return_value = mock_col1
+    mock_col1.__exit__.return_value = None
+    mock_col2.__enter__.return_value = mock_col2
+    mock_col2.__exit__.return_value = None
+
+    main()
+
+    mock_st.error.assert_called_with("Please provide an OpenAI API Key in the sidebar.")
+
+
+@patch("main.st")
+@patch("main.ComponentDocumenter")
+@patch("main.parse_uploaded_file")
+def test_main_generation_error(mock_parse, mock_documenter, mock_st):
+    """Cover main.py lines 101-102: exception during generation."""
+    mock_file = MagicMock()
+    mock_file.name = "Test.tsx"
+    mock_st.file_uploader.return_value = [mock_file]
+    mock_parse.return_value = ("code", "react-ts")
+    mock_st.session_state = {}
+    mock_st.button.return_value = True
+    mock_st.text_input.return_value = "sk-test"
+
+    mock_documenter.side_effect = Exception("Init failed")
+
+    mock_col1 = MagicMock()
+    mock_col2 = MagicMock()
+    mock_st.columns.return_value = [mock_col1, mock_col2]
+    mock_col1.__enter__.return_value = mock_col1
+    mock_col1.__exit__.return_value = None
+    mock_col2.__enter__.return_value = mock_col2
+    mock_col2.__exit__.return_value = None
+
+    main()
+
+    mock_st.error.assert_called()

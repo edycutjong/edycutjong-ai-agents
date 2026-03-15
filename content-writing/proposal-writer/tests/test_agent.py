@@ -55,3 +55,42 @@ def test_generate_proposal(mock_proposal_json):
             assert proposal.project_title == "Test Project"
             assert len(proposal.scope_of_work) == 1
             assert proposal.budget[0].cost == 100.0
+
+
+def test_generator_raises_without_api_key():
+    """Cover generator.py line 18: ValueError when OPENAI_API_KEY is empty."""
+    with patch('agent.generator.OPENAI_API_KEY', ''):
+        with pytest.raises(ValueError, match="OPENAI_API_KEY"):
+            ProposalGenerator()
+
+
+def test_generate_proposal_runtime_error():
+    """Cover generator.py lines 56-58: RuntimeError when chain fails."""
+    with patch('agent.generator.OPENAI_API_KEY', 'test-key'):
+        with patch('agent.generator.ChatOpenAI'):
+            generator = ProposalGenerator()
+            # Make the chain raise an exception
+            generator.llm = Mock(side_effect=Exception("LLM down"))
+            with pytest.raises(RuntimeError, match="Failed to generate proposal"):
+                generator.generate_proposal("requirements")
+
+
+def test_config_jules_api_key_fallback():
+    """Cover config.py line 8: JULES_API_KEY fallback when OPENAI_API_KEY missing."""
+    import importlib
+    env = {"JULES_API_KEY": "jules-key"}  # No OPENAI_API_KEY
+    with patch.dict(os.environ, env, clear=True), \
+         patch('dotenv.load_dotenv'):
+        import config as cfg_module
+        importlib.reload(cfg_module)
+        assert cfg_module.OPENAI_API_KEY == "jules-key"
+
+
+def test_config_no_api_key():
+    """Cover config.py line 18: no API key at all."""
+    import importlib
+    with patch.dict(os.environ, {}, clear=True), \
+         patch('dotenv.load_dotenv'):
+        import config as cfg_module
+        importlib.reload(cfg_module)
+        assert cfg_module.OPENAI_API_KEY is None

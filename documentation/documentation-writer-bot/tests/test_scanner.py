@@ -79,3 +79,28 @@ def test_code_reader_error(temp_project):
     # Non-existent file
     content = CodeReader.read_file("non_existent_file.txt")
     assert content == ""
+
+
+def test_scanner_no_gitignore():
+    """Cover scanner.py line 16: no .gitignore file."""
+    temp_dir = tempfile.mkdtemp()
+    try:
+        # Create a file but NO .gitignore
+        with open(os.path.join(temp_dir, "main.py"), "w") as f:
+            f.write("print('hello')")
+
+        scanner = FileScanner(temp_dir)
+        files = scanner.get_source_files()
+        assert len(files) >= 1
+    finally:
+        shutil.rmtree(temp_dir)
+
+
+def test_scanner_get_all_files(temp_project):
+    """Cover scanner.py line 38: get_source_files without extensions filter."""
+    scanner = FileScanner(temp_project)
+    all_files = scanner.get_source_files()  # No extensions filter
+    rel_files = [os.path.relpath(f, temp_project) for f in all_files]
+    # Should return all non-ignored files (src/main.py, .gitignore at minimum)
+    assert "src/main.py" in rel_files
+    assert len(rel_files) >= 1

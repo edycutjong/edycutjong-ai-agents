@@ -87,3 +87,67 @@ def test_empty_file(mock_code_reader, mock_llm_chain):
         generator = DocGenerator()
         result = generator.generate_doc("empty.py")
         assert result == ""
+
+
+def test_doc_generation_error(mock_code_reader, mock_llm_chain):
+    """Cover generator.py lines 27-28: exception in generate_doc."""
+    mock_code_reader.read_file.return_value = "def hello(): pass"
+    mock_llm_chain.invoke.side_effect = Exception("LLM failure")
+
+    with patch('agent.generator.config') as mock_config:
+        mock_config.OPENAI_API_KEY = "sk-test"
+        mock_config.DEFAULT_TONE = "Professional"
+        mock_config.MODEL_NAME = "gpt-4"
+        generator = DocGenerator()
+        result = generator.generate_doc("test.py")
+        assert "Error generating documentation" in result
+
+
+def test_mermaid_generation_error(mock_code_reader, mock_llm_chain):
+    """Cover generator.py lines 42-43: exception in generate_mermaid."""
+    mock_code_reader.read_file.return_value = "class A: pass"
+    mock_llm_chain.invoke.side_effect = Exception("Mermaid failure")
+
+    with patch('agent.generator.config') as mock_config:
+        mock_config.OPENAI_API_KEY = "sk-test"
+        mock_config.DEFAULT_TONE = "Professional"
+        mock_config.MODEL_NAME = "gpt-4"
+        generator = DocGenerator()
+        result = generator.generate_mermaid("test.py")
+        assert "Error generating mermaid diagram" in result
+
+
+def test_api_ref_generation_error(mock_code_reader, mock_llm_chain):
+    """Cover generator.py lines 57-58: exception in generate_api_ref."""
+    mock_code_reader.read_file.return_value = "def api(): pass"
+    mock_llm_chain.invoke.side_effect = Exception("API ref failure")
+
+    with patch('agent.generator.config') as mock_config:
+        mock_config.OPENAI_API_KEY = "sk-test"
+        mock_config.DEFAULT_TONE = "Professional"
+        mock_config.MODEL_NAME = "gpt-4"
+        generator = DocGenerator()
+        result = generator.generate_api_ref("test.py")
+        assert "Error generating API reference" in result
+
+
+def test_empty_mermaid(mock_code_reader, mock_llm_chain):
+    """Cover generator.py line 33: empty code returns empty string for mermaid."""
+    mock_code_reader.read_file.return_value = ""
+    with patch('agent.generator.config') as mock_config:
+        mock_config.MODEL_NAME = "gpt-4"
+        mock_config.OPENAI_API_KEY = "sk-test"
+        generator = DocGenerator()
+        result = generator.generate_mermaid("empty.py")
+        assert result == ""
+
+
+def test_empty_api_ref(mock_code_reader, mock_llm_chain):
+    """Cover generator.py line 48: empty code returns empty string for api ref."""
+    mock_code_reader.read_file.return_value = ""
+    with patch('agent.generator.config') as mock_config:
+        mock_config.MODEL_NAME = "gpt-4"
+        mock_config.OPENAI_API_KEY = "sk-test"
+        generator = DocGenerator()
+        result = generator.generate_api_ref("empty.py")
+        assert result == ""

@@ -62,3 +62,15 @@ def test_generate_documentation_error(mock_chat_openai):
     result = doc.generate_documentation("code", "react")
 
     assert "Error generating documentation: API Error" in result
+
+
+def test_config_validate_api_key_present():
+    """Cover config.py lines 30-32: validate_api_key returns True."""
+    with patch.object(Config, 'OPENAI_API_KEY', 'test-key'):
+        assert Config.validate_api_key() is True
+
+
+def test_config_validate_api_key_missing():
+    """Cover config.py lines 30-31: validate_api_key returns False."""
+    with patch.object(Config, 'OPENAI_API_KEY', None):
+        assert Config.validate_api_key() is False

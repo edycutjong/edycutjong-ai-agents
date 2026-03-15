@@ -49,3 +49,63 @@ def test_cli_flow(mock_confirm, mock_prompt, MockAgent):
     assert call_args.monorepo_tool == "turbo"
     assert call_args.packages[0].name == "@repo/ui"
     assert call_args.ci_provider == "github-actions"
+
+
+@patch("main.MonorepoAgent")
+@patch("main.Prompt.ask")
+@patch("main.Confirm.ask")
+def test_cli_abort(mock_confirm, mock_prompt, MockAgent):
+    """Cover main.py lines 67-68: user aborts generation."""
+    mock_prompt.side_effect = [
+        "test-project", "pnpm", "turbo", "github-actions"
+    ]
+    mock_confirm.side_effect = [
+        False,  # Don't add packages
+        False   # Don't proceed
+    ]
+
+    result = runner.invoke(app)
+
+    assert result.exit_code == 0
+    assert "Aborted" in result.stdout
+
+
+@patch("main.MonorepoAgent")
+@patch("main.Prompt.ask")
+@patch("main.Confirm.ask")
+def test_cli_generation_error(mock_confirm, mock_prompt, MockAgent):
+    """Cover main.py lines 106-108: error during generation."""
+    mock_prompt.side_effect = [
+        "test-project", "pnpm", "turbo", "github-actions"
+    ]
+    mock_confirm.side_effect = [
+        False,  # Don't add packages
+        True    # Proceed
+    ]
+
+    mock_agent_instance = MockAgent.return_value
+    mock_agent_instance._create_structure.side_effect = Exception("Disk full")
+
+    result = runner.invoke(app)
+
+    assert result.exit_code == 1
+    assert "Error" in result.stdout
+
+
+@patch("main.MonorepoAgent")
+@patch("main.Prompt.ask")
+@patch("main.Confirm.ask")
+def test_cli_no_ci_no_packages(mock_confirm, mock_prompt, MockAgent):
+    """Cover main.py line 61+106-108: CI provider = none triggers validation error."""
+    mock_prompt.side_effect = [
+        "test-project", "pnpm", "turbo", "none"
+    ]
+    mock_confirm.side_effect = [
+        False,  # Don't add packages
+        True    # Proceed
+    ]
+
+    result = runner.invoke(app)
+
+    # Pydantic rejects None for ci_provider, causing an error that's caught
+    assert result.exit_code == 1

@@ -52,3 +52,23 @@ def test_main_exception():
          main()
 
          mock_exit.assert_called_with(1)
+
+
+def test_main_file_read_exception(tmp_path):
+    """Cover main.py lines 25-29: file exists but can't be read."""
+    requirements_file = tmp_path / "req.txt"
+    requirements_file.write_text("original content")
+
+    with patch('sys.argv', ['main.py', str(requirements_file)]), \
+         patch('main.ProposalGenerator') as MockGen, \
+         patch('main.create_pdf') as mock_pdf, \
+         patch('main.create_markdown') as mock_md, \
+         patch('builtins.open', side_effect=[PermissionError("denied")]):
+
+         mock_instance = MockGen.return_value
+         mock_instance.generate_proposal.return_value = Mock(project_title="Test")
+
+         main()
+
+         # When open fails, the string path is used as-is
+         mock_instance.generate_proposal.assert_called_with(str(requirements_file))

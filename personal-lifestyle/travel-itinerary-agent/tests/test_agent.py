@@ -35,3 +35,16 @@ def test_travel_agent_no_key(mocker):
     assert agent.agent_executor is None
     result = agent.generate_itinerary("Paris", "May 1-5")
     assert "Error: OPENAI_API_KEY not found" in result
+
+
+def test_travel_agent_generate_itinerary_error(mocker):
+    """Cover core.py lines 47-48: exception in agent_executor.invoke."""
+    mocker.patch("agent.core.OPENAI_API_KEY", "mock-key")
+    mocker.patch("agent.core.ChatOpenAI", MagicMock())
+    mock_executor = MagicMock()
+    mock_executor.invoke.side_effect = Exception("Agent failure")
+    mocker.patch("agent.core.create_react_agent", return_value=mock_executor)
+
+    agent = TravelAgent()
+    result = agent.generate_itinerary("Paris", "May 1-5")
+    assert "error occurred" in result

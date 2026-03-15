@@ -60,3 +60,36 @@ def test_main_flow_save(MockTravelAgent, MockPrompt, mocker):
 
     mock_md.assert_called_with("Mock Itinerary")
     mock_pdf.assert_called_with("Mock Itinerary")
+
+
+def test_export_to_markdown_error(mocker):
+    """Cover main.py lines 16-17: markdown export error."""
+    mocker.patch("builtins.open", side_effect=PermissionError("denied"))
+    mock_console = mocker.patch("main.console")
+    export_to_markdown("Test content")
+    # Should print error message
+    args = mock_console.print.call_args[0][0]
+    assert "Error saving Markdown" in args
+
+
+def test_export_to_pdf_error(mocker):
+    """Cover main.py lines 36-37: PDF export error."""
+    mock_fpdf = mocker.patch("main.FPDF")
+    mock_fpdf.return_value.output.side_effect = PermissionError("denied")
+    mock_console = mocker.patch("main.console")
+    export_to_pdf("Test content")
+    args = mock_console.print.call_args[0][0]
+    assert "Error saving PDF" in args
+
+
+@patch("main.Prompt.ask")
+@patch("main.TravelAgent")
+def test_main_no_llm(MockTravelAgent, MockPrompt, mocker):
+    """Cover main.py lines 51-52: no LLM available."""
+    mock_agent_instance = MockTravelAgent.return_value
+    mock_agent_instance.llm = None  # No API key
+    MockPrompt.side_effect = ["Paris", "May 1-5"]
+    mocker.patch("main.console.print")
+    mocker.patch("main.console.status", MagicMock())
+    main()
+    # Should print error about missing API key
