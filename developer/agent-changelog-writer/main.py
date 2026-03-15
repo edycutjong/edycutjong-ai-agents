@@ -32,14 +32,14 @@ def categorize_commits(log_lines: list) -> dict:
         low = msg.lower()
         if any(k in low for k in ["feat", "add"]):
             categories["Added"].append(msg)
+        elif any(k in low for k in ["sec", "cve", "vuln"]):
+            categories["Security"].append(msg)
         elif any(k in low for k in ["fix", "bug", "patch"]):
             categories["Fixed"].append(msg)
         elif any(k in low for k in ["refactor", "update", "change", "improve", "perf"]):
             categories["Changed"].append(msg)
         elif any(k in low for k in ["remove", "delete", "drop", "deprecat"]):
             categories["Removed"].append(msg)
-        elif any(k in low for k in ["sec", "cve", "vuln", "auth"]):
-            categories["Security"].append(msg)
         else:
             categories["Other"].append(msg)
     return categories

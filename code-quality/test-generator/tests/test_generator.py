@@ -144,4 +144,3 @@ class TestCoverageAnalyzer:
         md = report.to_markdown()
         assert "Coverage Analysis Report" in md
         assert "60.0%" in md
-'''

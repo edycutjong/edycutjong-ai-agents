@@ -1,10 +1,6 @@
 from agent.models import WorkoutPlan
 from fpdf import FPDF
 
-class PDF(FPDF):
-    def header(self):
-        self.set_font('Arial', 'B', 12)
-        self.cell(0, 10, 'Workout Plan', 0, 1, 'C')
 
 def export_to_markdown(plan: WorkoutPlan, filename: str):
     """Exports the workout plan to a Markdown file."""
@@ -42,70 +38,68 @@ def export_to_markdown(plan: WorkoutPlan, filename: str):
 
 def export_to_pdf(plan: WorkoutPlan, filename: str):
     """Exports the workout plan to a PDF file."""
-    pdf = PDF()
+    pdf = FPDF()
+    pdf.set_auto_page_break(auto=True, margin=15)
     pdf.add_page()
-    pdf.set_font("Arial", size=12)
 
-    # Title
-    pdf.set_font("Arial", 'B', 16)
-    pdf.cell(0, 10, f"{plan.plan_name}", ln=True, align='C')
-    pdf.ln(5)
-
-    # Metadata
-    pdf.set_font("Arial", size=10)
-
-    # Use multi_cell for potentially long text to avoid overflow, but sanitize input first
-    # encode('latin-1', 'replace').decode('latin-1') handles unicode chars not supported by core fonts
     def clean_text(text):
         return text.encode('latin-1', 'replace').decode('latin-1')
 
-    pdf.multi_cell(0, 6, clean_text(f"Difficulty Progression: {plan.difficulty_progression}"))
-    pdf.multi_cell(0, 6, clean_text(f"Equipment Needed: {', '.join(plan.equipment_needed)}"))
-    pdf.ln(5)
+    # Title
+    pdf.set_font("Helvetica", 'B', 16)
+    pdf.cell(0, 10, clean_text(plan.plan_name), align='C')
+    pdf.ln(12)
+
+    # Metadata
+    pdf.set_font("Helvetica", size=10)
+    pdf.cell(0, 6, clean_text(f"Difficulty Progression: {plan.difficulty_progression}"))
+    pdf.ln(7)
+    pdf.cell(0, 6, clean_text(f"Equipment Needed: {', '.join(plan.equipment_needed)}"))
+    pdf.ln(10)
 
     for week in plan.weeks:
-        pdf.set_font("Arial", 'B', 14)
-        pdf.cell(0, 10, clean_text(f"Week {week.week_number}: {week.focus}"), ln=True)
-        pdf.ln(2)
+        pdf.set_font("Helvetica", 'B', 14)
+        pdf.cell(0, 10, clean_text(f"Week {week.week_number}: {week.focus}"))
+        pdf.ln(12)
 
         for session in week.sessions:
-            pdf.set_font("Arial", 'B', 11)
+            pdf.set_font("Helvetica", 'B', 11)
             header_text = f"{session.day}: {session.workout_type} ({session.duration_minutes} min, ~{session.estimated_calories} kcal)"
-            pdf.cell(0, 8, clean_text(header_text), ln=True)
+            pdf.cell(0, 8, clean_text(header_text))
+            pdf.ln(10)
 
             # Warm-up
-            pdf.set_font("Arial", 'I', 10)
-            pdf.cell(0, 6, "Warm-up:", ln=True)
-            pdf.set_font("Arial", size=10)
+            pdf.set_font("Helvetica", 'I', 10)
+            pdf.cell(0, 6, "Warm-up:")
+            pdf.ln(7)
+            pdf.set_font("Helvetica", size=10)
             for item in session.warm_up:
-                pdf.cell(10) # Indent
-                pdf.cell(0, 5, clean_text(f"- {item}"), ln=True)
+                pdf.cell(0, 5, clean_text(f"  - {item}"))
+                pdf.ln(6)
 
             # Main Workout
-            pdf.set_font("Arial", 'I', 10)
-            pdf.cell(0, 6, "Main Workout:", ln=True)
-            pdf.set_font("Arial", size=10)
+            pdf.set_font("Helvetica", 'I', 10)
+            pdf.cell(0, 6, "Main Workout:")
+            pdf.ln(7)
+            pdf.set_font("Helvetica", size=10)
             for ex in session.main_workout:
-                text = f"- {ex.name}: {ex.sets or 'N/A'} sets x {ex.reps or 'N/A'} reps"
+                text = f"  - {ex.name}: {ex.sets or 'N/A'} sets x {ex.reps or 'N/A'} reps"
                 if ex.duration:
                     text += f" ({ex.duration})"
                 if ex.notes:
                     text += f" - {ex.notes}"
-                pdf.cell(10) # Indent
-                pdf.multi_cell(0, 5, clean_text(text))
+                pdf.cell(0, 5, clean_text(text))
+                pdf.ln(6)
 
             # Cool-down
-            pdf.set_font("Arial", 'I', 10)
-            pdf.cell(0, 6, "Cool-down:", ln=True)
-            pdf.set_font("Arial", size=10)
+            pdf.set_font("Helvetica", 'I', 10)
+            pdf.cell(0, 6, "Cool-down:")
+            pdf.ln(7)
+            pdf.set_font("Helvetica", size=10)
             for item in session.cool_down:
-                pdf.cell(10) # Indent
-                pdf.cell(0, 5, clean_text(f"- {item}"), ln=True)
+                pdf.cell(0, 5, clean_text(f"  - {item}"))
+                pdf.ln(6)
 
-            pdf.ln(3) # Space between sessions
-
-        pdf.add_page() # New page per week usually, or just break if full? Let's add page for clarity.
-        # Actually, adding page for every week might be too much if weeks are short.
-        # But for a workout plan, it's nice.
+            pdf.ln(3)  # Space between sessions
 
     pdf.output(filename)
