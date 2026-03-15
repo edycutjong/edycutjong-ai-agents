@@ -72,5 +72,49 @@ class TestMain(unittest.TestCase):
         mock_generator_instance.generate_reading_list.assert_called_with("AI")
         mock_print.assert_any_call("List of papers")
 
-if __name__ == '__main__':
-    unittest.main()
+
+    @patch('argparse.ArgumentParser.parse_args')
+    @patch('builtins.print')
+    def test_main_summarize_file_not_found(self, mock_print, mock_args):
+        mock_args.return_value = MagicMock(command="summarize", filepath="nonexistent.pdf")
+        with patch('os.path.exists', return_value=False):
+            main()
+        mock_print.assert_any_call("File not found: nonexistent.pdf")
+
+    @patch('argparse.ArgumentParser.parse_args')
+    @patch('main.extract_text_from_pdf')
+    @patch('builtins.print')
+    def test_main_summarize_extract_failure(self, mock_print, mock_extract_text, mock_args):
+        mock_args.return_value = MagicMock(command="summarize", filepath="paper.pdf")
+        mock_extract_text.return_value = None
+        with patch('os.path.exists', return_value=True):
+            main()
+        mock_print.assert_any_call("Failed to extract text.")
+
+    @patch('argparse.ArgumentParser.parse_args')
+    @patch('main.BatchProcessor')
+    @patch('builtins.print')
+    def test_main_batch_save_error(self, mock_print, MockBatchProcessor, mock_args):
+        mock_args.return_value = MagicMock(command="batch", directory="papers")
+        mock_processor_instance = MagicMock()
+        mock_processor_instance.process_directory.return_value = {"paper.pdf": {"summary": "S1"}}
+        MockBatchProcessor.return_value = mock_processor_instance
+        with patch('builtins.open', side_effect=Exception("Permission denied")):
+            main()
+        mock_print.assert_any_call("Error saving results: Permission denied")
+
+    @patch('sys.argv', ['main.py'])
+    @patch('argparse.ArgumentParser.print_help')
+    def test_main_no_args_or_invalid(self, mock_print_help):
+        main()
+        mock_print_help.assert_called_once()
+
+def test_main_block():
+    with patch('sys.argv', ['main.py', 'reading-list', 'AI']):
+        with patch('main.main') as mock_main:
+            with open('main.py') as f:
+                code = compile(f.read(), 'main.py', 'exec')
+            ctx = {'__name__': '__main__', '__file__': 'main.py'}
+            import builtins
+            ctx['__builtins__'] = builtins.__dict__
+            exec(code, ctx)

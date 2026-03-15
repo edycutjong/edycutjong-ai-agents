@@ -40,5 +40,3 @@ class TestPdfParser(unittest.TestCase):
         text = extract_text_from_pdf("nonexistent.pdf")
         self.assertIsNone(text)
 
-if __name__ == '__main__':
-    unittest.main()

@@ -28,5 +28,3 @@ class TestVisualizer(unittest.TestCase):
         result = self.visualizer.generate_visual_summary("some text")
         self.assertEqual(result, "graph TD\n A-->B")
 
-if __name__ == '__main__':
-    unittest.main()

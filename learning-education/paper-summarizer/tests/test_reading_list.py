@@ -28,5 +28,3 @@ class TestReadingListGenerator(unittest.TestCase):
         result = self.generator.generate_reading_list("Deep Learning")
         self.assertEqual(result, "1. Paper A\n2. Paper B")
 
-if __name__ == '__main__':
-    unittest.main()

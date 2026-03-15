@@ -15,14 +15,10 @@ def test_agent_initialization(mock_config):
         assert agent_executor is not None
         assert mock_llm.called
 
-def test_agent_invocation_without_key(monkeypatch):
+@patch('agent.curator.ChatOpenAI')
+def test_agent_invocation_without_key(mock_llm, monkeypatch):
     monkeypatch.setattr(Config, "OPENAI_API_KEY", None)
-    # Newer versions of ChatOpenAI may not raise at init time without a key.
-    # Instead, verify the agent can still be created (it will fail at invocation time).
-    try:
-        agent = create_curator_agent()
-        # If it doesn't raise, that's fine — error happens at invocation
-        assert agent is not None
-    except Exception:
-        # If it does raise, that's also acceptable behavior
-        pass
+    mock_llm.side_effect = Exception("Missing API key")
+    
+    with pytest.raises(Exception, match="Missing API key"):
+        create_curator_agent()

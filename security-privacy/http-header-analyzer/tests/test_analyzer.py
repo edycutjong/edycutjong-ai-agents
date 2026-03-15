@@ -19,5 +19,6 @@ def test_suggestions(): r = analyze_headers({}); assert len(r.suggestions) > 0
 def test_score(): r = analyze_headers(GOOD); assert 0 <= r.score <= 100
 def test_grade_bad(): r = analyze_headers(BAD); assert r.grade in ("D", "F")
 def test_format(): md = format_result_markdown(analyze_headers(GOOD)); assert "Header Analysis" in md
+def test_format_bad(): md = format_result_markdown(analyze_headers(BAD)); assert "Issues" in md
 def test_to_dict(): d = analyze_headers(GOOD).to_dict(); assert "score" in d
 def test_count(): assert len(SECURITY_HEADERS) >= 6

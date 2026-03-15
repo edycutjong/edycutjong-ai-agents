@@ -39,5 +39,13 @@ class TestBatchProcessor(unittest.TestCase):
         results = processor.process_directory("/nonexistent")
         self.assertEqual(results, {})
 
-if __name__ == '__main__':
-    unittest.main()
+
+    @patch('os.path.exists', return_value=True)
+    @patch('os.listdir', return_value=["test.pdf"])
+    @patch('agent.batch_processor.extract_text_from_pdf', return_value=None)
+    @patch('builtins.print')
+    def test_process_directory_extract_failure(self, mock_print, mock_extract, mock_listdir, mock_exists):
+        processor = BatchProcessor()
+        results = processor.process_directory("dummy_dir")
+        self.assertEqual(results, {})
+        mock_print.assert_any_call("Could not extract text from test.pdf")

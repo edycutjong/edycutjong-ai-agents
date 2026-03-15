@@ -59,5 +59,3 @@ class TestPaperSummarizer(unittest.TestCase):
             "citations": "Citations",
         })
 
-if __name__ == '__main__':
-    unittest.main()

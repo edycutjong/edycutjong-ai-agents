@@ -27,3 +27,15 @@ def test_generate_report_markdown(tmp_path):
     with open(output_path, 'r') as f:
         content = f.read()
         assert "**Source:** `img.jpg`" in content
+
+def test_generate_report_unsupported_format(tmp_path):
+    reporter = Reporter(output_dir=str(tmp_path))
+    with pytest.raises(ValueError, match="Unsupported format: invalid"):
+        reporter.generate_report([], format="invalid")
+
+from unittest.mock import patch
+@patch('os.makedirs')
+def test_reporter_invalid_directory(mock_makedirs):
+    with patch('os.path.exists', return_value=False):
+        Reporter(output_dir="/invalid/directory")
+        mock_makedirs.assert_called_once_with("/invalid/directory")
