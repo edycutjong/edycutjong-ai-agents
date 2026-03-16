@@ -240,7 +240,7 @@ CATEGORY_META = {
     "security-privacy": ("🔒", "Security", "Security analysis and privacy tools"),
 }
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).parent.parent
 
 # ─── Agent Translations ────────────────────────────────────────
 _agent_tr_file = BASE_DIR / "agent_translations.json"
@@ -765,7 +765,7 @@ def _render_agent_detail(agent, agent_key):
                 st.markdown(f"**{base_label}**")
 
             user_input = st.text_area(
-                "hidden_label",
+                base_label,
                 label_visibility="collapsed",
                 placeholder=tr.get('default_input_placeholder', placeholder) if placeholder == "Describe what you need or paste your text..." else placeholder,
                 height=150,
