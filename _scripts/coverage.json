@@ -3,7 +3,7 @@
   "summary": {
     "total_agents": 230,
     "agents_with_coverage": 229,
-    "average_coverage": 71,
+    "average_coverage": 73,
     "passed": 229,
     "failed": 0,
     "skipped": 1
