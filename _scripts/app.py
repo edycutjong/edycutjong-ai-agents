@@ -7,10 +7,10 @@ import streamlit as st
 import os
 import json
 import random
-from datetime import datetime
+import time
 from pathlib import Path
 from examples import get_agent_hint
-from i18n import LOCALES, LOCALE_NAMES, get_translations
+from i18n import LOCALE_NAMES, get_translations
 from st_keyup import st_keyup
 
 # Load .env file locally (on Streamlit Cloud, st.secrets handles this)
@@ -341,7 +341,7 @@ def _extract_desc(md_file: Path) -> str:
             line = line.strip()
             if line and not line.startswith("#") and not line.startswith("---") and len(line) > 20:
                 clean = line.lstrip("- *>").strip()
-                return clean[:200]
+                return clean[:200]  # type: ignore
     except Exception:
         pass
     return ""
@@ -355,13 +355,13 @@ def _extract_desc_from_main(main_py: Path) -> str:
         import re
         m = re.search(r'description=["\']([^"\']+)["\']', content)
         if m:
-            return m.group(1)[:200]
+            return m.group(1)[:200]  # type: ignore
         # Try module docstring
         m = re.search(r'^"""\s*\n?(.+?)(?:\n|""")', content)
         if m:
             desc = m.group(1).strip().rstrip(' —-')
             if len(desc) > 10:
-                return desc[:200]
+                return desc[:200]  # type: ignore
     except Exception:
         pass
     return ""
@@ -489,11 +489,10 @@ def main():
         if st.session_state.get("run_history"):
             st.divider()
             with st.expander(f"📜 {tr['recent_runs']} ({len(st.session_state['run_history'])})", expanded=False):
-                import time as _time
                 for i, run in enumerate(st.session_state["run_history"]):
                     preview = run["input"][:60].replace("\n", " ") + ("…" if len(run["input"]) > 60 else "")
                     # Relative time display
-                    elapsed = int(_time.time() - run.get('ts', _time.time()))
+                    elapsed = int(time.time() - run.get('ts', time.time()))
                     if elapsed < 60:
                         rel = tr.get('time_just_now', 'just now')
                     elif elapsed < 3600:
@@ -845,7 +844,7 @@ def _render_agent_detail(agent, agent_key):
                             "input": user_input,
                             "output": reply,
                             "tokens": tokens,
-                            "ts": __import__('time').time(),
+                            "ts": time.time(),
                         })
                         st.session_state["run_history"] = st.session_state["run_history"][:10]
 
