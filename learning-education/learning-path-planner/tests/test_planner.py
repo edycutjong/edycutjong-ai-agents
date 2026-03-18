@@ -10,6 +10,14 @@ from agent.planner import LearningPathPlanner
 from agent.models import LearningPath
 from config import config
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 @pytest.fixture
 def planner():
     config.MOCK_MODE = True

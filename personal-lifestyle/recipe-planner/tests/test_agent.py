@@ -3,6 +3,14 @@ from unittest.mock import MagicMock, patch
 from agent.planner import RecipePlannerAgent
 from agent.models import WeeklyPlan, ShoppingList, Recipe, Ingredient, NutritionInfo, DailyPlan
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 def test_generate_plan(mock_weekly_plan):
     with patch("agent.planner.ChatOpenAI") as MockChat:
         # Mock the llm instance

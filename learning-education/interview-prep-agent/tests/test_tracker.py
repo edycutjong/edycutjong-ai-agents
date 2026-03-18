@@ -3,6 +3,14 @@ import os
 import json
 from agent.tracker import ProgressTracker
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 def test_save_and_load_session(tmp_path):
     # Use a temporary file for the tracker
     test_file = tmp_path / "test_progress.json"

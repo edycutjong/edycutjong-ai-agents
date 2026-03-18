@@ -4,6 +4,13 @@ from langchain_core.messages import AIMessage
 from langchain_core.runnables import RunnableLambda
 from agent.generator import QuestionGenerator, CodingQuestion, SystemDesignQuestion, BehavioralQuestion
 
+import pytest
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 @pytest.fixture
 def mock_llm_response_coding():
     return '''

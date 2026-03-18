@@ -8,6 +8,14 @@ sys.path.append(str(Path(__file__).parent.parent))
 
 from agent.generator import PromptGenerator
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 @pytest.fixture
 def mock_llm():
     with patch("agent.generator.ChatOpenAI") as mock:

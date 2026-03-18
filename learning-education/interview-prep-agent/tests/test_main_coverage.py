@@ -1,8 +1,17 @@
 import os
 import sys
 import runpy
-from unittest.mock import patch
 from io import StringIO
+import pytest
+
+
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 

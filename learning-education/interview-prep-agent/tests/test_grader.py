@@ -1,8 +1,15 @@
 import pytest
-from unittest.mock import patch
 from langchain_core.messages import AIMessage
 from langchain_core.runnables import RunnableLambda
 from agent.grader import ResponseGrader, Evaluation
+
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
 
 @pytest.fixture
 def mock_llm_response_evaluation():

@@ -12,6 +12,14 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from main import load_data
 from agent_config import create_agent
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 @pytest.fixture
 def sample_csv(tmp_path):
     d = tmp_path / "data.csv"

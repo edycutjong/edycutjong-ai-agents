@@ -7,6 +7,16 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from agent.rag_pipeline import RAGPipeline
 from langchain_core.documents import Document
+import pytest
+
+
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
 
 def test_rag_pipeline_mock():
     print("Initializing RAG Pipeline with mock key...")

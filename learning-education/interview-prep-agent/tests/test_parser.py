@@ -4,6 +4,14 @@ from agent.parser import JobParser, JobDescription
 from langchain_core.messages import AIMessage
 from langchain_core.runnables import RunnableLambda
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 def test_parser_mock_chain():
     # Setup expected JSON response from LLM
     json_response = '''

@@ -8,12 +8,20 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from agent.rag_pipeline import RAGPipeline
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 @pytest.fixture
 def pipeline():
     return RAGPipeline(openai_api_key="sk-mock")
 
 def test_init_no_key():
-    with patch("config.Config.OPENAI_API_KEY", None):
+    with patch("agent.rag_pipeline.Config.OPENAI_API_KEY", None):
         with pytest.raises(ValueError, match="OpenAI API Key is required"):
             RAGPipeline(openai_api_key=None)
 

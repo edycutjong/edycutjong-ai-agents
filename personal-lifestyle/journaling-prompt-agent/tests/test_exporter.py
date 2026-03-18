@@ -10,6 +10,14 @@ from agent.exporter import export_to_markdown
 from agent.tracker import JournalEntry, MoodEntry
 import agent.exporter # to patch EXPORTS_DIR
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 def test_export_to_markdown(tmp_path, monkeypatch):
     # Patch EXPORTS_DIR in the exporter module
     monkeypatch.setattr(agent.exporter, "EXPORTS_DIR", tmp_path)

@@ -20,7 +20,7 @@ COV_JSON="[]"
 echo "Testing all agents..."
 
 # Collect all unique agent directories that have tests
-declare -A tested_agents
+tested_agents=":"
 
 run_pytest() {
   local agent_dir="$1"
@@ -32,7 +32,16 @@ run_pytest() {
 
   if [ "$COVERAGE" = true ]; then
     # Run with coverage and capture the TOTAL line
-    output=$(cd "$agent_dir" && python3 -m pytest "$test_target" -q --disable-warnings --cov=. --cov-report=term-missing 2>&1)
+    output=$(cd "$agent_dir" && python3 -c "import subprocess, sys
+try:
+    res = subprocess.run(['python3', '-m', 'pytest', '$test_target', '-q', '--disable-warnings', '--cov=.', '--cov-report=term-missing'], capture_output=True, text=True, timeout=10)
+    sys.stdout.write(res.stdout)
+    sys.stderr.write(res.stderr)
+    sys.exit(res.returncode)
+except subprocess.TimeoutExpired:
+    sys.stderr.write('Timeout!\n')
+    sys.exit(124)
+" 2>&1)
     exit_code=$?
 
     # Extract coverage % from TOTAL line
@@ -63,8 +72,8 @@ json.dump(data, sys.stdout)
 # 1) Agents with tests/ subdirectory (pytest on tests/)
 for d in $(find . -maxdepth 5 -type d -name "tests" ! -path './.git/*' ! -path './_scripts/*' | sort); do
   agent_dir=$(dirname "$d")
-  [[ -n "${tested_agents[$agent_dir]}" ]] && continue
-  tested_agents[$agent_dir]=1
+  [[ "$tested_agents" == *":$agent_dir:"* ]] && continue
+  tested_agents="${tested_agents}${agent_dir}:"
 
   # Check for Python test files
   py_tests=$(find "$d" -maxdepth 1 -name "test_*.py" 2>/dev/null | head -1)
@@ -89,8 +98,8 @@ done
 # 2) Agents with test_main.py in root (not inside tests/)
 for f in $(find . -maxdepth 4 -name "test_main.py" -type f ! -path '*/tests/*' | sort); do
   agent_dir=$(dirname "$f")
-  [[ -n "${tested_agents[$agent_dir]}" ]] && continue
-  tested_agents[$agent_dir]=1
+  [[ "$tested_agents" == *":$agent_dir:"* ]] && continue
+  tested_agents="${tested_agents}${agent_dir}:"
 
   run_pytest "$agent_dir" "test_main.py" "root test"
 done

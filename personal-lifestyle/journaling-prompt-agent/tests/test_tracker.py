@@ -9,6 +9,14 @@ sys.path.append(str(Path(__file__).parent.parent))
 
 from agent.tracker import Tracker, MoodEntry, JournalEntry
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 @pytest.fixture
 def temp_tracker(tmp_path):
     # Mock config paths by monkeypatching (or just subclassing/overriding if possible)

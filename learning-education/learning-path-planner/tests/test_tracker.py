@@ -9,6 +9,14 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from agent.tracker import ProgressTracker
 from agent.models import LearningPath, Milestone, Resource, Project
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 @pytest.fixture
 def temp_tracker(tmp_path):
     file = tmp_path / "test_path.json"

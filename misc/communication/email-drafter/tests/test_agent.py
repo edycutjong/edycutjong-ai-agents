@@ -9,6 +9,14 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from agent_config import CalendarTool, SaveDraftTool
 from email_processor import EmailDrafter
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 def test_calendar_tool():
     tool = CalendarTool()
     assert tool.name == "check_calendar"

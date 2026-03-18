@@ -3,6 +3,14 @@ import os
 import pytest
 from agent.parser import FigmaParser
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 @pytest.fixture
 def sample_data():
     path = os.path.join(os.path.dirname(__file__), "data/mock_figma.json")

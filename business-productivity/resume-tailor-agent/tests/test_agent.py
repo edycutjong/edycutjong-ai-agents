@@ -1,6 +1,14 @@
 import pytest
 from unittest.mock import MagicMock, patch
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 
 
 @patch("src.agent.genai")

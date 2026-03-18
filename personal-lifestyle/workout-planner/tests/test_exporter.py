@@ -8,6 +8,14 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from agent.models import WorkoutPlan, WeeklyPlan, WorkoutSession, Exercise
 from agent.exporter import export_to_markdown, export_to_pdf
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 def test_export_to_markdown(tmp_path):
     ex = Exercise(name="Pushups", sets="3", reps="10")
     session = WorkoutSession(

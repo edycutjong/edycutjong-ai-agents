@@ -8,6 +8,14 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from agent.ingestion import load_document, split_documents, ingest_file
 from langchain_core.documents import Document
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 def test_load_document_txt(tmp_path):
     # Create a dummy text file
     f = tmp_path / "test.txt"

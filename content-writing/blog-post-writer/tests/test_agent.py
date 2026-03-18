@@ -11,6 +11,14 @@ from agent.writer import Writer
 from agent.seo import SEOOptimizer
 from agent.utils import clean_text, format_filename
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 @pytest.fixture
 def mock_llm_response():
     mock = MagicMock()

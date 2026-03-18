@@ -1,12 +1,23 @@
 import os
 import sys
 import runpy
-from unittest.mock import patch
 from io import StringIO
+from unittest.mock import MagicMock
 
+sys.modules['langchain_community.tools'] = MagicMock()
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from main import main
+import pytest
+
+
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
 
 def test_main_no_args():
     with patch("sys.argv", ["main.py"]):

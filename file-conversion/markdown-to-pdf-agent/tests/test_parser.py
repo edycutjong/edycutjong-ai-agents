@@ -2,6 +2,14 @@ import pytest
 import os
 from agent.parser import MarkdownParser
 
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 def test_parse_string():
     parser = MarkdownParser()
     text = "---\ntitle: Test\n---\n# Hello"

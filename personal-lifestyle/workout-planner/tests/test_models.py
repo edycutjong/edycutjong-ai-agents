@@ -5,6 +5,16 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from agent.models import Exercise, WorkoutSession, WeeklyPlan, WorkoutPlan, UserProfile
+import pytest
+
+
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
 
 def test_exercise_creation():
     ex = Exercise(name="Pushups", sets="3", reps="10", notes="Keep back straight")

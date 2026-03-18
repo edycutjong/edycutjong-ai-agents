@@ -3,6 +3,13 @@ import os
 from unittest.mock import patch, MagicMock
 from agent.ai_editor import AIEditor
 
+import pytest
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
+
 def test_ai_polish_mock():
     with patch("agent.ai_editor.ChatOpenAI") as MockChat:
         mock_llm = MockChat.return_value

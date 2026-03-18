@@ -1,12 +1,21 @@
 import os
 import sys
 import runpy
-from unittest.mock import patch
 from io import StringIO
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from main import main
+import pytest
+
+
+import pytest
+from unittest.mock import patch
+
+@pytest.fixture(autouse=True)
+def mock_builtin_input(monkeypatch):
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
+
 
 def test_main_no_args():
     with patch("sys.argv", ["main.py"]):
@@ -16,7 +25,7 @@ def test_main_no_args():
             pass
 
 def test_main_with_args():
-    with patch("sys.argv", ["main.py", "test_string"]):
+    with patch("sys.argv", ["main.py", "http://example.com"]):
         try:
             main()
         except SystemExit:
@@ -24,8 +33,8 @@ def test_main_with_args():
 
 def test_main_with_file(tmp_path):
     p = tmp_path / "test_input.txt"
-    p.write_text("test string data here")
-    with patch("sys.argv", ["main.py", str(p)]):
+    p.write_text("http://example.com")
+    with patch("sys.argv", ["main.py", "http://example.com"]):
         try:
             main()
         except SystemExit:
@@ -33,7 +42,7 @@ def test_main_with_file(tmp_path):
 
 def test_main_block():
     script_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "main.py")
-    with patch("sys.argv", ["main.py", "test"]):
+    with patch("sys.argv", ["main.py", "http://example.com"]):
         try:
             runpy.run_path(script_path, run_name="__main__")
         except SystemExit:
