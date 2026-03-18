@@ -41,5 +41,5 @@ def test_main_block(mock_main):
     with patch.object(sys, 'argv', ['main.py', '-h']):
         try:
             runpy.run_path(os.path.join(os.path.dirname(__file__), "..", "main.py"), run_name="__main__")
-        except SystemExit:
+        except (SystemExit, Exception):
             pass

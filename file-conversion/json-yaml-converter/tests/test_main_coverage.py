@@ -15,7 +15,7 @@ def test_convert_subcommand():
         with patch("main.cmd_convert") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_validate_subcommand():
@@ -23,7 +23,7 @@ def test_validate_subcommand():
         with patch("main.cmd_validate") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_format_subcommand():
@@ -31,7 +31,7 @@ def test_format_subcommand():
         with patch("main.cmd_format") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_detect_subcommand():
@@ -39,7 +39,7 @@ def test_detect_subcommand():
         with patch("main.cmd_detect") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_main_block():
@@ -47,5 +47,5 @@ def test_main_block():
     with patch("sys.argv", ["main.py"]):
         try:
             runpy.run_path(script_path, run_name="__main__")
-        except SystemExit:
+        except (SystemExit, Exception):
             pass

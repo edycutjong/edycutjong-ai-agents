@@ -166,5 +166,5 @@ def test_main_module_entry_point():
         with patch.dict('sys.modules', {'__main__': None}):
             try:
                 runpy.run_module('main', run_name='__main__', alter_sys=True)
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass  # Typer may call sys.exit

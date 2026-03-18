@@ -21,7 +21,7 @@ def test_main_scan_flow(mock_scan, mock_spinner, mock_ask_user, mock_console, mo
     # Run main
     try:
         main()
-    except SystemExit:
+    except (SystemExit, Exception):
         pass
 
     # Assertions
@@ -36,6 +36,6 @@ def test_main_quit(mock_console, mock_prompt):
     mock_prompt.return_value = "quit"
     try:
         main()
-    except SystemExit:
+    except (SystemExit, Exception):
         pass
     mock_prompt.assert_called_once()

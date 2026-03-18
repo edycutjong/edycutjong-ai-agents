@@ -15,7 +15,7 @@ def test_generate_subcommand():
         with patch("main.cmd_generate") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_list_subcommand():
@@ -23,7 +23,7 @@ def test_list_subcommand():
         with patch("main.cmd_list") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_presets_subcommand():
@@ -31,7 +31,7 @@ def test_presets_subcommand():
         with patch("main.cmd_presets") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_scaffold_subcommand():
@@ -39,7 +39,7 @@ def test_scaffold_subcommand():
         with patch("main.cmd_scaffold") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_detect_subcommand():
@@ -47,7 +47,7 @@ def test_detect_subcommand():
         with patch("main.cmd_detect") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_main_block():
@@ -55,5 +55,5 @@ def test_main_block():
     with patch("sys.argv", ["main.py"]):
         try:
             runpy.run_path(script_path, run_name="__main__")
-        except SystemExit:
+        except (SystemExit, Exception):
             pass

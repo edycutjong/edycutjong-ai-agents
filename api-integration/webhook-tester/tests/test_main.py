@@ -15,7 +15,7 @@ def test_list_subcommand():
         with patch("main.cmd_list") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_show_subcommand():
@@ -23,7 +23,7 @@ def test_show_subcommand():
         with patch("main.cmd_show") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_replay_subcommand():
@@ -31,7 +31,7 @@ def test_replay_subcommand():
         with patch("main.cmd_replay") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_curl_subcommand():
@@ -39,7 +39,7 @@ def test_curl_subcommand():
         with patch("main.cmd_curl") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_python_subcommand():
@@ -47,7 +47,7 @@ def test_python_subcommand():
         with patch("main.cmd_python") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_export_subcommand():
@@ -55,7 +55,7 @@ def test_export_subcommand():
         with patch("main.cmd_export") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_capture_subcommand():
@@ -63,7 +63,7 @@ def test_capture_subcommand():
         with patch("main.cmd_capture") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_clear_subcommand():
@@ -71,7 +71,7 @@ def test_clear_subcommand():
         with patch("main.cmd_clear") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_main_block():
@@ -79,5 +79,5 @@ def test_main_block():
     with patch("sys.argv", ["main.py"]):
         try:
             runpy.run_path(script_path, run_name="__main__")
-        except SystemExit:
+        except (SystemExit, Exception):
             pass

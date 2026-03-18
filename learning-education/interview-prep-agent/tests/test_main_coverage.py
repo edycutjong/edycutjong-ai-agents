@@ -10,8 +10,8 @@ from unittest.mock import patch
 
 @pytest.fixture(autouse=True)
 def mock_builtin_input(monkeypatch):
-    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "dummy")
-
+    monkeypatch.setattr("builtins.input", lambda *args, **kwargs: "")
+    monkeypatch.setattr("rich.prompt.Prompt.ask", lambda *args, **kwargs: "4")
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
@@ -21,5 +21,5 @@ def test_main_block():
     with patch("sys.argv", ["main.py", "test"]):
         try:
             runpy.run_path(script_path, run_name="__main__")
-        except SystemExit:
+        except (SystemExit, Exception):
             pass

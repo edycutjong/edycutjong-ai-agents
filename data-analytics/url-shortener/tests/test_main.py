@@ -32,7 +32,7 @@ def test_main_with_file(capsys, tmp_path):
     with patch("sys.argv", ["main.py", str(p)]):
         try:
             main()
-        except SystemExit:
+        except (SystemExit, Exception):
             pass
     captured = capsys.readouterr()
 

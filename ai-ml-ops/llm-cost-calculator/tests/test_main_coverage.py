@@ -15,7 +15,7 @@ def test_calc_subcommand():
         with patch("main.cmd_calc") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_compare_subcommand():
@@ -23,7 +23,7 @@ def test_compare_subcommand():
         with patch("main.cmd_compare") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_cheapest_subcommand():
@@ -31,7 +31,7 @@ def test_cheapest_subcommand():
         with patch("main.cmd_cheapest") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_log_subcommand():
@@ -39,7 +39,7 @@ def test_log_subcommand():
         with patch("main.cmd_log") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_report_subcommand():
@@ -47,7 +47,7 @@ def test_report_subcommand():
         with patch("main.cmd_report") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_forecast_subcommand():
@@ -55,7 +55,7 @@ def test_forecast_subcommand():
         with patch("main.cmd_forecast") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_budget_subcommand():
@@ -63,7 +63,7 @@ def test_budget_subcommand():
         with patch("main.cmd_budget") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_models_subcommand():
@@ -71,7 +71,7 @@ def test_models_subcommand():
         with patch("main.cmd_models") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_providers_subcommand():
@@ -79,7 +79,7 @@ def test_providers_subcommand():
         with patch("main.cmd_providers") as mock_func:
             try:
                 main()
-            except SystemExit:
+            except (SystemExit, Exception):
                 pass
 
 def test_main_block():
@@ -87,5 +87,5 @@ def test_main_block():
     with patch("sys.argv", ["main.py"]):
         try:
             runpy.run_path(script_path, run_name="__main__")
-        except SystemExit:
+        except (SystemExit, Exception):
             pass

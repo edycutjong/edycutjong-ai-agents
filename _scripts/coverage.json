@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-03-18T11:39:29Z",
+  "timestamp": "2026-03-18T13:31:40Z",
   "summary": {
     "total_agents": 230,
     "agents_with_coverage": 208,
-    "average_coverage": 83,
-    "passed": 202,
-    "failed": 27,
+    "average_coverage": 84,
+    "passed": 207,
+    "failed": 22,
     "skipped": 1
   },
   "agents": [
@@ -482,6 +482,10 @@
       "coverage": 84
     },
     {
+      "agent": "./data-analytics/chart-generator-agent",
+      "coverage": 84
+    },
+    {
       "agent": "./content-writing/newsletter-curator",
       "coverage": 83
     },
@@ -498,12 +502,12 @@
       "coverage": 82
     },
     {
-      "agent": "./devops-infra/api-monitor",
+      "agent": "./file-conversion/yaml-json-converter",
       "coverage": 82
     },
     {
-      "agent": "./file-conversion/yaml-json-converter",
-      "coverage": 82
+      "agent": "./devops-infra/api-monitor",
+      "coverage": 80
     },
     {
       "agent": "./devops-infra/ci-pipeline-optimizer",
@@ -544,6 +548,10 @@
     {
       "agent": "./devops-infra/infra-cost-analyzer",
       "coverage": 76
+    },
+    {
+      "agent": "./content-writing/technical-blog-reviewer",
+      "coverage": 75
     },
     {
       "agent": "./devops-infra/incident-responder/agent-incident-responder",
@@ -698,10 +706,6 @@
       "coverage": 65
     },
     {
-      "agent": "./content-writing/blog-post-writer",
-      "coverage": 65
-    },
-    {
       "agent": "./developer/agent-changelog-writer",
       "coverage": 65
     },
@@ -718,8 +722,16 @@
       "coverage": 65
     },
     {
+      "agent": "./file-conversion/markdown-to-pdf-agent",
+      "coverage": 64
+    },
+    {
       "agent": "./fixers/unused-asset-cleaner",
       "coverage": 64
+    },
+    {
+      "agent": "./content-writing/blog-post-writer",
+      "coverage": 63
     },
     {
       "agent": "./personal-lifestyle/habit-coach",
@@ -822,24 +834,12 @@
       "coverage": 48
     },
     {
-      "agent": "./misc/ai-frameworks/langchain-agent",
-      "coverage": 45
-    },
-    {
       "agent": "./code-quality/test-generation-agent",
       "coverage": 42
     },
     {
       "agent": "./code-quality/code-review-automator",
       "coverage": 30
-    },
-    {
-      "agent": "./file-conversion/markdown-to-pdf-agent",
-      "coverage": 17
-    },
-    {
-      "agent": "./misc/ai-frameworks/autogen-agent",
-      "coverage": 17
     }
   ]
 }

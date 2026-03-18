@@ -44,9 +44,12 @@ def test_monitor_job_down(mock_send_alert, mock_analyze, mock_add_result, mock_c
 @patch('main.check_endpoint')
 @patch('main.check_ssl_expiry')
 @patch('main.add_result')
+@patch('main.analyze_failure')
 @patch('main.send_alert')
 @patch('main.MONITOR_ENDPOINTS', ['http://example.com'])
-def test_monitor_job_ssl_warning_and_errors(mock_send_alert, mock_add_result, mock_check_ssl, mock_check_endpoint):
+def test_monitor_job_ssl_warning_and_errors(mock_send_alert, mock_analyze, mock_add_result, mock_check_ssl, mock_check_endpoint):
+    mock_analyze.return_value = "Mocked Analysis"
+
     # Test SSL error combination with HTTP error
     mock_check_endpoint.return_value = (500, 0.1, "HTTP Error")
     mock_check_ssl.return_value = (None, "SSL Err")
