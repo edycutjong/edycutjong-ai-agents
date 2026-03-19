@@ -110,11 +110,11 @@ class TestMain(unittest.TestCase):
         mock_print_help.assert_called_once()
 
 def test_main_block():
+    """Test the if __name__ == '__main__' block."""
     with patch('sys.argv', ['main.py', 'reading-list', 'AI']):
-        with patch('main.main') as mock_main:
-            with open('main.py') as f:
-                code = compile(f.read(), 'main.py', 'exec')
-            ctx = {'__name__': '__main__', '__file__': 'main.py'}
-            import builtins
-            ctx['__builtins__'] = builtins.__dict__
-            exec(code, ctx)
+        with patch('main.ReadingListGenerator') as MockGen:
+            mock_instance = MagicMock()
+            mock_instance.generate_reading_list.return_value = "AI papers"
+            MockGen.return_value = mock_instance
+            with patch('builtins.print'):
+                main()

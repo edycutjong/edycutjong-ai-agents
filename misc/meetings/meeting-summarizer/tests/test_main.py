@@ -65,16 +65,15 @@ def test_main_entry_point(tmp_path):
     transcript.write_text("Discussion notes")
     mock_chain = MagicMock()
     mock_chain.invoke = MagicMock(return_value="Result")
-    with patch("sys.argv", ["main", str(transcript)]):
-        with patch("main.get_summary_chain", return_value=mock_chain), \
-             patch("main.get_action_items_chain", return_value=mock_chain), \
-             patch("main.get_email_chain", return_value=mock_chain), \
-             patch("main.get_sentiment_chain", return_value=mock_chain):
-            with patch.dict("sys.modules", {"__main__": None}):
-                try:
-                    runpy.run_module("main", run_name="__main__", alter_sys=True)
-                except SystemExit:
-                    pass
+    from click.testing import CliRunner
+    from main import main
+    runner = CliRunner()
+    with patch("main.get_summary_chain", return_value=mock_chain), \
+         patch("main.get_action_items_chain", return_value=mock_chain), \
+         patch("main.get_email_chain", return_value=mock_chain), \
+         patch("main.get_sentiment_chain", return_value=mock_chain):
+        result = runner.invoke(main, [str(transcript)])
+        assert result.exit_code == 0
 
 
 def test_get_llm_no_api_key():

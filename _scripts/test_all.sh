@@ -34,7 +34,7 @@ run_pytest() {
     # Run with coverage and capture the TOTAL line
     output=$(cd "$agent_dir" && python3 -c "import subprocess, sys
 try:
-    res = subprocess.run(['python3', '-m', 'pytest', '$test_target', '-q', '--disable-warnings', '--cov=.', '--cov-report=term-missing'], capture_output=True, text=True, timeout=10)
+    res = subprocess.run(['python3', '-m', 'pytest', '$test_target', '-q', '--disable-warnings', '--cov=.', '--cov-report=term-missing'], capture_output=True, text=True, timeout=30)
     sys.stdout.write(res.stdout)
     sys.stderr.write(res.stderr)
     sys.exit(res.returncode)

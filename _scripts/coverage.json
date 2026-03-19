@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-03-18T17:08:56Z",
+  "timestamp": "2026-03-19T01:09:33Z",
   "summary": {
-    "total_agents": 229,
-    "agents_with_coverage": 208,
+    "total_agents": 233,
+    "agents_with_coverage": 222,
     "average_coverage": 84,
-    "passed": 208,
-    "failed": 21,
+    "passed": 222,
+    "failed": 11,
     "skipped": 0
   },
   "agents": [
@@ -39,6 +39,10 @@
     },
     {
       "agent": "./api-integration/postman-to-code-converter",
+      "coverage": 100
+    },
+    {
+      "agent": "./business-productivity/agent-onboarding-checklist-generator",
       "coverage": 100
     },
     {
@@ -99,6 +103,10 @@
     },
     {
       "agent": "./code-quality/agent-code-smell-detector",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/agent-schema-drift-detector",
       "coverage": 100
     },
     {
@@ -198,6 +206,10 @@
       "coverage": 100
     },
     {
+      "agent": "./devops-infra/agent-api-latency-budget-tracker",
+      "coverage": 100
+    },
+    {
       "agent": "./devops-infra/changelog-generator",
       "coverage": 100
     },
@@ -247,6 +259,10 @@
     },
     {
       "agent": "./devops-infra/semver-parser",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/uptime-monitor-agent",
       "coverage": 100
     },
     {
@@ -330,6 +346,10 @@
       "coverage": 99
     },
     {
+      "agent": "./content-writing/proposal-writer",
+      "coverage": 99
+    },
+    {
       "agent": "./content-writing/string-similarity",
       "coverage": 99
     },
@@ -354,8 +374,24 @@
       "coverage": 99
     },
     {
+      "agent": "./learning-education/paper-summarizer",
+      "coverage": 99
+    },
+    {
+      "agent": "./misc/meetings/meeting-summarizer",
+      "coverage": 99
+    },
+    {
+      "agent": "./personal-lifestyle/travel-itinerary-agent",
+      "coverage": 99
+    },
+    {
       "agent": "./security-privacy/hash-generator",
       "coverage": 99
+    },
+    {
+      "agent": "./ai-ml-ops/llm-cost-calculator",
+      "coverage": 98
     },
     {
       "agent": "./content-writing/text-case-converter",
@@ -403,6 +439,10 @@
     },
     {
       "agent": "./data-analytics/yaml-validator",
+      "coverage": 97
+    },
+    {
+      "agent": "./devops-infra/agent-commit-risk-scorer",
       "coverage": 97
     },
     {
@@ -460,10 +500,6 @@
     {
       "agent": "./documentation/documentation-agent",
       "coverage": 85
-    },
-    {
-      "agent": "./ai-ml-ops/llm-cost-calculator",
-      "coverage": 84
     },
     {
       "agent": "./api-integration/rest-to-graphql-converter",
@@ -550,6 +586,10 @@
       "coverage": 76
     },
     {
+      "agent": "./content-writing/technical-blog-reviewer",
+      "coverage": 75
+    },
+    {
       "agent": "./devops-infra/incident-responder/agent-incident-responder",
       "coverage": 75
     },
@@ -560,6 +600,10 @@
     {
       "agent": "./security-privacy/permission-auditor",
       "coverage": 75
+    },
+    {
+      "agent": "./data-analytics/spreadsheet-formula-writer",
+      "coverage": 74
     },
     {
       "agent": "./learning-education/interview-prep-agent",
@@ -670,6 +714,10 @@
       "coverage": 68
     },
     {
+      "agent": "./misc/communication/email-triage-assistant",
+      "coverage": 68
+    },
+    {
       "agent": "./misc/research-data/data-analyst",
       "coverage": 68
     },
@@ -727,6 +775,10 @@
     },
     {
       "agent": "./fixers/unused-asset-cleaner",
+      "coverage": 64
+    },
+    {
+      "agent": "./misc/ai-frameworks/autogen-agent",
       "coverage": 64
     },
     {
@@ -836,6 +888,10 @@
     {
       "agent": "./code-quality/test-generation-agent",
       "coverage": 42
+    },
+    {
+      "agent": "./misc/ai-frameworks/langchain-agent",
+      "coverage": 40
     },
     {
       "agent": "./code-quality/code-review-automator",
