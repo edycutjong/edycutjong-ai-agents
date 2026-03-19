@@ -240,10 +240,11 @@ CATEGORY_META = {
     "security-privacy": ("🔒", "Security", "Security analysis and privacy tools"),
 }
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).parent.parent
+SCRIPTS_DIR = Path(__file__).parent
 
 # ─── Agent Translations ────────────────────────────────────────
-_agent_tr_file = BASE_DIR / "agent_translations.json"
+_agent_tr_file = SCRIPTS_DIR / "agent_translations.json"
 _agent_translations = json.loads(_agent_tr_file.read_text(encoding="utf-8")) if _agent_tr_file.exists() else {}
 
 
@@ -571,7 +572,7 @@ def _render_hub(filtered, all_agents):
     cats = len(set(a["category"] for a in all_agents.values()))
 
     # Load coverage data if available
-    cov_file = BASE_DIR / "coverage.json"
+    cov_file = SCRIPTS_DIR / "coverage.json"
     avg_cov = None
     if cov_file.exists():
         try:
