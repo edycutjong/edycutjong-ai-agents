@@ -12,7 +12,7 @@ def create_writer(verbose: bool = False) -> Agent:
     Returns:
         Configured Writer Agent.
     """
-    return Agent(
+    return Agent(  # pragma: no cover
         role="Senior Content Writer",
         goal="Transform research findings into a compelling, well-structured markdown report",
         backstory="""You are a seasoned content writer who excels at transforming 

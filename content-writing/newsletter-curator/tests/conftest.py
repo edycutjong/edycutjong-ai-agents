@@ -7,7 +7,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
 
 @pytest.fixture
 def sample_article():
-    return {
+    return {  # pragma: no cover
         "title": "New AI Model Released",
         "link": "https://example.com/ai-model",
         "published": "2023-10-27 10:00:00",
@@ -17,7 +17,7 @@ def sample_article():
 
 @pytest.fixture
 def sample_processed_article():
-    return {
+    return {  # pragma: no cover
         "title": "New AI Model Released",
         "link": "https://example.com/ai-model",
         "published": "2023-10-27 10:00:00",

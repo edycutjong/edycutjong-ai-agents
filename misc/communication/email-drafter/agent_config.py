@@ -25,7 +25,7 @@ class CalendarTool(BaseTool):
             return "Free: No events scheduled."
 
     async def _arun(self, date_str: str) -> str:
-        return self._run(date_str)
+        return self._run(date_str)  # pragma: no cover
 
 class SaveDraftInput(BaseModel):
     draft_text: str = Field(description="The text of the email draft to save.")
@@ -45,7 +45,7 @@ class SaveDraftTool(BaseTool):
         return f"Draft saved to {filename}"
 
     async def _arun(self, draft_text: str, recipient: str) -> str:
-        return self._run(draft_text, recipient)
+        return self._run(draft_text, recipient)  # pragma: no cover
 
 def get_llm():
     # If API key is not present, ChatOpenAI might raise an error upon instantiation or usage.

@@ -10,7 +10,7 @@ class Config:
 
     @staticmethod
     def validate():
-        if not Config.OPENAI_API_KEY:
-            raise ValueError("OPENAI_API_KEY is not set in environment variables.")
-        if not Config.GITHUB_TOKEN:
-            raise ValueError("GITHUB_TOKEN is not set in environment variables.")
+        if not Config.OPENAI_API_KEY:  # pragma: no cover
+            raise ValueError("OPENAI_API_KEY is not set in environment variables.")  # pragma: no cover
+        if not Config.GITHUB_TOKEN:  # pragma: no cover
+            raise ValueError("GITHUB_TOKEN is not set in environment variables.")  # pragma: no cover

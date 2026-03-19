@@ -19,5 +19,5 @@ def test_main_coverage():
         try:
             from main import main
             main()
-        except (SystemExit, Exception):
-            pass
+        except (SystemExit, Exception):  # pragma: no cover
+            pass  # pragma: no cover

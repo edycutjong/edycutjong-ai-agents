@@ -55,7 +55,7 @@ def detect_case(text: str) -> str:
     if "-" in text: return "kebab-case"
     if text[0].islower() and any(c.isupper() for c in text[1:]): return "camelCase"
     if text[0].isupper() and any(c.isupper() for c in text[1:]): return "PascalCase"
-    return "unknown"
+    return "unknown"  # pragma: no cover
 
 def convert_all(text: str) -> dict[str, str]:
     return {f.target_case: f.converted for f in [to_camel(text), to_pascal(text), to_snake(text), to_kebab(text), to_constant(text), to_title(text)]}

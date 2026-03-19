@@ -18,4 +18,4 @@ class TestAgent(unittest.TestCase):
              self.assertIn("1.0.1", desc)
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main()  # pragma: no cover

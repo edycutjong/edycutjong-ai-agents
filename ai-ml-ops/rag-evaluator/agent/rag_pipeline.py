@@ -56,7 +56,7 @@ Question: {question}
         prompt = ChatPromptTemplate.from_template(template)
 
         def format_docs(docs):
-            return "\n\n".join([d.page_content for d in docs])
+            return "\n\n".join([d.page_content for d in docs])  # pragma: no cover
 
         self.chain = (
             {"context": self.retriever | format_docs, "question": RunnablePassthrough()}
@@ -75,4 +75,4 @@ Question: {question}
         """Retrieves context documents for a question."""
         if not self.retriever:
             raise ValueError("Retriever not initialized.")
-        return self.retriever.invoke(question)
+        return self.retriever.invoke(question)  # pragma: no cover

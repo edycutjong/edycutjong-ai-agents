@@ -76,12 +76,14 @@ def test_main_file_read_exception(tmp_path):
 
 def test_main_module_entry_point():
     """Cover main.py line 55: if __name__ == '__main__': main()."""
+    import runpy
+    import os
+    script_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "main.py")
     with patch('sys.argv', ['main.py', 'test requirements']), \
-         patch('main.ProposalGenerator') as MockGen, \
-         patch('main.create_pdf'), \
-         patch('main.create_markdown'):
+         patch('agent.generator.ProposalGenerator') as MockGen, \
+         patch('agent.pdf_generator.create_pdf'), \
+         patch('agent.pdf_generator.create_markdown'):
         mock_instance = MockGen.return_value
         mock_instance.generate_proposal.return_value = Mock(project_title="Test")
 
-        # Directly call main() instead of runpy to avoid timeout
-        main()
+        runpy.run_path(script_path, run_name="__main__")

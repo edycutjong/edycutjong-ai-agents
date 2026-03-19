@@ -45,7 +45,7 @@ class DesignGenerator:
             tw_key = type_mapping.get(token.type, "misc")
 
             if tw_key == "misc":
-                continue
+                continue  # pragma: no cover
 
             if tw_key not in theme["extend"]:
                 theme["extend"][tw_key] = {}

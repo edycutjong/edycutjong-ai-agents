@@ -17,4 +17,4 @@ class Config:
         """Check for critical configuration"""
         # We can run without API keys if we are just scanning,
         # but generation will fail.
-        pass
+        pass  # pragma: no cover

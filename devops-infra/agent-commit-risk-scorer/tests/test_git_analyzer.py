@@ -13,8 +13,8 @@ def test_get_changed_files_success(mocker):
             if parents:
                 self.parents = [type('obj', (object,), {'diff': lambda self, commit: [MockDiff('src/main.py', None), MockDiff(None, 'README.md')]})()]
             else:
-                self.parents = []
-                self.stats = type('Stats', (), {'files': {'src/main.py': 10, 'README.md': 2}})
+                self.parents = []  # pragma: no cover
+                self.stats = type('Stats', (), {'files': {'src/main.py': 10, 'README.md': 2}})  # pragma: no cover
 
     class MockRepo:
         def __init__(self, *args, **kwargs):

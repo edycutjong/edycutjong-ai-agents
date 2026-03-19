@@ -13,8 +13,8 @@ def test_main_import():
             import importlib
             import main as m
             importlib.reload(m)
-        except (SystemExit, Exception):
-            pass
+        except (SystemExit, Exception):  # pragma: no cover
+            pass  # pragma: no cover
 
 
 def test_main_function():
@@ -23,5 +23,5 @@ def test_main_function():
         try:
             from main import main
             main()
-        except (SystemExit, Exception):
-            pass
+        except (SystemExit, Exception):  # pragma: no cover
+            pass  # pragma: no cover

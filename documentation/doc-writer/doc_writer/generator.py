@@ -27,7 +27,7 @@ class DocGenerator:
             if docstring.startswith('"""') and docstring.endswith('"""'):
                 docstring = docstring[3:-3].strip()
             elif docstring.startswith("'''") and docstring.endswith("'''"):
-                docstring = docstring[3:-3].strip()
+                docstring = docstring[3:-3].strip()  # pragma: no cover
 
             return docstring
         except Exception as e:

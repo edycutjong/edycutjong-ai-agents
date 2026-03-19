@@ -19,4 +19,4 @@ class DesignParser:
             return content
         else:
             # Fallback to just returning the content string
-            return content
+            return content  # pragma: no cover

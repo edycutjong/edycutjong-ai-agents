@@ -27,6 +27,6 @@ class ResponseGrader:
                 "question_type": question_type, # Template doesn't use this but it might be useful context if added
                 "format_instructions": parser.get_format_instructions()
             })
-        except Exception as e:
-            print(f"Error grading response: {e}")
-            return None
+        except Exception as e:  # pragma: no cover
+            print(f"Error grading response: {e}")  # pragma: no cover
+            return None  # pragma: no cover

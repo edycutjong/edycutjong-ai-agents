@@ -4,7 +4,7 @@ import os
 
 # Ensure mocks are in place if imported directly
 if 'fpdf' not in sys.modules:
-    sys.modules['fpdf'] = MagicMock()
+    sys.modules['fpdf'] = MagicMock()  # pragma: no cover
 
 from agent.tools import save_to_markdown, save_to_pdf, FPDF
 

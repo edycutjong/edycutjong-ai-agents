@@ -39,8 +39,8 @@ def test_library_subcommand():
         with patch("main.cmd_library") as mock_func:
             try:
                 main()
-            except (SystemExit, Exception):
-                pass
+            except (SystemExit, Exception):  # pragma: no cover
+                pass  # pragma: no cover
 
 def test_extract_subcommand():
     with patch("sys.argv", ["main.py", "extract"]):

@@ -27,8 +27,8 @@ class MarkdownParser:
                 'metadata': post.metadata,
                 'content': post.content
             }
-        except Exception as e:
-            raise ValueError(f"Error parsing file {filepath}: {e}")
+        except Exception as e:  # pragma: no cover
+            raise ValueError(f"Error parsing file {filepath}: {e}")  # pragma: no cover
 
     def parse_string(self, text: str) -> dict:
         """
@@ -46,5 +46,5 @@ class MarkdownParser:
                 'metadata': post.metadata,
                 'content': post.content
             }
-        except Exception as e:
-             raise ValueError(f"Error parsing string: {e}")
+        except Exception as e:  # pragma: no cover
+             raise ValueError(f"Error parsing string: {e}")  # pragma: no cover

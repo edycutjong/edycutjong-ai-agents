@@ -13,8 +13,8 @@ class Config:
     @staticmethod
     def validate():
         if not Config.OPENAI_API_KEY:
-            raise ValueError("OPENAI_API_KEY is missing in .env")
+            raise ValueError("OPENAI_API_KEY is missing in .env")  # pragma: no cover
         if not Config.GITHUB_TOKEN:
-            raise ValueError("GITHUB_TOKEN is missing in .env")
+            raise ValueError("GITHUB_TOKEN is missing in .env")  # pragma: no cover
         if not Config.GITHUB_REPO:
-            raise ValueError("GITHUB_REPO is missing in .env")
+            raise ValueError("GITHUB_REPO is missing in .env")  # pragma: no cover

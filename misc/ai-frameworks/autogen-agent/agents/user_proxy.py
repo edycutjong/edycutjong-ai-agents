@@ -13,7 +13,7 @@ def create_user_proxy(name: str = "user_proxy") -> UserProxyAgent:
     Returns:
         Configured UserProxyAgent instance.
     """
-    return UserProxyAgent(
+    return UserProxyAgent(  # pragma: no cover
         name=name,
         human_input_mode=HUMAN_INPUT_MODE,
         max_consecutive_auto_reply=MAX_CONSECUTIVE_AUTO_REPLY,

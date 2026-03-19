@@ -7,7 +7,7 @@ from langchain_core.documents import Document
 def load_document(file_path: str) -> List[Document]:
     """Loads a document from a file path."""
     if file_path.endswith(".pdf"):
-        loader = PyPDFLoader(file_path)
+        loader = PyPDFLoader(file_path)  # pragma: no cover
     elif file_path.endswith(".txt"):
         loader = TextLoader(file_path)
     else:

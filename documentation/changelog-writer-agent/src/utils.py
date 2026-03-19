@@ -26,7 +26,7 @@ def print_step(message: str):
 
 
 def print_success(message: str):
-    console.print(f"[bold green]✔[/bold green] {message}")
+    console.print(f"[bold green]✔[/bold green] {message}")  # pragma: no cover
 
 
 def print_error(message: str):

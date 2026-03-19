@@ -78,4 +78,4 @@ class TestReviewer(unittest.TestCase):
         self.assertEqual(verified[0]['line'], 1) # Should be converted to int
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main()  # pragma: no cover

@@ -91,4 +91,4 @@ class TestHallucinationDetector(unittest.TestCase):
         self.detector.process_document.assert_called_with("path/to/source.pdf")
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main()  # pragma: no cover

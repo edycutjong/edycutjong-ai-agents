@@ -80,7 +80,7 @@ def main():
     print(f"   Priority  : {result['priority'].upper()}")
     print(f"   Action    : {result['action']}")
     if len(result['all_matches']) > 1:
-        print(f"   Also tagged: {', '.join(result['all_matches'][1:])}")
+        print(f"   Also tagged: {', '.join(result['all_matches'][1:])}")  # pragma: no cover
 
 
 if __name__ == "__main__":

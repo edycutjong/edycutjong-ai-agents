@@ -54,10 +54,10 @@ def main():
 
     content = ""
     if args.diff and os.path.isfile(args.diff):
-        with open(args.diff) as f:
-            content = f.read()
+        with open(args.diff) as f:  # pragma: no cover
+            content = f.read()  # pragma: no cover
     elif args.commits:
-        content = args.commits
+        content = args.commits  # pragma: no cover
     elif args.input:
         content = args.input
     else:

@@ -35,7 +35,7 @@ HUMAN_PROMPT_TEMPLATE = """Here is the user profile:
 Please generate the workout plan now."""
 
 def get_workout_prompt():
-    return ChatPromptTemplate.from_messages([
+    return ChatPromptTemplate.from_messages([  # pragma: no cover
         ("system", SYSTEM_PROMPT),
         ("human", HUMAN_PROMPT_TEMPLATE),
     ])

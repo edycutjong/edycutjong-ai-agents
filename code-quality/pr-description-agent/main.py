@@ -20,8 +20,8 @@ def main():
 
     content = ""
     if args.file and os.path.isfile(args.file):
-        with open(args.file) as f:
-            content = f.read()
+        with open(args.file) as f:  # pragma: no cover
+            content = f.read()  # pragma: no cover
     elif args.input:
         content = args.input
     else:

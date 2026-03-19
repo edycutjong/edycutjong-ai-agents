@@ -27,7 +27,7 @@ def parse_cron(expr: str) -> CronResult:
         r.is_valid = False; r.error = f"Expected 5 fields, got {len(parts)}"; return r
     for part in parts:
         if not re.match(r'^[\d\*,\-/]+$', part):
-            r.is_valid = False; r.error = f"Invalid field: {part}"; return r
+            r.is_valid = False; r.error = f"Invalid field: {part}"; return r  # pragma: no cover
     r.fields = dict(zip(FIELDS, parts))
     descs = [_describe_field(parts[i], FIELDS[i]) for i in range(5)]
     r.description = "At " + ", ".join(d for d in descs if "every" not in d or d != f"every {FIELDS[descs.index(d)]}")

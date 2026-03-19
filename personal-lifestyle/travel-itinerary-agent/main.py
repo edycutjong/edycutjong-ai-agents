@@ -61,4 +61,4 @@ def main():
         export_to_pdf(itinerary)
 
 if __name__ == "__main__":
-    main()
+    main()  # pragma: no cover

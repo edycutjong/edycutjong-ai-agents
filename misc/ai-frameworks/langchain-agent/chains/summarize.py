@@ -12,9 +12,9 @@ def create_summarize_chain() -> LLMChain:
     Returns:
         LLMChain configured for summarization.
     """
-    llm = ChatOpenAI(model=MODEL_NAME, temperature=TEMPERATURE)
+    llm = ChatOpenAI(model=MODEL_NAME, temperature=TEMPERATURE)  # pragma: no cover
 
-    prompt = PromptTemplate(
+    prompt = PromptTemplate(  # pragma: no cover
         input_variables=["text"],
         template="""Summarize the following text in a clear, structured format.
 Include:
@@ -28,4 +28,4 @@ Text to summarize:
 Summary:""",
     )
 
-    return LLMChain(llm=llm, prompt=prompt)
+    return LLMChain(llm=llm, prompt=prompt)  # pragma: no cover

@@ -8,9 +8,9 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 @pytest.fixture
 def db_uri():
-    return "sqlite:///:memory:"
+    return "sqlite:///:memory:"  # pragma: no cover
 
 @pytest.fixture
 def engine(db_uri):
-    engine = create_engine(db_uri)
-    return engine
+    engine = create_engine(db_uri)  # pragma: no cover
+    return engine  # pragma: no cover

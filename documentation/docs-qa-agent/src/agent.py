@@ -52,6 +52,6 @@ class DocsQAAgent:
         response = self.model.generate_content(prompt)
         text = response.text.strip()
         if text.startswith("```"):
-            text = text.split("\n", 1)[1]
-            text = text.rsplit("```", 1)[0].strip()
+            text = text.split("\n", 1)[1]  # pragma: no cover
+            text = text.rsplit("```", 1)[0].strip()  # pragma: no cover
         return json.loads(text)

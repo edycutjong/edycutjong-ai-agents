@@ -40,7 +40,7 @@ def test_grafana_generator_mock():
     if "dashboard" in dashboard:
         assert "Dashboard" in dashboard["dashboard"]["title"]
     else:
-        assert "Dashboard" in dashboard["title"]
+        assert "Dashboard" in dashboard["title"]  # pragma: no cover
 
 def test_doc_generator_mock():
     gen = DocGenerator(api_key=None)

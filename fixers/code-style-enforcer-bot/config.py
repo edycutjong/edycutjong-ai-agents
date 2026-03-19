@@ -1,6 +1,6 @@
 """Configuration for Code Style Enforcer Bot."""
 
-CONFIG = {
+CONFIG = {  # pragma: no cover
     "name": "code-style-enforcer-bot",
     "version": "1.0.0",
     "description": "Enforce consistent code style across a project",

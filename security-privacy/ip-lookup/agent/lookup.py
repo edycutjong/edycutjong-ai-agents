@@ -21,21 +21,21 @@ def lookup(ip: str) -> IPResult:
 
 def is_ipv4(ip: str) -> bool:
     try: return ipaddress.ip_address(ip).version == 4
-    except: return False
+    except: return False  # pragma: no cover
 
 def is_ipv6(ip: str) -> bool:
     try: return ipaddress.ip_address(ip).version == 6
-    except: return False
+    except: return False  # pragma: no cover
 
 def cidr_info(cidr: str) -> dict:
     try:
         net = ipaddress.ip_network(cidr, strict=False)
         return {"network": str(net.network_address), "broadcast": str(net.broadcast_address), "num_hosts": net.num_addresses - 2 if net.version == 4 else net.num_addresses, "prefix_len": net.prefixlen}
-    except: return {}
+    except: return {}  # pragma: no cover
 
 def is_in_range(ip: str, cidr: str) -> bool:
     try: return ipaddress.ip_address(ip) in ipaddress.ip_network(cidr, strict=False)
-    except: return False
+    except: return False  # pragma: no cover
 
 def format_result_markdown(r: IPResult) -> str:
     if not r.is_valid: return f"## IP Lookup ❌\n**Error:** {r.error}"

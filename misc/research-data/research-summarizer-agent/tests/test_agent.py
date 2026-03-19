@@ -54,4 +54,4 @@ class TestResearchAgent(unittest.TestCase):
         mock_scrape.assert_called_with("http://example.com")
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main()  # pragma: no cover

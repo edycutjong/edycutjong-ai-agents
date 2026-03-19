@@ -59,4 +59,4 @@ def test_evaluator_mock():
     assert scores["context_precision"] == 0.9
 
 if __name__ == "__main__":
-    test_evaluator_mock()
+    test_evaluator_mock()  # pragma: no cover

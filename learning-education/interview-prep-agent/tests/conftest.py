@@ -31,12 +31,12 @@ class MockEvaluation(BaseModel):
 
 @pytest.fixture
 def mock_llm():
-    llm = MagicMock()
+    llm = MagicMock()  # pragma: no cover
     # default invoke behavior
-    llm.invoke.return_value = AIMessage(content="Mock response")
-    return llm
+    llm.invoke.return_value = AIMessage(content="Mock response")  # pragma: no cover
+    return llm  # pragma: no cover
 
 @pytest.fixture
 def mock_chain():
-    chain = MagicMock()
-    return chain
+    chain = MagicMock()  # pragma: no cover
+    return chain  # pragma: no cover

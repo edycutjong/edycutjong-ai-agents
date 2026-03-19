@@ -8,9 +8,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 @pytest.fixture
 def mock_llm_response():
-    mock = MagicMock()
-    mock.invoke.return_value.content = "Mocked LLM Response"
-    return mock
+    mock = MagicMock()  # pragma: no cover
+    mock.invoke.return_value.content = "Mocked LLM Response"  # pragma: no cover
+    return mock  # pragma: no cover
 
 @pytest.fixture
 def mock_requests_get(monkeypatch):

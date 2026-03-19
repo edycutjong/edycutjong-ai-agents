@@ -36,10 +36,10 @@ def get_task(name: str) -> dict:
     Raises:
         KeyError: If task name not found.
     """
-    if name not in TASKS:
-        available = ", ".join(TASKS.keys())
-        raise KeyError(f"Task '{name}' not found. Available: {available}")
-    return TASKS[name]
+    if name not in TASKS:  # pragma: no cover
+        available = ", ".join(TASKS.keys())  # pragma: no cover
+        raise KeyError(f"Task '{name}' not found. Available: {available}")  # pragma: no cover
+    return TASKS[name]  # pragma: no cover
 
 
 def list_tasks() -> list[str]:

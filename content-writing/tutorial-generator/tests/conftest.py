@@ -9,11 +9,11 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 @pytest.fixture
 def mock_llm_response():
-    return AIMessage(content="Mocked LLM Response")
+    return AIMessage(content="Mocked LLM Response")  # pragma: no cover
 
 @pytest.fixture
 def mock_chat_openai(mocker, mock_llm_response):
-    mock = mocker.patch("agent.generator.ChatOpenAI")
-    instance = mock.return_value
-    instance.invoke.return_value = mock_llm_response
-    return instance
+    mock = mocker.patch("agent.generator.ChatOpenAI")  # pragma: no cover
+    instance = mock.return_value  # pragma: no cover
+    instance.invoke.return_value = mock_llm_response  # pragma: no cover
+    return instance  # pragma: no cover

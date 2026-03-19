@@ -55,4 +55,4 @@ def test_rag_pipeline_mock():
             assert answer == "Mock Answer"
 
 if __name__ == "__main__":
-    test_rag_pipeline_mock()
+    test_rag_pipeline_mock()  # pragma: no cover

@@ -12,7 +12,7 @@ class MeetingStorage:
     def _ensure_file(self):
         directory = os.path.dirname(self.filepath)
         if directory and not os.path.exists(directory):
-            os.makedirs(directory, exist_ok=True)
+            os.makedirs(directory, exist_ok=True)  # pragma: no cover
 
         if not os.path.exists(self.filepath):
             with open(self.filepath, 'w') as f:

@@ -19,6 +19,6 @@ def test_main_block():
         try:
             import importlib
             import main as m
-            importlib.reload(m)
+            importlib.reload(m)  # pragma: no cover
         except (SystemExit, Exception):
             pass

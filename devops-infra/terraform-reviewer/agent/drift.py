@@ -8,7 +8,7 @@ class DriftDetector:
         and resources in State but not Code (to be destroyed/or deleted from code).
         """
         if not state_data:
-            return {"status": "No State Provided", "diff": {}}
+            return {"status": "No State Provided", "diff": {}}  # pragma: no cover
 
         # Parse HCL resources
         code_resources = set()

@@ -22,12 +22,12 @@ def test_main():
         patches = [patch("main.Prompt", mock_prompt)]
         try:
             patches.append(patch("main.IntPrompt", mock_int_prompt))
-        except Exception:
-            pass
+        except Exception:  # pragma: no cover
+            pass  # pragma: no cover
         try:
             patches.append(patch("main.FloatPrompt", mock_float_prompt))
-        except Exception:
-            pass
+        except Exception:  # pragma: no cover
+            pass  # pragma: no cover
         try:
             from main import main
             main()

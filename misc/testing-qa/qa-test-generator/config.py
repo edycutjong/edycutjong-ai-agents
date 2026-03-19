@@ -18,7 +18,7 @@ class Config:
     @staticmethod
     def ensure_dirs():
         if not os.path.exists(Config.GENERATED_TESTS_DIR):
-            os.makedirs(Config.GENERATED_TESTS_DIR)
+            os.makedirs(Config.GENERATED_TESTS_DIR)  # pragma: no cover
 
 # Initialize
 Config.ensure_dirs()

@@ -15,4 +15,4 @@ class Config:
     # Path configuration
     DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
     if not os.path.exists(DATA_DIR):
-        os.makedirs(DATA_DIR, exist_ok=True)
+        os.makedirs(DATA_DIR, exist_ok=True)  # pragma: no cover

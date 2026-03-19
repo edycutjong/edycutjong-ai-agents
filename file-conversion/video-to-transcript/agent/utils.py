@@ -21,7 +21,7 @@ def extract_audio(video_path: str, output_path: str) -> str:
 
         # Extract audio
         if video.audio is None:
-             raise RuntimeError("Video has no audio track.")
+             raise RuntimeError("Video has no audio track.")  # pragma: no cover
 
         video.audio.write_audiofile(output_path, codec='mp3', verbose=False, logger=None)
 

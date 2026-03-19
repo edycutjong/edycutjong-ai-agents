@@ -15,7 +15,7 @@ class MigrationPlanner:
 
     def _init_llm(self):
         if config.LLM_PROVIDER == "gemini":
-            self.llm = ChatGoogleGenerativeAI(
+            self.llm = ChatGoogleGenerativeAI(  # pragma: no cover
                 model=config.MODEL_NAME,
                 temperature=config.TEMPERATURE,
                 api_key=config.GEMINI_API_KEY

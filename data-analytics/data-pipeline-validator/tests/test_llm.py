@@ -36,7 +36,7 @@ def test_analyze_report_with_key():
         if isinstance(result, MagicMock):
              # Fallback debug: if it returns a mock, it means our config wasn't used.
              # We can't print easily here.
-             pass
+             pass  # pragma: no cover
 
         assert result == "Analysis Summary"
 

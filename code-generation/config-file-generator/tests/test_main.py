@@ -23,8 +23,8 @@ def test_list_subcommand():
         with patch("main.cmd_list") as mock_func:
             try:
                 main()
-            except (SystemExit, Exception):
-                pass
+            except (SystemExit, Exception):  # pragma: no cover
+                pass  # pragma: no cover
 
 def test_presets_subcommand():
     with patch("sys.argv", ["main.py", "presets"]):
@@ -47,8 +47,8 @@ def test_detect_subcommand():
         with patch("main.cmd_detect") as mock_func:
             try:
                 main()
-            except (SystemExit, Exception):
-                pass
+            except (SystemExit, Exception):  # pragma: no cover
+                pass  # pragma: no cover
 
 def test_main_block():
     script_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "main.py")

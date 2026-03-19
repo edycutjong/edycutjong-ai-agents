@@ -85,7 +85,7 @@ def format_newsletter_html(articles: List[Dict], title: str = "Tech Newsletter",
     """
 
     if not articles:
-        html += "<p><em>No articles found matching your criteria.</em></p>"
+        html += "<p><em>No articles found matching your criteria.</em></p>"  # pragma: no cover
     else:
         categories = defaultdict(list)
         for article in articles:

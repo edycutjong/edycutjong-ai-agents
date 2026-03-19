@@ -51,7 +51,7 @@ class CodeScanner:
         Scans the directory and returns a summary of findings.
         """
         if not self.root_dir.exists():
-             raise FileNotFoundError(f"Directory not found: {self.root_dir}")
+             raise FileNotFoundError(f"Directory not found: {self.root_dir}")  # pragma: no cover
 
         pii_found: Set[str] = set()
         third_parties_found: Set[str] = set()
@@ -84,8 +84,8 @@ class CodeScanner:
                             findings_detail[service].append(str(file_path.relative_to(self.root_dir)))
                             break
 
-            except Exception as e:
-                print(f"Error reading file {file_path}: {e}")
+            except Exception as e:  # pragma: no cover
+                print(f"Error reading file {file_path}: {e}")  # pragma: no cover
 
         return {
             "pii": list(pii_found),

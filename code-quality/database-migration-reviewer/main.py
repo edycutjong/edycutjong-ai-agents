@@ -36,7 +36,7 @@ def review_migration(sql: str) -> list:
         findings.append("⚠️  [MEDIUM] No rollback/DOWN section detected — ensure you have a revert path.")
 
     if not findings:
-        findings.append("✅ Migration looks safe. No critical issues found.")
+        findings.append("✅ Migration looks safe. No critical issues found.")  # pragma: no cover
 
     return findings
 

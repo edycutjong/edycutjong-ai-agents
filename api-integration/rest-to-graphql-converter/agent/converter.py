@@ -3,9 +3,9 @@ from typing import Dict, Any, Optional
 try:
     from .parser import OpenAPIParser
     from .generator import GraphQLGenerator
-except ImportError:
-    from parser import OpenAPIParser
-    from generator import GraphQLGenerator
+except ImportError:  # pragma: no cover
+    from parser import OpenAPIParser  # pragma: no cover
+    from generator import GraphQLGenerator  # pragma: no cover
 
 class RestToGraphqlConverter:
     """Orchestrates the conversion from REST to GraphQL."""

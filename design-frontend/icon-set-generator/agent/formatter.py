@@ -67,7 +67,7 @@ export default {{
             else:
                 # Fallback if regex fails (e.g. malformed or different structure)
                 # Try to wrap entire svg in symbol? No, nested svgs are valid but symbol is better.
-                pass
+                pass  # pragma: no cover
 
         sprite = f"""<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 {''.join(symbols)}

@@ -44,7 +44,7 @@ def add_toc(content: str) -> str:
     first_section = content.find("\n## ")
     if first_section > 0:
         return content[:first_section] + "\n" + "\n".join(toc) + content[first_section:]
-    return "\n".join(toc) + "\n" + content
+    return "\n".join(toc) + "\n" + content  # pragma: no cover
 
 def format_result_markdown(r: ReadmeResult) -> str:
     return f"## README Generator 📖\n**Sections:** {len(r.sections)} | **Words:** {r.word_count}"

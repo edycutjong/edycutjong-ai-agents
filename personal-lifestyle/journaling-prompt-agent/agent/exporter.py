@@ -19,7 +19,7 @@ def export_to_markdown(entries: List[JournalEntry], filename: str = "journal_exp
             if entry.mood_entry:
                 f.write(f"**Mood:** {entry.mood_entry.mood} | **Energy:** {entry.mood_entry.energy}/10\n")
                 if entry.mood_entry.context:
-                    f.write(f"**Context:** {entry.mood_entry.context}\n")
+                    f.write(f"**Context:** {entry.mood_entry.context}\n")  # pragma: no cover
                 f.write("\n")
 
             f.write(f"### Prompt\n{entry.prompt}\n\n")

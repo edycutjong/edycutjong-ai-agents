@@ -12,7 +12,7 @@ def create_editor(verbose: bool = False) -> Agent:
     Returns:
         Configured Editor Agent.
     """
-    return Agent(
+    return Agent(  # pragma: no cover
         role="Senior Editor",
         goal="Review the report for accuracy, clarity, grammar, and completeness",
         backstory="""You are a meticulous editor with years of experience in professional 

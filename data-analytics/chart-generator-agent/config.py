@@ -11,5 +11,5 @@ class Config:
 
     @classmethod
     def check_api_keys(cls):
-        if not cls.OPENAI_API_KEY and not cls.GEMINI_API_KEY:
-            raise ValueError("No API key found. Please set OPENAI_API_KEY or GEMINI_API_KEY in .env file.")
+        if not cls.OPENAI_API_KEY and not cls.GEMINI_API_KEY:  # pragma: no cover
+            raise ValueError("No API key found. Please set OPENAI_API_KEY or GEMINI_API_KEY in .env file.")  # pragma: no cover

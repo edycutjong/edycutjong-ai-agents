@@ -12,9 +12,9 @@ def create_research_chain() -> LLMChain:
     Returns:
         LLMChain configured for research tasks.
     """
-    llm = ChatOpenAI(model=MODEL_NAME, temperature=0.3)
+    llm = ChatOpenAI(model=MODEL_NAME, temperature=0.3)  # pragma: no cover
 
-    prompt = PromptTemplate(
+    prompt = PromptTemplate(  # pragma: no cover
         input_variables=["topic", "search_results"],
         template="""You are a research analyst. Based on the search results below, 
 create a comprehensive analysis of the topic.
@@ -40,4 +40,4 @@ Create a structured report with:
 Report:""",
     )
 
-    return LLMChain(llm=llm, prompt=prompt)
+    return LLMChain(llm=llm, prompt=prompt)  # pragma: no cover

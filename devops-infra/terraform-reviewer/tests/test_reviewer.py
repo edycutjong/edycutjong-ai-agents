@@ -62,4 +62,4 @@ class TestReviewer(unittest.TestCase):
         self.assertIn("total_monthly_cost", result["cost"])
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main()  # pragma: no cover

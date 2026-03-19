@@ -6,7 +6,7 @@ import sys
 # Add app directory to path
 app_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
 if app_dir not in sys.path:
-    sys.path.insert(0, app_dir)
+    sys.path.insert(0, app_dir)  # pragma: no cover
 
 from agent.transcriber import Transcriber
 

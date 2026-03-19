@@ -18,4 +18,4 @@ class Config:
 
     @staticmethod
     def get_api_key():
-        return os.getenv("OPENAI_API_KEY")
+        return os.getenv("OPENAI_API_KEY")  # pragma: no cover

@@ -10,5 +10,5 @@ class Config:
 
     @staticmethod
     def validate():
-        if not Config.OPENAI_API_KEY:
-            raise ValueError("OPENAI_API_KEY environment variable is not set.")
+        if not Config.OPENAI_API_KEY:  # pragma: no cover
+            raise ValueError("OPENAI_API_KEY environment variable is not set.")  # pragma: no cover

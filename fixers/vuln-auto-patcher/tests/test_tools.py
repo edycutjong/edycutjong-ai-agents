@@ -77,4 +77,4 @@ class TestTesterTools(unittest.TestCase):
         self.assertFalse(result["success"])
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main()  # pragma: no cover

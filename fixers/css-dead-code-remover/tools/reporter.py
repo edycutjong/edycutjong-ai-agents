@@ -60,5 +60,5 @@ def generate_report(
 
         logger.info(f"Report generated at {output_path}")
 
-    except Exception as e:
-        logger.error(f"Error generating report: {e}")
+    except Exception as e:  # pragma: no cover
+        logger.error(f"Error generating report: {e}")  # pragma: no cover

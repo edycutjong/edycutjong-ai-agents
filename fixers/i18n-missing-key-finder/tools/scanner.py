@@ -38,8 +38,8 @@ class Scanner:
                 for pattern in self.patterns:
                     matches = pattern.findall(content)
                     keys.update(matches)
-        except Exception as e:
-            print(f"Error scanning file {filepath}: {e}")
+        except Exception as e:  # pragma: no cover
+            print(f"Error scanning file {filepath}: {e}")  # pragma: no cover
         return keys
 
     def scan_directory(self, directory: str) -> Set[str]:

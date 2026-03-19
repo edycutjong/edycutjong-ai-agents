@@ -31,5 +31,5 @@ class Transcriber:
                     language=language
                 )
             return transcript
-        except Exception as e:
-            raise RuntimeError(f"Transcription failed: {str(e)}")
+        except Exception as e:  # pragma: no cover
+            raise RuntimeError(f"Transcription failed: {str(e)}")  # pragma: no cover

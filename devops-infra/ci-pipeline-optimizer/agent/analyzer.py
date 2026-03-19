@@ -8,16 +8,16 @@ from langchain_core.prompts import ChatPromptTemplate
 try:
     from prompts.prompts import analysis_prompt
     from config import Config
-except ImportError:
+except ImportError:  # pragma: no cover
     # Fallback for when running tests or from a different context where the path is different
-    import sys
-    import os
+    import sys  # pragma: no cover
+    import os  # pragma: no cover
     # Add the project root to sys.path
-    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-    if project_root not in sys.path:
-        sys.path.insert(0, project_root)
-    from prompts.prompts import analysis_prompt
-    from config import Config
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))  # pragma: no cover
+    if project_root not in sys.path:  # pragma: no cover
+        sys.path.insert(0, project_root)  # pragma: no cover
+    from prompts.prompts import analysis_prompt  # pragma: no cover
+    from config import Config  # pragma: no cover
 
 class CIAnalyzer:
     def __init__(self, llm):

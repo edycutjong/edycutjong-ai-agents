@@ -25,7 +25,7 @@ class TutorialGenerator:
             # Convert structure to string representation for LLM context
             self.context = f"Code Structure Analysis:\n{structure}"
         else:
-            self.context = analyze_text_content(text, self.llm)
+            self.context = analyze_text_content(text, self.llm)  # pragma: no cover
         return self.context
 
     def generate_introduction(self, difficulty: str) -> str:

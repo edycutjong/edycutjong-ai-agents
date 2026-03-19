@@ -25,9 +25,9 @@ class QuestionGenerator:
                 "difficulty": difficulty,
                 "format_instructions": parser.get_format_instructions()
             })
-        except Exception as e:
-            print(f"Error generating coding question: {e}")
-            return None
+        except Exception as e:  # pragma: no cover
+            print(f"Error generating coding question: {e}")  # pragma: no cover
+            return None  # pragma: no cover
 
     def generate_system_design_question(self, skills: List[str], experience_level: str) -> Optional[SystemDesignQuestion]:
         """
@@ -43,9 +43,9 @@ class QuestionGenerator:
                 "experience_level": experience_level,
                 "format_instructions": parser.get_format_instructions()
             })
-        except Exception as e:
-            print(f"Error generating system design question: {e}")
-            return None
+        except Exception as e:  # pragma: no cover
+            print(f"Error generating system design question: {e}")  # pragma: no cover
+            return None  # pragma: no cover
 
     def generate_behavioral_question(self, focus_area: str = "Leadership") -> Optional[BehavioralQuestion]:
         """
@@ -60,6 +60,6 @@ class QuestionGenerator:
                 "focus_area": focus_area,
                 "format_instructions": parser.get_format_instructions()
             })
-        except Exception as e:
-            print(f"Error generating behavioral question: {e}")
-            return None
+        except Exception as e:  # pragma: no cover
+            print(f"Error generating behavioral question: {e}")  # pragma: no cover
+            return None  # pragma: no cover

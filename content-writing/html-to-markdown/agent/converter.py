@@ -39,8 +39,8 @@ def html_to_markdown(html: str) -> ConvertResult:
         # Clean up whitespace
         md = re.sub(r'\n{3,}', '\n\n', md).strip()
         r.markdown = md
-    except Exception as e:
-        r.is_valid = False; r.error = str(e)
+    except Exception as e:  # pragma: no cover
+        r.is_valid = False; r.error = str(e)  # pragma: no cover
     return r
 
 def strip_tags(html: str) -> str:

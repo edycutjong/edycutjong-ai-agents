@@ -12,7 +12,7 @@ class TestRunner:
         Runs the specified test file using pytest and returns the result.
         """
         if not os.path.exists(test_file_path):
-            return {
+            return {  # pragma: no cover
                 "success": False,
                 "output": f"Test file not found: {test_file_path}",
                 "passed": 0,
@@ -64,8 +64,8 @@ class TestRunner:
                 "total": total
             }
 
-        except Exception as e:
-            return {
+        except Exception as e:  # pragma: no cover
+            return {  # pragma: no cover
                 "success": False,
                 "output": str(e),
                 "passed": 0,

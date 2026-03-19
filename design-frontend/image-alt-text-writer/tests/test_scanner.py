@@ -66,9 +66,9 @@ def test_scan_directory(scanner, tmpdir):
     assert len(results) == 1
 
 def test_scan_file_fallback_parser(scanner, tmpdir):
-    html_content = "<html><body><img src='test.jpg'></body></html>"
-    test_file = tmpdir / "test.html"
-    test_file.write_text(html_content, encoding='utf-8')
+    html_content = "<html><body><img src='test.jpg'></body></html>"  # pragma: no cover
+    test_file = tmpdir / "test.html"  # pragma: no cover
+    test_file.write_text(html_content, encoding='utf-8')  # pragma: no cover
 def test_scan_file_fallback_parser(scanner, tmpdir):
     html_content = "<html><body><img src='test.jpg'></body></html>"
     test_file = tmpdir / "test.html"

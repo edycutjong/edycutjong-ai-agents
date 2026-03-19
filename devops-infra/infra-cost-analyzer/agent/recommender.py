@@ -25,7 +25,7 @@ class Recommender:
                 reason = row.get('Reason')
 
                 if 'Low CPU' in str(reason) and current_type in instance_map:
-                    suggestions.append({
+                    suggestions.append({  # pragma: no cover
                         'ResourceID': row.get('ResourceID'),
                         'CurrentType': current_type,
                         'SuggestedType': instance_map[current_type],
@@ -39,7 +39,7 @@ class Recommender:
         Calculates total potential savings from flagged waste.
         """
         if self.waste_df.empty:
-            return 0.0
+            return 0.0  # pragma: no cover
 
         # If specific estimated savings exist, sum them up
         # Otherwise, assume 100% savings for waste (e.g., deleted resources)

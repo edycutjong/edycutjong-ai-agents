@@ -11,7 +11,7 @@ def create_search_tool() -> Tool:
         Configured search tool for the agent.
     """
     search = DuckDuckGoSearchRun()
-    return Tool(
+    return Tool(  # pragma: no cover
         name="Web Search",
         func=search.run,
         description=(

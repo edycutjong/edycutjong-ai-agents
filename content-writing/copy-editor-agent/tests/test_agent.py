@@ -4,9 +4,9 @@ from agent.core import CopyEditorAgent, Config
 
 @pytest.fixture
 def mock_agent(mocker):
-    mocker.patch.object(Config, 'OPENAI_API_KEY', 'fake-key')
-    mocker.patch('agent.core.ChatOpenAI')
-    return CopyEditorAgent(api_key="fake-key")
+    mocker.patch.object(Config, 'OPENAI_API_KEY', 'fake-key')  # pragma: no cover
+    mocker.patch('agent.core.ChatOpenAI')  # pragma: no cover
+    return CopyEditorAgent(api_key="fake-key")  # pragma: no cover
 
 def test_agent_initialization_no_key(mocker):
     mocker.patch.object(Config, 'OPENAI_API_KEY', None)

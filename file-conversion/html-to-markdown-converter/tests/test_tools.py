@@ -60,4 +60,4 @@ class TestTools(unittest.TestCase):
         self.assertEqual(images[1], "http://example.com/path/to/image.jpg")
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main()  # pragma: no cover

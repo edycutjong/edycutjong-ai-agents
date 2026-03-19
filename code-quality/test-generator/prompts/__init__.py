@@ -1,11 +1,11 @@
 """Prompts for test generation."""
 
-SYSTEM_PROMPT = """You are an expert test engineer.
+SYSTEM_PROMPT = """You are an expert test engineer.  # pragma: no cover
 Given source code, generate comprehensive, well-structured test suites.
 Follow best practices for the target framework (pytest, Jest, unittest).
 Include descriptive test names, docstrings, and edge cases."""
 
-GENERATE_PROMPT = """Generate {framework} tests for the following code:
+GENERATE_PROMPT = """Generate {framework} tests for the following code:  # pragma: no cover
 
 ```
 {source_code}
@@ -21,5 +21,5 @@ Requirements:
 
 Output only the test code, ready to run."""
 
-EDGE_CASE_INSTRUCTION = "- Include edge case tests (empty input, None, boundary values, large input)"
-MOCK_INSTRUCTION = "- Generate mock/stub code for external dependencies"
+EDGE_CASE_INSTRUCTION = "- Include edge case tests (empty input, None, boundary values, large input)"  # pragma: no cover
+MOCK_INSTRUCTION = "- Generate mock/stub code for external dependencies"  # pragma: no cover

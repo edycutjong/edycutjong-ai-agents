@@ -1,16 +1,28 @@
 {
-  "timestamp": "2026-03-19T01:26:10Z",
+  "timestamp": "2026-03-19T02:33:48Z",
   "summary": {
     "total_agents": 233,
     "agents_with_coverage": 233,
-    "average_coverage": 84,
+    "average_coverage": 100,
     "passed": 233,
     "failed": 0,
     "skipped": 0
   },
   "agents": [
     {
+      "agent": "./ai-ml-ops/ai-hallucination-detector",
+      "coverage": 100
+    },
+    {
+      "agent": "./ai-ml-ops/embedding-explorer",
+      "coverage": 100
+    },
+    {
       "agent": "./ai-ml-ops/fine-tune-dataset-curator",
+      "coverage": 100
+    },
+    {
+      "agent": "./ai-ml-ops/llm-cost-calculator",
       "coverage": 100
     },
     {
@@ -19,6 +31,10 @@
     },
     {
       "agent": "./ai-ml-ops/prompt-optimizer",
+      "coverage": 100
+    },
+    {
+      "agent": "./ai-ml-ops/rag-evaluator",
       "coverage": 100
     },
     {
@@ -34,11 +50,27 @@
       "coverage": 100
     },
     {
+      "agent": "./api-integration/api-rate-limit-tester",
+      "coverage": 100
+    },
+    {
       "agent": "./api-integration/graphql-schema-analyzer",
       "coverage": 100
     },
     {
+      "agent": "./api-integration/oauth-flow-debugger",
+      "coverage": 100
+    },
+    {
       "agent": "./api-integration/postman-to-code-converter",
+      "coverage": 100
+    },
+    {
+      "agent": "./api-integration/rest-to-graphql-converter",
+      "coverage": 100
+    },
+    {
+      "agent": "./api-integration/webhook-tester",
       "coverage": 100
     },
     {
@@ -54,11 +86,35 @@
       "coverage": 100
     },
     {
+      "agent": "./business-productivity/expense-categorizer",
+      "coverage": 100
+    },
+    {
       "agent": "./business-productivity/invoice-generator-agent",
       "coverage": 100
     },
     {
+      "agent": "./business-productivity/kpi-dashboard-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./business-productivity/meeting-notes-summarizer",
+      "coverage": 100
+    },
+    {
+      "agent": "./business-productivity/meeting-scheduler-agent",
+      "coverage": 100
+    },
+    {
       "agent": "./business-productivity/okr-tracker",
+      "coverage": 100
+    },
+    {
+      "agent": "./business-productivity/receipt-categorizer-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./business-productivity/resume-tailor-agent",
       "coverage": 100
     },
     {
@@ -75,6 +131,10 @@
     },
     {
       "agent": "./code-generation/boilerplate-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-generation/config-file-generator",
       "coverage": 100
     },
     {
@@ -110,7 +170,111 @@
       "coverage": 100
     },
     {
+      "agent": "./code-quality/ai-code-review-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/api-contract-validator",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/bug-report-triage-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/bug-triager-auto",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/bug-triager",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/code-review-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/code-review-automator",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/code-reviewer",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/commit-message-linter",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/database-migration-reviewer",
+      "coverage": 100
+    },
+    {
       "agent": "./code-quality/dead-code-hunter",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/dependency-update-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/pr-description-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/pr-description-writer",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/refactoring-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/regex-tester",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/tech-debt-scorer",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/test-coverage-gap-finder",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/test-generation-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./code-quality/test-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/agent-blog-outline-gen",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/blog-post-writer",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/copy-editor-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/email-draft-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/html-to-markdown",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/i18n-translator-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/lorem-ipsum-generator",
       "coverage": 100
     },
     {
@@ -118,7 +282,23 @@
       "coverage": 100
     },
     {
+      "agent": "./content-writing/newsletter-curator",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/press-release-writer",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/proposal-writer",
+      "coverage": 100
+    },
+    {
       "agent": "./content-writing/readme-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/seo-auditor",
       "coverage": 100
     },
     {
@@ -130,7 +310,31 @@
       "coverage": 100
     },
     {
+      "agent": "./content-writing/string-similarity",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/technical-blog-reviewer",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/text-case-converter",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/text-diff",
+      "coverage": 100
+    },
+    {
       "agent": "./content-writing/text-summarizer",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/tutorial-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./content-writing/tweet-thread-writer",
       "coverage": 100
     },
     {
@@ -147,6 +351,10 @@
     },
     {
       "agent": "./data-analytics/base64-encoder",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/chart-generator-agent",
       "coverage": 100
     },
     {
@@ -170,11 +378,31 @@
       "coverage": 100
     },
     {
+      "agent": "./data-analytics/data-pipeline-validator",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/database-diagram-generator",
+      "coverage": 100
+    },
+    {
       "agent": "./data-analytics/ip-geolocation-lookup",
       "coverage": 100
     },
     {
+      "agent": "./data-analytics/json-formatter",
+      "coverage": 100
+    },
+    {
       "agent": "./data-analytics/json-schema-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/log-to-metrics-converter",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/math-expression-parser",
       "coverage": 100
     },
     {
@@ -186,7 +414,23 @@
       "coverage": 100
     },
     {
+      "agent": "./data-analytics/research-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/spreadsheet-formula-writer",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/sql-formatter",
+      "coverage": 100
+    },
+    {
       "agent": "./data-analytics/sql-query-optimizer",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/timestamp-converter",
       "coverage": 100
     },
     {
@@ -194,7 +438,27 @@
       "coverage": 100
     },
     {
+      "agent": "./data-analytics/url-shortener",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/uuid-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./data-analytics/yaml-validator",
+      "coverage": 100
+    },
+    {
       "agent": "./design-frontend/accessibility-auditor",
+      "coverage": 100
+    },
+    {
+      "agent": "./design-frontend/ascii-art-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./design-frontend/color-converter",
       "coverage": 100
     },
     {
@@ -202,7 +466,71 @@
       "coverage": 100
     },
     {
+      "agent": "./design-frontend/component-documenter",
+      "coverage": 100
+    },
+    {
+      "agent": "./design-frontend/design-token-extractor",
+      "coverage": 100
+    },
+    {
+      "agent": "./design-frontend/icon-set-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./design-frontend/image-alt-text-writer",
+      "coverage": 100
+    },
+    {
+      "agent": "./design-frontend/responsive-design-tester",
+      "coverage": 100
+    },
+    {
       "agent": "./design-frontend/ui-copy-reviewer",
+      "coverage": 100
+    },
+    {
+      "agent": "./developer/agent-api-monitor",
+      "coverage": 100
+    },
+    {
+      "agent": "./developer/agent-changelog-writer",
+      "coverage": 100
+    },
+    {
+      "agent": "./developer/agent-code-reviewer",
+      "coverage": 100
+    },
+    {
+      "agent": "./developer/agent-dependency-updater",
+      "coverage": 100
+    },
+    {
+      "agent": "./developer/agent-doc-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./developer/agent-issue-labeler",
+      "coverage": 100
+    },
+    {
+      "agent": "./developer/agent-license-auditor",
+      "coverage": 100
+    },
+    {
+      "agent": "./developer/agent-migration-checker",
+      "coverage": 100
+    },
+    {
+      "agent": "./developer/agent-pr-reviewer",
+      "coverage": 100
+    },
+    {
+      "agent": "./developer/agent-readme-keeper",
+      "coverage": 100
+    },
+    {
+      "agent": "./developer/agent-test-writer",
       "coverage": 100
     },
     {
@@ -210,7 +538,23 @@
       "coverage": 100
     },
     {
+      "agent": "./devops-infra/agent-commit-risk-scorer",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/agent-incident-responder",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/api-monitor",
+      "coverage": 100
+    },
+    {
       "agent": "./devops-infra/changelog-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/ci-pipeline-optimizer",
       "coverage": 100
     },
     {
@@ -219,6 +563,14 @@
     },
     {
       "agent": "./devops-infra/cron-expression-parser",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/cron-parser",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/dependency-checker",
       "coverage": 100
     },
     {
@@ -246,11 +598,35 @@
       "coverage": 100
     },
     {
+      "agent": "./devops-infra/git-workflow-agent",
+      "coverage": 100
+    },
+    {
       "agent": "./devops-infra/gitignore-generator",
       "coverage": 100
     },
     {
+      "agent": "./devops-infra/incident-responder",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/infra-cost-analyzer",
+      "coverage": 100
+    },
+    {
       "agent": "./devops-infra/log-analyzer",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/migration-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/migration-planner",
+      "coverage": 100
+    },
+    {
+      "agent": "./devops-infra/performance-profiler",
       "coverage": 100
     },
     {
@@ -262,7 +638,19 @@
       "coverage": 100
     },
     {
+      "agent": "./devops-infra/terraform-reviewer",
+      "coverage": 100
+    },
+    {
       "agent": "./devops-infra/uptime-monitor-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./documentation/agent-api-doc-writer",
+      "coverage": 100
+    },
+    {
+      "agent": "./documentation/changelog-writer-agent",
       "coverage": 100
     },
     {
@@ -270,7 +658,35 @@
       "coverage": 100
     },
     {
+      "agent": "./documentation/doc-writer",
+      "coverage": 100
+    },
+    {
+      "agent": "./documentation/docs-qa-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./documentation/documentation-agent",
+      "coverage": 100
+    },
+    {
       "agent": "./documentation/documentation-writer-bot",
+      "coverage": 100
+    },
+    {
+      "agent": "./documentation/license-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./documentation/readme-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./file-conversion/csv-to-api-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./file-conversion/figma-to-css-agent",
       "coverage": 100
     },
     {
@@ -278,11 +694,75 @@
       "coverage": 100
     },
     {
+      "agent": "./file-conversion/html-to-markdown-converter",
+      "coverage": 100
+    },
+    {
       "agent": "./file-conversion/html-to-markdown",
       "coverage": 100
     },
     {
+      "agent": "./file-conversion/json-yaml-converter",
+      "coverage": 100
+    },
+    {
+      "agent": "./file-conversion/markdown-to-pdf-agent",
+      "coverage": 100
+    },
+    {
       "agent": "./file-conversion/sql-to-nosql-migrator",
+      "coverage": 100
+    },
+    {
+      "agent": "./file-conversion/swagger-to-typescript",
+      "coverage": 100
+    },
+    {
+      "agent": "./file-conversion/video-to-transcript",
+      "coverage": 100
+    },
+    {
+      "agent": "./file-conversion/yaml-json-converter",
+      "coverage": 100
+    },
+    {
+      "agent": "./fixers/api-breaking-change-detect",
+      "coverage": 100
+    },
+    {
+      "agent": "./fixers/code-style-enforcer-bot",
+      "coverage": 100
+    },
+    {
+      "agent": "./fixers/css-dead-code-remover",
+      "coverage": 100
+    },
+    {
+      "agent": "./fixers/dependency-bloat-reducer",
+      "coverage": 100
+    },
+    {
+      "agent": "./fixers/deprecation-hunter",
+      "coverage": 100
+    },
+    {
+      "agent": "./fixers/doc-drift-fixer",
+      "coverage": 100
+    },
+    {
+      "agent": "./fixers/i18n-missing-key-finder",
+      "coverage": 100
+    },
+    {
+      "agent": "./fixers/log-noise-reducer",
+      "coverage": 100
+    },
+    {
+      "agent": "./fixers/unused-asset-cleaner",
+      "coverage": 100
+    },
+    {
+      "agent": "./fixers/vuln-auto-patcher",
       "coverage": 100
     },
     {
@@ -294,11 +774,107 @@
       "coverage": 100
     },
     {
+      "agent": "./learning-education/interview-prep-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./learning-education/learning-path-planner",
+      "coverage": 100
+    },
+    {
+      "agent": "./learning-education/paper-summarizer",
+      "coverage": 100
+    },
+    {
       "agent": "./learning-education/quiz-generator",
       "coverage": 100
     },
     {
+      "agent": "./misc/ai-frameworks/autogen-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./misc/ai-frameworks/crewai-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./misc/ai-frameworks/langchain-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./misc/communication/email-drafter",
+      "coverage": 100
+    },
+    {
+      "agent": "./misc/communication/email-triage-assistant",
+      "coverage": 100
+    },
+    {
+      "agent": "./misc/content-marketing/resume-tailor-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./misc/content-marketing/social-media-manager-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./misc/meetings/meeting-notes-organizer",
+      "coverage": 100
+    },
+    {
+      "agent": "./misc/meetings/meeting-summarizer",
+      "coverage": 100
+    },
+    {
+      "agent": "./misc/research-data/data-analyst",
+      "coverage": 100
+    },
+    {
+      "agent": "./misc/research-data/research-summarizer-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./misc/research-data/sql-query-builder-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./misc/testing-qa/qa-test-generator",
+      "coverage": 100
+    },
+    {
       "agent": "./misc/testing-qa/test-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./personal-lifestyle/gift-recommendation-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./personal-lifestyle/habit-coach",
+      "coverage": 100
+    },
+    {
+      "agent": "./personal-lifestyle/journaling-prompt-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./personal-lifestyle/recipe-planner",
+      "coverage": 100
+    },
+    {
+      "agent": "./personal-lifestyle/travel-itinerary-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./personal-lifestyle/workout-planner",
+      "coverage": 100
+    },
+    {
+      "agent": "./productivity/agent-email-classifier",
+      "coverage": 100
+    },
+    {
+      "agent": "./productivity/agent-meeting-scheduler",
       "coverage": 100
     },
     {
@@ -310,7 +886,19 @@
       "coverage": 100
     },
     {
+      "agent": "./security-privacy/file-hash-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./security-privacy/hash-generator",
+      "coverage": 100
+    },
+    {
       "agent": "./security-privacy/http-header-analyzer",
+      "coverage": 100
+    },
+    {
+      "agent": "./security-privacy/ip-lookup",
       "coverage": 100
     },
     {
@@ -330,6 +918,10 @@
       "coverage": 100
     },
     {
+      "agent": "./security-privacy/permission-auditor",
+      "coverage": 100
+    },
+    {
       "agent": "./security-privacy/phishing-email-detector",
       "coverage": 100
     },
@@ -338,608 +930,16 @@
       "coverage": 100
     },
     {
+      "agent": "./security-privacy/privacy-policy-generator",
+      "coverage": 100
+    },
+    {
       "agent": "./security-privacy/secret-scanner",
       "coverage": 100
     },
     {
-      "agent": "./content-writing/lorem-ipsum-generator",
-      "coverage": 99
-    },
-    {
-      "agent": "./content-writing/proposal-writer",
-      "coverage": 99
-    },
-    {
-      "agent": "./content-writing/string-similarity",
-      "coverage": 99
-    },
-    {
-      "agent": "./data-analytics/sql-formatter",
-      "coverage": 99
-    },
-    {
-      "agent": "./data-analytics/url-shortener",
-      "coverage": 99
-    },
-    {
-      "agent": "./design-frontend/color-converter",
-      "coverage": 99
-    },
-    {
-      "agent": "./design-frontend/image-alt-text-writer",
-      "coverage": 99
-    },
-    {
-      "agent": "./devops-infra/dependency-checker",
-      "coverage": 99
-    },
-    {
-      "agent": "./learning-education/paper-summarizer",
-      "coverage": 99
-    },
-    {
-      "agent": "./misc/meetings/meeting-summarizer",
-      "coverage": 99
-    },
-    {
-      "agent": "./personal-lifestyle/travel-itinerary-agent",
-      "coverage": 99
-    },
-    {
-      "agent": "./security-privacy/hash-generator",
-      "coverage": 99
-    },
-    {
-      "agent": "./ai-ml-ops/llm-cost-calculator",
-      "coverage": 98
-    },
-    {
-      "agent": "./content-writing/text-case-converter",
-      "coverage": 98
-    },
-    {
-      "agent": "./data-analytics/math-expression-parser",
-      "coverage": 98
-    },
-    {
-      "agent": "./data-analytics/uuid-generator",
-      "coverage": 98
-    },
-    {
-      "agent": "./design-frontend/ascii-art-generator",
-      "coverage": 98
-    },
-    {
-      "agent": "./design-frontend/component-documenter",
-      "coverage": 98
-    },
-    {
-      "agent": "./devops-infra/cron-parser",
-      "coverage": 98
-    },
-    {
-      "agent": "./documentation/license-generator",
-      "coverage": 98
-    },
-    {
-      "agent": "./documentation/readme-generator",
-      "coverage": 98
-    },
-    {
-      "agent": "./security-privacy/file-hash-generator",
-      "coverage": 98
-    },
-    {
-      "agent": "./content-writing/html-to-markdown",
-      "coverage": 97
-    },
-    {
-      "agent": "./content-writing/text-diff",
-      "coverage": 97
-    },
-    {
-      "agent": "./data-analytics/yaml-validator",
-      "coverage": 97
-    },
-    {
-      "agent": "./devops-infra/agent-commit-risk-scorer",
-      "coverage": 97
-    },
-    {
-      "agent": "./data-analytics/timestamp-converter",
-      "coverage": 96
-    },
-    {
-      "agent": "./security-privacy/ip-lookup",
-      "coverage": 96
-    },
-    {
-      "agent": "./documentation/docs-qa-agent",
-      "coverage": 92
-    },
-    {
-      "agent": "./business-productivity/expense-categorizer",
-      "coverage": 90
-    },
-    {
-      "agent": "./business-productivity/meeting-scheduler-agent",
-      "coverage": 90
-    },
-    {
-      "agent": "./code-quality/bug-report-triage-agent",
-      "coverage": 90
-    },
-    {
-      "agent": "./data-analytics/json-formatter",
-      "coverage": 90
-    },
-    {
-      "agent": "./documentation/changelog-writer-agent",
-      "coverage": 90
-    },
-    {
-      "agent": "./code-quality/dependency-update-agent",
-      "coverage": 89
-    },
-    {
-      "agent": "./code-generation/config-file-generator",
-      "coverage": 88
-    },
-    {
-      "agent": "./content-writing/email-draft-agent",
-      "coverage": 88
-    },
-    {
-      "agent": "./file-conversion/json-yaml-converter",
-      "coverage": 88
-    },
-    {
-      "agent": "./business-productivity/receipt-categorizer-agent",
-      "coverage": 87
-    },
-    {
-      "agent": "./misc/communication/email-drafter",
-      "coverage": 87
-    },
-    {
-      "agent": "./business-productivity/resume-tailor-agent",
-      "coverage": 86
-    },
-    {
-      "agent": "./documentation/agent-api-doc-writer",
-      "coverage": 85
-    },
-    {
-      "agent": "./documentation/documentation-agent",
-      "coverage": 85
-    },
-    {
-      "agent": "./personal-lifestyle/recipe-planner",
-      "coverage": 85
-    },
-    {
-      "agent": "./personal-lifestyle/workout-planner",
-      "coverage": 85
-    },
-    {
-      "agent": "./api-integration/rest-to-graphql-converter",
-      "coverage": 84
-    },
-    {
-      "agent": "./business-productivity/meeting-notes-summarizer",
-      "coverage": 84
-    },
-    {
-      "agent": "./code-quality/code-review-agent",
-      "coverage": 84
-    },
-    {
-      "agent": "./code-quality/regex-tester",
-      "coverage": 84
-    },
-    {
-      "agent": "./data-analytics/chart-generator-agent",
-      "coverage": 84
-    },
-    {
-      "agent": "./content-writing/newsletter-curator",
-      "coverage": 83
-    },
-    {
-      "agent": "./devops-infra/migration-planner",
-      "coverage": 83
-    },
-    {
-      "agent": "./code-quality/code-reviewer",
-      "coverage": 82
-    },
-    {
-      "agent": "./developer/agent-code-reviewer",
-      "coverage": 82
-    },
-    {
-      "agent": "./file-conversion/yaml-json-converter",
-      "coverage": 82
-    },
-    {
-      "agent": "./devops-infra/api-monitor",
-      "coverage": 80
-    },
-    {
-      "agent": "./devops-infra/ci-pipeline-optimizer",
-      "coverage": 80
-    },
-    {
-      "agent": "./documentation/doc-writer",
-      "coverage": 80
-    },
-    {
-      "agent": "./api-integration/webhook-tester",
-      "coverage": 79
-    },
-    {
-      "agent": "./code-quality/pr-description-agent",
-      "coverage": 79
-    },
-    {
-      "agent": "./content-writing/i18n-translator-agent",
-      "coverage": 79
-    },
-    {
-      "agent": "./data-analytics/research-agent",
-      "coverage": 79
-    },
-    {
-      "agent": "./code-quality/test-generator",
-      "coverage": 78
-    },
-    {
-      "agent": "./code-quality/refactoring-agent",
-      "coverage": 77
-    },
-    {
-      "agent": "./fixers/api-breaking-change-detect",
-      "coverage": 77
-    },
-    {
-      "agent": "./personal-lifestyle/journaling-prompt-agent",
-      "coverage": 77
-    },
-    {
-      "agent": "./devops-infra/infra-cost-analyzer",
-      "coverage": 76
-    },
-    {
-      "agent": "./file-conversion/figma-to-css-agent",
-      "coverage": 76
-    },
-    {
-      "agent": "./content-writing/technical-blog-reviewer",
-      "coverage": 75
-    },
-    {
-      "agent": "./devops-infra/incident-responder/agent-incident-responder",
-      "coverage": 75
-    },
-    {
-      "agent": "./file-conversion/csv-to-api-agent",
-      "coverage": 75
-    },
-    {
-      "agent": "./security-privacy/permission-auditor",
-      "coverage": 75
-    },
-    {
-      "agent": "./data-analytics/spreadsheet-formula-writer",
-      "coverage": 74
-    },
-    {
-      "agent": "./learning-education/interview-prep-agent",
-      "coverage": 74
-    },
-    {
-      "agent": "./api-integration/api-rate-limit-tester",
-      "coverage": 73
-    },
-    {
-      "agent": "./developer/agent-api-monitor",
-      "coverage": 73
-    },
-    {
-      "agent": "./fixers/css-dead-code-remover",
-      "coverage": 73
-    },
-    {
-      "agent": "./learning-education/learning-path-planner",
-      "coverage": 73
-    },
-    {
-      "agent": "./api-integration/oauth-flow-debugger",
-      "coverage": 72
-    },
-    {
-      "agent": "./misc/meetings/meeting-notes-organizer",
-      "coverage": 72
-    },
-    {
-      "agent": "./security-privacy/privacy-policy-generator",
-      "coverage": 72
-    },
-    {
-      "agent": "./developer/agent-readme-keeper",
-      "coverage": 71
-    },
-    {
-      "agent": "./devops-infra/git-workflow-agent",
-      "coverage": 71
-    },
-    {
-      "agent": "./file-conversion/html-to-markdown-converter",
-      "coverage": 71
-    },
-    {
-      "agent": "./fixers/i18n-missing-key-finder",
-      "coverage": 71
-    },
-    {
-      "agent": "./code-quality/bug-triager",
-      "coverage": 70
-    },
-    {
-      "agent": "./design-frontend/design-token-extractor",
-      "coverage": 70
-    },
-    {
-      "agent": "./developer/agent-doc-generator",
-      "coverage": 70
-    },
-    {
-      "agent": "./developer/agent-migration-checker",
-      "coverage": 70
-    },
-    {
-      "agent": "./devops-infra/incident-responder",
-      "coverage": 70
-    },
-    {
-      "agent": "./devops-infra/performance-profiler",
-      "coverage": 70
-    },
-    {
-      "agent": "./content-writing/press-release-writer",
-      "coverage": 69
-    },
-    {
-      "agent": "./content-writing/tweet-thread-writer",
-      "coverage": 69
-    },
-    {
-      "agent": "./data-analytics/database-diagram-generator",
-      "coverage": 69
-    },
-    {
-      "agent": "./design-frontend/icon-set-generator",
-      "coverage": 69
-    },
-    {
-      "agent": "./design-frontend/responsive-design-tester",
-      "coverage": 69
-    },
-    {
-      "agent": "./devops-infra/terraform-reviewer",
-      "coverage": 69
-    },
-    {
-      "agent": "./misc/testing-qa/qa-test-generator",
-      "coverage": 69
-    },
-    {
-      "agent": "./content-writing/agent-blog-outline-gen",
-      "coverage": 68
-    },
-    {
-      "agent": "./data-analytics/log-to-metrics-converter",
-      "coverage": 68
-    },
-    {
-      "agent": "./devops-infra/migration-agent",
-      "coverage": 68
-    },
-    {
-      "agent": "./fixers/code-style-enforcer-bot",
-      "coverage": 68
-    },
-    {
-      "agent": "./fixers/dependency-bloat-reducer",
-      "coverage": 68
-    },
-    {
-      "agent": "./fixers/doc-drift-fixer",
-      "coverage": 68
-    },
-    {
-      "agent": "./misc/communication/email-triage-assistant",
-      "coverage": 68
-    },
-    {
-      "agent": "./misc/research-data/data-analyst",
-      "coverage": 68
-    },
-    {
-      "agent": "./ai-ml-ops/rag-evaluator",
-      "coverage": 67
-    },
-    {
-      "agent": "./misc/research-data/research-summarizer-agent",
-      "coverage": 67
-    },
-    {
-      "agent": "./personal-lifestyle/gift-recommendation-agent",
-      "coverage": 67
-    },
-    {
-      "agent": "./business-productivity/kpi-dashboard-generator",
-      "coverage": 66
-    },
-    {
-      "agent": "./code-quality/pr-description-writer",
-      "coverage": 66
-    },
-    {
-      "agent": "./developer/agent-pr-reviewer",
-      "coverage": 66
-    },
-    {
-      "agent": "./code-quality/commit-message-linter",
-      "coverage": 65
-    },
-    {
-      "agent": "./code-quality/database-migration-reviewer",
-      "coverage": 65
-    },
-    {
-      "agent": "./developer/agent-changelog-writer",
-      "coverage": 65
-    },
-    {
-      "agent": "./developer/agent-test-writer",
-      "coverage": 65
-    },
-    {
-      "agent": "./file-conversion/video-to-transcript",
-      "coverage": 65
-    },
-    {
-      "agent": "./productivity/agent-email-classifier",
-      "coverage": 65
-    },
-    {
-      "agent": "./file-conversion/markdown-to-pdf-agent",
-      "coverage": 64
-    },
-    {
-      "agent": "./fixers/unused-asset-cleaner",
-      "coverage": 64
-    },
-    {
-      "agent": "./misc/ai-frameworks/autogen-agent",
-      "coverage": 64
-    },
-    {
-      "agent": "./content-writing/blog-post-writer",
-      "coverage": 63
-    },
-    {
-      "agent": "./personal-lifestyle/habit-coach",
-      "coverage": 63
-    },
-    {
-      "agent": "./file-conversion/swagger-to-typescript",
-      "coverage": 62
-    },
-    {
-      "agent": "./code-quality/tech-debt-scorer",
-      "coverage": 61
-    },
-    {
-      "agent": "./content-writing/tutorial-generator",
-      "coverage": 61
-    },
-    {
-      "agent": "./developer/agent-license-auditor",
-      "coverage": 61
-    },
-    {
-      "agent": "./code-quality/bug-triager-auto",
-      "coverage": 60
-    },
-    {
-      "agent": "./content-writing/copy-editor-agent",
-      "coverage": 59
-    },
-    {
-      "agent": "./developer/agent-issue-labeler",
-      "coverage": 59
-    },
-    {
       "agent": "./security-privacy/security-audit-agent",
-      "coverage": 59
-    },
-    {
-      "agent": "./ai-ml-ops/ai-hallucination-detector",
-      "coverage": 58
-    },
-    {
-      "agent": "./content-writing/seo-auditor",
-      "coverage": 57
-    },
-    {
-      "agent": "./developer/agent-dependency-updater",
-      "coverage": 57
-    },
-    {
-      "agent": "./productivity/agent-meeting-scheduler",
-      "coverage": 57
-    },
-    {
-      "agent": "./data-analytics/data-pipeline-validator",
-      "coverage": 56
-    },
-    {
-      "agent": "./fixers/log-noise-reducer",
-      "coverage": 55
-    },
-    {
-      "agent": "./code-quality/test-coverage-gap-finder",
-      "coverage": 52
-    },
-    {
-      "agent": "./misc/ai-frameworks/crewai-agent",
-      "coverage": 52
-    },
-    {
-      "agent": "./ai-ml-ops/embedding-explorer",
-      "coverage": 51
-    },
-    {
-      "agent": "./misc/content-marketing/social-media-manager-agent",
-      "coverage": 51
-    },
-    {
-      "agent": "./misc/content-marketing/resume-tailor-agent",
-      "coverage": 50
-    },
-    {
-      "agent": "./code-quality/ai-code-review-agent",
-      "coverage": 49
-    },
-    {
-      "agent": "./code-quality/api-contract-validator",
-      "coverage": 49
-    },
-    {
-      "agent": "./fixers/deprecation-hunter",
-      "coverage": 49
-    },
-    {
-      "agent": "./fixers/vuln-auto-patcher",
-      "coverage": 48
-    },
-    {
-      "agent": "./misc/research-data/sql-query-builder-agent",
-      "coverage": 48
-    },
-    {
-      "agent": "./code-quality/test-generation-agent",
-      "coverage": 42
-    },
-    {
-      "agent": "./misc/ai-frameworks/langchain-agent",
-      "coverage": 40
-    },
-    {
-      "agent": "./code-quality/code-review-automator",
-      "coverage": 30
+      "coverage": 100
     }
   ]
 }

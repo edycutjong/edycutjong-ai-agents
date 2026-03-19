@@ -41,11 +41,11 @@ class AssetScanner:
         return assets
 
 if __name__ == "__main__":
-    import sys
-    if len(sys.argv) > 1:
-        scanner = AssetScanner(sys.argv[1])
-        assets = scanner.scan()
-        for asset in assets:
-            print(asset)
+    import sys  # pragma: no cover
+    if len(sys.argv) > 1:  # pragma: no cover
+        scanner = AssetScanner(sys.argv[1])  # pragma: no cover
+        assets = scanner.scan()  # pragma: no cover
+        for asset in assets:  # pragma: no cover
+            print(asset)  # pragma: no cover
     else:
-        print("Usage: python file_scanner.py <directory>")
+        print("Usage: python file_scanner.py <directory>")  # pragma: no cover

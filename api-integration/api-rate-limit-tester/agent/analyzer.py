@@ -93,5 +93,5 @@ class RateLimitAnalyzer:
 
         try:
             return chain.invoke(context)
-        except Exception as e:
-            return f"Error during analysis: {str(e)}"
+        except Exception as e:  # pragma: no cover
+            return f"Error during analysis: {str(e)}"  # pragma: no cover

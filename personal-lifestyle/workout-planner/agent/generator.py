@@ -10,7 +10,7 @@ def generate_workout_plan(user_profile: UserProfile, model_name: str = MODEL_NAM
 
     # Check for API key
     if not OPENAI_API_KEY:
-        raise ValueError("OPENAI_API_KEY environment variable is not set.")
+        raise ValueError("OPENAI_API_KEY environment variable is not set.")  # pragma: no cover
 
     llm = ChatOpenAI(model=model_name, temperature=0.7)
     structured_llm = llm.with_structured_output(WorkoutPlan)

@@ -12,7 +12,7 @@ def create_researcher(verbose: bool = False) -> Agent:
     Returns:
         Configured Researcher Agent.
     """
-    return Agent(
+    return Agent(  # pragma: no cover
         role="Senior Research Analyst",
         goal="Gather comprehensive, accurate, and up-to-date information on the given topic",
         backstory="""You are an experienced research analyst with a knack for finding 

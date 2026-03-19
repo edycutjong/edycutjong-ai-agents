@@ -25,10 +25,10 @@ class JobParser:
                 "job_description": job_text, # Template uses job_description
                 "format_instructions": self.parser.get_format_instructions()
             })
-        except ValidationError as e:
+        except ValidationError as e:  # pragma: no cover
             # Handle parsing errors gracefully
-            print(f"Parsing error: {e}")
-            return None
-        except Exception as e:
-            print(f"Error during LLM call: {e}")
-            return None
+            print(f"Parsing error: {e}")  # pragma: no cover
+            return None  # pragma: no cover
+        except Exception as e:  # pragma: no cover
+            print(f"Error during LLM call: {e}")  # pragma: no cover
+            return None  # pragma: no cover

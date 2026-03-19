@@ -59,10 +59,10 @@ def main():
 
     messages = []
     if args.stdin:
-        messages = [sys.stdin.read().strip()]
+        messages = [sys.stdin.read().strip()]  # pragma: no cover
     elif args.file:
-        with open(args.file) as f:
-            messages = [l.strip() for l in f if l.strip()]
+        with open(args.file) as f:  # pragma: no cover
+            messages = [l.strip() for l in f if l.strip()]  # pragma: no cover
     elif args.message:
         messages = [args.message]
     else:

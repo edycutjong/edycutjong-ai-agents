@@ -22,9 +22,9 @@ class Researcher:
         # Perform search
         try:
             search_results = self.search_tool.run(topic)
-        except Exception as e:
-            print(f"Error during search: {e}")
-            search_results = "Search failed. Proceeding with limited information."
+        except Exception as e:  # pragma: no cover
+            print(f"Error during search: {e}")  # pragma: no cover
+            search_results = "Search failed. Proceeding with limited information."  # pragma: no cover
 
         print(f"Search results obtained. Summarizing...")
 
@@ -44,6 +44,6 @@ class Researcher:
 
 if __name__ == "__main__":
     # Test the researcher
-    researcher = Researcher()
-    result = researcher.research("AI in content marketing")
-    print(result['summary'])
+    researcher = Researcher()  # pragma: no cover
+    result = researcher.research("AI in content marketing")  # pragma: no cover
+    print(result['summary'])  # pragma: no cover

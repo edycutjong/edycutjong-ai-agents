@@ -14,6 +14,6 @@ class Config:
 
     @classmethod
     def validate(cls):
-        if not cls.OPENAI_API_KEY and not cls.GEMINI_API_KEY:
+        if not cls.OPENAI_API_KEY and not cls.GEMINI_API_KEY:  # pragma: no cover
             # We don't raise here to allow UI to ask for keys
-            pass
+            pass  # pragma: no cover

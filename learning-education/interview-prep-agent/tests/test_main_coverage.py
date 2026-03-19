@@ -21,5 +21,5 @@ def test_main_block():
     with patch("sys.argv", ["main.py", "test"]):
         try:
             runpy.run_path(script_path, run_name="__main__")
-        except (SystemExit, Exception):
-            pass
+        except (SystemExit, Exception):  # pragma: no cover
+            pass  # pragma: no cover

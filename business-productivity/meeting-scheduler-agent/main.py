@@ -10,10 +10,10 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 try:
     from agent.core import create_agent_executor, run_agent_step
-except ImportError:
+except ImportError:  # pragma: no cover
     # If run from root, imports might differ if not handled properly in core.
     # But core handles imports robustly.
-    from apps.agents.business_productivity.meeting_scheduler_agent.agent.core import create_agent_executor, run_agent_step
+    from apps.agents.business_productivity.meeting_scheduler_agent.agent.core import create_agent_executor, run_agent_step  # pragma: no cover
 
 def main():
     console = Console()
@@ -55,4 +55,4 @@ def main():
             console.print(f"[bold red]An error occurred:[/bold red] {e}")
 
 if __name__ == "__main__":
-    main()
+    main()  # pragma: no cover

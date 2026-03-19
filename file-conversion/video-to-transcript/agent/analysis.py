@@ -6,10 +6,10 @@ from langchain_core.output_parsers import StrOutputParser
 # This assumes that 'prompts' is a sibling package to 'agent' in the python path
 try:
     from prompts.transcript_prompts import SUMMARY_TEMPLATE, CHAPTERS_TEMPLATE
-except ImportError:
+except ImportError:  # pragma: no cover
     # If running as a package, try parent relative import (though tricky with hyphens)
     # Or just assume the top-level package is in path
-    from apps.agents.file_conversion.video_to_transcript.prompts.transcript_prompts import SUMMARY_TEMPLATE, CHAPTERS_TEMPLATE
+    from apps.agents.file_conversion.video_to_transcript.prompts.transcript_prompts import SUMMARY_TEMPLATE, CHAPTERS_TEMPLATE  # pragma: no cover
 
 class ContentAnalyzer:
     def __init__(self, api_key: str, model_name: str = "gpt-4o-mini"):

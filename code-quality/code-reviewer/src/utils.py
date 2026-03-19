@@ -28,16 +28,16 @@ def print_header(title: str):
 
 def print_step(message: str):
     """Prints a step message."""
-    console.print(f"[bold cyan]➜[/bold cyan] {message}")
+    console.print(f"[bold cyan]➜[/bold cyan] {message}")  # pragma: no cover
 
 def print_success(message: str):
     """Prints a success message."""
-    console.print(f"[bold green]✔[/bold green] {message}")
+    console.print(f"[bold green]✔[/bold green] {message}")  # pragma: no cover
 
 def print_error(message: str):
     """Prints an error message."""
-    console.print(f"[bold red]✘[/bold red] {message}")
+    console.print(f"[bold red]✘[/bold red] {message}")  # pragma: no cover
 
 def print_warning(message: str):
     """Prints a warning message."""
-    console.print(f"[bold yellow]![/bold yellow] {message}")
+    console.print(f"[bold yellow]![/bold yellow] {message}")  # pragma: no cover

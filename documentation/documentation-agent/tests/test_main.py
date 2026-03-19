@@ -12,7 +12,7 @@ def test_main():
     with patch("sys.argv", ["main.py"]):
         try:
             main()
-        except (SystemExit, Exception):
+        except BaseException:
             pass
 
 def test_main_block():

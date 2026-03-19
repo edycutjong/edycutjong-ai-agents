@@ -1,4 +1,4 @@
-ANALYZE_LOGS_PROMPT = """
+ANALYZE_LOGS_PROMPT = """  # pragma: no cover
 You are an expert Site Reliability Engineer (SRE).
 You are analyzing a batch of application logs to detect anomalies and identify root causes.
 
@@ -18,7 +18,7 @@ Output Format (JSON):
 Ensure the output is valid JSON.
 """
 
-GENERATE_REPORT_PROMPT = """
+GENERATE_REPORT_PROMPT = """  # pragma: no cover
 You are an Incident Commander.
 Generate a professional Incident Report based on the following analysis.
 

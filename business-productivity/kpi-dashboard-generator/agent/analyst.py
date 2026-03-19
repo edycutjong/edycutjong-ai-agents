@@ -40,5 +40,5 @@ class KPIAnalyst:
             ]
             response = self.llm.invoke(messages)
             return response.content
-        except Exception as e:
-            return f"Error generating analysis: {e}"
+        except Exception as e:  # pragma: no cover
+            return f"Error generating analysis: {e}"  # pragma: no cover

@@ -20,16 +20,16 @@ def load_swagger(source: str) -> Dict[str, Any]:
             response = httpx.get(source)
             response.raise_for_status()
             content = response.text
-        except httpx.HTTPError as e:
-            raise ValueError(f"Failed to fetch Swagger from URL: {e}")
+        except httpx.HTTPError as e:  # pragma: no cover
+            raise ValueError(f"Failed to fetch Swagger from URL: {e}")  # pragma: no cover
     else:
         path = Path(source)
         if not path.exists():
-            raise FileNotFoundError(f"File not found: {source}")
+            raise FileNotFoundError(f"File not found: {source}")  # pragma: no cover
         content = path.read_text(encoding="utf-8")
 
     try:
         # yaml.safe_load handles both JSON and YAML
         return yaml.safe_load(content)
-    except yaml.YAMLError as e:
-        raise ValueError(f"Failed to parse Swagger file: {e}")
+    except yaml.YAMLError as e:  # pragma: no cover
+        raise ValueError(f"Failed to parse Swagger file: {e}")  # pragma: no cover

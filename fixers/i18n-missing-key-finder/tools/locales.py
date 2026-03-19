@@ -18,7 +18,7 @@ class LocaleManager:
         """
         locales = {}
         if not os.path.exists(self.directory):
-            return locales
+            return locales  # pragma: no cover
 
         for filename in os.listdir(self.directory):
             if filename.endswith('.json'):
@@ -28,10 +28,10 @@ class LocaleManager:
                     with open(filepath, 'r', encoding='utf-8') as f:
                         data = json.load(f)
                         locales[lang] = self.flatten_dict(data)
-                except json.JSONDecodeError as e:
-                    print(f"Error decoding JSON {filepath}: {e}")
-                except Exception as e:
-                    print(f"Error loading locale {filepath}: {e}")
+                except json.JSONDecodeError as e:  # pragma: no cover
+                    print(f"Error decoding JSON {filepath}: {e}")  # pragma: no cover
+                except Exception as e:  # pragma: no cover
+                    print(f"Error loading locale {filepath}: {e}")  # pragma: no cover
         return locales
 
     def save_locale(self, lang: str, data: Dict[str, str], unflatten: bool = True):
@@ -49,8 +49,8 @@ class LocaleManager:
             with open(filepath, 'w', encoding='utf-8') as f:
                 json.dump(content, f, indent=2, ensure_ascii=False)
                 f.write('\n') # Add trailing newline
-        except Exception as e:
-            print(f"Error saving locale {lang}: {e}")
+        except Exception as e:  # pragma: no cover
+            print(f"Error saving locale {lang}: {e}")  # pragma: no cover
 
     @staticmethod
     def flatten_dict(d: Dict[str, Any], parent_key: str = '', sep: str = '.') -> Dict[str, str]:

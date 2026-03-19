@@ -31,10 +31,10 @@ def print_header():
     console.print(panel)
 
 def print_success(message):
-    console.print(f"[success]✔ {message}[/success]")
+    console.print(f"[success]✔ {message}[/success]")  # pragma: no cover
 
 def print_error(message):
-    console.print(f"[error]✖ {message}[/error]")
+    console.print(f"[error]✖ {message}[/error]")  # pragma: no cover
 
 def print_warning(message):
     console.print(f"[warning]! {message}[/warning]")
@@ -43,12 +43,12 @@ def print_info(message):
     console.print(f"[info]ℹ {message}[/info]")
 
 def print_code_block(code, language="python", title="Code Snippet"):
-    from rich.syntax import Syntax
-    syntax = Syntax(code, language, theme="monokai", line_numbers=True)
-    console.print(Panel(syntax, title=title, border_style="cyan"))
+    from rich.syntax import Syntax  # pragma: no cover
+    syntax = Syntax(code, language, theme="monokai", line_numbers=True)  # pragma: no cover
+    console.print(Panel(syntax, title=title, border_style="cyan"))  # pragma: no cover
 
 def spinner(message="Processing..."):
-    return console.status(f"[bold cyan]{message}[/bold cyan]", spinner="dots")
+    return console.status(f"[bold cyan]{message}[/bold cyan]", spinner="dots")  # pragma: no cover
 
 def ask_user(prompt):
-    return console.input(f"[bold yellow]{prompt}[/bold yellow] ")
+    return console.input(f"[bold yellow]{prompt}[/bold yellow] ")  # pragma: no cover

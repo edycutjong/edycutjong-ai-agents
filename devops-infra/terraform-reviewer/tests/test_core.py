@@ -56,8 +56,8 @@ def test_security_scan():
     # We will try to parse.
     try:
         hcl_data = parser.parse_hcl(TF_CONTENT)
-    except Exception as e:
-        pytest.fail(f"Parsing failed: {e}")
+    except Exception as e:  # pragma: no cover
+        pytest.fail(f"Parsing failed: {e}")  # pragma: no cover
 
     scanner = SecurityScanner()
     findings = scanner.scan(hcl_data)

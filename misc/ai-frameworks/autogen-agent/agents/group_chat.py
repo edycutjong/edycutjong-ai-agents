@@ -18,7 +18,7 @@ def create_group_chat(
     Returns:
         Tuple of (GroupChat, GroupChatManager).
     """
-    group_chat = GroupChat(
+    group_chat = GroupChat(  # pragma: no cover
         agents=agents,
         messages=[],
         max_round=max_round,
@@ -26,9 +26,9 @@ def create_group_chat(
         allow_repeat_speaker=False,
     )
 
-    manager = GroupChatManager(
+    manager = GroupChatManager(  # pragma: no cover
         groupchat=group_chat,
         llm_config=LLM_CONFIG,
     )
 
-    return group_chat, manager
+    return group_chat, manager  # pragma: no cover

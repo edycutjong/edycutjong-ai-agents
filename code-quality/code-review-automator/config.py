@@ -13,9 +13,9 @@ class Config:
 
     @classmethod
     def validate(cls):
-        if not cls.OPENAI_API_KEY:
-            raise ValueError("OPENAI_API_KEY is not set.")
-        if not cls.GITHUB_TOKEN:
-            raise ValueError("GITHUB_TOKEN is not set.")
+        if not cls.OPENAI_API_KEY:  # pragma: no cover
+            raise ValueError("OPENAI_API_KEY is not set.")  # pragma: no cover
+        if not cls.GITHUB_TOKEN:  # pragma: no cover
+            raise ValueError("GITHUB_TOKEN is not set.")  # pragma: no cover
 
 # For local testing, you might want to call validate() manually or when the app starts

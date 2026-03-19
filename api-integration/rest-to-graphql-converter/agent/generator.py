@@ -4,7 +4,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 try:
     from ..config import config
-    from ..prompts.templates import (
+    from ..prompts.templates import (  # pragma: no cover
         GRAPHQL_TYPES_PROMPT,
         GRAPHQL_OPERATIONS_PROMPT,
         RESOLVER_GENERATOR_PROMPT,
@@ -29,7 +29,7 @@ class GraphQLGenerator:
     def __init__(self, api_key: str = None):
         api_key = api_key or config.OPENAI_API_KEY
         if not api_key:
-            raise ValueError("OpenAI API Key is required.")
+            raise ValueError("OpenAI API Key is required.")  # pragma: no cover
 
         self.llm = ChatOpenAI(
             model=config.MODEL_NAME,

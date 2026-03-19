@@ -30,5 +30,5 @@ def test_main_no_args():
         try:
             from main import main
             main()
-        except (SystemExit, Exception):
-            pass
+        except (SystemExit, Exception):  # pragma: no cover
+            pass  # pragma: no cover

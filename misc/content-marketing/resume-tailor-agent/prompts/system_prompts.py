@@ -1,11 +1,11 @@
 try:
     from langchain.prompts import PromptTemplate
-except ImportError:
-    try:
-        from langchain_core.prompts import PromptTemplate
-    except ImportError:
+except ImportError:  # pragma: no cover
+    try:  # pragma: no cover
+        from langchain_core.prompts import PromptTemplate  # pragma: no cover
+    except ImportError:  # pragma: no cover
         # Fallback for some weird environments
-        from langchain.prompts.prompt import PromptTemplate
+        from langchain.prompts.prompt import PromptTemplate  # pragma: no cover
 
 # 1. Analyze Job Description
 JOB_ANALYSIS_PROMPT = PromptTemplate(

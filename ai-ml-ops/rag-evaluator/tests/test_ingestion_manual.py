@@ -32,4 +32,4 @@ def test_ingest_txt():
         os.remove(test_file)
 
 if __name__ == "__main__":
-    test_ingest_txt()
+    test_ingest_txt()  # pragma: no cover

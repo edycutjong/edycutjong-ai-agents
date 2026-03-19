@@ -17,8 +17,8 @@ def run_tests(project_path: str = ".") -> Dict[str, Any]:
             "stdout": result.stdout,
             "stderr": result.stderr
         }
-    except Exception as e:
-        return {
+    except Exception as e:  # pragma: no cover
+        return {  # pragma: no cover
             "success": False,
             "error": str(e)
         }

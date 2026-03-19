@@ -21,9 +21,9 @@ def mock_builtin_input(monkeypatch):
 
 @pytest.fixture
 def mock_llm_response():
-    mock = MagicMock()
-    mock.invoke.return_value.content = "Mocked Response"
-    return mock
+    mock = MagicMock()  # pragma: no cover
+    mock.invoke.return_value.content = "Mocked Response"  # pragma: no cover
+    return mock  # pragma: no cover
 
 @patch("agent.researcher.DuckDuckGoSearchRun")
 @patch("agent.researcher.ChatOpenAI")

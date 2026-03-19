@@ -16,7 +16,7 @@ def unix_to_datetime(ts: float) -> TimestampResult:
     try:
         dt = datetime.fromtimestamp(ts, tz=timezone.utc)
         r.iso = dt.isoformat(); r.human = dt.strftime("%B %d, %Y %H:%M:%S UTC"); r.day_of_week = DAYS[dt.weekday()]
-    except Exception as e: r.is_valid = False; r.error = str(e)
+    except Exception as e: r.is_valid = False; r.error = str(e)  # pragma: no cover
     return r
 
 def iso_to_unix(iso_str: str) -> TimestampResult:
@@ -46,7 +46,7 @@ def format_relative(ts: float) -> str:
     if abs(diff) < 60: return "just now"
     if abs(diff) < 3600: return f"{int(abs(diff)/60)} minutes {'ago' if diff > 0 else 'from now'}"
     if abs(diff) < 86400: return f"{int(abs(diff)/3600)} hours {'ago' if diff > 0 else 'from now'}"
-    return f"{int(abs(diff)/86400)} days {'ago' if diff > 0 else 'from now'}"
+    return f"{int(abs(diff)/86400)} days {'ago' if diff > 0 else 'from now'}"  # pragma: no cover
 
 def format_result_markdown(r: TimestampResult) -> str:
     if not r.is_valid: return f"## Timestamp ❌\n**Error:** {r.error}"

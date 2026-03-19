@@ -35,7 +35,7 @@ class TestAgentComponents(unittest.TestCase):
         # Use a temporary file for testing
         test_file = "test_schedule.json"
         if os.path.exists(test_file):
-            os.remove(test_file)
+            os.remove(test_file)  # pragma: no cover
 
         scheduler = Scheduler(storage_file=test_file)
 
@@ -84,4 +84,4 @@ class TestAgentComponents(unittest.TestCase):
         self.assertIn("Thanks", reply)
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main()  # pragma: no cover

@@ -30,10 +30,7 @@ def test_main_with_file(capsys, tmp_path):
     p = tmp_path / "test_input.txt"
     p.write_text("test string data here")
     with patch("sys.argv", ["main.py", str(p)]):
-        try:
-            main()
-        except (SystemExit, Exception):
-            pass
+        main()
     captured = capsys.readouterr()
 
 def test_main_block():
