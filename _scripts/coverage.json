@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-03-19T01:09:33Z",
+  "timestamp": "2026-03-19T01:26:10Z",
   "summary": {
     "total_agents": 233,
-    "agents_with_coverage": 222,
+    "agents_with_coverage": 233,
     "average_coverage": 84,
-    "passed": 222,
-    "failed": 11,
+    "passed": 233,
+    "failed": 0,
     "skipped": 0
   },
   "agents": [
@@ -462,6 +462,10 @@
       "coverage": 90
     },
     {
+      "agent": "./business-productivity/meeting-scheduler-agent",
+      "coverage": 90
+    },
+    {
       "agent": "./code-quality/bug-report-triage-agent",
       "coverage": 90
     },
@@ -482,11 +486,19 @@
       "coverage": 88
     },
     {
+      "agent": "./content-writing/email-draft-agent",
+      "coverage": 88
+    },
+    {
       "agent": "./file-conversion/json-yaml-converter",
       "coverage": 88
     },
     {
       "agent": "./business-productivity/receipt-categorizer-agent",
+      "coverage": 87
+    },
+    {
+      "agent": "./misc/communication/email-drafter",
       "coverage": 87
     },
     {
@@ -499,6 +511,14 @@
     },
     {
       "agent": "./documentation/documentation-agent",
+      "coverage": 85
+    },
+    {
+      "agent": "./personal-lifestyle/recipe-planner",
+      "coverage": 85
+    },
+    {
+      "agent": "./personal-lifestyle/workout-planner",
       "coverage": 85
     },
     {
@@ -582,7 +602,15 @@
       "coverage": 77
     },
     {
+      "agent": "./personal-lifestyle/journaling-prompt-agent",
+      "coverage": 77
+    },
+    {
       "agent": "./devops-infra/infra-cost-analyzer",
+      "coverage": 76
+    },
+    {
+      "agent": "./file-conversion/figma-to-css-agent",
       "coverage": 76
     },
     {
@@ -619,6 +647,10 @@
     },
     {
       "agent": "./fixers/css-dead-code-remover",
+      "coverage": 73
+    },
+    {
+      "agent": "./learning-education/learning-path-planner",
       "coverage": 73
     },
     {
@@ -666,8 +698,16 @@
       "coverage": 70
     },
     {
+      "agent": "./devops-infra/incident-responder",
+      "coverage": 70
+    },
+    {
       "agent": "./devops-infra/performance-profiler",
       "coverage": 70
+    },
+    {
+      "agent": "./content-writing/press-release-writer",
+      "coverage": 69
     },
     {
       "agent": "./content-writing/tweet-thread-writer",
@@ -695,6 +735,10 @@
     },
     {
       "agent": "./content-writing/agent-blog-outline-gen",
+      "coverage": 68
+    },
+    {
+      "agent": "./data-analytics/log-to-metrics-converter",
       "coverage": 68
     },
     {

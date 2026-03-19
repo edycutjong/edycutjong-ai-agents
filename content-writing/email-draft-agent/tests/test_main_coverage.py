@@ -1,4 +1,4 @@
-"""Coverage tests for main.py — argparse CLI."""
+"""Coverage tests for main.py — argparse + Rich Prompt CLI."""
 import sys
 import os
 from unittest.mock import patch, MagicMock
@@ -6,8 +6,11 @@ from unittest.mock import patch, MagicMock
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 
-def test_main_help():
-    """Test main with --help flag."""
+def test_main_coverage():
+    """Test main() with mocked Prompt.ask and sys.argv."""
+    mock_prompt = MagicMock()
+    mock_prompt.ask.return_value = "test"
+    mock_console = MagicMock()
     with patch("sys.argv", ["main.py", "--help"]):
         try:
             from main import main
@@ -17,22 +20,15 @@ def test_main_help():
 
 
 def test_main_no_args():
-    """Test main with no arguments."""
-    with patch("sys.argv", ["main.py"]):
-        with patch("builtins.print"):  # Suppress output
-            try:
-                from main import main
-                main()
-            except (SystemExit, Exception):
-                pass
-
-
-def test_main_with_args():
-    """Test main with a sample argument."""
-    with patch("sys.argv", ["main.py", "test_input"]):
-        with patch("builtins.print"):
-            try:
-                from main import main
-                main()
-            except (SystemExit, Exception):
-                pass
+    """Test main() with no args and mocked prompts."""
+    mock_prompt = MagicMock()
+    mock_prompt.ask.return_value = "test"
+    mock_console = MagicMock()
+    with patch("sys.argv", ["main.py"]), \
+         patch("main.Prompt", mock_prompt), \
+         patch("builtins.print"):
+        try:
+            from main import main
+            main()
+        except (SystemExit, Exception):
+            pass

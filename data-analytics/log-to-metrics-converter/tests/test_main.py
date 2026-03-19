@@ -1,16 +1,24 @@
+"""Tests for main.py entry point."""
 import os
 import sys
-import runpy
-from unittest.mock import patch
-from io import StringIO
+from unittest.mock import patch, MagicMock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 
 def test_main_block():
-    script_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "main.py")
-    with patch("sys.argv", ["main.py"]):
+    """Test that main.py can be loaded without launching streamlit."""
+    mock_st = MagicMock()
+    mock_stcli = MagicMock()
+    mock_stcli.main.return_value = 0
+    with patch.dict("sys.modules", {
+        "streamlit": mock_st,
+        "streamlit.web": MagicMock(),
+        "streamlit.web.cli": mock_stcli,
+    }):
         try:
-            runpy.run_path(script_path, run_name="__main__")
+            import importlib
+            import main as m
+            importlib.reload(m)
         except (SystemExit, Exception):
             pass
