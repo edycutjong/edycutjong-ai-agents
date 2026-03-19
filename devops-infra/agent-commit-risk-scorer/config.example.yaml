@@ -1,0 +1,28 @@
+---
+# Config for Commit Risk Scorer
+
+criticality:
+  # Paths and their risk weight multiplier. Default is 1.0.
+  weights:
+    "migrations/": 3.0
+    "lib/security/": 2.5
+    "config/": 2.0
+    "README.md": 0.1
+    "tests/": 0.5
+    ".github/workflows/": 2.0
+
+scoring:
+  # Base caps for different risk vectors
+  max_criticality_score: 30
+  max_blast_radius_score: 30
+  max_coverage_gap_score: 20
+  max_history_risk_score: 20
+  
+  # How many downstream imports equal max blast radius score
+  max_blast_radius_files: 10
+  
+  # Familiarity score discount (up to 20% reduction in total risk)
+  familiarity_discount_max: 20
+  
+thresholds:
+  fail_ci_score: 75 # Return non-zero exit code if score >= 75

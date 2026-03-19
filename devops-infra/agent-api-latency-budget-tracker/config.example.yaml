@@ -1,0 +1,35 @@
+---
+# SLO Configuration
+endpoints:
+  - name: "User API - Get Profile"
+    url: "https://api.example.com/v1/users/profile"
+    method: "GET"
+    slo:
+      p50: 100 # ms
+      p95: 500 # ms
+      p99: 1000 # ms
+    # Optional active probe interval (seconds)
+    probe_interval: 60
+
+  - name: "Payment API - Submit"
+    url: "https://api.example.com/v1/payments"
+    method: "POST"
+    slo:
+      p50: 250
+      p95: 1000
+      p99: 3000
+
+budget:
+  # Total error budget before alert (e.g. out of 100%)
+  total_error_budget_percentage: 1.0  # 1% allowable misses
+  # Alert windows in hours
+  windows:
+    - 1
+    - 6
+    - 24
+    - 168 # 7 days
+    - 720 # 30 days
+
+alerting:
+  webhook_url: "https://your-webhook-endpoint.example.com/alerts"
+  threshold_percent_consumed: 90

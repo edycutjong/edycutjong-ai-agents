@@ -1,0 +1,28 @@
+# config.example.yaml
+# Configuration for Agent Schema Drift Detector
+
+# Paths to migration directories
+migrations:
+  - "prisma/migrations"
+  - "drizzle"
+  - "alembic/versions"
+
+# Paths to ORM model files
+orm_models:
+  - "prisma/schema.prisma"
+  - "src/db/schema.ts"
+  - "models.py"
+
+# SQL dialect to use for parsing migrations (postgres, mysql, sqlite)
+dialect: "postgres"
+
+# Rules for ignoring specific tables, columns, or drift types
+ignore:
+  tables:
+    - "_prisma_migrations"
+    - "alembic_version"
+    - "drizzle_migrations"
+  columns:
+    - "created_at"
+    - "updated_at"
+  drift_types: [] # e.g., missing_index, orphaned_relation
