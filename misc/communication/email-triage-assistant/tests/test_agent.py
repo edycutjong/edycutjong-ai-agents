@@ -79,3 +79,25 @@ def test_llm_service_mock():
 
     briefing = service.generate_briefing([email])
     assert "mock daily briefing" in briefing.lower() or "no high-priority" in briefing.lower()
+
+from langchain_core.runnables import RunnableLambda
+
+def test_generate_briefing_exception():
+    service = LLMService()
+    
+    def raise_err(x):
+        raise Exception("Test Exception")
+        
+    service.llm = RunnableLambda(raise_err)
+    
+    email = Email(
+        id="1",
+        subject="S",
+        sender="S",
+        recipient="R",
+        date=datetime.now(),
+        body="B"
+    )
+    
+    res = service.generate_briefing([email])
+    assert res == "Error generating briefing."
