@@ -1,34 +1,34 @@
 # License Auditor Agent
 
 ## Overview
-Agent that scans project dependencies and reports licenses. Flags incompatible or risky licenses.
+Agent that audits all project dependencies for license compliance, flags incompatible licenses, and generates a license report.
 
 ## Tech Stack
 - **Stack:** Node.js, TypeScript
-- **Build:** No build step — open `index.html` in browser
 
 ## Features
-- Scan package.json dependencies recursively
-- License identification per package
-- Compatibility matrix check (MIT/Apache/GPL)
-- Risk assessment (copyleft detection)
-- SPDX expression parsing
-- Export license report (Markdown/JSON)
-- Configurable allowed/denied license lists
-- PR comment with audit results
-- Badge generation for README
-- CI-friendly exit codes
+- Scan all npm dependencies recursively
+- Identify license type per package
+- Flag copyleft licenses (GPL, AGPL)
+- Detect missing license files
+- Check license compatibility
+- Generate THIRD_PARTY_LICENSES file
+- SPDX identifier mapping
+- Allowlist/blocklist configuration
+- Report in Markdown/JSON/CSV
+- CI pipeline integration
 
-## File Structure
-- `index.html — main page`
-- `styles.css — styles`
-- `app.js — application logic`
-- `README.md — documentation`
+## Commands
+- Dev: `npm run dev`
+- Build: `npm run build`
+- Test: `npm test`
 
 ## Design Guidelines
-- **Theme:** Dark mode with Midnight Amber palette
-- **Primary:** `#D97706`
-- **Secondary:** `#FBBF24`
-- **Accent:** `#6366F1`
-- **Background:** `#1A1400`
-- **Border Radius:** 12px
+- **Theme:** Dark mode
+- **Primary:** `#EC4899`
+- **Accent:** `#DB2777`
+- **Background:** `#0D1117`
+
+## Requirements
+- No external API keys required for core features
+- Works standalone and self-contained
