@@ -288,7 +288,7 @@ def discover_agents():
                             "category": f"misc/{sub_cat.name}",
                             "category_display": f"Misc — {_slug_to_name(sub_cat.name)}",
                             "path": str(agent_dir),
-                            "has_main": main_py.exists(),
+                            "has_main": main_py.exists() or (agent_dir / "package.json").exists() or (agent_dir / "agent" / "main.py").exists() or (agent_dir / "app.py").exists(),
                             "description": desc,
                         }
             continue
@@ -313,7 +313,7 @@ def discover_agents():
                     "category": cat_name,
                     "category_display": f"{icon} {display}",
                     "path": str(agent_dir),
-                    "has_main": main_py.exists(),
+                    "has_main": main_py.exists() or (agent_dir / "package.json").exists() or (agent_dir / "agent" / "main.py").exists() or (agent_dir / "app.py").exists(),
                     "description": desc,
                 }
 
