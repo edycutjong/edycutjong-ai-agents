@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#BE185D" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6" />
+      <stop offset="100%" stop-color="#DB2777" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="#0D1117" rx="128" />
+
+  <!-- Code Brackets -->
+  <path d="M120 180 L60 256 L120 332" fill="none" stroke="url(#primaryGrad)" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" filter="url(#glow)" />
+  <path d="M392 180 L452 256 L392 332" fill="none" stroke="url(#primaryGrad)" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" opacity="0.6" filter="url(#glow)" />
+
+  <!-- Skull -->
+  <g transform="translate(156, 120)">
+    <path d="M100 20 C40 20 20 80 20 140 C20 180 30 210 50 240 L50 280 A10 10 0 0 0 60 290 L70 290 L70 260 L90 260 L90 290 L110 290 L110 260 L130 260 L130 290 L140 290 A10 10 0 0 0 150 280 L150 240 C170 210 180 180 180 140 C180 80 160 20 100 20 Z" fill="none" stroke="url(#accentGrad)" stroke-width="24" stroke-linejoin="round" filter="url(#glow)" />
+    
+    <!-- Eyes -->
+    <ellipse cx="60" cy="160" rx="16" ry="24" fill="url(#accentGrad)" filter="url(#glow)" />
+    <ellipse cx="140" cy="160" rx="16" ry="24" fill="url(#accentGrad)" filter="url(#glow)" />
+    
+    <!-- Nose -->
+    <path d="M100 190 L90 210 L110 210 Z" fill="url(#accentGrad)" filter="url(#glow)" />
+  </g>
+
+  <!-- Slash / Removal Line -->
+  <line x1="100" y1="412" x2="412" y2="100" stroke="#F472B6" stroke-width="32" stroke-linecap="round" filter="url(#glow)" />
+
+</svg>
