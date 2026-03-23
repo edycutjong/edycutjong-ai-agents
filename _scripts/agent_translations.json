@@ -9406,5 +9406,2905 @@
     "en": {
       "description": "Deep-scans repositories for leaked API keys, passwords, tokens, and certificates."
     }
+  },
+  "business-productivity/agent-onboarding-checklist-generator": {
+    "id": {
+      "name": "Agen Pembuat Daftar Periksa Onboarding",
+      "description": "Agen yang memindai struktur repositori dan menghasilkan daftar periksa onboarding pengembang. Mendeteksi tumpukan teknologi dari file paket, mengidentifikasi langkah-langkah penyiapan dari README/Makefile/docker-compose, mengkatalogkan en"
+    },
+    "zh": {
+      "name": "入职清单生成代理",
+      "description": "扫描仓库结构并生成开发者入职清单的代理。从包文件中检测技术栈，从 README/Makefile/docker-compose 中识别设置步骤，记录 en"
+    },
+    "es": {
+      "name": "Agente Generador de Listas de Incorporación",
+      "description": "Agente que escanea la estructura de un repositorio y genera una lista de verificación de incorporación de desarrolladores. Detecta la pila tecnológica de los archivos de paquetes, identifica los pasos de configuración de README/Makefile/docker-compose, cataloga en"
+    },
+    "pt": {
+      "name": "Agente Gerador de Checklist de Integração",
+      "description": "Agente que verifica a estrutura de um repositório e gera um checklist de integração de desenvolvedor. Detecta a stack de tecnologia a partir de arquivos de pacotes, identifica as etapas de configuração do README/Makefile/docker-compose, cataloga en"
+    },
+    "ja": {
+      "name": "オンボーディングチェックリスト生成エージェント",
+      "description": "リポジトリの構造をスキャンし、開発者のオンボーディングチェックリストを生成するエージェント。パッケージファイルから技術スタックを検出し、README/Makefile/docker-composeからセットアップ手順を特定し、enをカタログ化します"
+    },
+    "ko": {
+      "name": "온보딩 체크리스트 생성 에이전트",
+      "description": "저장소 구조를 스캔하여 개발자 온보딩 체크리스트를 생성하는 에이전트. 패키지 파일에서 기술 스택을 감지하고, README/Makefile/docker-compose에서 설정 단계를 식별하며, en을 카탈로그화합니다"
+    },
+    "de": {
+      "name": "Agent für Onboarding-Checklisten-Generierung",
+      "description": "Agent, der die Struktur eines Repositorys scannt und eine Onboarding-Checkliste für Entwickler generiert. Erkennt den Tech-Stack aus Paketdateien, identifiziert Einrichtungsschritte aus README/Makefile/docker-compose, katalogisiert en"
+    },
+    "fr": {
+      "name": "Agent Générateur de Liste d'Intégration",
+      "description": "Agent qui analyse la structure d'un dépôt et génère une liste de contrôle d'intégration pour les développeurs. Détecte la pile technologique à partir des fichiers de paquets, identifie les étapes de configuration à partir de README/Makefile/docker-compose, catalogue en"
+    },
+    "ru": {
+      "name": "Агент-генератор чеклистов онбординга",
+      "description": "Агент, который сканирует структуру репозитория и генерирует контрольный список для онбординга разработчиков. Обнаруживает стек технологий из файлов пакетов, определяет шаги настройки из README/Makefile/docker-compose, каталогизирует en"
+    },
+    "ar": {
+      "name": "وكيل إنشاء قائمة التحقق من الإعداد",
+      "description": "وكيل يقوم بمسح بنية المستودع وإنشاء قائمة تحقق لإعداد المطورين. يكتشف حزمة التكنولوجيا من ملفات الحزم، ويحدد خطوات الإعداد من README/Makefile/docker-compose، ويفهرس en"
+    },
+    "hi": {
+      "name": "एजेंट ऑनबोर्डिंग चेकलिस्ट जेनरेटर",
+      "description": "एजेंट जो रिपॉजिटरी की संरचना को स्कैन करता है और डेवलपर ऑनबोर्डिंग चेकलिस्ट तैयार करता है। पैकेज फ़ाइलों से टेक स्टैक का पता लगाता है, README/Makefile/docker-compose से सेटअप चरणों की पहचान करता है, en को कैटलॉग करता है"
+    },
+    "en": {
+      "name": "Agent Onboarding Checklist Generator",
+      "description": "Agent that scans a repository's structure and generates a developer onboarding checklist. Detects tech stack from package files, identifies setup steps from README/Makefile/docker-compose, catalogs en"
+    }
+  },
+  "code-quality/agent-code-smell-detector": {
+    "id": {
+      "name": "Agen Pendeteksi Code Smell",
+      "description": "Agen AI yang memindai basis kode untuk mendeteksi code smell umum dan menyarankan pola refactoring"
+    },
+    "zh": {
+      "name": "代码异味检测代理",
+      "description": "扫描代码库以查找常见代码异味并提出重构建议的 AI 代理"
+    },
+    "es": {
+      "name": "Agente Detector de Code Smell",
+      "description": "Agente de IA que escanea el código fuente en busca de olores de código comunes y sugiere patrones de refactorización"
+    },
+    "pt": {
+      "name": "Agente Detector de Code Smell",
+      "description": "Agente de IA que analisa bases de código em busca de code smells comuns e sugere padrões de refatoração"
+    },
+    "ja": {
+      "name": "コードスメル検出エージェント",
+      "description": "コードベース内の一般的なコードスメルをスキャンし、リファクタリングパターンを提案するAIエージェント"
+    },
+    "ko": {
+      "name": "코드 스멜 탐지 에이전트",
+      "description": "코드베이스에서 일반적인 코드 스멜을 스캔하고 리팩토링 패턴을 제안하는 AI 에이전트"
+    },
+    "de": {
+      "name": "Agent für Code-Smell-Erkennung",
+      "description": "KI-Agent, der Codebasen nach häufigen Code-Smells durchsucht und Refactoring-Muster vorschlägt"
+    },
+    "fr": {
+      "name": "Agent Détecteur de Code Smell",
+      "description": "Agent IA qui analyse les bases de code à la recherche de 'code smells' courants et suggère des modèles de remaniement (refactoring)"
+    },
+    "ru": {
+      "name": "Агент обнаружения запахов кода",
+      "description": "ИИ-агент, который сканирует кодовые базы на наличие распространенных запахов кода и предлагает паттерны рефакторинга"
+    },
+    "ar": {
+      "name": "وكيل كاشف روائح الكود",
+      "description": "وكيل ذكاء اصطناعي يفحص قواعد الأكواد بحثًا عن روائح الكود الشائعة ويقترح أنماط إعادة الهيكلة"
+    },
+    "hi": {
+      "name": "एजेंट कोड स्मेल डिटेक्टर",
+      "description": "AI एजेंट जो सामान्य कोड स्मेल के लिए कोडबेस को स्कैन करता है और रिफैक्टरिंग पैटर्न का सुझाव देता है"
+    },
+    "en": {
+      "name": "Agent Code Smell Detector",
+      "description": "AI agent that scans codebases for common code smells and suggests refactoring patterns"
+    }
+  },
+  "code-quality/agent-schema-drift-detector": {
+    "id": {
+      "name": "Agen Pendeteksi Penyimpangan Skema",
+      "description": "Agen yang mendeteksi penyimpangan antara file migrasi database dan definisi model ORM. Membandingkan skema yang diharapkan (dari migrasi berurutan) dengan model ORM (Prisma, Drizzle, TypeORM, SQLAlchemy)"
+    },
+    "zh": {
+      "name": "模式漂移检测代理",
+      "description": "检测数据库迁移文件与 ORM 模型定义之间漂移的代理。将预期模式（来自顺序迁移）与 ORM 模型（Prisma, Drizzle, TypeORM, SQLAlchemy）进行比较"
+    },
+    "es": {
+      "name": "Agente Detector de Desviación de Esquema",
+      "description": "Agente que detecta la desviación entre los archivos de migración de base de datos y las definiciones de modelos ORM. Compara el esquema esperado (de migraciones secuenciales) con los modelos ORM (Prisma, Drizzle, TypeORM, SQLAlchemy)"
+    },
+    "pt": {
+      "name": "Agente Detector de Desvio de Esquema",
+      "description": "Agente que detecta desvios entre os arquivos de migração do banco de dados e as definições do modelo ORM. Compara o esquema esperado (de migrações sequenciais) com modelos ORM (Prisma, Drizzle, TypeORM, SQLAlchemy)"
+    },
+    "ja": {
+      "name": "スキーマドリフト検出エージェント",
+      "description": "データベース移行ファイルとORMモデル定義間のドリフトを検出するエージェント。予想されるスキーマ（連続した移行から）とORMモデル（Prisma、Drizzle、TypeORM、SQLAlchemy）を比較します"
+    },
+    "ko": {
+      "name": "스키마 드리프트 탐지 에이전트",
+      "description": "데이터베이스 마이그레이션 파일과 ORM 모델 정의 간의 스키마 드리프트를 감지하는 에이전트. 예상 스키마(순차적 마이그레이션에서 파생)를 ORM 모델(Prisma, Drizzle, TypeORM, SQLAlchemy)과 비교합니다"
+    },
+    "de": {
+      "name": "Agent zur Erkennung von Schema-Drift",
+      "description": "Agent, der eine Abweichung (Drift) zwischen Datenbank-Migrationsdateien und ORM-Modelldefinitionen erkennt. Vergleicht das erwartete Schema (aus sequenziellen Migrationen) mit ORM-Modellen (Prisma, Drizzle, TypeORM, SQLAlchemy)"
+    },
+    "fr": {
+      "name": "Agent Détecteur de Dérive de Schéma",
+      "description": "Agent qui détecte les dérives entre les fichiers de migration de base de données et les définitions des modèles ORM. Compare le schéma attendu (issu de migrations séquentielles) aux modèles ORM (Prisma, Drizzle, TypeORM, SQLAlchemy)"
+    },
+    "ru": {
+      "name": "Агент обнаружения дрейфа схемы",
+      "description": "Агент, который обнаруживает расхождения между файлами миграции базы данных и определениями моделей ORM. Сравнивает ожидаемую схему (из последовательных миграций) с моделями ORM (Prisma, Drizzle, TypeORM, SQLAlchemy)"
+    },
+    "ar": {
+      "name": "وكيل كاشف انحراف المخطط",
+      "description": "وكيل يكتشف الانحراف بين ملفات ترحيل قاعدة البيانات وتعريفات نموذج ORM. يقارن المخطط المتوقع (من عمليات الترحيل المتسلسلة) بنماذج ORM (Prisma، Drizzle، TypeORM، SQLAlchemy)"
+    },
+    "hi": {
+      "name": "एजेंट स्कीमा ड्रिफ्ट डिटेक्टर",
+      "description": "एजेंट जो डेटाबेस माइग्रेशन फ़ाइलों और ORM मॉडल परिभाषाओं के बीच ड्रिफ्ट का पता लगाता है। अपेक्षित स्कीमा (अनुक्रमिक माइग्रेशन से) की तुलना ORM मॉडल (Prisma, Drizzle, TypeORM, SQLAlchemy) से करता है"
+    },
+    "en": {
+      "name": "Agent Schema Drift Detector",
+      "description": "Agent that detects drift between database migration files and ORM model definitions. Compares the expected schema (from sequential migrations) against ORM models (Prisma, Drizzle, TypeORM, SQLAlchemy)"
+    }
+  },
+  "code-quality/ai-code-review-agent": {
+    "id": {
+      "name": "Agen Tinjauan Kode AI",
+      "description": "Agen peninjau kode otonom yang menemukan bug, masalah gaya, dan menyarankan perbaikan"
+    },
+    "zh": {
+      "name": "AI 代码审查代理",
+      "description": "自主代码审查代理，可发现错误、样式问题并提出改进建议"
+    },
+    "es": {
+      "name": "Agente de Revisión de Código de IA",
+      "description": "Agente autónomo de revisión de código que encuentra errores, problemas de estilo y sugiere mejoras"
+    },
+    "pt": {
+      "name": "Agente de Revisão de Código de IA",
+      "description": "Agente autônomo de revisão de código que encontra bugs, problemas de estilo e sugere melhorias"
+    },
+    "ja": {
+      "name": "AIコードレビューエージェント",
+      "description": "バグやスタイル上の問題を検出し、改善を提案する自律型コードレビューエージェント"
+    },
+    "ko": {
+      "name": "AI 코드 리뷰 에이전트",
+      "description": "버그, 스타일 문제를 찾고 개선 사항을 제안하는 자율 코드 리뷰 에이전트"
+    },
+    "de": {
+      "name": "KI-Code-Review-Agent",
+      "description": "Autonomer Code-Review-Agent, der Bugs und Stilprobleme findet und Verbesserungen vorschlägt"
+    },
+    "fr": {
+      "name": "Agent IA de Revue de Code",
+      "description": "Agent de revue de code autonome qui détecte les bugs, les problèmes de style et suggère des améliorations"
+    },
+    "ru": {
+      "name": "ИИ-агент проверки кода",
+      "description": "Автономный агент проверки кода, который находит ошибки, проблемы стиля и предлагает улучшения"
+    },
+    "ar": {
+      "name": "وكيل مراجعة الكود بالذكاء الاصطناعي",
+      "description": "وكيل مراجعة الأكواد المستقل الذي يجد الأخطاء ومشكلات النمط ويقترح التحسينات"
+    },
+    "hi": {
+      "name": "एआई 코드 रिव्यू एजेंट",
+      "description": "स्वायत्त 코드 समीक्षा एजेंट जो बग, शैली संबंधी समस्याएं ढूंढता है, और सुधार सुझाता है"
+    },
+    "en": {
+      "name": "AI Code Review Agent",
+      "description": "Autonomous code review agent that finds bugs, style issues, and suggests improvements"
+    }
+  },
+  "code-quality/api-contract-validator": {
+    "id": {
+      "name": "Validator Kontrak API",
+      "description": "Agen yang membandingkan implementasi API dengan spesifikasi OpenAPI dan melaporkan penyimpangan — bidang yang hilang, ketidakcocokan tipe."
+    },
+    "zh": {
+      "name": "API 合约验证器",
+      "description": "比较 API 实现与 OpenAPI 规范并报告漂移（缺失字段、类型不匹配）的代理。"
+    },
+    "es": {
+      "name": "Validador de Contratos API",
+      "description": "Agente que compara la implementación de la API con la especificación OpenAPI e informa sobre la desviación: campos faltantes, discrepancias de tipo."
+    },
+    "pt": {
+      "name": "Validador de Contrato de API",
+      "description": "Agente que compara a implementação da API com a especificação OpenAPI e relata desvios — campos ausentes, incompatibilidades de tipo."
+    },
+    "ja": {
+      "name": "API コントラクトバリデーター",
+      "description": "APIの実装とOpenAPI仕様を比較し、欠落しているフィールドや型の不一致などのドリフトを報告するエージェント。"
+    },
+    "ko": {
+      "name": "API 계약 검증기",
+      "description": "API 구현을 OpenAPI 사양과 비교하고 누락된 필드, 유형 불일치 등의 스키마 변동을 보고하는 에이전트."
+    },
+    "de": {
+      "name": "API-Vertrags-Validator",
+      "description": "Agent, der die API-Implementierung mit der OpenAPI-Spezifikation vergleicht und Abweichungen meldet — fehlende Felder, Typkonflikte."
+    },
+    "fr": {
+      "name": "Validateur de Contrat API",
+      "description": "Agent qui compare l'implémentation de l'API à la spécification OpenAPI et signale les dérives : champs manquants, incohérences de type."
+    },
+    "ru": {
+      "name": "Валидатор API-контрактов",
+      "description": "Агент, который сравнивает реализацию API со спецификацией OpenAPI и сообщает о расхождениях — отсутствующих полях, несоответствиях типов."
+    },
+    "ar": {
+      "name": "مدقق عقود API",
+      "description": "وكيل يقارن تنفيذ API بمواصفات OpenAPI ويبلغ عن الانحراف — الحقول المفقودة، عدم تطابق النوع."
+    },
+    "hi": {
+      "name": "API कॉन्ट्रैक्ट वैलिडेटर",
+      "description": "एजेंट जो ओपनएपीआई (OpenAPI) स्पेक के विरुद्ध एपीआई (API) कार्यान्वयन की तुलना करता है और ड्रिफ्ट की रिपोर्ट करता है — जैसे गायब फ़ील्ड, टाइप मिसमैच।"
+    },
+    "en": {
+      "name": "API Contract Validator",
+      "description": "Agent that compares API implementation against OpenAPI spec and reports drift — missing fields, type mismatches."
+    }
+  },
+  "code-quality/commit-message-linter": {
+    "id": {
+      "name": "Linter Pesan Commit",
+      "description": "Agen yang menegakkan standar pesan commit konvensional, menyarankan perbaikan, dan memblokir commit yang tidak sesuai."
+    },
+    "zh": {
+      "name": "提交信息 Linter",
+      "description": "强制执行常规提交消息标准、建议改进并阻止不符合规范提交的代理。"
+    },
+    "es": {
+      "name": "Linter de Mensajes de Commit",
+      "description": "Agente que hace cumplir los estándares convencionales de mensajes de commit, sugiere mejoras y bloquea los commits no conformes."
+    },
+    "pt": {
+      "name": "Linter de Mensagem de Commit",
+      "description": "Agente que impõe padrões convencionais de mensagens de commit, sugere melhorias e bloqueia commits não conformes."
+    },
+    "ja": {
+      "name": "コミットメッセージ Linter",
+      "description": "従来のコミットメッセージの標準を強制し、改善を提案し、規格に適合しないコミットをブロックするエージェント。"
+    },
+    "ko": {
+      "name": "커밋 메시지 린터",
+      "description": "기존 커밋 메시지 표준을 강제하고, 개선 사항을 제안하며, 규격을 준수하지 않는 커밋을 차단하는 에이전트."
+    },
+    "de": {
+      "name": "Commit-Message-Linter",
+      "description": "Agent, der konventionelle Commit-Message-Standards durchsetzt, Verbesserungen vorschlägt und nicht konforme Commits blockiert."
+    },
+    "fr": {
+      "name": "Linter de Messages de Commit",
+      "description": "Agent qui applique les normes de messages de commit conventionnels, suggère des améliorations et bloque les commits non conformes."
+    },
+    "ru": {
+      "name": "Линтер сообщений коммитов",
+      "description": "Агент, который обеспечивает соблюдение стандартов конвенциональных сообщений коммитов, предлагает улучшения и блокирует несоответствующие коммиты."
+    },
+    "ar": {
+      "name": "مدقق رسائل Commit",
+      "description": "وكيل يفرض معايير رسائل الـ commit التقليدية، ويقترح التحسينات، ويحظر رسائل الـ commits غير المطابقة."
+    },
+    "hi": {
+      "name": "कमिट मैसेज लिंटर",
+      "description": "एजेंट जो पारंपरिक कमिट मैसेज मानकों को लागू करता है, सुधार का सुझाव देता है, और गैर-अनुरूप कमिट को रोकता है।"
+    },
+    "en": {
+      "name": "Commit Message Linter",
+      "description": "Agent that enforces conventional commit message standards, suggests improvements, and blocks non-conforming commits."
+    }
+  },
+  "code-quality/database-migration-reviewer": {
+    "id": {
+      "name": "Peninjau Migrasi Database",
+      "description": "Agen yang meninjau file migrasi SQL untuk keamanan — memeriksa kehilangan data, reversibilitas, dampak indeks, dan durasi kunci."
+    },
+    "zh": {
+      "name": "数据库迁移审查员",
+      "description": "审查 SQL 迁移文件安全性的代理——检查数据丢失、可逆性、索引影响和锁定持续时间。"
+    },
+    "es": {
+      "name": "Revisor de Migraciones de Base de Datos",
+      "description": "Agente que revisa archivos de migración SQL para mayor seguridad: verifica la pérdida de datos, la reversibilidad, el impacto en índices y la duración del bloqueo."
+    },
+    "pt": {
+      "name": "Revisor de Migração de Banco de Dados",
+      "description": "Agente que analisa arquivos de migração SQL para fins de segurança — verifica perda de dados, reversibilidade, impacto no índice e duração do bloqueio."
+    },
+    "ja": {
+      "name": "データベース移行レビューア",
+      "description": "SQL移行ファイルの安全性をレビューするエージェント。データの損失、可逆性、インデックスへの影響、ロックの期間をチェックします。"
+    },
+    "ko": {
+      "name": "데이터베이스 마이그레이션 리뷰어",
+      "description": "안전성을 위해 SQL 마이그레이션 파일을 검토하는 에이전트. 데이터 손실, 가역성, 인덱스 영향 및 잠금 지속 시간을 확인합니다."
+    },
+    "de": {
+      "name": "Datenbank-Migrations-Reviewer",
+      "description": "Agent, der SQL-Migrationsdateien auf Sicherheit überprüft — prüft auf Datenverlust, Reversibilität, Indexauswirkungen und Sperrdauer."
+    },
+    "fr": {
+      "name": "Examinateur de Migration de Base de Données",
+      "description": "Agent qui examine les fichiers de migration SQL pour en vérifier la sécurité : perte de données, réversibilité, impact sur les index et durée des verrous."
+    },
+    "ru": {
+      "name": "Рецензент миграций базы данных",
+      "description": "Агент, который проверяет файлы миграции SQL на безопасность — проверяет потерю данных, обратимость, влияние на индексы и продолжительность блокировок."
+    },
+    "ar": {
+      "name": "مُراجع ترحيل قاعدة البيانات",
+      "description": "وكيل يراجع ملفات ترحيل SQL للتأكد من سلامتها — يفحص فقدان البيانات، وإمكانية التراجع، وتأثير الفهرس، ومدة القفل."
+    },
+    "hi": {
+      "name": "डेटाबेस माइग्रेशन रिव्युअर",
+      "description": "एजेंट जो सुरक्षा के लिए SQL माइग्रेशन फ़ाइलों की समीक्षा करता है — डेटा हानि, प्रतिवर्तीता (reversibility), इंडेक्स प्रभाव और लॉक अवधि की जांच करता है।"
+    },
+    "en": {
+      "name": "Database Migration Reviewer",
+      "description": "Agent that reviews SQL migration files for safety — checks for data loss, reversibility, index impact, and lock duration."
+    }
+  },
+  "code-quality/dead-code-hunter": {
+    "id": {
+      "name": "Pemburu Kode Mati",
+      "description": "Menganalisis basis kode untuk ekspor yang tidak digunakan, jalur kode yang tidak dapat dijangkau, file yatim piatu, dan selektor CSS yang mati di seluruh proyek JavaScript/TypeScript."
+    },
+    "zh": {
+      "name": "死代码猎手",
+      "description": "跨 JavaScript/TypeScript 项目分析代码库，寻找未使用的导出、不可达的代码路径、孤立文件和死 CSS 选择器。"
+    },
+    "es": {
+      "name": "Cazador de Código Muerto",
+      "description": "Analiza la base de código en busca de exportaciones no utilizadas, rutas de código inalcanzables, archivos huérfanos y selectores CSS muertos en proyectos JavaScript/TypeScript."
+    },
+    "pt": {
+      "name": "Caçador de Código Morto",
+      "description": "Analise a base de código em busca de exportações não utilizadas, caminhos de código inacessíveis, arquivos órfãos e seletores CSS mortos em projetos JavaScript/TypeScript."
+    },
+    "ja": {
+      "name": "デッドコードハンター",
+      "description": "JavaScript/TypeScriptプロジェクト全体で、未使用のエクスポート、到達不能なコードパス、孤立したファイル、および使用されていないCSSセレクターについてコードベースを分析します。"
+    },
+    "ko": {
+      "name": "데드 코드 헌터",
+      "description": "JavaScript/TypeScript 프로젝트 전반에 걸쳐 사용되지 않는 export, 도달할 수 없는 코드 경로, 고아 파일 및 데드 CSS 선택기에 대해 코드베이스를 분석합니다."
+    },
+    "de": {
+      "name": "Dead-Code-Hunter",
+      "description": "Analysiert die Codebasis auf ungenutzte Exporte, unerreichbare Codepfade, verwaiste Dateien und tote CSS-Selektoren in JavaScript/TypeScript-Projekten."
+    },
+    "fr": {
+      "name": "Chasseur de Code Mort",
+      "description": "Analyse la base de code pour trouver les exportations inutilisées, les chemins de code inaccessibles, les fichiers orphelins et les sélecteurs CSS morts dans les projets JavaScript/TypeScript."
+    },
+    "ru": {
+      "name": "Охотник за мертвым кодом",
+      "description": "Анализирует кодовую базу на наличие неиспользуемых экспортов, недостижимых путей кода, потерянных файлов и мертвых селекторов CSS в проектах JavaScript/TypeScript."
+    },
+    "ar": {
+      "name": "صائد الكود الميت",
+      "description": "يحلل قاعدة الأكواد بحثًا عن الصادرات غير المستخدمة، ومسارات الأكواد التي لا يمكن الوصول إليها، والملفات المعزولة، ومحددات CSS الميتة عبر مشاريع JavaScript/TypeScript."
+    },
+    "hi": {
+      "name": "डेड कोड हंटर",
+      "description": "JavaScript/TypeScript प्रोजेक्ट्स में अप्रयुक्त एक्सपोर्ट, अगम्य कोड पथ, अनाथ फ़ाइलों और डेड CSS चयनाकों (selectors) के लिए कोडबेस का विश्लेषण करें।"
+    },
+    "en": {
+      "name": "Dead Code Hunter",
+      "description": "Analyze codebase for unused exports, unreachable code paths, orphan files, and dead CSS selectors across JavaScript/TypeScript projects."
+    }
+  },
+  "code-quality/pr-description-agent": {
+    "id": {
+      "name": "Agen Deskripsi PR",
+      "description": "Menghasilkan secara otomatis deskripsi pull request dari git diffs — mencakup konteks, ringkasan perubahan, cakupan tes, dan peringatan perubahan yang merusak."
+    },
+    "zh": {
+      "name": "PR 描述代理",
+      "description": "从 git diff 自动生成合并请求描述——包括上下文、变更摘要、测试覆盖率和重大变更警告。"
+    },
+    "es": {
+      "name": "Agente de Descripción de PR",
+      "description": "Genera automáticamente descripciones de pull requests a partir de git diffs: incluye contexto, resumen de cambios, cobertura de pruebas y advertencias de cambios incompatibles."
+    },
+    "pt": {
+      "name": "Agente de Descrição de PR",
+      "description": "Gera automaticamente descrições de pull requests a partir de git diffs — inclui contexto, resumo da alteração, cobertura de teste e avisos de breaking changes."
+    },
+    "ja": {
+      "name": "PR説明エージェント",
+      "description": "git diffからプルリクエストの概要を自動生成します。これには、コンテキスト、変更の概要、テストカバレッジ、および破壊的変更の警告が含まれます。"
+    },
+    "ko": {
+      "name": "PR 설명 에이전트",
+      "description": "Git diff에서 풀 리퀘스트 설명을 자동 생성합니다. 컨텍스트, 변경 요약, 테스트 커버리지 및 호환성 파괴 변경 경고를 포함합니다."
+    },
+    "de": {
+      "name": "PR-Beschreibungs-Agent",
+      "description": "Generiert automatisch Pull-Request-Beschreibungen aus Git-Diffs — einschließlich Kontext, Änderungszusammenfassung, Testabdeckung und Warnungen vor Breaking Changes."
+    },
+    "fr": {
+      "name": "Agent de Description de PR",
+      "description": "Génère automatiquement les descriptions de pull requests à partir des git diffs : inclut le contexte, le résumé des modifications, la couverture des tests et les avertissements de changements majeurs."
+    },
+    "ru": {
+      "name": "Агент описаний PR",
+      "description": "Автоматически генерирует описания pull request'ов из git diffs — включает контекст, краткое изложение изменений, тестовое покрытие и предупреждения о ломающих изменениях."
+    },
+    "ar": {
+      "name": "وكيل وصف PR",
+      "description": "يقوم تلقائيًا بإنشاء أوصاف طلبات السحب من git diffs — بما في ذلك السياق، وملخص التغيير، وتغطية الاختبار، والتحذيرات من التغييرات الجذرية."
+    },
+    "hi": {
+      "name": "PR विवरण एजेंट",
+      "description": "गिट डिफ़्स (git diffs) से पुल रिक्वेस्ट विवरण स्वतः उत्पन्न करता है — इसमें संदर्भ, परिवर्तन सारांश, परीक्षण कवरेज, और ब्रेकिंग चेंज चेतावनियां शामिल हैं।"
+    },
+    "en": {
+      "name": "Pr Description Agent",
+      "description": "Auto-generates pull request descriptions from git diffs — includes context, change summary, test coverage, and breaking change warnings."
+    }
+  },
+  "code-quality/pr-description-writer": {
+    "id": {
+      "name": "Penulis Deskripsi PR",
+      "description": "Agen yang membaca git diff dan menulis deskripsi PR terstruktur dengan konteks, ringkasan perubahan, dan catatan pengujian."
+    },
+    "zh": {
+      "name": "PR 描述编写器",
+      "description": "读取 git diff 并编写结构化 PR 描述（包括上下文、变更摘要和测试说明）的代理。"
+    },
+    "es": {
+      "name": "Redactor de Descripciones de PR",
+      "description": "Agente que lee un git diff y escribe descripciones de PR estructuradas con contexto, resumen de cambios y notas de prueba."
+    },
+    "pt": {
+      "name": "Escritor de Descrições de PR",
+      "description": "Agente que lê um git diff e escreve descrições estruturadas de PR com contexto, resumo da mudança e notas de teste."
+    },
+    "ja": {
+      "name": "PR説明ライター",
+      "description": "git diffを読み取り、コンテキスト、変更の概要、テストのメモを含む構造化されたPRの説明を作成するエージェント。"
+    },
+    "ko": {
+      "name": "PR 설명 작성기",
+      "description": "git diff를 읽고 컨텍스트, 변경 요약 및 테스트 참고 사항이 포함된 구조화된 PR 설명을 작성하는 에이전트."
+    },
+    "de": {
+      "name": "PR-Beschreibungs-Schreiber",
+      "description": "Agent, der ein Git-Diff liest und strukturierte PR-Beschreibungen mit Kontext, Änderungszusammenfassung und Testnotizen schreibt."
+    },
+    "fr": {
+      "name": "Rédacteur de Description de PR",
+      "description": "Agent qui lit un git diff et rédige des descriptions de PR structurées avec le contexte, le résumé des modifications et les notes de test."
+    },
+    "ru": {
+      "name": "Автор описаний PR",
+      "description": "Агент, который читает git diff и пишет структурированные описания PR с контекстом, кратким изложением изменений и заметками по тестированию."
+    },
+    "ar": {
+      "name": "كاتب وصف PR",
+      "description": "وكيل يقرأ git diff ويكتب أوصاف PR منظمة مع السياق، وملخص التغيير، وملاحظات الاختبار."
+    },
+    "hi": {
+      "name": "PR विवरण लेखक",
+      "description": "एजेंट जो गिट डिफ़ (git diff) पढ़ता है और संदर्भ, परिवर्तन सारांश, और परीक्षण नोट्स के साथ संरचित PR विवरण लिखता है।"
+    },
+    "en": {
+      "name": "Pr Description Writer",
+      "description": "Agent that reads a git diff and writes structured PR descriptions with context, change summary, and testing notes."
+    }
+  },
+  "code-quality/refactoring-agent": {
+    "id": {
+      "name": "Agen Refactoring",
+      "description": "Agen AI yang mengidentifikasi code smell, menyarankan pola refactoring, dan menghasilkan pull request."
+    },
+    "zh": {
+      "name": "重构代理",
+      "description": "识别代码异味、建议重构模式并生成合并请求的 AI 代理。"
+    },
+    "es": {
+      "name": "Agente de Refactorización",
+      "description": "Agente de IA que identifica olores de código, sugiere patrones de refactorización y genera pull requests."
+    },
+    "pt": {
+      "name": "Agente de Refatoração",
+      "description": "Agente de IA que identifica code smells, sugere padrões de refatoração e gera pull requests."
+    },
+    "ja": {
+      "name": "リファクタリングエージェント",
+      "description": "コードスメルを特定し、リファクタリングパターンを提案し、プルリクエストを生成するAIエージェント。"
+    },
+    "ko": {
+      "name": "리팩토링 에이전트",
+      "description": "코드 스멜을 식별하고, 리팩토링 패턴을 제안하며, 풀 리퀘스트를 생성하는 AI 에이전트."
+    },
+    "de": {
+      "name": "Refactoring-Agent",
+      "description": "KI-Agent, der Code-Smells identifiziert, Refactoring-Muster vorschlägt und Pull-Requests generiert."
+    },
+    "fr": {
+      "name": "Agent de Refactoring",
+      "description": "Agent IA qui identifie les 'code smells', suggère des modèles de remaniement et génère des pull requests."
+    },
+    "ru": {
+      "name": "Агент рефакторинга",
+      "description": "ИИ-агент, который выявляет запахи кода, предлагает паттерны рефакторинга и генерирует pull request'ы."
+    },
+    "ar": {
+      "name": "وكيل إعادة الهيكلة",
+      "description": "وكيل ذكاء اصطناعي يحدد روائح الكود، ويقترح أنماط إعادة الهيكلة، وينشئ طلبات السحب."
+    },
+    "hi": {
+      "name": "रिफैक्टरिंग एजेंट",
+      "description": "AI एजेंट जो कोड स्मेल की पहचान करता है, रिफैक्टरिंग पैटर्न सुझाता है, और पुल रिक्वेस्ट जनरेट करता है।"
+    },
+    "en": {
+      "name": "Refactoring Agent",
+      "description": "AI agent that identifies code smells, suggests refactoring patterns, and generates pull requests."
+    }
+  },
+  "code-quality/tech-debt-scorer": {
+    "id": {
+      "name": "Pencetak Skor Utang Teknis",
+      "description": "Agen yang memindai basis kode dan menilai utang teknis berdasarkan kategori — kompleksitas, duplikasi, dependensi yang usang, celah pengujian."
+    },
+    "zh": {
+      "name": "技术债务评估仪",
+      "description": "扫描代码库并按类别（复杂性、重复性、过时依赖、测试漏洞）对技术债务进行评分的代理。"
+    },
+    "es": {
+      "name": "Puntuador de Deuda Técnica",
+      "description": "Agente que escanea la base de código y puntúa la deuda técnica por categoría: complejidad, duplicación, dependencias desactualizadas, brechas de pruebas."
+    },
+    "pt": {
+      "name": "Avaliador de Dívida Técnica",
+      "description": "Agente que analisa a base de código e pontua a dívida técnica por categoria — complexidade, duplicação, dependências desatualizadas, lacunas de teste."
+    },
+    "ja": {
+      "name": "技術的負債スコアラー",
+      "description": "コードベースをスキャンし、複雑さ、重複、古い依存関係、テストのギャップなどのカテゴリ別に技術的負債をスコアリングするエージェント。"
+    },
+    "ko": {
+      "name": "기술 부채 스코어러",
+      "description": "코드베이스를 스캔하여 복잡성, 중복, 오래된 종속성, 테스트 격차 등의 범주별로 기술 부채의 점수를 매기는 에이전트."
+    },
+    "de": {
+      "name": "Tech-Debt-Bewerter",
+      "description": "Agent, der eine Codebasis scannt und technische Schulden nach Kategorien bewertet — Komplexität, Duplikation, veraltete Abhängigkeiten, Testlücken."
+    },
+    "fr": {
+      "name": "Évaluateur de Dette Technique",
+      "description": "Agent qui analyse une base de code et évalue la dette technique par catégorie : complexité, duplication, dépendances obsolètes, lacunes dans les tests."
+    },
+    "ru": {
+      "name": "Оценщик технического долга",
+      "description": "Агент, который сканирует кодовую базу и оценивает технический долг по категориям — сложность, дублирование, устаревшие зависимости, пробелы в тестировании."
+    },
+    "ar": {
+      "name": "مسجل الديون التقنية",
+      "description": "وكيل يمسح قاعدة الأكواد ويسجل الديون التقنية حسب الفئة — التعقيد، والازدواجية، والتبعيات القديمة، وفجوات الاختبار."
+    },
+    "hi": {
+      "name": "तकनीकी ऋण स्कोरर",
+      "description": "एजेंट जो कोडबेस को स्कैन करता है और श्रेणी के आधार पर तकनीकी ऋण का स्कोर देता है — जटिलता, दोहराव (duplication), पुरानी निर्भरता (deps), परीक्षण अंतराल (test gaps)।"
+    },
+    "en": {
+      "name": "Tech Debt Scorer",
+      "description": "Agent that scans a codebase and scores technical debt by category — complexity, duplication, outdated deps, test gaps."
+    }
+  },
+  "code-quality/test-coverage-gap-finder": {
+    "id": {
+      "name": "Pencari Celah Cakupan Uji",
+      "description": "Agen yang mengidentifikasi jalur kode yang belum diuji dengan menganalisis sumber dan file uji, lalu menyarankan kasus uji spesifik untuk ditulis."
+    },
+    "zh": {
+      "name": "测试覆盖缺口发现器",
+      "description": "通过分析源码和测试文件识别未测试代码路径，然后建议编写特定测试用例的代理。"
+    },
+    "es": {
+      "name": "Buscador de Brechas de Cobertura de Pruebas",
+      "description": "Agente que identifica rutas de código no probadas analizando los archivos fuente y de prueba, y luego sugiere casos de prueba específicos para escribir."
+    },
+    "pt": {
+      "name": "Localizador de Lacunas de Cobertura de Teste",
+      "description": "Agente que identifica caminhos de código não testados analisando a origem e os arquivos de teste e, em seguida, sugere casos de teste específicos a serem escritos."
+    },
+    "ja": {
+      "name": "テストカバレッジギャップファインダー",
+      "description": "ソースファイルとテストファイルを分析して未テストのコードパスを特定し、記述すべき具体的なテストケースを提案するエージェント。"
+    },
+    "ko": {
+      "name": "테스트 커버리지 격차 탐지기",
+      "description": "소스 및 테스트 파일을 분석하여 테스트되지 않은 코드 경로를 식별한 다음, 작성해야 할 특정 테스트 케이스를 제안하는 에이전트."
+    },
+    "de": {
+      "name": "Test-Coverage-Gap-Finder",
+      "description": "Agent, der ungetestete Codepfade durch die Analyse von Quell- und Testdateien identifiziert und dann spezifische Testfälle zum Schreiben vorschlägt."
+    },
+    "fr": {
+      "name": "Trouveur de Lacunes de Couverture de Tests",
+      "description": "Agent qui identifie les chemins de code non testés en analysant les fichiers source et les tests, puis suggère des cas de test spécifiques à écrire."
+    },
+    "ru": {
+      "name": "Искатель пробелов в тестовом покрытии",
+      "description": "Агент, который выявляет не протестированные пути кода, анализируя исходные и тестовые файлы, а затем предлагает конкретные тестовые случаи для написания."
+    },
+    "ar": {
+      "name": "مكتشف فجوات تغطية الاختبار",
+      "description": "وكيل يحدد مسارات الأكواد غير المختبرة عن طريق تحليل الملفات المصدرية وملفات الاختبار، ثم يقترح حالات اختبار محددة لكتابتها."
+    },
+    "hi": {
+      "name": "टेस्ट कवरेज गैप फाइंडर",
+      "description": "एजेंट जो स्रोत और परीक्षण फ़ाइलों का विश्लेषण करके अप्रशिक्षित कोड पथों की पहचान करता है, फिर लिखने के लिए विशिष्ट परीक्षण मामलों का सुझाव देता है।"
+    },
+    "en": {
+      "name": "Test Coverage Gap Finder",
+      "description": "Agent that identifies untested code paths by analyzing source and test files, then suggests specific test cases to write."
+    }
+  },
+  "code-quality/test-generation-agent": {
+    "id": {
+      "name": "Agen Pembuat Tes",
+      "description": "Agen yang menganalisis kode sumber dan membuat rangkaian unit test dengan cakupan kasus tepi (edge case)."
+    },
+    "zh": {
+      "name": "测试生成代理",
+      "description": "分析源代码并生成涵盖边缘情况的单元测试套件的代理。"
+    },
+    "es": {
+      "name": "Agente de Generación de Pruebas",
+      "description": "Agente que analiza el código fuente y genera suites de pruebas unitarias con cobertura de casos extremos."
+    },
+    "pt": {
+      "name": "Agente Gerador de Testes",
+      "description": "Agente que analisa o código-fonte e gera suítes de teste de unidade com cobertura para casos extremos."
+    },
+    "ja": {
+      "name": "テスト生成エージェント",
+      "description": "ソースコードを分析し、エッジケースのカバレッジを含む単体テストスイートを生成するエージェント。"
+    },
+    "ko": {
+      "name": "테스트 생성 에이전트",
+      "description": "소스 코드를 분석하고 엣지 케이스 커버리지가 포함된 단위 테스트 스위트를 생성하는 에이전트."
+    },
+    "de": {
+      "name": "Test-Generierungs-Agent",
+      "description": "Agent, der den Quellcode analysiert und Unit-Test-Suites mit Randfall-Abdeckung generiert."
+    },
+    "fr": {
+      "name": "Agent Générateur de Tests",
+      "description": "Agent qui analyse le code source et génère des suites de tests unitaires couvrant les cas limites."
+    },
+    "ru": {
+      "name": "Агент генерации тестов",
+      "description": "Агент, который анализирует исходный код и генерирует наборы модульных тестов с покрытием граничных случаев."
+    },
+    "ar": {
+      "name": "وكيل إنشاء الاختبارات",
+      "description": "وكيل يحلل الكود المصدري وينشئ أجنحة اختبارات الوحدة مع تغطية الحالات الطرفية."
+    },
+    "hi": {
+      "name": "टेस्ट जनरेशन एजेंट",
+      "description": "एजेंट जो स्रोत कोड का विश्लेषण करता है और एज केस (edge case) कवरेज के साथ यूनिट टेस्ट सूट उत्पन्न करता है।"
+    },
+    "en": {
+      "name": "Test Generation Agent",
+      "description": "Agent that analyzes source code and generates unit test suites with edge case coverage."
+    }
+  },
+  "code-quality/test-generator": {
+    "id": {
+      "name": "Pembuat Tes",
+      "description": "Membaca kode sumber dan menghasilkan rangkaian tes unit dan integrasi yang komprehensif dengan cakupan tinggi."
+    },
+    "zh": {
+      "name": "测试生成器",
+      "description": "读取源代码并生成具有高覆盖率的综合单元测试和集成测试套件。"
+    },
+    "es": {
+      "name": "Generador de Pruebas",
+      "description": "Lee el código fuente y genera suites de pruebas de integración y unitarias exhaustivas con alta cobertura."
+    },
+    "pt": {
+      "name": "Gerador de Teste",
+      "description": "Lê o código-fonte e gera suítes abrangentes de teste de unidade e integração com alta cobertura."
+    },
+    "ja": {
+      "name": "テストジェネレーター",
+      "description": "ソースコードを読み取り、カバレッジの高い包括的な単体テストおよび統合テストスイートを生成します。"
+    },
+    "ko": {
+      "name": "테스트 생성기",
+      "description": "소스 코드를 읽고 높은 커버리지를 가진 포괄적인 단위 및 통합 테스트 스위트를 생성합니다."
+    },
+    "de": {
+      "name": "Test-Generator",
+      "description": "Liest den Quellcode und generiert umfassende Unit- und Integrationstest-Suites mit hoher Abdeckung."
+    },
+    "fr": {
+      "name": "Générateur de Tests",
+      "description": "Lit le code source et génère des suites de tests unitaires et d'intégration complètes avec une couverture élevée."
+    },
+    "ru": {
+      "name": "Генератор тестов",
+      "description": "Читает исходный код и генерирует комплексные наборы модульных и интеграционных тестов с высоким покрытием."
+    },
+    "ar": {
+      "name": "منشئ الاختبارات",
+      "description": "يقرأ الكود المصدري وينشئ أجنحة اختبارات وحدة وتكامل شاملة ذات تغطية عالية."
+    },
+    "hi": {
+      "name": "टेस्ट जेनरेटर",
+      "description": "स्रोत कोड पढ़ता है और उच्च कवरेज के साथ व्यापक यूनिट और इंटीग्रेशन टेस्ट सूट उत्पन्न करता है।"
+    },
+    "en": {
+      "name": "Test Generator",
+      "description": "Reads source code and generates comprehensive unit and integration test suites with high coverage."
+    }
+  },
+  "content-writing/agent-blog-outline-gen": {
+    "id": {
+      "name": "Agen Pembuat Outline Blog",
+      "description": "Agen AI yang menghasilkan outline postingan blog yang mendetail dengan bagian, poin utama, dan kata kunci SEO"
+    },
+    "zh": {
+      "name": "代理博客大纲生成器",
+      "description": "生成详细博客文章大纲（包含章节、关键点和 SEO 关键字）的 AI 代理"
+    },
+    "es": {
+      "name": "Agente Generador de Esquemas de Blogs",
+      "description": "Agente de IA que genera esquemas detallados para publicaciones de blogs con secciones, puntos clave y palabras clave de SEO"
+    },
+    "pt": {
+      "name": "Agente Gerador de Esboço de Blog",
+      "description": "Agente de IA que gera esboços detalhados de postagens de blog com seções, pontos-chave e palavras-chave de SEO"
+    },
+    "ja": {
+      "name": "エージェントブログアウトラインジェネレーター",
+      "description": "セクション、要点、SEOキーワードを含む詳細なブログ記事のアウトラインを生成するAIエージェント"
+    },
+    "ko": {
+      "name": "에이전트 블로그 개요 생성기",
+      "description": "섹션, 핵심 요점 및 SEO 키워드를 포함하여 상세한 블로그 게시물 개요를 생성하는 AI 에이전트"
+    },
+    "de": {
+      "name": "Agent für Blog-Outline-Generierung",
+      "description": "KI-Agent, der detaillierte Gliederungen für Blogposts mit Abschnitten, Kernpunkten und SEO-Schlüsselwörtern generiert"
+    },
+    "fr": {
+      "name": "Agent Générateur de Plan de Blog",
+      "description": "Agent IA qui génère des plans de publication de blog détaillés avec des sections, des points clés et des mots-clés SEO"
+    },
+    "ru": {
+      "name": "Агент генерации планов блогов",
+      "description": "ИИ-агент, который генерирует подробные планы сообщений в блоге с разделами, ключевыми моментами и ключевыми словами SEO"
+    },
+    "ar": {
+      "name": "وكيل إنشاء مخططات المدونات",
+      "description": "وكيل ذكاء اصطناعي ينشئ مخططات تفصيلية لمنشورات المدونة تحتوي على الأقسام والنقاط الرئيسية والكلمات الرئيسية لـ SEO"
+    },
+    "hi": {
+      "name": "एजेंट ब्लॉग आउटलाइन जेनरेटर",
+      "description": "AI एजेंट जो अनुभागों, मुख्य बिंदुओं और SEO कीवर्ड के साथ विस्तृत ब्लॉग पोस्ट रूपरेखा (outline) तैयार करता है"
+    },
+    "en": {
+      "name": "Agent Blog Outline Gen",
+      "description": "AI agent that generates detailed blog post outlines with sections, key points, and SEO keywords"
+    }
+  },
+  "content-writing/seo-auditor": {
+    "id": {
+      "name": "Auditor SEO",
+      "description": "Agen AI yang merayapi situs web dan menghasilkan laporan SEO komprehensif yang mencakup tag meta, tajuk, tautan, gambar, dan data terstruktur."
+    },
+    "zh": {
+      "name": "SEO 审计员",
+      "description": "爬取网站并生成涵盖元标签、标题、链接、图像和结构化数据的综合 SEO 报告的 AI 代理。"
+    },
+    "es": {
+      "name": "Auditor SEO",
+      "description": "Un agente de IA que rastrea sitios web y genera informes completos de SEO que cubren etiquetas meta, encabezados, enlaces, imágenes y datos estructurados."
+    },
+    "pt": {
+      "name": "Auditor SEO",
+      "description": "Um agente de IA que rastreia sites e gera relatórios abrangentes de SEO que abrangem meta tags, títulos, links, imagens e dados estruturados."
+    },
+    "ja": {
+      "name": "SEO オーディター",
+      "description": "ウェブサイトをクロールし、メタタグ、見出し、リンク、画像、構造化データを網羅する包括的なSEOレポートを生成するAIエージェント。"
+    },
+    "ko": {
+      "name": "SEO 감사기",
+      "description": "웹사이트를 크롤링하고 메타 태그, 제목, 링크, 이미지 및 구조화된 데이터를 포괄하는 포괄적인 SEO 보고서를 생성하는 AI 에이전트."
+    },
+    "de": {
+      "name": "SEO-Auditor",
+      "description": "Ein KI-Agent, der Websites crawlt und umfassende SEO-Berichte generiert, die Meta-Tags, Überschriften, Links, Bilder und strukturierte Daten umfassen."
+    },
+    "fr": {
+      "name": "Auditeur SEO",
+      "description": "Un agent IA qui parcourt les sites Web et génère des rapports SEO complets couvrant les balises méta, les en-têtes, les liens, les images et les données structurées."
+    },
+    "ru": {
+      "name": "SEO-аудитор",
+      "description": "ИИ-агент, который сканирует веб-сайты и создает комплексные SEO-отчеты, охватывающие метатеги, заголовки, ссылки, изображения и структурированные данные."
+    },
+    "ar": {
+      "name": "مدقق SEO",
+      "description": "وكيل ذكاء اصطناعي يزحف إلى مواقع الويب ويُنشئ تقارير تحسين محركات البحث (SEO) شاملة تغطي العلامات الوصفية، والعناوين، والروابط، والصور، والبيانات المنظمة."
+    },
+    "hi": {
+      "name": "SEO ऑडिटर",
+      "description": "एक AI एजेंट जो वेबसाइटों को क्रॉल करता है और मेटा टैग, हेडिंग, लिंक, चित्र और संरचित डेटा (structured data) को कवर करते हुए व्यापक SEO रिपोर्ट उत्पन्न करता है।"
+    },
+    "en": {
+      "name": "SEO Auditor",
+      "description": "An AI agent that crawls websites and generates comprehensive SEO reports covering meta tags, headings, links, images, and structured data."
+    }
+  },
+  "data-analytics/research-agent": {
+    "id": {
+      "name": "Agen Riset",
+      "description": "Agen otonom yang meneliti topik menggunakan pencarian web dan menyusun laporan terstruktur."
+    },
+    "zh": {
+      "name": "研究代理",
+      "description": "使用网络搜索研究某个主题并汇编结构化报告的自主代理。"
+    },
+    "es": {
+      "name": "Agente de Investigación",
+      "description": "Agente autónomo que investiga un tema utilizando la búsqueda web y compila informes estructurados."
+    },
+    "pt": {
+      "name": "Agente de Pesquisa",
+      "description": "Agente autônomo que pesquisa um tópico usando pesquisa na web e compila relatórios estruturados."
+    },
+    "ja": {
+      "name": "リサーチエージェント",
+      "description": "Web検索を使用してトピックを調査し、構造化されたレポートをまとめる自律型エージェント。"
+    },
+    "ko": {
+      "name": "리서치 에이전트",
+      "description": "웹 검색을 사용하여 주제를 연구하고 구조화된 보고서를 컴파일하는 자율 에이전트."
+    },
+    "de": {
+      "name": "Recherche-Agent",
+      "description": "Autonomer Agent, der ein Thema mithilfe der Websuche recherchiert und strukturierte Berichte erstellt."
+    },
+    "fr": {
+      "name": "Agent de Recherche",
+      "description": "Agent autonome qui effectue des recherches sur un sujet à l'aide de la recherche Web et compile des rapports structurés."
+    },
+    "ru": {
+      "name": "Агент-исследователь",
+      "description": "Автономный агент, который исследует тему с помощью веб-поиска и составляет структурированные отчеты."
+    },
+    "ar": {
+      "name": "وكيل بحث",
+      "description": "وكيل مستقل يبحث في موضوع ما باستخدام بحث الويب ويقوم بتجميع تقارير منظمة."
+    },
+    "hi": {
+      "name": "रिसर्च एजेंट",
+      "description": "स्वायत्त एजेंट जो वेब सर्च का उपयोग करके किसी विषय पर शोध करता है और संरचित (structured) रिपोर्ट संकलित करता है।"
+    },
+    "en": {
+      "name": "Research Agent",
+      "description": "Autonomous agent that researches a topic using web search and compiles structured reports."
+    }
+  },
+  "developer/agent-a11y-fixer": {
+    "id": {
+      "name": "Agen Perbaikan Aksesibilitas",
+      "description": "Memindai HTML untuk masalah aksesibilitas dan secara otomatis menghasilkan perbaikan termasuk teks alt, label ARIA, dan peningkatan kontras."
+    },
+    "zh": {
+      "name": "无障碍修复代理",
+      "description": "扫描 HTML 以查找无障碍问题并自动生成修复程序，包括替代文本、ARIA 标签和对比度改进。"
+    },
+    "es": {
+      "name": "Agente Reparador de Accesibilidad",
+      "description": "Escanea el HTML en busca de problemas de accesibilidad y autogenera soluciones, incluyendo texto alternativo, etiquetas ARIA y mejoras de contraste."
+    },
+    "pt": {
+      "name": "Agente de Correção de Acessibilidade",
+      "description": "Verifica o HTML em busca de problemas de acessibilidade e gera correções automaticamente, incluindo texto alternativo, rótulos ARIA e melhorias de contraste."
+    },
+    "ja": {
+      "name": "アクセシビリティ修正エージェント",
+      "description": "HTMLのアクセシビリティの問題をスキャンし、代替テキスト、ARIAラベル、コントラストの改善などの修正を自動生成します。"
+    },
+    "ko": {
+      "name": "접근성 수정 에이전트",
+      "description": "접근성 문제에 대해 HTML을 스캔하고 대체 텍스트, ARIA 레이블 및 대비 개선을 포함한 수정 사항을 자동 생성합니다."
+    },
+    "de": {
+      "name": "Agent für Barrierefreiheit-Fixes",
+      "description": "Scannt HTML auf Barrierefreiheitsprobleme und generiert automatisch Fixes wie Alt-Texte, ARIA-Labels und Kontrastverbesserungen."
+    },
+    "fr": {
+      "name": "Agent Correcteur d'Accessibilité",
+      "description": "Analyse le code HTML pour détecter les problèmes d'accessibilité et génère automatiquement des correctifs, notamment du texte alternatif, des balises ARIA et des améliorations du contraste."
+    },
+    "ru": {
+      "name": "Агент исправления доступности",
+      "description": "Сканирует HTML на наличие проблем с доступностью и автоматически генерирует исправления, включая замещающий текст, метки ARIA и улучшение контрастности."
+    },
+    "ar": {
+      "name": "وكيل إصلاح إمكانية الوصول",
+      "description": "يقوم بمسح HTML بحثًا عن مشكلات إمكانية الوصول ويولد تلقائيًا إصلاحات بما في ذلك النص البديل، وتسميات ARIA، وتحسينات التباين."
+    },
+    "hi": {
+      "name": "एजेंट एक्सेसिबिलिटी फिक्सर",
+      "description": "एक्सेसिबिलिटी समस्याओं के लिए HTML को स्कैन करता है और ऑल्ट टेक्स्ट, ARIA लेबल्स और कंट्रास्ट सुधार सहित सुधार स्वतः उत्पन्न करता है।"
+    },
+    "en": {
+      "name": "Agent A11y Fixer",
+      "description": "Scans HTML for accessibility issues and auto-generates fixes including alt text, ARIA labels, and contrast improvements."
+    }
+  },
+  "developer/agent-api-monitor": {
+    "id": {
+      "name": "Agen Pemantau API",
+      "description": "Agen yang memantau titik akhir API untuk waktu aktif, waktu respons, dan perubahan skema. Memberi peringatan pada anomali."
+    },
+    "zh": {
+      "name": "API 监控代理",
+      "description": "监控 API 端点以了解运行时间、响应时间和架构更改。针对异常情况发出警报的代理。"
+    },
+    "es": {
+      "name": "Agente Monitor de API",
+      "description": "Agente que supervisa los puntos finales de la API en cuanto a tiempo de actividad, tiempo de respuesta y cambios de esquema. Alerta sobre anomalías."
+    },
+    "pt": {
+      "name": "Agente Monitor de API",
+      "description": "Agente que monitora endpoints da API para tempo de atividade, tempo de resposta e mudanças de esquema. Alerta sobre anomalias."
+    },
+    "ja": {
+      "name": "API モニタリングエージェント",
+      "description": "APIエンドポイントの稼働時間、応答時間、スキーマの変更を監視するエージェント。異常を警告します。"
+    },
+    "ko": {
+      "name": "API 모니터링 에이전트",
+      "description": "API 엔드포인트의 가동 시간, 응답 시간 및 스키마 변경 사항을 모니터링하는 에이전트. 이상 발생 시 경고합니다."
+    },
+    "de": {
+      "name": "Agent API-Monitor",
+      "description": "Agent, der API-Endpunkte hinsichtlich Verfügbarkeit, Antwortzeit und Schemaänderungen überwacht. Alarmiert bei Anomalien."
+    },
+    "fr": {
+      "name": "Agent Moniteur d'API",
+      "description": "Agent qui surveille les endpoints API pour le temps de disponibilité, le temps de réponse et les modifications de schéma. Alerte sur les anomalies."
+    },
+    "ru": {
+      "name": "Агент мониторинга API",
+      "description": "Агент, который отслеживает конечные точки API на предмет времени безотказной работы, времени отклика и изменений схемы. Оповещает об аномалиях."
+    },
+    "ar": {
+      "name": "وكيل مراقبة API",
+      "description": "وكيل يراقب نقاط نهاية API من حيث وقت التشغيل، ووقت الاستجابة، وتغييرات المخطط. ينبه عند وجود حالات شاذة."
+    },
+    "hi": {
+      "name": "एजेंट API मॉनिटर",
+      "description": "एजेंट जो अपटाइम, प्रतिक्रिया समय और स्कीमा परिवर्तन के लिए API एंडपॉइंट्स की निगरानी करता है। विसंगतियों पर अलर्ट करता है।"
+    },
+    "en": {
+      "name": "Agent API Monitor",
+      "description": "Agent that monitors API endpoints for uptime, response time, and schema changes. Alerts on anomalies."
+    }
+  },
+  "developer/agent-api-schema-migrator": {
+    "id": {
+      "name": "Agen Migrator Skema API",
+      "description": "Mendeteksi perubahan yang merusak (breaking changes) antara versi spesifikasi OpenAPI dan menghasilkan kode migrasi untuk konsumen API."
+    },
+    "zh": {
+      "name": "代理 API 架构迁移器",
+      "description": "检测 OpenAPI 规范版本之间的突破性变化，并为 API 消费者生成迁移代码。"
+    },
+    "es": {
+      "name": "Agente Migrador de Esquemas API",
+      "description": "Detecta cambios incompatibles entre las versiones de especificación OpenAPI y genera código de migración para los consumidores de la API."
+    },
+    "pt": {
+      "name": "Agente Migrador de Esquema de API",
+      "description": "Detecta mudanças drásticas entre as versões da especificação OpenAPI e gera código de migração para consumidores da API."
+    },
+    "ja": {
+      "name": "エージェントAPIスキーママイグレーター",
+      "description": "OpenAPI仕様のバージョン間の破壊的変更を検出し、APIコンシューマー向けの移行コードを生成します。"
+    },
+    "ko": {
+      "name": "에이전트 API 스키마 마이그레이터",
+      "description": "OpenAPI 사양 버전 간의 파괴적 변경 사항을 감지하고 API 소비자를 위한 마이그레이션 코드를 생성합니다."
+    },
+    "de": {
+      "name": "Agent API-Schema-Migrator",
+      "description": "Erkennt Breaking Changes zwischen OpenAPI-Spezifikationsversionen und generiert Migrationscode für API-Konsumenten."
+    },
+    "fr": {
+      "name": "Agent Migrateur de Schéma API",
+      "description": "Détecte les changements majeurs (breaking changes) entre les versions de spécification OpenAPI et génère du code de migration pour les consommateurs de l'API."
+    },
+    "ru": {
+      "name": "Агент мигратора схем API",
+      "description": "Обнаруживает критические изменения между версиями спецификации OpenAPI и генерирует код миграции для потребителей API."
+    },
+    "ar": {
+      "name": "وكيل ترحيل مخطط API",
+      "description": "يكتشف التغييرات الجذرية بين إصدارات مواصفات OpenAPI وينشئ رمز الترحيل لمستهلكي API."
+    },
+    "hi": {
+      "name": "एजेंट API स्कीमा माइग्रेटर",
+      "description": "OpenAPI स्पेक संस्करणों के बीच ब्रेकिंग परिवर्तनों का पता लगाता है और API उपभोक्ताओं के लिए माइग्रेशन कोड उत्पन्न करता है।"
+    },
+    "en": {
+      "name": "Agent API Schema Migrator",
+      "description": "Detects breaking changes between OpenAPI spec versions and generates migration code for API consumers."
+    }
+  },
+  "developer/agent-changelog-drafter": {
+    "id": {
+      "name": "Agen Pendraf Changelog",
+      "description": "Membaca log git antar tag dan menyusun changelog yang dapat dibaca manusia dengan kategorisasi otomatis."
+    },
+    "zh": {
+      "name": "代理变更日志起草员",
+      "description": "读取标签之间的 git 日志并草拟具有自动分类的易读变更日志。"
+    },
+    "es": {
+      "name": "Agente Redactor de Registro de Cambios",
+      "description": "Lee el registro de git entre etiquetas y redacta registros de cambios legibles para humanos con categorización automática."
+    },
+    "pt": {
+      "name": "Agente Redator de Changelog",
+      "description": "Lê o log do git entre tags e rascunha logs de alterações legíveis por humanos com categorização automática."
+    },
+    "ja": {
+      "name": "エージェント変更履暦ドラフター",
+      "description": "タグ間のgitログを読み取り、自動的に分類された人間が読める変更履歴（changelog）を起草します。"
+    },
+    "ko": {
+      "name": "에이전트 변경 로그 작성기",
+      "description": "태그 사이의 git 로그를 읽고 자동 분류를 통해 사람이 읽을 수 있는 변경 로그의 초안을 작성합니다."
+    },
+    "de": {
+      "name": "Agent Changelog-Drafter",
+      "description": "Liest Git-Logs zwischen Tags und entwirft menschenlesbare Changelogs mit automatischer Kategorisierung."
+    },
+    "fr": {
+      "name": "Agent Rédacteur de Changelog",
+      "description": "Lit le journal git entre les tags et rédige des journaux de modifications lisibles par l'homme avec catégorisation automatique."
+    },
+    "ru": {
+      "name": "Агент составителя списков изменений",
+      "description": "Читает лог git между тегами и составляет удобочитаемые списки изменений (changelogs) с автоматической категоризацией."
+    },
+    "ar": {
+      "name": "وكيل صياغة سجل التغييرات",
+      "description": "يقرأ سجل git بين العلامات ويصيغ سجلات تغييرات قابلة للقراءة البشرية مع تصنيف تلقائي."
+    },
+    "hi": {
+      "name": "एजेंट चेंजलॉग ड्राफ्टर",
+      "description": "टैग के बीच गिट लॉग पढ़ता है और स्वचालित वर्गीकरण के साथ मानव-पठनीय चेंजलॉग का मसौदा तैयार करता है।"
+    },
+    "en": {
+      "name": "Agent Changelog Drafter",
+      "description": "Reads git log between tags and drafts human-readable changelogs with automatic categorization."
+    }
+  },
+  "developer/agent-changelog-writer": {
+    "id": {
+      "name": "Penulis Changelog Agen",
+      "description": "Agen yang membaca commit git, mengkategorikannya, dan menghasilkan CHANGELOG.md berformat dengan mengikuti Keep a Changelog."
+    },
+    "zh": {
+      "name": "代理变更日志编写器",
+      "description": "读取 git 提交、对其进行分类并根据 Keep a Changelog 生成格式化 CHANGELOG.md 的代理。"
+    },
+    "es": {
+      "name": "Agente Escritor de Registro de Cambios",
+      "description": "Agente que lee commits de git, los clasifica y genera un archivo CHANGELOG.md formateado siguiendo el estándar Keep a Changelog."
+    },
+    "pt": {
+      "name": "Agente Redator de Changelog",
+      "description": "Agente que lê commits do git, categoriza-os e gera CHANGELOG.md formatado seguindo a convenção Keep a Changelog."
+    },
+    "ja": {
+      "name": "変更履歴ライターエージェント",
+      "description": "gitコミットを読み取って分類し、Keep a Changelogに従ってフォーマットされたCHANGELOG.mdを生成するエージェント。"
+    },
+    "ko": {
+      "name": "에이전트 변경 로그 작성기",
+      "description": "git 커밋을 읽고, 분류하며, Keep a Changelog 형식에 따라 형식이 지정된 CHANGELOG.md를 생성하는 에이전트."
+    },
+    "de": {
+      "name": "Agent Changelog-Schreiber",
+      "description": "Agent, der Git-Commits liest, sie kategorisiert und formatierte CHANGELOG.md nach den Regeln von 'Keep a Changelog' generiert."
+    },
+    "fr": {
+      "name": "Agent Rédacteur de Changelog",
+      "description": "Agent qui lit les commits git, les catégorise et génère un fichier CHANGELOG.md formaté en suivant la norme Keep a Changelog."
+    },
+    "ru": {
+      "name": "Агент-писатель списков изменений",
+      "description": "Агент, который читает коммиты git, классифицирует их и генерирует отформатированный CHANGELOG.md в соответствии с Keep a Changelog."
+    },
+    "ar": {
+      "name": "كاتب سجل التغييرات للوكيل",
+      "description": "وكيل يقرأ التزامات git (commits)، ويصنفها، وينشئ ملف CHANGELOG.md المنسق باتباع معيار Keep a Changelog."
+    },
+    "hi": {
+      "name": "एजेंट चेंजलॉग राइटर",
+      "description": "एजेंट जो गिट कमिट्स को पढ़ता है, उन्हें वर्गीकृत करता है, और कीप ए चेंजलॉग (Keep a Changelog) का पालन करते हुए स्वरूपित CHANGELOG.md बनाता है।"
+    },
+    "en": {
+      "name": "Agent Changelog Writer",
+      "description": "Agent that reads git commits, categorizes them, and generates formatted CHANGELOG.md following Keep a Changelog."
+    }
+  },
+  "developer/agent-code-reviewer": {
+    "id": {
+      "name": "Agen Peninjau Kode",
+      "description": "Agen AI yang meninjau perubahan kode — memeriksa gaya, logika, keamanan, dan menyarankan perbaikan."
+    },
+    "zh": {
+      "name": "代理代码审查员",
+      "description": "审查代码变更的 AI 代理——检查代码风格、逻辑、安全并提出改进建议。"
+    },
+    "es": {
+      "name": "Agente Revisor de Código",
+      "description": "Agente de IA que revisa los cambios de código: verifica estilo, lógica, seguridad y sugiere mejoras."
+    },
+    "pt": {
+      "name": "Agente Revisor de Código",
+      "description": "Agente de IA que analisa alterações no código — verifica o estilo, a lógica, a segurança e sugere melhorias."
+    },
+    "ja": {
+      "name": "エージェントコードレビュアー",
+      "description": "コードの変更をレビューするAIエージェント。スタイル、ロジック、セキュリティをチェックし、改善を提案します。"
+    },
+    "ko": {
+      "name": "에이전트 코드 리뷰어",
+      "description": "코드 변경 사항을 검토하는 AI 에이전트. 스타일, 로직, 보안을 확인하고 개선 사항을 제안합니다."
+    },
+    "de": {
+      "name": "Agent Code-Reviewer",
+      "description": "KI-Agent, der Code-Änderungen überprüft — prüft Stil, Logik, Sicherheit und schlägt Verbesserungen vor."
+    },
+    "fr": {
+      "name": "Agent Évaluateur de Code",
+      "description": "Agent IA qui examine les modifications de code : vérifie le style, la logique, la sécurité et suggère des améliorations."
+    },
+    "ru": {
+      "name": "Агент проверки кода",
+      "description": "ИИ-агент, который проверяет изменения кода — проверяет стиль, логику, безопасность и предлагает улучшения."
+    },
+    "ar": {
+      "name": "وكيل مراجعة الكود",
+      "description": "وكيل ذكاء اصطناعي يراجع تغييرات الكود — يتحقق من النمط، والمنطق، والأمان، ويقترح التحسينات."
+    },
+    "hi": {
+      "name": "एजेंट कोड रिव्युअर",
+      "description": "AI एजेंट जो कोड परिवर्तनों की समीक्षा करता है — शैली, तर्क, सुरक्षा की जांच करता है, और सुधार का सुझाव देता है।"
+    },
+    "en": {
+      "name": "Agent Code Reviewer",
+      "description": "AI agent that reviews code changes — checks style, logic, security, and suggests improvements."
+    }
+  },
+  "developer/agent-codebase-onboarder": {
+    "id": {
+      "name": "Agen Pengantar Basis Kode",
+      "description": "Menghasilkan panduan 'Memulai' dengan menganalisis struktur repo, README, file paket, dan file sumber utama."
+    },
+    "zh": {
+      "name": "代理代码库入职员",
+      "description": "通过分析仓库结构、README、包文件和关键源文件生成“入门”指南。"
+    },
+    "es": {
+      "name": "Agente de Incorporación de Base de Código",
+      "description": "Genera guías de 'Primeros Pasos' analizando la estructura del repositorio, README, archivos de paquetes y archivos de origen clave."
+    },
+    "pt": {
+      "name": "Agente de Integração de Base de Código",
+      "description": "Gera guias de 'Primeiros Passos' analisando a estrutura do repositório, README, arquivos de pacote e arquivos de origem principais."
+    },
+    "ja": {
+      "name": "エージェントコードベースオンボーダー",
+      "description": "リポジトリの構造、README、パッケージファイル、主要なソースファイルを分析することで、「はじめに」ガイドを生成します。"
+    },
+    "ko": {
+      "name": "에이전트 코드베이스 온보더",
+      "description": "저장소 구조, README, 패키지 파일 및 핵심 소스 파일을 분석하여 '시작하기' 가이드를 생성합니다."
+    },
+    "de": {
+      "name": "Agent Codebase-Onboarder",
+      "description": "Erstellt 'Erste Schritte'-Anleitungen durch die Analyse der Repository-Struktur, README, Paketdateien und zentraler Quelldateien."
+    },
+    "fr": {
+      "name": "Agent Intégrateur de Base de Code",
+      "description": "Génère des guides de 'Démarrage' en analysant la structure du dépôt, le fichier README, les fichiers de paquets et les fichiers sources clés."
+    },
+    "ru": {
+      "name": "Агент онбординга кодовой базы",
+      "description": "Генерирует руководства 'С чего начать', анализируя структуру репозитория, README, файлы пакетов и ключевые исходные файлы."
+    },
+    "ar": {
+      "name": "وكيل التهيئة لقاعدة الأكواد",
+      "description": "يُنشئ أدلة 'البدء' من خلال تحليل بنية المستودع، و README، وملفات الحزم، والملفات المصدرية الرئيسية."
+    },
+    "hi": {
+      "name": "एजेंट कोडबेस ऑनबोर्डिंग",
+      "description": "रिपॉजिटरी संरचना, README, पैकेज फ़ाइलों और मुख्य स्रोत फ़ाइलों का विश्लेषण करके 'गेटिंग स्टार्टेड' (Getting Started) गाइड तैयार करता है।"
+    },
+    "en": {
+      "name": "Agent Codebase Onboarder",
+      "description": "Generates 'Getting Started' guides by analyzing repo structure, README, package files, and key source files."
+    }
+  },
+  "developer/agent-dead-code-finder": {
+    "id": {
+      "name": "Agen Pencari Kode Mati",
+      "description": "Agen yang menganalisis basis kode secara statis untuk menemukan ekspor yang tidak digunakan, kode yang tidak dapat dijangkau, variabel yang tidak digunakan, dan file yatim piatu."
+    },
+    "zh": {
+      "name": "代理死代码发现器",
+      "description": "静态分析代码库以查找未使用的导出、不可访问的代码、未使用的变量以及孤立文件的代理。"
+    },
+    "es": {
+      "name": "Agente Buscador de Código Muerto",
+      "description": "Agente que analiza de forma estática una base de código para encontrar exportaciones no utilizadas, código inalcanzable, variables no utilizadas y archivos huérfanos."
+    },
+    "pt": {
+      "name": "Agente Localizador de Código Morto",
+      "description": "Agente que analisa estaticamente uma base de código para encontrar exportações não utilizadas, código inacessível, variáveis ​​não utilizadas e arquivos órfãos."
+    },
+    "ja": {
+      "name": "エージェントデッドコードファインダー",
+      "description": "コードベースを静的に分析し、未使用のエクスポート、到達不能なコード、未使用の変数、および孤立したファイルを見つけるエージェント。"
+    },
+    "ko": {
+      "name": "에이전트 데드 코드 탐지기",
+      "description": "코드베이스를 정적으로 분석하여 사용되지 않는 export, 도달할 수 없는 코드, 사용되지 않는 변수 및 고아 파일을 찾는 에이전트."
+    },
+    "de": {
+      "name": "Agent Dead-Code-Finder",
+      "description": "Agent, der eine Codebasis statisch analysiert, um ungenutzte Exporte, unerreichbaren Code, ungenutzte Variablen und verwaiste Dateien zu finden."
+    },
+    "fr": {
+      "name": "Agent Chercheur de Code Mort",
+      "description": "Agent qui effectue une analyse statique de la base de code pour trouver des exportations inutilisées, du code inaccessible, des variables non utilisées et des fichiers orphelins."
+    },
+    "ru": {
+      "name": "Агент поиска мертвого кода",
+      "description": "Агент, который статически анализирует кодовую базу для поиска неиспользуемых экспортов, недостижимого кода, неиспользуемых переменных и потерянных файлов."
+    },
+    "ar": {
+      "name": "وكيل العثور على الكود الميت",
+      "description": "وكيل يحلل قاعدة الأكواد بشكل ثابت للعثور على الصادرات غير المستخدمة، والأكواد التي لا يمكن الوصول إليها، والمتغيرات غير المستخدمة، والملفات المعزولة."
+    },
+    "hi": {
+      "name": "एजेंट डेड कोड फाइंडर",
+      "description": "एजेंट जो अप्रयुक्त एक्सपोर्ट, अगम्य कोड, अप्रयुक्त चर और अनाथ फ़ाइलों को खोजने के लिए कोडबेस का सांख्यिकीय रूप से विश्लेषण करता है।"
+    },
+    "en": {
+      "name": "Agent Dead Code Finder",
+      "description": "Agent that statically analyzes a codebase to find unused exports, unreachable code, unused variables, and orphaned files."
+    }
+  },
+  "developer/agent-dependency-advisor": {
+    "id": {
+      "name": "Agen Penasihat Dependensi",
+      "description": "Memindai package.json/requirements.txt untuk menemukan CVE, paket lama, dan menyarankan jalur peningkatan dengan panduan migrasi."
+    },
+    "zh": {
+      "name": "代理依赖项顾问",
+      "description": "扫描 package.json/requirements.txt 中的 CVE 和过期包，并提供带有迁移指南的升级建议。"
+    },
+    "es": {
+      "name": "Agente Asesor de Dependencias",
+      "description": "Escanea package.json/requirements.txt en busca de CVEs, paquetes desactualizados y sugiere rutas de actualización con guías de migración."
+    },
+    "pt": {
+      "name": "Agente Consultor de Dependências",
+      "description": "Verifica package.json/requirements.txt em busca de CVEs, pacotes desatualizados e sugere caminhos de atualização com guias de migração."
+    },
+    "ja": {
+      "name": "エージェント依存関係アドバイザー",
+      "description": "package.json/requirements.txtをスキャンしてCVE、古いパッケージを特定し、移行ガイドとともにアップグレードパスを提案します。"
+    },
+    "ko": {
+      "name": "에이전트 종속성 어드바이저",
+      "description": "package.json/requirements.txt에서 CVE 및 오래된 패키지를 스캔하고, 마이그레이션 가이드와 함께 업그레이드 경로를 제안합니다."
+    },
+    "de": {
+      "name": "Agent Dependency-Advisor",
+      "description": "Scannt package.json/requirements.txt auf CVEs, veraltete Pakete und schlägt Aktualisierungspfade mit Migrationsanleitungen vor."
+    },
+    "fr": {
+      "name": "Agent Conseiller de Dépendances",
+      "description": "Analyse package.json/requirements.txt à la recherche de CVE, de paquets obsolètes, et suggère des chemins de mise à niveau avec des guides de migration."
+    },
+    "ru": {
+      "name": "Агент консультант по зависимостям",
+      "description": "Сканирует package.json/requirements.txt на наличие CVE, устаревших пакетов и предлагает пути обновления с руководствами по миграции."
+    },
+    "ar": {
+      "name": "وكيل استشاري التبعيات",
+      "description": "يفحص package.json/requirements.txt للبحث عن نقاط الضعف (CVEs) والحزم القديمة، ويقترح مسارات الترقية مع أدلة الترحيل."
+    },
+    "hi": {
+      "name": "एजेंट डिपेंडेंसी एडवाइज़र",
+      "description": "CVE, पुराने पैकेजों के लिए package.json/requirements.txt को स्कैन करता है, और माइग्रेशन गाइड के साथ अपग्रेड पथ का सुझाव देता है।"
+    },
+    "en": {
+      "name": "Agent Dependency Advisor",
+      "description": "Scans package.json/requirements.txt for CVEs, outdated packages, and suggests upgrade paths with migration guides."
+    }
+  },
+  "developer/agent-dependency-updater": {
+    "id": {
+      "name": "Agen Pembaru Dependensi",
+      "description": "Agen otonom yang memindai proyek npm untuk menemukan dependensi yang kedaluwarsa, memperbaruinya satu per satu, menjalankan tes setelah setiap pembaruan, dan mengembalikan perubahan jika gagal."
+    },
+    "zh": {
+      "name": "代理依赖项更新器",
+      "description": "自主代理扫描 npm 项目以寻找过时的依赖项，逐个更新，每次更新后运行测试，并在失败时回滚。"
+    },
+    "es": {
+      "name": "Agente Actualizador de Dependencias",
+      "description": "Agente autónomo que escanea proyectos npm en busca de dependencias desactualizadas, las actualiza una por una, ejecuta pruebas después de cada actualización y revierte los cambios en caso de falla."
+    },
+    "pt": {
+      "name": "Agente Atualizador de Dependências",
+      "description": "Agente autônomo que analisa projetos npm em busca de dependências desatualizadas, atualiza-as uma a uma, executa testes após cada atualização e reverte em caso de falha."
+    },
+    "ja": {
+      "name": "エージェント依存関係アップデーター",
+      "description": "npmプロジェクトの古い依存関係をスキャンし、1つずつ更新し、各更新後にテストを実行し、失敗した場合はロールバックする自律型エージェント。"
+    },
+    "ko": {
+      "name": "에이전트 종속성 업데이터",
+      "description": "오래된 종속성에 대해 npm 프로젝트를 스캔하고 하나씩 업데이트하며, 각 업데이트 후 테스트를 실행하고 실패 시 롤백하는 자율 에이전트."
+    },
+    "de": {
+      "name": "Agent Dependency-Updater",
+      "description": "Autonomer Agent, der npm-Projekte nach veralteten Abhängigkeiten durchsucht, diese nacheinander aktualisiert, nach jedem Update Tests ausführt und bei Fehlschlägen ein Rollback durchführt."
+    },
+    "fr": {
+      "name": "Agent Metteur à Jour de Dépendances",
+      "description": "Agent autonome qui scanne les projets npm à la recherche de dépendances obsolètes, les met à jour une par une, exécute des tests après chaque mise à jour, et annule les modifications en cas d'échec."
+    },
+    "ru": {
+      "name": "Агент обновления зависимостей",
+      "description": "Автономный агент, который сканирует проекты npm на наличие устаревших зависимостей, обновляет их одну за другой, запускает тесты после каждого обновления и откатывается при сбое."
+    },
+    "ar": {
+      "name": "وكيل تحديث التبعيات",
+      "description": "وكيل مستقل يفحص مشاريع npm للبحث عن التبعيات القديمة، ويقوم بتحديثها واحدة تلو الأخرى، وتشغيل الاختبارات بعد كل تحديث، والتراجع في حالة الفشل."
+    },
+    "hi": {
+      "name": "एजेंट डिपेंडेंसी अपडेटर",
+      "description": "स्वायत्त एजेंट जो पुरानी निर्भरताओं के लिए npm प्रोजेक्ट्स को स्कैन करता है, उन्हें एक-एक करके अपडेट करता है, प्रत्येक अपडेट के बाद परीक्षण चलाता है, और विफलता पर रोलबैक करता है।"
+    },
+    "en": {
+      "name": "Agent Dependency Updater",
+      "description": "Autonomous agent that scans npm projects for outdated dependencies, updates them one by one, runs tests after each update, and rolls back on failure."
+    }
+  },
+  "developer/agent-doc-generator": {
+    "id": {
+      "name": "Agen Pembuat Dokumen",
+      "description": "Agen yang memindai basis kode dan menghasilkan dokumentasi — README, dokumen API, dan diagram arsitektur."
+    },
+    "zh": {
+      "name": "代理文档生成器",
+      "description": "扫描代码库并生成文档的代理——README、API 文档和架构图。"
+    },
+    "es": {
+      "name": "Agente Generador de Documentación",
+      "description": "Agente que escanea una base de código y genera documentación: README, documentos de API y diagramas de arquitectura."
+    },
+    "pt": {
+      "name": "Agente Gerador de Documentação",
+      "description": "Agente que escaneia uma base de código e gera documentação — README, documentos da API e diagramas de arquitetura."
+    },
+    "ja": {
+      "name": "エージェントドキュメントジェネレーター",
+      "description": "コードベースをスキャンし、ドキュメント（README、APIドキュメント、アーキテクチャ図）を生成するエージェント。"
+    },
+    "ko": {
+      "name": "에이전트 문서 생성기",
+      "description": "코드베이스를 스캔하고 문서(README, API 문서 및 아키텍처 다이어그램)를 생성하는 에이전트."
+    },
+    "de": {
+      "name": "Agent Dokumentations-Generator",
+      "description": "Agent, der eine Codebasis scannt und Dokumentation generiert — README, API-Docs und Architekturdiagramme."
+    },
+    "fr": {
+      "name": "Agent Générateur de Documentation",
+      "description": "Agent qui analyse une base de code et génère la documentation : fichier README, documentation API et diagrammes d'architecture."
+    },
+    "ru": {
+      "name": "Агент-генератор документации",
+      "description": "Агент, который сканирует кодовую базу и генерирует документацию — README, документацию по API и диаграммы архитектуры."
+    },
+    "ar": {
+      "name": "وكيل منشئ الوثائق",
+      "description": "وكيل يقوم بمسح قاعدة الأكواد وإنشاء الوثائق — README، ووثائق API، والمخططات المعمارية."
+    },
+    "hi": {
+      "name": "एजेंट डॉक जेनरेटर",
+      "description": "एजेंट जो कोडबेस को स्कैन करता है और प्रलेखन (documentation) उत्पन्न करता है — README, API डॉक्स, और आर्किटेक्चर आरेख (diagrams)।"
+    },
+    "en": {
+      "name": "Agent Doc Generator",
+      "description": "Agent that scans a codebase and generates documentation — README, API docs, and architecture diagrams."
+    }
+  },
+  "developer/agent-docker-slimmer": {
+    "id": {
+      "name": "Agen Peramping Docker",
+      "description": "Menganalisis Dockerfile dan menyarankan pengoptimalan untuk image yang lebih kecil termasuk build multi-tahap dan caching layer."
+    },
+    "zh": {
+      "name": "Docker 瘦身代理",
+      "description": "分析 Dockerfile 并为实现更小的镜像提供优化建议，包括多阶段构建和层缓存。"
+    },
+    "es": {
+      "name": "Agente Optimizador de Docker",
+      "description": "Analiza Dockerfiles y sugiere optimizaciones para imágenes más pequeñas incluyendo multi-stage builds y almacenamiento en caché de capas."
+    },
+    "pt": {
+      "name": "Agente Otimizador de Docker",
+      "description": "Analisa Dockerfiles e sugere otimizações para imagens menores, incluindo compilações de vários estágios e cache de camada."
+    },
+    "ja": {
+      "name": "Dockerスリミングエージェント",
+      "description": "Dockerfileを分析し、マルチステージビルドやレイヤーキャッシングなど、より小さなイメージにするための最適化を提案します。"
+    },
+    "ko": {
+      "name": "에이전트 도커 슬리머",
+      "description": "Dockerfile을 분석하고 다단계 빌드 및 레이어 캐싱을 포함하여 더 작은 이미지를 위한 최적화를 제안합니다."
+    },
+    "de": {
+      "name": "Agent Docker-Slimmer",
+      "description": "Analysiert Dockerfiles und schlägt Optimierungen für kleinere Images vor, einschließlich Multi-Stage-Builds und Layer-Caching."
+    },
+    "fr": {
+      "name": "Agent Allégeur Docker",
+      "description": "Analyse les Dockerfiles et suggère des optimisations pour des images plus petites, notamment des builds multi-étapes et la mise en cache des couches."
+    },
+    "ru": {
+      "name": "Агент оптимизации Docker",
+      "description": "Анализирует Dockerfiles и предлагает оптимизацию для уменьшения размеров образов, включая многоэтапные сборки и кэширование слоев."
+    },
+    "ar": {
+      "name": "وكيل تقليص Docker",
+      "description": "يحلل ملفات Dockerfiles ويقترح تحسينات للحصول على صور أصغر بما في ذلك الإنشاءات متعددة المراحل والتخزين المؤقت للطبقات."
+    },
+    "hi": {
+      "name": "एजेंट डॉकर स्लिमर",
+      "description": "डॉकफ़ाइलों का विश्लेषण करता है और छोटे छवियों (images) के लिए अनुकूलन का सुझाव देता है जिसमें मल्टी-स्टेज बिल्ड और लेयर कैशिंग शामिल है。"
+    },
+    "en": {
+      "name": "Agent Docker Slimmer",
+      "description": "Analyzes Dockerfiles and suggests optimizations for smaller images including multi-stage builds and layer caching."
+    }
+  },
+  "developer/agent-env-file-auditor": {
+    "id": {
+      "name": "Auditor File Env Agen",
+      "description": "Memindai file .env untuk menemukan rahasia yang bocor, variabel yang hilang, dan ketidakkonsistenan di seluruh lingkungan pengembangan."
+    },
+    "zh": {
+      "name": "环境文件审计代理",
+      "description": "扫描 .env 文件以查找泄露的机密、缺失的变量以及跨开发环境的不一致性。"
+    },
+    "es": {
+      "name": "Auditor de Archivos de Entorno",
+      "description": "Escanea archivos .env en busca de secretos filtrados, variables faltantes e inconsistencias entre entornos de desarrollo."
+    },
+    "pt": {
+      "name": "Auditor de Arquivo Env Agente",
+      "description": "Verifica os arquivos .env em busca de segredos vazados, variáveis ​​ausentes e inconsistências em ambientes de desenvolvimento."
+    },
+    "ja": {
+      "name": "Envファイル監査エージェント",
+      "description": ".envファイルをスキャンして、漏洩したシークレット、欠落している変数、および開発環境全体での不整合を見つけます。"
+    },
+    "ko": {
+      "name": "환경 파일 감사 에이전트",
+      "description": ".env 파일을 스캔하여 유출된 비밀, 누락된 변수 및 개발 환경 전반의 불일치를 확인합니다."
+    },
+    "de": {
+      "name": "Agent Env-File-Auditor",
+      "description": "Überprüft .env-Dateien auf durchgesickerte Geheimnisse, fehlende Variablen und Inkonsistenzen über Entwicklungsumgebungen hinweg."
+    },
+    "fr": {
+      "name": "Auditeur de Fichier Env Agent",
+      "description": "Analyse les fichiers .env à la recherche de secrets divulgués, de variables manquantes et d'incohérences dans les environnements de développement."
+    },
+    "ru": {
+      "name": "Агент аудита файлов Env",
+      "description": "Сканирует файлы .env на наличие утекших секретов, отсутствующих переменных и несоответствий в различных средах разработки."
+    },
+    "ar": {
+      "name": "وكيل تدقيق ملفات البيئة",
+      "description": "يفحص ملفات .env بحثًا عن الأسرار المسربة، والمتغيرات المفقودة، والتناقضات عبر بيئات التطوير."
+    },
+    "hi": {
+      "name": "एजेंट ईएनवी फ़ाइल ऑडिटर",
+      "description": "लीक हुए सीक्रेट्स, गायब वेरिएबल्स, और विकास परिवेशों में विसंगतियों के लिए .env फ़ाइलों को स्कैन करता है।"
+    },
+    "en": {
+      "name": "Agent Env File Auditor",
+      "description": "Scans .env files for leaked secrets, missing variables, and inconsistencies across development environments."
+    }
+  },
+  "developer/agent-git-conflict-resolver": {
+    "id": {
+      "name": "Agen Penyelesai Konflik Git",
+      "description": "Mengurai konflik gabungan (merge conflict) git dan menyarankan resolusi semantik berdasarkan pemahaman kedua sisi perubahan."
+    },
+    "zh": {
+      "name": "代理 Git 冲突解决器",
+      "description": "解析 git 合并冲突并根据对变更双方的理解提出语义解决建议。"
+    },
+    "es": {
+      "name": "Agente Resolutor de Conflictos de Git",
+      "description": "Parsa los conflictos de fusión de git y sugiere resoluciones semánticas basadas en la comprensión de ambos lados de los cambios."
+    },
+    "pt": {
+      "name": "Agente de Resolução de Conflitos do Git",
+      "description": "Analisa conflitos de mesclagem do git e sugere resoluções semânticas baseadas na compreensão de ambos os lados das alterações."
+    },
+    "ja": {
+      "name": "Gitの競合解決エージェント",
+      "description": "gitマージの競合を解析し、変更の両側を理解した上でセマンティックな解決策を提案します。"
+    },
+    "ko": {
+      "name": "에이전트 Git 충돌 해결사",
+      "description": "git 병합 충돌을 파싱하고 변경 사항의 양쪽을 모두 이해하여 의미론적 해결 방법을 제안합니다."
+    },
+    "de": {
+      "name": "Agent Git-Conflict-Resolver",
+      "description": "Analysiert Git-Merge-Konflikte und schlägt semantische Lösungen vor, die auf dem Verständnis beider Seiten der Änderungen basieren."
+    },
+    "fr": {
+      "name": "Agent Résolveur de Conflits Git",
+      "description": "Analyse les conflits de fusion git et suggère des résolutions sémantiques basées sur la compréhension des deux côtés des modifications."
+    },
+    "ru": {
+      "name": "Агент разрешения конфликтов Git",
+      "description": "Анализирует конфликты слияния git и предлагает семантические решения, основанные на понимании обеих сторон изменений."
+    },
+    "ar": {
+      "name": "وكيل حل تعارضات Git",
+      "description": "يحلل تعارضات دمج git ويقترح حلولاً دلالية بناءً على فهم كلا جانبي التغييرات."
+    },
+    "hi": {
+      "name": "एजेंट गिट कॉन्फ्लिक्ट रिज़ॉल्वर",
+      "description": "गिट मर्ज संघर्षों (merge conflicts) को पार्स करता है और परिवर्तनों के दोनों पक्षों को समझने के आधार पर अर्थपूर्ण (semantic) समाधान सुझाता है।"
+    },
+    "en": {
+      "name": "Agent Git Conflict Resolver",
+      "description": "Parses git merge conflicts and suggests semantic resolutions based on understanding both sides of changes."
+    }
+  },
+  "developer/agent-incident-summarizer": {
+    "id": {
+      "name": "Agen Peringkas Insiden",
+      "description": "Mengurai log aplikasi dan peringatan untuk menghasilkan ringkasan insiden terstruktur dengan garis waktu dan analisis akar penyebab."
+    },
+    "zh": {
+      "name": "代理事件总结器",
+      "description": "解析应用程序日志和警报，以生成具有时间线和根本原因分析的结构化事件摘要。"
+    },
+    "es": {
+      "name": "Agente Resumidor de Incidentes",
+      "description": "Analiza registros de aplicaciones y alertas para generar resúmenes de incidentes estructurados con una línea de tiempo y un análisis de la causa raíz."
+    },
+    "pt": {
+      "name": "Agente Resumidor de Incidentes",
+      "description": "Analisa os logs do aplicativo e alertas para gerar resumos estruturados de incidentes com linha do tempo e análise de causa raiz."
+    },
+    "ja": {
+      "name": "インシデント要約エージェント",
+      "description": "アプリケーションのログとアラートを解析し、タイムラインと根本原因分析を含む構造化されたインシデントの要約を生成します。"
+    },
+    "ko": {
+      "name": "인시던트 요약 에이전트",
+      "description": "애플리케이션 로그와 알림을 파싱하여 타임라인 및 근본 원인 분석이 포함된 구조화된 인시던트 요약을 생성합니다."
+    },
+    "de": {
+      "name": "Agent für Vorfall-Zusammenfassungen",
+      "description": "Analysiert Anwendungsprotokolle und Warnungen, um strukturierte Vorfallzusammenfassungen mit Zeitachse und Ursachenanalyse zu erstellen."
+    },
+    "fr": {
+      "name": "Agent Résumeur d'Incidents",
+      "description": "Analyse les journaux d'application et les alertes pour générer des résumés d'incidents structurés avec une chronologie et une analyse des causes profondes."
+    },
+    "ru": {
+      "name": "Агент-сумматор инцидентов",
+      "description": "Разбирает журналы приложений и предупреждения для генерации структурированных сводок об инцидентах с временной шкалой и анализом первопричин."
+    },
+    "ar": {
+      "name": "وكيل تلخيص الحوادث",
+      "description": "يحلل سجلات التطبيق والتنبيهات لإنشاء ملخصات الحوادث المنظمة مع الجدول الزمني وتحليل السبب الجذري."
+    },
+    "hi": {
+      "name": "एजेंट इंसिडेंट समराइज़र",
+      "description": "संरचित घटना सारांश (timeline और root cause analysis के साथ) उत्पन्न करने के लिए एप्लिकेशन लॉग और अलर्ट को पार्स करता है।"
+    },
+    "en": {
+      "name": "Agent Incident Summarizer",
+      "description": "Parses application logs and alerts to generate structured incident summaries with timeline and root cause analysis."
+    }
+  },
+  "developer/agent-issue-labeler": {
+    "id": {
+      "name": "Agen Pelabel Masalah",
+      "description": "Agen yang memberi label otomatis pada masalah GitHub berdasarkan judul, isi, dan referensi file menggunakan pencocokan kata kunci."
+    },
+    "zh": {
+      "name": "代理问题标记器",
+      "description": "使用关键字匹配根据标题、正文和文件引用自动标记 GitHub 问题的代理。"
+    },
+    "es": {
+      "name": "Agente Etiquetador de Problemas",
+      "description": "Agente que auto-etiqueta problemas de GitHub basándose en el título, cuerpo y referencias de archivos usando coincidencia de palabras clave."
+    },
+    "pt": {
+      "name": "Agente Rotulador de Problemas",
+      "description": "Agente que rotula problemas do GitHub de forma automática com base no título, no corpo e nas referências de arquivo usando correspondência de palavras-chave."
+    },
+    "ja": {
+      "name": "Issueラベラーエージェント",
+      "description": "キーワードマッチングを使用して、タイトル、本文、ファイル参照に基づいてGitHubのIssueに自動でラベルを付けるエージェント。"
+    },
+    "ko": {
+      "name": "에이전트 이슈 라벨러",
+      "description": "키워드 매칭을 사용하여 제목, 본문 및 파일 참조를 기반으로 GitHub 이슈에 자동 라벨을 지정하는 에이전트."
+    },
+    "de": {
+      "name": "Agent Issue-Labeler",
+      "description": "Agent, der GitHub-Issues anhand von Titel, Text und Dateireferenzen durch Schlüsselwortabgleich automatisch etikettiert."
+    },
+    "fr": {
+      "name": "Agent Étiqueteur de Problèmes",
+      "description": "Agent qui étiquette automatiquement les problèmes GitHub en fonction du titre, du corps et des références de fichiers à l'aide de la correspondance de mots-clés."
+    },
+    "ru": {
+      "name": "Агент маркировки проблем",
+      "description": "Агент, который автоматически помечает проблемы на GitHub на основе заголовка, тела и ссылок на файлы, используя сопоставление ключевых слов."
+    },
+    "ar": {
+      "name": "وكيل تصنيف المشكلات",
+      "description": "وكيل يصنف مشكلات GitHub تلقائيًا بناءً على العنوان والمحتوى ومراجع الملفات باستخدام مطابقة الكلمات الرئيسية."
+    },
+    "hi": {
+      "name": "एजेंट इश्यू लेबेलर",
+      "description": "एजेंट जो कीवर्ड मिलान का उपयोग करके शीर्षक, मुख्य भाग और फ़ाइल संदर्भों के आधार पर गिटहब मुद्दों (GitHub issues) को स्वतः-लेबल करता है।"
+    },
+    "en": {
+      "name": "Agent Issue Labeler",
+      "description": "Agent that auto-labels GitHub issues based on title, body, and file references using keyword matching."
+    }
+  },
+  "developer/agent-license-auditor": {
+    "id": {
+      "name": "Agen Auditor Lisensi",
+      "description": "Agen yang mengaudit semua dependensi proyek untuk kepatuhan lisensi, menandai lisensi yang tidak kompatibel, dan menghasilkan laporan lisensi."
+    },
+    "zh": {
+      "name": "代理许可证审计员",
+      "description": "审计所有项目依赖项以确保许可证合规性、标记不兼容的许可证并生成许可证报告的代理。"
+    },
+    "es": {
+      "name": "Auditor de Licencias",
+      "description": "Agente que audita todas las dependencias del proyecto para comprobar el cumplimiento de las licencias, marca las licencias incompatibles y genera un informe de licencias."
+    },
+    "pt": {
+      "name": "Agente Auditor de Licenças",
+      "description": "Agente que audita todas as dependências do projeto em busca de conformidade com a licença, sinaliza licenças incompatíveis e gera um relatório de licença."
+    },
+    "ja": {
+      "name": "ライセンス監査エージェント",
+      "description": "プロジェクトのすべての依存関係でライセンスコンプライアンスを監査し、互換性のないライセンスにフラグを付け、ライセンスレポートを生成するエージェント。"
+    },
+    "ko": {
+      "name": "라이선스 감사 에이전트",
+      "description": "라이선스 준수를 위해 모든 프로젝트 종속성을 감사하고 호환되지 않는 라이선스를 표시하며 라이선스 보고서를 생성하는 에이전트."
+    },
+    "de": {
+      "name": "Agent Lizenz-Auditor",
+      "description": "Agent, der alle Projektabhängigkeiten auf Lizenzkonformität prüft, inkompatible Lizenzen markiert und einen Lizenzbericht generiert."
+    },
+    "fr": {
+      "name": "Auditeur de Licence Agent",
+      "description": "Agent qui audite toutes les dépendances d'un projet pour en vérifier la conformité des licences, signale les licences incompatibles et génère un rapport de licence."
+    },
+    "ru": {
+      "name": "Агент-аудитор лицензий",
+      "description": "Агент, который проводит аудит всех зависимостей проекта на предмет соответствия лицензиям, отмечает несовместимые лицензии и генерирует отчет о лицензиях."
+    },
+    "ar": {
+      "name": "وكيل مدقق التراخيص",
+      "description": "وكيل يقوم بتدقيق جميع تبعيات المشروع من حيث الامتثال للترخيص، ويضع علامات على التراخيص غير المتوافقة، ويُنشئ تقرير ترخيص."
+    },
+    "hi": {
+      "name": "एजेंट लाइसेंस ऑडिटर",
+      "description": "एजेंट जो लाइसेंस अनुपालन के लिए सभी प्रोजेक्ट निर्भरता का ऑडिट करता है, असंगत लाइसेंस को फ्लैग करता है, और लाइसेंस रिपोर्ट तैयार करता है।"
+    },
+    "en": {
+      "name": "Agent License Auditor",
+      "description": "Agent that audits all project dependencies for license compliance, flags incompatible licenses, and generates a license report."
+    }
+  },
+  "developer/agent-license-scanner": {
+    "id": {
+      "name": "Pemindai Lisensi Agen",
+      "description": "Memindai semua dependensi proyek untuk tipe lisensi dan menandai ketidakcocokan dengan lisensi proyek."
+    },
+    "zh": {
+      "name": "代理许可证扫描器",
+      "description": "扫描所有项目依赖项的许可证类型，并标记与项目许可证不兼容的情况。"
+    },
+    "es": {
+      "name": "Agente Escáner de Licencias",
+      "description": "Escanea todas las dependencias del proyecto en busca de tipos de licencia y marca las incompatibilidades con la licencia del proyecto."
+    },
+    "pt": {
+      "name": "Agente Scanner de Licenças",
+      "description": "Verifica todas as dependências do projeto para tipos de licença e sinaliza incompatibilidades com a licença do projeto."
+    },
+    "ja": {
+      "name": "ライセンススキャナーエージェント",
+      "description": "プロジェクトのすべての依存関係のライセンスタイプをスキャンし、プロジェクトのライセンスとの非互換性にフラグを立てます。"
+    },
+    "ko": {
+      "name": "라이선스 스캐너 에이전트",
+      "description": "모든 프로젝트 종속성에서 라이선스 유형을 스캔하고 프로젝트 라이선스와의 비호환성을 표시합니다."
+    },
+    "de": {
+      "name": "Agent Lizenz-Scanner",
+      "description": "Scannt alle Projektabhängigkeiten auf Lizenztypen und markiert Inkompatibilitäten mit der Lizenz des Projekts."
+    },
+    "fr": {
+      "name": "Scanner de Licence Agent",
+      "description": "Analyse toutes les dépendances du projet pour trouver les types de licences et signale les incompatibilités avec la licence du projet."
+    },
+    "ru": {
+      "name": "Сканер лицензий агента",
+      "description": "Сканирует все зависимости проекта на наличие типов лицензий и отмечает несовместимость с лицензией проекта."
+    },
+    "ar": {
+      "name": "وكيل فحص التراخيص",
+      "description": "يفحص جميع تبعيات المشروع للبحث عن أنواع التراخيص ويضع علامة على عدم التوافق مع ترخيص المشروع."
+    },
+    "hi": {
+      "name": "एजेंट लाइसेंस स्कैनर",
+      "description": "लाइसेंस प्रकारों के लिए सभी प्रोजेक्ट निर्भरता को स्कैन करता है और प्रोजेक्ट के लाइसेंस के साथ असंगतियों को चिह्नित (flag) करता है।"
+    },
+    "en": {
+      "name": "Agent License Scanner",
+      "description": "Scans all project dependencies for license types and flags incompatibilities with the project's license."
+    }
+  },
+  "developer/agent-mcp-server-builder": {
+    "id": {
+      "name": "Pembuat Server MCP Agen",
+      "description": "Agen AI yang membangun server MCP dari deskripsi bahasa alami — menghasilkan skema alat, penangan, dan pengujian."
+    },
+    "zh": {
+      "name": "代理 MCP 服务器构建器",
+      "description": "根据自然语言描述搭建 MCP 服务器的 AI 代理——生成工具模式、处理程序和测试。"
+    },
+    "es": {
+      "name": "Agente Constructor de Servidores MCP",
+      "description": "Agente de IA que crea la estructura de servidores MCP a partir de descripciones en lenguaje natural: genera esquemas de herramientas, handlers y pruebas."
+    },
+    "pt": {
+      "name": "Construtor de Servidor MCP de Agente",
+      "description": "Agente de IA que estrutura servidores MCP a partir de descrições em linguagem natural — gera esquemas de ferramentas, manipuladores e testes."
+    },
+    "ja": {
+      "name": "エージェントMCPサーバービルダー",
+      "description": "自然言語による説明からMCPサーバーをスキャフォールディングするAIエージェント。ツールスキーマ、ハンドラー、およびテストを生成します。"
+    },
+    "ko": {
+      "name": "에이전트 MCP 서버 빌더",
+      "description": "자연어 설명에서 MCP 서버의 스캐폴드를 구축하는 AI 에이전트 — 도구 스키마, 핸들러 및 테스트를 생성합니다."
+    },
+    "de": {
+      "name": "Agent MCP-Server-Builder",
+      "description": "KI-Agent, der MCP-Server aus natürlichsprachlichen Beschreibungen erstellt — generiert Tool-Schemas, Handler und Tests."
+    },
+    "fr": {
+      "name": "Constructeur de Serveur MCP Agent",
+      "description": "Agent IA qui génère la structure de base des serveurs MCP à partir de descriptions en langage naturel : génère les schémas d'outils, les gestionnaires et les tests."
+    },
+    "ru": {
+      "name": "Агент-сборщик серверов MCP",
+      "description": "ИИ-агент, который создает каркас серверов MCP на основе описаний на естественном языке — генерирует схемы инструментов, обработчики и тесты."
+    },
+    "ar": {
+      "name": "وكيل بناء خادم MCP",
+      "description": "وكيل ذكاء اصطناعي يُنشئ خوادم MCP انطلاقًا من أوصاف اللغة الطبيعية — ويُنشئ مخططات الأدوات، والمعالجات، والاختبارات."
+    },
+    "hi": {
+      "name": "एजेंट MCP सर्वर बिल्डर",
+      "description": "AI एजेंट जो प्राकृतिक भाषा विवरणों से MCP सर्वर बनाता है — टूल स्कीमा, हैंडलर और परीक्षण (tests) उत्पन्न करता है।"
+    },
+    "en": {
+      "name": "Agent Mcp Server Builder",
+      "description": "AI agent that scaffolds MCP servers from natural language descriptions — generates tool schemas, handlers, and tests."
+    }
+  },
+  "developer/agent-migration-checker": {
+    "id": {
+      "name": "Pemeriksa Migrasi Agen",
+      "description": "Agen yang memvalidasi file migrasi database — memeriksa operasi yang merusak, penamaan, dan urutan."
+    },
+    "zh": {
+      "name": "代理迁移检查器",
+      "description": "验证数据库迁移文件的代理——检查破坏性操作、命名和排序。"
+    },
+    "es": {
+      "name": "Agente Verificador de Migraciones",
+      "description": "Agente que valida los archivos de migración de la base de datos: comprueba si hay operaciones destructivas, asignación de nombres y ordenamiento."
+    },
+    "pt": {
+      "name": "Verificador de Migração de Agente",
+      "description": "Agente que valida arquivos de migração de banco de dados — verifica operações destrutivas, nomenclatura e ordenação."
+    },
+    "ja": {
+      "name": "エージェント移行チェッカー",
+      "description": "データベースの移行ファイルを検証するエージェント。破壊的な操作、命名規則、および順序をチェックします。"
+    },
+    "ko": {
+      "name": "에이전트 마이그레이션 체커",
+      "description": "데이터베이스 마이그레이션 파일을 검증하는 에이전트. 파괴적인 작업, 명명 규칙 및 순서를 확인합니다."
+    },
+    "de": {
+      "name": "Agent Migrations-Checker",
+      "description": "Agent, der Datenbank-Migrationsdateien validiert — prüft auf destruktive Operationen, Benennung und Reihenfolge."
+    },
+    "fr": {
+      "name": "Vérificateur de Migration Agent",
+      "description": "Agent qui valide les fichiers de migration de base de données : vérifie les opérations destructrices, le nommage et le tri."
+    },
+    "ru": {
+      "name": "Агент-проверщик миграций",
+      "description": "Агент, который валидирует файлы миграции базы данных — проверяет наличие деструктивных операций, правильность именования и порядок."
+    },
+    "ar": {
+      "name": "وكيل فحص الترحيل",
+      "description": "وكيل يتحقق من ملفات ترحيل قاعدة البيانات — يتحقق من العمليات المدمرة، والتسمية، والترتيب."
+    },
+    "hi": {
+      "name": "एजेंट माइग्रेशन चेकर",
+      "description": "एजेंट जो डेटाबेस माइग्रेशन फ़ाइलों को मान्य (validate) करता है — विनाशकारी संचालन, नामकरण और ऑर्डर की जांच करता है।"
+    },
+    "en": {
+      "name": "Agent Migration Checker",
+      "description": "Agent that validates database migration files — checks for destructive operations, naming, and ordering."
+    }
+  },
+  "developer/agent-pr-review-assistant": {
+    "id": {
+      "name": "Asisten Tinjauan PR Agen",
+      "description": "Agen Python Streamlit yang meninjau URL PR GitHub, menjalankan pemeriksaan, dan menghasilkan tinjauan kode terstruktur."
+    },
+    "zh": {
+      "name": "代理 PR 审查助手",
+      "description": "审查 GitHub PR URL、运行检查并输出结构化代码审查的 Python Streamlit 代理。"
+    },
+    "es": {
+      "name": "Agente Asistente de Revisión de PR",
+      "description": "Agente de Python Streamlit que revisa una URL de un PR en GitHub, ejecuta comprobaciones y genera una revisión de código estructurada."
+    },
+    "pt": {
+      "name": "Assistente de Revisão de PR de Agente",
+      "description": "Agente Python Streamlit que revisa um URL de PR do GitHub, executa verificações e gera uma revisão de código estruturada."
+    },
+    "ja": {
+      "name": "エージェントPRレビューアシスタント",
+      "description": "GitHubのPR URLをレビューし、チェックを実行して、構造化されたコードレビューを出力するPython Streamlitエージェント。"
+    },
+    "ko": {
+      "name": "에이전트 PR 리뷰 어시스턴트",
+      "description": "GitHub PR URL을 검토하고, 검사를 실행하며 구조화된 코드 리뷰를 출력하는 Python Streamlit 에이전트."
+    },
+    "de": {
+      "name": "Agent PR-Review-Assistent",
+      "description": "Python-Streamlit-Agent, der eine GitHub-PR-URL überprüft, Tests ausführt und ein strukturiertes Code-Review ausgibt."
+    },
+    "fr": {
+      "name": "Assistant de Revue de PR Agent",
+      "description": "Agent Python Streamlit qui examine une URL de PR GitHub, exécute des vérifications et produit une revue de code structurée."
+    },
+    "ru": {
+      "name": "Агент-помощник по проверке PR",
+      "description": "Агент на Python Streamlit, который проверяет URL PR на GitHub, выполняет проверки и выводит структурированный обзор кода."
+    },
+    "ar": {
+      "name": "وكيل مساعد مراجعة PR",
+      "description": "وكيل Python Streamlit يراجع عنوان URL لـ GitHub PR، ويجري عمليات الفحص، ويُخرج مراجعة أكواد منظمة."
+    },
+    "hi": {
+      "name": "एजेंट PR रिव्यू असिस्टेंट",
+      "description": "पायथन स्ट्रीमलिट एजेंट जो गिटहब पीआर (GitHub PR) यूआरएल (URL) की समीक्षा करता है, चेक चलाता है, और संरचित कोड समीक्षा आउटपुट करता है।"
+    },
+    "en": {
+      "name": "Agent Pr Review Assistant",
+      "description": "Python Streamlit agent that reviews a GitHub PR URL, runs checks, and outputs a structured code review."
+    }
+  },
+  "developer/agent-pr-reviewer": {
+    "id": {
+      "name": "Peninjau PR Agen",
+      "description": "Agen otonom yang meninjau pull request — memeriksa kualitas kode, menyarankan perbaikan, dan menandai masalah."
+    },
+    "zh": {
+      "name": "代理 PR 审查员",
+      "description": "审查合并请求的自主代理——检查代码质量、建议改进并标记问题。"
+    },
+    "es": {
+      "name": "Agente Revisor de PR",
+      "description": "Agente autónomo que revisa los pull requests: verifica la calidad del código, sugiere mejoras y marca problemas."
+    },
+    "pt": {
+      "name": "Revisor de PR de Agente",
+      "description": "Agente autônomo que analisa pull requests — verifica a qualidade do código, sugere melhorias e sinaliza problemas."
+    },
+    "ja": {
+      "name": "エージェントPRレビュアー",
+      "description": "プルリクエストをレビューする自律型エージェント。コードの品質をチェックし、改善を提案し、問題にフラグを立てます。"
+    },
+    "ko": {
+      "name": "에이전트 PR 리뷰어",
+      "description": "풀 리퀘스트를 리뷰하는 자율 에이전트 — 코드 품질을 확인하고, 개선 사항을 제안하며 이슈를 표시합니다."
+    },
+    "de": {
+      "name": "Agent PR-Reviewer",
+      "description": "Autonomer Agent, der Pull-Requests überprüft — prüft Codequalität, schlägt Verbesserungen vor und markiert Probleme."
+    },
+    "fr": {
+      "name": "Examinateur de PR Agent",
+      "description": "Agent autonome qui examine les pull requests : vérifie la qualité du code, suggère des améliorations et signale les problèmes."
+    },
+    "ru": {
+      "name": "Агент-рецензент PR",
+      "description": "Автономный агент, который рецензирует pull requests — проверяет качество кода, предлагает улучшения и помечает проблемы."
+    },
+    "ar": {
+      "name": "وكيل مراجعة PR",
+      "description": "وكيل مستقل يراجع طلبات السحب — يتحقق من جودة الكود، ويقترح التحسينات، ويشير إلى المشكلات."
+    },
+    "hi": {
+      "name": "एजेंट PR रिव्युअर",
+      "description": "स्वायत्त एजेंट जो पुल रिक्वेस्ट की समीक्षा करता है — कोड गुणवत्ता की जांच करता है, सुधार सुझाता है, और समस्याओं को चिह्नित करता है।"
+    },
+    "en": {
+      "name": "Agent Pr Reviewer",
+      "description": "Autonomous agent that reviews pull requests — checks code quality, suggests improvements, and flags issues."
+    }
+  },
+  "developer/agent-pr-risk-scorer": {
+    "id": {
+      "name": "Pencetak Skor Risiko PR Agen",
+      "description": "Menganalisis pull request untuk mendeteksi sinyal risiko (diff besar, perubahan kode autentikasi, tes yang hilang) dan memberikan skor risiko komposit."
+    },
+    "zh": {
+      "name": "代理 PR 风险评分员",
+      "description": "分析合并请求中的风险信号（大差异、认证代码更改、缺失测试）并分配综合风险评分。"
+    },
+    "es": {
+      "name": "Agente Puntuador de Riesgo de PR",
+      "description": "Analiza los pull requests en busca de señales de riesgo (grandes diffs, cambios en el código de autenticación, pruebas faltantes) y asigna una puntuación de riesgo compuesta."
+    },
+    "pt": {
+      "name": "Marcador de Risco de PR do Agente",
+      "description": "Analisa os pull requests em busca de sinais de risco (grandes diferenças, mudanças de código de autenticação, testes ausentes) e atribui uma pontuação de risco composta."
+    },
+    "ja": {
+      "name": "エージェントPRリスクスコアラー",
+      "description": "プルリクエストのリスクシグナル（大規模な差分、認証コードの変更、テストの欠落など）を分析し、複合リスクスコアを割り当てます。"
+    },
+    "ko": {
+      "name": "에이전트 PR 위험 스코어러",
+      "description": "풀 리퀘스트의 위험 신호(큰 diff, 인증 코드 변경, 누락된 테스트)를 분석하고 복합 위험 점수를 할당합니다."
+    },
+    "de": {
+      "name": "Agent PR-Risiko-Scorer",
+      "description": "Analysiert Pull-Requests auf Risikosignale (große Diffs, Änderungen am Auth-Code, fehlende Tests) und weist einen zusammengesetzten Risikoscore zu."
+    },
+    "fr": {
+      "name": "Évaluateur de Risque PR Agent",
+      "description": "Analyse les pull requests pour détecter les signaux de risque (grands écarts, modifications du code d'authentification, tests manquants) et attribue un score de risque composite."
+    },
+    "ru": {
+      "name": "Агент оценки риска PR",
+      "description": "Анализирует pull requests на наличие сигналов риска (большие диффы, изменения в коде аутентификации, отсутствие тестов) и присваивает комплексную оценку риска."
+    },
+    "ar": {
+      "name": "مسجل مخاطر PR للوكيل",
+      "description": "يحلل طلبات السحب بحثًا عن إشارات الخطر (الفروق الكبيرة، تغييرات رمز المصادقة، الاختبارات المفقودة) ويخصص درجة مخاطر مركبة."
+    },
+    "hi": {
+      "name": "एजेंट PR रिस्क स्कोरर",
+      "description": "जोखिम संकेतों (बड़े डिफ़्स, ऑथेंटिकेशन कोड परिवर्तन, गायब टेस्ट) के लिए पुल रिक्वेस्ट का विश्लेषण करता है और समग्र जोखिम स्कोर प्रदान करता है।"
+    },
+    "en": {
+      "name": "Agent Pr Risk Scorer",
+      "description": "Analyzes pull requests for risk signals (large diffs, auth code changes, missing tests) and assigns a composite risk score."
+    }
+  },
+  "developer/agent-readme-grader": {
+    "id": {
+      "name": "Penilai README Agen",
+      "description": "Menilai tingkat kelengkapan dan kualitas README repositori, dan menyarankan perbaikan spesifik."
+    },
+    "zh": {
+      "name": "代理 README 评分器",
+      "description": "对仓库 README 的完整性和质量进行评分，并提出具体改进建议。"
+    },
+    "es": {
+      "name": "Agente Evaluador de README",
+      "description": "Califica los READMEs de los repositorios según su nivel de completitud y calidad, sugiriendo mejoras específicas."
+    },
+    "pt": {
+      "name": "Agente Avaliador de README",
+      "description": "Avalia os READMEs de repositório quanto à integridade e qualidade, sugerindo melhorias específicas."
+    },
+    "ja": {
+      "name": "エージェントREADMEグレーダー",
+      "description": "リポジトリのREADMEの完全性と品質を評価し、具体的な改善点を提案します。"
+    },
+    "ko": {
+      "name": "에이전트 README 채점기",
+      "description": "저장소 README의 완성도와 품질을 평가하여 구체적인 개선 사항을 제안합니다."
+    },
+    "de": {
+      "name": "Agent README-Grader",
+      "description": "Bewertet Repository-READMEs auf Vollständigkeit und Qualität und schlägt spezifische Verbesserungen vor."
+    },
+    "fr": {
+      "name": "Agent Évaluateur de README",
+      "description": "Évalue les READMEs des dépôts sur leur exhaustivité et leur qualité, en suggérant des améliorations spécifiques."
+    },
+    "ru": {
+      "name": "Агент-оценщик README",
+      "description": "Оценивает полноту и качество README репозитория, предлагая конкретные улучшения."
+    },
+    "ar": {
+      "name": "مُقيّم README للوكيل",
+      "description": "يُسجل ملفات README الخاصة بالمستودع من حيث الاكتمال والجودة، ويقترح تحسينات محددة."
+    },
+    "hi": {
+      "name": "एजेंट README ग्रेडर",
+      "description": "रिपॉजिटरी README की पूर्णता और गुणवत्ता पर स्कोर देता है, विशिष्ट सुधारों का सुझाव देता है।"
+    },
+    "en": {
+      "name": "Agent README Grader",
+      "description": "Scores repository READMEs on completeness and quality, suggesting specific improvements."
+    }
+  },
+  "developer/agent-readme-keeper": {
+    "id": {
+      "name": "Penjaga README Agen",
+      "description": "Agen yang memantau perubahan kode dan menjaga README.md tetap sinkron — memperbarui langkah instalasi, dokumen API, dan contoh."
+    },
+    "zh": {
+      "name": "代理 README 维护者",
+      "description": "监控代码更改并保持 README.md 同步的代理——更新安装步骤、API 文档和示例。"
+    },
+    "es": {
+      "name": "Agente Guardián de README",
+      "description": "Agente que supervisa los cambios en el código y mantiene sincronizado el README.md: actualiza los pasos de instalación, la documentación de la API y los ejemplos."
+    },
+    "pt": {
+      "name": "Agente Mantenedor do README",
+      "description": "Agente que monitora alterações de código e mantém o README.md sincronizado — atualiza etapas de instalação, documentos de API e exemplos."
+    },
+    "ja": {
+      "name": "エージェントREADMEキーパー",
+      "description": "コードの変更を監視し、README.mdを同期状態に保つエージェント。インストール手順、APIドキュメント、例を更新します。"
+    },
+    "ko": {
+      "name": "에이전트 README 키퍼",
+      "description": "코드 변경 사항을 모니터링하고 README.md를 동기화된 상태로 유지하는 에이전트. 설치 단계, API 문서 및 예시를 업데이트합니다."
+    },
+    "de": {
+      "name": "Agent README-Keeper",
+      "description": "Agent, der Codeänderungen überwacht und die README.md synchron hält — aktualisiert Installationsschritte, API-Docs und Beispiele."
+    },
+    "fr": {
+      "name": "Agent Gardien de README",
+      "description": "Agent qui surveille les modifications de code et maintient le README.md synchronisé : met à jour les étapes d'installation, la documentation API et les exemples."
+    },
+    "ru": {
+      "name": "Агент-хранитель README",
+      "description": "Агент, который отслеживает изменения в коде и поддерживает актуальность README.md — обновляет шаги установки, документацию по API и примеры."
+    },
+    "ar": {
+      "name": "حارس README للوكيل",
+      "description": "وكيل يراقب تغييرات الأكواد ويحافظ على تزامن README.md — يقوم بتحديث خطوات التثبيت، ووثائق API، والأمثلة."
+    },
+    "hi": {
+      "name": "एजेंट README कीपर",
+      "description": "एजेंट जो कोड परिवर्तनों की निगरानी करता है और README.md को सिंक में रखता है — इंस्टाल स्टेप्स, API डॉक्स और उदाहरण अपडेट करता है।"
+    },
+    "en": {
+      "name": "Agent README Keeper",
+      "description": "Agent that monitors code changes and keeps README.md in sync — updates install steps, API docs, and examples."
+    }
+  },
+  "developer/agent-sql-query-optimizer": {
+    "id": {
+      "name": "Pengoptimal Kueri SQL Agen",
+      "description": "Mengambil kueri SQL yang lambat, menganalisis rencana EXPLAIN, dan menyarankan penambahan indeks serta penulisan ulang kueri untuk performa yang lebih baik."
+    },
+    "zh": {
+      "name": "代理 SQL 查询优化器",
+      "description": "获取缓慢的 SQL 查询，分析 EXPLAIN 计划，并建议添加索引和重写查询以获得更好的性能。"
+    },
+    "es": {
+      "name": "Agente Optimizador de Consultas SQL",
+      "description": "Toma consultas SQL lentas, analiza planes EXPLAIN y sugiere adiciones de índices y reescrituras de consultas para un mejor rendimiento."
+    },
+    "pt": {
+      "name": "Agente Otimizador de Consulta SQL",
+      "description": "Usa consultas SQL lentas, analisa planos EXPLAIN e sugere adições de índice e reescritas de consulta para obter melhor desempenho."
+    },
+    "ja": {
+      "name": "エージェントSQLクエリオプティマイザー",
+      "description": "遅いSQLクエリを受け取り、EXPLAINプランを分析し、パフォーマンス向上のためにインデックスの追加やクエリの書き換えを提案します。"
+    },
+    "ko": {
+      "name": "에이전트 SQL 쿼리 옵티마이저",
+      "description": "느린 SQL 쿼리를 가져와 EXPLAIN 플랜을 분석하고, 성능 향상을 위한 인덱스 추가 및 쿼리 재작성을 제안합니다."
+    },
+    "de": {
+      "name": "Agent SQL-Abfrage-Optimierer",
+      "description": "Nimmt langsame SQL-Abfragen, analysiert EXPLAIN-Pläne und schlägt das Hinzufügen von Indizes sowie das Umschreiben von Abfragen für eine bessere Leistung vor."
+    },
+    "fr": {
+      "name": "Agent Optimiseur de Requête SQL",
+      "description": "Prend des requêtes SQL lentes, analyse les plans EXPLAIN et suggère des ajouts d'index et des réécritures de requêtes pour de meilleures performances."
+    },
+    "ru": {
+      "name": "Агент-оптимизатор SQL-запросов",
+      "description": "Принимает медленные SQL-запросы, анализирует планы EXPLAIN и предлагает добавление индексов и переписывание запросов для повышения производительности."
+    },
+    "ar": {
+      "name": "وكيل مُحسّن استعلام SQL",
+      "description": "يأخذ استعلامات SQL البطيئة، ويحلل خطط EXPLAIN، ويقترح إضافات الفهرس وإعادة كتابة الاستعلام للحصول على أداء أفضل."
+    },
+    "hi": {
+      "name": "एजेंट SQL क्वेरी ऑप्टिमाइज़र",
+      "description": "धीमी SQL क्वेरी लेता है, EXPLAIN योजनाओं का विश्लेषण करता है, और बेहतर प्रदर्शन के लिए इंडेक्स जोड़ने और क्वेरी को फिर से लिखने का सुझाव देता है।"
+    },
+    "en": {
+      "name": "Agent SQL Query Optimizer",
+      "description": "Takes slow SQL queries, analyzes EXPLAIN plans, and suggests index additions and query rewrites for better performance."
+    }
+  },
+  "developer/agent-test-case-generator": {
+    "id": {
+      "name": "Pembuat Kasus Uji Agen",
+      "description": "Menganalisis tanda tangan fungsi dan menghasilkan kasus uji unit yang komprehensif termasuk kasus edge (edge case) dan skenario error."
+    },
+    "zh": {
+      "name": "代理测试用例生成器",
+      "description": "分析函数签名并生成包含边缘情况和错误场景的综合单元测试用例。"
+    },
+    "es": {
+      "name": "Agente Generador de Casos de Prueba",
+      "description": "Analiza las firmas de funciones y genera casos de prueba unitarios completos, incluidos casos extremos y escenarios de error."
+    },
+    "pt": {
+      "name": "Agente Gerador de Caso de Teste",
+      "description": "Analisa assinaturas de função e gera casos de teste de unidade abrangentes, incluindo casos extremos e cenários de erro."
+    },
+    "ja": {
+      "name": "エージェントテストケースジェネレーター",
+      "description": "関数のシグネチャを分析し、エッジケースやエラーシナリオを含む包括的な単体テストケースを生成します。"
+    },
+    "ko": {
+      "name": "에이전트 테스트 케이스 생성기",
+      "description": "함수 시그니처를 분석하고 에지 케이스 및 오류 시나리오를 포함하여 포괄적인 단위 테스트 케이스를 생성합니다."
+    },
+    "de": {
+      "name": "Agent Testfall-Generator",
+      "description": "Analysiert Funktionssignaturen und generiert umfassende Unit-Testfälle einschließlich Randfällen und Fehlerszenarien."
+    },
+    "fr": {
+      "name": "Agent Générateur de Cas de Test",
+      "description": "Analyse les signatures de fonctions et génère des cas de tests unitaires complets, incluant les cas limites et les scénarios d'erreur."
+    },
+    "ru": {
+      "name": "Агент-генератор тестовых случаев",
+      "description": "Анализирует сигнатуры функций и генерирует комплексные модульные тесты, включая граничные случаи и сценарии ошибок."
+    },
+    "ar": {
+      "name": "وكيل منشئ حالات الاختبار",
+      "description": "يحلل توقيعات الوظائف وينشئ حالات اختبار وحدة شاملة تتضمن الحالات الطرفية وسيناريوهات الأخطاء."
+    },
+    "hi": {
+      "name": "एजेंट टेस्ट केस जेनरेटर",
+      "description": "फ़ंक्शन सिग्नेचर का विश्लेषण करता है और एज केसेस (edge cases) और त्रुटि परिदृश्यों सहित व्यापक यूनिट टेस्ट केस उत्पन्न करता है।"
+    },
+    "en": {
+      "name": "Agent Test Case Generator",
+      "description": "Analyzes function signatures and generates comprehensive unit test cases including edge cases and error scenarios."
+    }
+  },
+  "developer/agent-test-writer": {
+    "id": {
+      "name": "Penulis Uji Agen",
+      "description": "Agen yang menganalisis kode sumber dan menghasilkan unit test dengan asersi yang bermakna dan kasus batas (edge case)."
+    },
+    "zh": {
+      "name": "代理测试编写器",
+      "description": "分析源代码并生成带有有意义的断言和边缘情况的单元测试的代理。"
+    },
+    "es": {
+      "name": "Agente Escritor de Pruebas",
+      "description": "Agente que analiza el código fuente y genera pruebas unitarias con aserciones significativas y casos extremos."
+    },
+    "pt": {
+      "name": "Agente Redator de Testes",
+      "description": "Agente que analisa código-fonte e gera testes unitários com asserções significativas e casos extremos."
+    },
+    "ja": {
+      "name": "エージェントテストライター",
+      "description": "ソースコードを分析し、意味のあるアサーションとエッジケースを含む単体テストを生成するエージェント。"
+    },
+    "ko": {
+      "name": "에이전트 테스트 작성기",
+      "description": "소스 코드를 분석하고 의미 있는 단언(assertion) 및 에지 케이스로 단위 테스트를 생성하는 에이전트."
+    },
+    "de": {
+      "name": "Agent Test-Schreiber",
+      "description": "Agent, der Quellcode analysiert und Unit-Tests mit aussagekräftigen Assertions und Randfällen generiert."
+    },
+    "fr": {
+      "name": "Agent Rédacteur de Tests",
+      "description": "Agent qui analyse le code source et génère des tests unitaires avec des assertions significatives et des cas limites."
+    },
+    "ru": {
+      "name": "Агент-написатель тестов",
+      "description": "Агент, который анализирует исходный код и генерирует модульные тесты со значимыми утверждениями и граничными случаями."
+    },
+    "ar": {
+      "name": "وكيل كاتب الاختبارات",
+      "description": "وكيل يحلل الكود المصدري وينشئ اختبارات الوحدة بتأكيدات ذات مغزى وحالات طرفية."
+    },
+    "hi": {
+      "name": "एजेंट टेस्ट राइटर",
+      "description": "एजेंट जो स्रोत कोड का विश्लेषण करता है और अर्थपूर्ण दावों (assertions) और एज केसेस के साथ यूनिट परीक्षण (unit tests) तैयार करता है।"
+    },
+    "en": {
+      "name": "Agent Test Writer",
+      "description": "Agent that analyzes source code and generates unit tests with meaningful assertions and edge cases."
+    }
+  },
+  "devops-infra/agent-api-latency-budget-tracker": {
+    "id": {
+      "name": "Pelacak Anggaran Latensi API Agen",
+      "description": "Agen yang memantau latensi titik akhir API terhadap anggaran SLO (Service Level Objective) yang ditentukan. Membaca definisi titik akhir dengan target latensi p50/p95/p99, menjalankan probe sintetis atau mengurai log akses"
+    },
+    "zh": {
+      "name": "代理 API 延迟预算跟踪器",
+      "description": "根据定义的 SLO（服务级别目标）预算监控 API 端点延迟的代理。读取具有目标 p50/p95/p99 延迟的端点定义，运行综合探测或解析访问日志"
+    },
+    "es": {
+      "name": "Agente Rastreador del Presupuesto de Latencia API",
+      "description": "Agente que monitorea la latencia de los endpoints API contra los presupuestos SLO (Service Level Objective) definidos. Lee definiciones de endpoints con latencias objetivo p50/p95/p99, ejecuta sondeos sintéticos o analiza registros de acceso"
+    },
+    "pt": {
+      "name": "Rastreador de Orçamento de Latência de API do Agente",
+      "description": "Agente que monitora a latência do endpoint de API em relação aos orçamentos SLO (Objetivo de Nível de Serviço) definidos. Lê definições de endpoint com metas de latência p50/p95/p99, executa sondagens sintéticas ou analisa registros de acesso"
+    },
+    "ja": {
+      "name": "エージェントAPIレイテンシ予算トラッカー",
+      "description": "定義されたSLO（サービスレベル目標）予算に対してAPIエンドポイントのレイテンシを監視するエージェント。目標とするp50/p95/p99レイテンシでエンドポイント定義を読み取り、合成プローブを実行するか、アクセスログを解析します"
+    },
+    "ko": {
+      "name": "에이전트 API 지연 시간 예산 트래커",
+      "description": "정의된 SLO(서비스 수준 목표) 예산 대비 API 엔드포인트 지연 시간을 모니터링하는 에이전트. 대상 p50/p95/p99 지연 시간이 포함된 엔드포인트 정의를 읽고 합성 프로브를 실행하거나 액세스 로그를 파싱합니다"
+    },
+    "de": {
+      "name": "Agent API-Latenz-Budget-Tracker",
+      "description": "Agent, der die Latenz von API-Endpunkten in Bezug auf definierte SLO (Service Level Objective)-Budgets überwacht. Liest Endpunktdefinitionen mit Ziel-p50/p95/p99-Latenzen, führt synthetische Probes aus oder analysiert das Zugriffsprotokoll"
+    },
+    "fr": {
+      "name": "Agent Suivi de Budget de Latence API",
+      "description": "Agent qui surveille la latence des points de terminaison API par rapport aux budgets SLO (Service Level Objective) définis. Lit les définitions des endpoints avec les latences cibles p50/p95/p99, exécute des sondes synthétiques ou analyse les journaux d'accès"
+    },
+    "ru": {
+      "name": "Агент отслеживания бюджета задержки API",
+      "description": "Агент, который отслеживает задержку конечных точек API в соответствии с заданными бюджетами SLO (целевой уровень обслуживания). Читает определения конечных точек с целевыми задержками p50/p95/p99, запускает синтетические проверки или анализирует журналы доступа"
+    },
+    "ar": {
+      "name": "وكيل تتبع ميزانية زمن انتقال API",
+      "description": "وكيل يراقب زمن انتقال نقطة نهاية API مقابل ميزانيات SLO (هدف مستوى الخدمة) المحددة. يقرأ تعريفات نقطة النهاية بأهداف زمن انتقال p50/p95/p99، ويدير تحقيقات اصطناعية أو يحلل سجل الوصول"
+    },
+    "hi": {
+      "name": "एजेंट API लेटेंसी बजट ट्रैकर",
+      "description": "एजेंट जो निर्धारित SLO (सर्विस लेवल ऑब्जेक्टिव) बजट के खिलाफ API एंडपॉइंट लेटेंसी की निगरानी करता है। लक्ष्य p50/p95/p99 लेटेंसी के साथ एंडपॉइंट परिभाषाओं को पढ़ता है, सिंथेटिक प्रोब चलाता है या एक्सेस लॉग को पार्स करता है"
+    },
+    "en": {
+      "name": "Agent API Latency Budget Tracker",
+      "description": "Agent that monitors API endpoint latency against defined SLO (Service Level Objective) budgets. Reads endpoint definitions with target p50/p95/p99 latencies, runs synthetic probes or parses access log"
+    }
+  },
+  "devops-infra/agent-commit-risk-scorer": {
+    "id": {
+      "name": "Pencetak Skor Risiko Commit Agen",
+      "description": "Agen yang menganalisis commit git dan memberikan skor risiko (0-100) berdasarkan radius dampak perubahan, kekritisan file, celah cakupan tes, dan korelasi bug historis. Membantu tim memprioritaskan tinjauan kode"
+    },
+    "zh": {
+      "name": "代理提交风险评分员",
+      "description": "分析 git 提交并基于变更影响半径、文件关键性、测试覆盖率缺口和历史错误关联分配风险分数（0-100）的代理。帮助团队优先处理代码审查"
+    },
+    "es": {
+      "name": "Agente Puntuador de Riesgo de Commits",
+      "description": "Agente que analiza commits de git y asigna una puntuación de riesgo (0-100) basada en el radio de impacto del cambio, criticidad del archivo, brechas de cobertura de pruebas y correlación histórica de errores. Ayuda a los equipos a priorizar revisiones de código"
+    },
+    "pt": {
+      "name": "Agente Avaliador de Risco de Commit",
+      "description": "Agente que analisa commits do git e atribui uma pontuação de risco (0-100) com base no raio de impacto da mudança, criticalidade do arquivo, lacunas na cobertura de teste e correlação histórica de bugs. Ajuda as equipes a priorizar as revisões de código"
+    },
+    "ja": {
+      "name": "エージェントコミットリスクスコアラー",
+      "description": "gitコミットを分析し、変更の影響範囲、ファイルの重要度、テストカバレッジのギャップ、および過去のバグの相関関係に基づいてリスクスコア（0-100）を割り当てるエージェント。チームがコードレビューの優先順位付けをするのに役立ちます"
+    },
+    "ko": {
+      "name": "에이전트 커밋 위험 스코어러",
+      "description": "git 커밋을 분석하고 변경 영향 범위, 파일 중요도, 테스트 커버리지 격차 및 과거 버그 상관관계를 기반으로 위험 점수(0~100)를 할당하는 에이전트. 팀이 코드 리뷰의 우선순위를 정하는 데 도움을 줍니다"
+    },
+    "de": {
+      "name": "Agent Commit-Risiko-Scorer",
+      "description": "Agent, der Git-Commits analysiert und basierend auf dem Änderungsradius, der Dateikritikalität, Testabdeckungslücken und historischen Fehlerkorrelationen einen Risikoscore (0-100) zuweist. Hilft Teams bei der Priorisierung von Code-Reviews"
+    },
+    "fr": {
+      "name": "Agent Évaluateur de Risque de Commit",
+      "description": "Agent qui analyse les commits git et attribue un score de risque (0-100) en fonction du rayon d'impact des changements, de la criticité des fichiers, des lacunes de couverture de test et de la corrélation historique des bugs. Aide les équipes à hiérarchiser les revues de code"
+    },
+    "ru": {
+      "name": "Агент оценки риска коммитов",
+      "description": "Агент, который анализирует коммиты git и назначает оценку риска (0-100) на основе радиуса поражения изменений, критичности файла, пробелов в тестовом покрытии и исторической корреляции ошибок. Помогает командам расставлять приоритеты при проверке кода"
+    },
+    "ar": {
+      "name": "مسجل مخاطر Commit للوكيل",
+      "description": "وكيل يحلل التزامات git ويعين درجة مخاطرة (0-100) بناءً على نصف قطر تأثير التغيير، وأهمية الملف، وفجوات تغطية الاختبار، والارتباط التاريخي للأخطاء. يساعد الفرق على ترتيب أولويات مراجعات الكود"
+    },
+    "hi": {
+      "name": "एजेंट कमिट रिस्क स्कोरर",
+      "description": "एजेंट जो गिट कमिट का विश्लेषण करता है और परिवर्तन विस्फोट त्रिज्या (blast radius), फ़ाइल की गंभीरता, टेस्ट कवरेज गैप और ऐतिहासिक बग सहसंबंध के आधार पर एक जोखिम स्कोर (0-100) निर्दिष्ट करता है। टीमों को कोड समीक्षा को प्राथमिकता देने में मदद करता है"
+    },
+    "en": {
+      "name": "Agent Commit Risk Scorer",
+      "description": "Agent that analyzes git commits and assigns a risk score (0-100) based on change blast radius, file criticality, test coverage gaps, and historical bug correlation. Helps teams prioritize code reviews"
+    }
+  },
+  "devops-infra/agent-incident-responder": {
+    "id": {
+      "name": "Merespons Insiden Agen",
+      "description": "Memantau log dan metrik aplikasi, mendiagnosis masalah secara otomatis, dan menyarankan atau menerapkan langkah remediasi."
+    },
+    "zh": {
+      "name": "代理事件响应者",
+      "description": "监控应用程序日志和指标，自动诊断问题，并提出或应用补救措施。"
+    },
+    "es": {
+      "name": "Agente de Respuesta a Incidentes",
+      "description": "Monitorea registros y métricas de aplicaciones, autodiagnostica problemas y sugiere o aplica pasos de remediación."
+    },
+    "pt": {
+      "name": "Agente Respondente a Incidentes",
+      "description": "Monitora logs e métricas de aplicativos, autodiagnostica problemas e sugere ou aplica etapas de correção."
+    },
+    "ja": {
+      "name": "エージェントインシデントレスポンダー",
+      "description": "アプリケーションのログとメトリクスを監視し、問題を自己診断し、修復手順を提案または適用します。"
+    },
+    "ko": {
+      "name": "에이전트 인시던트 대응기",
+      "description": "애플리케이션 로그 및 메트릭을 모니터링하고 문제를 자동 진단하며 해결 단계를 제안하거나 적용합니다."
+    },
+    "de": {
+      "name": "Agent Incident-Responder",
+      "description": "Überwacht Anwendungsprotokolle und Metriken, diagnostiziert Probleme automatisch und schlägt Abhilfemaßnahmen vor oder wendet diese an."
+    },
+    "fr": {
+      "name": "Agent Intervenant sur Incident",
+      "description": "Surveille les journaux et les métriques de l'application, diagnostique automatiquement les problèmes et suggère ou applique des mesures d'atténuation."
+    },
+    "ru": {
+      "name": "Агент реагирования на инциденты",
+      "description": "Отслеживает журналы приложений и метрики, автоматически диагностирует проблемы и предлагает или применяет шаги по исправлению."
+    },
+    "ar": {
+      "name": "وكيل الاستجابة للحوادث",
+      "description": "يراقب سجلات التطبيق ومقاييسه، ويشخص المشكلات تلقائيًا، ويقترح أو يطبق خطوات العلاج."
+    },
+    "hi": {
+      "name": "एजेंट इंसिडेंट रिस्पॉन्डर",
+      "description": "एप्लिकेशन लॉग और मेट्रिक्स की निगरानी करता है, समस्याओं का स्वतः निदान करता है, और उपचार (remediation) चरणों का सुझाव देता है या लागू करता है।"
+    },
+    "en": {
+      "name": "Agent Incident Responder",
+      "description": "Monitors application logs and metrics, auto-diagnoses issues, and suggests or applies remediation steps."
+    }
+  },
+  "devops-infra/api-monitor": {
+    "id": {
+      "name": "Pemantau API",
+      "description": "Agen AI yang terus memantau titik akhir API untuk waktu aktif, degradasi waktu respons, perubahan skema, dan pelanggaran kontrak."
+    },
+    "zh": {
+      "name": "API 监视器",
+      "description": "一种 AI 代理，持续监控 API 端点的正常运行时间、响应时间下降、架构更改和合同违规情况。"
+    },
+    "es": {
+      "name": "Monitor de API",
+      "description": "Un agente de IA que monitorea continuamente los puntos finales de la API para ver su tiempo de actividad, degradación del tiempo de respuesta, cambios de esquema y violaciones de contratos."
+    },
+    "pt": {
+      "name": "Monitor de API",
+      "description": "Um agente de IA que monitora continuamente os endpoints da API quanto ao tempo de atividade, degradação do tempo de resposta, mudanças de esquema e violações de contrato."
+    },
+    "ja": {
+      "name": "APIモニター",
+      "description": "APIエンドポイントの稼働時間、応答時間の低下、スキーマの変更、コントラクトの違反を継続的に監視するAIエージェント。"
+    },
+    "ko": {
+      "name": "API 모니터",
+      "description": "가동 시간, 응답 시간 저하, 스키마 변경 및 계약 위반에 대해 API 엔드포인트를 지속적으로 모니터링하는 AI 에이전트."
+    },
+    "de": {
+      "name": "API-Monitor",
+      "description": "Ein KI-Agent, der API-Endpunkte kontinuierlich auf Verfügbarkeit, Verschlechterung der Antwortzeit, Schemaänderungen und Vertragsverletzungen überwacht."
+    },
+    "fr": {
+      "name": "Moniteur d'API",
+      "description": "Un agent IA qui surveille en permanence les endpoints API pour le temps de disponibilité, la dégradation du temps de réponse, les changements de schéma et les violations de contrat."
+    },
+    "ru": {
+      "name": "Монитор API",
+      "description": "ИИ-агент, который постоянно отслеживает конечные точки API на предмет времени безотказной работы, ухудшения времени отклика, изменений схемы и нарушений контракта."
+    },
+    "ar": {
+      "name": "مراقب API",
+      "description": "وكيل ذكاء اصطناعي يراقب نقاط نهاية API باستمرار لمعرفة وقت التشغيل، وتدهور وقت الاستجابة، وتغييرات المخطط، وانتهاكات العقود."
+    },
+    "hi": {
+      "name": "API मॉनिटर",
+      "description": "एक AI एजेंट जो अपटाइम, प्रतिक्रिया समय में गिरावट, स्कीमा में बदलाव, और अनुबंध उल्लंघन के लिए API एंडपॉइंट्स की निरंतर निगरानी करता है।"
+    },
+    "en": {
+      "name": "API Monitor",
+      "description": "An AI agent that continuously monitors API endpoints for uptime, response time degradation, schema changes, and contract violations."
+    }
+  },
+  "devops-infra/git-workflow-agent": {
+    "id": {
+      "name": "Agen Alur Kerja Git",
+      "description": "Agen AI yang menegakkan praktik terbaik alur kerja Git, memvalidasi pesan commit, memeriksa penamaan cabang, dan mencegah kesalahan umum."
+    },
+    "zh": {
+      "name": "Git 工作流代理",
+      "description": "强制执行 Git 工作流最佳实践、验证提交消息、检查分支命名并防止常见错误的 AI 代理。"
+    },
+    "es": {
+      "name": "Agente de Flujo de Trabajo Git",
+      "description": "Un agente de IA que hace cumplir las mejores prácticas del flujo de trabajo de Git, valida los mensajes de commit, verifica la nomenclatura de las ramas y evita errores comunes."
+    },
+    "pt": {
+      "name": "Agente de Fluxo de Trabalho Git",
+      "description": "Um agente de IA que impõe as melhores práticas de fluxo de trabalho do Git, valida mensagens de commit, verifica nomes de branch, e evita erros comuns."
+    },
+    "ja": {
+      "name": "Gitワークフローエージェント",
+      "description": "Gitワークフローのベストプラクティスを強制し、コミットメッセージを検証し、ブランチの命名をチェックし、よくある間違いを防ぐAIエージェント。"
+    },
+    "ko": {
+      "name": "Git 워크플로 에이전트",
+      "description": "Git 워크플로 모범 사례를 강제하고, 커밋 메시지를 검증하며, 브랜치 명명을 확인하고, 일반적인 실수를 방지하는 AI 에이전트."
+    },
+    "de": {
+      "name": "Git-Workflow-Agent",
+      "description": "Ein KI-Agent, der Git-Workflow-Best-Practices durchsetzt, Commit-Nachrichten validiert, Branch-Benennungen überprüft und häufige Fehler verhindert."
+    },
+    "fr": {
+      "name": "Agent de Flux de Travail Git",
+      "description": "Un agent IA qui applique les meilleures pratiques du flux de travail Git, valide les messages de commit, vérifie le nommage des branches et empêche les erreurs courantes."
+    },
+    "ru": {
+      "name": "Агент рабочего процесса Git",
+      "description": "ИИ-агент, который применяет лучшие практики рабочего процесса Git, проверяет сообщения коммитов, проверяет именование ветвей и предотвращает распространенные ошибки."
+    },
+    "ar": {
+      "name": "وكيل سير عمل Git",
+      "description": "وكيل ذكاء اصطناعي يفرض أفضل ممارسات سير عمل Git، ويتحقق من رسائل الالتزام، ويفحص تسمية الفروع، ويمنع الأخطاء الشائعة."
+    },
+    "hi": {
+      "name": "गिट वर्कफ़्लो एजेंट",
+      "description": "एक AI एजेंट जो Git वर्कफ़्लो की सर्वोत्तम प्रथाओं को लागू करता है, कमिट संदेशों को मान्य करता है, शाखा नामकरण की जांच करता है, और सामान्य गलतियों को रोकता है।"
+    },
+    "en": {
+      "name": "Git Workflow Agent",
+      "description": "An AI agent that enforces Git workflow best practices, validates commit messages, checks branch naming, and prevents common mistakes."
+    }
+  },
+  "devops-infra/migration-agent": {
+    "id": {
+      "name": "Agen Migrasi",
+      "description": "Agen yang menganalisis basis kode dan menghasilkan rencana migrasi untuk pemutakhiran kerangka kerja."
+    },
+    "zh": {
+      "name": "迁移代理",
+      "description": "分析代码库并生成框架升级迁移计划的代理。"
+    },
+    "es": {
+      "name": "Agente de Migración",
+      "description": "Agente que analiza una base de código y genera planes de migración para actualizaciones de framework."
+    },
+    "pt": {
+      "name": "Agente de Migração",
+      "description": "Agente que analisa uma base de código e gera planos de migração para atualizações de framework."
+    },
+    "ja": {
+      "name": "マイグレーションエージェント",
+      "description": "コードベースを分析し、フレームワークのアップグレードのための移行計画を生成するエージェント。"
+    },
+    "ko": {
+      "name": "마이그레이션 에이전트",
+      "description": "코드베이스를 분석하고 프레임워크 업그레이드를 위한 마이그레이션 계획을 생성하는 에이전트."
+    },
+    "de": {
+      "name": "Migrations-Agent",
+      "description": "Agent, der eine Codebasis analysiert und Migrationspläne für Framework-Upgrades generiert."
+    },
+    "fr": {
+      "name": "Agent de Migration",
+      "description": "Agent qui analyse une base de code et génère des plans de migration pour les mises à niveau de framework."
+    },
+    "ru": {
+      "name": "Агент миграции",
+      "description": "Агент, который анализирует кодовую базу и генерирует планы миграции для обновления фреймворков."
+    },
+    "ar": {
+      "name": "وكيل الترحيل",
+      "description": "وكيل يحلل قاعدة الأكواد وينشئ خطط ترحيل لترقيات إطار العمل."
+    },
+    "hi": {
+      "name": "माइग्रेशन एजेंट",
+      "description": "एजेंट जो कोडबेस का विश्लेषण करता है और फ्रेमवर्क अपग्रेड के लिए माइग्रेशन योजनाएं (plans) तैयार करता है।"
+    },
+    "en": {
+      "name": "Migration Agent",
+      "description": "Agent that analyzes a codebase and generates migration plans for framework upgrades."
+    }
+  },
+  "devops-infra/performance-profiler": {
+    "id": {
+      "name": "Pemprofil Performa",
+      "description": "Agen AI yang memprofilkan aplikasi web, mengidentifikasi hambatan kinerja, dan menyarankan pengoptimalan untuk Core Web Vitals."
+    },
+    "zh": {
+      "name": "性能分析器",
+      "description": "分析 Web 应用程序、识别性能瓶颈并提出 Core Web Vitals 优化建议的 AI 代理。"
+    },
+    "es": {
+      "name": "Perfilador de Rendimiento",
+      "description": "Un agente de IA que perfila aplicaciones web, identifica cuellos de botella de rendimiento y sugiere optimizaciones para Core Web Vitals."
+    },
+    "pt": {
+      "name": "Analisador de Desempenho",
+      "description": "Um agente de IA que traça o perfil de aplicativos da web, identifica gargalos de desempenho e sugere otimizações para o Core Web Vitals."
+    },
+    "ja": {
+      "name": "パフォーマンスプロファイラー",
+      "description": "Webアプリケーションのプロファイリングを行い、パフォーマンスのボトルネックを特定し、Core Web Vitalsの最適化を提案するAIエージェント。"
+    },
+    "ko": {
+      "name": "성능 프로파일러",
+      "description": "웹 애플리케이션을 프로파일링하고 성능 병목 현상을 식별하며 Core Web Vitals 최적화를 제안하는 AI 에이전트."
+    },
+    "de": {
+      "name": "Leistungs-Profiler",
+      "description": "Ein KI-Agent, der Webanwendungen profiliert, Leistungsengpässe identifiziert und Optimierungen für Core Web Vitals vorschlägt."
+    },
+    "fr": {
+      "name": "Profileur de Performances",
+      "description": "Un agent IA qui profile les applications Web, identifie les goulots d'étranglement de performances et suggère des optimisations pour les Core Web Vitals."
+    },
+    "ru": {
+      "name": "Профилировщик производительности",
+      "description": "ИИ-агент, который профилирует веб-приложения, выявляет узкие места в производительности и предлагает оптимизацию для Core Web Vitals."
+    },
+    "ar": {
+      "name": "محلل الأداء",
+      "description": "وكيل ذكاء اصطناعي يقوم بتوصيف تطبيقات الويب، وتحديد اختناقات الأداء، واقتراح تحسينات لمؤشرات Core Web Vitals."
+    },
+    "hi": {
+      "name": "परफॉरमेंस प्रोफ़ाइलर",
+      "description": "एक AI एजेंट जो वेब एप्लिकेशन की प्रोफ़ाइल बनाता है, प्रदर्शन बाधाओं की पहचान करता है, और कोर वेब वाइटल्स (Core Web Vitals) के लिए अनुकूलन का सुझाव देता है।"
+    },
+    "en": {
+      "name": "Performance Profiler",
+      "description": "An AI agent that profiles web applications, identifies performance bottlenecks, and suggests optimizations for Core Web Vitals."
+    }
+  },
+  "documentation/agent-api-doc-writer": {
+    "id": {
+      "name": "Penulis Dokumen API Agen",
+      "description": "Agen AI yang menghasilkan dokumentasi OpenAPI/Swagger dari kode sumber dan definisi rute"
+    },
+    "zh": {
+      "name": "代理 API 文档编写器",
+      "description": "从源代码和路由定义生成 OpenAPI/Swagger 文档的 AI 代理"
+    },
+    "es": {
+      "name": "Agente Escritor de Documentación API",
+      "description": "Agente de IA que genera documentación OpenAPI/Swagger a partir del código fuente y las definiciones de ruta"
+    },
+    "pt": {
+      "name": "Escritor de Documentos de API de Agente",
+      "description": "Agente de IA que gera documentação OpenAPI/Swagger a partir do código-fonte e definições de rota"
+    },
+    "ja": {
+      "name": "エージェントAPIドキュメントライター",
+      "description": "ソースコードとルート定義からOpenAPI/Swaggerドキュメントを生成するAIエージェント"
+    },
+    "ko": {
+      "name": "에이전트 API 문서 작성기",
+      "description": "소스 코드 및 라우트 정의에서 OpenAPI/Swagger 문서를 생성하는 AI 에이전트"
+    },
+    "de": {
+      "name": "Agent API-Doc-Writer",
+      "description": "KI-Agent, der OpenAPI/Swagger-Dokumentation aus Quellcode und Routendefinitionen generiert"
+    },
+    "fr": {
+      "name": "Agent Rédacteur de Doc API",
+      "description": "Agent IA qui génère la documentation OpenAPI/Swagger à partir du code source et des définitions de route"
+    },
+    "ru": {
+      "name": "Агент для написания API-документации",
+      "description": "ИИ-агент, который генерирует документацию OpenAPI/Swagger из исходного кода и определений маршрутов"
+    },
+    "ar": {
+      "name": "وكيل كاتب وثائق API",
+      "description": "وكيل ذكاء اصطناعي ينشئ وثائق OpenAPI/Swagger من الكود المصدري وتعريفات المسار"
+    },
+    "hi": {
+      "name": "एजेंट API डॉक राइटर",
+      "description": "AI एजेंट जो स्रोत कोड और रूट परिभाषाओं से OpenAPI/Swagger दस्तावेज़ (documentation) तैयार करता है"
+    },
+    "en": {
+      "name": "Agent API Doc Writer",
+      "description": "AI agent that generates OpenAPI/Swagger documentation from source code and route definitions"
+    }
+  },
+  "documentation/documentation-agent": {
+    "id": {
+      "name": "Agen Dokumentasi",
+      "description": "Agen yang membaca kode sumber dan menghasilkan README dan dokumentasi API yang komprehensif."
+    },
+    "zh": {
+      "name": "文档代理",
+      "description": "读取源代码并生成全面 README 和 API 文档的代理。"
+    },
+    "es": {
+      "name": "Agente de Documentación",
+      "description": "Agente que lee el código fuente y genera un README completo y documentación de la API."
+    },
+    "pt": {
+      "name": "Agente de Documentação",
+      "description": "Agente que lê o código-fonte e gera um README abrangente e documentação da API."
+    },
+    "ja": {
+      "name": "ドキュメンテーションエージェント",
+      "description": "ソースコードを読み取り、包括的なREADMEとAPIドキュメントを生成するエージェント。"
+    },
+    "ko": {
+      "name": "문서 에이전트",
+      "description": "소스 코드를 읽고 포괄적인 README 및 API 문서를 생성하는 에이전트."
+    },
+    "de": {
+      "name": "Dokumentations-Agent",
+      "description": "Agent, der Quellcode liest und umfassende READMEs und API-Dokumentation generiert."
+    },
+    "fr": {
+      "name": "Agent de Documentation",
+      "description": "Agent qui lit le code source et génère un README complet ainsi que la documentation API."
+    },
+    "ru": {
+      "name": "Агент по документации",
+      "description": "Агент, который читает исходный код и генерирует комплексный README и документацию по API."
+    },
+    "ar": {
+      "name": "وكيل التوثيق",
+      "description": "وكيل يقرأ الكود المصدري وينشئ ملف README شامل ووثائق API."
+    },
+    "hi": {
+      "name": "दस्तावेज़ीकरण एजेंट",
+      "description": "एजेंट जो स्रोत कोड पढ़ता है और व्यापक README और API दस्तावेज़ तैयार करता है।"
+    },
+    "en": {
+      "name": "Documentation Agent",
+      "description": "Agent that reads source code and generates comprehensive README and API documentation."
+    }
+  },
+  "productivity/agent-email-classifier": {
+    "id": {
+      "name": "Agen Pengklasifikasi Email",
+      "description": "Agen AI yang mengklasifikasikan dan memprioritaskan email masuk — mendesak, dapat ditindaklanjuti, informasi (FYI), spam."
+    },
+    "zh": {
+      "name": "代理电子邮件分类器",
+      "description": "对收到的电子邮件进行分类和优先排序的 AI 代理——紧急、可操作、供参考 (FYI)、垃圾邮件。"
+    },
+    "es": {
+      "name": "Agente Clasificador de Correo Electrónico",
+      "description": "Agente de IA que clasifica y prioriza los correos electrónicos entrantes: urgente, procesable, informativo, spam."
+    },
+    "pt": {
+      "name": "Agente Classificador de E-mail",
+      "description": "Agente de IA que classifica e prioriza e-mails recebidos — urgentes, acionáveis, apenas para informação (FYI), spam."
+    },
+    "ja": {
+      "name": "エージェントメール分類器",
+      "description": "受信メールを分類し、優先順位を付けるAIエージェント（緊急、対応が必要、参考情報、スパム）。"
+    },
+    "ko": {
+      "name": "에이전트 이메일 분류기",
+      "description": "수신 이메일을 분류하고 우선순위를 지정하는 AI 에이전트 — 긴급, 조치 가능, 참고용(FYI), 스팸."
+    },
+    "de": {
+      "name": "Agent E-Mail-Klassifikator",
+      "description": "KI-Agent, der eingehende E-Mails klassifiziert und priorisiert — dringend, handlungsbedürftig, zur Info (FYI), Spam."
+    },
+    "fr": {
+      "name": "Agent Classificateur d'E-mails",
+      "description": "Agent IA qui classifie et priorise les e-mails entrants : urgent, actionnable, pour info (FYI), spam."
+    },
+    "ru": {
+      "name": "Агент-классификатор электронной почты",
+      "description": "ИИ-агент, который классифицирует и расставляет приоритеты входящих писем — срочные, требующие действий, к сведению (FYI), спам."
+    },
+    "ar": {
+      "name": "وكيل تصنيف البريد الإلكتروني",
+      "description": "وكيل ذكاء اصطناعي يصنف رسائل البريد الإلكتروني الواردة ويحدد أولوياتها — عاجلة، قابلة للتنفيذ، للعلم (FYI)، بريد عشوائي."
+    },
+    "hi": {
+      "name": "एजेंट ईमेल क्लासिफायर",
+      "description": "AI एजेंट जो आने वाले ईमेल को वर्गीकृत और प्राथमिकता देता है — तत्काल (urgent), कार्रवाई योग्य, FYI, स्पैम।"
+    },
+    "en": {
+      "name": "Agent Email Classifier",
+      "description": "AI agent that classifies and prioritizes incoming emails — urgent, actionable, FYI, spam."
+    }
+  },
+  "productivity/agent-meeting-scheduler": {
+    "id": {
+      "name": "Agen Penjadwal Rapat",
+      "description": "Agen AI yang menemukan waktu rapat yang optimal di seluruh kalender, menangani perbedaan zona waktu."
+    },
+    "zh": {
+      "name": "代理会议安排者",
+      "description": "跨日历寻找最佳会议时间并处理时区差异的 AI 代理。"
+    },
+    "es": {
+      "name": "Agente Programador de Reuniones",
+      "description": "Agente de IA que encuentra los horarios óptimos para reuniones en diferentes calendarios, manejando las diferencias de zonas horarias."
+    },
+    "pt": {
+      "name": "Agente Agendador de Reuniões",
+      "description": "Agente de IA que encontra os melhores horários para reuniões em diferentes calendários e lida com diferenças de fuso horário."
+    },
+    "ja": {
+      "name": "エージェント会議スケジューラ",
+      "description": "複数のカレンダーから最適な会議時間を探し、タイムゾーンの違いを処理するAIエージェント。"
+    },
+    "ko": {
+      "name": "에이전트 회의 스케줄러",
+      "description": "여러 캘린더에서 최적의 회의 시간을 찾고 시간대 차이를 처리하는 AI 에이전트."
+    },
+    "de": {
+      "name": "Agent Meeting-Scheduler",
+      "description": "KI-Agent, der kalenderübergreifend optimale Meeting-Zeiten findet und Zeitzonenunterschiede berücksichtigt."
+    },
+    "fr": {
+      "name": "Agent Planificateur de Réunions",
+      "description": "Agent IA qui trouve des horaires de réunion optimaux sur plusieurs calendriers et gère les décalages horaires."
+    },
+    "ru": {
+      "name": "Агент планировщик встреч",
+      "description": "ИИ-агент, который находит оптимальное время для встреч в разных календарях, учитывая разницу в часовых поясах."
+    },
+    "ar": {
+      "name": "وكيل جدولة الاجتماعات",
+      "description": "وكيل ذكاء اصطناعي يجد أوقات الاجتماعات المثالية عبر التقويمات، ويتعامل مع اختلافات المناطق الزمنية."
+    },
+    "hi": {
+      "name": "एजेंट मीटिंग शेड्यूलर",
+      "description": "AI एजेंट जो समय क्षेत्र (timezone) के अंतर को संभालते हुए कैलेंडर में सर्वोत्तम मीटिंग समय ढूंढता है।"
+    },
+    "en": {
+      "name": "Agent Meeting Scheduler",
+      "description": "AI agent that finds optimal meeting times across calendars, handles timezone differences."
+    }
+  },
+  "security-privacy/security-audit-agent": {
+    "id": {
+      "name": "Agen Audit Keamanan",
+      "description": "Agen AI yang memindai basis kode untuk mendeteksi kerentanan keamanan (XSS, injeksi SQL, dll.) dan menyarankan perbaikan."
+    },
+    "zh": {
+      "name": "安全审计代理",
+      "description": "扫描代码库以查找安全漏洞（XSS、SQL 注入等）并提出修复建议的 AI 代理。"
+    },
+    "es": {
+      "name": "Agente de Auditoría de Seguridad",
+      "description": "Agente de IA que escanea las bases de código en busca de vulnerabilidades de seguridad (XSS, inyección SQL, etc.) y sugiere soluciones."
+    },
+    "pt": {
+      "name": "Agente de Auditoria de Segurança",
+      "description": "Agente de IA que verifica bases de código em busca de vulnerabilidades de segurança (XSS, injeção de SQL, etc.) e sugere correções."
+    },
+    "ja": {
+      "name": "セキュリティ監査エージェント",
+      "description": "コードベースのセキュリティ脆弱性（XSS、SQLインジェクションなど）をスキャンし、修正を提案するAIエージェント。"
+    },
+    "ko": {
+      "name": "보안 감사 에이전트",
+      "description": "보안 취약점(XSS, SQL 인젝션 등)에 대해 코드베이스를 스캔하고 수정 사항을 제안하는 AI 에이전트."
+    },
+    "de": {
+      "name": "Sicherheits-Audit-Agent",
+      "description": "KI-Agent, der Codebasen nach Sicherheitslücken (XSS, SQL-Injection usw.) scannt und Fixes vorschlägt."
+    },
+    "fr": {
+      "name": "Agent d'Audit de Sécurité",
+      "description": "Agent IA qui analyse les bases de code à la recherche de vulnérabilités de sécurité (XSS, injection SQL, etc.) et suggère des correctifs."
+    },
+    "ru": {
+      "name": "Агент аудита безопасности",
+      "description": "ИИ-агент, который сканирует кодовые базы на наличие уязвимостей безопасности (XSS, SQL-инъекции и т.д.) и предлагает исправления."
+    },
+    "ar": {
+      "name": "وكيل تدقيق الأمان",
+      "description": "وكيل ذكاء اصطناعي يفحص قواعد الأكواد بحثًا عن الثغرات الأمنية (XSS، وحقن SQL، وما إلى ذلك) ويقترح إصلاحات."
+    },
+    "hi": {
+      "name": "सुरक्षा ऑडिट एजेंट",
+      "description": "AI एजेंट जो सुरक्षा कमजोरियों (XSS, SQL इंजेक्शन, आदि) के लिए कोडबेस को स्कैन करता है और सुधार सुझाता है।"
+    },
+    "en": {
+      "name": "Security Audit Agent",
+      "description": "AI agent that scans codebases for security vulnerabilities (XSS, SQL injection, etc.) and suggests fixes."
+    }
   }
 }
