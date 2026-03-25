@@ -1,6 +1,6 @@
 # 🤖 AI Agents Status Report
 
-**Total Agent Directories Analyzed:** 250
+**Total Agent Directories Analyzed:** 275
 
 ## 🏗️ Spec Only (Not Built Yet)
 These agents have an `AGENTS.md` specification but are missing their main executable (`main.py`/`app.py`).
@@ -16,10 +16,13 @@ These agents have implementation code. Below is their compliance with tests and 
 | `ai-frameworks/crewai-agent` | ✅ | ✅ | 100% |
 | `ai-frameworks/langchain-agent` | ✅ | ✅ | 100% |
 | `ai-ml-ops/ai-hallucination-detector` | ✅ | ✅ | 100% |
+| `ai-ml-ops/dataset-bias-auditor` | ✅ | ✅ | 100% |
 | `ai-ml-ops/embedding-explorer` | ✅ | ✅ | 100% |
 | `ai-ml-ops/fine-tune-dataset-curator` | ✅ | ✅ | 100% |
 | `ai-ml-ops/llm-cost-calculator` | ✅ | ✅ | 100% |
+| `ai-ml-ops/llm-prompt-tester` | ✅ | ✅ | 100% |
 | `ai-ml-ops/model-benchmark-runner` | ✅ | ✅ | 100% |
+| `ai-ml-ops/model-drift-detector` | ✅ | ✅ | 100% |
 | `ai-ml-ops/prompt-optimizer` | ✅ | ✅ | 100% |
 | `ai-ml-ops/rag-evaluator` | ✅ | ✅ | 100% |
 | `ai-ml-ops/training-data-generator` | ✅ | ✅ | 100% |
@@ -75,8 +78,11 @@ These agents have implementation code. Below is their compliance with tests and 
 | `code-quality/test-coverage-gap-finder` | ✅ | ✅ | 100% |
 | `code-quality/test-generation-agent` | ✅ | ✅ | 100% |
 | `code-quality/test-generator` | ✅ | ✅ | 100% |
+| `communication/discord-bot-builder` | ✅ | ✅ | 100% |
 | `communication/email-drafter` | ✅ | ✅ | 100% |
 | `communication/email-triage-assistant` | ✅ | ✅ | 100% |
+| `communication/notification-router` | ✅ | ✅ | 100% |
+| `communication/slack-message-summarizer` | ✅ | ✅ | 100% |
 | `content-marketing/resume-tailor-agent` | ✅ | ✅ | 100% |
 | `content-marketing/social-media-manager-agent` | ✅ | ✅ | 100% |
 | `content-writing/agent-blog-outline-gen` | ✅ | ✅ | 100% |
@@ -214,6 +220,10 @@ These agents have implementation code. Below is their compliance with tests and 
 | `file-conversion/swagger-to-typescript` | ✅ | ✅ | 100% |
 | `file-conversion/video-to-transcript` | ✅ | ✅ | 100% |
 | `file-conversion/yaml-json-converter` | ✅ | ✅ | 100% |
+| `finance-crypto/defi-yield-calculator` | ✅ | ✅ | 100% |
+| `finance-crypto/gas-fee-estimator` | ✅ | ✅ | 100% |
+| `finance-crypto/token-price-tracker` | ✅ | ✅ | 100% |
+| `finance-crypto/wallet-balance-checker` | ✅ | ✅ | 100% |
 | `fixers/api-breaking-change-detect` | ✅ | ✅ | 100% |
 | `fixers/code-style-enforcer-bot` | ✅ | ✅ | 100% |
 | `fixers/css-dead-code-remover` | ✅ | ✅ | 100% |
@@ -225,27 +235,42 @@ These agents have implementation code. Below is their compliance with tests and 
 | `fixers/unused-asset-cleaner` | ✅ | ✅ | 100% |
 | `fixers/vuln-auto-patcher` | ✅ | ✅ | 100% |
 | `learning-education/code-explainer` | ✅ | ✅ | 100% |
+| `learning-education/code-kata-generator` | ✅ | ✅ | 100% |
+| `learning-education/documentation-quiz` | ✅ | ✅ | 100% |
 | `learning-education/flashcard-generator` | ✅ | ✅ | 100% |
 | `learning-education/interview-prep-agent` | ✅ | ✅ | 100% |
 | `learning-education/learning-path-planner` | ✅ | ✅ | 100% |
+| `learning-education/mentor-pairing-agent` | ✅ | ✅ | 100% |
 | `learning-education/paper-summarizer` | ✅ | ✅ | 100% |
 | `learning-education/quiz-generator` | ✅ | ✅ | 100% |
+| `learning-education/skill-gap-analyzer` | ✅ | ✅ | 100% |
 | `meetings/meeting-notes-organizer` | ✅ | ✅ | 100% |
 | `meetings/meeting-summarizer` | ✅ | ✅ | 100% |
+| `personal-lifestyle/book-recommendation-agent` | ✅ | ✅ | 100% |
+| `personal-lifestyle/budget-tracker-agent` | ✅ | ✅ | 100% |
 | `personal-lifestyle/gift-recommendation-agent` | ✅ | ✅ | 100% |
 | `personal-lifestyle/habit-coach` | ✅ | ✅ | 100% |
 | `personal-lifestyle/journaling-prompt-agent` | ✅ | ✅ | 100% |
+| `personal-lifestyle/meal-prep-planner` | ✅ | ✅ | 100% |
+| `personal-lifestyle/meditation-guide` | ✅ | ✅ | 100% |
 | `personal-lifestyle/recipe-planner` | ✅ | ✅ | 100% |
 | `personal-lifestyle/travel-itinerary-agent` | ✅ | ✅ | 100% |
 | `personal-lifestyle/workout-planner` | ✅ | ✅ | 100% |
 | `productivity/agent-email-classifier` | ✅ | ✅ | 100% |
 | `productivity/agent-meeting-scheduler` | ✅ | ✅ | 100% |
+| `productivity/daily-standup-bot` | ✅ | ✅ | 100% |
+| `productivity/goal-tracker-agent` | ✅ | ✅ | 100% |
+| `productivity/pomodoro-coach` | ✅ | ✅ | 100% |
+| `productivity/time-audit-agent` | ✅ | ✅ | 100% |
 | `research-data/data-analyst` | ✅ | ✅ | 100% |
 | `research-data/research-summarizer-agent` | ✅ | ✅ | 100% |
 | `research-data/sql-query-builder-agent` | ✅ | ✅ | 100% |
+| `security-privacy/api-key-rotator` | ✅ | ✅ | 100% |
+| `security-privacy/container-vulnerability-scanner` | ✅ | ✅ | 100% |
 | `security-privacy/cors-config-validator` | ✅ | ✅ | 100% |
 | `security-privacy/dependency-vulnerability-monitor` | ✅ | ✅ | 100% |
 | `security-privacy/file-hash-generator` | ✅ | ✅ | 100% |
+| `security-privacy/gdpr-compliance-checker` | ✅ | ✅ | 100% |
 | `security-privacy/hash-generator` | ✅ | ✅ | 100% |
 | `security-privacy/http-header-analyzer` | ✅ | ✅ | 100% |
 | `security-privacy/ip-lookup` | ✅ | ✅ | 100% |

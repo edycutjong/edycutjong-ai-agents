@@ -1,7 +1,7 @@
 {
   "timestamp": "2026-03-25T16:49:29Z",
   "summary": {
-    "total_agents": 250,
+    "total_agents": 275,
     "agents_with_coverage": 250,
     "average_coverage": 98,
     "passed": 250,
@@ -1008,6 +1008,106 @@
     {
       "agent": "./developer/agent-license-scanner",
       "coverage": 57
+    },
+    {
+      "agent": "./finance-crypto/token-price-tracker",
+      "coverage": 100
+    },
+    {
+      "agent": "./finance-crypto/wallet-balance-checker",
+      "coverage": 100
+    },
+    {
+      "agent": "./finance-crypto/gas-fee-estimator",
+      "coverage": 100
+    },
+    {
+      "agent": "./finance-crypto/defi-yield-calculator",
+      "coverage": 100
+    },
+    {
+      "agent": "./communication/slack-message-summarizer",
+      "coverage": 100
+    },
+    {
+      "agent": "./communication/discord-bot-builder",
+      "coverage": 100
+    },
+    {
+      "agent": "./communication/notification-router",
+      "coverage": 100
+    },
+    {
+      "agent": "./learning-education/code-kata-generator",
+      "coverage": 100
+    },
+    {
+      "agent": "./learning-education/documentation-quiz",
+      "coverage": 100
+    },
+    {
+      "agent": "./learning-education/mentor-pairing-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./learning-education/skill-gap-analyzer",
+      "coverage": 100
+    },
+    {
+      "agent": "./personal-lifestyle/budget-tracker-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./personal-lifestyle/book-recommendation-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./personal-lifestyle/meditation-guide",
+      "coverage": 100
+    },
+    {
+      "agent": "./personal-lifestyle/meal-prep-planner",
+      "coverage": 100
+    },
+    {
+      "agent": "./productivity/pomodoro-coach",
+      "coverage": 100
+    },
+    {
+      "agent": "./productivity/daily-standup-bot",
+      "coverage": 100
+    },
+    {
+      "agent": "./productivity/goal-tracker-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./productivity/time-audit-agent",
+      "coverage": 100
+    },
+    {
+      "agent": "./ai-ml-ops/model-drift-detector",
+      "coverage": 100
+    },
+    {
+      "agent": "./ai-ml-ops/dataset-bias-auditor",
+      "coverage": 100
+    },
+    {
+      "agent": "./ai-ml-ops/llm-prompt-tester",
+      "coverage": 100
+    },
+    {
+      "agent": "./security-privacy/api-key-rotator",
+      "coverage": 100
+    },
+    {
+      "agent": "./security-privacy/gdpr-compliance-checker",
+      "coverage": 100
+    },
+    {
+      "agent": "./security-privacy/container-vulnerability-scanner",
+      "coverage": 100
     }
   ]
 }
