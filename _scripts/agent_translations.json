@@ -12306,5 +12306,705 @@
       "name": "Security Audit Agent",
       "description": "AI agent that scans codebases for security vulnerabilities (XSS, SQL injection, etc.) and suggests fixes."
     }
+  },
+  "ai-frameworks/autogen-agent": {
+    "id": {
+      "name": "Agen AutoGen",
+      "description": "Sistem AI percakapan dengan beberapa agen yang dapat menulis kode, melakukan debug, dan menjalankan tugas secara kolaboratif."
+    },
+    "zh": {
+      "name": "AutoGen 智能体",
+      "description": "具有多个智能体的对话式AI系统，可以协作编写代码、调试和执行任务。"
+    },
+    "es": {
+      "name": "Agente AutoGen",
+      "description": "Sistema de IA conversacional con múltiples agentes que pueden escribir código, depurar y ejecutar tareas de forma colaborativa."
+    },
+    "pt": {
+      "name": "Agente AutoGen",
+      "description": "Sistema de IA conversacional com múltiplos agentes que podem escrever código, depurar e executar tarefas colaborativamente."
+    },
+    "ja": {
+      "name": "AutoGen エージェント",
+      "description": "コードの記述、デバッグ、タスクの実行を共同で行う複数のエージェントを備えた会話型AIシステム。"
+    },
+    "ko": {
+      "name": "AutoGen 에이전트",
+      "description": "코드 작성, 디버그 및 작업을 협력적으로 실행할 수 있는 다중 에이전트 대화형 AI 시스템."
+    },
+    "de": {
+      "name": "AutoGen-Agent",
+      "description": "Konversations-KI-System mit mehreren Agenten, die Code schreiben, debuggen und Aufgaben kollaborativ ausführen können."
+    },
+    "fr": {
+      "name": "Agent AutoGen",
+      "description": "Système d'IA conversationnel avec plusieurs agents capables d'écrire du code, de déboguer et d'exécuter des tâches de manière collaborative."
+    },
+    "ru": {
+      "name": "Агент AutoGen",
+      "description": "Диалоговая система ИИ с несколькими агентами, которые могут писать код, отлаживать и выполнять задачи совместно."
+    },
+    "ar": {
+      "name": "وكيل AutoGen",
+      "description": "نظام ذكاء اصطناعي محادثي مع وكلاء متعددين يمكنهم كتابة التعليمات البرمجية وتصحيح الأخطاء وتنفيذ المهام بشكل تعاوني."
+    },
+    "hi": {
+      "name": "AutoGen एजेंट",
+      "description": "कई एजेंटों के साथ संवादात्मक AI प्रणाली जो सहयोगात्मक रूप से कोड लिख सकते हैं, डिबग कर सकते हैं और कार्य निष्पादित कर सकते हैं।"
+    },
+    "en": {
+      "name": "AutoGen Agent",
+      "description": "Conversational AI system with multiple agents that can write code, debug, and execute tasks collaboratively."
+    }
+  },
+  "ai-frameworks/crewai-agent": {
+    "id": {
+      "name": "Agen CrewAI",
+      "description": "Kru multi-agen yang berkolaborasi untuk meneliti topik, menulis laporan, dan menghasilkan wawasan."
+    },
+    "zh": {
+      "name": "CrewAI 智能体",
+      "description": "协作研究主题、撰写报告和生成洞察的多智能体团队。"
+    },
+    "es": {
+      "name": "Agente CrewAI",
+      "description": "Equipo de múltiples agentes que colaboran para investigar temas, escribir informes y generar perspectivas."
+    },
+    "pt": {
+      "name": "Agente CrewAI",
+      "description": "Equipe de múltiplos agentes que colaboram para pesquisar tópicos, escrever relatórios e gerar insights."
+    },
+    "ja": {
+      "name": "CrewAI エージェント",
+      "description": "トピックの調査、レポートの作成、インサイトの生成を共同で行うマルチエージェントクルー。"
+    },
+    "ko": {
+      "name": "CrewAI 에이전트",
+      "description": "주제를 조사하고 보고서를 작성하며 인사이트를 생성하기 위해 협력하는 다중 에이전트 팀."
+    },
+    "de": {
+      "name": "CrewAI-Agent",
+      "description": "Multi-Agenten-Crew, die zusammenarbeitet, um Themen zu recherchieren, Berichte zu schreiben und Erkenntnisse zu generieren."
+    },
+    "fr": {
+      "name": "Agent CrewAI",
+      "description": "Équipe multi-agents qui collabore pour rechercher des sujets, rédiger des rapports et générer des insights."
+    },
+    "ru": {
+      "name": "Агент CrewAI",
+      "description": "Мультиагентная команда, которая совместно исследует темы, пишет отчёты и генерирует аналитику."
+    },
+    "ar": {
+      "name": "وكيل CrewAI",
+      "description": "فريق متعدد الوكلاء يتعاون للبحث في المواضيع وكتابة التقارير وتوليد الرؤى."
+    },
+    "hi": {
+      "name": "CrewAI एजेंट",
+      "description": "बहु-एजेंट क्रू जो विषयों पर शोध, रिपोर्ट लिखने और अंतर्दृष्टि उत्पन्न करने के लिए सहयोग करता है।"
+    },
+    "en": {
+      "name": "CrewAI Agent",
+      "description": "Multi-agent crew that collaborates to research topics, write reports, and generate insights."
+    }
+  },
+  "ai-frameworks/langchain-agent": {
+    "id": {
+      "name": "Agen LangChain",
+      "description": "Agen riset AI yang dapat menelusuri web, meringkas dokumen, dan menjawab pertanyaan kompleks."
+    },
+    "zh": {
+      "name": "LangChain 智能体",
+      "description": "AI研究智能体，可以搜索网络、总结文档并回答复杂问题。"
+    },
+    "es": {
+      "name": "Agente LangChain",
+      "description": "Agente de investigación con IA que puede buscar en la web, resumir documentos y responder preguntas complejas."
+    },
+    "pt": {
+      "name": "Agente LangChain",
+      "description": "Agente de pesquisa com IA que pode pesquisar na web, resumir documentos e responder perguntas complexas."
+    },
+    "ja": {
+      "name": "LangChain エージェント",
+      "description": "Web検索、ドキュメントの要約、複雑な質問への回答ができるAIリサーチエージェント。"
+    },
+    "ko": {
+      "name": "LangChain 에이전트",
+      "description": "웹 검색, 문서 요약, 복잡한 질문에 답할 수 있는 AI 연구 에이전트."
+    },
+    "de": {
+      "name": "LangChain-Agent",
+      "description": "KI-Forschungsagent, der das Web durchsuchen, Dokumente zusammenfassen und komplexe Fragen beantworten kann."
+    },
+    "fr": {
+      "name": "Agent LangChain",
+      "description": "Agent de recherche IA capable de rechercher sur le web, résumer des documents et répondre à des questions complexes."
+    },
+    "ru": {
+      "name": "Агент LangChain",
+      "description": "ИИ-агент для исследований, который может искать в интернете, резюмировать документы и отвечать на сложные вопросы."
+    },
+    "ar": {
+      "name": "وكيل LangChain",
+      "description": "وكيل بحث بالذكاء الاصطناعي يمكنه البحث في الويب وتلخيص المستندات والإجابة على الأسئلة المعقدة."
+    },
+    "hi": {
+      "name": "LangChain एजेंट",
+      "description": "AI शोध एजेंट जो वेब खोज, दस्तावेज़ सारांश और जटिल प्रश्नों का उत्तर दे सकता है।"
+    },
+    "en": {
+      "name": "LangChain Agent",
+      "description": "AI research agent that can search the web, summarize documents, and answer complex questions."
+    }
+  },
+  "communication/email-drafter": {
+    "id": {
+      "name": "Penyusun Email",
+      "description": "Bot respons yang memahami konteks — membaca utas email masuk dan menyusun balasan."
+    },
+    "zh": {
+      "name": "邮件起草器",
+      "description": "上下文感知的回复机器人 — 读取收件邮件线程并起草回复。"
+    },
+    "es": {
+      "name": "Redactor de Correos",
+      "description": "Bot de respuesta consciente del contexto — lee hilos de correo entrantes y redacta respuestas."
+    },
+    "pt": {
+      "name": "Redator de E-mail",
+      "description": "Bot de resposta ciente do contexto — lê threads de e-mail recebidos e redige respostas."
+    },
+    "ja": {
+      "name": "メール下書きツール",
+      "description": "コンテキスト対応の応答ボット — 受信メールスレッドを読み、返信を起草します。"
+    },
+    "ko": {
+      "name": "이메일 초안 작성기",
+      "description": "컨텍스트 인식 응답 봇 — 수신 이메일 스레드를 읽고 답장을 작성합니다."
+    },
+    "de": {
+      "name": "E-Mail-Verfasser",
+      "description": "Kontextbewusster Antwort-Bot — liest eingehende E-Mail-Threads und entwirft Antworten."
+    },
+    "fr": {
+      "name": "Rédacteur d'E-mails",
+      "description": "Bot de réponse contextuel — lit les fils de discussion entrants et rédige des réponses."
+    },
+    "ru": {
+      "name": "Составитель писем",
+      "description": "Контекстно-зависимый бот ответов — читает входящие цепочки писем и составляет ответы."
+    },
+    "ar": {
+      "name": "مُسوِّد البريد الإلكتروني",
+      "description": "روبوت استجابة واعٍ بالسياق — يقرأ سلاسل البريد الإلكتروني الواردة ويصوغ الردود."
+    },
+    "hi": {
+      "name": "ईमेल ड्राफ्टर",
+      "description": "संदर्भ-जागरूक प्रतिक्रिया बॉट — आने वाले ईमेल थ्रेड पढ़ता है और जवाब तैयार करता है।"
+    },
+    "en": {
+      "name": "Email Drafter",
+      "description": "Context-aware response bot — reads incoming email threads and drafts replies."
+    }
+  },
+  "communication/email-triage-assistant": {
+    "id": {
+      "name": "Asisten Penyortir Email",
+      "description": "Agen AI lokal untuk mengkategorikan, meringkas, dan menyusun balasan email."
+    },
+    "zh": {
+      "name": "邮件分类助手",
+      "description": "本地AI智能体，用于分类、总结和起草电子邮件回复。"
+    },
+    "es": {
+      "name": "Asistente de Clasificación de Correos",
+      "description": "Agente de IA local para categorizar, resumir y redactar respuestas a correos electrónicos."
+    },
+    "pt": {
+      "name": "Assistente de Triagem de E-mail",
+      "description": "Agente de IA local para categorizar, resumir e redigir respostas a e-mails."
+    },
+    "ja": {
+      "name": "メールトリアージアシスタント",
+      "description": "メールの分類、要約、返信の下書きを行うローカルAIエージェント。"
+    },
+    "ko": {
+      "name": "이메일 분류 도우미",
+      "description": "이메일을 분류, 요약 및 답장 초안을 작성하는 로컬 AI 에이전트."
+    },
+    "de": {
+      "name": "E-Mail-Triage-Assistent",
+      "description": "Lokaler KI-Agent zum Kategorisieren, Zusammenfassen und Entwerfen von E-Mail-Antworten."
+    },
+    "fr": {
+      "name": "Assistant de Tri des E-mails",
+      "description": "Agent IA local pour catégoriser, résumer et rédiger des réponses aux e-mails."
+    },
+    "ru": {
+      "name": "Помощник сортировки почты",
+      "description": "Локальный ИИ-агент для категоризации, резюмирования и составления ответов на электронные письма."
+    },
+    "ar": {
+      "name": "مساعد فرز البريد الإلكتروني",
+      "description": "وكيل ذكاء اصطناعي محلي لتصنيف رسائل البريد الإلكتروني وتلخيصها وصياغة الردود."
+    },
+    "hi": {
+      "name": "ईमेल छंटाई सहायक",
+      "description": "ईमेल को वर्गीकृत, सारांशित और उत्तर तैयार करने के लिए स्थानीय AI एजेंट।"
+    },
+    "en": {
+      "name": "Email Triage Assistant",
+      "description": "Local AI agent to categorize, summarize, and draft replies to emails."
+    }
+  },
+  "content-marketing/resume-tailor-agent": {
+    "id": {
+      "name": "Agen Penyesuai Resume",
+      "description": "Agen yang menyesuaikan resume/CV Anda untuk deskripsi pekerjaan tertentu."
+    },
+    "zh": {
+      "name": "简历定制智能体",
+      "description": "根据特定职位描述定制您的简历/CV的智能体。"
+    },
+    "es": {
+      "name": "Agente de Adaptación de CV",
+      "description": "Agente que adapta su currículum/CV para descripciones de trabajo específicas."
+    },
+    "pt": {
+      "name": "Agente de Personalização de Currículo",
+      "description": "Agente que personaliza seu currículo/CV para descrições de vagas específicas."
+    },
+    "ja": {
+      "name": "履歴書調整エージェント",
+      "description": "特定の求人内容に合わせて履歴書/CVをカスタマイズするエージェント。"
+    },
+    "ko": {
+      "name": "이력서 맞춤 에이전트",
+      "description": "특정 채용 공고에 맞게 이력서/CV를 맞춤화하는 에이전트."
+    },
+    "de": {
+      "name": "Lebenslauf-Anpassungs-Agent",
+      "description": "Agent, der Ihren Lebenslauf/CV für bestimmte Stellenbeschreibungen anpasst."
+    },
+    "fr": {
+      "name": "Agent d'Adaptation de CV",
+      "description": "Agent qui adapte votre CV pour des descriptions de poste spécifiques."
+    },
+    "ru": {
+      "name": "Агент адаптации резюме",
+      "description": "Агент, который адаптирует ваше резюме/CV под конкретные описания вакансий."
+    },
+    "ar": {
+      "name": "وكيل تخصيص السيرة الذاتية",
+      "description": "وكيل يُخصص سيرتك الذاتية لأوصاف وظائف محددة."
+    },
+    "hi": {
+      "name": "रिज्यूमे अनुकूलक एजेंट",
+      "description": "एजेंट जो विशिष्ट नौकरी विवरणों के लिए आपके रिज्यूमे/सीवी को अनुकूलित करता है।"
+    },
+    "en": {
+      "name": "Resume Tailor Agent",
+      "description": "Agent that tailors your resume/CV for specific job descriptions."
+    }
+  },
+  "content-marketing/social-media-manager-agent": {
+    "id": {
+      "name": "Agen Manajer Media Sosial",
+      "description": "Agen AI untuk menyusun, menjadwalkan, dan berinteraksi dengan konten sosial berdasarkan gaya bahasa merek."
+    },
+    "zh": {
+      "name": "社交媒体管理智能体",
+      "description": "基于品牌调性起草、安排和互动社交内容的AI智能体。"
+    },
+    "es": {
+      "name": "Agente Administrador de Redes Sociales",
+      "description": "Agente de IA para redactar, programar e interactuar con contenido social basado en la voz de la marca."
+    },
+    "pt": {
+      "name": "Agente Gerente de Mídias Sociais",
+      "description": "Agente de IA para redigir, agendar e interagir com conteúdo social com base na voz da marca."
+    },
+    "ja": {
+      "name": "ソーシャルメディアマネージャーエージェント",
+      "description": "ブランドボイスに基づいてソーシャルコンテンツを作成、スケジュール、エンゲージメントするAIエージェント。"
+    },
+    "ko": {
+      "name": "소셜 미디어 관리자 에이전트",
+      "description": "브랜드 보이스에 기반하여 소셜 콘텐츠를 초안 작성, 예약 및 참여하는 AI 에이전트."
+    },
+    "de": {
+      "name": "Social-Media-Manager-Agent",
+      "description": "KI-Agent zum Erstellen, Planen und Interagieren mit Social-Media-Inhalten basierend auf der Markenstimme."
+    },
+    "fr": {
+      "name": "Agent Gestionnaire de Réseaux Sociaux",
+      "description": "Agent IA pour rédiger, planifier et interagir avec du contenu social basé sur la voix de la marque."
+    },
+    "ru": {
+      "name": "Агент управления социальными сетями",
+      "description": "ИИ-агент для создания, планирования и взаимодействия с социальным контентом на основе голоса бренда."
+    },
+    "ar": {
+      "name": "وكيل إدارة وسائل التواصل الاجتماعي",
+      "description": "وكيل ذكاء اصطناعي لصياغة وجدولة والتفاعل مع المحتوى الاجتماعي بناءً على صوت العلامة التجارية."
+    },
+    "hi": {
+      "name": "सोशल मीडिया मैनेजर एजेंट",
+      "description": "ब्रांड वॉइस के आधार पर सामाजिक सामग्री का मसौदा तैयार, शेड्यूल और संलग्न करने के लिए AI एजेंट।"
+    },
+    "en": {
+      "name": "Social Media Manager Agent",
+      "description": "AI agent to draft, schedule, and engage with social content based on brand voice."
+    }
+  },
+  "meetings/meeting-notes-organizer": {
+    "id": {
+      "name": "Pengatur Catatan Rapat",
+      "description": "Agen yang mengambil transkrip, mengekstrak tugas, dan memperbarui alat manajemen proyek."
+    },
+    "zh": {
+      "name": "会议记录整理器",
+      "description": "获取会议记录、提取任务并更新项目管理工具的智能体。"
+    },
+    "es": {
+      "name": "Organizador de Notas de Reuniones",
+      "description": "Agente que toma transcripciones, extrae tareas y actualiza herramientas de gestión de proyectos."
+    },
+    "pt": {
+      "name": "Organizador de Notas de Reuniões",
+      "description": "Agente que pega transcrições, extrai tarefas e atualiza ferramentas de gerenciamento de projetos."
+    },
+    "ja": {
+      "name": "会議メモオーガナイザー",
+      "description": "議事録を取得し、タスクを抽出し、プロジェクト管理ツールを更新するエージェント。"
+    },
+    "ko": {
+      "name": "회의 노트 정리기",
+      "description": "회의록을 가져와 작업을 추출하고 프로젝트 관리 도구를 업데이트하는 에이전트."
+    },
+    "de": {
+      "name": "Besprechungsnotizen-Organizer",
+      "description": "Agent, der Transkripte übernimmt, Aufgaben extrahiert und Projektmanagement-Tools aktualisiert."
+    },
+    "fr": {
+      "name": "Organisateur de Notes de Réunion",
+      "description": "Agent qui prend les transcriptions, extrait les tâches et met à jour les outils de gestion de projet."
+    },
+    "ru": {
+      "name": "Органайзер заметок совещаний",
+      "description": "Агент, который берёт транскрипции, извлекает задачи и обновляет инструменты управления проектами."
+    },
+    "ar": {
+      "name": "منظم ملاحظات الاجتماعات",
+      "description": "وكيل يأخذ النصوص المكتوبة ويستخرج المهام ويحدث أدوات إدارة المشاريع."
+    },
+    "hi": {
+      "name": "मीटिंग नोट्स ऑर्गनाइज़र",
+      "description": "एजेंट जो ट्रांसक्रिप्ट लेता है, कार्यों को निकालता है और प्रोजेक्ट प्रबंधन टूल अपडेट करता है।"
+    },
+    "en": {
+      "name": "Meeting Notes Organizer",
+      "description": "Agent that takes transcripts, extracts tasks, and updates project management tools."
+    }
+  },
+  "meetings/meeting-summarizer": {
+    "id": {
+      "name": "Peringkas Rapat",
+      "description": "Pemroses transkrip — membaca transkrip VTT/Teks, mengekstrak item tindakan, dan meringkas keputusan."
+    },
+    "zh": {
+      "name": "会议总结器",
+      "description": "会议记录处理器 — 读取VTT/文本记录，提取行动项，总结关键决策。"
+    },
+    "es": {
+      "name": "Resumidor de Reuniones",
+      "description": "Procesador de transcripciones — lee transcripciones VTT/Texto, extrae elementos de acción y resume decisiones."
+    },
+    "pt": {
+      "name": "Resumidor de Reuniões",
+      "description": "Processador de transcrições — lê transcrições VTT/Texto, extrai itens de ação e resume decisões."
+    },
+    "ja": {
+      "name": "会議要約ツール",
+      "description": "議事録プロセッサ — VTT/テキスト議事録を読み、アクションアイテムを抽出し、決定事項を要約します。"
+    },
+    "ko": {
+      "name": "회의 요약기",
+      "description": "회의록 처리기 — VTT/텍스트 회의록을 읽고 액션 아이템을 추출하며 결정 사항을 요약합니다."
+    },
+    "de": {
+      "name": "Besprechungs-Zusammenfasser",
+      "description": "Transkript-Prozessor — liest VTT/Text-Transkripte, extrahiert Aktionspunkte und fasst Entscheidungen zusammen."
+    },
+    "fr": {
+      "name": "Résumeur de Réunions",
+      "description": "Processeur de transcriptions — lit les transcriptions VTT/Texte, extrait les éléments d'action et résume les décisions."
+    },
+    "ru": {
+      "name": "Саммаризатор совещаний",
+      "description": "Обработчик транскрипций — читает транскрипции VTT/Текст, извлекает задачи и резюмирует решения."
+    },
+    "ar": {
+      "name": "ملخص الاجتماعات",
+      "description": "معالج النصوص — يقرأ نصوص VTT/النصية ويستخرج بنود العمل ويلخص القرارات."
+    },
+    "hi": {
+      "name": "मीटिंग सारांशकर्ता",
+      "description": "ट्रांसक्रिप्ट प्रोसेसर — VTT/टेक्स्ट ट्रांसक्रिप्ट पढ़ता है, कार्य आइटम निकालता है और निर्णयों का सारांश देता है।"
+    },
+    "en": {
+      "name": "Meeting Summarizer",
+      "description": "Transcript processor — reads VTT/Text transcripts, extracts action items, and summarizes key decisions."
+    }
+  },
+  "research-data/data-analyst": {
+    "id": {
+      "name": "Analis Data",
+      "description": "Generator wawasan CSV — memuat data CSV/Excel, menghasilkan statistik dan visualisasi."
+    },
+    "zh": {
+      "name": "数据分析师",
+      "description": "CSV洞察生成器 — 加载CSV/Excel数据，生成统计数据和可视化图表。"
+    },
+    "es": {
+      "name": "Analista de Datos",
+      "description": "Generador de insights CSV — carga datos CSV/Excel, genera estadísticas y visualizaciones."
+    },
+    "pt": {
+      "name": "Analista de Dados",
+      "description": "Gerador de insights CSV — carrega dados CSV/Excel, gera estatísticas e visualizações."
+    },
+    "ja": {
+      "name": "データアナリスト",
+      "description": "CSVインサイトジェネレーター — CSV/Excelデータを読み込み、統計と可視化を生成します。"
+    },
+    "ko": {
+      "name": "데이터 분석가",
+      "description": "CSV 인사이트 생성기 — CSV/Excel 데이터를 로드하고 통계 및 시각화를 생성합니다."
+    },
+    "de": {
+      "name": "Datenanalyst",
+      "description": "CSV-Insight-Generator — lädt CSV/Excel-Daten, erzeugt Statistiken und Visualisierungen."
+    },
+    "fr": {
+      "name": "Analyste de Données",
+      "description": "Générateur d'insights CSV — charge des données CSV/Excel, génère des statistiques et des visualisations."
+    },
+    "ru": {
+      "name": "Аналитик данных",
+      "description": "Генератор инсайтов CSV — загружает данные CSV/Excel, создаёт статистику и визуализации."
+    },
+    "ar": {
+      "name": "محلل البيانات",
+      "description": "مولد رؤى CSV — يحمل بيانات CSV/Excel وينتج الإحصائيات والتصورات البصرية."
+    },
+    "hi": {
+      "name": "डेटा एनालिस्ट",
+      "description": "CSV इनसाइट जनरेटर — CSV/Excel डेटा लोड करता है, सांख्यिकी और विज़ुअलाइज़ेशन उत्पन्न करता है।"
+    },
+    "en": {
+      "name": "Data Analyst",
+      "description": "CSV insight generator — loads CSV/Excel data, generates statistics and visualizations."
+    }
+  },
+  "research-data/research-summarizer-agent": {
+    "id": {
+      "name": "Agen Peringkas Riset",
+      "description": "Agen riset mendalam — jika diberikan topik, ia akan menjelajah, membaca, dan menyintesis laporan."
+    },
+    "zh": {
+      "name": "研究总结智能体",
+      "description": "深度研究智能体 — 给定主题后浏览、阅读和综合生成报告。"
+    },
+    "es": {
+      "name": "Agente Resumidor de Investigación",
+      "description": "Agente de investigación profunda — dado un tema, navega, lee y sintetiza un informe."
+    },
+    "pt": {
+      "name": "Agente Resumidor de Pesquisa",
+      "description": "Agente de pesquisa profunda — dado um tópico, navega, lê e sintetiza um relatório."
+    },
+    "ja": {
+      "name": "リサーチ要約エージェント",
+      "description": "ディープリサーチエージェント — トピックを指定すると、検索、読み取り、レポートの統合を行います。"
+    },
+    "ko": {
+      "name": "연구 요약 에이전트",
+      "description": "심층 연구 에이전트 — 주제를 제공하면 검색, 읽기 및 보고서 합성을 수행합니다."
+    },
+    "de": {
+      "name": "Forschungs-Zusammenfassungs-Agent",
+      "description": "Tiefenforschungsagent — erhält ein Thema, durchsucht, liest und synthetisiert einen Bericht."
+    },
+    "fr": {
+      "name": "Agent Résumeur de Recherche",
+      "description": "Agent de recherche approfondie — à partir d'un sujet donné, il parcourt, lit et synthétise un rapport."
+    },
+    "ru": {
+      "name": "Агент резюмирования исследований",
+      "description": "Агент глубокого исследования — получает тему, просматривает, читает и синтезирует отчёт."
+    },
+    "ar": {
+      "name": "وكيل تلخيص الأبحاث",
+      "description": "وكيل بحث معمق — يتصفح ويقرأ ويجمع تقريرًا حول الموضوع المحدد."
+    },
+    "hi": {
+      "name": "रिसर्च सारांशकर्ता एजेंट",
+      "description": "गहन शोध एजेंट — विषय दिए जाने पर ब्राउज़, पढ़ता और रिपोर्ट संश्लेषित करता है।"
+    },
+    "en": {
+      "name": "Research Summarizer Agent",
+      "description": "Deep research agent — given a topic, it browses, reads, and synthesizes a report."
+    }
+  },
+  "research-data/sql-query-builder-agent": {
+    "id": {
+      "name": "Agen Pembuat Kueri SQL",
+      "description": "Agen bahasa alami ke SQL — terhubung ke skema dan menulis kueri aman."
+    },
+    "zh": {
+      "name": "SQL查询构建智能体",
+      "description": "自然语言到SQL智能体 — 连接数据库架构并编写安全查询。"
+    },
+    "es": {
+      "name": "Agente Constructor de Consultas SQL",
+      "description": "Agente de lenguaje natural a SQL — se conecta al esquema y escribe consultas seguras."
+    },
+    "pt": {
+      "name": "Agente Construtor de Consultas SQL",
+      "description": "Agente de linguagem natural para SQL — conecta ao esquema e escreve consultas seguras."
+    },
+    "ja": {
+      "name": "SQLクエリビルダーエージェント",
+      "description": "自然言語からSQLへのエージェント — スキーマに接続し、安全なクエリを記述します。"
+    },
+    "ko": {
+      "name": "SQL 쿼리 빌더 에이전트",
+      "description": "자연어에서 SQL로의 에이전트 — 스키마에 연결하고 안전한 쿼리를 작성합니다."
+    },
+    "de": {
+      "name": "SQL-Abfrage-Builder-Agent",
+      "description": "Agent für natürliche Sprache zu SQL — verbindet sich mit dem Schema und schreibt sichere Abfragen."
+    },
+    "fr": {
+      "name": "Agent Constructeur de Requêtes SQL",
+      "description": "Agent de langage naturel vers SQL — se connecte au schéma et écrit des requêtes sûres."
+    },
+    "ru": {
+      "name": "Агент построения SQL-запросов",
+      "description": "Агент естественного языка в SQL — подключается к схеме и пишет безопасные запросы."
+    },
+    "ar": {
+      "name": "وكيل بناء استعلامات SQL",
+      "description": "وكيل اللغة الطبيعية إلى SQL — يتصل بالمخطط ويكتب استعلامات آمنة."
+    },
+    "hi": {
+      "name": "SQL क्वेरी बिल्डर एजेंट",
+      "description": "प्राकृतिक भाषा से SQL एजेंट — स्कीमा से जुड़ता है और सुरक्षित क्वेरी लिखता है।"
+    },
+    "en": {
+      "name": "SQL Query Builder Agent",
+      "description": "Natural language to SQL agent — connects to schema and writes safe queries."
+    }
+  },
+  "testing-qa/qa-test-generator": {
+    "id": {
+      "name": "Generator Tes QA",
+      "description": "Agen yang membaca fitur/kode dan menghasilkan tes Cypress/Playwright."
+    },
+    "zh": {
+      "name": "QA测试生成器",
+      "description": "读取功能/代码并生成Cypress/Playwright测试的智能体。"
+    },
+    "es": {
+      "name": "Generador de Pruebas QA",
+      "description": "Agente que lee características/código y genera pruebas de Cypress/Playwright."
+    },
+    "pt": {
+      "name": "Gerador de Testes QA",
+      "description": "Agente que lê recursos/código e gera testes Cypress/Playwright."
+    },
+    "ja": {
+      "name": "QAテストジェネレーター",
+      "description": "機能/コードを読み取り、Cypress/Playwrightテストを生成するエージェント。"
+    },
+    "ko": {
+      "name": "QA 테스트 생성기",
+      "description": "기능/코드를 읽고 Cypress/Playwright 테스트를 생성하는 에이전트."
+    },
+    "de": {
+      "name": "QA-Testgenerator",
+      "description": "Agent, der Features/Code liest und Cypress/Playwright-Tests generiert."
+    },
+    "fr": {
+      "name": "Générateur de Tests QA",
+      "description": "Agent qui lit les fonctionnalités/le code et génère des tests Cypress/Playwright."
+    },
+    "ru": {
+      "name": "Генератор QA-тестов",
+      "description": "Агент, который читает функции/код и генерирует тесты Cypress/Playwright."
+    },
+    "ar": {
+      "name": "مولد اختبارات ضمان الجودة",
+      "description": "وكيل يقرأ الميزات/الكود وينشئ اختبارات Cypress/Playwright."
+    },
+    "hi": {
+      "name": "QA टेस्ट जनरेटर",
+      "description": "एजेंट जो फीचर्स/कोड पढ़ता है और Cypress/Playwright टेस्ट जेनरेट करता है।"
+    },
+    "en": {
+      "name": "QA Test Generator",
+      "description": "Agent that reads features/code and generates Cypress/Playwright tests."
+    }
+  },
+  "testing-qa/test-generator": {
+    "id": {
+      "name": "Generator Tes Unit",
+      "description": "Penulis tes unit — menganalisis deklarasi fungsi dan menghasilkan tes."
+    },
+    "zh": {
+      "name": "单元测试生成器",
+      "description": "单元测试编写器 — 分析函数签名并生成测试。"
+    },
+    "es": {
+      "name": "Generador de Pruebas Unitarias",
+      "description": "Escritor de pruebas unitarias — analiza firmas de funciones y genera pruebas."
+    },
+    "pt": {
+      "name": "Gerador de Testes Unitários",
+      "description": "Escritor de testes unitários — analisa assinaturas de funções e gera testes."
+    },
+    "ja": {
+      "name": "ユニットテストジェネレーター",
+      "description": "ユニットテストライター — 関数シグネチャを分析し、テストを生成します。"
+    },
+    "ko": {
+      "name": "단위 테스트 생성기",
+      "description": "단위 테스트 작성기 — 함수 시그니처를 분석하고 테스트를 생성합니다."
+    },
+    "de": {
+      "name": "Unit-Test-Generator",
+      "description": "Unit-Test-Schreiber — analysiert Funktionssignaturen und generiert Tests."
+    },
+    "fr": {
+      "name": "Générateur de Tests Unitaires",
+      "description": "Rédacteur de tests unitaires — analyse les signatures de fonctions et génère des tests."
+    },
+    "ru": {
+      "name": "Генератор модульных тестов",
+      "description": "Писатель модульных тестов — анализирует сигнатуры функций и генерирует тесты."
+    },
+    "ar": {
+      "name": "مولد اختبارات الوحدة",
+      "description": "كاتب اختبارات الوحدة — يحلل توقيعات الدوال وينشئ الاختبارات."
+    },
+    "hi": {
+      "name": "यूनिट टेस्ट जनरेटर",
+      "description": "यूनिट टेस्ट लेखक — फ़ंक्शन सिग्नेचर का विश्लेषण करता है और टेस्ट जेनरेट करता है।"
+    },
+    "en": {
+      "name": "Unit Test Generator",
+      "description": "Unit test writer — analyzes function signatures and generates tests."
+    }
   }
 }

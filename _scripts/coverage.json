@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-03-20T01:23:19Z",
+  "timestamp": "2026-03-25T16:49:29Z",
   "summary": {
-    "total_agents": 233,
-    "agents_with_coverage": 233,
-    "average_coverage": 100,
-    "passed": 233,
+    "total_agents": 250,
+    "agents_with_coverage": 250,
+    "average_coverage": 98,
+    "passed": 250,
     "failed": 0,
     "skipped": 0
   },
@@ -490,6 +490,10 @@
       "coverage": 100
     },
     {
+      "agent": "./developer/agent-a11y-fixer",
+      "coverage": 100
+    },
+    {
       "agent": "./developer/agent-api-monitor",
       "coverage": 100
     },
@@ -502,10 +506,6 @@
       "coverage": 100
     },
     {
-      "agent": "./developer/agent-dependency-updater",
-      "coverage": 100
-    },
-    {
       "agent": "./developer/agent-doc-generator",
       "coverage": 100
     },
@@ -514,11 +514,11 @@
       "coverage": 100
     },
     {
-      "agent": "./developer/agent-license-auditor",
+      "agent": "./developer/agent-migration-checker",
       "coverage": 100
     },
     {
-      "agent": "./developer/agent-migration-checker",
+      "agent": "./developer/agent-pr-review-assistant",
       "coverage": 100
     },
     {
@@ -940,6 +940,74 @@
     {
       "agent": "./security-privacy/security-audit-agent",
       "coverage": 100
+    },
+    {
+      "agent": "./developer/agent-pr-risk-scorer",
+      "coverage": 84
+    },
+    {
+      "agent": "./developer/agent-api-schema-migrator",
+      "coverage": 83
+    },
+    {
+      "agent": "./developer/agent-mcp-server-builder",
+      "coverage": 83
+    },
+    {
+      "agent": "./developer/agent-sql-query-optimizer",
+      "coverage": 83
+    },
+    {
+      "agent": "./developer/agent-dead-code-finder",
+      "coverage": 82
+    },
+    {
+      "agent": "./developer/agent-dependency-advisor",
+      "coverage": 82
+    },
+    {
+      "agent": "./developer/agent-incident-summarizer",
+      "coverage": 82
+    },
+    {
+      "agent": "./developer/agent-readme-grader",
+      "coverage": 82
+    },
+    {
+      "agent": "./developer/agent-docker-slimmer",
+      "coverage": 81
+    },
+    {
+      "agent": "./developer/agent-test-case-generator",
+      "coverage": 81
+    },
+    {
+      "agent": "./developer/agent-dependency-updater",
+      "coverage": 80
+    },
+    {
+      "agent": "./developer/agent-env-file-auditor",
+      "coverage": 78
+    },
+    {
+      "agent": "./developer/agent-changelog-drafter",
+      "coverage": 75
+    },
+    {
+      "agent": "./developer/agent-license-auditor",
+      "coverage": 73
+    },
+    {
+      "agent": "./developer/agent-git-conflict-resolver",
+      "coverage": 72
+    },
+    {
+      "agent": "./developer/agent-codebase-onboarder",
+      "coverage": 71
+    },
+    {
+      "agent": "./developer/agent-license-scanner",
+      "coverage": 57
     }
   ]
 }
