@@ -1,7 +1,7 @@
 import os
 from bs4 import BeautifulSoup
-from langchain.chat_models import ChatOpenAI
-from langchain.prompts import ChatPromptTemplate
+from langchain_community.chat_models import ChatOpenAI
+from langchain_core.prompts import ChatPromptTemplate
 from agent.utils import parse_html
 
 class A11yFixer:
@@ -26,7 +26,7 @@ class A11yFixer:
         import json
         import re
         content = response.content
-        match = re.search(r'\\{.*\\}', content, re.DOTALL)
+        match = re.search(r'\{.*\}', content, re.DOTALL)
         if match:
             try:
                 return json.loads(match.group(0))
@@ -46,7 +46,7 @@ class A11yFixer:
                     "type": "Missing Alt Text",
                     "element": str(img),
                     "description": "Image is missing 'alt' attribute.",
-                    "recommendation": "Add a descriptive alt attribute or alt=\\"\\" for decorative images."
+                    "recommendation": 'Add a descriptive alt attribute or alt="" for decorative images.'
                 })
         
         # 2. Form labels

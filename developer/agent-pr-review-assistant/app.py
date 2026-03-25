@@ -3,6 +3,8 @@
 Paste a GitHub PR URL to get a structured code review with
 severity badges and actionable suggestions.
 """
+from __future__ import annotations
+
 
 import re
 import streamlit as st
@@ -200,14 +202,16 @@ with st.sidebar:
         "GitHub Token (optional)",
         type="password",
         help="Required for private repos or to raise API rate limits.",
+        key="github_token"
     )
 
 pr_url = st.text_input(
     "GitHub PR URL",
     placeholder="https://github.com/owner/repo/pull/123",
+    key="pr_url"
 )
 
-if st.button("🚀 Run Review", type="primary", use_container_width=True):
+if st.button("🚀 Run Review", type="primary", use_container_width=True, key="run_btn"):
     if not pr_url:
         st.error("Please enter a PR URL.")
     else:

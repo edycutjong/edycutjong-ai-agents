@@ -132,3 +132,86 @@ class TestFetch:
         fetch_pr_info("o", "r", 1, token="ghp_test")
         call_args = mock_get.call_args
         assert "Authorization" in call_args.kwargs.get("headers", call_args[1].get("headers", {}))
+
+    @patch("app.requests.get")
+    def test_fetch_pr_files_with_token(self, mock_get):
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = []
+        mock_resp.raise_for_status = MagicMock()
+        mock_get.return_value = mock_resp
+
+        fetch_pr_files("o", "r", 1, token="ghp_test")
+        call_args = mock_get.call_args
+        assert "Authorization" in call_args.kwargs.get("headers", call_args[1].get("headers", {}))
+
+from app import _badge
+class TestBadge:
+    def test_badge(self):
+        assert 'class="badge-info"' in _badge("info", "test")
+
+from streamlit.testing.v1 import AppTest
+
+class TestUI:
+    def test_empty_pr_url(self):
+        at = AppTest.from_file("app.py").run()
+        at.text_input(key="pr_url").set_value("")
+        at.button(key="run_btn").click().run()
+        assert "Please enter a PR URL." in at.error[0].value
+
+    def test_invalid_pr_url(self):
+        at = AppTest.from_file("app.py").run()
+        at.text_input(key="pr_url").set_value("invalid url")
+        at.button(key="run_btn").click().run()
+        assert "Invalid GitHub PR URL" in at.error[0].value
+
+    @patch("app.requests.get")
+    def test_api_error(self, mock_get):
+        import requests
+        mock_resp = MagicMock()
+        mock_resp.status_code = 404
+        mock_resp.reason = "Not Found"
+        mock_err = requests.HTTPError(response=mock_resp)
+        mock_get.side_effect = mock_err
+
+        at = AppTest.from_file("app.py").run()
+        at.text_input(key="pr_url").set_value("https://github.com/abc/def/pull/1")
+        at.button(key="run_btn").click().run()
+        assert "GitHub API error: 404" in at.error[0].value
+
+    @patch("app.requests.get")
+    def test_no_findings(self, mock_get):
+        mock_resp1 = MagicMock()
+        mock_resp1.json.return_value = {"number": 1, "title": "Test PR", "user": {"login": "dev"}}
+        mock_resp1.raise_for_status = MagicMock()
+        
+        mock_resp2 = MagicMock()
+        mock_resp2.json.return_value = [{"filename": "test_main.py", "patch": "+x = 1", "additions": 1}]
+        mock_resp2.raise_for_status = MagicMock()
+        
+        mock_get.side_effect = [mock_resp1, mock_resp2]
+        
+        at = AppTest.from_file("app.py").run()
+        at.text_input(key="pr_url").set_value("https://github.com/abc/def/pull/1")
+        at.button(key="run_btn").click().run()
+        assert "✅ No issues found" in at.success[0].value
+
+    @patch("app.requests.get")
+    def test_with_findings(self, mock_get):
+        mock_resp1 = MagicMock()
+        mock_resp1.json.return_value = {"number": 1, "title": "Test PR", "user": {"login": "dev"}}
+        mock_resp1.raise_for_status = MagicMock()
+        
+        mock_resp2 = MagicMock()
+        mock_resp2.json.return_value = [{"filename": "main.py", "patch": "+password = 'abc'", "additions": 1}]
+        mock_resp2.raise_for_status = MagicMock()
+        
+        mock_get.side_effect = [mock_resp1, mock_resp2]
+        
+        at = AppTest.from_file("app.py").run()
+        at.text_input(key="github_token").set_value("ghp_test")
+        at.text_input(key="pr_url").set_value("https://github.com/abc/def/pull/1")
+        at.button(key="run_btn").click().run()
+        
+        # Check that markdown renders the badge
+        # In AppTest, markdown elements are accessible
+        assert any("Possible hardcoded password" in md.value for md in at.markdown)

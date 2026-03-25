@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A11y Audit Report</title>
+    <style>
+        body {
+            background-color: #0A1022;
+            color: #E2E8F0;
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            color: #3B82F6;
+            margin-top: 0;
+        }
+        .issue {
+            background-color: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid #F59E0B;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .issue-title {
+            color: #F59E0B;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        code {
+            background-color: rgba(0,0,0,0.5);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            color: #60A5FA;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Accessibility Audit Report</h1>
+        <p>Found <strong>1</strong> potential issues.</p>
+        <div class="issues-list">
+
+            <div class="issue">
+                <div class="issue-title">Missing Skip Link</div>
+                <div class="issue-desc">No skip navigation link found.</div>
+                <div><code><body></code></div>
+                <div><strong>Recommendation:</strong> Add a hidden-by-default link at the top of the body that links to the main content area (e.g., <a href=\</div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
