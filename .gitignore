@@ -13,6 +13,10 @@ build/
 .venv/
 venv/
 
+# Node
+node_modules/
+package-lock.json
+
 # Logs & outputs
 logs/
 reports/
@@ -21,3 +25,14 @@ workspace/
 *.log
 *.db
 .coverage
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
