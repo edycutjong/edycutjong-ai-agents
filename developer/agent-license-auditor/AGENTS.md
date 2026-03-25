@@ -1,27 +1,25 @@
 # License Auditor Agent
 
 ## Overview
-Agent that audits all project dependencies for license compliance, flags incompatible licenses, and generates a license report.
+Agent that audits all Python project dependencies for license compliance, flags incompatible licenses, and generates a license report.
 
 ## Tech Stack
-- **Stack:** Node.js, TypeScript
+- **Stack:** Python
 
 ## Features
-- Scan all npm dependencies recursively
-- Identify license type per package
+- Scan all installed Python packages
+- Identify license type per package via importlib.metadata
 - Flag copyleft licenses (GPL, AGPL)
-- Detect missing license files
+- Detect missing license metadata
 - Check license compatibility
 - Generate THIRD_PARTY_LICENSES file
-- SPDX identifier mapping
 - Allowlist/blocklist configuration
 - Report in Markdown/JSON/CSV
-- CI pipeline integration
+- CI pipeline integration (--fail-on-blocked)
 
 ## Commands
-- Dev: `npm run dev`
-- Build: `npm run build`
-- Test: `npm test`
+- Run: `python main.py --dir <project_dir>`
+- Test: `python -m pytest tests/ -v`
 
 ## Design Guidelines
 - **Theme:** Dark mode
@@ -32,3 +30,4 @@ Agent that audits all project dependencies for license compliance, flags incompa
 ## Requirements
 - No external API keys required for core features
 - Works standalone and self-contained
+- Python 3.9+
