@@ -13006,5 +13006,1255 @@
       "name": "Unit Test Generator",
       "description": "Unit test writer — analyzes function signatures and generates tests."
     }
+  },
+  "finance-crypto/token-price-tracker": {
+    "en": {
+      "name": "Token Price Tracker",
+      "description": "Real-time crypto price monitor with alerts"
+    },
+    "id": {
+      "name": "Pelacak Harga Token",
+      "description": "Monitor harga kripto real-time dengan peringatan"
+    },
+    "zh": {
+      "name": "代币价格追踪器",
+      "description": "实时加密货币价格监控与提醒"
+    },
+    "es": {
+      "name": "Rastreador de Precios de Tokens",
+      "description": "Monitor de precios cripto en tiempo real con alertas"
+    },
+    "pt": {
+      "name": "Rastreador de Preços de Tokens",
+      "description": "Monitor de preços cripto em tempo real com alertas"
+    },
+    "ja": {
+      "name": "トークン価格トラッカー",
+      "description": "リアルタイム暗号通貨価格モニター（アラート付き）"
+    },
+    "ko": {
+      "name": "토큰 가격 추적기",
+      "description": "실시간 암호화폐 가격 모니터(알림 포함)"
+    },
+    "de": {
+      "name": "Token-Preis-Tracker",
+      "description": "Echtzeit-Krypto-Preismonitor mit Warnungen"
+    },
+    "fr": {
+      "name": "Traqueur de Prix de Tokens",
+      "description": "Moniteur de prix crypto en temps réel avec alertes"
+    },
+    "ru": {
+      "name": "Трекер цен токенов",
+      "description": "Монитор цен криптовалют в реальном времени с оповещениями"
+    },
+    "ar": {
+      "name": "متتبع أسعار العملات",
+      "description": "مراقب أسعار العملات المشفرة في الوقت الفعلي مع تنبيهات"
+    },
+    "hi": {
+      "name": "टोकन मूल्य ट्रैकर",
+      "description": "अलर्ट के साथ रियल-टाइम क्रिप्टो मूल्य मॉनिटर"
+    }
+  },
+  "finance-crypto/wallet-balance-checker": {
+    "en": {
+      "name": "Wallet Balance Checker",
+      "description": "Multi-chain wallet portfolio viewer"
+    },
+    "id": {
+      "name": "Pemeriksa Saldo Dompet",
+      "description": "Penampil portofolio dompet multi-rantai"
+    },
+    "zh": {
+      "name": "钱包余额检查器",
+      "description": "多链钱包投资组合查看器"
+    },
+    "es": {
+      "name": "Verificador de Saldo de Cartera",
+      "description": "Visor de portafolio de cartera multi-cadena"
+    },
+    "pt": {
+      "name": "Verificador de Saldo de Carteira",
+      "description": "Visualizador de portfólio de carteira multi-cadeia"
+    },
+    "ja": {
+      "name": "ウォレット残高チェッカー",
+      "description": "マルチチェーンウォレットポートフォリオビューア"
+    },
+    "ko": {
+      "name": "지갑 잔액 확인기",
+      "description": "멀티체인 지갑 포트폴리오 뷰어"
+    },
+    "de": {
+      "name": "Wallet-Saldo-Prüfer",
+      "description": "Multi-Chain-Wallet-Portfolio-Viewer"
+    },
+    "fr": {
+      "name": "Vérificateur de Solde de Portefeuille",
+      "description": "Visualiseur de portefeuille multi-chaîne"
+    },
+    "ru": {
+      "name": "Проверка баланса кошелька",
+      "description": "Мультичейн просмотрщик портфеля кошелька"
+    },
+    "ar": {
+      "name": "فاحص رصيد المحفظة",
+      "description": "عارض محفظة متعدد السلاسل"
+    },
+    "hi": {
+      "name": "वॉलेट बैलेंस चेकर",
+      "description": "मल्टी-चेन वॉलेट पोर्टफोलियो व्यूअर"
+    }
+  },
+  "finance-crypto/gas-fee-estimator": {
+    "en": {
+      "name": "Gas Fee Estimator",
+      "description": "Gas fee optimization advisor"
+    },
+    "id": {
+      "name": "Estimator Biaya Gas",
+      "description": "Penasihat optimalisasi biaya gas"
+    },
+    "zh": {
+      "name": "Gas费用估算器",
+      "description": "Gas费用优化顾问"
+    },
+    "es": {
+      "name": "Estimador de Tarifas de Gas",
+      "description": "Asesor de optimización de tarifas de gas"
+    },
+    "pt": {
+      "name": "Estimador de Taxas de Gas",
+      "description": "Consultor de otimização de taxas de gas"
+    },
+    "ja": {
+      "name": "ガス代見積もりツール",
+      "description": "ガス代最適化アドバイザー"
+    },
+    "ko": {
+      "name": "가스비 추정기",
+      "description": "가스비 최적화 어드바이저"
+    },
+    "de": {
+      "name": "Gas-Gebühren-Schätzer",
+      "description": "Gas-Gebühren-Optimierungsberater"
+    },
+    "fr": {
+      "name": "Estimateur de Frais de Gas",
+      "description": "Conseiller d'optimisation des frais de gas"
+    },
+    "ru": {
+      "name": "Оценщик комиссий за газ",
+      "description": "Советник по оптимизации комиссий за газ"
+    },
+    "ar": {
+      "name": "مُقدّر رسوم الغاز",
+      "description": "مستشار تحسين رسوم الغاز"
+    },
+    "hi": {
+      "name": "गैस शुल्क अनुमानक",
+      "description": "गैस शुल्क अनुकूलन सलाहकार"
+    }
+  },
+  "finance-crypto/defi-yield-calculator": {
+    "en": {
+      "name": "DeFi Yield Calculator",
+      "description": "APY comparison and yield farming calculator"
+    },
+    "id": {
+      "name": "Kalkulator Hasil DeFi",
+      "description": "Perbandingan APY dan kalkulator yield farming"
+    },
+    "zh": {
+      "name": "DeFi收益计算器",
+      "description": "APY比较和收益农场计算器"
+    },
+    "es": {
+      "name": "Calculadora de Rendimiento DeFi",
+      "description": "Comparador de APY y calculadora de yield farming"
+    },
+    "pt": {
+      "name": "Calculadora de Rendimento DeFi",
+      "description": "Comparador de APY e calculadora de yield farming"
+    },
+    "ja": {
+      "name": "DeFi利回り計算機",
+      "description": "APY比較とイールドファーミング計算機"
+    },
+    "ko": {
+      "name": "DeFi 수익률 계산기",
+      "description": "APY 비교 및 이자 농업 계산기"
+    },
+    "de": {
+      "name": "DeFi-Rendite-Rechner",
+      "description": "APY-Vergleich und Yield-Farming-Rechner"
+    },
+    "fr": {
+      "name": "Calculateur de Rendement DeFi",
+      "description": "Comparateur d'APY et calculateur de yield farming"
+    },
+    "ru": {
+      "name": "Калькулятор доходности DeFi",
+      "description": "Сравнение APY и калькулятор доходного фермерства"
+    },
+    "ar": {
+      "name": "حاسبة عائد التمويل اللامركزي",
+      "description": "مقارنة العائد السنوي وحاسبة زراعة العوائد"
+    },
+    "hi": {
+      "name": "DeFi यील्ड कैलकुलेटर",
+      "description": "APY तुलना और यील्ड फार्मिंग कैलकुलेटर"
+    }
+  },
+  "communication/slack-message-summarizer": {
+    "en": {
+      "name": "Slack Message Summarizer",
+      "description": "Digests long Slack channels into concise summaries"
+    },
+    "id": {
+      "name": "Peringkas Pesan Slack",
+      "description": "Merangkum saluran Slack panjang menjadi ringkasan singkat"
+    },
+    "zh": {
+      "name": "Slack消息总结器",
+      "description": "将长Slack频道消化为简洁摘要"
+    },
+    "es": {
+      "name": "Resumidor de Mensajes de Slack",
+      "description": "Resume canales largos de Slack en resúmenes concisos"
+    },
+    "pt": {
+      "name": "Resumidor de Mensagens do Slack",
+      "description": "Resume canais longos do Slack em resumos concisos"
+    },
+    "ja": {
+      "name": "Slackメッセージ要約ツール",
+      "description": "長いSlackチャンネルを簡潔な要約にまとめます"
+    },
+    "ko": {
+      "name": "Slack 메시지 요약기",
+      "description": "긴 Slack 채널을 간결한 요약으로 정리"
+    },
+    "de": {
+      "name": "Slack-Nachrichten-Zusammenfasser",
+      "description": "Fasst lange Slack-Kanäle in kurze Zusammenfassungen zusammen"
+    },
+    "fr": {
+      "name": "Résumeur de Messages Slack",
+      "description": "Résume les longs canaux Slack en synthèses concises"
+    },
+    "ru": {
+      "name": "Суммаризатор сообщений Slack",
+      "description": "Дайджест длинных каналов Slack в краткие сводки"
+    },
+    "ar": {
+      "name": "ملخص رسائل Slack",
+      "description": "تلخيص قنوات Slack الطويلة في ملخصات موجزة"
+    },
+    "hi": {
+      "name": "Slack संदेश सारांशकर्ता",
+      "description": "लंबे Slack चैनलों को संक्षिप्त सारांश में डाइजेस्ट करता है"
+    }
+  },
+  "communication/discord-bot-builder": {
+    "en": {
+      "name": "Discord Bot Builder",
+      "description": "Generates Discord bot code from specifications"
+    },
+    "id": {
+      "name": "Pembangun Bot Discord",
+      "description": "Menghasilkan kode bot Discord dari spesifikasi"
+    },
+    "zh": {
+      "name": "Discord机器人构建器",
+      "description": "从规范生成Discord机器人代码"
+    },
+    "es": {
+      "name": "Constructor de Bots de Discord",
+      "description": "Genera código de bot de Discord a partir de especificaciones"
+    },
+    "pt": {
+      "name": "Construtor de Bots do Discord",
+      "description": "Gera código de bot Discord a partir de especificações"
+    },
+    "ja": {
+      "name": "Discord Bot ビルダー",
+      "description": "仕様からDiscordボットコードを生成"
+    },
+    "ko": {
+      "name": "Discord 봇 빌더",
+      "description": "사양에서 Discord 봇 코드를 생성"
+    },
+    "de": {
+      "name": "Discord-Bot-Builder",
+      "description": "Generiert Discord-Bot-Code aus Spezifikationen"
+    },
+    "fr": {
+      "name": "Constructeur de Bots Discord",
+      "description": "Génère du code de bot Discord à partir de spécifications"
+    },
+    "ru": {
+      "name": "Конструктор Discord-ботов",
+      "description": "Генерирует код Discord-бота из спецификаций"
+    },
+    "ar": {
+      "name": "منشئ بوتات Discord",
+      "description": "ينشئ كود بوت Discord من المواصفات"
+    },
+    "hi": {
+      "name": "Discord बॉट बिल्डर",
+      "description": "विनिर्देशों से Discord बॉट कोड जेनरेट करता है"
+    }
+  },
+  "communication/notification-router": {
+    "en": {
+      "name": "Notification Router",
+      "description": "Smart routing of alerts across channels"
+    },
+    "id": {
+      "name": "Router Notifikasi",
+      "description": "Perutean cerdas peringatan lintas saluran"
+    },
+    "zh": {
+      "name": "通知路由器",
+      "description": "跨渠道智能路由提醒"
+    },
+    "es": {
+      "name": "Enrutador de Notificaciones",
+      "description": "Enrutamiento inteligente de alertas entre canales"
+    },
+    "pt": {
+      "name": "Roteador de Notificações",
+      "description": "Roteamento inteligente de alertas entre canais"
+    },
+    "ja": {
+      "name": "通知ルーター",
+      "description": "チャンネル間のスマートアラートルーティング"
+    },
+    "ko": {
+      "name": "알림 라우터",
+      "description": "채널 간 스마트 알림 라우팅"
+    },
+    "de": {
+      "name": "Benachrichtigungs-Router",
+      "description": "Intelligentes Routing von Benachrichtigungen über Kanäle"
+    },
+    "fr": {
+      "name": "Routeur de Notifications",
+      "description": "Routage intelligent des alertes à travers les canaux"
+    },
+    "ru": {
+      "name": "Маршрутизатор уведомлений",
+      "description": "Умная маршрутизация оповещений по каналам"
+    },
+    "ar": {
+      "name": "موجّه الإشعارات",
+      "description": "توجيه ذكي للتنبيهات عبر القنوات"
+    },
+    "hi": {
+      "name": "नोटिफिकेशन राउटर",
+      "description": "चैनलों में अलर्ट की स्मार्ट रूटिंग"
+    }
+  },
+  "learning-education/code-kata-generator": {
+    "en": {
+      "name": "Code Kata Generator",
+      "description": "Programming practice problems with auto-grading"
+    },
+    "id": {
+      "name": "Generator Latihan Kode",
+      "description": "Soal latihan pemrograman dengan penilaian otomatis"
+    },
+    "zh": {
+      "name": "编程练习生成器",
+      "description": "带自动评分的编程练习题"
+    },
+    "es": {
+      "name": "Generador de Katas de Código",
+      "description": "Problemas de práctica de programación con calificación automática"
+    },
+    "pt": {
+      "name": "Gerador de Katas de Código",
+      "description": "Problemas de prática de programação com correção automática"
+    },
+    "ja": {
+      "name": "コードカタジェネレーター",
+      "description": "自動採点付きプログラミング練習問題"
+    },
+    "ko": {
+      "name": "코드 카타 생성기",
+      "description": "자동 채점 기능이 있는 프로그래밍 연습 문제"
+    },
+    "de": {
+      "name": "Code-Kata-Generator",
+      "description": "Programmierübungen mit automatischer Bewertung"
+    },
+    "fr": {
+      "name": "Générateur de Katas de Code",
+      "description": "Exercices de programmation avec correction automatique"
+    },
+    "ru": {
+      "name": "Генератор кодовых кат",
+      "description": "Практические задачи по программированию с автоматической проверкой"
+    },
+    "ar": {
+      "name": "مولد تمارين البرمجة",
+      "description": "تمارين برمجة مع تصحيح تلقائي"
+    },
+    "hi": {
+      "name": "कोड काटा जनरेटर",
+      "description": "ऑटो-ग्रेडिंग के साथ प्रोग्रामिंग अभ्यास समस्याएं"
+    }
+  },
+  "learning-education/documentation-quiz": {
+    "en": {
+      "name": "Documentation Quiz",
+      "description": "Generate quizzes from project documentation"
+    },
+    "id": {
+      "name": "Kuis Dokumentasi",
+      "description": "Membuat kuis dari dokumentasi proyek"
+    },
+    "zh": {
+      "name": "文档测验",
+      "description": "从项目文档生成测验"
+    },
+    "es": {
+      "name": "Quiz de Documentación",
+      "description": "Genera cuestionarios desde la documentación del proyecto"
+    },
+    "pt": {
+      "name": "Quiz de Documentação",
+      "description": "Gera questionários a partir da documentação do projeto"
+    },
+    "ja": {
+      "name": "ドキュメントクイズ",
+      "description": "プロジェクトドキュメントからクイズを生成"
+    },
+    "ko": {
+      "name": "문서 퀴즈",
+      "description": "프로젝트 문서에서 퀴즈를 생성"
+    },
+    "de": {
+      "name": "Dokumentations-Quiz",
+      "description": "Generiert Quizze aus der Projektdokumentation"
+    },
+    "fr": {
+      "name": "Quiz de Documentation",
+      "description": "Génère des quiz à partir de la documentation projet"
+    },
+    "ru": {
+      "name": "Тест по документации",
+      "description": "Генерирует тесты из документации проекта"
+    },
+    "ar": {
+      "name": "اختبار التوثيق",
+      "description": "إنشاء اختبارات من توثيق المشروع"
+    },
+    "hi": {
+      "name": "दस्तावेज़ीकरण क्विज़",
+      "description": "प्रोजेक्ट दस्तावेज़ीकरण से क्विज़ जेनरेट करता है"
+    }
+  },
+  "learning-education/mentor-pairing-agent": {
+    "en": {
+      "name": "Mentor Pairing Agent",
+      "description": "Matches learners with resources and learning paths"
+    },
+    "id": {
+      "name": "Agen Penjodohan Mentor",
+      "description": "Mencocokkan pelajar dengan sumber daya dan jalur pembelajaran"
+    },
+    "zh": {
+      "name": "导师配对智能体",
+      "description": "将学习者与资源和学习路径匹配"
+    },
+    "es": {
+      "name": "Agente de Emparejamiento de Mentores",
+      "description": "Conecta aprendices con recursos y rutas de aprendizaje"
+    },
+    "pt": {
+      "name": "Agente de Pareamento de Mentores",
+      "description": "Conecta aprendizes com recursos e trilhas de aprendizado"
+    },
+    "ja": {
+      "name": "メンターペアリングエージェント",
+      "description": "学習者をリソースと学習パスにマッチング"
+    },
+    "ko": {
+      "name": "멘토 매칭 에이전트",
+      "description": "학습자를 리소스 및 학습 경로와 매칭"
+    },
+    "de": {
+      "name": "Mentor-Pairing-Agent",
+      "description": "Verbindet Lernende mit Ressourcen und Lernpfaden"
+    },
+    "fr": {
+      "name": "Agent d'Appariement de Mentors",
+      "description": "Associe les apprenants avec des ressources et des parcours"
+    },
+    "ru": {
+      "name": "Агент подбора менторов",
+      "description": "Подбирает учащимся ресурсы и траектории обучения"
+    },
+    "ar": {
+      "name": "وكيل مطابقة الموجهين",
+      "description": "يطابق المتعلمين مع الموارد ومسارات التعلم"
+    },
+    "hi": {
+      "name": "मेंटर पेयरिंग एजेंट",
+      "description": "शिक्षार्थियों को संसाधनों और सीखने के मार्गों से मिलाता है"
+    }
+  },
+  "learning-education/skill-gap-analyzer": {
+    "en": {
+      "name": "Skill Gap Analyzer",
+      "description": "Analyzes skills vs job requirements"
+    },
+    "id": {
+      "name": "Penganalisis Kesenjangan Keterampilan",
+      "description": "Menganalisis keterampilan vs persyaratan pekerjaan"
+    },
+    "zh": {
+      "name": "技能差距分析器",
+      "description": "分析技能与职位要求的差距"
+    },
+    "es": {
+      "name": "Analizador de Brechas de Habilidades",
+      "description": "Analiza habilidades vs requisitos laborales"
+    },
+    "pt": {
+      "name": "Analisador de Lacunas de Habilidades",
+      "description": "Analisa habilidades vs requisitos de vagas"
+    },
+    "ja": {
+      "name": "スキルギャップアナライザー",
+      "description": "スキルと求人要件の差異を分析"
+    },
+    "ko": {
+      "name": "스킬 갭 분석기",
+      "description": "스킬과 채용 요건 비교 분석"
+    },
+    "de": {
+      "name": "Kompetenzlücken-Analysator",
+      "description": "Analysiert Fähigkeiten vs. Stellenanforderungen"
+    },
+    "fr": {
+      "name": "Analyseur d'Écarts de Compétences",
+      "description": "Analyse les compétences vs les exigences du poste"
+    },
+    "ru": {
+      "name": "Анализатор пробелов в навыках",
+      "description": "Анализирует навыки vs требования вакансий"
+    },
+    "ar": {
+      "name": "محلل فجوات المهارات",
+      "description": "يحلل المهارات مقابل متطلبات الوظيفة"
+    },
+    "hi": {
+      "name": "स्किल गैप एनालाइज़र",
+      "description": "कौशल बनाम नौकरी आवश्यकताओं का विश्लेषण करता है"
+    }
+  },
+  "personal-lifestyle/budget-tracker-agent": {
+    "en": {
+      "name": "Budget Tracker Agent",
+      "description": "Monthly expense analysis and savings tips"
+    },
+    "id": {
+      "name": "Agen Pelacak Anggaran",
+      "description": "Analisis pengeluaran bulanan dan tips menabung"
+    },
+    "zh": {
+      "name": "预算追踪智能体",
+      "description": "月度支出分析和储蓄建议"
+    },
+    "es": {
+      "name": "Agente Rastreador de Presupuesto",
+      "description": "Análisis de gastos mensuales y consejos de ahorro"
+    },
+    "pt": {
+      "name": "Agente Rastreador de Orçamento",
+      "description": "Análise de despesas mensais e dicas de economia"
+    },
+    "ja": {
+      "name": "予算トラッカーエージェント",
+      "description": "月次支出分析と節約のヒント"
+    },
+    "ko": {
+      "name": "예산 추적 에이전트",
+      "description": "월간 지출 분석 및 저축 팁"
+    },
+    "de": {
+      "name": "Budget-Tracker-Agent",
+      "description": "Monatliche Ausgabenanalyse und Spartipps"
+    },
+    "fr": {
+      "name": "Agent Suivi de Budget",
+      "description": "Analyse des dépenses mensuelles et conseils d'épargne"
+    },
+    "ru": {
+      "name": "Агент отслеживания бюджета",
+      "description": "Анализ ежемесячных расходов и советы по экономии"
+    },
+    "ar": {
+      "name": "وكيل تتبع الميزانية",
+      "description": "تحليل النفقات الشهرية ونصائح التوفير"
+    },
+    "hi": {
+      "name": "बजट ट्रैकर एजेंट",
+      "description": "मासिक व्यय विश्लेषण और बचत सुझाव"
+    }
+  },
+  "personal-lifestyle/book-recommendation-agent": {
+    "en": {
+      "name": "Book Recommendation Agent",
+      "description": "Personalized reading lists based on interests"
+    },
+    "id": {
+      "name": "Agen Rekomendasi Buku",
+      "description": "Daftar bacaan personal berdasarkan minat"
+    },
+    "zh": {
+      "name": "图书推荐智能体",
+      "description": "基于兴趣的个性化阅读列表"
+    },
+    "es": {
+      "name": "Agente de Recomendación de Libros",
+      "description": "Listas de lectura personalizadas basadas en intereses"
+    },
+    "pt": {
+      "name": "Agente de Recomendação de Livros",
+      "description": "Listas de leitura personalizadas com base em interesses"
+    },
+    "ja": {
+      "name": "書籍推薦エージェント",
+      "description": "興味に基づいたパーソナライズされた読書リスト"
+    },
+    "ko": {
+      "name": "도서 추천 에이전트",
+      "description": "관심사에 기반한 맞춤형 독서 목록"
+    },
+    "de": {
+      "name": "Buch-Empfehlungs-Agent",
+      "description": "Personalisierte Leselisten basierend auf Interessen"
+    },
+    "fr": {
+      "name": "Agent de Recommandation de Livres",
+      "description": "Listes de lecture personnalisées selon les intérêts"
+    },
+    "ru": {
+      "name": "Агент рекомендации книг",
+      "description": "Персонализированные списки чтения на основе интересов"
+    },
+    "ar": {
+      "name": "وكيل توصيات الكتب",
+      "description": "قوائم قراءة مخصصة بناءً على الاهتمامات"
+    },
+    "hi": {
+      "name": "पुस्तक सिफारिश एजेंट",
+      "description": "रुचियों के आधार पर व्यक्तिगत पठन सूचियाँ"
+    }
+  },
+  "personal-lifestyle/meditation-guide": {
+    "en": {
+      "name": "Meditation Guide",
+      "description": "Personalized guided meditation scripts"
+    },
+    "id": {
+      "name": "Panduan Meditasi",
+      "description": "Skrip meditasi terpandu yang dipersonalisasi"
+    },
+    "zh": {
+      "name": "冥想指南",
+      "description": "个性化冥想引导脚本"
+    },
+    "es": {
+      "name": "Guía de Meditación",
+      "description": "Scripts de meditación guiada personalizados"
+    },
+    "pt": {
+      "name": "Guia de Meditação",
+      "description": "Scripts de meditação guiada personalizados"
+    },
+    "ja": {
+      "name": "瞑想ガイド",
+      "description": "パーソナライズされた瞑想ガイドスクリプト"
+    },
+    "ko": {
+      "name": "명상 가이드",
+      "description": "맞춤형 명상 안내 스크립트"
+    },
+    "de": {
+      "name": "Meditations-Guide",
+      "description": "Personalisierte geführte Meditationsskripte"
+    },
+    "fr": {
+      "name": "Guide de Méditation",
+      "description": "Scripts de méditation guidée personnalisés"
+    },
+    "ru": {
+      "name": "Гид по медитации",
+      "description": "Персонализированные скрипты медитации"
+    },
+    "ar": {
+      "name": "دليل التأمل",
+      "description": "نصوص تأمل موجهة مخصصة"
+    },
+    "hi": {
+      "name": "ध्यान गाइड",
+      "description": "व्यक्तिगत निर्देशित ध्यान स्क्रिप्ट"
+    }
+  },
+  "personal-lifestyle/meal-prep-planner": {
+    "en": {
+      "name": "Meal Prep Planner",
+      "description": "Weekly meal plans with grocery lists"
+    },
+    "id": {
+      "name": "Perencana Meal Prep",
+      "description": "Rencana makan mingguan dengan daftar belanja"
+    },
+    "zh": {
+      "name": "备餐计划器",
+      "description": "每周餐食计划和购物清单"
+    },
+    "es": {
+      "name": "Planificador de Preparación de Comidas",
+      "description": "Planes de comidas semanales con listas de compras"
+    },
+    "pt": {
+      "name": "Planejador de Preparação de Refeições",
+      "description": "Planos de refeições semanais com listas de compras"
+    },
+    "ja": {
+      "name": "ミールプレッププランナー",
+      "description": "食材リスト付き週間食事プラン"
+    },
+    "ko": {
+      "name": "식사 준비 플래너",
+      "description": "식료품 목록이 포함된 주간 식단 계획"
+    },
+    "de": {
+      "name": "Meal-Prep-Planer",
+      "description": "Wöchentliche Mahlzeitenpläne mit Einkaufslisten"
+    },
+    "fr": {
+      "name": "Planificateur de Préparation de Repas",
+      "description": "Plans de repas hebdomadaires avec listes de courses"
+    },
+    "ru": {
+      "name": "Планировщик подготовки еды",
+      "description": "Еженедельные планы питания со списками покупок"
+    },
+    "ar": {
+      "name": "مخطط تحضير الوجبات",
+      "description": "خطط وجبات أسبوعية مع قوائم التسوق"
+    },
+    "hi": {
+      "name": "मील प्रेप प्लानर",
+      "description": "किराने की सूची के साथ साप्ताहिक भोजन योजनाएं"
+    }
+  },
+  "productivity/pomodoro-coach": {
+    "en": {
+      "name": "Pomodoro Coach",
+      "description": "Focus session timer with AI productivity tips"
+    },
+    "id": {
+      "name": "Pelatih Pomodoro",
+      "description": "Timer sesi fokus dengan tips produktivitas AI"
+    },
+    "zh": {
+      "name": "番茄钟教练",
+      "description": "AI生产力提示的专注会话计时器"
+    },
+    "es": {
+      "name": "Entrenador Pomodoro",
+      "description": "Temporizador de sesiones de enfoque con consejos de productividad IA"
+    },
+    "pt": {
+      "name": "Coach Pomodoro",
+      "description": "Temporizador de sessões de foco com dicas de produtividade IA"
+    },
+    "ja": {
+      "name": "ポモドーロコーチ",
+      "description": "AI生産性ヒント付きフォーカスセッションタイマー"
+    },
+    "ko": {
+      "name": "포모도로 코치",
+      "description": "AI 생산성 팁이 포함된 집중 세션 타이머"
+    },
+    "de": {
+      "name": "Pomodoro-Coach",
+      "description": "Fokus-Sitzungs-Timer mit KI-Produktivitätstipps"
+    },
+    "fr": {
+      "name": "Coach Pomodoro",
+      "description": "Minuteur de sessions de concentration avec conseils IA"
+    },
+    "ru": {
+      "name": "Тренер Помодоро",
+      "description": "Таймер сессий фокусировки с ИИ-советами по продуктивности"
+    },
+    "ar": {
+      "name": "مدرب بومودورو",
+      "description": "مؤقت جلسات التركيز مع نصائح إنتاجية بالذكاء الاصطناعي"
+    },
+    "hi": {
+      "name": "पोमोडोरो कोच",
+      "description": "AI उत्पादकता सुझावों के साथ फोकस सत्र टाइमर"
+    }
+  },
+  "productivity/daily-standup-bot": {
+    "en": {
+      "name": "Daily Standup Bot",
+      "description": "Async standup collection and summarization"
+    },
+    "id": {
+      "name": "Bot Standup Harian",
+      "description": "Pengumpulan dan ringkasan standup asinkron"
+    },
+    "zh": {
+      "name": "每日站会机器人",
+      "description": "异步站会收集和汇总"
+    },
+    "es": {
+      "name": "Bot de Reunión Diaria",
+      "description": "Recopilación y resumen asíncrono de standups"
+    },
+    "pt": {
+      "name": "Bot de Standup Diário",
+      "description": "Coleta e resumo assíncrono de standups"
+    },
+    "ja": {
+      "name": "デイリースタンドアップボット",
+      "description": "非同期スタンドアップ収集と要約"
+    },
+    "ko": {
+      "name": "데일리 스탠드업 봇",
+      "description": "비동기 스탠드업 수집 및 요약"
+    },
+    "de": {
+      "name": "Daily-Standup-Bot",
+      "description": "Asynchrone Standup-Sammlung und Zusammenfassung"
+    },
+    "fr": {
+      "name": "Bot de Standup Quotidien",
+      "description": "Collecte et résumé de standups asynchrones"
+    },
+    "ru": {
+      "name": "Бот ежедневных стендапов",
+      "description": "Асинхронный сбор и обобщение стендапов"
+    },
+    "ar": {
+      "name": "بوت الاجتماع اليومي",
+      "description": "جمع وتلخيص اجتماعات الوقوف غير المتزامنة"
+    },
+    "hi": {
+      "name": "डेली स्टैंडअप बॉट",
+      "description": "एसिंक स्टैंडअप संग्रह और सारांश"
+    }
+  },
+  "productivity/goal-tracker-agent": {
+    "en": {
+      "name": "Goal Tracker Agent",
+      "description": "OKR and goal progress tracking"
+    },
+    "id": {
+      "name": "Agen Pelacak Tujuan",
+      "description": "Pelacakan progres OKR dan tujuan"
+    },
+    "zh": {
+      "name": "目标追踪智能体",
+      "description": "OKR和目标进度追踪"
+    },
+    "es": {
+      "name": "Agente Rastreador de Metas",
+      "description": "Seguimiento de progreso de OKRs y metas"
+    },
+    "pt": {
+      "name": "Agente Rastreador de Metas",
+      "description": "Rastreamento de progresso de OKRs e metas"
+    },
+    "ja": {
+      "name": "目標トラッカーエージェント",
+      "description": "OKRとゴール進捗トラッキング"
+    },
+    "ko": {
+      "name": "목표 추적 에이전트",
+      "description": "OKR 및 목표 진행 상황 추적"
+    },
+    "de": {
+      "name": "Ziel-Tracker-Agent",
+      "description": "OKR- und Zielfortschritts-Tracking"
+    },
+    "fr": {
+      "name": "Agent Suivi d'Objectifs",
+      "description": "Suivi de la progression des OKR et des objectifs"
+    },
+    "ru": {
+      "name": "Агент отслеживания целей",
+      "description": "Отслеживание OKR и прогресса целей"
+    },
+    "ar": {
+      "name": "وكيل تتبع الأهداف",
+      "description": "تتبع تقدم الأهداف وOKR"
+    },
+    "hi": {
+      "name": "गोल ट्रैकर एजेंट",
+      "description": "OKR और लक्ष्य प्रगति ट्रैकिंग"
+    }
+  },
+  "productivity/time-audit-agent": {
+    "en": {
+      "name": "Time Audit Agent",
+      "description": "Calendar analysis for time optimization"
+    },
+    "id": {
+      "name": "Agen Audit Waktu",
+      "description": "Analisis kalender untuk optimisasi waktu"
+    },
+    "zh": {
+      "name": "时间审计智能体",
+      "description": "日历分析用于时间优化"
+    },
+    "es": {
+      "name": "Agente de Auditoría de Tiempo",
+      "description": "Análisis de calendario para optimización del tiempo"
+    },
+    "pt": {
+      "name": "Agente de Auditoria de Tempo",
+      "description": "Análise de calendário para otimização do tempo"
+    },
+    "ja": {
+      "name": "時間監査エージェント",
+      "description": "時間最適化のためのカレンダー分析"
+    },
+    "ko": {
+      "name": "시간 감사 에이전트",
+      "description": "시간 최적화를 위한 캘린더 분석"
+    },
+    "de": {
+      "name": "Zeit-Audit-Agent",
+      "description": "Kalenderanalyse zur Zeitoptimierung"
+    },
+    "fr": {
+      "name": "Agent d'Audit du Temps",
+      "description": "Analyse de calendrier pour l'optimisation du temps"
+    },
+    "ru": {
+      "name": "Агент аудита времени",
+      "description": "Анализ календаря для оптимизации времени"
+    },
+    "ar": {
+      "name": "وكيل تدقيق الوقت",
+      "description": "تحليل التقويم لتحسين الوقت"
+    },
+    "hi": {
+      "name": "टाइम ऑडिट एजेंट",
+      "description": "समय अनुकूलन के लिए कैलेंडर विश्लेषण"
+    }
+  },
+  "ai-ml-ops/model-drift-detector": {
+    "en": {
+      "name": "Model Drift Detector",
+      "description": "ML model performance monitoring for data and concept drift"
+    },
+    "id": {
+      "name": "Detektor Pergeseran Model",
+      "description": "Pemantauan performa model ML untuk pergeseran data dan konsep"
+    },
+    "zh": {
+      "name": "模型漂移检测器",
+      "description": "ML模型性能监控，检测数据和概念漂移"
+    },
+    "es": {
+      "name": "Detector de Deriva de Modelo",
+      "description": "Monitoreo de rendimiento de modelos ML para deriva de datos y conceptos"
+    },
+    "pt": {
+      "name": "Detector de Drift de Modelo",
+      "description": "Monitoramento de desempenho de modelos ML para drift de dados e conceitos"
+    },
+    "ja": {
+      "name": "モデルドリフト検出器",
+      "description": "データおよびコンセプトドリフトのためのMLモデルパフォーマンス監視"
+    },
+    "ko": {
+      "name": "모델 드리프트 탐지기",
+      "description": "데이터 및 개념 드리프트를 위한 ML 모델 성능 모니터링"
+    },
+    "de": {
+      "name": "Modell-Drift-Detektor",
+      "description": "ML-Modell-Leistungsüberwachung für Daten- und Konzeptdrift"
+    },
+    "fr": {
+      "name": "Détecteur de Dérive de Modèle",
+      "description": "Surveillance des performances de modèles ML pour la dérive des données et concepts"
+    },
+    "ru": {
+      "name": "Детектор дрифта модели",
+      "description": "Мониторинг производительности ML-моделей на предмет дрифта данных и концепций"
+    },
+    "ar": {
+      "name": "كاشف انحراف النموذج",
+      "description": "مراقبة أداء نماذج التعلم الآلي لكشف انحراف البيانات والمفاهيم"
+    },
+    "hi": {
+      "name": "मॉडल ड्रिफ्ट डिटेक्टर",
+      "description": "डेटा और कॉन्सेप्ट ड्रिफ्ट के लिए ML मॉडल प्रदर्शन निगरानी"
+    }
+  },
+  "ai-ml-ops/dataset-bias-auditor": {
+    "en": {
+      "name": "Dataset Bias Auditor",
+      "description": "Training data bias detection and fairness analysis"
+    },
+    "id": {
+      "name": "Auditor Bias Dataset",
+      "description": "Deteksi bias data pelatihan dan analisis keadilan"
+    },
+    "zh": {
+      "name": "数据集偏见审计器",
+      "description": "训练数据偏见检测和公平性分析"
+    },
+    "es": {
+      "name": "Auditor de Sesgo de Conjunto de Datos",
+      "description": "Detección de sesgo en datos de entrenamiento y análisis de equidad"
+    },
+    "pt": {
+      "name": "Auditor de Viés de Conjunto de Dados",
+      "description": "Detecção de viés em dados de treinamento e análise de equidade"
+    },
+    "ja": {
+      "name": "データセットバイアス監査ツール",
+      "description": "トレーニングデータのバイアス検出と公平性分析"
+    },
+    "ko": {
+      "name": "데이터셋 편향 감사기",
+      "description": "학습 데이터 편향 감지 및 공정성 분석"
+    },
+    "de": {
+      "name": "Datensatz-Bias-Auditor",
+      "description": "Erkennung von Verzerrungen in Trainingsdaten und Fairness-Analyse"
+    },
+    "fr": {
+      "name": "Auditeur de Biais de Jeu de Données",
+      "description": "Détection de biais dans les données d'entraînement et analyse d'équité"
+    },
+    "ru": {
+      "name": "Аудитор предвзятости датасетов",
+      "description": "Обнаружение предвзятости в обучающих данных и анализ справедливости"
+    },
+    "ar": {
+      "name": "مدقق تحيز مجموعة البيانات",
+      "description": "كشف التحيز في بيانات التدريب وتحليل العدالة"
+    },
+    "hi": {
+      "name": "डेटासेट बायस ऑडिटर",
+      "description": "प्रशिक्षण डेटा बायस पहचान और निष्पक्षता विश्लेषण"
+    }
+  },
+  "ai-ml-ops/llm-prompt-tester": {
+    "en": {
+      "name": "LLM Prompt Tester",
+      "description": "Systematic prompt A/B testing and optimization"
+    },
+    "id": {
+      "name": "Penguji Prompt LLM",
+      "description": "Pengujian A/B prompt secara sistematis dan optimisasi"
+    },
+    "zh": {
+      "name": "LLM提示词测试器",
+      "description": "系统化的提示词A/B测试和优化"
+    },
+    "es": {
+      "name": "Probador de Prompts LLM",
+      "description": "Pruebas A/B sistemáticas de prompts y optimización"
+    },
+    "pt": {
+      "name": "Testador de Prompts LLM",
+      "description": "Testes A/B sistemáticos de prompts e otimização"
+    },
+    "ja": {
+      "name": "LLMプロンプトテスター",
+      "description": "体系的なプロンプトA/Bテストと最適化"
+    },
+    "ko": {
+      "name": "LLM 프롬프트 테스터",
+      "description": "체계적인 프롬프트 A/B 테스트 및 최적화"
+    },
+    "de": {
+      "name": "LLM-Prompt-Tester",
+      "description": "Systematisches Prompt-A/B-Testing und Optimierung"
+    },
+    "fr": {
+      "name": "Testeur de Prompts LLM",
+      "description": "Tests A/B systématiques de prompts et optimisation"
+    },
+    "ru": {
+      "name": "Тестер промптов LLM",
+      "description": "Систематическое A/B тестирование промптов и оптимизация"
+    },
+    "ar": {
+      "name": "مختبر مطالبات LLM",
+      "description": "اختبار A/B منهجي للمطالبات وتحسينها"
+    },
+    "hi": {
+      "name": "LLM प्रॉम्प्ट टेस्टर",
+      "description": "व्यवस्थित प्रॉम्प्ट A/B परीक्षण और अनुकूलन"
+    }
+  },
+  "security-privacy/api-key-rotator": {
+    "en": {
+      "name": "API Key Rotator",
+      "description": "Automated secret rotation and key management"
+    },
+    "id": {
+      "name": "Pemutar Kunci API",
+      "description": "Rotasi rahasia otomatis dan manajemen kunci"
+    },
+    "zh": {
+      "name": "API密钥轮换器",
+      "description": "自动化密钥轮换和管理"
+    },
+    "es": {
+      "name": "Rotador de Claves API",
+      "description": "Rotación automática de secretos y gestión de claves"
+    },
+    "pt": {
+      "name": "Rotador de Chaves API",
+      "description": "Rotação automatizada de segredos e gerenciamento de chaves"
+    },
+    "ja": {
+      "name": "APIキーローテーター",
+      "description": "自動化されたシークレットローテーションとキー管理"
+    },
+    "ko": {
+      "name": "API 키 로테이터",
+      "description": "자동화된 시크릿 로테이션 및 키 관리"
+    },
+    "de": {
+      "name": "API-Schlüssel-Rotator",
+      "description": "Automatisierte Schlüsselrotation und -verwaltung"
+    },
+    "fr": {
+      "name": "Rotateur de Clés API",
+      "description": "Rotation automatisée des secrets et gestion des clés"
+    },
+    "ru": {
+      "name": "Ротатор API-ключей",
+      "description": "Автоматическая ротация секретов и управление ключами"
+    },
+    "ar": {
+      "name": "مُبدّل مفاتيح API",
+      "description": "تدوير الأسرار التلقائي وإدارة المفاتيح"
+    },
+    "hi": {
+      "name": "API कुंजी रोटेटर",
+      "description": "स्वचालित सीक्रेट रोटेशन और कुंजी प्रबंधन"
+    }
+  },
+  "security-privacy/gdpr-compliance-checker": {
+    "en": {
+      "name": "GDPR Compliance Checker",
+      "description": "Privacy compliance scanning for PII and consent"
+    },
+    "id": {
+      "name": "Pemeriksa Kepatuhan GDPR",
+      "description": "Pemindaian kepatuhan privasi untuk PII dan persetujuan"
+    },
+    "zh": {
+      "name": "GDPR合规检查器",
+      "description": "PII和同意的隐私合规扫描"
+    },
+    "es": {
+      "name": "Verificador de Cumplimiento GDPR",
+      "description": "Escaneo de cumplimiento de privacidad para PII y consentimiento"
+    },
+    "pt": {
+      "name": "Verificador de Conformidade GDPR",
+      "description": "Varredura de conformidade de privacidade para PII e consentimento"
+    },
+    "ja": {
+      "name": "GDPRコンプライアンスチェッカー",
+      "description": "PIIと同意のプライバシーコンプライアンススキャン"
+    },
+    "ko": {
+      "name": "GDPR 준수 검사기",
+      "description": "PII 및 동의에 대한 프라이버시 준수 스캔"
+    },
+    "de": {
+      "name": "GDPR-Konformitätsprüfer",
+      "description": "Datenschutz-Compliance-Scan für PII und Einwilligung"
+    },
+    "fr": {
+      "name": "Vérificateur de Conformité RGPD",
+      "description": "Analyse de conformité vie privée pour données personnelles et consentement"
+    },
+    "ru": {
+      "name": "Проверщик соответствия GDPR",
+      "description": "Сканирование соответствия конфиденциальности для PII и согласия"
+    },
+    "ar": {
+      "name": "فاحص امتثال GDPR",
+      "description": "فحص الامتثال للخصوصية للبيانات الشخصية والموافقة"
+    },
+    "hi": {
+      "name": "GDPR अनुपालन चेकर",
+      "description": "PII और सहमति के लिए गोपनीयता अनुपालन स्कैनिंग"
+    }
+  },
+  "security-privacy/container-vulnerability-scanner": {
+    "en": {
+      "name": "Container Vulnerability Scanner",
+      "description": "Docker image CVE scanning and remediation"
+    },
+    "id": {
+      "name": "Pemindai Kerentanan Kontainer",
+      "description": "Pemindaian CVE gambar Docker dan remediasi"
+    },
+    "zh": {
+      "name": "容器漏洞扫描器",
+      "description": "Docker镜像CVE扫描和修复"
+    },
+    "es": {
+      "name": "Escáner de Vulnerabilidades de Contenedores",
+      "description": "Escaneo de CVE de imágenes Docker y remediación"
+    },
+    "pt": {
+      "name": "Scanner de Vulnerabilidades de Contêineres",
+      "description": "Varredura de CVE de imagens Docker e remediação"
+    },
+    "ja": {
+      "name": "コンテナ脆弱性スキャナー",
+      "description": "DockerイメージCVEスキャンと修復"
+    },
+    "ko": {
+      "name": "컨테이너 취약점 스캐너",
+      "description": "Docker 이미지 CVE 스캔 및 수정"
+    },
+    "de": {
+      "name": "Container-Schwachstellen-Scanner",
+      "description": "Docker-Image-CVE-Scanning und Behebung"
+    },
+    "fr": {
+      "name": "Scanner de Vulnérabilités de Conteneurs",
+      "description": "Analyse CVE d'images Docker et remédiation"
+    },
+    "ru": {
+      "name": "Сканер уязвимостей контейнеров",
+      "description": "Сканирование CVE Docker-образов и исправление"
+    },
+    "ar": {
+      "name": "ماسح ثغرات الحاويات",
+      "description": "فحص CVE لصور Docker والمعالجة"
+    },
+    "hi": {
+      "name": "कंटेनर भेद्यता स्कैनर",
+      "description": "Docker इमेज CVE स्कैनिंग और सुधार"
+    }
   }
 }
