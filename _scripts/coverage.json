@@ -1103,11 +1103,11 @@
     },
     {
       "agent": "./developer/agent-a11y-fixer",
-      "coverage": 99
+      "coverage": 100
     },
     {
       "agent": "./developer/agent-readme-keeper",
-      "coverage": 88
+      "coverage": 100
     }
   ]
 }

@@ -5,7 +5,7 @@
 ## 🏗️ Spec Only (Not Built Yet)
 These agents have an `AGENTS.md` specification but are missing their main executable (`main.py`/`app.py`).
 
-- `developer/agent-a11y-fixer`
+*All agents are fully built!*
 
 ## ✅ Fully Built Agents
 These agents have implementation code. Below is their compliance with tests and translations.
@@ -145,6 +145,7 @@ These agents have implementation code. Below is their compliance with tests and 
 | `design-frontend/image-alt-text-writer` | ✅ | ✅ | 100% |
 | `design-frontend/responsive-design-tester` | ✅ | ✅ | 100% |
 | `design-frontend/ui-copy-reviewer` | ✅ | ✅ | 100% |
+| `developer/agent-a11y-fixer` | ✅ | ✅ | 100% |
 | `developer/agent-api-monitor` | ✅ | ✅ | 100% |
 | `developer/agent-api-schema-migrator` | ✅ | ✅ | 100% |
 | `developer/agent-changelog-drafter` | ✅ | ✅ | 100% |

@@ -838,6 +838,54 @@ HINTS = [
         "async function loadDashboard() {\n  const user = await getUser();\n  const orders = await getOrders(user.id);    // sequential — should be parallel!\n  const stats = await getStats(user.id);      // sequential — should be parallel!\n  return { user, orders, stats };\n}",
         "// Magic numbers everywhere\nif (status === 3) {  // what is 3?\n  if (retries < 5) {  // why 5?\n    delay(30000);  // why 30 seconds?\n  }\n}",
     ]),
+    (
+        ['ai-frameworks', 'ai-ml-ops', 'data-analytics', 'research-data'],
+        'Paste your dataset, model config, or research topic...',
+        '🧠 AI & Data',
+        [
+            'Analyze this dataset for demographic bias...',
+            'Write a benchmark suite comparing Llama 3 and GPT-4.',
+            'What is the best way to optimize a RAG pipeline?',
+            'Generate a 50-row synthetic dataset for customer churn.',
+            'Explain the tradeoff between batch size and learning rate.',
+        ]
+    ),
+    (
+        ['api-integration', 'code-generation', 'code-quality', 'developer', 'devops-infra', 'fixers', 'security-privacy', 'testing-qa', 'documentation'],
+        'Describe the code, API, or infrastructure you need...',
+        '💻 Development & APIs',
+        [
+            'Write a React component for a sortable data table.',
+            'How do I configure a GitHub Actions CI pipeline for Node.js?',
+            'Find the security vulnerabilities in this Express middleware.',
+            'Generate comprehensive unit tests for this Python class.',
+            'Write an OpenAPI spec for a user authentication service.',
+        ]
+    ),
+    (
+        ['business-productivity', 'communication', 'content-marketing', 'content-writing', 'meetings', 'productivity', 'finance-crypto'],
+        'Paste your meeting notes, drafting topic, or business prompt...',
+        '💼 Business & Productivity',
+        [
+            'Draft a launch announcement email for our new SaaS product.',
+            'Summarize these meeting notes and extract 3 action items.',
+            'Create a 1-month LinkedIn content calendar for a B2B startup.',
+            'Calculate the ROI of migrating from AWS to bare metal.',
+            'Write a project proposal for implementing a 4-day work week.',
+        ]
+    ),
+    (
+        ['design-frontend', 'file-conversion', 'learning-education', 'personal-lifestyle'],
+        'Describe the design, format, or learning goal...',
+        '🛠️ Utilities & Lifestyle',
+        [
+            'Create a glassmorphism CSS theme with a dark color palette.',
+            'Generate a study schedule for learning intermediate Spanish in 3 months.',
+            'Convert this JSON structure into a markdown table.',
+            'Plan a 5-day high-protein meal prep menu under $50.',
+            'Suggest an accessible color contrast ratio for a CTA button on a dark background.',
+        ]
+    )
 ]
 
 DEFAULT_EXAMPLES = [
@@ -975,7 +1023,8 @@ DEFAULT_EXAMPLES = [
 def get_agent_hint(agent):
     """Return (placeholder, label, examples_list) based on agent name keywords."""
     name = agent.get("name", "").lower()
-    text = name
+    path = agent.get("path", "").lower()
+    text = name + " " + path
 
     for keywords, placeholder, label, examples in HINTS:
         if any(kw in text for kw in keywords):
