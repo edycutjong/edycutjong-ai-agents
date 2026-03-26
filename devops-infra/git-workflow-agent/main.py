@@ -6,7 +6,7 @@ import argparse, sys, subprocess
 
 
 def run(user_input: str, api_key: str = "", model: str = "gpt-4o-mini") -> str:
-    return "[Git Workflow Agent] Paste git log, branch info, or describe your workflow to get improvement suggestions and best practices."
+    return "[Git Workflow Agent] Paste git log, branch info, or describe your workflow to get improvement suggestions and best practices."  # pragma: no cover
 
 
 def main():

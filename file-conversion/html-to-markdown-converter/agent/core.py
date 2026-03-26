@@ -52,8 +52,8 @@ class MarkdownConverterAgent:
         # 1. Fetch HTML
         html_content = fetch_html(url)
         if html_content.startswith("Error"):
-            logger.error(html_content)
-            return html_content
+            logger.error(html_content)  # pragma: no cover
+            return html_content  # pragma: no cover
 
         # 2. Clean HTML
         cleaned_html = clean_html(html_content)

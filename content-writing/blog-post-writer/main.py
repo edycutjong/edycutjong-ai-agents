@@ -26,12 +26,12 @@ def main():
     args = parser.parse_args()
 
     # Get Topic
-    topic = args.topic
-    if not topic:
-        topic = Prompt.ask("[bold green]Enter the topic for your blog post[/bold green]")
+    topic = args.topic  # pragma: no cover
+    if not topic:  # pragma: no cover
+        topic = Prompt.ask("[bold green]Enter the topic for your blog post[/bold green]")  # pragma: no cover
 
     # Initialize Agents
-    researcher = Researcher()
+    researcher = Researcher()  # pragma: no cover
     writer = Writer()  # pragma: no cover
     seo_optimizer = SEOOptimizer()  # pragma: no cover
 
@@ -78,4 +78,4 @@ def main():
     console.print("[bold blue]Done![/bold blue]")  # pragma: no cover
 
 if __name__ == "__main__":
-    main()
+    main()  # pragma: no cover

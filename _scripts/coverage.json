@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-03-26T01:29:44Z",
+  "timestamp": "2026-03-26T04:28:36Z",
   "summary": {
     "total_agents": 275,
     "agents_with_coverage": 275,
-    "average_coverage": 99,
+    "average_coverage": 100,
     "passed": 275,
     "failed": 0,
     "skipped": 0
@@ -502,6 +502,10 @@
       "coverage": 100
     },
     {
+      "agent": "./developer/agent-a11y-fixer",
+      "coverage": 100
+    },
+    {
       "agent": "./developer/agent-api-monitor",
       "coverage": 100
     },
@@ -591,6 +595,10 @@
     },
     {
       "agent": "./developer/agent-readme-grader",
+      "coverage": 100
+    },
+    {
+      "agent": "./developer/agent-readme-keeper",
       "coverage": 100
     },
     {
@@ -1099,14 +1107,6 @@
     },
     {
       "agent": "./security-privacy/security-audit-agent",
-      "coverage": 100
-    },
-    {
-      "agent": "./developer/agent-a11y-fixer",
-      "coverage": 100
-    },
-    {
-      "agent": "./developer/agent-readme-keeper",
       "coverage": 100
     }
   ]

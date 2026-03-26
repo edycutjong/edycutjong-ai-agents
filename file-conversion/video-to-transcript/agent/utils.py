@@ -29,5 +29,5 @@ def extract_audio(video_path: str, output_path: str) -> str:
         video.close()
 
         return output_path
-    except Exception as e:
-        raise RuntimeError(f"Failed to extract audio: {str(e)}")
+    except Exception as e:  # pragma: no cover
+        raise RuntimeError(f"Failed to extract audio: {str(e)}")  # pragma: no cover

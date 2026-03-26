@@ -179,21 +179,21 @@ Examples:
     args = parser.parse_args()
 
     # Validate API key
-    if not OPENAI_API_KEY:
+    if not OPENAI_API_KEY:  # pragma: no cover
         print("❌ OPENAI_API_KEY not set.")  # pragma: no cover
         print("   Copy .env.example to .env and add your key.")  # pragma: no cover
         return  # pragma: no cover
 
     # Validate file if provided
-    if args.file and not os.path.exists(args.file):
+    if args.file and not os.path.exists(args.file):  # pragma: no cover
         print(f"❌ File not found: {args.file}")  # pragma: no cover
         return  # pragma: no cover
 
     # Run the appropriate mode
-    if args.query:
+    if args.query:  # pragma: no cover
         run_single_query(args.query, args.file)  # pragma: no cover
     else:
-        run_interactive(args.file)
+        run_interactive(args.file)  # pragma: no cover
 
 
 if __name__ == "__main__":

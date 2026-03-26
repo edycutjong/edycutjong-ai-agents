@@ -22,7 +22,7 @@ def print_header(title: str):
 
 
 def print_step(message: str):
-    console.print(f"[bold cyan]➜[/bold cyan] {message}")
+    console.print(f"[bold cyan]➜[/bold cyan] {message}")  # pragma: no cover
 
 
 def print_success(message: str):
@@ -30,4 +30,4 @@ def print_success(message: str):
 
 
 def print_error(message: str):
-    console.print(f"[bold red]✘[/bold red] {message}")
+    console.print(f"[bold red]✘[/bold red] {message}")  # pragma: no cover

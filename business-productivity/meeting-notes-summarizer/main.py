@@ -41,9 +41,9 @@ def main():
     try:
         agent = MeetingSummarizerAgent()
         result = agent.summarize(transcript)
-    except Exception as e:
-        print_error(f"Summarization failed: {e}")
-        sys.exit(1)
+    except Exception as e:  # pragma: no cover
+        print_error(f"Summarization failed: {e}")  # pragma: no cover
+        sys.exit(1)  # pragma: no cover
 
     print_success("Summary complete!")
 

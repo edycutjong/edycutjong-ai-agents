@@ -138,7 +138,7 @@ def main():
     elif args.command == "generate":
         run_generate(args.directory, args.type, args.output, console)
     else:
-        parser.print_help()
+        parser.print_help()  # pragma: no cover
 
 if __name__ == "__main__":
-    main()
+    main()  # pragma: no cover

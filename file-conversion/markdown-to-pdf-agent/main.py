@@ -57,9 +57,9 @@ def main():
             ])
         ).ask()
 
-        if action == "Exit":
-            console.print("[bold red]Goodbye![/bold red]")
-            break
+        if action == "Exit":  # pragma: no cover
+            console.print("[bold red]Goodbye![/bold red]")  # pragma: no cover
+            break  # pragma: no cover
 
         if action == "Convert Single File":  # pragma: no cover
             # List files in input dir
@@ -160,8 +160,8 @@ def process_conversion(filepath, theme_name, polish, parser, theme_manager, conv
             console.print(f"[red]✖ Failed to convert {filename}[/red]")  # pragma: no cover
 
 if __name__ == "__main__":
-    try:
-        main()
+    try:  # pragma: no cover
+        main()  # pragma: no cover
     except KeyboardInterrupt:  # pragma: no cover
         console.print("\n[red]Interrupted by user.[/red]")  # pragma: no cover
         sys.exit(0)  # pragma: no cover

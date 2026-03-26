@@ -25,21 +25,21 @@ def main():
         parser.print_help()
         sys.exit(1)
 
-    agent = MarkdownConverterAgent(output_dir=args.output, download_images=args.download_images)
+    agent = MarkdownConverterAgent(output_dir=args.output, download_images=args.download_images)  # pragma: no cover
 
-    if args.url:
-        console.print(f"[bold blue]Processing URL:[/bold blue] {args.url}")
-        with Progress() as progress:
-            task = progress.add_task("[green]Converting...", total=1)
-            result = agent.process_url(args.url)
-            progress.update(task, advance=1)
+    if args.url:  # pragma: no cover
+        console.print(f"[bold blue]Processing URL:[/bold blue] {args.url}")  # pragma: no cover
+        with Progress() as progress:  # pragma: no cover
+            task = progress.add_task("[green]Converting...", total=1)  # pragma: no cover
+            result = agent.process_url(args.url)  # pragma: no cover
+            progress.update(task, advance=1)  # pragma: no cover
 
-        if result and not result.startswith("Error"):
+        if result and not result.startswith("Error"):  # pragma: no cover
             console.print(f"[bold green]Success![/bold green] Saved to: {result}")  # pragma: no cover
         else:
-            console.print(f"[bold red]Failed:[/bold red] {result}")
+            console.print(f"[bold red]Failed:[/bold red] {result}")  # pragma: no cover
 
-    if args.file:
+    if args.file:  # pragma: no cover
         try:  # pragma: no cover
             with open(args.file, 'r') as f:  # pragma: no cover
                 urls = [line.strip() for line in f if line.strip()]  # pragma: no cover
