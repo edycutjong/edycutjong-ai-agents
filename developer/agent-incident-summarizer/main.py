@@ -93,5 +93,5 @@ def main():
     print(generate_summary(events, args.file))
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     main()

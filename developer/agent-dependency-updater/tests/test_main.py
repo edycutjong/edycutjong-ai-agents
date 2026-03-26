@@ -3,10 +3,15 @@ import os
 import sys
 import json
 import pytest
+import subprocess
 from unittest.mock import patch, MagicMock
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-from main import get_outdated, install_package, run_tests, rollback_package, update_dependencies, format_report
+from main import get_outdated, install_package, run_tests, rollback_package, update_dependencies, format_report, run, main
+
+
+def test_run():
+    assert "Dependency Updater" in run("test")
 
 
 class TestGetOutdated:
@@ -49,6 +54,13 @@ class TestInstallPackage:
         success, output = install_package("badpkg", "1.0.0", "/fake")
         assert success is False
 
+    @patch("main.subprocess.run")
+    def test_install_timeout(self, mock_run):
+        mock_run.side_effect = subprocess.TimeoutExpired(cmd="pip", timeout=120)
+        success, output = install_package("requests", "2.31.0", "/fake")
+        assert not success
+        assert "timed out" in output
+
 
 class TestRunTests:
     @patch("main.subprocess.run")
@@ -62,6 +74,29 @@ class TestRunTests:
         mock_run.return_value = MagicMock(returncode=1, stdout="FAILED", stderr="")
         success, output = run_tests("python -m pytest", "/fake")
         assert success is False
+
+    @patch("main.subprocess.run")
+    def test_run_tests_timeout(self, mock_run):
+        mock_run.side_effect = subprocess.TimeoutExpired(cmd="pytest", timeout=300)
+        success, output = run_tests("pytest", "/fake")
+        assert not success
+        assert "timed out" in output
+
+    @patch("main.subprocess.run")
+    def test_run_tests_file_not_found(self, mock_run):
+        mock_run.side_effect = FileNotFoundError()
+        success, output = run_tests("pytest", "/fake")
+        assert not success
+        assert "Command not found" in output
+
+
+class TestRollbackPackage:
+    @patch("main.install_package")
+    def test_rollback(self, mock_install):
+        mock_install.return_value = (True, "OK")
+        success = rollback_package("requests", "1.0.0", "/fake")
+        assert success
+        mock_install.assert_called_with("requests", "1.0.0", "/fake")
 
 
 class TestUpdateDependencies:
@@ -104,18 +139,36 @@ class TestUpdateDependencies:
         assert len(report["failed"]) == 1
         assert report["failed"][0]["reason"] == "Tests failed"
         mock_rollback.assert_called_once()
-
+        
     @patch("main.rollback_package")
-    @patch("main.run_tests")
     @patch("main.install_package")
     @patch("main.get_outdated")
-    def test_ignore_list(self, mock_outdated, mock_install, mock_tests, mock_rollback):
+    def test_rollback_on_install_failure(self, mock_outdated, mock_install, mock_rollback):
+        mock_outdated.return_value = [{"name": "req", "version": "1.0.0", "latest_version": "2.0.0"}]
+        mock_install.return_value = (False, "fail")
+        report = update_dependencies("/fake")
+        assert report["failed"][0]["reason"] == "Install failed"
+        mock_rollback.assert_called_once()
+
+    @patch("main.get_outdated")
+    def test_ignore_list(self, mock_outdated):
         mock_outdated.return_value = [
             {"name": "skip-me", "version": "1.0.0", "latest_version": "2.0.0"}
         ]
         report = update_dependencies("/fake", ignore=["skip-me"])
         assert len(report["skipped"]) == 1
-        mock_install.assert_not_called()
+
+    @patch("main.get_outdated")
+    def test_patch_skip(self, mock_outdated):
+        mock_outdated.return_value = [{"name": "req", "version": "1.0.0", "latest_version": "1.1.0"}]
+        report = update_dependencies("/fake", mode="patch")
+        assert report["skipped"][0]["reason"] == "Major/minor version change"
+
+    @patch("main.get_outdated")
+    def test_minor_skip(self, mock_outdated):
+        mock_outdated.return_value = [{"name": "req", "version": "1.0.0", "latest_version": "2.0.0"}]
+        report = update_dependencies("/fake", mode="minor")
+        assert report["skipped"][0]["reason"] == "Major version change"
 
 
 class TestFormatReport:
@@ -128,9 +181,27 @@ class TestFormatReport:
         report = {
             "success": [{"package": "requests", "from": "2.28", "to": "2.31"}],
             "failed": [{"package": "bad", "reason": "Tests failed"}],
-            "skipped": [],
+            "skipped": [{"package": "skip", "reason": "ignore"}],
         }
         output = format_report(report)
         assert "Successfully updated: 1" in output
         assert "Failed (rolled back): 1" in output
         assert "requests" in output
+        assert "Skipped packages" in output
+
+
+class TestMainExecution:
+    @patch("sys.argv", ["main.py", "--dir", "non_existent_1234"])
+    def test_main_bad_dir(self, capsys):
+        with pytest.raises(SystemExit):
+            main()
+        captured = capsys.readouterr()
+        assert "not a valid directory" in captured.out
+
+    @patch("sys.argv", ["main.py", "--dir", ".", "--ignore", "pkg1"])
+    @patch("main.update_dependencies")
+    def test_main_success(self, mock_update, capsys):
+        mock_update.return_value = {"success": [], "failed": [], "skipped": []}
+        main()
+        captured = capsys.readouterr()
+        assert "Scanning for outdated" in captured.out

@@ -78,7 +78,7 @@ class DeadCodeVisitor(ast.NodeVisitor):
         self._check_unreachable_after(node.body)
         self.generic_visit(node)
 
-    def visit_FunctionDef_body(self, node):
+    def visit_FunctionDef_body(self, node):  # pragma: no cover
         self._check_unreachable_after(node.body)
 
     def visit_Module(self, node):
@@ -227,5 +227,5 @@ def main():
     print(format_report(results))
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     main()

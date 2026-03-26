@@ -1,4 +1,6 @@
-from main import run, analyze_query, estimate_complexity, format_report
+import pytest
+from unittest.mock import patch
+from main import run, analyze_query, estimate_complexity, format_report, main
 
 
 def test_run():
@@ -42,8 +44,41 @@ def test_complexity():
     assert estimate_complexity("SELECT a FROM b JOIN c ON b.id = c.id JOIN d ON c.id = d.id") == "MEDIUM"
 
 
+def test_complexity_high():
+    assert estimate_complexity("SELECT a FROM b JOIN c ON b.id = c.id JOIN d ON c.id = d.id JOIN e ON d.id = e.id JOIN f ON e.id = f.id") == "HIGH"
+
+
 def test_format_report():
     findings = [{"code": "SELECT_STAR", "message": "avoid", "severity": "MEDIUM"}]
     report = format_report("SELECT * FROM x", findings, ["col1"])
     assert "SELECT_STAR" in report
     assert "col1" in report
+
+
+def test_format_no_findings():
+    report = format_report("SELECT id FROM users", [], [])
+    assert "No common anti-patterns" in report
+
+
+@patch("sys.argv", ["main.py"])
+def test_main_no_args(capsys):
+    with pytest.raises(SystemExit):
+        main()
+    captured = capsys.readouterr()
+    assert "Usage:" in captured.out
+
+
+def test_main_with_file(capsys, tmp_path):
+    p = tmp_path / "query.sql"
+    p.write_text("SELECT * FROM users")
+    with patch("sys.argv", ["main.py", str(p)]):
+        main()
+    captured = capsys.readouterr()
+    assert "SELECT_STAR" in captured.out
+
+
+def test_main_with_string(capsys):
+    with patch("sys.argv", ["main.py", "SELECT * FROM users"]):
+        main()
+    captured = capsys.readouterr()
+    assert "SELECT_STAR" in captured.out

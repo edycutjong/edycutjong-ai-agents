@@ -14,10 +14,22 @@ total=0
 cov_sum=0
 cov_count=0
 
-# Coverage JSON output
+# Collect results for end report
+FAILED_LIST=""
+BELOW_100_LIST=""
 COV_JSON="[]"
 
-echo "Testing all agents..."
+# Count total agents first for progress
+agent_total=$(find . -maxdepth 5 -type d -name "tests" ! -path './.git/*' ! -path './_scripts/*' | wc -l | tr -d ' ')
+root_tests=$(find . -maxdepth 4 -name "test_main.py" -type f ! -path '*/tests/*' | wc -l | tr -d ' ')
+agent_total=$((agent_total + root_tests))
+
+echo "====================================="
+echo "🧪 Agent Test Runner"
+[ "$COVERAGE" = true ] && echo "📊 Coverage mode enabled"
+echo "   Found ~${agent_total} test targets"
+echo "====================================="
+echo ""
 
 # Collect all unique agent directories that have tests
 tested_agents=":"
@@ -28,10 +40,11 @@ run_pytest() {
   local label="$3"
 
   total=$((total+1))
-  echo -n "\rTesting $agent_dir${label:+ ($label)}... "
+
+  # Progress: overwrite same line
+  printf "\r  Testing [%d/%d] %s...                    " "$total" "$agent_total" "$(basename "$agent_dir")"
 
   if [ "$COVERAGE" = true ]; then
-    # Run with coverage and capture the TOTAL line
     output=$(cd "$agent_dir" && python3 -c "import subprocess, sys
 try:
     cmd = ['python3', '-m', 'pytest', '-q', '--disable-warnings', '--cov=.', '--cov-report=term-missing']
@@ -45,11 +58,13 @@ except subprocess.TimeoutExpired:
 " 2>&1)
     exit_code=$?
 
-    # Extract coverage % from TOTAL line
     cov_pct=$(echo "$output" | grep "^TOTAL" | awk '{print $NF}' | tr -d '%')
     if [ -n "$cov_pct" ] && [ "$cov_pct" -eq "$cov_pct" ] 2>/dev/null; then
       cov_sum=$((cov_sum + cov_pct))
       cov_count=$((cov_count + 1))
+      if [ "$cov_pct" -lt 100 ]; then
+        BELOW_100_LIST="${BELOW_100_LIST}${agent_dir}|${cov_pct}\n"
+      fi
       COV_JSON=$(echo "$COV_JSON" | python3 -c "
 import sys, json
 data = json.load(sys.stdin)
@@ -66,17 +81,16 @@ json.dump(data, sys.stdout)
     passed=$((passed+1))
   else
     failed=$((failed+1))
-    echo -e "\n❌ FAILED: $agent_dir"
+    FAILED_LIST="${FAILED_LIST}${agent_dir}\n"
   fi
 }
 
-# 1) Agents with tests/ subdirectory (pytest on tests/)
+# 1) Agents with tests/ subdirectory
 for d in $(find . -maxdepth 5 -type d -name "tests" ! -path './.git/*' ! -path './_scripts/*' | sort); do
   agent_dir=$(dirname "$d")
   [[ "$tested_agents" == *":$agent_dir:"* ]] && continue
   tested_agents="${tested_agents}${agent_dir}:"
 
-  # Check for Python test files
   py_tests=$(find "$d" -maxdepth 1 -name "test_*.py" 2>/dev/null | head -1)
   ts_tests=$(find "$d" -maxdepth 1 \( -name "*.test.ts" -o -name "*.test.js" -o -name "*.spec.ts" -o -name "*.spec.js" \) 2>/dev/null | head -1)
 
@@ -84,39 +98,72 @@ for d in $(find . -maxdepth 5 -type d -name "tests" ! -path './.git/*' ! -path '
     run_pytest "$agent_dir" "tests/" ""
   elif [ -n "$ts_tests" ]; then
     total=$((total+1))
-    echo -n "\rTesting $agent_dir (TS)... "
+    printf "\r  Testing [%d/%d] %s (TS)...                    " "$total" "$agent_total" "$(basename "$agent_dir")"
     if (cd "$agent_dir" && npm test --silent > /dev/null 2>&1); then
       passed=$((passed+1))
     else
       skipped=$((skipped+1))
-      echo -e "\n⏭️  SKIPPED (TS): $agent_dir"
     fi
   else
     skipped=$((skipped+1))
   fi
 done
 
-# 2) Agents with test_main.py in root (not inside tests/)
+# 2) Agents with test_main.py in root
 for f in $(find . -maxdepth 4 -name "test_main.py" -type f ! -path '*/tests/*' | sort); do
   agent_dir=$(dirname "$f")
   [[ "$tested_agents" == *":$agent_dir:"* ]] && continue
   tested_agents="${tested_agents}${agent_dir}:"
-
   run_pytest "$agent_dir" "test_main.py" "root test"
 done
 
-echo -e "\r\033[K" # Clear the line
+# Clear progress line
+printf "\r                                                                        \r"
+
+# ═══════════════════════════════════════════
+#  END REPORT
+# ═══════════════════════════════════════════
+echo ""
 echo "====================================="
-echo "Total tested : $total"
-echo "✅ Passed    : $passed"
-[ "$failed" -gt 0 ] && echo "❌ Failed    : $failed"
-[ "$skipped" -gt 0 ] && echo "⏭️  Skipped   : $skipped"
+echo "📋 RESULTS"
+echo "====================================="
+echo "  Total tested : $total"
+echo "  ✅ Passed    : $passed"
+[ "$failed" -gt 0 ] && echo "  ❌ Failed    : $failed"
+[ "$skipped" -gt 0 ] && echo "  ⏭️  Skipped   : $skipped"
 
 if [ "$COVERAGE" = true ] && [ "$cov_count" -gt 0 ]; then
   avg_cov=$((cov_sum / cov_count))
-  echo "📊 Avg Coverage: ${avg_cov}% (${cov_count} agents)"
+  echo "  📊 Avg Coverage: ${avg_cov}% (${cov_count} agents)"
+fi
 
-  # Write coverage report JSON
+# Show failures
+if [ -n "$FAILED_LIST" ]; then
+  echo ""
+  echo "====================================="
+  echo "❌ FAILED AGENTS"
+  echo "====================================="
+  printf "$FAILED_LIST" | sort | while IFS= read -r agent; do
+    [ -n "$agent" ] && echo "  • $agent"
+  done
+fi
+
+# Show below 100% coverage
+if [ "$COVERAGE" = true ]; then
+  if [ -n "$BELOW_100_LIST" ]; then
+    echo ""
+    echo "====================================="
+    echo "⚠️  BELOW 100% COVERAGE"
+    echo "====================================="
+    printf "$BELOW_100_LIST" | sort | while IFS='|' read -r agent pct; do
+      [ -n "$agent" ] && echo "  • ${agent} → ${pct}%"
+    done
+  else
+    echo ""
+    echo "🟢 All agents at 100% coverage!"
+  fi
+
+  # Write coverage.json
   report_file="$(dirname "$0")/coverage.json"
   python3 -c "
 import json, sys
@@ -144,6 +191,6 @@ echo "====================================="
 if [ "$failed" -gt 0 ]; then
   exit 1
 else
-  echo "✅ All agents are passing!"
+  echo "✅ All agents passing!"
   exit 0
 fi

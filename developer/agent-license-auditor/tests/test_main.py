@@ -8,9 +8,11 @@ from unittest.mock import patch, MagicMock
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from main import (
     normalize_license, check_blocked, get_installed_licenses,
-    audit_licenses, format_markdown, format_csv, print_console_report
+    audit_licenses, format_markdown, format_csv, print_console_report, main, run
 )
 
+def test_run():
+    assert "License Auditor" in run("")
 
 class TestNormalizeLicense:
     def test_string_license(self):
@@ -114,3 +116,64 @@ class TestPrintConsoleReport:
         output = capsys.readouterr().out
         assert "BLOCKED_LICENSE" in output
         assert "1 packages with blocked" in output
+
+
+@patch("main.distributions")
+def test_get_installed_licenses(mock_dist):
+    m1 = MagicMock()
+    m1.metadata.get.side_effect = lambda k, d="": {"Name": "pkg1", "Version": "1.0", "License": "MIT"}.get(k, d)
+    m1.metadata.get_all.return_value = None
+    
+    m2 = MagicMock()
+    m2.metadata.get.side_effect = lambda k, d="": {"Name": "pkg2", "Version": "2.0", "License": "UNKNOWN"}.get(k, d)
+    m2.metadata.get_all.return_value = ["License :: OSI Approved :: MIT License"]
+    
+    m3 = MagicMock()
+    m3.metadata.get.side_effect = lambda k, d="": {"Name": "pkg1", "Version": "1.0", "License": "MIT"}.get(k, d)
+
+    mock_dist.return_value = [m1, m2, m3]
+    
+    licenses = get_installed_licenses()
+    assert len(licenses) == 2
+    assert licenses[0]["name"] == "pkg1"
+    assert licenses[0]["license"] == "MIT"
+    assert licenses[1]["name"] == "pkg2"
+    assert licenses[1]["license"] == "MIT License"
+
+
+@patch("main.get_installed_licenses")
+def test_main_md_output_ok(mock_get, tmp_path):
+    mock_get.return_value = [{"package": "p@1", "name": "p", "version":"1", "license": "MIT", "author": "a", "repository": "r"}]
+    out_file = tmp_path / "out.md"
+    with patch("sys.argv", ["main.py", "--out", str(out_file), "--format", "md"]):
+        main()
+    assert out_file.exists()
+    assert "Third-Party Licenses" in out_file.read_text()
+
+
+@patch("main.get_installed_licenses")
+def test_main_json_output(mock_get, tmp_path):
+    mock_get.return_value = [{"package": "p@1", "name": "p", "version":"1", "license": "MIT", "author": "a", "repository": "r"}]
+    out_file = tmp_path / "out.json"
+    with patch("sys.argv", ["main.py", "--out", str(out_file), "--format", "json"]):
+        main()
+    assert out_file.exists()
+
+
+@patch("main.get_installed_licenses")
+def test_main_csv_output(mock_get, tmp_path):
+    mock_get.return_value = [{"package": "p@1", "name": "p", "version":"1", "license": "MIT", "author": "a", "repository": "r"}]
+    out_file = tmp_path / "out.csv"
+    with patch("sys.argv", ["main.py", "--out", str(out_file), "--format", "csv"]):
+        main()
+    assert out_file.exists()
+
+
+@patch("sys.exit")
+@patch("main.get_installed_licenses")
+def test_main_blocked(mock_get, mock_exit, tmp_path):
+    mock_get.return_value = [{"package": "p@1", "name": "p", "version":"1", "license": "GPL", "author": "a", "repository": "r", "status": "BLOCKED_LICENSE"}]
+    out_file = tmp_path / "out.md"
+    with patch("sys.argv", ["main.py", "--out", str(out_file), "--block", "GPL", "--fail-on-blocked"]):
+        main()
+    mock_exit.assert_called_with(1)

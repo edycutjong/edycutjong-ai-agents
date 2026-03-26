@@ -1,5 +1,9 @@
+import json
+import os
+import sys
 import pytest
-from main import run, compare_schemas, find_removed_fields, find_added_fields, find_type_changes, generate_migration_guide
+from unittest.mock import patch
+from main import run, compare_schemas, find_removed_fields, find_added_fields, find_type_changes, generate_migration_guide, load_schema, main
 
 
 def test_run():
@@ -48,3 +52,44 @@ def test_migration_guide_breaking():
               "changes": [{"type": "REMOVED", "path": "name", "severity": "BREAKING"}]}
     guide = generate_migration_guide(result)
     assert "REMOVED" in guide
+
+
+def test_load_schema_string():
+    assert load_schema('{"a": 1}') == {"a": 1}
+
+
+def test_load_schema_file(tmp_path):
+    p = tmp_path / "test.json"
+    p.write_text('{"a": 1}')
+    assert load_schema(str(p)) == {"a": 1}
+
+
+def test_nested_addition():
+    old = {"user": {"name": "x"}}
+    new = {"user": {"name": "x", "age": 1}}
+    additions = find_added_fields(old, new)
+    assert len(additions) == 1
+    assert additions[0]["path"] == "user.age"
+
+
+def test_nested_type_change():
+    old = {"user": {"age": "1"}}
+    new = {"user": {"age": 1}}
+    changes = find_type_changes(old, new)
+    assert len(changes) == 1
+    assert changes[0]["path"] == "user.age"
+
+
+@patch("sys.argv", ["main.py"])
+def test_main_no_args(capsys):
+    with pytest.raises(SystemExit):
+        main()
+    captured = capsys.readouterr()
+    assert "Usage:" in captured.out
+
+
+@patch("sys.argv", ["main.py", '{"a": 1}', '{"b": 2}'])
+def test_main_with_args(capsys):
+    main()
+    captured = capsys.readouterr()
+    assert "REMOVED" in captured.out or "ADDED" in captured.out

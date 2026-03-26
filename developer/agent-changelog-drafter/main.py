@@ -74,5 +74,5 @@ def main():
     print(format_changelog(args.version, sections))
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     main()

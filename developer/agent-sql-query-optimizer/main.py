@@ -81,5 +81,5 @@ def main():
     print(format_report(sql, findings, index_candidates))
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     main()

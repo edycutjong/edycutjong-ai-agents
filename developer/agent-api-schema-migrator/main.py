@@ -99,5 +99,5 @@ def main():
     print(generate_migration_guide(result))
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     main()

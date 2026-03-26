@@ -126,5 +126,5 @@ def main():
         print(f"\n✅ Written to {args.output}")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     main()

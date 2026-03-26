@@ -1,4 +1,6 @@
-from main import run, extract_events, classify_severity, generate_summary
+import pytest
+from unittest.mock import patch
+from main import run, extract_events, classify_severity, generate_summary, main
 
 
 def test_run():
@@ -32,6 +34,21 @@ def test_classify_critical():
     assert classify_severity(events) == "CRITICAL"
 
 
+def test_classify_high_timeout():
+    events = [{"category": "TIMEOUT"}]
+    assert classify_severity(events) == "HIGH"
+
+
+def test_classify_high_errors():
+    events = [{"category": "ERROR"}] * 11
+    assert classify_severity(events) == "HIGH"
+
+
+def test_classify_medium():
+    events = [{"category": "ERROR"}] * 5
+    assert classify_severity(events) == "MEDIUM"
+
+
 def test_classify_low():
     events = [{"category": "HTTP_4XX"}]
     assert classify_severity(events) == "LOW"
@@ -45,3 +62,34 @@ def test_summary_with_events():
     events = [{"line": 1, "category": "ERROR", "timestamp": None, "content": "crash"}]
     summary = generate_summary(events)
     assert "Incident Summary" in summary
+
+
+def test_summary_more_than_5_events():
+    events = [{"line": i, "category": "ERROR", "timestamp": "2024-01-01T00:00:00", "content": f"crash {i}"} for i in range(10)]
+    summary = generate_summary(events)
+    assert "... and 5 more" in summary
+
+
+@patch("sys.argv", ["main.py"])
+def test_main_no_args(capsys):
+    with pytest.raises(SystemExit):
+        main()
+    captured = capsys.readouterr()
+    assert "Usage:" in captured.out
+
+
+@patch("sys.argv", ["main.py", "non_existent.log"])
+def test_main_bad_file(capsys):
+    with pytest.raises(SystemExit):
+        main()
+    captured = capsys.readouterr()
+    assert "not found" in captured.out
+
+
+def test_main_success(capsys, tmp_path):
+    p = tmp_path / "app.log"
+    p.write_text("ERROR: failed")
+    with patch("sys.argv", ["main.py", str(p)]):
+        main()
+    captured = capsys.readouterr()
+    assert "Incident Summary" in captured.out

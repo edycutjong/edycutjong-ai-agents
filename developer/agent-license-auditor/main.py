@@ -10,9 +10,9 @@ import json
 import os
 import sys
 
-try:
+try:  # pragma: no cover
     from importlib.metadata import distributions, PackageNotFoundError
-except ImportError:
+except ImportError:  # pragma: no cover
     from importlib_metadata import distributions, PackageNotFoundError
 
 
@@ -189,5 +189,5 @@ def main():
         sys.exit(1)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     main()
