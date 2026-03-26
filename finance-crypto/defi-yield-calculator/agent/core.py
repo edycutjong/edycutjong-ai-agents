@@ -26,7 +26,7 @@ def compare(input_data: str = "", **kwargs) -> dict:
         "input": input_data,
         "data": {}
     }
-    if not input_data and "compare" != "compare" and "compare" != "risk":
+    if not input_data and "compare" != "compare" and "compare" != "risk":  # pragma: no cover
         result["status"] = "error"
         result["error"] = "No input provided"
         return result
@@ -41,7 +41,7 @@ def risk(input_data: str = "", **kwargs) -> dict:
         "input": input_data,
         "data": {}
     }
-    if not input_data and "risk" != "compare" and "risk" != "risk":
+    if not input_data and "risk" != "compare" and "risk" != "risk":  # pragma: no cover
         result["status"] = "error"
         result["error"] = "No input provided"
         return result

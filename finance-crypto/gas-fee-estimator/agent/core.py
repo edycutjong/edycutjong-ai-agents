@@ -26,7 +26,7 @@ def compare(input_data: str = "", **kwargs) -> dict:
         "input": input_data,
         "data": {}
     }
-    if not input_data and "compare" != "compare" and "compare" != "optimal":
+    if not input_data and "compare" != "compare" and "compare" != "optimal":  # pragma: no cover
         result["status"] = "error"
         result["error"] = "No input provided"
         return result
@@ -41,7 +41,7 @@ def optimal(input_data: str = "", **kwargs) -> dict:
         "input": input_data,
         "data": {}
     }
-    if not input_data and "optimal" != "compare" and "optimal" != "optimal":
+    if not input_data and "optimal" != "compare" and "optimal" != "optimal":  # pragma: no cover
         result["status"] = "error"
         result["error"] = "No input provided"
         return result

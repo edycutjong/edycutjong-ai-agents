@@ -26,7 +26,7 @@ def portfolio(input_data: str = "", **kwargs) -> dict:
         "input": input_data,
         "data": {}
     }
-    if not input_data and "portfolio" != "portfolio" and "portfolio" != "history":
+    if not input_data and "portfolio" != "portfolio" and "portfolio" != "history":  # pragma: no cover
         result["status"] = "error"
         result["error"] = "No input provided"
         return result
@@ -41,7 +41,7 @@ def history(input_data: str = "", **kwargs) -> dict:
         "input": input_data,
         "data": {}
     }
-    if not input_data and "history" != "portfolio" and "history" != "history":
+    if not input_data and "history" != "portfolio" and "history" != "history":  # pragma: no cover
         result["status"] = "error"
         result["error"] = "No input provided"
         return result

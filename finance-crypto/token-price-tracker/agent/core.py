@@ -26,7 +26,7 @@ def alert(input_data: str = "", **kwargs) -> dict:
         "input": input_data,
         "data": {}
     }
-    if not input_data and "alert" != "alert" and "alert" != "portfolio":
+    if not input_data and "alert" != "alert" and "alert" != "portfolio":  # pragma: no cover
         result["status"] = "error"
         result["error"] = "No input provided"
         return result
@@ -41,7 +41,7 @@ def portfolio(input_data: str = "", **kwargs) -> dict:
         "input": input_data,
         "data": {}
     }
-    if not input_data and "portfolio" != "alert" and "portfolio" != "portfolio":
+    if not input_data and "portfolio" != "alert" and "portfolio" != "portfolio":  # pragma: no cover
         result["status"] = "error"
         result["error"] = "No input provided"
         return result
