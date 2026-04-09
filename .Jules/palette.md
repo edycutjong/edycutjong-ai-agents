@@ -1,0 +1,3 @@
+## 2024-06-25 - Streamlit Text Area ARIA Label Issue
+**Learning:** When using `label_visibility="collapsed"` in Streamlit to hide a label visually, the first argument is still used as the `aria-label`. If a dummy string like `"hidden_label"` is used, it breaks screen reader accessibility by providing an unhelpful label.
+**Action:** Always provide a meaningful, descriptive string as the first argument, even when visually hiding the label. Use variables like `base_label` that provide context based on translation or component state.
