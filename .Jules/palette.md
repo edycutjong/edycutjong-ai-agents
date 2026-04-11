@@ -1,0 +1,3 @@
+## 2024-05-24 - Streamlit aria-label Accessibility with Collapsed Labels
+**Learning:** In Streamlit, when using `label_visibility="collapsed"` to visually hide a label, the first argument provided to the component (like `st.text_area` or `st.selectbox`) is still used as the `aria-label` by screen readers. A literal string like `"hidden_label"` will literally be read to the user, creating an inaccessible experience.
+**Action:** Always provide a meaningful, descriptive string (or a dynamically evaluated variable containing one) as the first argument to Streamlit input components, even when `label_visibility="collapsed"` is used.
