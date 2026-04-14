@@ -1,0 +1,3 @@
+## 2024-04-14 - Meaningful aria-labels for visually hidden Streamlit inputs
+**Learning:** In Streamlit, when using `label_visibility="collapsed"` to hide a label visually, the first argument is still used as the `aria-label`. Using placeholder text like "hidden_label" causes screen readers to announce a non-descriptive label.
+**Action:** Always provide a meaningful, descriptive string as the label argument to ensure screen reader accessibility, even if it is visually hidden.
