@@ -1,0 +1,3 @@
+## 2024-04-17 - Screen reader labels for collapsed UI elements in Streamlit
+**Learning:** In Streamlit, when using `label_visibility="collapsed"` to hide a label visually (e.g., for a language selectbox or an agent text area), the first argument provided to the widget (the label) is still used as the `aria-label` for screen readers. Passing meaningless strings like "hidden_label" creates a poor accessibility experience.
+**Action:** Always provide a meaningful, descriptive string as the label argument to Streamlit widgets, even when using `label_visibility="collapsed"`, to ensure proper screen reader accessibility.
