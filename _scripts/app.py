@@ -399,7 +399,7 @@ def main():
         current_locale = st.session_state.get("locale", "en")
         locale_idx = locale_options.index(current_locale) if current_locale in locale_options else 0
         selected_locale = st.selectbox(
-            "Language",
+            tr.get("language", "Language"),
             locale_options,
             index=locale_idx,
             format_func=lambda x: f"{x.upper()} · {LOCALE_NAMES[x]}",
@@ -765,7 +765,7 @@ def _render_agent_detail(agent, agent_key):
                 st.markdown(f"**{base_label}**")
 
             user_input = st.text_area(
-                "hidden_label",
+                base_label,
                 label_visibility="collapsed",
                 placeholder=tr.get('default_input_placeholder', placeholder) if placeholder == "Describe what you need or paste your text..." else placeholder,
                 height=150,
