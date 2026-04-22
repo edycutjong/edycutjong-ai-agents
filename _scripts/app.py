@@ -603,6 +603,18 @@ def _render_hub(filtered, all_agents):
     if len(filtered) < len(all_agents):
         st.info(tr.get('showing_agents', 'Showing **{count}** of {total} agents').format(count=len(filtered), total=len(all_agents)))
 
+    if len(filtered) == 0:
+        st.markdown(
+            f"""
+            <div style="text-align: center; padding: 3rem 1rem; border-radius: 12px; background: var(--card-bg); border: 1px dashed var(--card-border); margin-top: 1rem;">
+                <div style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;">🔍</div>
+                <h3 style="margin-bottom: 0.5rem; opacity: 0.8;">{tr.get("no_results_title", "No agents found")}</h3>
+                <p style="opacity: 0.6; margin-bottom: 0;">{tr.get("no_results_desc", "Try adjusting your search or category filters to find what you're looking for.")}</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
     # Agent grid
     items = list(filtered.items())
     for i in range(0, len(items), 3):
