@@ -108,6 +108,10 @@ st.markdown("""
     .stButton > button {
         transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
     }
+    .stButton > button:focus-visible {
+        outline: 2px solid #a855f7 !important;
+        outline-offset: 2px !important;
+    }
     .stButton > button:hover {
         transform: translateY(-1px) !important;
         box-shadow: 0 4px 12px rgba(168, 85, 247, 0.25) !important;
@@ -470,7 +474,7 @@ def main():
         # Change button text exactly to something like 'Search'
         btn_label = tr.get("search_btn", "Search")
         
-        if st.button(btn_label, key="search_button", use_container_width=True, disabled=disable_btn):
+        if st.button(btn_label, key="search_button", use_container_width=True, disabled=disable_btn, help=tr.get("search_disabled_help", "Type something to search") if disable_btn else None):
             st.session_state.last_search = search_val
             if search_val and "agent" in st.query_params:
                 del st.query_params["agent"]
@@ -725,7 +729,7 @@ def _render_agent_detail(agent, agent_key):
             cache_key = f"cache_{agent_key}"
 
             btn_label = f"🔄 {tr['load_example']}" if st.session_state[seen_key] else f"💡 {tr['load_example']}"
-            if st.button(btn_label, key=f"load_{agent_key}", disabled=is_running):
+            if st.button(btn_label, key=f"load_{agent_key}", disabled=is_running, help=tr.get("loading_help", "Please wait while the agent is running") if is_running else None):
                 seen = st.session_state[seen_key]
                 remaining = [i for i in range(len(examples)) if i not in seen]
                 if not remaining:  # all shown, reset
@@ -765,7 +769,7 @@ def _render_agent_detail(agent, agent_key):
                 st.markdown(f"**{base_label}**")
 
             user_input = st.text_area(
-                "hidden_label",
+                base_label,
                 label_visibility="collapsed",
                 placeholder=tr.get('default_input_placeholder', placeholder) if placeholder == "Describe what you need or paste your text..." else placeholder,
                 height=150,
@@ -782,6 +786,7 @@ def _render_agent_detail(agent, agent_key):
                 key=f"run_{agent_key}", 
                 use_container_width=True, 
                 disabled=is_running,
+                help=tr.get("loading_help", "Please wait while the agent is running") if is_running else None,
                 on_click=_on_run_click
             )
 
