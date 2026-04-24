@@ -470,7 +470,8 @@ def main():
         # Change button text exactly to something like 'Search'
         btn_label = tr.get("search_btn", "Search")
         
-        if st.button(btn_label, key="search_button", use_container_width=True, disabled=disable_btn):
+        search_help = "Enter a search term to find agents" if disable_btn else None
+        if st.button(btn_label, key="search_button", use_container_width=True, disabled=disable_btn, help=search_help):
             st.session_state.last_search = search_val
             if search_val and "agent" in st.query_params:
                 del st.query_params["agent"]
@@ -765,7 +766,7 @@ def _render_agent_detail(agent, agent_key):
                 st.markdown(f"**{base_label}**")
 
             user_input = st.text_area(
-                "hidden_label",
+                base_label,
                 label_visibility="collapsed",
                 placeholder=tr.get('default_input_placeholder', placeholder) if placeholder == "Describe what you need or paste your text..." else placeholder,
                 height=150,
@@ -777,11 +778,13 @@ def _render_agent_detail(agent, agent_key):
                 if st.session_state[ta_key]:
                     st.session_state[running_key] = True
 
+            run_help = "Agent is currently running" if is_running else None
             st.button(
                 tr['run_btn'], 
                 key=f"run_{agent_key}", 
                 use_container_width=True, 
                 disabled=is_running,
+                help=run_help,
                 on_click=_on_run_click
             )
 
