@@ -78,8 +78,8 @@ with col1:
     st.subheader("1. Upload Spec")
     uploaded_file = st.file_uploader("Choose a YAML or JSON file", type=['yaml', 'json', 'yml'])
 
-    start_btn = st.button("🚀 Start Server", disabled=st.session_state.server_pid is not None)
-    stop_btn = st.button("🛑 Stop Server", disabled=st.session_state.server_pid is None)
+    start_btn = st.button("🚀 Start Server", disabled=st.session_state.server_pid is not None, help="Server is already running" if st.session_state.server_pid is not None else "Click to start the mock server")
+    stop_btn = st.button("🛑 Stop Server", disabled=st.session_state.server_pid is None, help="Server is not running" if st.session_state.server_pid is None else "Click to stop the mock server")
 
     # Export Section
     if uploaded_file:  # pragma: no cover
