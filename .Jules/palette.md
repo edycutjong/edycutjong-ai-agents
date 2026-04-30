@@ -1,0 +1,3 @@
+## 2024-05-18 - Streamlit Screen Reader Label Accessibility
+**Learning:** Even when `label_visibility="collapsed"` is set on Streamlit input elements (like `st.text_area`), Streamlit still exposes the provided label parameter string to screen readers in the DOM. Using a generic string like `"hidden_label"` creates a very poor experience for visually impaired users who use screen readers.
+**Action:** Always provide a descriptive, context-aware base label string as the first argument to input components, even if the visual label is set to be collapsed. This ensures screen readers announce something meaningful.
